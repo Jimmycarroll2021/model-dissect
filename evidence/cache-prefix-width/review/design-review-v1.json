@@ -1,0 +1,457 @@
+{
+  "status": "PASS_BOUNDED_DESIGN_WITH_EXPLICIT_CAPTURE_REQUIREMENTS_NOT_RUNTIME_ADMISSION",
+  "brief_sha256": "33b77ee4084d1002f2e02df8eed1fa209f2de8a3824e1e9947b3a2cd2110815a",
+  "authority_context": "Coordinator reports user continues original R2 objective without waiver; historical no-authority wording in planning brief does not override current assignment.",
+  "scientific_scope": "Single exposed failing left-padding fixture; token5 at physical full-prefix widths6 and8. Localizes earliest captured width-sensitive operation under equal corresponding operands; does not prove final-logit causality or a successful repair.",
+  "schedule": {
+    "actors": [
+      "unchanged candidate",
+      "untouched native reference"
+    ],
+    "widths": [
+      6,
+      8
+    ],
+    "target_physical_token": 5,
+    "actual_positions_each": 28,
+    "calls_each": 4,
+    "reservation_each": 64,
+    "both_role_reservations": 128,
+    "historical_positions": 1138144,
+    "prospective_lifetime_ceiling": 1138272,
+    "extra_baseline_calls_needed": 0
+  },
+  "historical_baseline_evidence": {
+    "journal": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/runs/cache-shape-matrix-producer-v1/calls.jsonl",
+    "journal_sha256": "bb85de12f45edc32e37ed31018d3aff1cdff227d4483ac230e27c1d70b75656d",
+    "calls": [
+      {
+        "actor": "candidate",
+        "call": 116,
+        "physical_width": 6,
+        "request": {
+          "ids": [
+            [
+              0,
+              0,
+              0,
+              750,
+              750,
+              5658
+            ]
+          ],
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ]
+          ],
+          "position_ids": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "cached": false,
+          "label": "heldout/length-1-left:candidate:baseline:full:1"
+        },
+        "boundary_hashes": {
+          "embedding": "147b8683e3adb6c37706a478537691cd3228b723c5240a370522e38307c68dcf",
+          "block": "a20e7a8a9dd6dc4e505afcffb79767c50570f2681d20192088ff318a56f2737d",
+          "final": "1cc53bb54fd704296774da50cc5bf9be67ba2bb2fc3bbac827c8e24dc7571825",
+          "logits": "f0eb39668d9ee929fd32dc3c0671638b8499e13a3e2e7c26f92e1759be5929ea"
+        },
+        "cache_hashes": [
+          "f974e6388390a6bd30585d295244a15549ade2b66736b85500e5ed2c68c1a429",
+          "fc7701218352f60d82045f70cab267367633bcc120487d75e7330efbd37c7875",
+          "428bf7b90f0a9edb7999f01b3f3a78f890480866315e810bf6a18b8935ddc736",
+          "0d0abb6176afe2d4b2beca2a025e25b6d1d5858225ac82735b3b00ff1c357bbd",
+          "178d6ea978e03591f25a758891c0abbeec2375e1429676eb005cdbc22d1d87fc",
+          "be1bc6d033386c0b3b8cfd35ef99ec1ecedd956156bd15bc9cc1afb9992d5073",
+          "495b2cbbe102a621ba6fa141e5f26735a35d2bbee18b3bae58e2be34a9f4ae32",
+          "b9631a79544086da8cb37a10c034e9d2ef472ff897fdb5f5d97ddb84c962cd43",
+          "75546f41302fc0ebad3d9afd3bbc936df2dc32ed15e77f91cdbd08a736789083",
+          "645d10ed0b93f70ba5359a7019231d374056e4b3f0dd9b6cbc5bbcb83d4b7b25",
+          "f9af3b52743854cfb84b6347c204a6ef14c9065c51826af7d51407d22064202c",
+          "2cd010b8d676a9cd58bfc5c09ba868251e8e174a2e3b217d3d10388ba475e5d7",
+          "12f44c1c3c19f8aa847ae49b0250ae4ecea808197a1b7dbdecebb7929bf22f31",
+          "dd488374a64fba57a02d8bc6cb16f6568605ff60febbf0765517444a01345da3",
+          "9340c3faf80edc5df12831f739c68f13c0ef3f23277d63c6d8f69a5dfbc8b4a5",
+          "e716ed03fd27f7609e305993cf211a82f9dbbbb1746b1161487877bacc93d025"
+        ]
+      },
+      {
+        "actor": "candidate",
+        "call": 120,
+        "physical_width": 8,
+        "request": {
+          "ids": [
+            [
+              0,
+              0,
+              0,
+              750,
+              750,
+              5658,
+              363,
+              2079
+            ]
+          ],
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          ],
+          "position_ids": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "cached": false,
+          "label": "heldout/length-1-left:candidate:baseline:full:3"
+        },
+        "boundary_hashes": {
+          "embedding": "9e3ff4436c7e491eac4430f7cce2f3933ddeb8ee16353ed9e85bbd12d17b9b67",
+          "block": "f1f9c9673eaee5336496938f2a1a48ba107641d54e7b6645872409b7f6dc295f",
+          "final": "98b32fa28946c1cbf18dc42606bd305c4b5fc8ca22b1952891f9113ccb572edc",
+          "logits": "89259d2881f3276cab574577b1c8be40f6bb621a556d1bba76dce10fafe89ad4"
+        },
+        "cache_hashes": [
+          "33fb33a1c0cb9cd0872f2918cf95eed244eb23576f030638d4adb5798505ab30",
+          "8825f0e50141f1e1ae6512b0f45addbec4ce8a198b56a040f289276df125dae4",
+          "96653e0951f4dba07119c13ad750a6ffddcbc1775f5fe7c67e6fab20e11394e1",
+          "c3aead17804111c645dc8f08f39ae6a01d0156def51140c7798bf7072370d481",
+          "ea6abd8e25d98391e035b1e4b267a2ace9227b935acbfc075c2b78ee8d2bca7f",
+          "dae524d4f9ca0bdbb0423aca1164a01fcc255d435a6ddaa73d4432b9823520e4",
+          "b4a9852f5cee74d65bb8433afacd3a1315bc3555423cd484d633d000dbc68894",
+          "4a33850e0ffe8ee2ec3f36665e4c84245b84272f8c8d3d6f317887599bc844e0",
+          "dfad4ce5d237ea1015e6709c6ec81201c286726625aac071ffc410c2590b3a09",
+          "eea637563bcbf752304aee37774e1293a22261148daa18ac18c5fec327c0ad78",
+          "e0a47d699ef8d1f8fe97c2aa57f6bace1dc1fc1be79a0eb92ecb409505ebee7c",
+          "3189465dedaec8f2a5d625fe92aa034cdae83a0abd1aa0830cc590106a779282",
+          "0b4e158eb3b34fa19cd458dc161edf0142ecc09a4a0201831c4974cf090cf0ae",
+          "ffa8bca6af18d82d7857d762c08a168a47a8f3f898c2954c1a94b3be69256f31",
+          "021c0de2fd4d15511b837ab1597fb7b29ebf84c000c2f7002d1179f9f6a811e5",
+          "1ec5685a416caa94f4c9ea7d3c70e2645ef8676a4a73736624208e7c3c1995f4"
+        ]
+      },
+      {
+        "actor": "native",
+        "call": 72,
+        "physical_width": 6,
+        "request": {
+          "ids": [
+            [
+              0,
+              0,
+              0,
+              750,
+              750,
+              5658
+            ]
+          ],
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ]
+          ],
+          "position_ids": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "cached": false,
+          "label": "heldout/length-1-left:native:baseline:full:1"
+        },
+        "boundary_hashes": {
+          "embedding": "147b8683e3adb6c37706a478537691cd3228b723c5240a370522e38307c68dcf",
+          "block": "a20e7a8a9dd6dc4e505afcffb79767c50570f2681d20192088ff318a56f2737d",
+          "final": "1cc53bb54fd704296774da50cc5bf9be67ba2bb2fc3bbac827c8e24dc7571825",
+          "logits": "f0eb39668d9ee929fd32dc3c0671638b8499e13a3e2e7c26f92e1759be5929ea"
+        },
+        "cache_hashes": [
+          "f974e6388390a6bd30585d295244a15549ade2b66736b85500e5ed2c68c1a429",
+          "fc7701218352f60d82045f70cab267367633bcc120487d75e7330efbd37c7875",
+          "428bf7b90f0a9edb7999f01b3f3a78f890480866315e810bf6a18b8935ddc736",
+          "0d0abb6176afe2d4b2beca2a025e25b6d1d5858225ac82735b3b00ff1c357bbd",
+          "178d6ea978e03591f25a758891c0abbeec2375e1429676eb005cdbc22d1d87fc",
+          "be1bc6d033386c0b3b8cfd35ef99ec1ecedd956156bd15bc9cc1afb9992d5073",
+          "495b2cbbe102a621ba6fa141e5f26735a35d2bbee18b3bae58e2be34a9f4ae32",
+          "b9631a79544086da8cb37a10c034e9d2ef472ff897fdb5f5d97ddb84c962cd43",
+          "75546f41302fc0ebad3d9afd3bbc936df2dc32ed15e77f91cdbd08a736789083",
+          "645d10ed0b93f70ba5359a7019231d374056e4b3f0dd9b6cbc5bbcb83d4b7b25",
+          "f9af3b52743854cfb84b6347c204a6ef14c9065c51826af7d51407d22064202c",
+          "2cd010b8d676a9cd58bfc5c09ba868251e8e174a2e3b217d3d10388ba475e5d7",
+          "12f44c1c3c19f8aa847ae49b0250ae4ecea808197a1b7dbdecebb7929bf22f31",
+          "dd488374a64fba57a02d8bc6cb16f6568605ff60febbf0765517444a01345da3",
+          "9340c3faf80edc5df12831f739c68f13c0ef3f23277d63c6d8f69a5dfbc8b4a5",
+          "e716ed03fd27f7609e305993cf211a82f9dbbbb1746b1161487877bacc93d025"
+        ]
+      },
+      {
+        "actor": "native",
+        "call": 74,
+        "physical_width": 8,
+        "request": {
+          "ids": [
+            [
+              0,
+              0,
+              0,
+              750,
+              750,
+              5658,
+              363,
+              2079
+            ]
+          ],
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          ],
+          "position_ids": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "cached": false,
+          "label": "heldout/length-1-left:native:baseline:full:3"
+        },
+        "boundary_hashes": {
+          "embedding": "9e3ff4436c7e491eac4430f7cce2f3933ddeb8ee16353ed9e85bbd12d17b9b67",
+          "block": "f1f9c9673eaee5336496938f2a1a48ba107641d54e7b6645872409b7f6dc295f",
+          "final": "98b32fa28946c1cbf18dc42606bd305c4b5fc8ca22b1952891f9113ccb572edc",
+          "logits": "89259d2881f3276cab574577b1c8be40f6bb621a556d1bba76dce10fafe89ad4"
+        },
+        "cache_hashes": [
+          "33fb33a1c0cb9cd0872f2918cf95eed244eb23576f030638d4adb5798505ab30",
+          "8825f0e50141f1e1ae6512b0f45addbec4ce8a198b56a040f289276df125dae4",
+          "96653e0951f4dba07119c13ad750a6ffddcbc1775f5fe7c67e6fab20e11394e1",
+          "c3aead17804111c645dc8f08f39ae6a01d0156def51140c7798bf7072370d481",
+          "ea6abd8e25d98391e035b1e4b267a2ace9227b935acbfc075c2b78ee8d2bca7f",
+          "dae524d4f9ca0bdbb0423aca1164a01fcc255d435a6ddaa73d4432b9823520e4",
+          "b4a9852f5cee74d65bb8433afacd3a1315bc3555423cd484d633d000dbc68894",
+          "4a33850e0ffe8ee2ec3f36665e4c84245b84272f8c8d3d6f317887599bc844e0",
+          "dfad4ce5d237ea1015e6709c6ec81201c286726625aac071ffc410c2590b3a09",
+          "eea637563bcbf752304aee37774e1293a22261148daa18ac18c5fec327c0ad78",
+          "e0a47d699ef8d1f8fe97c2aa57f6bace1dc1fc1be79a0eb92ecb409505ebee7c",
+          "3189465dedaec8f2a5d625fe92aa034cdae83a0abd1aa0830cc590106a779282",
+          "0b4e158eb3b34fa19cd458dc161edf0142ecc09a4a0201831c4974cf090cf0ae",
+          "ffa8bca6af18d82d7857d762c08a168a47a8f3f898c2954c1a94b3be69256f31",
+          "021c0de2fd4d15511b837ab1597fb7b29ebf84c000c2f7002d1179f9f6a811e5",
+          "1ec5685a416caa94f4c9ea7d3c70e2645ef8676a4a73736624208e7c3c1995f4"
+        ]
+      },
+      {
+        "actor": "reference",
+        "call": 89,
+        "physical_width": 6,
+        "request": {
+          "ids": [
+            [
+              0,
+              0,
+              0,
+              750,
+              750,
+              5658
+            ]
+          ],
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ]
+          ],
+          "position_ids": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "cached": false,
+          "label": "heldout/length-1-left:reference:baseline:full:1"
+        },
+        "boundary_hashes": {
+          "embedding": "147b8683e3adb6c37706a478537691cd3228b723c5240a370522e38307c68dcf",
+          "block": "a20e7a8a9dd6dc4e505afcffb79767c50570f2681d20192088ff318a56f2737d",
+          "final": "1cc53bb54fd704296774da50cc5bf9be67ba2bb2fc3bbac827c8e24dc7571825",
+          "logits": "f0eb39668d9ee929fd32dc3c0671638b8499e13a3e2e7c26f92e1759be5929ea"
+        },
+        "cache_hashes": [
+          "f974e6388390a6bd30585d295244a15549ade2b66736b85500e5ed2c68c1a429",
+          "fc7701218352f60d82045f70cab267367633bcc120487d75e7330efbd37c7875",
+          "428bf7b90f0a9edb7999f01b3f3a78f890480866315e810bf6a18b8935ddc736",
+          "0d0abb6176afe2d4b2beca2a025e25b6d1d5858225ac82735b3b00ff1c357bbd",
+          "178d6ea978e03591f25a758891c0abbeec2375e1429676eb005cdbc22d1d87fc",
+          "be1bc6d033386c0b3b8cfd35ef99ec1ecedd956156bd15bc9cc1afb9992d5073",
+          "495b2cbbe102a621ba6fa141e5f26735a35d2bbee18b3bae58e2be34a9f4ae32",
+          "b9631a79544086da8cb37a10c034e9d2ef472ff897fdb5f5d97ddb84c962cd43",
+          "75546f41302fc0ebad3d9afd3bbc936df2dc32ed15e77f91cdbd08a736789083",
+          "645d10ed0b93f70ba5359a7019231d374056e4b3f0dd9b6cbc5bbcb83d4b7b25",
+          "f9af3b52743854cfb84b6347c204a6ef14c9065c51826af7d51407d22064202c",
+          "2cd010b8d676a9cd58bfc5c09ba868251e8e174a2e3b217d3d10388ba475e5d7",
+          "12f44c1c3c19f8aa847ae49b0250ae4ecea808197a1b7dbdecebb7929bf22f31",
+          "dd488374a64fba57a02d8bc6cb16f6568605ff60febbf0765517444a01345da3",
+          "9340c3faf80edc5df12831f739c68f13c0ef3f23277d63c6d8f69a5dfbc8b4a5",
+          "e716ed03fd27f7609e305993cf211a82f9dbbbb1746b1161487877bacc93d025"
+        ]
+      },
+      {
+        "actor": "reference",
+        "call": 93,
+        "physical_width": 8,
+        "request": {
+          "ids": [
+            [
+              0,
+              0,
+              0,
+              750,
+              750,
+              5658,
+              363,
+              2079
+            ]
+          ],
+          "mask": [
+            [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          ],
+          "position_ids": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "cached": false,
+          "label": "heldout/length-1-left:reference:baseline:full:3"
+        },
+        "boundary_hashes": {
+          "embedding": "9e3ff4436c7e491eac4430f7cce2f3933ddeb8ee16353ed9e85bbd12d17b9b67",
+          "block": "f1f9c9673eaee5336496938f2a1a48ba107641d54e7b6645872409b7f6dc295f",
+          "final": "98b32fa28946c1cbf18dc42606bd305c4b5fc8ca22b1952891f9113ccb572edc",
+          "logits": "89259d2881f3276cab574577b1c8be40f6bb621a556d1bba76dce10fafe89ad4"
+        },
+        "cache_hashes": [
+          "33fb33a1c0cb9cd0872f2918cf95eed244eb23576f030638d4adb5798505ab30",
+          "8825f0e50141f1e1ae6512b0f45addbec4ce8a198b56a040f289276df125dae4",
+          "96653e0951f4dba07119c13ad750a6ffddcbc1775f5fe7c67e6fab20e11394e1",
+          "c3aead17804111c645dc8f08f39ae6a01d0156def51140c7798bf7072370d481",
+          "ea6abd8e25d98391e035b1e4b267a2ace9227b935acbfc075c2b78ee8d2bca7f",
+          "dae524d4f9ca0bdbb0423aca1164a01fcc255d435a6ddaa73d4432b9823520e4",
+          "b4a9852f5cee74d65bb8433afacd3a1315bc3555423cd484d633d000dbc68894",
+          "4a33850e0ffe8ee2ec3f36665e4c84245b84272f8c8d3d6f317887599bc844e0",
+          "dfad4ce5d237ea1015e6709c6ec81201c286726625aac071ffc410c2590b3a09",
+          "eea637563bcbf752304aee37774e1293a22261148daa18ac18c5fec327c0ad78",
+          "e0a47d699ef8d1f8fe97c2aa57f6bace1dc1fc1be79a0eb92ecb409505ebee7c",
+          "3189465dedaec8f2a5d625fe92aa034cdae83a0abd1aa0830cc590106a779282",
+          "0b4e158eb3b34fa19cd458dc161edf0142ecc09a4a0201831c4974cf090cf0ae",
+          "ffa8bca6af18d82d7857d762c08a168a47a8f3f898c2954c1a94b3be69256f31",
+          "021c0de2fd4d15511b837ab1597fb7b29ebf84c000c2f7002d1179f9f6a811e5",
+          "1ec5685a416caa94f4c9ea7d3c70e2645ef8676a4a73736624208e7c3c1995f4"
+        ]
+      }
+    ],
+    "finding": "Full matrix has both width6 and8 complete-call baseline boundaries and full-cache hashes. Prior narrower followup only had width4/8 full calls, but does not limit existing matrix evidence. Use candidate116/120 and native72/74. Reference-policy89/93 also agree because fullpath delegates to native."
+  },
+  "required_controls": [
+    "Pin exact input/mask/position prefix equality for first6 physical slots; token5 logical position2. Treat future slots6/7 as causally forbidden for query5, while first3 keys are padding with original finite additive mask. Do not change either mask convention.",
+    "Require all4 boundaries and16 returned-cache hashes for each call to equal its own historical matrix baseline, not merely suffix or tolerance agreement. Historical result/journal identities must be bound by packet. No new uninstrumented baseline forward necessary.",
+    "Observe original natural operations without rerunning primitive math or changing tensors. Freeze separate candidate/native capture mappings and prove no hook/dispatch leaks with synthetic tests. Preserve original shape,dtype,stride,offset metadata before clones.",
+    "Capture layer0 embedding/residual input, input RMS output, Q/K/V projection inputs/outputs, Q/K headnorm outputs, actual RoPE operands/results, raw QK and scaled scores, postcausal and postpadding masks, softmax probabilities, weighted-V output, output projection, residual addition, postattention RMS, MLP gate/up outputs, activation output, activation-times-up product, down projection and final residual/block output. If any stages are intentionally combined, narrow localization to that combined boundary.",
+    "Compare token5 and all first6 K/V slots as corresponding direct operands, not only query token. Retain extra masked columns and their probabilities. Require their probability values exactly zero before calling them inert; differing tensor width/layout remains a stated contrast even if corresponding values agree.",
+    "Scores may contain negative infinity only at exact expected causal-mask coordinates. Before masking require finite scores; after masking reject NaN,+Inf or unexpected -Inf, and verify every expected masked coordinate. Avoid subtracting -Inf from -Inf when computing finite metrics. Probabilities and all other captured values must be finite.",
+    "Use exact dtype/shape-aware uint8 comparison on aligned slices, plus unchanged numerical tolerance where meaningful. Never drop physical padded tokens or extra masked columns silently.",
+    "Attribute a first operation mismatch only after its corresponding direct inputs and parameters match. Earlier operand differences confound downstream attribution. Preserve independent conclusions per actor; agreement across actors is corroboration, not proof of a kernel cause.",
+    "Independent repeat compares every saved capture array and derives tokenwise findings independently. Stop this fixed discriminator on instrumentation/resource failure or after its result; original full-matrix failure is not relabelled."
+  ],
+  "resource_conditions": {
+    "role_seconds": 300,
+    "aggregate_model_seconds": 600,
+    "phase_seconds": 1800,
+    "threads": 2,
+    "owned_RSS_bytes": 8589934592,
+    "phase_disk_bytes": 536870912,
+    "combined_disk_bytes": 8589934592,
+    "free_reserve_bytes": 2147483648,
+    "history_requirement": "Ten immutable prior ledgers, including terminal followup, with snapshots and read-only locks; fresh bounded phase only.",
+    "measurement_requirement": "Preserve entry/completion live /proc and ru_maxrss, conservative final cap, no inherited-baseline subtraction. Explicit trace payload estimate and live capacity check before admission."
+  },
+  "unexecuted": [
+    "Final capture/source synthetic review",
+    "Exact policy/packet/history/live resource admission",
+    "All new model calls and diagnostic repeat"
+  ],
+  "model_calls": 0,
+  "next_action": "Implement the fixed28position/4call discriminator with historical fullwidth6+8 hash-fidelity controls, then submit exact candidate for independent admission. No additional control calls or larger reservation needed."
+}

@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "8a9e7e9d30103b380e5d6c62e6cc7d446d6258a63b918d3406f0d4475480a5ef",
+  "packet_path": "./evidence/transfer-002/runtime/static-producer-v3.packet.json",
+  "review_path": "./evidence/transfer-002/review/runtime-build-v3.json",
+  "review_sha256": "2db7d53149cf0c4469e514132acf5bbc1ef21cf8d81152b1414c8ab98ddd932d",
+  "reviewed_utc": "2026-11-18T19:19:39.884287+00:00",
+  "scope": "static-producer-v3",
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=./src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 /usr/bin/python -m minimind_re.transfer.run --packet ./evidence/transfer-002/runtime/static-producer-v3.packet.json --admission ./evidence/transfer-002/review/admission-static-producer-v3.json",
+  "conditions": [
+    "Execute serially using the supervised CLI. Preserve all failures.",
+    "No packet/code/fixture modification or hidden additional model calls.",
+    "Independent role must be executed by independent assigned verifier."
+  ]
+}

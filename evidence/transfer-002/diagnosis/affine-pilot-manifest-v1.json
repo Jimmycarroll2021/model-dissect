@@ -1,0 +1,25 @@
+{
+  "status": "READY_FOR_REVIEW_NOT_ADMITTED",
+  "packet": "./evidence/transfer-002/diagnosis/affine-pilot-v1.packet.json",
+  "packet_sha256": "c35f0e76b03ecb3d94567af659c6e67fc2288b73b5a7b8d588d7e3b96a10e459",
+  "files": {
+    "./src/minimind_re/transfer/affine_reference.py": "1189cfae38ba3c48aa602115279d7c6c4480d93d02582e05ec417d2cda00acc6",
+    "./src/minimind_re/transfer/affine_pilot.py": "faccb0cc61b94b7936030cd44acfd537664d3ba6d19fca17725962ff375bd364",
+    "./src/minimind_re/transfer/affine_candidate.py": "aefe4086d236b8284dd87b63169dea8081bac31a10a573200d921fa34b3b0bf1",
+    "./tests/transfer/test_affine_reference.py": "0ec30e1f7c6f2eeeb04840dbcc0095220f56362d2adfc772ff27ecd5c38106cc",
+    "./evidence/transfer-002/diagnosis/affine-reference-tests-v1.txt": "b53259bd86e22aed8353e64f6b1a7eee345cdd4d075a67fe7640c93f87002f56"
+  },
+  "tests": "3 synthetic native patch tests pass:2D/3D primitive geometry equality, row consistency, normal/error/partial-setup restoration",
+  "independence": "Native author did not read candidate mode implementation; interface and source hash supplied by coordinator",
+  "scope": "QKV affine replacement only, all6layers; native operations outside QKV unchanged; genuine caches retained",
+  "gates": [
+    "27cross rows",
+    "18cache-full rows",
+    "36original native prefill/full anchor rows",
+    "finite/full-shape and incoming/returned cache prefix invariants",
+    "exact real-token logits argmax"
+  ],
+  "calls": 6,
+  "positions": 8,
+  "target_loaded": false
+}

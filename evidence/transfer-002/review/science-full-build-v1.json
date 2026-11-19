@@ -1,0 +1,59 @@
+{
+  "verdict": "PASS_FULL_PREFILL_SCIENCE_BUILD_SERIALIZATION",
+  "reviewed_utc": "2026-11-18T20:07:32.032230+00:00",
+  "checks": {
+    "manifest_identity": true,
+    "all_files": true,
+    "original_protocol_unchanged": true,
+    "real_serialization": true,
+    "actual389calls12448positions": true,
+    "heldout_order": true,
+    "48paired_baselines864arrays": true,
+    "within1GiB": true,
+    "supervised_success": true
+  },
+  "source_sha256": "f045b70c8101f8485db97e844fb5804e08da6390b4b67385f820cd397c27973f",
+  "serialization": {
+    "pass": true,
+    "calls": 389,
+    "positions": 12448,
+    "heldout_reveal_calls": 195,
+    "paired_checks": 48,
+    "paired_saved_arrays": 864,
+    "npy_files": 1271,
+    "npy_payload_bytes": 712620544,
+    "serialized_total_bytes": 713482447,
+    "verdict": "INCONCLUSIVE_NO_ELIGIBLE_CONTRAST",
+    "elapsed_seconds": 10.598075044923462,
+    "serialization": "Real numpy.save/numpy.load with no monkeypatches; all arrays finite and paired hashes checked"
+  },
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 590864384,
+    "elapsed": 11.725145986070856,
+    "added_disk_bytes": 713482447,
+    "total_phase_disk_bytes": 713482447,
+    "packet_disk_limit": 1073741824,
+    "phase_disk_limit": 1073741824
+  },
+  "serialization_receipt_sha256": "c1b0bca5a6c7d18fde55b33ed53b58f48b8f51026ff1e90560e5197db2519f9d",
+  "synthetic_outputs": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/review-synthetic/science-full-build-v1",
+  "source_findings": [
+    "Every actual forward has separate guard.call32 and past_key_valuesNone; returned caches never reused.",
+    "48baseline index pairs precede corresponding interventions; actual heldout request occurs after195calls and durable selection.json.",
+    "All9boundaries all32rows and all50304logits compared as FP32 finite with original tolerance and exact logits top1; pads included.",
+    "Native/candidate paired raw arrays persist before paired-parity validation and failure.",
+    "Original science metrics/control/selection/verdict code unchanged; native intervention effects are not claimed candidate-intervention equivalence.",
+    "Native340 + candidate49 =389calls; strict cache/full T2 remains failed outside this supported slice."
+  ],
+  "environment_findings": [
+    "Initial nonexistent disk-root supervisor attempt stopped before synthetic execution; corrected path then root-filesystem2GiB reserve rejected before work.",
+    "Root filesystem free1785638912bytes; retained guard free-space stop receipt. New synthetic arrays relocated to EXTERNAL_ARTIFACT_ROOT with coordinator approval; no existing output moved."
+  ],
+  "limits": [
+    "Full execution used fake adapters and zero synthetic tensors, no target model/tokenizer/weights.",
+    "This proves serialization/schedule/baseline gates on synthetic inputs, not target science outcomes or timing.",
+    "Exact runtime packet/admission still required. Native intervention raw finite check behavior remains inherited from previously reviewed science source."
+  ]
+}

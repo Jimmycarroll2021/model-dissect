@@ -1,0 +1,1961 @@
+[
+  {
+    "id": "mech-heldout-copying-00",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-0",
+    "text": "原文是“金”。仅抄写引号里的一个字。\n抄写：",
+    "answer": "金",
+    "foil": "土",
+    "input_ids": [
+      [
+        1184,
+        574,
+        357,
+        683,
+        1265,
+        2506,
+        977,
+        436,
+        262,
+        1226,
+        1194,
+        1575,
+        852,
+        4637,
+        702,
+        302,
+        234,
+        436,
+        262,
+        1226,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    ],
+    "expected_id": 1265,
+    "foil_id": 3024,
+    "last_real_position": 20
+  },
+  {
+    "id": "mech-heldout-copying-01",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-1",
+    "text": "单字复制任务。输入：土\n输出：",
+    "answer": "土",
+    "foil": "天",
+    "input_ids": [
+      [
+        1066,
+        702,
+        924,
+        682,
+        1740,
+        302,
+        1776,
+        337,
+        3024,
+        234,
+        1958,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "expected_id": 3024,
+    "foil_id": 993,
+    "last_real_position": 11
+  },
+  {
+    "id": "mech-heldout-copying-02",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-2",
+    "text": "请回显下列单字：天\n回显结果：",
+    "answer": "天",
+    "foil": "地",
+    "input_ids": [
+      [
+        960,
+        1055,
+        1694,
+        504,
+        872,
+        1066,
+        702,
+        337,
+        993,
+        234,
+        1055,
+        1694,
+        1656,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ],
+    "expected_id": 993,
+    "foil_id": 553,
+    "last_real_position": 13
+  },
+  {
+    "id": "mech-heldout-copying-03",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-3",
+    "text": "不要改写，只复述这个汉字：地\n复述：",
+    "answer": "地",
+    "foil": "人",
+    "input_ids": [
+      [
+        3428,
+        1168,
+        1226,
+        294,
+        1547,
+        924,
+        1050,
+        904,
+        4703,
+        702,
+        337,
+        553,
+        234,
+        924,
+        1050,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "expected_id": 553,
+    "foil_id": 447,
+    "last_real_position": 15
+  },
+  {
+    "id": "mech-heldout-copying-04",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-0",
+    "text": "原文是“人”。仅抄写引号里的一个字。\n抄写：",
+    "answer": "人",
+    "foil": "心",
+    "input_ids": [
+      [
+        1184,
+        574,
+        357,
+        683,
+        447,
+        2506,
+        977,
+        436,
+        262,
+        1226,
+        1194,
+        1575,
+        852,
+        4637,
+        702,
+        302,
+        234,
+        436,
+        262,
+        1226,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    ],
+    "expected_id": 447,
+    "foil_id": 795,
+    "last_real_position": 20
+  },
+  {
+    "id": "mech-heldout-copying-05",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-1",
+    "text": "单字复制任务。输入：心\n输出：",
+    "answer": "心",
+    "foil": "手",
+    "input_ids": [
+      [
+        1066,
+        702,
+        924,
+        682,
+        1740,
+        302,
+        1776,
+        337,
+        795,
+        234,
+        1958,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "expected_id": 795,
+    "foil_id": 1151,
+    "last_real_position": 11
+  },
+  {
+    "id": "mech-heldout-copying-06",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-2",
+    "text": "请回显下列单字：手\n回显结果：",
+    "answer": "手",
+    "foil": "口",
+    "input_ids": [
+      [
+        960,
+        1055,
+        1694,
+        504,
+        872,
+        1066,
+        702,
+        337,
+        1151,
+        234,
+        1055,
+        1694,
+        1656,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ],
+    "expected_id": 1151,
+    "foil_id": 1572,
+    "last_real_position": 13
+  },
+  {
+    "id": "mech-heldout-copying-07",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-3",
+    "text": "不要改写，只复述这个汉字：口\n复述：",
+    "answer": "口",
+    "foil": "目",
+    "input_ids": [
+      [
+        3428,
+        1168,
+        1226,
+        294,
+        1547,
+        924,
+        1050,
+        904,
+        4703,
+        702,
+        337,
+        1572,
+        234,
+        924,
+        1050,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "expected_id": 1572,
+    "foil_id": 723,
+    "last_real_position": 15
+  },
+  {
+    "id": "mech-heldout-copying-08",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-0",
+    "text": "原文是“目”。仅抄写引号里的一个字。\n抄写：",
+    "answer": "目",
+    "foil": "耳",
+    "input_ids": [
+      [
+        1184,
+        574,
+        357,
+        683,
+        723,
+        2506,
+        977,
+        436,
+        262,
+        1226,
+        1194,
+        1575,
+        852,
+        4637,
+        702,
+        302,
+        234,
+        436,
+        262,
+        1226,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    ],
+    "expected_id": 723,
+    "foil_id": 5912,
+    "last_real_position": 20
+  },
+  {
+    "id": "mech-heldout-copying-09",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-1",
+    "text": "单字复制任务。输入：耳\n输出：",
+    "answer": "耳",
+    "foil": "大",
+    "input_ids": [
+      [
+        1066,
+        702,
+        924,
+        682,
+        1740,
+        302,
+        1776,
+        337,
+        5912,
+        234,
+        1958,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "expected_id": 5912,
+    "foil_id": 565,
+    "last_real_position": 11
+  },
+  {
+    "id": "mech-heldout-copying-10",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-2",
+    "text": "请回显下列单字：大\n回显结果：",
+    "answer": "大",
+    "foil": "小",
+    "input_ids": [
+      [
+        960,
+        1055,
+        1694,
+        504,
+        872,
+        1066,
+        702,
+        337,
+        565,
+        234,
+        1055,
+        1694,
+        1656,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ],
+    "expected_id": 565,
+    "foil_id": 700,
+    "last_real_position": 13
+  },
+  {
+    "id": "mech-heldout-copying-11",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-3",
+    "text": "不要改写，只复述这个汉字：小\n复述：",
+    "answer": "小",
+    "foil": "上",
+    "input_ids": [
+      [
+        3428,
+        1168,
+        1226,
+        294,
+        1547,
+        924,
+        1050,
+        904,
+        4703,
+        702,
+        337,
+        700,
+        234,
+        924,
+        1050,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "expected_id": 700,
+    "foil_id": 562,
+    "last_real_position": 15
+  },
+  {
+    "id": "mech-heldout-copying-12",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-0",
+    "text": "原文是“上”。仅抄写引号里的一个字。\n抄写：",
+    "answer": "上",
+    "foil": "下",
+    "input_ids": [
+      [
+        1184,
+        574,
+        357,
+        683,
+        562,
+        2506,
+        977,
+        436,
+        262,
+        1226,
+        1194,
+        1575,
+        852,
+        4637,
+        702,
+        302,
+        234,
+        436,
+        262,
+        1226,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    ],
+    "expected_id": 562,
+    "foil_id": 504,
+    "last_real_position": 20
+  },
+  {
+    "id": "mech-heldout-copying-13",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-1",
+    "text": "单字复制任务。输入：下\n输出：",
+    "answer": "下",
+    "foil": "左",
+    "input_ids": [
+      [
+        1066,
+        702,
+        924,
+        682,
+        1740,
+        302,
+        1776,
+        337,
+        504,
+        234,
+        1958,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "expected_id": 504,
+    "foil_id": 4363,
+    "last_real_position": 11
+  },
+  {
+    "id": "mech-heldout-copying-14",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-2",
+    "text": "请回显下列单字：左\n回显结果：",
+    "answer": "左",
+    "foil": "右",
+    "input_ids": [
+      [
+        960,
+        1055,
+        1694,
+        504,
+        872,
+        1066,
+        702,
+        337,
+        4363,
+        234,
+        1055,
+        1694,
+        1656,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ],
+    "expected_id": 4363,
+    "foil_id": 4048,
+    "last_real_position": 13
+  },
+  {
+    "id": "mech-heldout-copying-15",
+    "split": "heldout",
+    "category": "copying",
+    "template_id": "heldout-copy-3",
+    "text": "不要改写，只复述这个汉字：右\n复述：",
+    "answer": "右",
+    "foil": "金",
+    "input_ids": [
+      [
+        3428,
+        1168,
+        1226,
+        294,
+        1547,
+        924,
+        1050,
+        904,
+        4703,
+        702,
+        337,
+        4048,
+        234,
+        924,
+        1050,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "expected_id": 4048,
+    "foil_id": 1265,
+    "last_real_position": 15
+  },
+  {
+    "id": "mech-heldout-unrelated-00",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-0",
+    "text": "“高”的反义词是：",
+    "answer": "低",
+    "foil": "长",
+    "input_ids": [
+      [
+        683,
+        564,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 1488,
+    "foil_id": 861,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-01",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-1",
+    "text": "“冷”的反义词是：",
+    "answer": "热",
+    "foil": "红",
+    "input_ids": [
+      [
+        683,
+        2929,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 1835,
+    "foil_id": 2432,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-02",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-2",
+    "text": "“黑”的反义词是：",
+    "answer": "白",
+    "foil": "绿",
+    "input_ids": [
+      [
+        683,
+        3117,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 2178,
+    "foil_id": 2348,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-03",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-3",
+    "text": "“远”的反义词是：",
+    "answer": "近",
+    "foil": "重",
+    "input_ids": [
+      [
+        683,
+        1797,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 2044,
+    "foil_id": 637,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-04",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-4",
+    "text": "“长”的反义词是：",
+    "answer": "短",
+    "foil": "轻",
+    "input_ids": [
+      [
+        683,
+        861,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 2417,
+    "foil_id": 1519,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-05",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-5",
+    "text": "“快”的反义词是：",
+    "answer": "慢",
+    "foil": "新",
+    "input_ids": [
+      [
+        683,
+        1316,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 3758,
+    "foil_id": 640,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-06",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-6",
+    "text": "“新”的反义词是：",
+    "answer": "旧",
+    "foil": "宽",
+    "input_ids": [
+      [
+        683,
+        640,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 6094,
+    "foil_id": 3933,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-07",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-7",
+    "text": "“开”的反义词是：",
+    "answer": "关",
+    "foil": "甜",
+    "input_ids": [
+      [
+        683,
+        727,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 629,
+    "foil_id": 5862,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-08",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-8",
+    "text": "“多”的反义词是：",
+    "answer": "少",
+    "foil": "酸",
+    "input_ids": [
+      [
+        683,
+        590,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 962,
+    "foil_id": 3478,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-09",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-9",
+    "text": "“浅”的反义词是：",
+    "answer": "深",
+    "foil": "高",
+    "input_ids": [
+      [
+        683,
+        520,
+        263,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    ],
+    "expected_id": 1094,
+    "foil_id": 564,
+    "last_real_position": 9
+  },
+  {
+    "id": "mech-heldout-unrelated-10",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-10",
+    "text": "“软”的反义词是：",
+    "answer": "硬",
+    "foil": "白",
+    "input_ids": [
+      [
+        683,
+        1722,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 2992,
+    "foil_id": 2178,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-11",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-11",
+    "text": "“胜”的反义词是：",
+    "answer": "败",
+    "foil": "圆",
+    "input_ids": [
+      [
+        683,
+        5530,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 4698,
+    "foil_id": 3577,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-12",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-12",
+    "text": "“真”的反义词是：",
+    "answer": "假",
+    "foil": "远",
+    "input_ids": [
+      [
+        683,
+        2131,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 2094,
+    "foil_id": 1797,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-13",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-13",
+    "text": "“买”的反义词是：",
+    "answer": "卖",
+    "foil": "站",
+    "input_ids": [
+      [
+        683,
+        2222,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 5253,
+    "foil_id": 1686,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-14",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-14",
+    "text": "“进”的反义词是：",
+    "answer": "退",
+    "foil": "坐",
+    "input_ids": [
+      [
+        683,
+        538,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 4162,
+    "foil_id": 4308,
+    "last_real_position": 8
+  },
+  {
+    "id": "mech-heldout-unrelated-15",
+    "split": "heldout",
+    "category": "unrelated",
+    "template_id": "heldout-fact-15",
+    "text": "“生”的反义词是：",
+    "answer": "死",
+    "foil": "亮",
+    "input_ids": [
+      [
+        683,
+        486,
+        684,
+        296,
+        1133,
+        1136,
+        1474,
+        357,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "expected_id": 5998,
+    "foil_id": 3359,
+    "last_real_position": 8
+  }
+]

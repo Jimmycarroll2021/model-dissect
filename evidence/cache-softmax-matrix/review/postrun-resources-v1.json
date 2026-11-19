@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "stage_bytes": 4035646419,
+  "phase_disk_cap_bytes": 4294967296,
+  "combined_disk_check": "PASS_12GiB",
+  "free_bytes": 60860051456,
+  "all_history_hashes_unchanged": true,
+  "run_pids_alive": [],
+  "active_rows": []
+}

@@ -1,0 +1,36 @@
+{
+  "status": "SCOPE_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+  "scope": "FULL-PREFILL-SLICE-v1",
+  "strict_T2": "FAILED_PRESERVED",
+  "prior_files": {
+    "specs/002-model-transfer/spec.md": "5c509af8c0b8689a6cc0c4f5e4c9199f3ed4aa0206b876d2c5d69dba577e8e16",
+    "specs/002-model-transfer/plan.md": "2ab40a546147d36a709a865af58b23cf6bd7d113b9b544f9018afec5a797d021",
+    "specs/002-model-transfer/tasks.md": "24b30de84d336a58c83b64348a0e0cec9acbbab68b0c16cc4cbb2929f93d3c8e",
+    "specs/002-model-transfer/internal-protocol-proposal.md": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+    "specs/002-model-transfer/quickstart.md": "ab4aec48eb57632510067c5e652bf1f61e105b965a39a237efa6675c3ed6f3c0"
+  },
+  "prior_snapshots": {
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-spec.md": "5c509af8c0b8689a6cc0c4f5e4c9199f3ed4aa0206b876d2c5d69dba577e8e16",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-plan.md": "2ab40a546147d36a709a865af58b23cf6bd7d113b9b544f9018afec5a797d021",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-tasks.md": "24b30de84d336a58c83b64348a0e0cec9acbbab68b0c16cc4cbb2929f93d3c8e",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-internal-protocol-proposal.md": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-quickstart.md": "ab4aec48eb57632510067c5e652bf1f61e105b965a39a237efa6675c3ed6f3c0"
+  },
+  "amended_files": {
+    "specs/002-model-transfer/spec.md": "127d35c7a5def1ae7e7833953a235ef22b73d1b6e8f5b01bcfe270d368ff1834",
+    "specs/002-model-transfer/plan.md": "7bbf7ba12e7289991274fe83b4371f1998b032c1931faa503f44a68e06aa4a66",
+    "specs/002-model-transfer/tasks.md": "1cafa5749c5725ba4b92eb1a1b718d356b2a25459de6db1609b1ecf9462be3c2",
+    "specs/002-model-transfer/internal-protocol-proposal.md": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454",
+    "specs/002-model-transfer/quickstart.md": "42c876272a5c758597112203abc23eac2c3b84d2cef8b97ac9d9670117cdeec2"
+  },
+  "thresholds_and_fixtures": "unchanged",
+  "cache_repair_branches": "stopped_not_promoted",
+  "per_role": {
+    "calls": 389,
+    "actual_positions": 12448,
+    "reserved_positions": 12500,
+    "disk_bytes": 1073741824,
+    "seconds_provisional": 300
+  },
+  "guard_source_ledger_changes": false
+}

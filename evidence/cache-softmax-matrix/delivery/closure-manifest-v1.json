@@ -1,0 +1,52 @@
+{
+  "schema": "closure-overlay-v1",
+  "status": "PENDING_INDEPENDENT_CLOSURE_VERIFICATION_NATIVE_TOOL_CONFIRMATION",
+  "controller_accepted": true,
+  "reviewed_delivery_manifest": {
+    "path": "./evidence/cache-softmax-matrix/delivery/final-manifest-v1.json",
+    "sha256": "6253df406308997d535ab54c9e928a8ba716b6d8f3607673f5d8675d5053a9cd",
+    "unchanged": true
+  },
+  "acceptance_receipt": {
+    "path": "./evidence/goal-coverage/whole-objective-review-v2.json",
+    "sha256": "3c8b24d85027f656c139964152a668fa705d394a6c1dd9e0b84e56fd6b6b610f"
+  },
+  "overlay_scope": "Only tasks.md among reviewed delivery files changed; other entries are mutable coordination/coverage records. Scientific sources/artifacts and original manifest remain unchanged.",
+  "reviewed_delivery_overrides": [
+    {
+      "path": "./specs/001-minimind-reproduction/tasks.md",
+      "before_sha256": "a53e61ed5e2fdc5082474496ae726110095e620e10b4e93d0b1ee7f39e7d41be",
+      "after_sha256": "0609254b6440ba61f51fbda15f464c62c8174f0b5615a64cada82a2d80d82903",
+      "change": "T121 checkbox and closure sentence only",
+      "snapshot_path": "./evidence/cache-softmax-matrix/delivery/pre-closure-tasks-v1.md",
+      "snapshot_sha256": "a53e61ed5e2fdc5082474496ae726110095e620e10b4e93d0b1ee7f39e7d41be"
+    }
+  ],
+  "changed_status_files": [
+    {
+      "path": "./specs/001-minimind-reproduction/tasks.md",
+      "sha256": "0609254b6440ba61f51fbda15f464c62c8174f0b5615a64cada82a2d80d82903"
+    },
+    {
+      "path": "./TASK_STATE.md",
+      "sha256": "2352c53cd4d789ffa15c08329181a5154010479e435e67a7b414cf052ab2d1d7"
+    },
+    {
+      "path": "./CASE_FACTS.md",
+      "sha256": "b132bb1445c68e79e02951c2e235f5717683eaf40d01b97c21c7864df351b29e"
+    },
+    {
+      "path": "./docs/reverse-engineering-goal.md",
+      "sha256": "a735f8924c81ba823ba80ab5cdf565fbc67817506a99a8b23c3edd8ee83167e0"
+    },
+    {
+      "path": "./evidence/goal-coverage/current-audit.md",
+      "sha256": "cec4e529cd65b7807ba61e01111985b2c5ac8f6b8ff0257ccfcf337294f1e8d0"
+    },
+    {
+      "path": "./evidence/goal-coverage/current-audit.json",
+      "sha256": "addbcab0d8cc265171452213f9453d3036f039a6cb21863823256b0c3e749456"
+    }
+  ],
+  "native_goal_complete_confirmed": false
+}

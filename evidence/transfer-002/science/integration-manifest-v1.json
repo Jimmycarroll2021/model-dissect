@@ -1,0 +1,51 @@
+{
+  "status": "integration_prepared_pending_independent_admission",
+  "files": {
+    "src/minimind_re/transfer/science_run.py": "f398f52846d88ce67919354f302644f91e28fab7921f8b3c60fc4efbc0b9c7f9",
+    "tests/transfer/test_science_integration.py": "701449d7645f319c894c2def92e0151ed79e61cbc57c512c44dddc67ed52167d",
+    "evidence/transfer-002/science/integration-tests-v1.txt": "5039f8b6f0a99efa21750b32869425f7deed32f55df6376bc8bb2f9231bcfcd2",
+    "evidence/transfer-002/science/integration-tests-v2.txt": "a76880568a1b729fa071cd564adc5ed9377d2890150f66b0b296e06963cc5bab",
+    "evidence/transfer-002/science/fixture-freeze-v1.packet.json": "d74bc71e5ffe4e3e9e425dd2b694e08973ceccfd2f29b6a70b3fd72c76e5ff65",
+    "evidence/transfer-002/science/science-producer-v1.packet-template.json": "aec710fa63fd583c92484842146a1f9fdc44301c910fc7019a482fde508bb87c",
+    "evidence/transfer-002/science/science-independent-v1.packet-template.json": "8fb0522b10fc428cf1602c95ff12b17f56f67706bb2d16c4d64632f6dbbd8f47"
+  },
+  "tests": "3 passed; fake tokenizer and full341-call fake-adapter schedule; NumPy array writes stubbed in this integration test",
+  "target_tokenizer_loaded": false,
+  "target_model_loaded": false,
+  "fixture_freeze_executed": false,
+  "science_executed": false,
+  "guard_reuse": "unchanged transfer-guard-v3; zero-position fixture freeze uses stage static, operation fixture_freeze",
+  "phase_root": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase",
+  "resource_allocations": {
+    "fixture_freeze": {
+      "positions": 0,
+      "seconds": 120,
+      "disk_bytes": 16777216
+    },
+    "science_each_role": {
+      "reserved_positions": 11000,
+      "actual_positions": 10912,
+      "calls": 341,
+      "seconds": 300,
+      "disk_bytes": 134217728
+    }
+  },
+  "fixture_loader": "tokenizers.Tokenizer.from_file(original/tokenizer.json), no_padding/no_truncation, encode(add_special_tokens=False); no network/remote code",
+  "parameter_digest": "SHA256 framed name/shape/dtype metadata and contiguous CPU parameter bytes in named_parameters order",
+  "commands": {
+    "freeze": "PYTHONPATH=src python -m minimind_re.transfer.science_run --packet evidence/transfer-002/science/fixture-freeze-v1.packet.json --admission <independent-freeze-admission.json>",
+    "science": "PYTHONPATH=src python -m minimind_re.transfer.science_run --packet <finalized-science-role.packet.json> --admission <independent-exact-admission.json>"
+  },
+  "required_next": [
+    "Independent integration review of exact fixture freeze packet/source before tokenization",
+    "Serialize fixture freeze with existing active numerical process via coordinator and same phase guard",
+    "Independently verify tokenizer fixture receipt then fill science template canonical/file hashes and bind final receipts",
+    "Reconcile120s fixture reservation with existing phase ledger; no reset or overwritten admission",
+    "Require numerical T2 and exact scientific admission before model execution"
+  ],
+  "limits": [
+    "Full synthetic schedule test stubs NumPy writes; separate science-build review supplied real serialization accounting",
+    "No actual tokenizer-derived arrays exist yet",
+    "Template science packets explicitly rejected at runtime until finalized"
+  ]
+}

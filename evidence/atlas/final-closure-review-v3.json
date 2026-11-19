@@ -1,0 +1,44 @@
+{
+  "status": "PASS_FINAL_V3_METADATA_CLOSURE",
+  "reviewer": "/root/atlas_guard_verify",
+  "created_epoch": 1794954582.0833793,
+  "accepted_candidate_manifest_sha256": "73cb5ce7dbba394997b12ca81d8daa2b332fc30347815068d06b11e52c6d21f4",
+  "controller_acceptance_sha256": "2c93813c672c2f2361e2321562aac4213e88dccfbf14e280c5ed0739bcd563e3",
+  "scientific_review_sha256": "fc68791207e80506cfc3bf246000915f417e9fc6bb00e76463735a42c78dc7a9",
+  "checks": {
+    "all31_file_identities": "PASS",
+    "same31_paths": "PASS",
+    "other27_artifacts_unchanged": "PASS",
+    "four_exact_diffs": "PASS: reversed only enumerated status/heading/link changes recovers every v2 hash",
+    "current_A1_A6_status_and_review_links": "PASS",
+    "historical_checkpoints_labelled": "PASS",
+    "native_goal_tool_state_not_falsely_asserted": "PASS",
+    "v1_v2_manifests_preserved": "PASS"
+  },
+  "changed_files": [
+    {
+      "path": "./docs/atlas-goal.md",
+      "sha256": "13e9e03764340de9bc86117bc1ddaf5b4f88667fbbf82b98dbb2325d09afee73"
+    },
+    {
+      "path": "./docs/weight-atlas-result.md",
+      "sha256": "57ca7c45f503fc0a8d4478d07eefed6885f71fde86b0caa5d7ceba058f1d5cdb"
+    },
+    {
+      "path": "./docs/weight-dissection-result.md",
+      "sha256": "4b9517d8281e9130aa749382204c245237583aa7d5254c16ef3159adf7fe5ad3"
+    },
+    {
+      "path": "./specs/001-minimind-reproduction/tasks.md",
+      "sha256": "53491d5f92230132c63087e0d0a168b953f80a982bec075b40be5a27303059cd"
+    }
+  ],
+  "unresolved_blockers": [],
+  "acceptance": "A1\u2013A6 accepted scientific candidate retained unchanged; v3 is final accepted delivery candidate with corrected current-status metadata.",
+  "next_action": "Coordinator may now complete native goal. No further document, scientific, implementation or runtime work required.",
+  "limits": [
+    "Metadata-only review; no new scientific review, model/tokenizer execution or tests",
+    "Native goal tool completion is not performed or asserted by this receipt"
+  ],
+  "supersedes_status_of": "final-closure-review.json; preserved previous receipt"
+}

@@ -1,0 +1,80 @@
+{
+  "verdict": "PASS_INDEPENDENT_FULL_PREFILL_SCIENCE_REPEAT",
+  "reviewed_utc": "2026-11-18T20:19:37.271100+00:00",
+  "checks": {
+    "all_output_paths": true,
+    "all_output_file_bytes": true,
+    "all_saved_arrays_finite_fp32": true,
+    "432_fullbaseline_comparisons": true,
+    "paired_raw_hashes": true,
+    "all56metric_rows_independent_numpy": true,
+    "matched_controls": true,
+    "selection_recomputed": true,
+    "heldout_verdict_recomputed": true,
+    "all341protocol_raw_hashes": true,
+    "heldout_noop_restored_raw": true,
+    "integrity_receipts": true,
+    "original_artifacts_current": true,
+    "389charged_calls12448positions": true,
+    "supervisor": true,
+    "all56_edit_deltas_recomputed": true,
+    "actual_input_trace_9boundaries": true
+  },
+  "file_count": 1531,
+  "npy_files": 1271,
+  "array_payload_bytes": 712620544,
+  "file_mismatches": [],
+  "recomputed": {
+    "selected_layer": 4,
+    "development_medians": {
+      "0": -0.0013433108711055045,
+      "1": -0.001771270708640687,
+      "2": -0.008211938883261183,
+      "3": 0.5879418706622634,
+      "4": 0.77523036393181
+    },
+    "heldout_denominator": 16,
+    "eligible": 16,
+    "positive_bidirectional": 16,
+    "median_target_primary": 0.7104862948449367,
+    "median_paired_advantage": 0.7731329964950664,
+    "verdict": "SUPPORTED_BOUNDED_BLOCK_EFFECT"
+  },
+  "summary_sha256": "cf6506d43585c39820fbe66c3fef5d74ec31753de222c3fe8bc8edb3f230bffc",
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 1046962176,
+    "elapsed": 257.6245953049511,
+    "added_disk_bytes": 713906545,
+    "total_phase_disk_bytes": 9054120798,
+    "packet_disk_limit": 1073741824,
+    "phase_disk_limit": 25769803776
+  },
+  "ledger_finish": {
+    "actual_positions": 12448,
+    "elapsed": 256.03452159289736,
+    "event": "finish",
+    "inherited_self_rusage_highwater_bytes": 1065537536,
+    "run_id": "science-full-independent-v2",
+    "sampled_owned_tree_rss_bytes": 1046962176,
+    "status": "completed",
+    "time": 1795033155.081403,
+    "version": "transfer-guard-v3"
+  },
+  "parameter_digest": "840cc362e2f0e1ad64eaba6a1fd1793cdbba1c14d0faec04849e3aded1b9b975",
+  "provenance_overlay": {
+    "summary_protocol_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+    "meaning": "Legacy original scientific-protocol identifier retained in unchanged science.py; does not hash the amended live document.",
+    "admitted_amended_protocol_sha256": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454",
+    "packet_sha256": "463504497826e93ecb2a77715668c3f24316bfd6f77dcb0d01fa43a4f5b5b22b",
+    "scope": "Full-prefill supported slice only; strict cache/full T2 FAIL unchanged. Executed artifacts not rewritten."
+  },
+  "limits": [
+    "Independent repetition uses identical frozen fixtures, not a new out-of-distribution population.",
+    "Intervention effects verified on native execution; candidate intervention equivalence not established.",
+    "In-memory parameter integrity is recorded by admitted runner; current checkpoint/artifact hashes independently rechecked.",
+    "No strict transfer completion claim."
+  ],
+  "audit_script_sha256": "923fb0e74e03783afb74541ea6b0ca259adb4642b907c797faca484cbb59cb46"
+}

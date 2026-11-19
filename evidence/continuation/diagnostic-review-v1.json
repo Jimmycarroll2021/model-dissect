@@ -1,0 +1,31 @@
+{
+  "status": "PASS_PROMOTE",
+  "required_fixes": [],
+  "scope": "Independent static review of executed D1/D2 receipts and diagnostic implementation; no new model run; not full R2 acceptance",
+  "files": {
+    "evidence/continuation/diagnostics/result.json": "612a06f41d28c0c84d243ba7bc3c5406fa5361d3b0f09bcd9acf0c0186863b4a",
+    "evidence/continuation/diagnostics/diagnose.py": "e541c4bdf12c77701698e5706fbeb69e6f7aaeaafa654b05ee19bf486fa96ce6",
+    "runs/continuation/D1-baseline.json": "ee0f370bf0697d7a82ebee1ec48d32ff29be7199678512af1786946decbb6e83",
+    "runs/continuation/D2-strict.json": "f6235d0dd93743b3916e7f7d1b521a3417a45bd059c48c991d8059704f276f12",
+    "runs/continuation/D1-stdout.log": "b9bf92a0e568252300f45111ecee002011a37b5a7453e705fca4b625214035cd",
+    "runs/continuation/D2-stdout.log": "d966d36e152b2f5fc3edfdeea99ab13a065a5d94d717ddfdbde66b585fa5a57d",
+    "oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4"
+  },
+  "findings": [
+    "All result-manifest hashes and both diagnostics before/after identities match current artifacts. Candidate and reference model sources are unchanged.",
+    "D1 and D2 use identical diagnostic code and exposed length-one fixture, six genuine base/cache/full calls each; 8 model positions per run. The cached call consumes base KV and does not recompute the prefix.",
+    "D1 identical input row under one-row/two-row projections differs at q/k/v and gate/head projections, while sampled RMS and SiLU comparisons are exact. SGEMM verbose establishes actual MKL dispatch, CNR OFF, Dyn0 and two threads.",
+    "D2 recorded environment AUTO,STRICT and MKL_DYNAMIC FALSE; no diagnostic code mutates these variables after torch import. Separate ledger PID and verbose CNR AUTO,STRICT demonstrate effective strict execution. Both verbose paths remain Dyn0 and two threads.",
+    "D2 all 20 parity rows are exact and finite with zero top1 mismatches. All eight primitive comparisons and 32 KV component records are exact, including retained cache prefixes.",
+    "Numerical comparison code retains atol1e-5 rtol1e-4 and exact top1. No cache disablement, source substitution, tolerance change, precision promotion or reference monkeypatch occurs.",
+    "Diagnostic ledger reserves4096 each and reports wall4.61/4.90seconds; corrected primitive invocation accounting is explicitly retained and fits reservation."
+  ],
+  "causal_scope": "Evidence supports shape-dependent MKL projection arithmetic on this installed FP32 backend and fixture, and elimination of observed discrepancies under the common strict recipe. It does not isolate every internal reduction, prove masks for all cases, or establish universal cross-shape reproducibility of oneMKL.",
+  "limitations": [
+    "D1/D2 did not directly isolate attention products as identical-input primitive comparisons; the whole cached/full case nevertheless passes exactly under D2. This is not a promotion blocker.",
+    "D3 semantic challenge was not executed; complete full R2 retains padding/position/cache gates.",
+    "D1 process exit0 denotes completed diagnostic, not parity success; its raw FAIL remains authoritative.",
+    "Fresh heldout full-suite and separate independent repeat remain required; this review did not inspect private inputs."
+  ],
+  "next_action": "Promote the unchanged-source common strict backend recipe only. Require full R2 suite result and separate independent exact-candidate repeat before R2 acceptance or R3."
+}

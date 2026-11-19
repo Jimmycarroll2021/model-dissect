@@ -1,0 +1,168 @@
+{
+  "status": "LOCALIZED_OBSERVATION_NOT_REPAIR",
+  "results": [
+    {
+      "actor": "candidate",
+      "operation": "aten.softmax.int",
+      "direct_common_input_uint8_equal": true,
+      "non_tensor_arguments_equal": true,
+      "extra_width8_columns_for_common_queries_all_negative_infinity": true,
+      "extra_probabilities_exact_zero": true,
+      "causal_negative_infinity_map_exact_both_widths": true,
+      "input_layout_width6": {
+        "kind": "array",
+        "array": "t00187",
+        "shape": [
+          1,
+          8,
+          6,
+          6
+        ],
+        "stride": [
+          288,
+          36,
+          6,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "input_layout_width8": {
+        "kind": "array",
+        "array": "t00187",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "stride": [
+          512,
+          64,
+          8,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "token5_probability_unequal_coordinates": [
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          0,
+          5,
+          4
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          0,
+          7,
+          3
+        ],
+        [
+          0,
+          7,
+          4
+        ],
+        [
+          0,
+          7,
+          5
+        ]
+      ],
+      "token5_max_abs": 1.1920928955078125e-07,
+      "common_prefix_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "actor": "native",
+      "operation": "aten.softmax.int",
+      "direct_common_input_uint8_equal": true,
+      "non_tensor_arguments_equal": true,
+      "extra_width8_columns_for_common_queries_all_negative_infinity": true,
+      "extra_probabilities_exact_zero": true,
+      "causal_negative_infinity_map_exact_both_widths": true,
+      "input_layout_width6": {
+        "kind": "array",
+        "array": "t00165",
+        "shape": [
+          1,
+          8,
+          6,
+          6
+        ],
+        "stride": [
+          288,
+          36,
+          6,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "input_layout_width8": {
+        "kind": "array",
+        "array": "t00165",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "stride": [
+          512,
+          64,
+          8,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "token5_probability_unequal_coordinates": [
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          0,
+          5,
+          4
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          0,
+          7,
+          3
+        ],
+        [
+          0,
+          7,
+          4
+        ],
+        [
+          0,
+          7,
+          5
+        ]
+      ],
+      "token5_max_abs": 1.1920928955078125e-07,
+      "common_prefix_max_abs": 1.1920928955078125e-07
+    }
+  ],
+  "conclusion": "For both unchanged actors the earliest common-prefix output difference is softmax. Corresponding masked-score bytes and non-tensor arguments equal, with two extra width8 future columns exactly -Inf and corresponding probabilities exactly zero. Physical token5 probability differs. This demonstrates shape-dependent rounding in this observed softmax call, not proof this alone causes original logits threshold failure. Both resource runs PASS; exact repeat comparison separate."
+}

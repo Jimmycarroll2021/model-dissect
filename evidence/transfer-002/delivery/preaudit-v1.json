@@ -1,0 +1,86 @@
+{
+  "verdict": "REQUIRED_DOC_CORRECTIONS_AND_PENDING_INDEPENDENT_REPEAT",
+  "candidate_manifest_sha256": "9ed4fa5e1273265d5d6adf635842f6a320599533c48672140b4bf4c4e7b79882",
+  "candidate_files": {
+    "docs/pythia-transfer-result.md": "b63a886f239b0c3346f8c555081d6f0415de324180a65d1aca6ae7de46754e5b",
+    "docs/model-transfer-usage.md": "f48d0953b602c7be9937430f2a394b761ae805ad6f4a85d9a921577f9f264e33",
+    "docs/figures/pythia-transfer-heldout.png": "ca5b662db6dfeedc3a81bbbf8914c417c46b7fb0db287e635c0dfe56e29642d3",
+    "docs/figures/pythia-transfer-heldout.svg": "7e5623af04cfc8d47b329527e5484c06a71b200bc05b93a220e4741285034f29"
+  },
+  "concurrent_doc_drift": [
+    "docs/model-transfer-usage.md"
+  ],
+  "findings": [
+    {
+      "id": "DOC-01",
+      "required": true,
+      "issue": "Usage scientific packet v1 is stale and mismatched with admission v1 which binds executed packet v2. Correct producer/independent packet paths and retain admission version1."
+    },
+    {
+      "id": "DOC-02",
+      "required": true,
+      "issue": "Usage table says trace/scientific execution pending despite completed producer; distinguish available producer trace from independent repeat pending."
+    }
+  ],
+  "evidence": {
+    "producer_summary_identity_verified": true,
+    "selection_layer": 4,
+    "median_target": 0.7104862948449367,
+    "median_advantage": 0.7731329964950664,
+    "plot_all32_coordinates_max_affine_error": 4.7629623622924555e-07,
+    "plot_visual": "Readable16-pair dimensionless min-bidirectional recovery plot, correct pending-repeat title; no accuracy/model-fraction units",
+    "trace_raw_norms_and_changes": [
+      [
+        1.0041419855199214,
+        0.9902972442420818
+      ],
+      [
+        0.8255271477609907,
+        0.6560691298561538
+      ],
+      [
+        1.1182239525548106,
+        0.9401674360046229
+      ],
+      [
+        1.335792330640782,
+        1.0520225105228764
+      ],
+      [
+        1.5147874037165994,
+        1.2084562681431148
+      ],
+      [
+        2.14703940673541,
+        2.014131601029073
+      ]
+    ],
+    "trace_top3": [
+      [
+        5798,
+        11.532724380493164
+      ],
+      [
+        4370,
+        9.862682342529297
+      ],
+      [
+        806,
+        9.854143142700195
+      ]
+    ],
+    "local_links_checked": 28,
+    "broken_links": [],
+    "original_minimind_manifest_mismatches": [
+      "./specs/001-minimind-reproduction/tasks.md"
+    ],
+    "coordination_prior_snapshots_verified": true
+  },
+  "scope": "Native full-block interventions, candidate baseline fidelity only; original strictT2FAIL/nonpromoted repairs preserved; no universal/head/source-edge claims found. Producer results are explicitly not independent acceptance.",
+  "pending": [
+    "Independent scientific actual repeat/raw audit",
+    "Final exact updated delivery manifest and corrected docs review",
+    "Resolve any original manifest drift beyond snapshot-backed coordination metadata before final acceptance"
+  ],
+  "no_models_or_tests_run": true
+}

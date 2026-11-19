@@ -1,0 +1,46 @@
+{
+  "status": "PASS_OFFLINE_PUBLICATION_CHECKS",
+  "scope": "Portable publication only; no target model inference, downloads, installs or historical raw re-audit.",
+  "tests": {
+    "command": "PYTHONPATH=src:. OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1 python -m pytest -q tests",
+    "passed": 423,
+    "subtests_passed": 59,
+    "warnings": 3,
+    "elapsed_seconds": 47.1,
+    "initial_run": {
+      "passed": 420,
+      "failed": 3,
+      "causes": [
+        "Import-isolation test depended on absence of torch after collection imported torch elsewhere.",
+        "Two legacy guard tests used the immutable historical phase epoch and correctly hit the elapsed cap."
+      ],
+      "correction": "Import test uses a clean subprocess; synthetic guard tests patch only EXECUTION_START to their test epoch. Production guard unchanged."
+    }
+  },
+  "bundle_check": {
+    "command": "PYTHONPATH=src:. python scripts/publication/check_bundle.py",
+    "scope": "Manifest hashes, forbidden large/model payloads, private-path/token patterns, local Markdown/HTML links",
+    "status": "PASS"
+  },
+  "cli_help": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "pytest": "9.0.3",
+    "transformers": "5.1.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0rc0"
+  },
+  "limitations": [
+    "No browser interaction performed in this publication task. Existing standalone HTML content retained with link fixes.",
+    "No checkpoint/runtime revalidation after portability changes.",
+    "No new license grant for project-authored material.",
+    "No circuit-tracer adapter or feature intervention implemented.",
+    "Dependency installation/build-wheel process not exercised; used installed environment and PYTHONPATH."
+  ],
+  "whitespace_check": {
+    "status": "NONBLOCKING_HISTORICAL_FORMATTING",
+    "detail": "git diff --check reports trailing spaces in generated SVG paths, unchanged vendored source and historical Markdown line breaks; preserved upstream bytes instead of rewriting scientific/vendor artifacts."
+  }
+}

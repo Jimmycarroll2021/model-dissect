@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "112f5150f13ab77cbad09ccc5b65105d539c30a67686038e7587e048af7d8982",
+  "packet_path": "./evidence/transfer-002/runtime/numerical-producer-v3.packet.json",
+  "review_path": "./evidence/transfer-002/review/runtime-build-v3.json",
+  "review_sha256": "2db7d53149cf0c4469e514132acf5bbc1ef21cf8d81152b1414c8ab98ddd932d",
+  "reviewed_utc": "2026-11-18T19:19:39.884287+00:00",
+  "scope": "numerical-producer-v3",
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=./src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 /usr/bin/python -m minimind_re.transfer.run --packet ./evidence/transfer-002/runtime/numerical-producer-v3.packet.json --admission ./evidence/transfer-002/review/admission-numerical-producer-v3.json",
+  "conditions": [
+    "Execute serially using the supervised CLI. Preserve all failures.",
+    "No packet/code/fixture modification or hidden additional model calls.",
+    "Independent role must be executed by independent assigned verifier."
+  ]
+}

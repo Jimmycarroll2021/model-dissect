@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_sha256": "47f61d8f571dbcc1e0acc1c86dcdb6dc50ff2f3c30308e5970ff846c94099716",
+  "synthetic_patch_cases": 5,
+  "synthetic_score_cases": 6,
+  "exception_after_patch_cleanup": true,
+  "weak_control_selection": true,
+  "full_path_actual_positions": 76632,
+  "full_path_actual_calls": 1480,
+  "reserved_per_role": 78112,
+  "model_checkpoint_loads": 0,
+  "tokenizer_executions": 0,
+  "limitations": "No native model, tokenizer or actual runtime guard execution."
+}

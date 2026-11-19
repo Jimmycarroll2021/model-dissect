@@ -1,0 +1,56 @@
+{
+  "status": "PREPARED_NOT_ADMITTED_NOT_EXECUTED",
+  "packet_path": "./evidence/transfer-002/runtime/static-independent-v4.packet.json",
+  "packet_sha256": "38448e8654ef18f662ad3f13c5e882d8ff12077538e5c02d564ecaad6cd37ec4",
+  "prior_packet_sha256": "aaa3112810b1cf84a538ad253d2bdfd786e69fe38ee81b21c1cfd762ff109474",
+  "prior_packet_preserved": true,
+  "unchanged_scope": {
+    "stage": "static",
+    "role": "independent",
+    "positions": 0,
+    "seconds": 120,
+    "disk_bytes": 16777216,
+    "cpu_threads": 2,
+    "atlas_source_sha256": "34eed1330166fb04a53c056b9d12453e668e61b5290b228feba96810ff53a27b"
+  },
+  "dependency_rationale": {
+    "retained": "Exact unchanged runtime entrypoint, phase guard, atlas, config-validator candidate, safe inventory helper, package initializer; immutable model/config; unchanged package version pins and historical accounting.",
+    "added": "Parent package __init__ executes during Python import; bind live bytes. Bind existing atlas-build-v2 review and producer static receipt to establish independent-repeat provenance.",
+    "removed": "Numerical/reference fixtures, numerical execution modules and test receipts, native Transformers model source and tokenizer artifacts are not imported or consumed by static branch. Removing these unrelated identities prevents collateral admission drift without changing execution dependencies.",
+    "protocol": "Packet explicitly freezes atlas sample/views/SVD/statistics; no scientific protocol or revised scientific spec is required by static stage. No altered runtime hash was silently rebound."
+  },
+  "added_identities": {
+    "./src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "./evidence/transfer-002/review/atlas-build-v2.json": "dee6422f297353c0932d5e1f61c74a4971b028ad07f6bb4b005dc03b2e17a213",
+    "./evidence/transfer-002/review/static-producer-v3.json": "8a86d56b1b43e4e75ef5a5fb0bf86e9c29f2cd5e807e2490da7a6d867a49156b"
+  },
+  "removed_identity_paths": [
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/cache_utils.py",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/masking_utils.py",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/configuration_gpt_neox.py",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py",
+    "./evidence/transfer-002/runtime/fixture-proposal-v1.json",
+    "./evidence/transfer-002/runtime/integration-tests-v1.txt",
+    "./evidence/transfer-002/runtime/integration-tests-v3.txt",
+    "./evidence/transfer-002/runtime/storage-v1.json",
+    "./evidence/transfer-002/runtime/tests-v1.txt",
+    "./evidence/transfer-002/runtime/tests-v2.txt",
+    "./evidence/transfer-002/runtime/tests-v3.txt",
+    "./src/minimind_re/transfer/numerical.py",
+    "./src/minimind_re/transfer/reference.py",
+    "./tests/transfer/test_reference_and_protocol.py",
+    "./tests/transfer/test_runtime_integration.py",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/README.md",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/generation_config.json",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/special_tokens_map.json",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/tokenizer.json",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/tokenizer_config.json"
+  ],
+  "raw_payload_correction": "Previous packet raw_payload_bytes0 was a stale numerical placeholder. Static48x128x128x4 payload is3145728; existing16MiB reservation unchanged.",
+  "checks": [
+    "All retained source/artifact paths present and SHA256 equals old packet where previously bound",
+    "Old packet untouched; new paths written exclusively",
+    "No ledger edit, admission generation, dependency installation, model load or atlas execution"
+  ],
+  "next": "Independent exact packet review/admission, then execute through unchanged supervised run.py under existing phase ledger after coordinator reconciliation."
+}

@@ -1,0 +1,118 @@
+{
+  "status": "PASS_CONTINUATION_INDEPENDENT_REPEAT_AND_GRADING",
+  "epoch": 1794991367.2308478,
+  "producer_sha256": "df4d93947c981721920b27b1332f10ff4dbad1d0e96dadc7bb729ca6f604b4dd",
+  "independent_sha256": "727b9002d1a9d5b035db4eaac60ecb63e4c22ea41046d3f55abc503fa80b81a8",
+  "journal_sha256": "6992a75f279a4b08424922621ef681196f49525e699eff954995d7706432d88f",
+  "candidate_manifest_sha256": "729467fec18f7362622d7e57c6b1d123988dfbdd9d086de920622c4a509f8d16",
+  "checks": {
+    "both_parity_sets_12_boundary_comparisons_exact_zero_error": true,
+    "all24_boundary_tensor_hashes_repeat_exact": true,
+    "all1024_generated_tokens_steps_logits_hashes_EOSranks_probabilities_exact": true,
+    "generation_journal_bytes_exact": true,
+    "prepared_inputs_exact": true,
+    "all_three_old24token_logit_prefixes_exact": true,
+    "independent_decoding_and_position_accounting": true,
+    "all_three_histories_unchanged": true,
+    "admitted_code_artifacts_unchanged": true,
+    "fixed_clock_preserved": true,
+    "zero_active_rows": true
+  },
+  "semantic_grades": {
+    "behavior-copy-screen-00": "INCOMPLETE",
+    "behavior-subtract-screen-00": "INCOMPLETE",
+    "behavior-compare-screen-00": "WRONG",
+    "upstream-first-general-chat": "INCOMPLETE"
+  },
+  "grading": "Independent assessment committed before producer assessment read; all4agree.",
+  "termination": [
+    {
+      "id": "behavior-copy-screen-00",
+      "stop": "length",
+      "tokens": 256,
+      "eos_probability_last": 1.671451743716636e-06,
+      "eos_rank_last": 147
+    },
+    {
+      "id": "behavior-subtract-screen-00",
+      "stop": "length",
+      "tokens": 256,
+      "eos_probability_last": 0.00031245333196858996,
+      "eos_rank_last": 162
+    },
+    {
+      "id": "behavior-compare-screen-00",
+      "stop": "eos",
+      "tokens": 256,
+      "eos_probability_last": 0.2695756577946693,
+      "eos_rank_last": 1
+    },
+    {
+      "id": "upstream-first-general-chat",
+      "stop": "length",
+      "tokens": 256,
+      "eos_probability_last": 2.2562828305913634e-09,
+      "eos_rank_last": 2043
+    }
+  ],
+  "accounting": {
+    "historical_reserved": 450928,
+    "phase_reserved": 353280,
+    "lifetime_reserved": 804208,
+    "remaining_lifetime_capacity": 195792,
+    "actual_positions_each": 165246,
+    "actual_positions_phase": 330492,
+    "generation_calls_each": 1024,
+    "parity_calls_each": 6,
+    "all_calls_phase": 2060,
+    "model_wall_reserved": 1800,
+    "actual_wall_phase": 206.41664032510016,
+    "actual_cpu_seconds_phase": 392.320041,
+    "phase_start": 1794990938.83567,
+    "phase_deadline": 1794994538.83567
+  },
+  "independent_guard_row": {
+    "id": "continuation-independent-v1",
+    "kind": "model",
+    "role": "verification",
+    "positions_reserved": 176640,
+    "wall_reserved": 900.0,
+    "start": 1794991227.7883375,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.continuation_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/packet-independent-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-independent-v1.json",
+    "peak_owned_rss_bytes": 8024973312,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 663581,
+    "exit_code": 0,
+    "final_child_highwater_bytes": 1292165120,
+    "final_guard_highwater_bytes": 6732808192,
+    "final_combined_highwater_bytes": 8024973312,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "output_sha256": "727b9002d1a9d5b035db4eaac60ecb63e4c22ea41046d3f55abc503fa80b81a8",
+    "end": 1794991331.7844555,
+    "wall_seconds": 103.98392948799301,
+    "cpu_seconds": 197.9322,
+    "peak_child_rss_kib": 1261880
+  },
+  "ledger_sha256": "9e749756068f8d47ee9f6b25890d1b255c4263ac0a1dbad0922c5b8cd09076c3",
+  "findings": [
+    "COMPARE reachedEOS exactly at token256; both graders classify itWRONG under frozen rule3 for unretracted false mathematical assertions.",
+    "COPY,SUBTRACT,and generalchat remain censored at256; observed incorrect assertions/repetition are not scored as completed answers.",
+    "Exact nonoverlapping repeated spans of54/54/60/23tokens respectively provide observable continuation phenomena for a separately frozen causal study; no mechanism inferred."
+  ],
+  "limitations": [
+    "Only4 exposed/source-selected diagnostics, not family qualification or population competence.",
+    "Long-prefix parity proves the12 saved boundary comparisons, not universal full/cache fidelity; historicalR2FAIL persists.",
+    "Generation EOS probabilities/ranks independently checked for bounds/selection and exactrepeat; vectorhashes alone cannot support independent softmax recomputation.",
+    "Native broad goal remains unfinished; no further runtime admitted by this review."
+  ],
+  "next_action": "Finalize this diagnostic report with repeated text, semantic assessments and resource receipt; then separately plan input-dependent observation/causal test within195792remaining reserved positions."
+}

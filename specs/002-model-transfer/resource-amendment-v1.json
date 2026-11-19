@@ -1,0 +1,37 @@
+{
+  "amendment": "TRANSFER-002-CANONICAL-AFFINE-v1",
+  "status": "PENDING_INDEPENDENT_AMENDMENT_REVIEW_NOT_RUNTIME_ADMISSION",
+  "mode": "qkv-fixed-two-row-fp32-v1",
+  "condition": "independent primitive review and pilot PASS; no outcome claimed",
+  "changed_caps": {
+    "disk_bytes": {
+      "old": 25769803776,
+      "new": 34359738368
+    },
+    "aggregate_seconds": {
+      "old": 3600,
+      "new": 4800
+    }
+  },
+  "unchanged": {
+    "new_positions": 250000,
+    "historical_positions": 1239856,
+    "combined_ceiling": 1489856,
+    "cpu_threads": 2,
+    "conservative_memory_bytes": 10737418240,
+    "free_reserve_bytes": 2147483648,
+    "phase_wall_seconds": 7200,
+    "original_phase_start_preserved": true
+  },
+  "per_role": {
+    "calls": 1416,
+    "actual_positions": 39986,
+    "reserved_positions": 40000,
+    "seconds": 1200,
+    "disk_bytes": 9663676416,
+    "boundary_rows": 25272,
+    "raw_payload_bytes": 8749220864
+  },
+  "guard_update_required": true,
+  "fresh_fixture_freeze": "evaluator owned, pending; preserve shapes and exclude exposed complete sequences"
+}

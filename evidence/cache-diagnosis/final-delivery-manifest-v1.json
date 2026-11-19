@@ -1,0 +1,31 @@
+{
+  "status": "PENDING_INDEPENDENT_DOCUMENT_REVIEW",
+  "files": [
+    {
+      "path": "./docs/cache-numerical-diagnosis.md",
+      "sha256": "db2b9b68edc595094184c379409c8a7b7dba6a6719729d3ac17f18db04132828"
+    },
+    {
+      "path": "./evidence/cache-diagnosis/producer-execution-v1.json",
+      "sha256": "285dcf8a8eea93c9d947637c705d64b9d8ed4b271ecc08e613dd34c8338f6c5c"
+    },
+    {
+      "path": "./evidence/cache-diagnosis/review/independent-repeat-final-v1.json",
+      "sha256": "c6e59c77278813c755385b56ee5f59aa9dc3fa5d2b056b48c2e09eaba5cd1309"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/result.json",
+      "sha256": "c950fab6154821918b2cc7f981dd9009b1662cf2c9683fe4b67e6487e48f913c"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-independent-v1/result.json",
+      "sha256": "bc2adb56a15f64951a3e8052001539d4172697165e9df8e75cafa28b9f96949f"
+    }
+  ],
+  "mutable_state_excluded": [
+    "TASK_STATE.md",
+    "CASE_FACTS.md",
+    "docs/reverse-engineering-goal.md"
+  ],
+  "scope": "Repeated diagnosis only, no repair, broader goal active"
+}

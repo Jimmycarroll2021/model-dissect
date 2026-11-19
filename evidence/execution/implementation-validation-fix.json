@@ -1,0 +1,13 @@
+{
+  "status": "partial",
+  "change": "After oracle feedback: reject all-masked rows before computation. No numerical expressions, cache or model operations changed.",
+  "tests": "3 PASS; invalid-mask case added to contract test; no model forward",
+  "candidate_manifest": "analysis/candidate-manifest-v2.json",
+  "candidate_manifest_sha256": "f7c42733df7a08bbe09cacf07c8a3c802a88362bdb627beb26d86a4a5d37d795",
+  "delivery_manifest": "analysis/delivery-manifest-v2.json",
+  "delivery_manifest_sha256": "50a786ab5621b78fa710b54bb9baa818589d24cca86b92286035a2191cd5aac1",
+  "forward_sha256": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+  "old_manifests_preserved": true,
+  "parity": "Previous measurements bind previous candidate only; independent new-candidate repeat pending",
+  "runtime_guard": "Unchanged since previous repaired delivery"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PRELIMINARY_SOURCE_FINDINGS_NOT_MANIFEST_ACCEPTANCE",
+  "reviewed_utc": "2026-11-18T11:35:02.302055+00:00",
+  "files_observed": {
+    "./src/minimind_re/cache_followup_capture.py": "6d48f37e461746502bf9222cf13dd5a9ee72b5a1ac7376b6d41c1894edea7926",
+    "./src/minimind_re/cache_followup_probe.py": "35a9091954816ddd05d744f94a14716a52155b3967c47eb0e9ebd2cb5b304b00",
+    "./tests/test_cache_followup_capture.py": "7b4696bb4aebbeae6d0b73c0f004e17ce73bf004563267c748eebf043da4ca7c",
+    "./evidence/cache-shape-followup/protocol-v1.md": "cc9dfa4e4f9428c63aea9b2068e131e3c77e03096b19ac0671eaa576f78dadb0"
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "required",
+      "file": "src/minimind_re/cache_followup_probe.py",
+      "location": "tokenwise comparison exact field",
+      "finding": "torch.equal(aa,bb) compares numeric values; +0.0 and -0.0 are equal despite different bytes. This cannot support the protocol exact-byte metric.",
+      "required_change": "Compare shape/dtype and contiguous uint8 tensor views for exactness. Retain numerical equality separately if useful."
+    },
+    {
+      "id": "F2",
+      "priority": "required",
+      "file": "src/minimind_re/cache_followup_probe.py",
+      "location": "call capture completeness and output checks",
+      "finding": "Only returned embedding/block/final/logits are checked finite. Captured normalization/projection/trig intermediates are not. Nonfinite capture can therefore reach downstream statistics and weakens the diagnostic finite gate.",
+      "required_change": "Check all required captured numerical arrays are finite before saving/comparing; handle integer position fields explicitly. Keep original boundary/cache fidelity requirements."
+    },
+    {
+      "id": "F3",
+      "priority": "required_for_layout_attribution",
+      "file": "src/minimind_re/cache_followup_capture.py",
+      "location": "clone observation helpers",
+      "finding": "Every observation is cloned contiguous without retaining original stride/layout. Raw shape remains but physical layout evidence is lost, contrary to design-review metadata requirement.",
+      "required_change": "Record original dtype, shape and stride before cloning. Limit any kernel/layout attribution if unavailable."
+    },
+    {
+      "id": "F4",
+      "priority": "verification_needed_after_freeze",
+      "file": "tests/test_cache_followup_capture.py",
+      "location": "current synthetic capture tests",
+      "finding": "Visible tests use Value/FakeCandidate and do not exercise actual TorchDispatchMode cos/sin capture, K-only scoping across multiple layers, native position prehook or headnorm-before-RoPE ordering.",
+      "required_change": "Final exact candidate needs focused synthetic real-tensor tests for these paths without loading checkpoint or running a target model."
+    }
+  ],
+  "positive_source_observations": [
+    "Candidate wraps frozen callable with observation tracing rather than copying/replacing arithmetic. Layer1 K-headnorm capture gates subsequent K rotate; observed trig returns are copied by dispatch without recomputation.",
+    "Reference position prehook observes native cosine/sine tuple supplied to attention; output hooks return None and owned handles restore in finally.",
+    "Runner fixes64positions24calls and compares every boundary and full returned cache against existing matrix baseline hashes for matching requests.",
+    "Final full control and all cached outputs are retained; actor execution sequential."
+  ],
+  "limits": [
+    "Source being edited/staged; these hashes describe observed files, not final frozen admission.",
+    "No target model call, checkpoint load, test execution, source modification or runtime admission.",
+    "Protocol text still contains historical outstanding-cos/sin/preparation statements; reconcile final protocol status with exact candidate before acceptance.",
+    "Original native R2 FAIL and full-matrix scientific FAIL unchanged."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PASS_READY_FOR_SINGLE_INDEPENDENT_RUN",
+  "admission_sha256": "6ea4d6a0c692be88f361384425c004668fa23791847e82ef5b345fce1a507005",
+  "producer_audit_sha256": "0326fd3d3da4fa57e24444d1c4bbb9dea4652bc2e4231bb9c5b81483e29b30ac",
+  "ledger_before": {
+    "phase": "CACHE-OPERAND-001",
+    "policy_sha256": "cf6341335205e95c67946a174597555a91dcd98039976d7ff8f7961b3d9caef7",
+    "historical_sha256": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+    "historical_ledger": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-ledger.json",
+    "historical_totals": {
+      "tokens_reserved": 1035920,
+      "download_bytes": 138166822,
+      "gpu_seconds": 12.621721199015155,
+      "gpu_seconds_reserved": 240.0
+    },
+    "start": 1794993224.4247766,
+    "deadline": 1794995024.4247766,
+    "positions_reserved": 256,
+    "model_wall_reserved": 300.0,
+    "static_wall_reserved": 0,
+    "runs": [
+      {
+        "id": "cache-operands-producer-v1",
+        "kind": "model",
+        "role": "implementation",
+        "positions_reserved": 256,
+        "wall_reserved": 300.0,
+        "start": 1794993224.4247766,
+        "status": "completed",
+        "argv": [
+          "/usr/bin/python",
+          "-m",
+          "minimind_re.cache_operand_probe",
+          "--packet",
+          "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/evidence/cache-diagnosis/packet-producer-v1.json"
+        ],
+        "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/result.json",
+        "peak_owned_rss_bytes": 8274579456,
+        "owned_rss_cap_bytes": 8589934592,
+        "owned_rss_scope": "guard plus direct child; descendants prohibited",
+        "pid": 837805,
+        "exit_code": 0,
+        "final_child_highwater_bytes": 1281097728,
+        "final_guard_highwater_bytes": 6993481728,
+        "final_combined_highwater_bytes": 8274579456,
+        "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+        "output_sha256": "c950fab6154821918b2cc7f981dd9009b1662cf2c9683fe4b67e6487e48f913c",
+        "end": 1794993229.2444756,
+        "wall_seconds": 4.809495173976757,
+        "cpu_seconds": 4.880420000000001,
+        "peak_child_rss_kib": 1251072
+      }
+    ]
+  },
+  "command": [
+    "/usr/bin/python",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runtime/cache_guard.py",
+    "--workspace",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118",
+    "--policy",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runtime/cache-policy.json",
+    "--policy-hash",
+    "cf6341335205e95c67946a174597555a91dcd98039976d7ff8f7961b3d9caef7",
+    "--admission",
+    "./evidence/cache-diagnosis/review/independent-admission-v1.json",
+    "--run-id",
+    "cache-operands-independent-v1",
+    "--kind",
+    "model",
+    "--positions",
+    "256",
+    "--timeout",
+    "300"
+  ]
+}

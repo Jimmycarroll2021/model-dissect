@@ -1,0 +1,28 @@
+{
+  "files": {
+    "./evidence/cache-prefix-width/softmax-replay/replay_v1.py": "7e4543c6fc15b13eec7bbc747299a0d5e52d87b23b6c5c899276bb182aa36751",
+    "./evidence/cache-prefix-width/softmax-replay/result-v1.json": "71861effa5f62a4a898a319bccdd112b0d17213425bc321f6b3d04416542b955"
+  },
+  "source_archives": [
+    {
+      "archive": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/runs/cache-prefix-recovery-producer-v1/call-01.pt",
+      "sha256": "ce2df465ad947f38ad72a252816e55b9ee64a074f3ba8a305e3bbb58d8117f28",
+      "metadata_sha256": "ffffa07e28f3b9c90d840a2ad2b035fda7af62e2ea15f3749cc4850824fb83d3"
+    },
+    {
+      "archive": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/runs/cache-prefix-recovery-producer-v1/call-02.pt",
+      "sha256": "61ebf0d5f3ea3692b4f197222541d086f9771d4ce2283b4c28def7c0ddcc93a2",
+      "metadata_sha256": "0718923fb8abd28e6762d3e8173e8e53c0535cf40d4669da79a251aa2d090d69"
+    },
+    {
+      "archive": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/runs/cache-prefix-recovery-producer-v1/call-03.pt",
+      "sha256": "88d8ecaf95816f80a05b6dc5b09daa1582347bf36c64f4deed677042205167a1",
+      "metadata_sha256": "a168ba69c6b698b7a02b7e6c03e9928a7e5621586ccd168fe8f017fcf7485415"
+    },
+    {
+      "archive": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/runs/cache-prefix-recovery-producer-v1/call-04.pt",
+      "sha256": "89ab2d0a87530de3a67820315560d8b478b0d79339da8db0770275a9b05f9ec8",
+      "metadata_sha256": "06a07aa311a8ed6a59d17a3a4181fb6cc19348487679d5e979d0e0c8fccb714a"
+    }
+  ]
+}

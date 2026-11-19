@@ -1,0 +1,25 @@
+{
+  "schema": "SHAPE-CACHE-MATRIX-REFERENCE-001",
+  "status": "PREPARED_SYNTHETIC_PASS_TARGET_NOT_RUN",
+  "files": {
+    "./src/minimind_re/shape_cache_reference_matrix.py": "6a3b1cf59f2881cdf4a5e5085f975fc5848173dd06e64276693d50e2f005c07b",
+    "./tests/test_shape_cache_reference_matrix.py": "2ccb853f13a073db2a9783fbf27c4d7f7da27583b36015a43b67c1b4aafac3f5",
+    "./evidence/cache-shape-matrix/reference/design.md": "3b66543dddc6fdd8ef49aaf7de05300659d291bcffb709fe6e3fcaf540523099",
+    "./oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "./oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "./fixtures/heldout/parity.json": "616d04c0a2ad37d389233e833071036be75680ebbbdf9329430b84d2e01b551d",
+    "./fixtures/continuation/parity.json": "f9411b52e3613337ec53a4916f6c4791af5a12fb9c44aed8ac4a73c0e23602af"
+  },
+  "pilot_reference_sha256_unchanged": "00a1283645c79aac9befeb04a3a21dbb4884150893695bdce35cb32136009b3a",
+  "tests_passed": 7,
+  "target_model_calls": 0,
+  "checkpoint_loads": 0,
+  "tokenizer_calls": 0,
+  "producer_implementation_read": false,
+  "api": "shape_cache_reference_matrix(adapter, capture=False)",
+  "both_matrices_base_positions_per_role": 33876,
+  "both_matrices_base_positions_producer_plus_repeat": 67752,
+  "extra_untouched_native_fidelity_positions": "integration must add explicitly",
+  "budget_admission": "NOT_ADMITTED",
+  "independent_review": "PENDING"
+}

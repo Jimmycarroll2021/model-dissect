@@ -1,0 +1,32 @@
+{
+  "verdict": "PASS_EXACT_AFFINE_PRIMITIVE_PROBE",
+  "reviewed_utc": "2026-11-18T19:42:32.559391+00:00",
+  "checks": {
+    "manifest": true,
+    "packet": true,
+    "all_files": true,
+    "all_packet_identities": true,
+    "environment": true,
+    "bounds": true,
+    "unused_output": true,
+    "settled_ledger": true,
+    "aggregate_budget": true,
+    "free_space": true,
+    "phase_time": true
+  },
+  "packet_sha256": "2337062f3fcfcb8b6af03f7cf9fa75a6cb009ffd0adb0f6cee71cdc489f79bac",
+  "manifest_sha256": "caddc6d257a8e54482522d540bee9cfa33486902562d263d452168ed9eae1f56",
+  "tests": "2 synthetic tests independently passed in0.68s",
+  "source_review": [
+    "15 primitive calls and20charged row positions; no model forward.",
+    "Uses only pinned first-layer QKV weight/bias and pinned saved inputs.",
+    "Native baseline outputs must reproduce captured bytes before mode selection.",
+    "All outputs saved before eligibility comparison; finite and bitwise consistency required.",
+    "Ranking matches proposal: tolerance violation count, max_abs, paddedFP32 then rowwiseFP64 then rowwiseFP32.",
+    "Reads safetensors only, unchanged reviewed phase guard and supervisor."
+  ],
+  "limits": [
+    "Primitive winner is not model-mode fidelity or repaired full numerical acceptance.",
+    "No automatic step2 or full-matrix execution admission."
+  ]
+}

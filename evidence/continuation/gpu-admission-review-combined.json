@@ -1,0 +1,41 @@
+{
+  "status": "PASS_COMBINED_STATIC_MOCKED_ADMISSION",
+  "required_fixes": [],
+  "guard_sha256": "455aca3291038d32c7813035474c9e66735382539c430976aa07b94cc523673a",
+  "native_protocol_sha256": "17f1a7ddb197ce33c5920b96740614e083a4659ae6157720d043fe7097e2310c",
+  "native_files_matching": {
+    "oracle/gpu_adapter.py": true,
+    "oracle/gpu_native_check.py": true,
+    "oracle/vendor/model_minimind.py": true,
+    "oracle/evaluate.py": true,
+    "fixtures/heldout/parity.json": true,
+    "artifacts/original/full_sft_768.pth": true
+  },
+  "guard_mock_evidence": "evidence/continuation/gpu-admission-review-guard.json",
+  "gpu_or_model_calls_by_reviewer": 0,
+  "findings": [
+    "Guard exactfreeze and all6 nativeprotocol filehashes match.",
+    "Child uses consistent supported legacyprecisionfamily:highestmatmul,bothTF32false,noautocast,deterministicerror-mode,cuDNNdeterministic/nobenchmark;guard forces cuBLASworkspace and TF32overridebeforechildstart.",
+    "Child actually configures2GiB allocatorfraction before model and reports synchronizedallocated/reservedpeaks;guard reportcontractmatches.",
+    "One finiteCUDAprimitive runs and synchronizes beforemodelconstruction with atomicallysavedpre-modeltelemetry. This is an inline smoke, not a separatelyreviewed liveGPU acceptance result.",
+    "Nativevendorlayer arithmetic and original explicitposition adapterorchestration preserved; nocanonicalpolicy or candidateimport. Parameters,captures/cachedeviceanddtype checked. ActualGPUUUIDreadbackchecked beforeforwards.",
+    "Nativeprefill runsfirst on all4unpaddedlengths; failureprevents selfcachematrix. Nativecachefull covers12fixtures4continuations3arms plusrestoration,688comparisonrows,332modelcalls8807positions plus1primitive.",
+    "Originaltolerances andtop1/finiteness remain comparatorunchanged. Failednumerics preventcandidateport."
+  ],
+  "limits": {
+    "reservation": 9000,
+    "timeout_seconds": 120,
+    "allocator_bytes": 2147483648,
+    "sampled_owned_process_memory_mib": 3072,
+    "minimum_free_mib": 4096,
+    "lifetime_gpu_seconds": 7200,
+    "nonverification_gpu_seconds": 4800
+  },
+  "limitations": [
+    "No liveCUDA success yet; guardedrunmayfailinitialization,numerics,resourcechecks or reportvalidation.",
+    "Pollingprocessmemory maymissbriefpeaks and watchdoghaspolling/terminationlatency; noharddriverisolationclaimed.",
+    "Childtelemetry and reviewedconfiguration are not independentkernelinterception.",
+    "Inline tinyprimitive is checkedbychildandreportpersisted; parentdoesnotpausebetweenprimitiveandmodel. This admissioncoversreviewedcombinedprocess."
+  ],
+  "admission": "Permit exactlythefrozen native-onlyGPUdiagnostic underoriginalsharedledgerdeadline/caps afterfreshguardcapacity/foreigncomputechecks. No candidateport or subsequentmodelrun admitted by this review."
+}

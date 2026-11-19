@@ -1,0 +1,4701 @@
+{
+  "schema_version": 1,
+  "scope": "Static source-assisted computation map; no model or checkpoint load in this task",
+  "checkpoint_sha256_from_existing_inventory": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+  "tensor_count": 91,
+  "stored_values": 68827392,
+  "dimensions": {
+    "vocab": 6400,
+    "hidden": 768,
+    "layers": 8,
+    "query_heads": 8,
+    "kv_heads": 4,
+    "head_dim": 96,
+    "mlp_intermediate": 2432
+  },
+  "mode": "CPU FP32 reconstructed full-prefill, dropout zero, explicit matmul/softmax; cache equations documented only, historical cache/full fidelity unresolved",
+  "conventions": {
+    "RMS": "RMS(z,gamma)=z/sqrt(mean_last(z^2)+1e-6)*gamma",
+    "SiLU": "SiLU(z)=z/(1+exp(-z))",
+    "repeatKV": "query heads 0,1 use KV head 0; 2,3 use 1; 4,5 use 2; 6,7 use 3",
+    "RoPE": "split-half pairs (j,j+48), j=0..47; frequency=1000000^(-2*j/96); rotates normalized q and k only",
+    "causal_mask": "future score=-infinity",
+    "padding_mask": "add -1e9 for masked keys; query rows are not removed",
+    "matrix_convention": "row-vector last-axis linear x W^T, no biases",
+    "tying": "Stored groups 0 and 90 are separate; reconstruction uses separate arrays. Upstream source defaults tie_word_embeddings=True. Separate storage does not prove independent training or unequal numerical values."
+  },
+  "sources": [
+    {
+      "path": "./artifacts/allowed/tensor_inventory.json",
+      "sha256": "6462751d85e5dd48e12031bcb759e26fc1dcde1fa55196d72a27c4461df6f060"
+    },
+    {
+      "path": "./artifacts/allowed/supplied_config.json",
+      "sha256": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "sha256": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd"
+    },
+    {
+      "path": "./oracle/vendor/model_minimind.py",
+      "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f"
+    },
+    {
+      "path": "./src/minimind_re/forward.py",
+      "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778"
+    },
+    {
+      "path": "./oracle/adapter.py",
+      "sha256": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c"
+    }
+  ],
+  "tensors": [
+    {
+      "name": "model.embed_tokens.weight",
+      "shape": [
+        6400,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 4915200,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 0,
+      "layer": null,
+      "role": "token embedding lookup",
+      "equation_id": "E",
+      "equation": "x_0[b,t,:]=E[input_ids[b,t],:]",
+      "inputs": [
+        "input_ids[B,T]"
+      ],
+      "output": "x_0[B,T,768]",
+      "orientation": "[token_id,residual_coordinate]",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/0"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/0"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 206,
+          "line_end": 219
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 34,
+          "line_end": 34
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 1,
+      "layer": 0,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/1"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/1"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 2,
+      "layer": 0,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/2"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/2"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 3,
+      "layer": 0,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/3"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/3"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 4,
+      "layer": 0,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/4"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/4"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 5,
+      "layer": 0,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/5"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/5"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 6,
+      "layer": 0,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/6"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/6"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 7,
+      "layer": 0,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/7"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/7"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 8,
+      "layer": 0,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/8"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/8"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 9,
+      "layer": 0,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/9"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/9"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 10,
+      "layer": 0,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/10"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/10"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 11,
+      "layer": 0,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/11"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/11"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 12,
+      "layer": 1,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/12"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/12"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 13,
+      "layer": 1,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/13"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/13"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 14,
+      "layer": 1,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/14"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/14"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 15,
+      "layer": 1,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/15"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/15"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 16,
+      "layer": 1,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/16"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/16"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 17,
+      "layer": 1,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/17"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/17"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 18,
+      "layer": 1,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/18"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/18"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 19,
+      "layer": 1,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/19"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/19"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 20,
+      "layer": 1,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/20"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/20"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 21,
+      "layer": 1,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/21"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/21"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.1.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 22,
+      "layer": 1,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/22"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/22"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 23,
+      "layer": 2,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/23"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/23"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 24,
+      "layer": 2,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/24"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/24"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 25,
+      "layer": 2,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/25"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/25"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 26,
+      "layer": 2,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/26"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/26"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 27,
+      "layer": 2,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/27"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/27"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 28,
+      "layer": 2,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/28"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/28"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 29,
+      "layer": 2,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/29"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/29"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 30,
+      "layer": 2,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/30"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/30"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 31,
+      "layer": 2,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/31"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/31"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 32,
+      "layer": 2,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/32"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/32"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.2.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 33,
+      "layer": 2,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/33"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/33"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 34,
+      "layer": 3,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/34"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/34"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 35,
+      "layer": 3,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/35"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/35"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 36,
+      "layer": 3,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/36"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/36"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 37,
+      "layer": 3,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/37"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/37"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 38,
+      "layer": 3,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/38"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/38"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 39,
+      "layer": 3,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/39"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/39"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 40,
+      "layer": 3,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/40"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/40"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 41,
+      "layer": 3,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/41"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/41"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 42,
+      "layer": 3,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/42"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/42"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 43,
+      "layer": 3,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/43"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/43"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.3.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 44,
+      "layer": 3,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/44"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/44"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 45,
+      "layer": 4,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/45"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/45"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 46,
+      "layer": 4,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/46"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/46"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 47,
+      "layer": 4,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/47"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/47"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 48,
+      "layer": 4,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/48"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/48"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 49,
+      "layer": 4,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/49"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/49"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 50,
+      "layer": 4,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/50"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/50"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 51,
+      "layer": 4,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/51"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/51"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 52,
+      "layer": 4,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/52"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/52"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 53,
+      "layer": 4,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/53"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/53"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 54,
+      "layer": 4,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/54"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/54"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.4.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 55,
+      "layer": 4,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/55"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/55"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 56,
+      "layer": 5,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/56"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/56"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 57,
+      "layer": 5,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/57"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/57"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 58,
+      "layer": 5,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/58"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/58"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 59,
+      "layer": 5,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/59"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/59"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 60,
+      "layer": 5,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/60"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/60"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 61,
+      "layer": 5,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/61"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/61"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 62,
+      "layer": 5,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/62"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/62"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 63,
+      "layer": 5,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/63"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/63"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 64,
+      "layer": 5,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/64"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/64"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 65,
+      "layer": 5,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/65"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/65"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.5.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 66,
+      "layer": 5,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/66"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/66"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 67,
+      "layer": 6,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/67"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/67"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 68,
+      "layer": 6,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/68"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/68"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 69,
+      "layer": 6,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/69"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/69"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 70,
+      "layer": 6,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/70"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/70"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 71,
+      "layer": 6,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/71"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/71"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 72,
+      "layer": 6,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/72"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/72"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 73,
+      "layer": 6,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/73"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/73"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 74,
+      "layer": 6,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/74"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/74"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 75,
+      "layer": 6,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/75"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/75"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 76,
+      "layer": 6,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/76"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/76"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.6.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 77,
+      "layer": 6,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/77"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/77"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 78,
+      "layer": 7,
+      "role": "query projection",
+      "equation_id": "Q",
+      "equation": "q0_l=reshape(n_l Wq_l^T,[B,T,8,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "q0_l[B,T,8,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/78"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/78"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 100,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 79,
+      "layer": 7,
+      "role": "key projection",
+      "equation_id": "K",
+      "equation": "k0_l=reshape(n_l Wk_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "k0_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/79"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/79"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 101,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 37
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 80,
+      "layer": 7,
+      "role": "value projection",
+      "equation_id": "V",
+      "equation": "v_l=reshape(n_l Wv_l^T,[B,T,4,96])",
+      "inputs": [
+        "n_l[B,T,768]"
+      ],
+      "output": "v_l[B,T,4,96]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/80"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/80"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 102,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 37,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 81,
+      "layer": 7,
+      "role": "concatenated attention-head output projection",
+      "equation_id": "O",
+      "equation": "a_l=concat_heads(softmax(mask(q_l repeatKV(k_l)^T/sqrt(96))) repeatKV(v_l)) Wo_l^T; y_l=x_l+a_l",
+      "inputs": [
+        "q_l[B,T,8,96]",
+        "k_l[B,T,4,96]",
+        "v_l[B,T,4,96]",
+        "mask[B,T]",
+        "x_l[B,T,768]"
+      ],
+      "output": "a_l[B,T,768]; y_l[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/81"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/81"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 124,
+          "line_end": 134
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 40,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 82,
+      "layer": 7,
+      "role": "per-query-head RMS scale shared across 8 heads",
+      "equation_id": "QN",
+      "equation": "q_l=RoPE(RMS(q0_l,gamma_q_l),position_ids)",
+      "inputs": [
+        "q0_l[B,T,8,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "q_l[B,T,8,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/82"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/82"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 104,
+          "line_end": 119
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 38
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 83,
+      "layer": 7,
+      "role": "per-key-head RMS scale shared across 4 heads",
+      "equation_id": "KN",
+      "equation": "k_l=RoPE(RMS(k0_l,gamma_k_l),position_ids)",
+      "inputs": [
+        "k0_l[B,T,4,96]",
+        "position_ids[B,T]"
+      ],
+      "output": "k_l[B,T,4,96]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/83"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/83"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 105,
+          "line_end": 124
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 38,
+          "line_end": 40
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 84,
+      "layer": 7,
+      "role": "attention input RMS scale",
+      "equation_id": "R1",
+      "equation": "n_l=RMS(x_l,gamma_in_l)",
+      "inputs": [
+        "x_l[B,T,768]"
+      ],
+      "output": "n_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/84"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/84"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 187,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 85,
+      "layer": 7,
+      "role": "MLP input RMS scale",
+      "equation_id": "R2",
+      "equation": "u_l=RMS(y_l,gamma_post_l)",
+      "inputs": [
+        "y_l[B,T,768]"
+      ],
+      "output": "u_l[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/85"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/85"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 188,
+          "line_end": 198
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 86,
+      "layer": 7,
+      "role": "SiLU gate projection",
+      "equation_id": "G",
+      "equation": "g_l=SiLU(u_l Wgate_l^T)",
+      "inputs": [
+        "u_l[B,T,768]"
+      ],
+      "output": "g_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/86"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/86"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 87,
+      "layer": 7,
+      "role": "gated MLP output projection",
+      "equation_id": "D",
+      "equation": "d_l=h_l Wdown_l^T; x_(l+1)=y_l+d_l",
+      "inputs": [
+        "h_l[B,T,2432]",
+        "y_l[B,T,768]"
+      ],
+      "output": "d_l[B,T,768]; x_(l+1)[B,T,768]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/87"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/87"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 140,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 53
+        }
+      ]
+    },
+    {
+      "name": "model.layers.7.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 88,
+      "layer": 7,
+      "role": "parallel MLP value projection",
+      "equation_id": "U",
+      "equation": "b_l=u_l Wup_l^T; h_l=g_l*b_l",
+      "inputs": [
+        "u_l[B,T,768]",
+        "g_l[B,T,2432]"
+      ],
+      "output": "b_l[B,T,2432]; h_l[B,T,2432]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/88"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/88"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 136,
+          "line_end": 146
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 47,
+          "line_end": 47
+        }
+      ]
+    },
+    {
+      "name": "model.norm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 89,
+      "layer": null,
+      "role": "final RMS scale",
+      "equation_id": "F",
+      "equation": "f=RMS(x_8,gamma_final)",
+      "inputs": [
+        "x_8[B,T,768]"
+      ],
+      "output": "f[B,T,768]",
+      "orientation": "last-axis elementwise scale",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/89"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/89"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 209,
+          "line_end": 235
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 55,
+          "line_end": 55
+        }
+      ]
+    },
+    {
+      "name": "lm_head.weight",
+      "shape": [
+        6400,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 4915200,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 90,
+      "layer": null,
+      "role": "vocabulary output projection",
+      "equation_id": "L",
+      "equation": "logits=f Wlm^T",
+      "inputs": [
+        "f[B,T,768]"
+      ],
+      "output": "logits[B,T,6400]",
+      "orientation": "[output,input], row-vector x W^T",
+      "evidence_class": {
+        "shape_storage": "observed saved checkpoint inventory",
+        "role_equation": "source-assisted static code interpretation",
+        "semantic_feature": "not established"
+      },
+      "inventory_pointer": {
+        "path": "./artifacts/allowed/tensor_inventory.json",
+        "json_pointer": "/tensors/90"
+      },
+      "atlas_pointer": {
+        "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+        "json_pointer": "/tensors/90"
+      },
+      "source_pointers": [
+        {
+          "path": "./oracle/vendor/model_minimind.py",
+          "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+          "line_start": 245,
+          "line_end": 253
+        },
+        {
+          "path": "./src/minimind_re/forward.py",
+          "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+          "line_start": 55,
+          "line_end": 55
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No activations or tokenization measured here",
+    "No learned semantic labels established",
+    "Source-assisted, not blind architecture recovery",
+    "Historical same-mode evidence is not universal or cache/full parity",
+    "Source default tying differs from reconstruction separate-array representation; numerical equality not re-tested"
+  ]
+}

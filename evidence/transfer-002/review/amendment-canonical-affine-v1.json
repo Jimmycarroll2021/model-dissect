@@ -1,0 +1,50 @@
+{
+  "verdict": "PASS_CONDITIONAL_DESIGN_AMENDMENT_NOT_RUNTIME_ADMISSION",
+  "checked_at_utc": "2026-11-18T19:46:21.183241+00:00",
+  "manifest_sha256": "278b33cea739c06c5892fdd6315b530b5d3d977dd270e063f0b7330be93723a6",
+  "verified_prior_snapshots": {
+    "evidence/transfer-002/amendments/canonical-affine-v1/prior-spec.md": "5d0b2264dd77041c7b8f1d6eb21073f7e6d7444be40b9517147d2c00c06aff6b",
+    "evidence/transfer-002/amendments/canonical-affine-v1/prior-plan.md": "2ca5fd96e6072b79cd1241ea1764b59ddce1556be2a9f375542c259270edfaa8",
+    "evidence/transfer-002/amendments/canonical-affine-v1/prior-numerical-protocol.md": "305421951fee77843c37d15c0830df69d0d4b1c36f9840573781601861c7c87d"
+  },
+  "verified_amended_files": {
+    "specs/002-model-transfer/spec.md": "5c509af8c0b8689a6cc0c4f5e4c9199f3ed4aa0206b876d2c5d69dba577e8e16",
+    "specs/002-model-transfer/plan.md": "2ab40a546147d36a709a865af58b23cf6bd7d113b9b544f9018afec5a797d021",
+    "specs/002-model-transfer/numerical-protocol.md": "4d373be0c76795b242b23d2433a87bebdc0625ff95bc67c721b82efa36a445d9",
+    "specs/002-model-transfer/resource-amendment-v1.json": "9db9b28b559ff8a3a7b9c0f78d6dac9d76d2a0c0722c1d7662668447ce9ff18d"
+  },
+  "independent_arithmetic": {
+    "fixtures": 24,
+    "sum_physical_widths": 1078,
+    "mode_calls": 1296,
+    "mode_positions": 34356,
+    "native_anchor_calls": 120,
+    "native_anchor_positions": 5630,
+    "per_role_total_calls": 1416,
+    "per_role_actual_positions": 39986,
+    "per_role_reserved_positions": 40000,
+    "per_role_comparison_rows": 25272,
+    "per_role_raw_bytes": 8749220864,
+    "both_roles_plus_original_raw_bytes": 25091756032,
+    "projected_aggregate_seconds": 4470,
+    "remaining_seconds_under_amended_cap": 330
+  },
+  "findings": [],
+  "coverage": "Unmodified native baseline at all 24 fixtures and all five full-prefix lengths; both mode actors and all three arms compared directly at all nine boundaries. Full independent repeat required. Cached tokens additionally compared against their corresponding full mode output. No native cache/full success claim.",
+  "preserved_gates": [
+    "Original native FAIL and raw data/reservations immutable",
+    "Primitive independent review and six-call pilot PASS before promotion",
+    "Fresh evaluator arrays after candidate freeze, same coverage, excludes exposed sequences",
+    "Original elementwise 1e-5+1e-4*abs(reference), exact real-token top1, all nine boundaries, all vocabulary dimensions, finite arrays",
+    "Bitwise no-op/restoration, incoming cache and historical K/V prefixes; true cache execution",
+    "T0-T5 and science qualification/controls/heldout/repeat remain required",
+    "Exact guard/policy integration and live accounting review before runtime"
+  ],
+  "resource_scope": "Only aggregate disk24 to32GiB and aggregate seconds3600 to4800 amended. CPU2/memory10GiB/free2GiB/newpositions250000/historical1239856/combined1489856/wall7200 from original start unchanged; failures remain charged. Per-role9GiB and1200sec conditional on pilot timing and live capacity.",
+  "authority_boundary": "Standing scale-and-continue user authority supplied by coordinator; review validates bounded design and arithmetic, not independent reconstruction of user authorization or runtime admission.",
+  "limits": [
+    "No source changes, tokenizer/model/checkpoint loads or inference",
+    "No live resource feasibility or pilot success established; projection must reconcile ledger and original wall deadline before dispatch",
+    "Declared numerical mode acceptance would not reverse original native failure or prove scientific completion"
+  ]
+}

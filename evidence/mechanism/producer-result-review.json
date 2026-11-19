@@ -1,0 +1,35 @@
+{
+  "status": "success",
+  "verdict": "PASS_PRODUCER_RESULT_REVIEW_INCONCLUSIVE",
+  "reviewed_at_epoch": 1794907992.57694,
+  "producer_receipt": "runs/mechanism/heldout-evaluate-v1.json",
+  "producer_sha256": "6af4a22b59db99a3b082d549dbc9e3bc23127fcd66a4e8c37ce2462df586eeba",
+  "journal_sha256": "1c30dd6387d38c4e5d27fca7c3450438a9a0bf0cb8def47aac8f49f1ad27beb7",
+  "metrics_receipt": "evidence/mechanism/independentproducer-metrics.json",
+  "metrics_sha256": "2e91c375fa264d94dd91191bb3f51a718e1525282a2442df69b271b97115e285",
+  "checker_sha256": "c0b16a5f4e700e33774932e10666dbd26178f827d211340224a9d94cf588c037",
+  "scientific_verdict": "inconclusive",
+  "blocking_findings": [],
+  "checks": [
+    "All32rows journal matches receipt; exact admitted packet and all artifact bindings match.",
+    "Re-executed reviewed independent arithmetic checker recompute without model; complete recomputed result equals saved independent result.",
+    "32rows times5arms; baseline/noop/restored invariants and coordinate/norm effects validated by checker.",
+    "Guard completed exit0,1985positions, within originaldeadline."
+  ],
+  "metrics": {
+    "copying_mean_E_target": 0.02898955252021551,
+    "copying_mean_D": 0.03694190829992294,
+    "target_positive_count": 11,
+    "heldout_correct_vs_foil": 16,
+    "copying_removed_norm_mismatch": 0.0722536016590225,
+    "unrelated_target_nll_increase": -0.02536287158727646,
+    "unrelated_target_accuracy_drop": 0
+  },
+  "limits": [
+    "Effect0.02899<0.10, specificity0.03694<0.05 and positive11/16<12/16; no supported copying mechanism.",
+    "Expected-versus-foil16/16 is not vocabulary-wide copying accuracy; baseline copying top1 only1/16, unrelated0/16.",
+    "Historical R2 FAIL/cache-full unresolved; separate independent runtime repeat not yet executed."
+  ],
+  "model_calls_this_review": 0,
+  "next_action": "After separate wrapper review, execute one fifth-slot independent M2+heldout repeat; preserve inconclusive result without reselection."
+}

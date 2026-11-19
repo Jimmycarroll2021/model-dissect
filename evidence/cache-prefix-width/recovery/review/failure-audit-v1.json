@@ -1,0 +1,72 @@
+{
+  "status": "FAILED_RESOURCE_CAP_PRESERVED_RAW_DIAGNOSIS_AVAILABLE",
+  "ledger_sha256": "016a41d8c717fe0b1f292dd99e6dd8df0907a60581b325400d393b7994bedf1c",
+  "resource_evidence": {
+    "id": "cache-prefix-recovery-producer-v1",
+    "kind": "model",
+    "role": "implementation",
+    "positions_reserved": 64,
+    "wall_reserved": 300.0,
+    "start": 1795003432.2729821,
+    "status": "failed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.cache_prefix_width_probe_recovery",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/evidence/packet-producer-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/runs/cache-prefix-recovery-producer-v1/result.json",
+    "guard_entry_rusage_maxrss_bytes": 6993481728,
+    "guard_entry_proc_status": {
+      "VmHWM": "20548 kB",
+      "VmRSS": "20300 kB"
+    },
+    "peak_owned_rss_bytes": 8622559232,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 1455305,
+    "exit_code": 0,
+    "guard_completion_proc_status": {
+      "VmHWM": "20548 kB",
+      "VmRSS": "20448 kB"
+    },
+    "guard_completion_rusage_maxrss_bytes": 6993481728,
+    "final_child_highwater_bytes": 1629077504,
+    "final_guard_highwater_bytes": 6993481728,
+    "final_combined_highwater_bytes": 8622559232,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "error": "Final owned RSS highwater cap",
+    "end": 1795003436.9324179,
+    "wall_seconds": 4.6484137929510325,
+    "cpu_seconds": 4.976433999999999,
+    "peak_child_rss_kib": 1590896
+  },
+  "historical_charged_positions": 1138208,
+  "failed_reserved_positions": 64,
+  "total_charged_positions": 1138272,
+  "active_runs": 0,
+  "cap_excess_bytes": 32624640,
+  "interpretation": "6,993,481,728 guard ru_maxrss is present on entry and unchanged at completion, while guard /proc VmHWM is20,548KiB. Final sum is conservative independent highwaters, not measured simultaneous live RSS. Inheritance is a plausible explanation, not established by this evidence. Guard overwrites peak_owned_rss_bytes with conservative sum, losing separate sampled live peak.",
+  "raw_audit": {
+    "path": "evidence/cache-prefix-width/recovery/review/failure-raw-audit-v1.json",
+    "sha256": "567c2ec59118bf377a952d0ffa738e78f6257def43303488a45b93fb4066fa58"
+  },
+  "localization": {
+    "path": "evidence/cache-prefix-width/recovery/review/softmax-localization-v1.json",
+    "sha256": "b95beb80a2fe529b1f3f0f6abad1ad0c4b33e82a5c4ba364851757de32bd5016"
+  },
+  "host_snapshot": {
+    "MemTotal": "65660636 kB",
+    "MemAvailable": "20624372 kB",
+    "SwapTotal": "8388604 kB",
+    "SwapFree": "744 kB"
+  },
+  "proposal": "Prospective explicit10GiB conservative owned cap under controller broad scaling; preserve all measured values and prior FAILED status/64charge; preserve sampled_live_peak_owned_rss_bytes separately from conservative final sum. Fresh exact reviewed candidate/history and host admission required; no baseline subtraction or retroactive pass.",
+  "limitations": [
+    "No cgroup memory.max/current found at root; no blanket claim of absent cgroup limit.",
+    "No repeat or model calls performed.",
+    "Raw audit verifies all supplied boundary/cache hashes, operation inventory and array references; not full frozen-parameter view reconstruction.",
+    "Softmax localization is observed rounding source, not demonstrated sufficient cause of R2 logits failure."
+  ]
+}

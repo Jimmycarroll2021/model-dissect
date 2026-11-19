@@ -1,0 +1,28 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_AUDIT",
+  "result_sha256": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf",
+  "journal_sha256": "a57ede30c8601e039f693194a99ebd5bdb28117aea63304f86f15a479bb962bb",
+  "rows": 48,
+  "calls": 1152,
+  "actual_positions": 54816,
+  "reserved_positions": 54816,
+  "counts": {
+    "COPY": 0,
+    "SUBTRACT": 0,
+    "COMPARE": 0
+  },
+  "selected": null,
+  "stops": {
+    "length": 48
+  },
+  "parses": {
+    "incomplete": 48
+  },
+  "strict": 0,
+  "decoding": "Independent standard-library byte-level vocabulary reconstruction matches all48 texts",
+  "journal": "All per-step and completed-case events exactly match receipt",
+  "wilson95_per_family": [
+    0,
+    0.1936076805344365
+  ]
+}

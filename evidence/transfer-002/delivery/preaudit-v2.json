@@ -1,0 +1,48 @@
+{
+  "verdict": "PASS_DOC_CORRECTIONS_AND_PRESERVATION_PENDING_FINAL_REPEAT_ACCEPTANCE",
+  "draft_manifest_sha256": "b02bab001a8b2a2756d1b9a9b8deea5df3d498f2d788b92ae373b79f5a5f05b8",
+  "verified_doc_files": {
+    "docs/model-transfer-usage.md": "665424f3fa0e01f3a7683900ef026369c7cf6a116240a62adacaa100be75a20a",
+    "docs/pythia-transfer-result.md": "b63a886f239b0c3346f8c555081d6f0415de324180a65d1aca6ae7de46754e5b"
+  },
+  "resolved_findings": [
+    "DOC-01:producer/independent v2 packets now correctly paired with admission filenames v1; actual stored bindings rehashed and verified",
+    "DOC-02:table now distinguishes completed producer/available trace from pending independent repetition/acceptance",
+    "Historical MiniMind tasks discrepancy exactly matches independently accepted pre-transfer closure overlay; no preservation waiver"
+  ],
+  "reused_plot_trace_checks": {
+    "prior_review_sha256": "cca3d412e50285aa3742e9624f089d6059edce9c14f59320b2ce845a0a58b957",
+    "unchanged_result_plot_files": {
+      "docs/pythia-transfer-result.md": "b63a886f239b0c3346f8c555081d6f0415de324180a65d1aca6ae7de46754e5b",
+      "docs/figures/pythia-transfer-heldout.png": "ca5b662db6dfeedc3a81bbbf8914c417c46b7fb0db287e635c0dfe56e29642d3",
+      "docs/figures/pythia-transfer-heldout.svg": "7e5623af04cfc8d47b329527e5484c06a71b200bc05b93a220e4741285034f29"
+    }
+  },
+  "preservation": {
+    "closure_manifest_sha256": "91114ad231f593961693473bf7005cac7da232c273113b22610d4a5567c50752",
+    "independent_closure_review_sha256": "1f37a0dfca1d90e641a08eb17b372db7766f4c0f0fc516f8fa9fa3240b3bc009",
+    "original_final_manifest_sha256": "6253df406308997d535ab54c9e928a8ba716b6d8f3607673f5d8675d5053a9cd",
+    "final_entries_checked": 21,
+    "explicit_overrides_verified": [
+      {
+        "path": "./specs/001-minimind-reproduction/tasks.md",
+        "before_sha256": "a53e61ed5e2fdc5082474496ae726110095e620e10b4e93d0b1ee7f39e7d41be",
+        "after_sha256": "0609254b6440ba61f51fbda15f464c62c8174f0b5615a64cada82a2d80d82903",
+        "change": "T121 checkbox and closure sentence only",
+        "snapshot_path": "./evidence/cache-softmax-matrix/delivery/pre-closure-tasks-v1.md",
+        "snapshot_sha256": "a53e61ed5e2fdc5082474496ae726110095e620e10b4e93d0b1ee7f39e7d41be"
+      }
+    ],
+    "root_coordination_snapshots_verified": true
+  },
+  "required_changes": [],
+  "pending": [
+    "Independent scientific actual-repeat/raw acceptance",
+    "Final delivery docs updated to actual accepted repeat status and exact immutable final manifest audit"
+  ],
+  "limits": [
+    "This verifies draftv3 corrections only, not final delivery acceptance",
+    "Strict cache/fullT2 remainsFAIL; full-prefill slice scope only",
+    "No new runtime/models/tests"
+  ]
+}

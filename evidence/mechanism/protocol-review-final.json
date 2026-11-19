@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "verdict": "PASS_STATIC_PROTOCOL_ONLY",
+  "candidate": {
+    "path": "evidence/mechanism/protocol-v1.md",
+    "sha256": "b4126dba857be7daed77613665622938260f1d7a67ff031e5f38e6a251404f6a"
+  },
+  "reviewed_at_epoch": 1794906831.679288,
+  "supersedes": "evidence/mechanism/protocol-review-v1.json",
+  "review_scope": "Final hash and changed verdict precedence only; prior unchanged protocol review carried forward.",
+  "findings": [],
+  "resolved": [
+    "P1 bitwise baseline/noop/restored equivalence",
+    "P2 copying-only norm denominator and zero-magnitude rule",
+    "P3 explicit ordered mutually exclusive verdict rules: invalid/control/damage/repeat mismatch first, support second, nonpositive directional or specificity refutation third, remaining weak evidence inconclusive."
+  ],
+  "acceptance_boundary": "Protocol is implementable for the stated narrow descriptive inference; not runtime admission or scientific success. Independent repeat comparison is applied to completed run verdicts, not a reason to skip the mandatory repeat.",
+  "unexecuted": [
+    "Implementation and guard verification",
+    "Installed hook synthetic/exception tests",
+    "Fixture freezing and leakage audit",
+    "Exact-candidate M2",
+    "Development selection",
+    "Five-arm heldout and independent repeat",
+    "Live resource/deadline admission"
+  ],
+  "next_action": "Proceed with separately owned implementation/fixture preparation and independent exact-candidate pre-execution checks within original authority and caps."
+}

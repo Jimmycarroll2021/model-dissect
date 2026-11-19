@@ -1,0 +1,46 @@
+{
+  "status": "success",
+  "acceptance": "One new graph generated and official labeled JSON saved; no intervention",
+  "graph": {
+    "status": "Graph Generated Successfully",
+    "observed_at_utc": "2026-11-19T07:10:35.779939+00:00",
+    "submission_count": 1,
+    "slug": "thecapitalofthes-1795072198897",
+    "url": "https://www.neuronpedia.org/gemma-2-2b/graph?slug=thecapitalofthes-1795072198897",
+    "model": "gemma-2-2b",
+    "source": "gemmascope-transcoder-16k",
+    "prompt": "The capital of the state containing Dallas is",
+    "nodes": 1385,
+    "links": 56758,
+    "creator": "Anonymous",
+    "public_access": "unsigned browser opened new graph route",
+    "model_weight_revision": "unknown",
+    "transcoder_revision": "unknown",
+    "interventions": 0,
+    "generator_version": "405db9a5",
+    "created_at_utc": "2026-11-19T07:10:11.801000+00:00",
+    "batch_size": 48,
+    "export_sha256": "f36a28b2d4802ab6a555fb918f4ee5fcf78a33aaf5a08940706c638e4c5393ad",
+    "raw_json_url": "https://neuronpedia-attrib.s3.us-east-1.amazonaws.com/user-graphs/anonymous/thecapitalofthes-1795072198897-1795072198900.json",
+    "ui_scores": {
+      "replacement": 0.5961,
+      "completeness": 0.8745
+    }
+  },
+  "evidence": [
+    "baseline.json",
+    "submission.json",
+    "generated.json",
+    "graph-with-labels.json",
+    "graph-info.png",
+    "candidates.json",
+    "extract_candidates.py"
+  ],
+  "limitations": [
+    "Weight and transcoder revisions unknown",
+    "Labels and attribution edges are hypotheses, not causal tests",
+    "Local latent identity needs verification against UI/source because exported feature field differs from node middle component",
+    "No independent verifier yet"
+  ],
+  "next_action": "Independent verification of exact graph/export and feature identity before preregistration"
+}

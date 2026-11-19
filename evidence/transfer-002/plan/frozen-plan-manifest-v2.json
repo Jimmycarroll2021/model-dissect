@@ -1,0 +1,13 @@
+{
+  "specs/002-model-transfer/checklists/requirements.md": "0dbd92eab22ff1237e0f69bb24372694dbbcd86ad61ace8c7aeebcc8a81725e1",
+  "specs/002-model-transfer/contracts/local-workflow.md": "7b0c400ddeedb312522d672069701de2c71a2ddf853039c6f4674472a072dded",
+  "specs/002-model-transfer/data-model.md": "c204f760f6e542966a940ed2cd9a537cb899f158d80688b1b36274f95fb529cd",
+  "specs/002-model-transfer/numerical-protocol.md": "305421951fee77843c37d15c0830df69d0d4b1c36f9840573781601861c7c87d",
+  "specs/002-model-transfer/plan.md": "2ca5fd96e6072b79cd1241ea1764b59ddce1556be2a9f375542c259270edfaa8",
+  "specs/002-model-transfer/quickstart.md": "ab4aec48eb57632510067c5e652bf1f61e105b965a39a237efa6675c3ed6f3c0",
+  "specs/002-model-transfer/research.md": "3fa41de8579f0c9236d3abdeaf564e34590618a5f741948ef951cf8634dc1881",
+  "specs/002-model-transfer/spec.md": "5d0b2264dd77041c7b8f1d6eb21073f7e6d7444be40b9517147d2c00c06aff6b",
+  "specs/002-model-transfer/tasks.md": "24b30de84d336a58c83b64348a0e0cec9acbbab68b0c16cc4cbb2929f93d3c8e",
+  ".specify/feature.json": "12e93aeb242b78cd8e508cb774260845ca3a88955e20cb55b5a4e28f1b2fa00a",
+  "AGENTS.md": "f63c7f01b713cb3127e46d77ea8f1b1083363027ff0f098d55062e68efdc0ed1"
+}

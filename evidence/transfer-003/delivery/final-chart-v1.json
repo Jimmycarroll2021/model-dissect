@@ -1,0 +1,16 @@
+{
+  "input_sha256": "ecb0979f080a6b914ae98015f26b292a8c1020e713a213391ac330ee3994befb",
+  "script_sha256": "b0a4de829ad3993d152b19dc2e456c98515e20dc1cc651035f31deae95892d5f",
+  "outputs": [
+    {
+      "path": "docs/figures/gpt2-heldout-final-v1.png",
+      "sha256": "8ca0cb3241ba34db6f2dc19af8b10335dd8564937abf21d0c1467eabe600392e"
+    },
+    {
+      "path": "docs/figures/gpt2-heldout-final-v1.svg",
+      "sha256": "a8c2afc3667c6b088a4cf0fe1666d6be9a170849e3caa8e07498f50deb78e264"
+    }
+  ],
+  "model_calls": 0,
+  "checks": "16 eligible rows; medians independently recomputed from saved metric rows agree with summary within1e-12"
+}

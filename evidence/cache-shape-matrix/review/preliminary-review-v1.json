@@ -1,0 +1,52 @@
+{
+  "status": "PASS_PRELIMINARY_SCOPE_AND_REFERENCE_PENDING_EXACT_CANDIDATE_AND_AUTHORITY",
+  "reviewed_utc": "2026-11-18T09:32:33.784697+00:00",
+  "reference_sha256": "6a3b1cf59f2881cdf4a5e5085f975fc5848173dd06e64276693d50e2f005c07b",
+  "fixture_hashes": {
+    "fixtures/heldout/parity.json": "616d04c0a2ad37d389233e833071036be75680ebbbdf9329430b84d2e01b551d",
+    "fixtures/continuation/parity.json": "f9411b52e3613337ec53a4916f6c4791af5a12fb9c44aed8ac4a73c0e23602af"
+  },
+  "scope": {
+    "distinct_cases": 24,
+    "arms_each": 3,
+    "policy_actors": 2,
+    "native_full_fidelity_all_arms": true,
+    "cached_appends_each": 4,
+    "full_baselines_each": 5,
+    "model_calls_role": 1656,
+    "actual_positions_policy_role": 33876,
+    "actual_positions_native_role": 16650,
+    "actual_positions_role": 50526,
+    "actual_positions_both_roles": 101052
+  },
+  "storage": {
+    "boundary_tensor_bytes_role": 1759113216,
+    "boundary_tensor_bytes_both_roles": 3518226432,
+    "proposed_phase_cap": 4294967296,
+    "margin_before_stage_inputs_and_metadata": 776740864,
+    "current_historical_plus_project_bytes": 1907172377,
+    "current_plus_full_proposed_phase_cap": 6202139673,
+    "unchanged_combined_cap": 8589934592,
+    "observed_ai_free_bytes": 70568923136
+  },
+  "checks": [
+    "Source independent reference retains physical padded KV slots and binary all-key mask, while logical RoPE position is supplied from fixture real_length+step.",
+    "Full/no-cache branch delegates unchanged native Attention arguments; cached-only full query width max135.",
+    "Independent AST comparison confirms numerical core unchanged except key-mask variable.",
+    "4 independent fixture/accounting/structural tests PASS;7 author synthetic reference tests rerun PASS."
+  ],
+  "requirements": [
+    "All4 raw boundary tensors every call retained, comparisons independently recomputable.",
+    "Actual existing no-op/restored hook lifecycle, not relabelled baseline calls.",
+    "Pre-call KV byte snapshots and input/returned prefix checks at every layer/append; durable hash/shape/dtype receipts; temporary KV clones released.",
+    "Stream per-case outputs and comparisons; actors sequential with gc; do not accumulate entire matrix snapshots or models in memory.",
+    "Bound discrepancy JSON; full raw arrays retain recoverability of all failures without duplicating millions of failure values into text.",
+    "Exact staged/protocol source and guard must be reviewed before user budget/phase-cap approval; no runtime admission now."
+  ],
+  "limits": [
+    "No all-KV-raw archival claim; prefix runtime checks plus hashes and independent repetition have a distinct evidence scope.",
+    "Current1856remaining cannot cover this matrix; reservation and lifetime cap require concrete approved amendment, not reuse of old authority.",
+    "Historical original-native cached R2 FAIL preserved even if new policy matrix passes."
+  ],
+  "model_calls": 0
+}

@@ -1,0 +1,58 @@
+{
+  "contrast": {
+    "u": 1,
+    "v": 0,
+    "gap": 6.0,
+    "eligible": true
+  },
+  "eligible": true,
+  "arms": {
+    "target": {
+      "forward_recovery": 1.0,
+      "reverse_recovery": 1.0,
+      "primary": 1.0,
+      "forward": {
+        "rms": 0.018916247711449435,
+        "centered_rms": 0.018916247711449435,
+        "total_variation": 0.0027948907006173545,
+        "cosine_toward_donor": 1.0000000000000002,
+        "top1_changed": false
+      },
+      "reverse": {
+        "rms": 0.018916247711449435,
+        "centered_rms": 0.018916247711449435,
+        "total_variation": 0.0027948907006173545,
+        "cosine_toward_donor": 1.0000000000000002,
+        "top1_changed": false
+      }
+    },
+    "control": {
+      "forward_recovery": 0.0,
+      "reverse_recovery": 0.0,
+      "primary": 0.0,
+      "forward": {
+        "rms": 0.0,
+        "centered_rms": 0.0,
+        "total_variation": 0.0,
+        "cosine_toward_donor": null,
+        "top1_changed": false
+      },
+      "reverse": {
+        "rms": 0.0,
+        "centered_rms": 0.0,
+        "total_variation": 0.0,
+        "cosine_toward_donor": null,
+        "top1_changed": false
+      }
+    }
+  },
+  "advantage": 1.0,
+  "pair_id": "pair-15",
+  "layer": 0,
+  "edit_quality": {
+    "norm": 3.0,
+    "control_norm": 3.0,
+    "relative_norm_error": 0.0,
+    "normalized_dot": 0.0
+  }
+}

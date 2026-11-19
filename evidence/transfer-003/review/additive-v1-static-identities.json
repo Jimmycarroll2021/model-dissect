@@ -1,0 +1,245 @@
+{
+  "scope": "All tokenizer packet identities except model.safetensors; no weight reads during active producer",
+  "checks": [
+    {
+      "path": "./src/minimind_re/transfer3/__init__.py",
+      "expected": "8853ad3167d6aa33e4c27960a21c59f9c90a1b51a96d39f894777fb713ef9326",
+      "actual": "8853ad3167d6aa33e4c27960a21c59f9c90a1b51a96d39f894777fb713ef9326",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/reference.py",
+      "expected": "c98c4e5daf1810a540b228e766de5fb5dcab27c47e5ab2ade4a116df51efd3d8",
+      "actual": "c98c4e5daf1810a540b228e766de5fb5dcab27c47e5ab2ade4a116df51efd3d8",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/runtime.py",
+      "expected": "ec9a3fda5e284800fc00873bb783ced10817513aced86ba25adb001e406ee8a1",
+      "actual": "ec9a3fda5e284800fc00873bb783ced10817513aced86ba25adb001e406ee8a1",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/numerical.py",
+      "expected": "7d5c6fc147fbcf9c6b0c5cd4f7b30d47f12538867b7b17e81f404fd6964f9646",
+      "actual": "7d5c6fc147fbcf9c6b0c5cd4f7b30d47f12538867b7b17e81f404fd6964f9646",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/run.py",
+      "expected": "78bacefcd0373ed40ca65df0ef6f9a8aee7236f99ef5b86edb55bc17d2e5b63a",
+      "actual": "78bacefcd0373ed40ca65df0ef6f9a8aee7236f99ef5b86edb55bc17d2e5b63a",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/gpt2_candidate.py",
+      "expected": "e1f8762cfd16bfcf8263c62a0cbd28ef4305ea1eb0463e820091c693357f6c96",
+      "actual": "e1f8762cfd16bfcf8263c62a0cbd28ef4305ea1eb0463e820091c693357f6c96",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer/numerical.py",
+      "expected": "437076483a9c9d8f2ebcd267c787f6bfa4d6e717e3ad046d812227b74b921152",
+      "actual": "437076483a9c9d8f2ebcd267c787f6bfa4d6e717e3ad046d812227b74b921152",
+      "pass": true
+    },
+    {
+      "path": "./specs/003-model-dissection/runtime-protocol.md",
+      "expected": "332c2827cb65a0d8208922df3522e984981041f39e7216cd3cfb04dbab3684ca",
+      "actual": "332c2827cb65a0d8208922df3522e984981041f39e7216cd3cfb04dbab3684ca",
+      "pass": true
+    },
+    {
+      "path": "./specs/003-model-dissection/numerical-protocol.md",
+      "expected": "538cdfaa52261b7749370c48e97c801ff6a375a23323cfc03641b18a2d2398e4",
+      "actual": "538cdfaa52261b7749370c48e97c801ff6a375a23323cfc03641b18a2d2398e4",
+      "pass": true
+    },
+    {
+      "path": "./specs/003-model-dissection/contracts/candidate.md",
+      "expected": "00f1e3e10dbbcf4d6ea1255042dc71a850565bef8dca1b6ce85f246c9ddae48a",
+      "actual": "00f1e3e10dbbcf4d6ea1255042dc71a850565bef8dca1b6ce85f246c9ddae48a",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/state/scope-manifest-v3.json",
+      "expected": "5d79d6d0ac5955f2668d6cc29ef8a0f9bbee94266639d7384ab8e30f24c88f8e",
+      "actual": "5d79d6d0ac5955f2668d6cc29ef8a0f9bbee94266639d7384ab8e30f24c88f8e",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/review/acquisition-v1.json",
+      "expected": "9035e8f261b509c84dd1e4e8a67a94d4254fcf7a229882c186cc648aa2d5d132",
+      "actual": "9035e8f261b509c84dd1e4e8a67a94d4254fcf7a229882c186cc648aa2d5d132",
+      "pass": true
+    },
+    {
+      "path": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py",
+      "expected": "c05a34ca83eecf3c9c84627e4461b544b4628cf27c764509578710d8dd5f03ca",
+      "actual": "c05a34ca83eecf3c9c84627e4461b544b4628cf27c764509578710d8dd5f03ca",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/ledger.jsonl",
+      "expected": "32017dfbb2500364eb25107d72c6a04016eb34b753715f9a679808532941674c",
+      "actual": "32017dfbb2500364eb25107d72c6a04016eb34b753715f9a679808532941674c",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-002/delivery/final-review-v1.json",
+      "expected": "c4c667fe542b5102f2e817e7aed694caa157a264b62bace977dca3b74632321c",
+      "actual": "c4c667fe542b5102f2e817e7aed694caa157a264b62bace977dca3b74632321c",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-002/delivery/coordination/closure-overlay-v1.json",
+      "expected": "8ef65c1ef7f1bf0f7bbd4a487e98379dd57f9afe7be806818c539b46b434a31e",
+      "actual": "8ef65c1ef7f1bf0f7bbd4a487e98379dd57f9afe7be806818c539b46b434a31e",
+      "pass": true
+    },
+    {
+      "path": "./evidence/cache-softmax-matrix/delivery/native-goal-completion-v1.json",
+      "expected": "dd1cb67eea7a4abac1a533d99a5ef405c7c58299f46ea811650170ed23a90e81",
+      "actual": "dd1cb67eea7a4abac1a533d99a5ef405c7c58299f46ea811650170ed23a90e81",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/README.md",
+      "expected": "0fcd631078093c2aa1d93438b898320b8a1167784e2a1ab37b8016e9de8b3c2e",
+      "actual": "0fcd631078093c2aa1d93438b898320b8a1167784e2a1ab37b8016e9de8b3c2e",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/config.json",
+      "expected": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4",
+      "actual": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/generation_config.json",
+      "expected": "ed0b32ac72c0f5f44a719abb2d7786ea5146c871f83717b7f2018065954de02b",
+      "actual": "ed0b32ac72c0f5f44a719abb2d7786ea5146c871f83717b7f2018065954de02b",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/merges.txt",
+      "expected": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "actual": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/tokenizer.json",
+      "expected": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "actual": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/tokenizer_config.json",
+      "expected": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "actual": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "pass": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/vocab.json",
+      "expected": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+      "actual": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/runtime/fixtures-pilot-v2.json",
+      "expected": "4639e112cca927e007d11f270e5b17dd715054055bf195971b64c289b60d591a",
+      "actual": "4639e112cca927e007d11f270e5b17dd715054055bf195971b64c289b60d591a",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/implementation/candidate-manifest-v3.json",
+      "expected": "d768bf9ccabc67a864baa14e3f0fd402c374ad3bb1f76ff9e89a0d67310b7f6e",
+      "actual": "d768bf9ccabc67a864baa14e3f0fd402c374ad3bb1f76ff9e89a0d67310b7f6e",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/additive_run.py",
+      "expected": "b07cbb864ff1dea8119ff4972c2f15b8db945b840d4024b70b47f4abe59d2661",
+      "actual": "b07cbb864ff1dea8119ff4972c2f15b8db945b840d4024b70b47f4abe59d2661",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/science.py",
+      "expected": "93b231b47c171660a403e5875f818e74eb389e7b1a8893da68772a608560067d",
+      "actual": "93b231b47c171660a403e5875f818e74eb389e7b1a8893da68772a608560067d",
+      "pass": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/atlas.py",
+      "expected": "be2d9380cb611e96ac126d4cb3d37b43998c4decb3f3e128329ab5cd695cf8dd",
+      "actual": "be2d9380cb611e96ac126d4cb3d37b43998c4decb3f3e128329ab5cd695cf8dd",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/science/protocol-v1.json",
+      "expected": "da5469ec7a9c39d8e9b5e35a5e598327f210b41f266955dffa56d14716839eaf",
+      "actual": "da5469ec7a9c39d8e9b5e35a5e598327f210b41f266955dffa56d14716839eaf",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/science/implementation-v1.json",
+      "expected": "ebd5622a20656b2126b09a0f892fe818103264641a2b52dc0240b2ebdd769ae9",
+      "actual": "ebd5622a20656b2126b09a0f892fe818103264641a2b52dc0240b2ebdd769ae9",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/atlas/manifest-v3.json",
+      "expected": "670a6e0d057e44a337e5144cf00577c5af6b20aa7e9915780afe8ec434ae06ed",
+      "actual": "670a6e0d057e44a337e5144cf00577c5af6b20aa7e9915780afe8ec434ae06ed",
+      "pass": true
+    },
+    {
+      "path": "./docs/gpt2-computation-map.md",
+      "expected": "31b918d344c0de6feb63d7c05dcb8c05e703554dae9d48a50d695a4d60b5188e",
+      "actual": "31b918d344c0de6feb63d7c05dcb8c05e703554dae9d48a50d695a4d60b5188e",
+      "pass": true
+    },
+    {
+      "path": "./specs/003-model-dissection/internal-protocol-v1.md",
+      "expected": "5e72dbaa6916223862ba31e60a74e65ab5aa15ac043b357230802d528ab0afb5",
+      "actual": "5e72dbaa6916223862ba31e60a74e65ab5aa15ac043b357230802d528ab0afb5",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/review/science-build-v1.json",
+      "expected": "ce3e73bb6d116ff66f557f83a5f5d121f2ce7284f5ddf5db03e6a70b566f1d9a",
+      "actual": "ce3e73bb6d116ff66f557f83a5f5d121f2ce7284f5ddf5db03e6a70b566f1d9a",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/review/atlas-build-v1.json",
+      "expected": "8348443ae58da6c44bff508473e0e506a72dc28d92772199eac5aa4990f88bc6",
+      "actual": "8348443ae58da6c44bff508473e0e506a72dc28d92772199eac5aa4990f88bc6",
+      "pass": true
+    },
+    {
+      "path": "./evidence/transfer-003/runtime/additive-v1/tests-v1.json",
+      "expected": "899908defdd920a92870da95f8abe50c9641f98fbe7756ab295859614e26d920",
+      "actual": "899908defdd920a92870da95f8abe50c9641f98fbe7756ab295859614e26d920",
+      "pass": true
+    },
+    {
+      "path": "./tests/test_transfer3_additive.py",
+      "expected": "f5c7dc92f17b4253fc7429e9bfa5c73eb0eedac20288ad40035d36deaa334f91",
+      "actual": "f5c7dc92f17b4253fc7429e9bfa5c73eb0eedac20288ad40035d36deaa334f91",
+      "pass": true
+    },
+    {
+      "path": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt2/tokenization_gpt2.py",
+      "expected": "a9dbc47fb0304b98cc9a0c4642b9292473f96652c89c1f1d78f420613535f1e5",
+      "actual": "a9dbc47fb0304b98cc9a0c4642b9292473f96652c89c1f1d78f420613535f1e5",
+      "pass": true
+    },
+    {
+      "path": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/tokenization_utils_tokenizers.py",
+      "expected": "96eef9f4678d18efafa9752d4cfc9d43916f94d5e6b213ab15e896f1560e260f",
+      "actual": "96eef9f4678d18efafa9752d4cfc9d43916f94d5e6b213ab15e896f1560e260f",
+      "pass": true
+    }
+  ]
+}

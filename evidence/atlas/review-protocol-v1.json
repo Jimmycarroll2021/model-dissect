@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "task_id": "ATLAS-001-planning-independent-review",
+  "producer_id": "/root/atlas_verify",
+  "role": "independent verifier",
+  "status": "success",
+  "created_utc": "2026-11-17T21:33:40.514368+00:00",
+  "verdict": "PASS_PLANNING_ONLY",
+  "candidate_revision": "ATLAS-001 protocol-v1",
+  "artifacts": [
+    {
+      "path": "./evidence/atlas/protocol-v1.md",
+      "sha256": "ff4b8808937327d982f4e1e86a14bf6b61aa08b04c1893c72784ec4116ffd9a6"
+    },
+    {
+      "path": "./docs/atlas-goal.md",
+      "sha256": "6926363edcad41441c00975964be8e465e147314b581c8261ee2f4f3981ac5cf"
+    },
+    {
+      "path": "./specs/001-minimind-reproduction/spec.md",
+      "sha256": "3efefe6680366bd699cfae74e621be71264c0276a8fce1b532633296254aa8de"
+    },
+    {
+      "path": "./specs/001-minimind-reproduction/plan.md",
+      "sha256": "29ae48cd8b4d939678884254936247c4926ce0d6d5ad9a506e2beed881b62a5a"
+    },
+    {
+      "path": "./specs/001-minimind-reproduction/tasks.md",
+      "sha256": "3b394b20a45b831b05a09bbef6c2342462915ea98492b3715736352688b9b695"
+    }
+  ],
+  "checks": [
+    {
+      "id": "authority",
+      "status": "PASS",
+      "evidence": "Parent supplied explicit renewed user goal and active native-goal fact. Protocol accurately identifies a separately bounded new phase; numerical limits are coordinator operational choices, not misquoted user limits. Native tool state was not independently queried."
+    },
+    {
+      "id": "historical-preservation",
+      "status": "PASS",
+      "evidence": "Expired old clock retained; 175600 historical reservations and lifetime 1000000 ceiling preserved; R2 FAIL, M2 PASS, prior INCONCLUSIVE and STOP_NO_QUALIFIED_PAIR distinguished."
+    },
+    {
+      "id": "bounded-scope",
+      "status": "PASS",
+      "evidence": "A1-A4 require full key accounting/scalar measurements, bounded spectra/vocabulary/QKOV, explicit approximations/orientation/GQA caveats, executable CLI and independent checks. No behavioral-answer qualification is necessary for static atlas."
+    },
+    {
+      "id": "investigation-validity",
+      "status": "PASS",
+      "evidence": "A5 requires one frozen question, directional rule/thresholds, baseline/noop/target/norm-matched/restored arms, fresh evaluator-owned confirmation, exact independent repeat and restoration. Scientific negative outcomes are distinguished from missing controls/failed execution."
+    },
+    {
+      "id": "budget",
+      "status": "PASS",
+      "evidence": "Single 7200s admission clock; aggregate static 1200 and model 1800 process-wall seconds; additional 120000 positions with 40000/600s verification reserve; CPU two threads, 8GiB RSS, 512MiB phase disk inclusive staging, unchanged combined lifetime8GiB disk and no new install/train/GPU/downloads."
+    },
+    {
+      "id": "migration",
+      "status": "PASS_CONTRACT_ONLY",
+      "evidence": "Explicit separate EXTERNAL_ARTIFACT_ROOT runtime, unchanged2GiB reserve, source/copy hashes, one canonical locked ledger, immutable historical snapshot and combined growth required before checkpoint loading. Capacity/guard enforcement are intentionally pending."
+    },
+    {
+      "id": "planning-coherence",
+      "status": "PASS",
+      "evidence": "Spec/plan active amendments point to authoritative protocol; tasks T058-T067 sequence atlas, separate investigation freeze, independent repeat and final acceptance; explanatory goal document does not claim delivery."
+    }
+  ],
+  "unresolved": [],
+  "contradictions": [],
+  "limitations": [
+    "No implementation code, tests, runtime guard, model checkpoint, copy, disk capacity or live ledger independently checked in this planning-only review.",
+    "A1-A6 delivery remains unverified. This receipt neither admits execution nor starts a phase clock.",
+    "Runtime-relative runs/atlas, docs and verification paths in task list must resolve beneath the declared EXTERNAL_ARTIFACT_ROOT runtime workspace when execution packets are frozen; original TASK_STATE.md remains coordinator status record."
+  ],
+  "next_action": "Obtain frozen implementation/guard/migration manifests and run packets for independent exact-candidate review before any actual checkpoint analysis. Later freeze a concrete investigation protocol and evaluator fixtures before any model forward."
+}

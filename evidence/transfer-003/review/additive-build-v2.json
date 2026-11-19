@@ -1,0 +1,24 @@
+{
+  "verdict": "PASS",
+  "scope": "MODEL_FREE_BUILD_AND_EXACT_TOKENIZER_ONLY_ADMISSION",
+  "utc": "2026-11-19T00:21:57.421429+00:00",
+  "manifest_sha256": "f35d250439dacc948a9874b0e98918f50385070e53bbd2319c42bd0bff4d4a0d",
+  "source_sha256": "2c5edeeb24600ed73cda86442e4de846c9aa629e85e47566217f90074f8ca520",
+  "packet_sha256": "ede311a5cbf5955ee60e1e1c33cbb41387188219e6bc6a31d74a0a7fdbe26e32",
+  "test_result": "6 passed,2 SWIG deprecation warnings in2.84s",
+  "test_command": "CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src TMPDIR=EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2 timeout 120s python -m pytest tests/test_transfer3_additive.py evidence/transfer-003/review/additive-v2-independent-check.py -q --basetemp=EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/additive-independent-review-v2",
+  "artifacts": {
+    "evidence/transfer-003/review/additive-build-v2.md": "c19939a070af0aa6f30b3fa477199c0ac2ab4c5e7a90238bedc9a88a801917a1",
+    "evidence/transfer-003/review/additive-v2-tests.txt": "b742f68c3b5ad549bfacb922ccafae8bf7d8754125fcf81d3149d9f3c1a76062",
+    "evidence/transfer-003/review/additive-v2-independent-check.py": "9f87d9d569ad181af71a3096a2ee51e7471e38b0acab78e7b7ec6b4f6bd868f9",
+    "evidence/transfer-003/review/additive-v2-identities.json": "247c7f969c80a463344031055395c9dd788dd09d6a54c33383e4e23f6b37dacc",
+    "tests/test_transfer3_additive.py": "44c7e31f7c99b0b3c7ff196fbca3361ba216e2f705b1de2257ead40515bd2c7b"
+  },
+  "target_tokenization": 0,
+  "target_loads": 0,
+  "target_forwards": 0,
+  "unadmitted": [
+    "atlas",
+    "science"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "status": "synthetic_implementation_complete_requires_independent_verifier",
+  "files": {
+    "src/minimind_re/transfer3/atlas.py": "be2d9380cb611e96ac126d4cb3d37b43998c4decb3f3e128329ab5cd695cf8dd",
+    "tests/transfer3/test_atlas.py": "5721cc5e2384737cd896713a560c1b571a9fe066a49f2ef6c0e206ab16e6a380",
+    "docs/gpt2-computation-map.md": "742c38a0ab2782ac6cd5e6ea59eb310b14eb62c8478aea8b20dceec5e925d865",
+    "evidence/transfer-003/atlas/tests-v1.txt": "b6dc65a36e8800080b4418d9f9a2c19e55265e3328b558065a549b53fdd69925",
+    "evidence/transfer-003/atlas/tests-v2.txt": "2670397bfb263d66817c50ebb43a3a480fc700915fa95220ba47d1046aff01c1"
+  },
+  "candidate_untouched_sha256": "e1f8762cfd16bfcf8263c62a0cbd28ef4305ea1eb0463e820091c693357f6c96",
+  "target_loaded": false,
+  "test_result": "7 passed in synthetic tests-v2; tests-v1 retained reference-test counting bug (endswith attn.bias wrongly excluded c_attn.bias); corrected to exact known buffer names",
+  "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONPATH=src python -m pytest -q tests/transfer3/test_atlas.py",
+  "api": "build_atlas(config, externally_admitted_cpu_f32_tensor_mapping, sample_heads=None,chunk_elements=262144,svd_count=0)->(JSON_metadata,dict_of_raw_torch_tensors)",
+  "static_target_packet_estimate": {
+    "model_forward_positions": 0,
+    "parameter_tensor_count": 148,
+    "parameter_elements": 124439808,
+    "causal_buffer_count": 12,
+    "stored_elements": 137022720,
+    "sample_sites": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ]
+    ],
+    "head_norm_rows": 144,
+    "max_raw_matrices": 24,
+    "raw_matrix_bytes": 56623104,
+    "default_svd_count": 0,
+    "maximum_optional_svd_count": 4,
+    "suggested_extra_memory_reserve_bytes": 134217728,
+    "estimate_not_measured": true,
+    "input_tensor_memory_and_runtime_overhead_excluded": true,
+    "token_projections": 0
+  },
+  "limitations": [
+    "Target full finite/stats and exact causal buffer checks not executed; supplied only implementation and synthetic checks.",
+    "CPU runtime/thread and output quotas remain externally enforced.",
+    "Optional SVD execution costs uncalibrated; default zero.",
+    "No serialization or safe artifact loader in atlas; runtime must hash-admit input and serialize retained raw matrices.",
+    "Static QK/OV excludes LN/bias/position/context/softmax and conveys no semantic or causal claim.",
+    "Default atlas samples are predefined one per layer, independent of science-selection sites."
+  ],
+  "manifest_revision": "v2 dependency refresh only",
+  "supersedes_manifest_sha256": "087482b1e234f782860d994a06283f945de19aaa3166f658ad5b4a9de569e725",
+  "dependency_refresh": {
+    "candidate": "v3 observation-only addition",
+    "atlas_source_tests_docs_unchanged": true,
+    "atlas_imports": [
+      "from __future__ import annotations",
+      "import torch"
+    ],
+    "imports_candidate_helpers": false,
+    "tests_reused": "7 passing synthetic tests in tests-v2.txt; source/test/docs hashes verified unchanged, observer API has no dependency path into atlas",
+    "sample_heads": "Caller can pass the 12 science protocol sites as unique (layer, head) tuples; defaults unchanged",
+    "target_loaded": false
+  }
+}

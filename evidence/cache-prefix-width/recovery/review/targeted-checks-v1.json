@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "contexts": [
+    {
+      "actor": "candidate",
+      "width": 6,
+      "ops": 64,
+      "stage_checks": {
+        "projection_order": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "stage_counts": {
+          "qk": 1,
+          "weighted_v": 1,
+          "softmax": 1,
+          "silu": 1,
+          "rms": 4,
+          "rope_add": 2,
+          "residual_add": 2,
+          "scaled_scores": 1,
+          "causal_scores": 1,
+          "padding_scores": 1
+        },
+        "matrix_families": [
+          "aten.linear.default",
+          "aten.matmul.default"
+        ]
+      }
+    },
+    {
+      "actor": "candidate",
+      "width": 8,
+      "ops": 64,
+      "stage_checks": {
+        "projection_order": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "stage_counts": {
+          "qk": 1,
+          "weighted_v": 1,
+          "softmax": 1,
+          "silu": 1,
+          "rms": 4,
+          "rope_add": 2,
+          "residual_add": 2,
+          "scaled_scores": 1,
+          "causal_scores": 1,
+          "padding_scores": 1
+        },
+        "matrix_families": [
+          "aten.linear.default",
+          "aten.matmul.default"
+        ]
+      }
+    },
+    {
+      "actor": "native",
+      "width": 6,
+      "ops": 64,
+      "stage_checks": {
+        "projection_order": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "stage_counts": {
+          "qk": 1,
+          "weighted_v": 1,
+          "softmax": 1,
+          "silu": 1,
+          "rms": 4,
+          "rope_add": 2,
+          "residual_add": 2,
+          "scaled_scores": 1,
+          "causal_scores": 1,
+          "padding_scores": 1
+        },
+        "matrix_families": [
+          "aten.linear.default",
+          "aten.matmul.default"
+        ]
+      }
+    },
+    {
+      "actor": "native",
+      "width": 8,
+      "ops": 64,
+      "stage_checks": {
+        "projection_order": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "stage_counts": {
+          "qk": 1,
+          "weighted_v": 1,
+          "softmax": 1,
+          "silu": 1,
+          "rms": 4,
+          "rope_add": 2,
+          "residual_add": 2,
+          "scaled_scores": 1,
+          "causal_scores": 1,
+          "padding_scores": 1
+        },
+        "matrix_families": [
+          "aten.linear.default",
+          "aten.matmul.default"
+        ]
+      }
+    }
+  ],
+  "no_target_model_calls": true,
+  "persistence_negatives": [
+    "missing_stage",
+    "boundary",
+    "cache",
+    "request"
+  ],
+  "scope_limit": "Outer runner partial exception persistence inspected statically; observer cleanup executed."
+}

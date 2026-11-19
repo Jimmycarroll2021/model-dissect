@@ -1,0 +1,50 @@
+{
+  "status": "implemented_pending_independent_code_review_and_runtime_admission",
+  "files": {
+    "src/minimind_re/transfer/science.py": "534e0076b83c924a499a763b0567971d85978368d35012ff206c0948a65b2df7",
+    "tests/transfer/test_science.py": "884b85a654a3438c6a03db1939edb2b67eb96a94ec4e90b3b8d77c53f2c91593",
+    "evidence/transfer-002/science/implementation-tests-v1.txt": "e819659de90e12fb3211cb456e852f09b2e31050c8dda99a8d3db5109b2ab840",
+    "evidence/transfer-002/science/implementation-tests-v2.txt": "571b2d88b94fac6a9d81c74532a2a71eecb9519785808732b28b717bf99b798d"
+  },
+  "protocol_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+  "tests": "5 passed; small synthetic utility checks only",
+  "runtime_executed": false,
+  "target_payload_loaded": false,
+  "fixed_math": {
+    "baseline_logits_metrics": "FP64 conversions before contrast, distribution metrics and recovery arithmetic",
+    "delta": "FP32 donor minus recipient, then FP64 norm/control construction",
+    "control": "FP64 roll/projection/fallback/normalization then FP32 cast; FP64 validation of cast result",
+    "forward": "unchanged native/candidate CPU FP32",
+    "median": "Python statistics.median, even count mean of two central values",
+    "ties": "argmax/argmin first index and lower site selection; top10 stable descending ID ordering"
+  },
+  "schedule": {
+    "tool": 3,
+    "baselines": 48,
+    "development_interventions": 160,
+    "heldout_additional": 128,
+    "trace": 2,
+    "calls": 341,
+    "actual_positions": 10912,
+    "reserve_positions": 11000,
+    "reserve_seconds": 300,
+    "reserve_disk_bytes": 134217728
+  },
+  "api": "run_science(development,heldout_provider,*,heldout_sha256,native,candidate,guard,output,parameter_digest,checkpoint_identity)",
+  "integration_required": [
+    "Supervised outer PhaseGuard.run and exact identity-bound packet/admission; runner calls require_active and charges guard.call(32)",
+    "Externally tokenize/freeze fixtures before model loading: pair dict{id,a,b}; each member input_ids/attention_mask/position_ids flat32 plus text and decoded token pieces for trace",
+    "Canonical heldout fixture digest via fixture_digest; callback accessed only after fsynced selection.json",
+    "Supply parameter_digest callback over native in-memory parameter names/shapes/dtypes/bytes before and after experiment",
+    "Supply admitted native/candidate adapters; no CLI or model loader exists in this module",
+    "Precompute exact serialized output estimate within128MiB; frozen raw base81902080bytes plus vector/JSON/NPY overhead",
+    "Independent synthetic native-hook exception teardown and full runner integration verification before target admission"
+  ],
+  "limitations": [
+    "Utility tests do not establish full341-call execution",
+    "No tokenizer, target weights or model forward executed",
+    "No target numerical or scientific conclusions",
+    "All-ineligible verdict does not automatically satisfy T4",
+    "Raw arrays are saved but independent auditor/repetition still required"
+  ]
+}

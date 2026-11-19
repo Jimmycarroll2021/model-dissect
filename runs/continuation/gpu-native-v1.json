@@ -1,0 +1,22 @@
+{
+  "status": "ERROR",
+  "stage": "initialization",
+  "rows": [],
+  "tokens": 0,
+  "model_calls": 0,
+  "run_id": "gpu-native-v1",
+  "guard_ledger": "runtime/ledger.json",
+  "setup_primitive_rows": 1,
+  "actor": "unchanged-native GPU FP32 device-only adapter",
+  "created_utc": "2026-11-17T07:48:07.317168+00:00",
+  "identities": {
+    "oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "fixtures/heldout/parity.json": "616d04c0a2ad37d389233e833071036be75680ebbbdf9329430b84d2e01b551d",
+    "artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0"
+  },
+  "error": "RuntimeError('Actual GPU UUID mismatch: f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6')",
+  "traceback": "Traceback (most recent call last):\n  File \"./oracle/gpu_native_check.py\", line 28, in main\n    if actual_uuid!=os.environ.get('MINIMIND_GPU_UUID'):raise RuntimeError('Actual GPU UUID mismatch: '+actual_uuid)\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Actual GPU UUID mismatch: f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6\n",
+  "elapsed_seconds": 0.5776387029327452,
+  "peak_allocated_bytes": 283175936,
+  "peak_reserved_bytes": 308281344
+}

@@ -1,0 +1,48 @@
+{
+  "status": "resolved_by_official_UI_and_official_source",
+  "observed_at_utc": "2026-11-19T07:16:21.682710+00:00",
+  "graph_slug": "thecapitalofthes-1795072198897",
+  "node_id": "20_15589_8",
+  "context_index": 8,
+  "context_token": " is",
+  "model": "gemma-2-2b",
+  "source_id": "20-gemmascope-transcoder-16k",
+  "source_local_index": 15589,
+  "layer": 20,
+  "feature_url_observed_in_modal": "https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-transcoder-16k/15589",
+  "exported_feature_field": 121843834,
+  "graph_schema_version": 1,
+  "encoding": "Cantor pairing of layer and source-local index, established from official repository functions getIndexFromCantorValue/getLayerFromCantorValue and schema_version1 dispatch, not inferred from numeric coincidence",
+  "decoded": {
+    "layer": 20,
+    "index": 15589
+  },
+  "official_source_urls": [
+    "https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/app/%5BmodelId%5D/graph/utils.ts#L97",
+    "https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/components/provider/graph-provider.tsx#L706"
+  ],
+  "source_evidence": [
+    "upstream-utils.ts lines97-140 and153-166",
+    "upstream-graph-provider.tsx lines706-715 and748-755"
+  ],
+  "source_version_limit": "Current official main downloaded at observation time, not asserted identical deployed commit. Live UI independently shows layer/index/source.",
+  "ui_graph_label": "Texas",
+  "ui_modal_label": "references to geographic locations, especially in addresses",
+  "label_limit": "Labels are descriptions, not proof of functional selectivity",
+  "ui_activation": 52.0,
+  "ui_density_percent": 1.015,
+  "source_selector_text": "GEMMASCOPE-TRANSCODER-16K Per Layer Transcoders \u00b7 Google DeepMind",
+  "export_feature_type": "cross layer transcoder",
+  "architecture_limit": "Generic exported feature_type does not override explicit source identity; no architecture inferred from that generic field.",
+  "ui_actions": "Pinned exact existing node via URL, clicked visible Texas subgraph node, opened LAYER20 INDEX15589 feature modal. No test, steer, label edit, or new generation.",
+  "original_export_sha256": "f36a28b2d4802ab6a555fb918f4ee5fcf78a33aaf5a08940706c638e4c5393ad",
+  "new_evidence": [
+    "identity-modal-dom.txt",
+    "identity-modal.png"
+  ],
+  "unresolved": [
+    "Exact model weight revision",
+    "Exact transcoder weight revision",
+    "Whether deployed frontend matches current repository main"
+  ]
+}

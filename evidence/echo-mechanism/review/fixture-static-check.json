@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "fixture_sha256": "a5f37e9e3e4b021d720869b23375f0f7cb33c09fe9ebc5be2c9fce2416af291c",
+  "pairs": 24,
+  "unique_disjoint_texts": 48,
+  "unique_disjoint_token_arrays": 48,
+  "exclusion_files_verified": 34,
+  "deterministic_selection_reproduced": true,
+  "model_forwards": 0,
+  "tokenizer_executions": 0
+}

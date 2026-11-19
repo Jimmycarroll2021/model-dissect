@@ -1,0 +1,41 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_ARITHMETIC_AUDIT",
+  "role": "independent",
+  "result_sha256": "8e18729ba9ff0a78085b2a1a7db7380a80e970d0357a08a8b21514a0c1c14d67",
+  "calls": 1480,
+  "positions": 76632,
+  "all_vector_hashes_top1_compact_storage": true,
+  "exact_call_order": true,
+  "all512_dev_head_pair_scores_recomputed": true,
+  "all_held_scores_and_noop_restoration_recomputed": true,
+  "selected": {
+    "layer": 6,
+    "head": 2,
+    "median": 0.5512994995654932,
+    "positive": 8
+  },
+  "control": {
+    "layer": 6,
+    "head": 5,
+    "median": 0.0005078133751418348,
+    "positive": 5
+  },
+  "heldout": {
+    "eligible": 16,
+    "positive": 16,
+    "median_recovery": 0.5534745383939315,
+    "median_advantage": 0.5535074254291052,
+    "sign_test": {
+      "n": 16,
+      "positive": 16,
+      "null_p": 0.5,
+      "one_sided_probability": 1.52587890625e-05,
+      "ties_count_as_failure": true,
+      "descriptive_only": true
+    }
+  },
+  "dynamic_trace_norms_checked": true,
+  "projected_vectors_limit": "Checked length; independent actual repeat must reproduce projected values. No checkpoint load in this audit.",
+  "weight_unchanged_limit": "Producer assertion until independent actual repeat; checkpoint remains hash bound.",
+  "model_calls_this_audit": 0
+}

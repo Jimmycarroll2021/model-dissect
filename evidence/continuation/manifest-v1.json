@@ -1,0 +1,17 @@
+{
+  "id": "NUMERICS-002-plan-v1",
+  "files": {
+    "specs/001-minimind-reproduction/spec.md": "60d4f6678e90b8fe7c050985f8661ab0d7d09fec7d9ff68fc61031d52fcbf567",
+    "specs/001-minimind-reproduction/plan.md": "fd52bcd42f84f8d8f49931d9d62eaeb5b7c28b898d5285c606df9a6314bde9d8",
+    "specs/001-minimind-reproduction/tasks.md": "d92bb51797fdbe76d0ea6e5021ab7f75c70a64c031ac6cfd702f59b8523b9f48",
+    "specs/001-minimind-reproduction/research.md": "caf9c52cc1cc49f8c32adf64544656e54d364ba23cb2fc339eacd31c0d63285c",
+    "TASK_STATE.md": "b5841bab037bac90ce71aa99f47abad9ad6b321cb385b3f6454ce7ac1caa33e2",
+    "CASE_FACTS.md": "11489e2733418e9087a3d4830b0de69c39f7638eb0e128843886e80563bc165e",
+    "evidence/continuation/speckit-setup.json": "14004cfa5db56afd07c6824ccc08b2197a0f347cfc2c42ddd58506a7915291e6",
+    "evidence/continuation/numerics-advisor.md": "c522544d4f0161be0623c8a025b3b58491abb00201ee82ffec02ca9d16d2749a",
+    "evidence/continuation/plan-before.md": "35c0e43e8da2b7ae7df6a6a1a860ac4362da833b824d81c9d1d7efbe18d04bcd",
+    "evidence/continuation/numerics-protocol-v1.json": "35517aa209d27f1fd95927926cfb4a193d918acd22b5c1c9007eb7ddb3b30607",
+    "evidence/continuation/reconciliation.json": "f313b9d76c847be2507712bc7ffd1441093c180d99743d0c44fd9edbc139cda8"
+  },
+  "model_forwards": 0
+}

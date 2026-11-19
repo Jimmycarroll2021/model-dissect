@@ -1,0 +1,23 @@
+{
+  "status": "PREPARED_AWAITING_EXACT_RECOVERY_MANIFEST",
+  "scope": "Targeted observation harness regression only; no checkpoint/model calls and no unchanged numerical matrix retests.",
+  "accepted_failure": "Production inference dispatch exposes aten.linear.default / aten.matmul.default; old mm-substring predicate rejected a valid natural trace. Failure also discarded the trace before persistence.",
+  "execution_contexts": [
+    "Candidate synthetic callable decorated torch.inference_mode, called inside outer torch.inference_mode + observation context; widths6 and8.",
+    "Native synthetic nn.Module block inside decorated outer adapter and outer torch.inference_mode + native observation hooks; widths6 and8."
+  ],
+  "positive_checks": [
+    "Byte-exact observed versus unobserved synthetic outputs; original hooks/traces restored.",
+    "Named frozen parameter views identify Q/K/V, output and gate/up/down linear stages; operation names may be inference linear or validated decomposed variants.",
+    "Two activation-backed QK/weighted-V contractions distinguished from parameter-backed projections; required normalization, masking, softmax and activation stages present.",
+    "Complete operation operands/results can be resolved from retained arrays or named frozen parameter views. Layout metadata and causal negative-infinity maps remain interpretable.",
+    "Raw trace and attempted-call/check status exist before completeness and baseline-fidelity validation. Serialized raw arrays roundtrip weights_only and are byte-exact."
+  ],
+  "negative_checks": [
+    "Remove all observed records belonging to one required semantic stage while preserving other contractions: reject stage completeness, preserve raw and failure status.",
+    "Delete QK or weighted-V contraction separately: reject rather than accepting one generic matmul as coverage for both.",
+    "Keep complete trace but inject an incorrect expected baseline boundary or cache hash: reject fidelity and preserve raw/check failure receipt.",
+    "Simulate observation exception after some valid recorded operations: retain available partial journal and label incomplete, restore tracing/hooks, do not label scientific success."
+  ],
+  "review_boundary": "Execute after exact helper/runner APIs and candidate hashes are supplied. No acceptance inferred from in-progress source. Prior failed ledger remains charged; recovery64+64 must bind1138208historical and1138336approved ceiling."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "FAIL",
+  "rows": 2640,
+  "failure_rows": 102,
+  "tokens": 16938,
+  "model_calls": 648,
+  "elapsed_seconds": 15.389247998013161,
+  "failure_modes": {
+    "candidate-cache-full-0": 9,
+    "reference-cache-full-0": 9,
+    "candidate-cache-full-2": 18,
+    "reference-cache-full-2": 18,
+    "candidate-cache-full-3": 15,
+    "reference-cache-full-3": 15,
+    "candidate-cache-full-1": 9,
+    "reference-cache-full-1": 9
+  },
+  "worst_tolerance_ratio": 1.9053236246109009,
+  "all_top1_mismatches": 0,
+  "cross_candidate_reference_failure_rows": 0,
+  "raw_sha256": "34ac47ff05abc53332571fee39fd9d0598d8805bc29680809dfc3245f43f47fe",
+  "limitation": "Shape-dependent FP32 rounding suspected, not experimentally isolated. Threshold unchanged. R3 blocked by R2."
+}

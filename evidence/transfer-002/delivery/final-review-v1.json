@@ -1,0 +1,74 @@
+{
+  "verdict": "PASS_SCOPED_FULL_PREFILL_DELIVERY",
+  "reviewed_utc": "2026-11-18T20:24:28.838577+00:00",
+  "manifest_sha256": "a94f4c8f8d8937be01daaadab9641f2cfb2019fdb925e5aa2a14255cfe187f36",
+  "coordination_candidate_sha256": "4f8ab3d87f1a4ca1842356f35b027ff0fa47e7fdd01e569afaba0728ca960731",
+  "manifest_entries_verified": 19,
+  "scientific_receipt_sha256": "9fce319281f99807ab0b880a555b10c66a63dd432c8329fb4206a3f1aa912392",
+  "static_receipt_sha256": "82d46dbfd4366849a9d5f736df076d704d901866ec4eec03cd149f119958ed38",
+  "reuse": {
+    "preaudit_v2_sha256": "d50e53f741432fd0be12649832bea21d2c70ea4a1dac386b560f490904f5b0e5",
+    "raw_scientific_payloads": "Independent exact repeat receipt covers1531byte-exact files1271finite arrays432checks56metrics/edit deltas,controls/noop/restoration/trace/parameter/artifact integrity; no redundant GB-scale rehash",
+    "plot": "All32data-marker SVG coordinates exactly unchanged from reviewed prior plot; updated independently-repeated annotation justified by receipt",
+    "legacy": "Accepted closure-overlay and pre-transfer snapshots verified in preaudit-v2; unchanged legacy scientific sources/evidence retained"
+  },
+  "usability": {
+    "local_links_existing": 32,
+    "documented_model_free_metadata_command": "Executed successfully using standard-library JSON only",
+    "science_cli": "Correct v2 producer/independent packets with v1 admission names; actual admission hashes checked; historical single-use and fresh-run requirements explicit"
+  },
+  "accounting_verified": {
+    "ledger_path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/ledger.jsonl",
+    "ledger_sha256": "32017dfbb2500364eb25107d72c6a04016eb34b753715f9a679808532941674c",
+    "reserved_positions": 59450,
+    "reserved_seconds": 2265,
+    "actual_charged_positions": 59302,
+    "model_calls": 2092,
+    "model_positions": 59276,
+    "primitive_calls": 19,
+    "primitive_row_positions": 26,
+    "reservations": 12,
+    "terminal_records": 12,
+    "active_reservations": 0,
+    "historical_minimind_charged": 1239856,
+    "combined_reserved_positions": 1299306
+  },
+  "coordination": "All four candidate changed-file hashes and prior tasks snapshot match;T007S-T009S checked,T010S-T011S pending this audit,strictT2uncompleted preserved",
+  "claim_matrix": [
+    {
+      "claim": "76-tensor Pythia14M atlas and editable source-assisted computation",
+      "status": "VERIFIED",
+      "limit": "Architecture/checkpoint-specific static structure; no recovered scalar semantics"
+    },
+    {
+      "claim": "Full-prefill candidate/native fidelity",
+      "status": "VERIFIED",
+      "limit": "48 fixed scientific members,432boundary checks; no candidate intervention-equivalence claim"
+    },
+    {
+      "claim": "Bounded block4 donor effect",
+      "status": "INDEPENDENTLY_REPEATED_SUPPORTED",
+      "limit": "16 identical frozen heldout pairs; median min-direction recovery0.7104862948449367, paired advantage0.7731329964950664; native whole-block intervention, no head/necessity/universal claim"
+    },
+    {
+      "claim": "Actual-input walkthrough",
+      "status": "VERIFIED",
+      "limit": "Saved nine-boundary trace; omitted attention/MLP internals disclosed"
+    },
+    {
+      "claim": "Strict cached/full transfer",
+      "status": "FAILED_UNCHANGED",
+      "limit": "Not completed; repairs unpromoted"
+    },
+    {
+      "claim": "Scoped delivered workbench",
+      "status": "PASS_SCOPED_DELIVERY",
+      "limit": "Full-prefill slice only; original strict whole-objective completion false"
+    }
+  ],
+  "required_changes": [],
+  "strict_whole_objective_complete": false,
+  "scoped_delivery_accepted": true,
+  "no_runtime_or_model_load": true,
+  "remaining": "Controller may record scoped T010S/T011S acceptance in separate closure overlay referencing this immutable review; do not rewrite accepted final manifest. No further scientific runtime required for this accepted slice."
+}

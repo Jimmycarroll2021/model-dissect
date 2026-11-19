@@ -1,0 +1,7 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "9175c76846dc40f6bc4e710e4194a9ac98a0a08167d67b2d9a21cb98b080afa8",
+  "review_sha256": "24f1c8554138d50576da6df7d8a5f4c4cbaf2f06f273f1cf511fa39296f0a266",
+  "scope": "Exactly4primitivecalls6rows0modelforwards crossed saved readout",
+  "reviewed_utc": "2026-11-18T19:58:00.424490+00:00"
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PRODUCER_COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "epoch": 1794985641.2528427,
+  "result_path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json",
+  "result_sha256": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf",
+  "journal_sha256": "a57ede30c8601e039f693194a99ebd5bdb28117aea63304f86f15a479bb962bb",
+  "ledger_sha256": "ec96ac2fac9f82e5e80114c82747ae4453b451875cb9092b6e33a5b88b4ee0af",
+  "guard_row": {
+    "id": "response-screen-v1",
+    "kind": "model",
+    "role": "implementation",
+    "positions_reserved": 54816,
+    "wall_reserved": 900.0,
+    "start": 1794985573.2121327,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.response_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-screen-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json",
+    "peak_owned_rss_bytes": 7758471168,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 241087,
+    "exit_code": 0,
+    "final_child_highwater_bytes": 1233887232,
+    "final_guard_highwater_bytes": 6524583936,
+    "final_combined_highwater_bytes": 7758471168,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "output_sha256": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf",
+    "end": 1794985622.3348005,
+    "wall_seconds": 49.11066387302708,
+    "cpu_seconds": 85.455596,
+    "peak_child_rss_kib": 1204968
+  },
+  "phase_start": 1794985573.2121327,
+  "phase_deadline": 1794992773.2121327,
+  "summary": {
+    "counts": {
+      "COPY": 0,
+      "SUBTRACT": 0,
+      "COMPARE": 0
+    },
+    "selected": null,
+    "verdict": "STOP_NO_QUALIFIED_FAMILY",
+    "gate_metric": "terminated_conservative_answer_correctness",
+    "threshold": 13,
+    "denominator": 16
+  },
+  "actual_positions": 54816,
+  "forward_calls": 1152,
+  "stop_counts": {
+    "length": 48
+  },
+  "parse_counts": {
+    "incomplete": 48
+  },
+  "strict_correct": 0,
+  "historical_hashes_unchanged": {
+    "historical_ledger": true,
+    "original_ledger": true
+  },
+  "samples": [
+    {
+      "id": "behavior-copy-screen-00",
+      "prompt": "甲写下数字0，乙写下数字9，丙写下数字6。甲写下的数字是什么？只回答一个数字。",
+      "expected": "0",
+      "text": "甲写下数字0，乙写下数字9，丙写下数字6。甲只写下",
+      "stop": "length"
+    },
+    {
+      "id": "behavior-subtract-screen-00",
+      "prompt": "62减62等于几？只回答一个数字。",
+      "expected": "0",
+      "text": "我们知道，一个数减去它本身等于另一个数。所以，62减去62等于多少呢",
+      "stop": "length"
+    },
+    {
+      "id": "behavior-compare-screen-00",
+      "prompt": "50比2大还是小？只回答大或小。",
+      "expected": "大",
+      "text": "这个问题的答案取决于你所指的“50比2大还是小”的定义。在数学中，50",
+      "stop": "length"
+    }
+  ],
+  "qualification": "NOT_RUN_NO_SELECTED_FAMILY",
+  "independent": "NOT_RUN_PENDING_REVIEW_AND_NEW_ADMISSION",
+  "interpretation": "All48 outputs reached24-token cap without EOS; none qualified. This does not establish eventual full-answer correctness, root cause or general inability."
+}

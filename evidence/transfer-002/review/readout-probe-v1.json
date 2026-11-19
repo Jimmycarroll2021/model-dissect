@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS_EXACT_CROSSED_READOUT_PROBE",
+  "reviewed_utc": "2026-11-18T19:58:00.424490+00:00",
+  "checks": {
+    "manifest": true,
+    "packet": true,
+    "files": true,
+    "packet_identities": true,
+    "environment": true,
+    "budget": true,
+    "unused": true,
+    "settled": true,
+    "aggregate": true,
+    "capacity": true,
+    "phase_time": true
+  },
+  "source_review": [
+    "Two pinned saved singleton hidden states crossed with native M1 and fixed M2 projection; only pinned output weight loaded.",
+    "4primitivecalls6chargedrows0modelforwards;4arrays804864B.",
+    "Both original cells byte-exact gate before interpretation; captures persisted before report/assert.",
+    "All50304logits finite/shape/originaltolerance/top1 compared; no threshold alteration.",
+    "Existing guard/source/environment bindings checked."
+  ],
+  "packet_sha256": "9175c76846dc40f6bc4e710e4194a9ac98a0a08167d67b2d9a21cb98b080afa8",
+  "limits": [
+    "Primitive diagnosis only; no new model-mode admission."
+  ]
+}

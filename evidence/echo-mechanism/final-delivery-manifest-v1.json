@@ -1,0 +1,40 @@
+{
+  "status": "PENDING_INDEPENDENT_DOCUMENT_REVIEW",
+  "created_utc": "2026-11-18T09:11:10.418741+00:00",
+  "files": [
+    {
+      "path": "./docs/echo-mechanism-result.md",
+      "sha256": "85d5677f7ad53dbc2e13a4a1f2d4f0eacbd6ed828f4d1a4ad522a9a464b984da"
+    },
+    {
+      "path": "./docs/reverse-engineering-workbench.md",
+      "sha256": "d85d21be96b053846efe15d6643c7f810752646ca868d893ee8ba793718e26b9"
+    },
+    {
+      "path": "./evidence/echo-mechanism/review/recovery-independent-final-v1.json",
+      "sha256": "5dc101f6e006281d4419bba06f6a54cb080d310c8209b2bc72d19618d937f70b"
+    },
+    {
+      "path": "./evidence/echo-mechanism/recovery/producer-execution-v1.json",
+      "sha256": "4aeb945ab4fae61b18200e62c5889895ce7b9715d0dd92fe5660656a077dabca"
+    },
+    {
+      "path": "./evidence/echo-mechanism/protocol-v1.md",
+      "sha256": "ec59becccab0eaecf787934ee77d1a46722de3ab5cf5f99255e27ffb023d0dff"
+    },
+    {
+      "path": "./evidence/echo-mechanism/fixtures-v1.json",
+      "sha256": "a5f37e9e3e4b021d720869b23375f0f7cb33c09fe9ebc5be2c9fce2416af291c"
+    },
+    {
+      "path": "./evidence/computation-map/review/receipt.json",
+      "sha256": "14bf5bfa1a464aeb34ec39ded16dfb0bf1399dfa3731aecb8f735ab9a596ac8f"
+    }
+  ],
+  "mutable_state_excluded": [
+    "TASK_STATE.md",
+    "CASE_FACTS.md",
+    "docs/reverse-engineering-goal.md"
+  ],
+  "scope": "Accepted bounded head mediation, updated workbench; broader goal active"
+}

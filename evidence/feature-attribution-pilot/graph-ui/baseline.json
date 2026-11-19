@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-11-19T07:09:52.428106+00:00",
+  "prompt": "The capital of the state containing Dallas is",
+  "trailing_space": false,
+  "model": "gemma-2-2b",
+  "source": "gemmascope-transcoder-16k",
+  "tokens": [
+    "<bos>",
+    "The",
+    " capital",
+    " of",
+    " the",
+    " state",
+    " containing",
+    " Dallas",
+    " is"
+  ],
+  "token_ids": "unknown; not exposed in inspected UI",
+  "next_tokens_in_display_order": [
+    {
+      "rank": 1,
+      "text": " Austin",
+      "probability_display": 0.33
+    },
+    {
+      "rank": 2,
+      "text": " the",
+      "probability_display": 0.11
+    },
+    {
+      "rank": 3,
+      "text": "unknown whitespace token",
+      "probability_display": 0.08
+    },
+    {
+      "rank": 4,
+      "text": " Fort",
+      "probability_display": 0.04
+    },
+    {
+      "rank": 5,
+      "text": " Texas",
+      "probability_display": 0.04
+    }
+  ],
+  "estimated_generation_seconds": 29,
+  "settings": {
+    "maxNLogits": 10,
+    "desiredLogitProb": 0.95,
+    "maxFeatureNodes": 5000,
+    "nodeThreshold": 0.8,
+    "edgeThreshold": 0.85
+  },
+  "submission_count": 0,
+  "task_kind": "documented-example replication/integration; prompt omits Fact prefix visible in older example"
+}

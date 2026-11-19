@@ -1,0 +1,23 @@
+{
+  "status": "READY_FOR_REVIEW_NOT_ADMITTED",
+  "packet": "./evidence/transfer-002/diagnosis/affine-all-pilot-v1.packet.json",
+  "packet_sha256": "c7edb02e20ad2184a863bb255fcf8305b8b6aa44c92152af909ada2f431371a2",
+  "files": {
+    "./src/minimind_re/transfer/affine_all_reference.py": "541a6ec1bf0d53d9d3c0ff4ec802eb57d31f52c96bdef0b46bfb3c7a9b15ed18",
+    "./src/minimind_re/transfer/affine_all_pilot.py": "b0788ffc4b678803dc7189b46953776c097a2b251286878234732c25a89f1b6f",
+    "./src/minimind_re/transfer/affine_all_candidate.py": "387d14fa848f6c17c2cdba5c1bb95b896ef4b6ea465d5796cd13251ba886ee00",
+    "./tests/transfer/test_affine_all_reference.py": "eda78e4bbc797a6ebd12b6bd562394090887317cdc1021c9c2cc21723a7c9b5b",
+    "./evidence/transfer-002/diagnosis/affine-all-reference-tests-v1.txt": "3de0e1820ce6da9292c0456f8c4c67655ebfff8b3e5f793514821b8d58fd2e41"
+  },
+  "tests": "3 synthetic testsPASS all25modules prefix/current consistency and normal/error/partialsetup restoration",
+  "scope": "All25nnLinear operations canonical2D[real,zero]FP32; unchangednonaffinemath; bounded diagnostic only",
+  "independence": "Candidate source notread; class/module/hash suppliedbycoordinator",
+  "calls": 6,
+  "positions": 8,
+  "seconds": 90,
+  "disk_bytes": 16777216,
+  "raw_payload_bytes": 1716224,
+  "comparison_rows": 81,
+  "target_loaded": false,
+  "preservation": "QKV-only failed pilot and all existing source/packets unchanged"
+}

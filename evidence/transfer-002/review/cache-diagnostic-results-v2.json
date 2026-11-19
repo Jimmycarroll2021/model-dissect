@@ -1,0 +1,107 @@
+{
+  "verdict": "PASS_DIAGNOSTIC_RESULTS_AUDIT",
+  "reviewed_utc": "2026-11-18T19:39:05.602216+00:00",
+  "checks": {
+    "diagnosis_identity": true,
+    "receipt_identity": true,
+    "all72_raw_hashes_finite": true,
+    "payload": true,
+    "27_baseline_bytes": true,
+    "all12_comparisons_reproduced": true,
+    "ledger3calls4positions": true
+  },
+  "comparisons": {
+    "input_layernorm_output.prefix": {
+      "byte_equal": true,
+      "different_elements": 0,
+      "elements": 128,
+      "max_abs": 0.0,
+      "tolerance_violations": 0
+    },
+    "input_layernorm_output.current": {
+      "byte_equal": true,
+      "different_elements": 0,
+      "elements": 128,
+      "max_abs": 0.0,
+      "tolerance_violations": 0
+    },
+    "qkv_input.prefix": {
+      "byte_equal": true,
+      "different_elements": 0,
+      "elements": 128,
+      "max_abs": 0.0,
+      "tolerance_violations": 0
+    },
+    "qkv_input.current": {
+      "byte_equal": true,
+      "different_elements": 0,
+      "elements": 128,
+      "max_abs": 0.0,
+      "tolerance_violations": 0
+    },
+    "qkv_output.prefix": {
+      "byte_equal": false,
+      "different_elements": 199,
+      "elements": 384,
+      "max_abs": 1.9073486328125e-06,
+      "tolerance_violations": 0
+    },
+    "qkv_output.current": {
+      "byte_equal": false,
+      "different_elements": 255,
+      "elements": 384,
+      "max_abs": 1.9073486328125e-06,
+      "tolerance_violations": 0
+    },
+    "block.0.prefix": {
+      "byte_equal": false,
+      "different_elements": 111,
+      "elements": 128,
+      "max_abs": 1.1920928955078125e-07,
+      "tolerance_violations": 0
+    },
+    "block.0.current": {
+      "byte_equal": false,
+      "different_elements": 119,
+      "elements": 128,
+      "max_abs": 1.1920928955078125e-07,
+      "tolerance_violations": 0
+    },
+    "final_norm.prefix": {
+      "byte_equal": false,
+      "different_elements": 122,
+      "elements": 128,
+      "max_abs": 9.5367431640625e-05,
+      "tolerance_violations": 0
+    },
+    "final_norm.current": {
+      "byte_equal": false,
+      "different_elements": 127,
+      "elements": 128,
+      "max_abs": 0.00023984909057617188,
+      "tolerance_violations": 5
+    },
+    "logits.prefix": {
+      "byte_equal": false,
+      "different_elements": 49694,
+      "elements": 50304,
+      "max_abs": 3.743171691894531e-05,
+      "tolerance_violations": 57
+    },
+    "logits.current": {
+      "byte_equal": false,
+      "different_elements": 50101,
+      "elements": 50304,
+      "max_abs": 0.00014281272888183594,
+      "tolerance_violations": 2050
+    }
+  },
+  "diagnosis_sha256": "efa55ae2c866279a44c20bbf486b30225cf79d3f2cc02e6cd88526fe32adb978",
+  "capture_receipt_sha256": "3cb89f0dd824180575aca09396351cf2cab84f92c68b3367e53a617cc59067b7",
+  "supported_interpretation": "At the captured first-layer sites, corresponding first LayerNorm outputs and packed-QKV inputs are byte-identical between one-token and two-token native calls. Packed-QKV affine outputs differ for199prefix and255current elements, max1.9073486328125e-6. This locates the first observed discrepancy at packed-QKV affine evaluation under changed row shape.",
+  "limits": [
+    "Does not identify CPU kernel or establish sole cause of later discrepancies.",
+    "No primitive substitution, model reload, forward, tokenizer call or target compute performed; only saved arrays audited.",
+    "Original full numerical gate remains FAIL; diagnostic acceptance does not change thresholds or admit a repaired mode."
+  ]
+}

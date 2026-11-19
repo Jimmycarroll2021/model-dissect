@@ -1,0 +1,116 @@
+{
+  "status": "FROZEN_TEXT_ONLY_TOKEN_BINDING_REQUIRED",
+  "pairs": [
+    {
+      "id": "H01",
+      "texas": "The capital of the state containing Houston is",
+      "california": "The capital of the state containing Los Angeles is"
+    },
+    {
+      "id": "H02",
+      "texas": "The capital of the state containing San Antonio is",
+      "california": "The capital of the state containing San Francisco is"
+    },
+    {
+      "id": "H03",
+      "texas": "The capital of the state containing El Paso is",
+      "california": "The capital of the state containing San Diego is"
+    },
+    {
+      "id": "H04",
+      "texas": "The capital of the state containing Fort Worth is",
+      "california": "The capital of the state containing San Jose is"
+    },
+    {
+      "id": "H05",
+      "texas": "The capital of the state containing Lubbock is",
+      "california": "The capital of the state containing Fresno is"
+    },
+    {
+      "id": "H06",
+      "texas": "The capital of the state containing Amarillo is",
+      "california": "The capital of the state containing Bakersfield is"
+    },
+    {
+      "id": "H07",
+      "texas": "The capital of the state containing Corpus Christi is",
+      "california": "The capital of the state containing Long Beach is"
+    },
+    {
+      "id": "H08",
+      "texas": "The capital of the state containing Waco is",
+      "california": "The capital of the state containing Modesto is"
+    },
+    {
+      "id": "H09",
+      "texas": "The capital of the state containing Beaumont is",
+      "california": "The capital of the state containing Stockton is"
+    },
+    {
+      "id": "H10",
+      "texas": "The capital of the state containing Tyler is",
+      "california": "The capital of the state containing Oakland is"
+    },
+    {
+      "id": "H11",
+      "texas": "The capital of the state containing Midland is",
+      "california": "The capital of the state containing Riverside is"
+    },
+    {
+      "id": "H12",
+      "texas": "The capital of the state containing Odessa is",
+      "california": "The capital of the state containing Anaheim is"
+    },
+    {
+      "id": "H13",
+      "texas": "The capital of the state containing Abilene is",
+      "california": "The capital of the state containing Santa Ana is"
+    },
+    {
+      "id": "H14",
+      "texas": "The capital of the state containing Wichita Falls is",
+      "california": "The capital of the state containing Irvine is"
+    },
+    {
+      "id": "H15",
+      "texas": "The capital of the state containing College Station is",
+      "california": "The capital of the state containing Oxnard is"
+    },
+    {
+      "id": "H16",
+      "texas": "The capital of the state containing Galveston is",
+      "california": "The capital of the state containing Santa Rosa is"
+    }
+  ],
+  "non_target": [
+    {
+      "id": "N01",
+      "prompt": "The capital of France is",
+      "answer": " Paris",
+      "distractor": " London"
+    },
+    {
+      "id": "N02",
+      "prompt": "The capital of Japan is",
+      "answer": " Tokyo",
+      "distractor": " Paris"
+    },
+    {
+      "id": "N03",
+      "prompt": "Two plus two equals",
+      "answer": " four",
+      "distractor": " five"
+    },
+    {
+      "id": "N04",
+      "prompt": "The opposite of hot is",
+      "answer": " cold",
+      "distractor": " warm"
+    }
+  ],
+  "target_text": " Austin",
+  "target_token_id_graph": 22605,
+  "comparator_text": " Sacramento",
+  "token_binding": "BLOCKED pending pinned tokenizer; no automatic text or answer substitution",
+  "discovery_excluded": "The capital of the state containing Dallas is"
+}

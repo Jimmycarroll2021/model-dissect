@@ -1,0 +1,9 @@
+# Bounded scientific design — not yet executable
+
+Propose head-output preprojection patching with native/candidate equivalence. Fixed development candidate set maximum12 sites: Cartesian product layers{2,5,8,11}, heads{0,4,8}. This covers depth sparsely and is a computational design, not a claim those heads mediate the target. No144-site sweep by default. Development maximum8 paired prompts; choose one site using frozen discovery criterion and deterministic tie-break, then freeze before held-out access. One matched control head/site selected without held-out optimization.
+
+Scientist must freeze token-exact clean/corrupt contrasts, target/distractor readout, positions, denominators, minimum eligibility and effect/specificity thresholds before execution. Default16 qualified held-out pairs from a separately frozen pool; all pool members and exclusions reported, no selection based on observed intervention effect. If protocol cannot yield16 eligible cases, retain incomplete result and revise only using discovery material with fresh held-out set. Positive recovery is not guaranteed; qualified controlled negative is valid.
+
+Arms: clean, corrupt, target patch, matched internal control patch, no-op and restoration, with native/candidate identical edits. Preserve sufficient full-vocabulary logits for primary contrast plus secondary raw-logit gaps, KL and paired bootstrap without more forwards. Pilot-derived exact call/position/time/raw budgets and scientific protocol independent review are required before runtime. No intervention-hypothesis result or pre-registered final scientific threshold is claimed by this draft.
+
+Science uses naturally unpadded paired prompts where practical, otherwise right padding with explicit last-real-token readout/intervention and validated clean/corrupt token-position alignment. No cached or left-padding claim.

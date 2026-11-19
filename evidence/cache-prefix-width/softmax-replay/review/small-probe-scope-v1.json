@@ -1,0 +1,30 @@
+{
+  "status": "SCOPE_ADEQUATE_PENDING_EXACT_SOURCE_ADMISSION",
+  "reviewed_proposal_sha256": "7d9a6d19f4556bc9fc4140b7b7f1c4726916e7043777a2e98c5bde6653c3d75f",
+  "schedule": {
+    "fixtures": 2,
+    "actors": [
+      "native",
+      "candidate",
+      "reference"
+    ],
+    "full_fidelity_calls": 12,
+    "full_fidelity_positions": 72,
+    "cached_append_calls": 16,
+    "cached_append_positions": 16,
+    "total_calls_per_role": 28,
+    "total_actual_positions_per_role": 88
+  },
+  "assessment": [
+    "Two exposed fixed failing/passing fixtures are proportionate screen, not held-out generalization.",
+    "All native/candidate/reference prefill4/full8 calls precede cached appends. Native comparator gates full-path fidelity first; exact full calls reused.",
+    "Candidate/reference each four one-token appends per fixture, with old input KV and returned prefix byte-preservation, final cached/full comparison and paired cached comparisons.",
+    "Source under construction inspected for scope only; no frozen source or runtime acceptance."
+  ],
+  "limitations": [
+    "Only final append cached/full parity tested; intermediate paired candidate/reference agreement can share error. Full matrix remains necessary after successful screen.",
+    "Power-of-two changes at9/17/etc remain untested; cannot claim stable prefix arithmetic generally.",
+    "Cached-only padding cannot alter already stored native prefill history. Primitive6/8alignment does not guarantee final logit improvement.",
+    "Future candidate/reference must be independently implemented and exact source reviewed; no native full arithmetic or threshold change."
+  ]
+}

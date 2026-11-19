@@ -1,0 +1,320 @@
+[
+  {
+    "path": "./evidence/transfer-003/review/science-review-v2.json",
+    "sha256": "c39f1bd9a10f318ef3ed91d83fc023b43e3041de69958d5c83e7775f37e8d633"
+  },
+  {
+    "path": "./evidence/transfer-003/delivery/final-delivery-manifest-v1.json",
+    "sha256": "f0b097d5183e1f256901b03c0355daaa98602d1e533da5b92bec9816db2af783"
+  },
+  {
+    "path": "./evidence/transfer-003/delivery/external-evidence-index-v1.json",
+    "sha256": "6efd4c0f6f686912a62738de828e9cc77489bd6480f36092715b6c523087ef1a"
+  },
+  {
+    "path": "./evidence/transfer-003/delivery/final-report-metrics-v1.json",
+    "sha256": "ecb0979f080a6b914ae98015f26b292a8c1020e713a213391ac330ee3994befb"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/tokenize/additive-v2-producer/development.json",
+    "sha256": "3d4c4ad1e44315ab602fba0467529bc2bc987789ef49598f2cea5b960c23ef6c"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/tokenize/additive-v2-producer/heldout.json",
+    "sha256": "076563225fed93ef1a354bd7dfee12f3c68267b4888f16113bb474808a2f7d9b"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/artifacts/original/vocab.json",
+    "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace-complete.json",
+    "sha256": "f10817cc81a54edd71d7d2a46b5e197fdb22af37f6998d25e0429bdbac7ec8c9"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace.npz",
+    "sha256": "aed2b47a5b64de6dd546d205a5187a0a682448eeade338016b11ad380e74d6f2"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace.npz",
+    "key": "observation8_attention",
+    "shape": [
+      1,
+      12,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "873a84925171dd4f968c51bace50630756809600c33108cf7e86af5fc8d004f4"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace.npz",
+    "key": "observation8_q",
+    "shape": [
+      1,
+      12,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "98d7a1bda0982b99c0c8927da99f51f60a236a573f862b9acfe0cad8bf2f7953"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace.npz",
+    "key": "observation8_k",
+    "shape": [
+      1,
+      12,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "c5eeb6ce59aea5a41698f6e9c154b0322b00da8061294ec30c7bbcf5f201233a"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace.npz",
+    "key": "observation8_v",
+    "shape": [
+      1,
+      12,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "c527f8a2aa5ea07e2f3cdfcf19c0ac301b45cdd9c18c9272b80893a75c7e24eb"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0001-native-dev-01-clean-trace.npz",
+    "key": "head8_pre",
+    "shape": [
+      1,
+      8,
+      12,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "9081ba734c72da062ddcff87059b62d941fe91b43c417b839a4acd7aa7ba230b"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas/additive-v2-producer/raw/manifest.json",
+    "sha256": "84bacba73d08c3e869a4e4fcd06f35432daf74d0a10925ab2aaca02db815e038"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas/additive-v2-producer/raw/layer8.head8.QK.npy",
+    "sha256": "c654634b4d287c0d7db3721be8f445585d3d751754915b502ceca88463742f50"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas/additive-v2-producer/raw/layer8.head8.QK.npy",
+    "key": "(NPY array)",
+    "shape": [
+      768,
+      768
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "7c6e0c0aea734b190800ebe9dafd46c93b20be400908f1d44c160bff333523ae"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas/additive-v2-producer/raw/layer8.head8.OV.npy",
+    "sha256": "0d690673dadf4da4f1299ee23a62f9838bf9ca6d8ed63b923be69cd8167c64d2"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas/additive-v2-producer/raw/layer8.head8.OV.npy",
+    "key": "(NPY array)",
+    "shape": [
+      768,
+      768
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "1008664e2efaf0f4c3b1bc2541d17be91b2d84a836111c8041559232d84d3048"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0867-native-held-01-clean-baseline-complete.json",
+    "sha256": "15824845a5b878193aebb93ee23093efa7776e8a0dd3388bb19c7cf8071d4937"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0869-native-held-01-corrupt-baseline-complete.json",
+    "sha256": "92f4e37a9b11900c14b08804020a633ce8dcd965e2d24ccad1261420c614efc5"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target-complete.json",
+    "sha256": "f104bda2c1cb0024b4de3ab9b36043024ab6069402fc4d7eb950c6f326a7779e"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0873-native-held-01-corrupt-control-complete.json",
+    "sha256": "4613ea4a009f8a649f6e0cc458a680a03601f4e9e4da9b6fe8d6019bb05ec70d"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0875-native-held-01-clean-target-complete.json",
+    "sha256": "8d22d0d6bf4c8fe9fb858d898151e805cff9b6bdc9c2b0d5d491512901135fd5"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0877-native-held-01-clean-control-complete.json",
+    "sha256": "50617824d5893885a1686aeb7693273e3384fd113e1cb9e665a342a4ab1a1122"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "sha256": "e2f3e7564605c06c85ba501fd594a4700b8657e77cea7f7a022597c47445fffc"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "key": "recipient",
+    "shape": [
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "ac9d53ff55ab3bbcc671946935fb43bc0e5f35ca952c11a94bbcb50305ab3501"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "key": "donor",
+    "shape": [
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "daa19d0c672546838cb2f8b0c27227da15d8ea344ddd12e7b1c61064f9fac3bc"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "key": "edited",
+    "shape": [
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "daa19d0c672546838cb2f8b0c27227da15d8ea344ddd12e7b1c61064f9fac3bc"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0873-native-held-01-corrupt-control.npz",
+    "sha256": "3eeb2f30ac6b861617d042d2b1917d0c6ac6a31c66f10fd9dcd7baaef17e577c"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0873-native-held-01-corrupt-control.npz",
+    "key": "edited",
+    "shape": [
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "e65858f815e6fd192df72a6fee6275c9ad270aa61a04eec137a4ae2f9e4938d1"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "key": "head8_pre",
+    "shape": [
+      1,
+      8,
+      12,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "267b38230690aec88a2d69fe78b98b5217e1dfd575b162a1e679fc602bdf0edf"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "key": "head8_post",
+    "shape": [
+      1,
+      8,
+      12,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "48ad870d9f77c9300e0c6db7f51e669d5d0aadf1777ce070579efc8720662f5a"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0867-native-held-01-clean-baseline.npz",
+    "sha256": "5b5660c7e29fa8cf2f969407c5556c898fe23a8db65a9626c1a3bde511698f7a"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0867-native-held-01-clean-baseline.npz",
+    "key": "head8_pre",
+    "shape": [
+      1,
+      8,
+      12,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "f602ba87e0790c032c1b64f9a19e58649ef70bb27af6aa1d135f51e888270969"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0869-native-held-01-corrupt-baseline.npz",
+    "sha256": "f726e6ce4dc9db9e78731a138a8e8f1ee2cd15b29b2f5aa926806a957813af0e"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0869-native-held-01-corrupt-baseline.npz",
+    "key": "head8_pre",
+    "shape": [
+      1,
+      8,
+      12,
+      64
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "267b38230690aec88a2d69fe78b98b5217e1dfd575b162a1e679fc602bdf0edf"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/held-01-metrics.json",
+    "sha256": "be45d1e0414be49b224bb0e6d7cce33bd107e5601c3e0fd0b7955dc7c372b3f4"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0867-native-held-01-clean-baseline.npz",
+    "key": "logits",
+    "shape": [
+      50257
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "3187151f1a9200e151f0a41661cbf0a23830086e8f2dd5d30a8e01565cbe8ba1"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0869-native-held-01-corrupt-baseline.npz",
+    "key": "logits",
+    "shape": [
+      50257
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "baad70f16700ae2c5320252f4b1dbd857d495f7c2ad7df0a552d361859e3d1ee"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0871-native-held-01-corrupt-target.npz",
+    "key": "logits",
+    "shape": [
+      50257
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "3f7ee9eeb7c60dab25abe96c1d9310d9a987bf2e58a5bc3da60e6b56dab42d22"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0873-native-held-01-corrupt-control.npz",
+    "key": "logits",
+    "shape": [
+      50257
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "bafcdedab8db829e7d8668fd017d682461e249732daada666fb53753aec808a0"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0875-native-held-01-clean-target.npz",
+    "sha256": "294b034296571c858572e862fba3339ecae9dc08ef4a6486fe43f6b90b5dad2e"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0875-native-held-01-clean-target.npz",
+    "key": "logits",
+    "shape": [
+      50257
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "69e2bde5765276271e69e5bb5ccab81ac5206d3bc638b8ea892a4c91bfb7cd87"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0877-native-held-01-clean-control.npz",
+    "sha256": "96ae4296a1f829884ffbb781c81b9b4d5027a0e68fb4a555a60feaebc77894f1"
+  },
+  {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/0877-native-held-01-clean-control.npz",
+    "key": "logits",
+    "shape": [
+      50257
+    ],
+    "dtype": "float32",
+    "array_bytes_sha256": "a8cca7cd3b7fde4ea67a129b12946eb5d98c776748eac638d2b720e7459fa6fe"
+  }
+]

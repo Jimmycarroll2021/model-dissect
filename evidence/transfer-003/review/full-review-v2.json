@@ -1,0 +1,212 @@
+{
+  "status": "success",
+  "verdict": "PASS_FROZEN_FULL_PREFILL_NUMERICAL_MATRIX_AND_INDEPENDENT_REPEAT",
+  "observed_utc": "2026-11-19T00:21:26.014630+00:00",
+  "scope": {
+    "model": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "checkpoint_sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+    "mode": "source-assisted independent reconstruction; CPUFP32 eager full-prefill",
+    "fixtures": 16,
+    "real_lengths": [
+      1,
+      8,
+      32,
+      64
+    ],
+    "padding": [
+      "none",
+      "right4"
+    ],
+    "physical_lengths": [
+      1,
+      5,
+      8,
+      12,
+      32,
+      36,
+      64,
+      68
+    ],
+    "boundaries": 15,
+    "actors": [
+      "native",
+      "candidate"
+    ],
+    "arms": [
+      "baseline",
+      "noop",
+      "restored"
+    ]
+  },
+  "producer_receipt": {
+    "path": "evidence/transfer-003/runtime/full-producer-v2-result.json",
+    "sha256": "a1bdd1e79f10d17a4e7254c60ec74fbc6ebd25dd944923f789a334c53640b3bb",
+    "verified_before_repeat": true
+  },
+  "execution": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python -m minimind_re.transfer3.run --packet evidence/transfer-003/runtime/packet-full-independent-v2.json --admission evidence/transfer-003/review/admission-full-independent-v2.json",
+    "packet_sha256": "989b2b7aaccfbd20ec786d3631207f9f53dda44bde1cc01375388ee2d30546db",
+    "admission_sha256": "5c76d00a0a9cb3c0b02479e83bdc22cceaed41b105e6ea9592e5e72e5ab44213",
+    "exit_code": 0,
+    "target_calls": 96,
+    "physical_positions": 2712,
+    "phase_reinitialized": false,
+    "retries": 0
+  },
+  "results": {
+    "producer": {
+      "pass": true,
+      "arrays": 1440,
+      "payload_bytes": 661825632,
+      "comparisons": 1680,
+      "max_tolerance_ratio": 0.0,
+      "max_abs": 0.0,
+      "max_call_seconds": 0.24031829833984375,
+      "call_seconds_sum": 11.28728461265564,
+      "supervisor": {
+        "returncode": 0,
+        "stop_reason": null,
+        "peak_sampled_group_rss_bytes": 2078396416,
+        "elapsed": 66.9687623049831,
+        "added_disk_bytes": 662759593,
+        "total_phase_disk_bytes": 3106811710,
+        "packet_disk_limit": 939524096,
+        "phase_disk_limit": 25769803776
+      },
+      "guard_finish": {
+        "actual_positions": 2712,
+        "elapsed": 65.35695167502854,
+        "event": "finish",
+        "inherited_self_rusage_highwater_bytes": 2194128896,
+        "run_id": "v2-full-producer",
+        "sampled_owned_tree_rss_bytes": 1252417536,
+        "status": "completed",
+        "time": 1795047487.2932923,
+        "version": "transfer3-guard-v2"
+      },
+      "preservation": {
+        "reference": {
+          "actor": "reference",
+          "before": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "after": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "pass": true
+        },
+        "candidate": {
+          "actor": "candidate",
+          "before": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "after": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "pass": true
+        }
+      },
+      "comparison_sha256": "00e1c4a0a2f40fb89030f328aa182fd0643dc185032be23715c151779808e0f2",
+      "requests_sha256": "dad4da7cca2acf79d1a096cd5bb41749f1c97ebe4e7c070b61ce716941ef23fb",
+      "native_loading_sha256": "8778c0c14f119df40a0ffb3fa88f6f821529eac9431d8737cd1535763b962187"
+    },
+    "independent": {
+      "pass": true,
+      "arrays": 1440,
+      "payload_bytes": 661825632,
+      "comparisons": 1680,
+      "max_tolerance_ratio": 0.0,
+      "max_abs": 0.0,
+      "max_call_seconds": 0.23789548873901367,
+      "call_seconds_sum": 11.636035919189453,
+      "supervisor": {
+        "returncode": 0,
+        "stop_reason": null,
+        "peak_sampled_group_rss_bytes": 1987022848,
+        "elapsed": 69.23331757308915,
+        "added_disk_bytes": 662760174,
+        "total_phase_disk_bytes": 3769580288,
+        "packet_disk_limit": 939524096,
+        "phase_disk_limit": 25769803776
+      },
+      "guard_finish": {
+        "actual_positions": 2712,
+        "elapsed": 67.71373215096537,
+        "event": "finish",
+        "inherited_self_rusage_highwater_bytes": 2195156992,
+        "run_id": "v2-full-independent",
+        "sampled_owned_tree_rss_bytes": 1252171776,
+        "status": "completed",
+        "time": 1795047630.9070866,
+        "version": "transfer3-guard-v2"
+      },
+      "preservation": {
+        "reference": {
+          "actor": "reference",
+          "before": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "after": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "pass": true
+        },
+        "candidate": {
+          "actor": "candidate",
+          "before": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "after": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "pass": true
+        }
+      },
+      "comparison_sha256": "00e1c4a0a2f40fb89030f328aa182fd0643dc185032be23715c151779808e0f2",
+      "requests_sha256": "dad4da7cca2acf79d1a096cd5bb41749f1c97ebe4e7c070b61ce716941ef23fb",
+      "native_loading_sha256": "8778c0c14f119df40a0ffb3fa88f6f821529eac9431d8737cd1535763b962187"
+    },
+    "repeat": {
+      "byte_identical_arrays": 1440,
+      "byte_identical_payload": 661825632
+    }
+  },
+  "verification": "Standalone NumPy comparison implementation; all.npy hashes/shapes/dtypes/payloads/finite values; all real rows/full vocabulary/tolerance/top1; all-row no-op/restoration byte equality; exact request schedule; every1680 saved comparison row; strict native loading and live preservation; ledger/supervisor;1440 producer-repeat raw-array byte equalities. No production comparator imported.",
+  "post_run_all_packet_identities_match": true,
+  "evidence": {
+    "recompute.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/recompute.py",
+      "sha256": "d0801adee0642c0e2d210ebf264bc6f44cb05539678da654407c5a8267d7c18b"
+    },
+    "recompute-producer.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/recompute-producer.json",
+      "sha256": "4f457d030840fdc8935072665a4d6d087de6aa05e7abfaab9890f075f3552df1"
+    },
+    "recompute-producer-independent.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/recompute-producer-independent.json",
+      "sha256": "61f067e9b1c45102d0cecaa74426d0ad8e1d1af4a35f998ddbea3d70b7ad1dd1"
+    },
+    "recompute.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/recompute.txt",
+      "sha256": "61f067e9b1c45102d0cecaa74426d0ad8e1d1af4a35f998ddbea3d70b7ad1dd1"
+    },
+    "repeat-readiness.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/repeat-readiness.json",
+      "sha256": "271ca1a0ad99a241f9a5adbced8d1fb8e0435b3d8129bac9747475ed3a0bbba2"
+    },
+    "independent-launch.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/independent-launch.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ledger-after-full-repeat.jsonl": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/full-review-v2/ledger-after-full-repeat.jsonl",
+      "sha256": "502d14759fa5c93dd4b35f54124175bb94a824d1f909f94389af727d27ec7834"
+    }
+  },
+  "supervisor": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/v2-full-independent.supervisor.json",
+    "sha256": "2e913297f53788bbf05cec2da32694a0d7deeca06e1de7646b2a66ec9992a916"
+  },
+  "phase_usage": {
+    "reserved_positions": 6112,
+    "actual_positions": 5736,
+    "reserved_seconds": 1440,
+    "reserved_disk_bytes": 2147483648,
+    "remaining_reserved_seconds_ceiling": 3360,
+    "historical_plus_new_reserved_positions": 1305418,
+    "unresolved_runs": [],
+    "failed_runs": []
+  },
+  "limitations": [
+    "This verifies the frozen16-fixture numerical matrix, not arbitrary inputs, cache or left-padding.",
+    "No scientific intervention result, static atlas, actual-input trace, tokenizer execution or complete third-model acceptance established by this receipt.",
+    "Earlier Pythia strict cached/full failure remains unchanged.",
+    "Live tensor preservation uses pinned execution digest instrumentation verified with prior independent mutation regressions; before/after and producer/repeat digests match."
+  ],
+  "next_action": "Coordinator may accept numerical matrix; proceed only with separately reviewed remaining static/scientific/trace packets."
+}

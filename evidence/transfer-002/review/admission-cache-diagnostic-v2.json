@@ -1,0 +1,9 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "ff90ed0317365f52b1220aead86fd8b21297b36629859a80f04c3c6f023e46ee",
+  "packet_path": "./evidence/transfer-002/diagnosis/cache-diagnostic-v2.packet.json",
+  "review_path": "./evidence/transfer-002/review/cache-diagnostic-v2.json",
+  "review_sha256": "ab997cb75d126ee230c122ddfedd8f6c24804e94554b337f42a89f07a69512f4",
+  "reviewed_utc": "2026-11-18T19:37:16.649391+00:00",
+  "scope": "Exactly three native diagnostic calls and4processed positions; preserve all27boundary byte-reproduction checks and all output evidence. Not numerical acceptance or cause proof."
+}

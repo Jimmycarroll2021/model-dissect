@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "history": {
+    "tokens_reserved": 1137888,
+    "download_bytes": 138166822,
+    "gpu_seconds": 12.621721199015155,
+    "gpu_seconds_reserved": 240.0
+  },
+  "producer_raw_audit_sha256": "7706e5483a3872184f927ead5e2a187de9cd691f1a0bb3569e6f71fa8fa8ffd3",
+  "ledger_sha256": "f1c218641375be5062acbaee7e88ff742e14db9e8350389171e57564ea55559c",
+  "phase_start": 1795001978.9844809,
+  "deadline": 1795003778.9844809,
+  "remaining_seconds": 1689.7048676013947,
+  "remaining_positions": 128,
+  "new_lifetime": 1138144
+}

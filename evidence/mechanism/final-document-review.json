@@ -1,0 +1,41 @@
+{
+  "status": "CHANGES_REQUIRED",
+  "reviewed_hashes": {
+    "docs/mechanism-investigation-result.md": "4e01a296dfa978eb10c00ed6a4abdbd7f66cdac86dc4f96ef9c7abd874f18cd8",
+    "TASK_STATE.md": "2aabfa50b7844a129b38d4182cd41cbb444eb89be7171e4e058630dcc5f441cc",
+    "CASE_FACTS.md": "ce6205c658513135de6687332df4e54674b8278e7162f7a9b3755fcd2b3fa1ce",
+    "specs/001-minimind-reproduction/tasks.md": "fe9c6c074c0b64f6513e8dd475a6a18a90c58dc6b351e195e477a0fdeaf3d1c9",
+    "specs/001-minimind-reproduction/quickstart.md": "28cac2e31da2c9aa6076230675f7b5898ca978805ccdcfae8369f36c3ef6f7d9",
+    "evidence/mechanism/independent/execution-result.json": "0ca6895abbe9a46bd94255ec94610991e3abfc527cfec61650f9fca39b913228"
+  },
+  "checks": {
+    "exact_document_hashes": "PASS",
+    "independent_execution_artifacts": "PASS",
+    "paired_heldout_rows_exact": "PASS",
+    "checkpoint_original_identity": "PASS",
+    "main_report_numerical_claims": "PASS",
+    "M2_M3_M4_historical_R2_boundaries": "PASS"
+  },
+  "findings": [
+    {
+      "id": "DOC-1",
+      "severity": "blocking-document-correctness",
+      "path": "specs/001-minimind-reproduction/quickstart.md",
+      "issue": "Opening presents historical pilot as current, names v2 core manifest as current and supplies obsolete identity check; also says no selected internal hypothesis despite completed MECHANISM experiment. The appended measured-status section does not clearly demote those opening assertions.",
+      "required_fix": "Make current MECHANISM status and current manifest explicit at top; clearly label old guide/commands historical, or replace current identity recipe with current candidate manifest. Preserve historic R2/R3 facts."
+    }
+  ],
+  "operation": {
+    "site": "block0 MLP post-down-projection residual contribution",
+    "dimension": 768,
+    "position": "last real input token",
+    "target_coordinate": 732,
+    "target_removed_fraction": 1.0,
+    "control_coordinate": 27,
+    "control_removed_fraction": 0.876369589005136,
+    "restoration": "Remove hook and perform a fresh forward; original call-local activation computation restored, no checkpoint edits",
+    "checkpoint_sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0"
+  },
+  "model_calls_this_review": 0,
+  "finalization": "T049/TASK_STATE not changed because substantive finding requires author correction"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_EXACT_SOURCE_AND_POSITION_BOUND",
+  "runner_sha256": "56118f50556dc10eaf9f5f01337c0c4499d00f4d1f00d87491c213c033da4458",
+  "only_changes_from_verified_storage_repair": [
+    "phase/schema/run identifiers",
+    "new isolated workspace",
+    "reservation76800 and combined153600",
+    "prior charged882320"
+  ],
+  "science_unchanged": true,
+  "worst_case_calls": 1480,
+  "worst_case_positions": 76632,
+  "reserved_each": 76800,
+  "unused_per_role": 168,
+  "combined_reservations": 153600,
+  "prior_retained": 882320,
+  "resulting_lifetime_reserved": 1035920,
+  "approved_ceiling": 1038544,
+  "unreserved_headroom": 2624,
+  "failure_paths": "Every failure terminates or bypasses downstream stages; no retry, warmup, extra reconstruction, or recovery branch executes additional forwards. Independent comparison is artifact-only.",
+  "runtime_admission": false
+}

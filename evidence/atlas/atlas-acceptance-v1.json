@@ -1,0 +1,98 @@
+{
+  "status": "PASS_A1_A4_ONLY",
+  "atlas_math": "PASS",
+  "same_mode": "PASS",
+  "protocol_sha256": "87eb28803a9c6720ffd20db25ac6cddb34ca4b73aeb05a446cd791cf50befe16",
+  "forward_sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+  "reviewer": "/root/atlas_guard_verify",
+  "gates": {
+    "A1": {
+      "status": "PASS",
+      "evidence": "91 unique keys against actual checkpoint and frozen inventory independently checked; all shapes/dtypes/elements, storage group/offset/stride and original identities present."
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": "All91 tensors have source-assisted roles and complete finite scalar summaries;0nonfinite counts; eight fixed structural representatives independently recomputed, others not independently recomputed."
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": "16 declared deterministic<=128x128 sampled spectra/top32 values independently checked with direct SVD squared tolerance and rank intervals;4row geometry,4heads/GQA QK and16OV directions independently recomputed; cross-layer summaries and static/noncausal caveats explicit."
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": "Actual CLI produced hash-bound JSON and readable Markdown with91tensor rows, dataflow, compositions, geometry, layer comparisons and atlas.json pointer. Tested exact guard commands in migration/math-admission receipts; CLI/validation usage documented in scripts/atlas/README.md."
+    },
+    "A5": {
+      "status": "NOT_RUN",
+      "evidence": "Scientific prerequisites established only; exact runner/fixtures/packets and runtime admission still required."
+    },
+    "A6": {
+      "status": "PENDING",
+      "evidence": "Final combined atlas/investigation acceptance not reached."
+    }
+  },
+  "mathematical_result": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-check-v1.json",
+    "sha256": "5b73d48158693bc4017a7b72c0264b86c718f8159c1d1b5417396f1b1eaa5cd4",
+    "checks": 359,
+    "failed": 0,
+    "representative_scalar_tensors": 8,
+    "all_metadata_tensors": 91,
+    "selected_spectra": 16,
+    "selected_heads": 4,
+    "selected_geometry_rows": 4
+  },
+  "same_mode_evidence": {
+    "status": "PASS_REUSED_HISTORICAL_EXACT_FORWARD",
+    "result": "./evidence/mechanism/evaluator-m2-v1.json",
+    "result_sha256": "c9ed8efdb51337a7b9c5488eee92690961fb69af6714a31a887ffc3003214a01",
+    "review": "./evidence/mechanism/m2-result-review.json",
+    "candidate_manifest": "./analysis/candidate-manifest-mechanism-v1.json",
+    "forward_sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "mode": "CPU FP32 same-shape full-prefill",
+    "rows": 144,
+    "required_failures": 0,
+    "environment_identity_matches": true,
+    "checkpoint_config_tokenizer_identities_match": true,
+    "new_forward_execution": false,
+    "limitation": "Historical M2 only; does not validate new A5 instrumentation, fixture processing or interventions. Each new runner must satisfy exact no-op/restoration/boundary gates. Original cached/full R2 FAIL remains."
+  },
+  "runtime": {
+    "math_status": "completed",
+    "math_exit": 0,
+    "math_wall_seconds": 2.131185405072756,
+    "math_final_combined_peak_bytes": 6649503744,
+    "prior_repeat_status": "failed;300seconds charged unchanged; complete artifacts accepted for bounded reuse only",
+    "static_reserved": 900,
+    "static_cap": 1200,
+    "model_reserved": 0,
+    "positions_reserved": 0,
+    "history_positions": 175600,
+    "start": 1794952381.8433254,
+    "deadline": 1794959581.8433254,
+    "ledger_sha256": "75e5624fd4a0b46d8a56531a98cf03cdb334bd0d40d9a63b36d2d69e9a1d55a8"
+  },
+  "artifact_hashes": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-check-v1.json": "5b73d48158693bc4017a7b72c0264b86c718f8159c1d1b5417396f1b1eaa5cd4",
+    "./evidence/atlas/math-execution-receipt.json": "3cb408ec8018acd530de5148004543684c36a79b5ffdcfa9016c2110d55a74bb",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md": "9984ff702eb8268a192dab4ba860358a707fa4f330b807c3984df89ca8e5a972",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/manifest.json": "dbfe40d5044302e948b865e3c1361430d547866c1bae31b991ca2f6085803ba1",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-independent-v1/atlas.json": "30dfe513867de37dae068dc9f7a3bf412dec22b6fc51e30938d85c708e35a0da",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-independent-v1/manifest.json": "f3f96699d256ed17157872b3e087196e6a3e91a3710633b368f801bc7fc7a1a2",
+    "./evidence/mechanism/m2-result-review.json": "337ea88e3aaf6b81f1358e632c984cac583aed97ee1766c3910e59a56181dd71",
+    "./evidence/mechanism/evaluator-m2-v1.json": "c9ed8efdb51337a7b9c5488eee92690961fb69af6714a31a887ffc3003214a01",
+    "./analysis/candidate-manifest-mechanism-v1.json": "f851aea7915dd711998f91d15085d2c0f941be715503897676e9f24ef98c8590",
+    "./evidence/mechanism/evaluator-manifest-v3.json": "7ca466120730f4e20efffecb0b9c7e71fb6482508e8824f637b1bf351ebe5885",
+    "./evidence/atlas/protocol-v1.md": "ff4b8808937327d982f4e1e86a14bf6b61aa08b04c1893c72784ec4116ffd9a6",
+    "./scripts/atlas/README.md": "6b655ff795a3d8bc0a78284011c6e045015244fee3d9e2e94a0b65b97a57b4d1"
+  },
+  "limitations": [
+    "No checkpoint loading or numerical rerun in adjudication; independent executed checker evidence reviewed.",
+    "Full91 scalar statistics produced; only8 scalar tensors independently recomputed as protocol permits representative checks.",
+    "Sampled spectra/rank intervals are not full-matrix rank or causal mechanisms.",
+    "README original implementation-stage pending wording is stale; actual receipts and this acceptance establish current scope.",
+    "Prior repeat guard FAIL preserved; no successful monitored repeat or recovered final highwater claim."
+  ],
+  "next_action": "A5 may use these scientific prerequisites only after separate exact runner/fixture/protocol/guard admission. Goal remains incomplete."
+}

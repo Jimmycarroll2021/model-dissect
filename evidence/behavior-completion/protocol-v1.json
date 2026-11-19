@@ -1,0 +1,17 @@
+{
+  "schema": "BEHAVIOR-002-protocol-v1",
+  "text_sha256": "42b335c3e57a3a51eea2d8a42d57ade66132f0ccef9fb0f4a095df63eebf1fde",
+  "max_new_tokens_including_eos": 24,
+  "prompt_cap": 128,
+  "actual_prompt_max": 48,
+  "eos_id": 2,
+  "gating_metric": "terminated_conservative_answer_correctness",
+  "screen_threshold": 13,
+  "qualification_threshold": 26,
+  "families": [
+    "COPY",
+    "SUBTRACT",
+    "COMPARE"
+  ],
+  "model_status": "NOT_RUN"
+}

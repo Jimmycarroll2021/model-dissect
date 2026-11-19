@@ -1,0 +1,33 @@
+{
+  "status": "NOT_PROMOTABLE_READOUT_ONLY_REPAIR_REFUTED",
+  "api": "minimind_re.transfer.context_readout_candidate.ContextReadoutCandidate.from_directory(directory,expected_hashes=...)",
+  "mode": "canonical-block-affine-physical-context-readout-v1",
+  "files": {
+    "src/minimind_re/transfer/context_readout_candidate.py": "8c5bc45b7d091a5942a533f9340a093e1ae70c76e0ebda65f41a68cba3f20061",
+    "tests/transfer/test_context_readout_candidate.py": "3735456d508e589a2b30ff7a97e5dcbe4911d299fe64eaff6c7a99476dbb5aaf",
+    "evidence/transfer-002/diagnosis/context-readout-candidate-tests-v1.txt": "35d45a4f4c6bbf1cadfbde0064c07df6e7df8c99c8973cfa0a04596e4c2ddcfb"
+  },
+  "unchanged_prior_sources": {
+    "src/minimind_re/transfer/gpt_neox_candidate.py": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f",
+    "src/minimind_re/transfer/affine_all_candidate.py": "387d14fa848f6c17c2cdba5c1bb95b896ef4b6ea465d5796cd13251ba886ee00",
+    "src/minimind_re/transfer/affine_candidate.py": "aefe4086d236b8284dd87b63169dea8081bac31a10a573200d921fa34b3b0bf1"
+  },
+  "semantics": "Internal fixed-two-row FP32 affines inherited. Output projection receives [B,P+Q,H] with zero prefix and current hidden at P:P+Q, retains only current logits. For P0 uses native full shape directly.",
+  "accounting": "last_readout_accounting records B,Q,P, total physical length, actual_model_positions=B*Q, dummy_readout_rows=B*P and total_readout_rows=B*(P+Q). Model guard remains external and unchanged.",
+  "state_safety": "Per-call prefix initialized from actual incoming KV length; try/finally clears even on malformed input or hook error; reentrant forward rejected; __call__ alias binds new forward. Concurrent use unsupported.",
+  "tests": "3 passed in0.73s; synthetic full/cached output equations, multiquery shape, preserved KVprefix/no dummy slots, inherited internal boundary equality, explicit accounting, exception teardown and nested-call rejection",
+  "limitations": [
+    "No target loads, tokenizer execution or target forwards",
+    "No new native implementation inspected",
+    "Unpromoted until crossed primitive and model pilots pass original anchors/thresholds",
+    "Dummy prefix output work grows with physical context; accounting exposed but no budget reservation performed",
+    "Prior failure artifacts and mode sources unchanged"
+  ],
+  "branch_decision": {
+    "source": "parent supplied independent result metadata",
+    "receipt_path": "evidence/transfer-002/review/readout-probe-v1-results.json",
+    "receipt_sha256": "e3b587e4184584502cdd9b1552309294cbd3463d5f9fb3f5b7be66189db405a1",
+    "finding": "Canonical hidden plus native singleton readout fails56 logits; canonical hidden plus fixedtwo readout fails57; bothmax3.743171691894531e-05. Native hidden passes bothreadout geometries.",
+    "consequence": "Upstream hidden-state differences remain material. Conditional readout-only mode is not promotable. Stop branch; no independent adapter review or target runtime requested."
+  }
+}

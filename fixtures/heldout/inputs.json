@@ -1,0 +1,2000 @@
+[
+  {
+    "id": "held-00",
+    "text": "Consider this fact: The red book is on the table.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        794,
+        5534,
+        2961,
+        395,
+        619,
+        309,
+        2630,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 0,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "held-01",
+    "text": "Consider this fact: The blue book is on the table.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        794,
+        4300,
+        2961,
+        395,
+        619,
+        309,
+        2630,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 0,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "held-02",
+    "text": "Consider this fact: A cat sits near the window.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        529,
+        3706,
+        316,
+        2163,
+        730,
+        370,
+        309,
+        5472,
+        451,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 1,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-03",
+    "text": "Consider this fact: A dog sits near the window.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        529,
+        1041,
+        106,
+        316,
+        2163,
+        730,
+        370,
+        309,
+        5472,
+        451,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 1,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ]
+  },
+  {
+    "id": "held-04",
+    "text": "Consider this fact: Two plus three equals five.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        527,
+        122,
+        114,
+        1219,
+        832,
+        3785,
+        1463,
+        3293,
+        341,
+        884,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 2,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ]
+  },
+  {
+    "id": "held-05",
+    "text": "Consider this fact: Two plus four equals six.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        527,
+        122,
+        114,
+        1219,
+        832,
+        5701,
+        1463,
+        3293,
+        316,
+        2628,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 2,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ]
+  },
+  {
+    "id": "held-06",
+    "text": "Consider this fact: Water freezes when it is cold.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        1004,
+        2137,
+        2045,
+        125,
+        329,
+        2238,
+        563,
+        395,
+        1683,
+        103,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 3,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ]
+  },
+  {
+    "id": "held-07",
+    "text": "Consider this fact: Water boils when it is hot.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        1004,
+        2137,
+        1847,
+        485,
+        118,
+        2238,
+        563,
+        395,
+        429,
+        593,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 3,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ]
+  },
+  {
+    "id": "held-08",
+    "text": "Consider this fact: The sun rises in the east.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        794,
+        3150,
+        757,
+        324,
+        329,
+        353,
+        309,
+        413,
+        1154,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 4,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-09",
+    "text": "Consider this fact: The sun sets in the west.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        794,
+        3150,
+        2139,
+        118,
+        353,
+        309,
+        339,
+        611,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 4,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    ]
+  },
+  {
+    "id": "held-10",
+    "text": "Consider this fact: She opened the wooden door.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        6242,
+        5102,
+        382,
+        309,
+        339,
+        2166,
+        327,
+        1041,
+        336,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 5,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-11",
+    "text": "Consider this fact: She closed the wooden door.",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        6242,
+        4414,
+        118,
+        382,
+        309,
+        339,
+        2166,
+        327,
+        1041,
+        336,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 5,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ]
+  },
+  {
+    "id": "held-12",
+    "text": "Consider this fact: \u4eca\u5929\u7684\u5929\u6c14\u5f88\u597d\u3002",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        256,
+        5640,
+        296,
+        3660,
+        1574,
+        658,
+        302
+      ]
+    ],
+    "group": "target",
+    "pair_id": 6,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "held-13",
+    "text": "Consider this fact: \u4eca\u5929\u7684\u5929\u6c14\u5f88\u51b7\u3002",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        256,
+        5640,
+        296,
+        3660,
+        1574,
+        2929,
+        302
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 6,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "held-14",
+    "text": "Consider this fact: \u8bf7\u56de\u7b54\u8fd9\u4e2a\u7b80\u5355\u7684\u95ee\u9898\u3002",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        256,
+        960,
+        3854,
+        904,
+        2052,
+        2508,
+        302
+      ]
+    ],
+    "group": "target",
+    "pair_id": 7,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "held-15",
+    "text": "Consider this fact: \u8bf7\u89e3\u91ca\u8fd9\u4e2a\u7b80\u5355\u7684\u7b54\u6848\u3002",
+    "input_ids": [
+      [
+        70,
+        3070,
+        4591,
+        1003,
+        2514,
+        61,
+        256,
+        960,
+        2093,
+        904,
+        3343,
+        4881,
+        302
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 7,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "held-16",
+    "text": "Read the following: The red book is on the table.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        794,
+        5534,
+        2961,
+        395,
+        619,
+        309,
+        2630,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 8,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "held-17",
+    "text": "Read the following: The blue book is on the table.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        794,
+        4300,
+        2961,
+        395,
+        619,
+        309,
+        2630,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 8,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "held-18",
+    "text": "Read the following: A cat sits near the window.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        529,
+        3706,
+        316,
+        2163,
+        730,
+        370,
+        309,
+        5472,
+        451,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 9,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    ]
+  },
+  {
+    "id": "held-19",
+    "text": "Read the following: A dog sits near the window.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        529,
+        1041,
+        106,
+        316,
+        2163,
+        730,
+        370,
+        309,
+        5472,
+        451,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 9,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-20",
+    "text": "Read the following: Two plus three equals five.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        527,
+        122,
+        114,
+        1219,
+        832,
+        3785,
+        1463,
+        3293,
+        341,
+        884,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 10,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-21",
+    "text": "Read the following: Two plus four equals six.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        527,
+        122,
+        114,
+        1219,
+        832,
+        5701,
+        1463,
+        3293,
+        316,
+        2628,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 10,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-22",
+    "text": "Read the following: Water freezes when it is cold.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        1004,
+        2137,
+        2045,
+        125,
+        329,
+        2238,
+        563,
+        395,
+        1683,
+        103,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 11,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-23",
+    "text": "Read the following: Water boils when it is hot.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        1004,
+        2137,
+        1847,
+        485,
+        118,
+        2238,
+        563,
+        395,
+        429,
+        593,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 11,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-24",
+    "text": "Read the following: The sun rises in the east.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        794,
+        3150,
+        757,
+        324,
+        329,
+        353,
+        309,
+        413,
+        1154,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 12,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    ]
+  },
+  {
+    "id": "held-25",
+    "text": "Read the following: The sun sets in the west.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        794,
+        3150,
+        2139,
+        118,
+        353,
+        309,
+        339,
+        611,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 12,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "held-26",
+    "text": "Read the following: She opened the wooden door.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        6242,
+        5102,
+        382,
+        309,
+        339,
+        2166,
+        327,
+        1041,
+        336,
+        49
+      ]
+    ],
+    "group": "target",
+    "pair_id": 13,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    ]
+  },
+  {
+    "id": "held-27",
+    "text": "Read the following: She closed the wooden door.",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        6242,
+        4414,
+        118,
+        382,
+        309,
+        339,
+        2166,
+        327,
+        1041,
+        336,
+        49
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 13,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  {
+    "id": "held-28",
+    "text": "Read the following: \u4eca\u5929\u7684\u5929\u6c14\u5f88\u597d\u3002",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        256,
+        5640,
+        296,
+        3660,
+        1574,
+        658,
+        302
+      ]
+    ],
+    "group": "target",
+    "pair_id": 14,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "held-29",
+    "text": "Read the following: \u4eca\u5929\u7684\u5929\u6c14\u5f88\u51b7\u3002",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        256,
+        5640,
+        296,
+        3660,
+        1574,
+        2929,
+        302
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 14,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "held-30",
+    "text": "Read the following: \u8bf7\u56de\u7b54\u8fd9\u4e2a\u7b80\u5355\u7684\u95ee\u9898\u3002",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        256,
+        960,
+        3854,
+        904,
+        2052,
+        2508,
+        302
+      ]
+    ],
+    "group": "target",
+    "pair_id": 15,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "held-31",
+    "text": "Read the following: \u8bf7\u89e3\u91ca\u8fd9\u4e2a\u7b80\u5355\u7684\u7b54\u6848\u3002",
+    "input_ids": [
+      [
+        4087,
+        785,
+        309,
+        1901,
+        61,
+        256,
+        960,
+        2093,
+        904,
+        3343,
+        4881,
+        302
+      ]
+    ],
+    "group": "counterexample",
+    "pair_id": 15,
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ]
+  }
+]

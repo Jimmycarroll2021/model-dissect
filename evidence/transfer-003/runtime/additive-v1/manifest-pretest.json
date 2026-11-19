@@ -1,0 +1,19 @@
+{
+  "status": "CODE_PREPARED_SYNTHETIC_EXECUTION_PENDING_RESOURCE_SERIALIZATION",
+  "files": {
+    "./src/minimind_re/transfer3/additive_run.py": "b07cbb864ff1dea8119ff4972c2f15b8db945b840d4024b70b47f4abe59d2661",
+    "./tests/test_transfer3_additive.py": "f5c7dc92f17b4253fc7429e9bfa5c73eb0eedac20288ad40035d36deaa334f91",
+    "./evidence/transfer-003/runtime/additive-v1/packet-atlas-independent-DRAFT.json": "8587d4ca23512fe03d041576899b52846588b9de5b954319c043ab3a5a9a711c",
+    "./evidence/transfer-003/runtime/additive-v1/packet-atlas-producer-DRAFT.json": "362129c6cb822c85e6bdff64a3a0e00a38e9ffeea811bc58c9307793cc030d0e",
+    "./evidence/transfer-003/runtime/additive-v1/packet-science-independent-DRAFT.json": "54410075b81d83f897488e1f664221745563ed27de1412fa2860113ffde55e33",
+    "./evidence/transfer-003/runtime/additive-v1/packet-science-producer-DRAFT.json": "2fb7d68163c20b1cd2238d5f565d1a1da50188ec490b3a0156e31fadfa190037",
+    "./evidence/transfer-003/runtime/additive-v1/packet-tokenize-producer-DRAFT.json": "fb4cc9c3ee1979d58e4ac7cbed965bce6c9e58c071edc32d87a46bf8a4e9772c",
+    "./evidence/transfer-003/runtime/additive-v1/usage.md": "5f1dbe5fb0234e157653a48f2dc23196f38dd5b6c6a962c92698e6bd37e55dee"
+  },
+  "syntax": "AST parses for new module and new namedtest",
+  "synthetic_model_tests": "UNEXECUTED until independent pilot terminates",
+  "target_operations": 0,
+  "frozen_numerical_sources_edited": false,
+  "candidate_implementation_read": false,
+  "next_action": "Run only tests/test_transfer3_additive.py after coordinator serializes resources; then independent additive review and admitted tokenization; freeze actual token bank before science packet admission"
+}

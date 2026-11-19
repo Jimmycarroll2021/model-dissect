@@ -1,0 +1,30 @@
+{
+  "verdict": "PASS_STATIC_MAP_AND_ATLAS_BUILD",
+  "reviewed_utc": "2026-11-18T19:18:25.847075+00:00",
+  "manifest_sha256": "5c65c87dc13edeab2b57805794188029fa112450970a126ec1ab507da5b3b908",
+  "document_sha256": "ed5ee6bceff2df7ee87117da70b02f1bb9adca048bf537696ba4aaebd355d79e",
+  "runner_sha256": "34eed1330166fb04a53c056b9d12453e668e61b5290b228feba96810ff53a27b",
+  "resolved_findings": [
+    "ATLAS-DOC-01"
+  ],
+  "checks": [
+    "All manifest file hashes and three equation-source hashes verified",
+    "Source/test/test-receipt identities unchanged; prior three passing tests and independent eight-view NumPy toy comparison reused",
+    "Added source-cited row-vector equations explicitly cover all76 tensor roles and shapes",
+    "LayerNorm biased variance/epsilon/gamma/beta, head-packed QKV affine biases, partial split-half8/32 RoPE, masked FP32 attention, output bias, parallel GELU MLP and native residual addition order verified",
+    "Final learned LayerNorm and untied bias-free all50304-row output projection correctly stated",
+    "All source line links resolve within pinned files; original static-versus-causal limits remain"
+  ],
+  "required_changes": [],
+  "reused_receipt": "evidence/transfer-002/review/atlas-build-v1.json",
+  "reused_receipt_sha256": "877ddd246d49d95dec4ee54fef9f8c9b79ee6c6d2c0a5764e8bf611c98016288",
+  "tests_rerun": false,
+  "target_payload_loaded": false,
+  "model_forwards": 0,
+  "tokenizer_executions": 0,
+  "limits": [
+    "Static map/runner acceptance only; no target atlas finite statistics, view arrays, spectral results or model parity measured",
+    "Target atlas execution remains NOT_RUN and requires separate exact guard admission",
+    "Prior receipt general-input/working-memory limitations remain; proposed resources are not measured target use"
+  ]
+}

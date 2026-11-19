@@ -1,0 +1,9 @@
+{
+  "status": "STATIC_AND_STUB_PASS_BROWSER_UNVERIFIED",
+  "checks": ["No duplicate HTML IDs", "JavaScript parses and runs in minimal DOM stub", "Matrix block event changes numeric readout", "Trace query and coordinate event changes numeric readout", "Patch coordinate event changes numeric readout", "Held-out SVG nodes generated in stub", "Embedded data dimensions match selected slices", "No external script or fetch", "Static numeric tables and SVG remain in HTML"],
+  "browser_tool": "mcp__cua_repl.js / cua.createBrowserTab",
+  "browser_request": "./docs/gpt2-weight-walkthrough.html",
+  "browser_denial": "Browser Use rejected this action due to browser security policy. Reason: The browser URL policy blocks this action. Browser use could not acquire authority to trigger network egress. The URL policy gate did not grant access. The requested URL protocol is not allowed. Allowed protocols: \"http:\", \"https:\". The agent must not attempt to achieve the same outcome via workaround, indirect execution, raw CDP or browser commands, alternate browser surfaces, or policy circumvention. Proceed only with a materially safer alternative that does not require this blocked browser action; if none exists, stop and request user input.",
+  "boundary": "No workaround attempted. Browser rendering, layout, keyboard behavior and actual browser interaction remain unverified. The DOM stub is computation/event validation only.",
+  "failed_attempt_preserved": "Initial atlas-manifest assertion compared raw array bytes to its sha256 field and failed. Inspection showed that field exactly equals the NPY file hash (including header), unlike science receipt array hashes. Corrected assertion to hash the NPY file; no data, thresholds or science assertions changed."
+}

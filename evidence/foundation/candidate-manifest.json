@@ -1,0 +1,181 @@
+{
+  "candidate": "FOUNDATION-001-v1",
+  "scope": "all project files except this self-referential manifest; no model artifacts",
+  "files": [
+    {
+      "path": ".agents/skills/speckit-analyze/SKILL.md",
+      "bytes": 10544,
+      "sha256": "23d10a774acad3a26e5ab01041eb65a39e627aadee6e0e366d79713ad054fdf6"
+    },
+    {
+      "path": ".agents/skills/speckit-checklist/SKILL.md",
+      "bytes": 19985,
+      "sha256": "2db3121cd5d97ca2c0902be413d39d9ec0d9323932a976330eefa208e72a483a"
+    },
+    {
+      "path": ".agents/skills/speckit-clarify/SKILL.md",
+      "bytes": 14141,
+      "sha256": "a429d1af7bf00c65c6be2766a11c2571e9d18ede2b77ec4fd538db4d5ec242d1"
+    },
+    {
+      "path": ".agents/skills/speckit-constitution/SKILL.md",
+      "bytes": 8255,
+      "sha256": "7310adee465ee6a439a689518e6c133ce851d808c7a6e64d66f659ad8b4bd56e"
+    },
+    {
+      "path": ".agents/skills/speckit-implement/SKILL.md",
+      "bytes": 10655,
+      "sha256": "b39c4de2e794a96302cd36cc7b6796711aee0f3bcedba0d0c01ccf3b1036f898"
+    },
+    {
+      "path": ".agents/skills/speckit-plan/SKILL.md",
+      "bytes": 6166,
+      "sha256": "1cd13274eb35a18d87e6f43bc69801910437ce9543286b13f87c4e3cbc33b9d8"
+    },
+    {
+      "path": ".agents/skills/speckit-specify/SKILL.md",
+      "bytes": 16289,
+      "sha256": "164542c78d6415ea9e16bb063652e989e14524a9a273176273e6c9b5ffa0b942"
+    },
+    {
+      "path": ".agents/skills/speckit-tasks/SKILL.md",
+      "bytes": 9407,
+      "sha256": "0b36b19eb61347406afea1953c1e5983f084931eaa34d1b10c6c6e67f828f29f"
+    },
+    {
+      "path": ".agents/skills/speckit-taskstoissues/SKILL.md",
+      "bytes": 4032,
+      "sha256": "32d8ee0f0482a7b2b9e6bee4dfd6947465754f2f82c404bfc7ef64f4a3b63bdd"
+    },
+    {
+      "path": ".specify/feature.json",
+      "bytes": 56,
+      "sha256": "d3f6e88f70b7d0e6572ba01b644abc4fa6c99dc5729b735d96acf5a2e8b4bff8"
+    },
+    {
+      "path": ".specify/init-options.json",
+      "bytes": 197,
+      "sha256": "f4791c2e1d8ebaea432872985cd4bc15b3bef81a594704a20c3b95bcbae56e4c"
+    },
+    {
+      "path": ".specify/integration.json",
+      "bytes": 362,
+      "sha256": "1b85b8a74cadb301fd7d6b6a29101344c28c6a088fe4d596e7669fdb5ec666d8"
+    },
+    {
+      "path": ".specify/integrations/codex.manifest.json",
+      "bytes": 1167,
+      "sha256": "1e223721c8ddc5b7556c22685671ac1d373c4e437bcc4c5dfd9f81022b70827f"
+    },
+    {
+      "path": ".specify/integrations/speckit.manifest.json",
+      "bytes": 1262,
+      "sha256": "9732f65b5d089fe26cd16663ebb229fd6804116f271357a052b39335af4520e2"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 2920,
+      "sha256": "a080a1af577075d9e749ed060a4fd285a7913feb9c82366564f6bc5f3abf53ff"
+    },
+    {
+      "path": ".specify/scripts/bash/check-prerequisites.sh",
+      "bytes": 6158,
+      "sha256": "aff361639c504b95a2901493f5022788adc01a6792fd37f132de8f57782e4b80"
+    },
+    {
+      "path": ".specify/scripts/bash/common.sh",
+      "bytes": 25806,
+      "sha256": "dd638316259e699fd466542c77ef16af5eb198efe0447c081f86b890db414ba8"
+    },
+    {
+      "path": ".specify/scripts/bash/create-new-feature.sh",
+      "bytes": 15915,
+      "sha256": "bcf4964ca0c6c78717bb42d9e66b8c7e5ee82779cd96afc5aa7b08b75abe5790"
+    },
+    {
+      "path": ".specify/scripts/bash/setup-plan.sh",
+      "bytes": 2346,
+      "sha256": "0d1d7a66de157b0be1385bb91aa71e5bf95550217abf47a73270dab0dc52895a"
+    },
+    {
+      "path": ".specify/scripts/bash/setup-tasks.sh",
+      "bytes": 3456,
+      "sha256": "e8d050c63c5afb664a8b671b0b0155513fb9cab0567b335e16b9eb035482aad2"
+    },
+    {
+      "path": ".specify/templates/checklist-template.md",
+      "bytes": 1312,
+      "sha256": "c37695297e5d3153d64f82c21223509940b13932046c7961c42d1d669516130c"
+    },
+    {
+      "path": ".specify/templates/constitution-template.md",
+      "bytes": 2346,
+      "sha256": "ce7549540fa45543cca797a150201d868e64495fdff39dc38246fb17bd4024b3"
+    },
+    {
+      "path": ".specify/templates/plan-template.md",
+      "bytes": 3959,
+      "sha256": "50100c36ac6aee7e903698a653d2052f87bcbb6c26157433dc1c0056ebee6028"
+    },
+    {
+      "path": ".specify/templates/spec-template.md",
+      "bytes": 4777,
+      "sha256": "f4382a4f8c14ffededef962793a7701f9eafeffeef2c8af87097437a33db5491"
+    },
+    {
+      "path": ".specify/templates/tasks-template.md",
+      "bytes": 9276,
+      "sha256": "b2b7aa6c492875d6e98b6cc58135c4df6582f7bb3ee5e41609d1f76ccf901a03"
+    },
+    {
+      "path": ".specify/workflows/speckit/workflow.yml",
+      "bytes": 1428,
+      "sha256": "30862b06e500cf482819b8b8db31de86a9d621633110692598e806ba0407b3d1"
+    },
+    {
+      "path": ".specify/workflows/workflow-registry.json",
+      "bytes": 369,
+      "sha256": "e723c2e791e5b954b7dc1b4ad58fa89f68fa7891406d320eb995d857c195e8db"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 188,
+      "sha256": "e2989d23443431394adaa0008e235af2a57133961300eaf630b387ec91f556dd"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "bytes": 605,
+      "sha256": "6aecbde1f5dd432d777cd51fb7bfdc7d06e9b9089b1f106a6f2b67ad172684fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1625,
+      "sha256": "0d91fececf52eccee890f140f675b37bc1218f27f564da77b8994ece0d36e935"
+    },
+    {
+      "path": "TASK_STATE.md",
+      "bytes": 1492,
+      "sha256": "85df69dc3e2777aaefa46e8bf504afc9ea268efeefb176e5fd62f4aac91ccf83"
+    },
+    {
+      "path": "evidence/foundation/sources.md",
+      "bytes": 2308,
+      "sha256": "14a8eb881c4a38d26f5bbab2d793c714f5d0d2674e2d8457e22386575374d74c"
+    },
+    {
+      "path": "evidence/foundation/worker-checks.json",
+      "bytes": 660,
+      "sha256": "cc692c4e4563db0dda4ff25064d28706bd5367d3c1a4d3eb4e176a2a017c9cae"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/checklists/requirements.md",
+      "bytes": 1090,
+      "sha256": "14636d28844fac18d182513b3d35018b68313bb762b8052b86fabbdb5dcfdd46"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/spec.md",
+      "bytes": 11129,
+      "sha256": "96f16526b84ddebe5502a060066928e8250e5553fbfc12cac80fd7e27175b648"
+    }
+  ]
+}

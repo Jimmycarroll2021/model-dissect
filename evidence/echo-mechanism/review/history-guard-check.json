@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "orig_mutation_refused_before_reservation",
+    "h_mutation_refused_before_reservation",
+    "behavior_mutation_refused_before_reservation",
+    "cont_mutation_refused_before_reservation",
+    "orig_lock_conflict_refused",
+    "h_lock_conflict_refused",
+    "behavior_lock_conflict_refused",
+    "cont_lock_conflict_refused"
+  ],
+  "guard_sha256": "2f1c0e5ca276658df36ccbfcac4485be9b5cf549f4fff908fa3384b40412ad51",
+  "scope": "Eight independent disposable-directory cases; no actual model/tokenizer/runtime admission."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "partial",
+  "manifest": "analysis/delivery-manifest.json",
+  "manifest_sha256": "def912423f9782b4f1851922846847566ad299bcbc425226aa428b37d4d344ae",
+  "runtime_tests": "2 PASS",
+  "candidate_unit_tests": "3 PASS",
+  "cli_receipts": [
+    "runs/development/cli-inventory.json",
+    "runs/development/cli-map.json",
+    "runs/development/cli-identity.json",
+    "runs/development/cli-report.json"
+  ],
+  "runtime_repair": {
+    "effective_execution_start": 1794897624.8448846,
+    "baseline_project_bytes": 0,
+    "growth_cap_bytes": 8589934592,
+    "policy": "Conservative full project charge; check preflight/poll/postexit; no symlink traversal"
+  },
+  "forward_sha256": "c58b7e49e3b6e1414c0d80fef9e6e2ae2b61f8e49ba5d188ef53751c88dd9544",
+  "model_forwards_by_implementer": 0,
+  "R2": "FAIL per coordinator evaluator feedback; original tolerance preserved",
+  "R3": "NOT_RUN; probe implementation and experiment blocked by R2",
+  "limits": [
+    "Forward/probe CLI return nonzero NOT_RUN receipt; use frozen adapter only through separately guarded evaluator",
+    "CPU-only; no GPU activity",
+    "Pre-repair first smoke has missing CPU metrics; not invented",
+    "No numeric candidate adjustment or new oracle-query retry"
+  ]
+}

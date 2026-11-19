@@ -1,0 +1,61 @@
+{
+  "verdict": "PASS_SEPARATELY_SCOPED_DESIGN_NOT_STRICT_COMPLETION_OR_RUNTIME_ADMISSION",
+  "manifest_sha256": "83243ab3fdde971b33eebe83a5f058b9df7f0171281d0eed81f1d4655c14e314",
+  "checked_at_utc": "2026-11-18T20:05:01.494283+00:00",
+  "verified_prior_snapshots": {
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-spec.md": "5c509af8c0b8689a6cc0c4f5e4c9199f3ed4aa0206b876d2c5d69dba577e8e16",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-plan.md": "2ab40a546147d36a709a865af58b23cf6bd7d113b9b544f9018afec5a797d021",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-tasks.md": "24b30de84d336a58c83b64348a0e0cec9acbbab68b0c16cc4cbb2929f93d3c8e",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-internal-protocol-proposal.md": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/prior-quickstart.md": "ab4aec48eb57632510067c5e652bf1f61e105b965a39a237efa6675c3ed6f3c0"
+  },
+  "verified_amended_files": {
+    "specs/002-model-transfer/spec.md": "127d35c7a5def1ae7e7833953a235ef22b73d1b6e8f5b01bcfe270d368ff1834",
+    "specs/002-model-transfer/plan.md": "7bbf7ba12e7289991274fe83b4371f1998b032c1931faa503f44a68e06aa4a66",
+    "specs/002-model-transfer/tasks.md": "1cafa5749c5725ba4b92eb1a1b718d356b2a25459de6db1609b1ecf9462be3c2",
+    "specs/002-model-transfer/internal-protocol-proposal.md": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454",
+    "specs/002-model-transfer/quickstart.md": "42c876272a5c758597112203abc23eac2c3b84d2cef8b97ac9d9670117cdeec2"
+  },
+  "arithmetic": {
+    "calls_per_role": 389,
+    "actual_positions_per_role": 12448,
+    "reserved_positions_per_role": 12500,
+    "seconds_provisional_per_role": 300,
+    "disk_reservation_per_role": 1073741824,
+    "retained_array_components_bytes": [
+      78273024,
+      147456,
+      630718464,
+      13139968
+    ],
+    "retained_array_base_bytes": 722278912,
+    "paired_baseline_inputs": 48,
+    "actors_per_input": 2,
+    "boundaries_per_actor": 9,
+    "full_logit_width": 50304,
+    "both_roles_calls": 778,
+    "both_roles_actual_positions": 24896,
+    "both_roles_reserved_positions": 25000
+  },
+  "findings": [],
+  "scope_assessment": "Scientifically defensible bounded full-prefill native block intervention with source-assisted original independent-candidate baseline parity. Cache/full failure does not invalidate computation restricted to fresh full-prefill calls; this does not demonstrate cached equivalence or candidate intervention equivalence. Strict original T2 remains FAILED and strict whole-objective completion explicitly prohibited.",
+  "preserved_science": "Exact unchanged text from Fixed question through No-op/restoration/tool checks independently compared: 8 development/16 heldout fixtures, metric definition, weak denominator handling, controls, development-only selection and frozen heldout thresholds. Native intervention controls and actual independent repetition remain mandatory.",
+  "required_gates": [
+    "Exact executable runner/fixture/source/environment review and runtime admission",
+    "Development all-boundary parity before dependent development interventions",
+    "Selection frozen before heldout release; heldout all-boundary parity before dependent heldout interventions; failure stops dependent work without tuning",
+    "Every scientific call cache=None; original native and original candidate, no canonical repairs",
+    "Unchanged tolerances, exact real-token top1, finite all arrays, no vocabulary trimming, retained raw baseline arrays",
+    "Parameter preservation, native no-op/restoration and full independent actual389-call repeat",
+    "Qualification failure cannot silently pass T4; missing/invalid/all-ineligible data cannot support donor mechanism or strict completion",
+    "Scoped final handoff must prominently retain original T2FAIL and scope limits"
+  ],
+  "resource_boundary": "Installed24GiB/3600 caps remain executable unless separately changed;32GiB/4800 are design maxima only. No phase clock reset, refund or concurrent canonical repair allocation.300sec provisional must be justified and live ledger/free reserve/original deadline reconciled before runtime.",
+  "authority_boundary": "Assessment uses coordinator-supplied earlier explicit user authorization of retained-cache-limitation bounded same-mode investigation. This receipt reviews the resulting named scope; it is not independent reconstruction of historical authority.",
+  "performed_model_calls": 0,
+  "limitations": [
+    "No model/checkpoint/tokenizer loading or execution",
+    "No actual T2S pass, runtime feasibility, scientific result or completion established",
+    "All-ineligible outcome remains specifically limited; plan expressly retains qualification-failure T4 incompleteness"
+  ]
+}

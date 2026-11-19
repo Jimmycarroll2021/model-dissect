@@ -1,0 +1,61 @@
+{
+  "start_utc": "2026-11-17T06:42:55.882093+00:00",
+  "download_bytes": 138166822,
+  "files": [
+    {
+      "path": "artifacts/original/full_sft_768.pth",
+      "url": "https://huggingface.co/jingyaogong/minimind-3-pytorch/resolve/edba70ec15e06bc4280fbb96ac3383d73a7eab91/full_sft_768.pth",
+      "bytes": 137683346,
+      "sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+      "git_sha1": "c09bdf7dd89c0fe615f8708a701cab8f3cbf95a7",
+      "expected_algorithm": "sha256",
+      "expected_hash": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+      "elapsed_seconds": 3.9550743110012263
+    },
+    {
+      "path": "artifacts/original/tokenizer.json",
+      "url": "https://raw.githubusercontent.com/jingyaogong/minimind/233d00fa068ec2b8c0d4f07b703934d6391a5a73/model/tokenizer.json",
+      "bytes": 451182,
+      "sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+      "git_sha1": "e6ca86c9335a4bbbc1ffda03f479c076d4cdf4ba",
+      "expected_algorithm": "git_sha1",
+      "expected_hash": "e6ca86c9335a4bbbc1ffda03f479c076d4cdf4ba",
+      "elapsed_seconds": 0.6934829030651599
+    },
+    {
+      "path": "artifacts/original/tokenizer_config.json",
+      "url": "https://raw.githubusercontent.com/jingyaogong/minimind/233d00fa068ec2b8c0d4f07b703934d6391a5a73/model/tokenizer_config.json",
+      "bytes": 13308,
+      "sha256": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+      "git_sha1": "e46c14a8b5a898eb4c6ba9bcdc148302ceb1fbbe",
+      "expected_algorithm": "git_sha1",
+      "expected_hash": "e46c14a8b5a898eb4c6ba9bcdc148302ceb1fbbe",
+      "elapsed_seconds": 0.2621356339659542
+    },
+    {
+      "path": "oracle/vendor/model_minimind.py",
+      "url": "https://raw.githubusercontent.com/jingyaogong/minimind/233d00fa068ec2b8c0d4f07b703934d6391a5a73/model/model_minimind.py",
+      "bytes": 18986,
+      "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+      "git_sha1": "3f23fdfbe61a7015c141f9c458b1f6ee04b824d0",
+      "expected_algorithm": "git_sha1",
+      "expected_hash": "3f23fdfbe61a7015c141f9c458b1f6ee04b824d0",
+      "elapsed_seconds": 0.25547021196689457
+    },
+    {
+      "path": "oracle/vendor/__init__.py",
+      "url": "https://raw.githubusercontent.com/jingyaogong/minimind/233d00fa068ec2b8c0d4f07b703934d6391a5a73/model/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "expected_algorithm": "git_sha1",
+      "expected_hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "elapsed_seconds": 0.28673200600314885
+    }
+  ],
+  "model_forwards": 0,
+  "training_steps": 0,
+  "status": "downloaded_verified",
+  "free_before": 2982047744,
+  "free_after": 2843570176
+}

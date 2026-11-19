@@ -1,0 +1,56 @@
+{
+  "id": "NUMERICS-002-protocol-v1",
+  "status": "HOLD_PENDING_INDEPENDENT_REVIEW",
+  "authority": "Jimmy: Yes [resolve cached-versus-full numerical discrepancy under recorded protocol before internal mechanism experiment]. Run through spec kit end to end; parent assignment is provenance for bracketed context.",
+  "original_start": 1794897624.8448846,
+  "deadline_epoch": 1794912024.8448846,
+  "fresh_elapsed_window": false,
+  "historical_ledger": "runtime/ledger.json",
+  "historical_reservations": 54732,
+  "total_token_cap": 1000000,
+  "gpu_seconds_cap": 7200,
+  "implementation_gpu_seconds_cap": 4800,
+  "verification_gpu_seconds_reserved": 2400,
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 2,
+  "new_download_bytes_allowed": 0,
+  "spend": 0,
+  "training": false,
+  "disk_cap_bytes": 8589934592,
+  "disk_free_reserve_bytes": 2147483648,
+  "numerical_rule": "abs(candidate-reference) <= 1e-5 + 1e-4*abs(reference); exact top1; all finite; retain cache/full and all boundary rows",
+  "max_distinct_diagnostic_runs": 3,
+  "diagnostic_per_run_timeout_seconds": 300,
+  "diagnostic_per_run_token_reservation_max": 4096,
+  "diagnostic_total_tokens_max": 12288,
+  "full_parity_per_run_tokens_max": 18000,
+  "full_parity_per_run_timeout_seconds": 600,
+  "full_parity_runs_max": 2,
+  "candidate_core_manifest_sha256": "f7c42733df7a08bbe09cacf07c8a3c802a88362bdb627beb26d86a4a5d37d795",
+  "candidate_cli_manifest_sha256": "0256cfcaa150b2946840906c28e1e8a1833e9f52a11846ed7c37a651398c037c",
+  "hypotheses": [
+    {
+      "id": "D1",
+      "cause": "Shape-dependent FP32 reductions in projections and/or attention",
+      "test": "Capture same fixed activation row processed alone and in multiple-row tensors at first diverging projection and attention output; compare cached/full per-block and cache K/V prefix on one unpadded already-exposed parity case. Preserve original baseline as primary evidence. No reference source exposed to implementer.",
+      "distinguishes": "Bit-identical inputs with different outputs demonstrate arithmetic shape effects, while unequal prefix cache values locate upstream propagation. Head-only evidence is insufficient."
+    },
+    {
+      "id": "D2",
+      "cause": "Backend dispatch selects different reduction paths for matrix shapes",
+      "test": "Confirm installed backend/CPU and actual projection dispatch first, using bounded verbose capture. One isolated fresh process sets MKL_CBWR=AUTO,STRICT and MKL_DYNAMIC=FALSE before importing torch; capture effective support/branch where available. Compare same-mode/cache-full on same exposed case. FP32,2threads,determinism retained. Unsupported or ineffective control is inconclusive, not proof. See numerics-advisor.md official-source cautions.",
+      "distinguishes": "A changed result with identical artifacts/inputs supports backend sensitivity. Passing tiny case is insufficient for R2."
+    },
+    {
+      "id": "D3",
+      "cause": "Padding/position/causal mask semantics rather than arithmetic alone",
+      "test": "No source fix until compare effective allowed-key sets, absolute positions, cached prefix K/V and valid-token outputs for matched unpadded/left/right cases. Include future-token-change invariance. Oracle owner independently reports mask semantics through declared interface. Use small synthetic inputs for exact mask truth tables; fixed exposed parity cases only for model observations.",
+      "distinguishes": "Wrong allowed-key/position sets or future dependence establishes semantic defect; matching masks alone does not prove numerical cause."
+    }
+  ],
+  "promotion": "Choose at most one evidence-supported repair/settings candidate. Freeze new source/environment/protocol identities before full R2. Retain pinned reference source unchanged except declared common numerical backend configuration. No FP64, tolerance increase, cache disabling, fixture removal, candidate/reference delegation, unrecorded oracle monkeypatch or token-by-token full recomputation disguised as cache parity. A canonical row-wise FP32 implementation would be a separate proposed algorithmic candidate requiring independent protocol amendment; not admitted automatically by this protocol.",
+  "evaluation": "One complete development R2 suite then separate verifier complete repeat, maximum2 full suites for promoted candidate. Old parity set is exposed development data; evaluator must freeze fresh12 length/padding parity fixtures before candidate evaluation for new heldout claim. Preserve 16development/32heldout mechanism split; no mechanism observations until R2 PASS. R3 uses existing registered budgets and prerequisites, reserve at least100000 lifetime tokens; exact probe reservation follows frozen protocol.",
+  "stop": "Stop on cap/deadline, missing guard, identity drift, active foreign ownership, unaccounted prior run, nonfinite, or failed full R2 after selected repair. No unchanged retries or second repair candidate automatically admitted. Diagnostic invalidation still consumes run/token budget.",
+  "advisor": "evidence/continuation/numerics-advisor.md; source-assisted advisory; no oracle source directly inspected by protocol author"
+}

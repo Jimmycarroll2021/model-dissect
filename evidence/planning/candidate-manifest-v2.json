@@ -1,0 +1,52 @@
+{
+  "candidate": "EXECUTION-001-plan-v2",
+  "status": "independent changed-artifact verification pending",
+  "artifacts": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "sha256": "b2d5f0617903d0cb35b4c23d8e85a6217f68426e7254d6993210322803c8e4a6"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "b9c095f2d5a88c0a76676616120a79ba30398421b8d741228706deb4bcdd8dbd"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "sha256": "8bd4a976ab686b9e3cf656f388b5cac2fe694f3fb53a404b97cda4447429e2a8"
+    },
+    {
+      "path": "TASK_STATE.md",
+      "sha256": "081607b3d4310f2bb0fde22717b3bf8494b2a11f0b85294ad13e07563f2dd39c"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/contracts/local-workflow.md",
+      "sha256": "8e622d9d7453c6374792eb99e0856a5314a448efc0714dbc16bc3033b3649b66"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/data-model.md",
+      "sha256": "769625b15261bb4632e225ee2f2e8a08dbf8105574471e3bca30eb1f31c5a5b1"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/plan.md",
+      "sha256": "35c0e43e8da2b7ae7df6a6a1a860ac4362da833b824d81c9d1d7efbe18d04bcd"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/quickstart.md",
+      "sha256": "874aec0b955c7e510e462c08a62dfa69a94e7985eda5b56c35ab6a84dc289612"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/research.md",
+      "sha256": "83f5a537588b0ab9db71e9e207e132963e01da5cff3fd1ecb5bb013a6bf55a9c"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/spec.md",
+      "sha256": "bb41a9d88e5f0bce9ed5db9ce4b89c238b394d90ec846293f1a403c77e23bc8b"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/tasks.md",
+      "sha256": "7f29464c2e545f176d5c4f01454389c84a467c2cd17c556d3432fdf92c96d77a"
+    }
+  ],
+  "parent_manifest_sha256": "41927c6a66ef9ab6c3deb9b7521e755aa07325b956be533777c67a100cf7aaf4",
+  "change": "I1: distinguish reconstruction and probe freezes; contract only"
+}

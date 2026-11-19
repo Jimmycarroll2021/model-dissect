@@ -1,0 +1,188 @@
+{
+  "status": "PROPOSED_NOT_ADMITTED",
+  "schema": "TRANSFER-002-INTERNAL-v1",
+  "protocol_path": "specs/002-model-transfer/internal-protocol-proposal.md",
+  "protocol_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+  "model": "EleutherAI/pythia-14m",
+  "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+  "sites": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "sequence_width": 32,
+  "development_pairs": 8,
+  "heldout_pairs": 16,
+  "fixtures": [
+    {
+      "id": "pair-00",
+      "split": "development",
+      "a": "In the story, Anna found a cat. Later, Anna picked up the",
+      "b": "In the story, Anna found a dog. Later, Anna picked up the"
+    },
+    {
+      "id": "pair-01",
+      "split": "development",
+      "a": "In the story, Ben found a book. Later, Ben picked up the",
+      "b": "In the story, Ben found a ball. Later, Ben picked up the"
+    },
+    {
+      "id": "pair-02",
+      "split": "development",
+      "a": "In the story, Cara found a apple. Later, Cara picked up the",
+      "b": "In the story, Cara found a orange. Later, Cara picked up the"
+    },
+    {
+      "id": "pair-03",
+      "split": "development",
+      "a": "In the story, Dan found a hat. Later, Dan picked up the",
+      "b": "In the story, Dan found a coat. Later, Dan picked up the"
+    },
+    {
+      "id": "pair-04",
+      "split": "development",
+      "a": "In the story, Ella found a cup. Later, Ella picked up the",
+      "b": "In the story, Ella found a plate. Later, Ella picked up the"
+    },
+    {
+      "id": "pair-05",
+      "split": "development",
+      "a": "In the story, Finn found a key. Later, Finn picked up the",
+      "b": "In the story, Finn found a coin. Later, Finn picked up the"
+    },
+    {
+      "id": "pair-06",
+      "split": "development",
+      "a": "In the story, Gina found a flower. Later, Gina picked up the",
+      "b": "In the story, Gina found a leaf. Later, Gina picked up the"
+    },
+    {
+      "id": "pair-07",
+      "split": "development",
+      "a": "In the story, Hugo found a boat. Later, Hugo picked up the",
+      "b": "In the story, Hugo found a car. Later, Hugo picked up the"
+    },
+    {
+      "id": "pair-08",
+      "split": "heldout",
+      "a": "In the story, Iris found a cat. Later, Iris picked up the",
+      "b": "In the story, Iris found a dog. Later, Iris picked up the"
+    },
+    {
+      "id": "pair-09",
+      "split": "heldout",
+      "a": "In the story, Jack found a book. Later, Jack picked up the",
+      "b": "In the story, Jack found a ball. Later, Jack picked up the"
+    },
+    {
+      "id": "pair-10",
+      "split": "heldout",
+      "a": "In the story, Kate found a apple. Later, Kate picked up the",
+      "b": "In the story, Kate found a orange. Later, Kate picked up the"
+    },
+    {
+      "id": "pair-11",
+      "split": "heldout",
+      "a": "In the story, Liam found a hat. Later, Liam picked up the",
+      "b": "In the story, Liam found a coat. Later, Liam picked up the"
+    },
+    {
+      "id": "pair-12",
+      "split": "heldout",
+      "a": "In the story, Maya found a cup. Later, Maya picked up the",
+      "b": "In the story, Maya found a plate. Later, Maya picked up the"
+    },
+    {
+      "id": "pair-13",
+      "split": "heldout",
+      "a": "In the story, Noah found a key. Later, Noah picked up the",
+      "b": "In the story, Noah found a coin. Later, Noah picked up the"
+    },
+    {
+      "id": "pair-14",
+      "split": "heldout",
+      "a": "In the story, Olga found a flower. Later, Olga picked up the",
+      "b": "In the story, Olga found a leaf. Later, Olga picked up the"
+    },
+    {
+      "id": "pair-15",
+      "split": "heldout",
+      "a": "In the story, Paul found a boat. Later, Paul picked up the",
+      "b": "In the story, Paul found a car. Later, Paul picked up the"
+    },
+    {
+      "id": "pair-16",
+      "split": "heldout",
+      "a": "In the story, Rosa found a cat. Later, Rosa picked up the",
+      "b": "In the story, Rosa found a dog. Later, Rosa picked up the"
+    },
+    {
+      "id": "pair-17",
+      "split": "heldout",
+      "a": "In the story, Sam found a book. Later, Sam picked up the",
+      "b": "In the story, Sam found a ball. Later, Sam picked up the"
+    },
+    {
+      "id": "pair-18",
+      "split": "heldout",
+      "a": "In the story, Tara found a apple. Later, Tara picked up the",
+      "b": "In the story, Tara found a orange. Later, Tara picked up the"
+    },
+    {
+      "id": "pair-19",
+      "split": "heldout",
+      "a": "In the story, Uma found a hat. Later, Uma picked up the",
+      "b": "In the story, Uma found a coat. Later, Uma picked up the"
+    },
+    {
+      "id": "pair-20",
+      "split": "heldout",
+      "a": "In the story, Vera found a cup. Later, Vera picked up the",
+      "b": "In the story, Vera found a plate. Later, Vera picked up the"
+    },
+    {
+      "id": "pair-21",
+      "split": "heldout",
+      "a": "In the story, Will found a key. Later, Will picked up the",
+      "b": "In the story, Will found a coin. Later, Will picked up the"
+    },
+    {
+      "id": "pair-22",
+      "split": "heldout",
+      "a": "In the story, Xena found a flower. Later, Xena picked up the",
+      "b": "In the story, Xena found a leaf. Later, Xena picked up the"
+    },
+    {
+      "id": "pair-23",
+      "split": "heldout",
+      "a": "In the story, Yara found a boat. Later, Yara picked up the",
+      "b": "In the story, Yara found a car. Later, Yara picked up the"
+    }
+  ],
+  "per_role": {
+    "calls": 341,
+    "actual_positions": 10912,
+    "reserved_positions": 11000,
+    "seconds": 300,
+    "raw_array_base_bytes": 81902080,
+    "disk_reservation_bytes": 134217728
+  },
+  "combined": {
+    "reserved_positions": 22000,
+    "seconds": 600,
+    "disk_reservation_bytes": 268435456
+  },
+  "remaining_after_numeric_and_science": {
+    "positions": 159200,
+    "seconds": 960
+  },
+  "unexecuted": [
+    "tokenization and fixture-byte freeze",
+    "model execution",
+    "scientific implementation",
+    "independent protocol admission"
+  ],
+  "next_action": "independent protocol review, then freeze tokenizer-derived arrays and scientific implementation before runtime"
+}

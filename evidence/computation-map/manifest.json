@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T08:30:09.325877+00:00",
+  "status": "producer_static_checks_pass; independent_review_pending",
+  "files": [
+    {
+      "path": "./docs/model-computation-map.md",
+      "sha256": "5b34f92a2d16d0aebdc2e13f8e6c51ed0aff5ac44834e831acad06b3c1644e96"
+    },
+    {
+      "path": "./evidence/computation-map/tensor-map.json",
+      "sha256": "ed404409484b58d207473e24a781fd844c354af154d51c93e28485cca4ceebfa"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "./artifacts/allowed/tensor_inventory.json",
+      "sha256": "6462751d85e5dd48e12031bcb759e26fc1dcde1fa55196d72a27c4461df6f060"
+    },
+    {
+      "path": "./artifacts/allowed/supplied_config.json",
+      "sha256": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "sha256": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd"
+    },
+    {
+      "path": "./oracle/vendor/model_minimind.py",
+      "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f"
+    },
+    {
+      "path": "./src/minimind_re/forward.py",
+      "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778"
+    },
+    {
+      "path": "./oracle/adapter.py",
+      "sha256": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c"
+    }
+  ],
+  "checks": {
+    "complete_unique_inventory_key_set": true,
+    "all_shapes_match_inventory_and_atlas": true,
+    "stored_values_sum": 68827392,
+    "source_hashes_and_line_bounds_valid": true
+  },
+  "execution": {
+    "model_loads": 0,
+    "model_forwards": 0,
+    "checkpoint_payload_reads": 0,
+    "package_installs": 0
+  },
+  "limitations": [
+    "No activations or tokenization measured here",
+    "No learned semantic labels established",
+    "Source-assisted, not blind architecture recovery",
+    "Historical same-mode evidence is not universal or cache/full parity",
+    "Source default tying differs from reconstruction separate-array representation; numerical equality not re-tested"
+  ],
+  "checkpoint_identity_policy": "Reuse existing inventory checkpoint digest; no fresh checkpoint hashing"
+}

@@ -1,0 +1,98 @@
+{
+  "status": "PASS_INDEPENDENT_NEGATIVE_REPLICATION",
+  "scientific_outcome": "STOP_NO_QUALIFIED_FAMILY",
+  "epoch": 1794985811.4327073,
+  "qualification": "NOT_RUN_NO_SELECTED_FAMILY",
+  "causal_work": "NOT_RUN_OUT_OF_SCOPE",
+  "original": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json",
+    "sha256": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf"
+  },
+  "independent": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-independent-v1.json",
+    "sha256": "17d70fd7f8ab4f8172c3f45b858feddc5b1d41bfc4478c88d16d6536b26e4e4e"
+  },
+  "journal_sha256": "a57ede30c8601e039f693194a99ebd5bdb28117aea63304f86f15a479bb962bb",
+  "checks": {
+    "all48_rows_exact": true,
+    "all1152_token_ids_exact": true,
+    "all1152_selected_logits_and_full_vocabulary_logit_hashes_exact": true,
+    "all_stop_parse_and_position_records_exact": true,
+    "journal_bytes_exact": true,
+    "independent_raw_decoding_and_aggregation": "PASS",
+    "staged_files_unchanged": true,
+    "original_and_atlas_histories_unchanged": true,
+    "fixed_clock_preserved": true,
+    "zero_active_rows": true
+  },
+  "metrics": {
+    "correct_per_family": {
+      "COPY": 0,
+      "SUBTRACT": 0,
+      "COMPARE": 0
+    },
+    "denominator_per_family": 16,
+    "all48_reach_24_token_cap_without_eos": true,
+    "strict_correct": 0,
+    "qualification_selected": null,
+    "wilson95_operational_success_per_family": [
+      0,
+      0.1936076805344365
+    ]
+  },
+  "accounting": {
+    "screen_reserved": 54816,
+    "independent_reserved": 100512,
+    "phase_reserved": 155328,
+    "historical_reserved": 295600,
+    "lifetime_reserved": 450928,
+    "actual_positions_per_run": 54816,
+    "actual_positions_phase": 109632,
+    "calls_per_run": 1152,
+    "calls_phase": 2304,
+    "aggregate_wall_reserved": 2400.0,
+    "aggregate_actual_wall": 96.14276146097109,
+    "aggregate_cpu_seconds": 170.22602,
+    "phase_start": 1794985573.2121327,
+    "phase_deadline": 1794992773.2121327
+  },
+  "repeat_guard_row": {
+    "id": "response-independent-v1",
+    "kind": "model",
+    "role": "verification",
+    "positions_reserved": 100512,
+    "wall_reserved": 1500.0,
+    "start": 1794985738.0416822,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.response_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-independent-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-independent-v1.json",
+    "peak_owned_rss_bytes": 7764418560,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 256735,
+    "exit_code": 0,
+    "final_child_highwater_bytes": 1239834624,
+    "final_guard_highwater_bytes": 6524583936,
+    "final_combined_highwater_bytes": 7764418560,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "output_sha256": "17d70fd7f8ab4f8172c3f45b858feddc5b1d41bfc4478c88d16d6536b26e4e4e",
+    "end": 1794985785.0838711,
+    "wall_seconds": 47.03209758794401,
+    "cpu_seconds": 84.77042399999999,
+    "peak_child_rss_kib": 1210776
+  },
+  "ledger_sha256": "465f9f3da6ba029932f7b9b8ff77f2118e5052c67ded11ea71721059621ed070",
+  "limitations": [
+    "All48 responses are incomplete at24 tokens, so this establishes no complete-answer capability under this fixed cap; eventual completion/correctness remains unknown.",
+    "Zero successes do not establish general inability, causal mechanism, root cause or corrected cache/full fidelity.",
+    "Qualification was not run and no new family, prompt, parser, length cap or model was tried.",
+    "Guard RSS is conservative sampled/direct-child and final-highwater evidence, not kernel isolation."
+  ],
+  "next_action": "Producer finalizes readable result and state documents against this verified bounded negative; no further runtime admitted."
+}

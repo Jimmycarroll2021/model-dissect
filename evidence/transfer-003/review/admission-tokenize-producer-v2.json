@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "ede311a5cbf5955ee60e1e1c33cbb41387188219e6bc6a31d74a0a7fdbe26e32",
+  "packet_path": "./evidence/transfer-003/runtime/additive-v2/packet-tokenize-producer-v2.json",
+  "reviewer": "third_science_verifier",
+  "independent_review": "./evidence/transfer-003/review/additive-build-v2.json",
+  "review_sha256": "a7fe0d2c0a3a17a9cc735459691c7471aeff74ef676bb2d63e16a530baa7bcdf",
+  "scope": "tokenizer-only; no model loading/forward or atlas/science execution",
+  "positions": 0,
+  "seconds": 120,
+  "disk_bytes": 16777216,
+  "required_execution_path": "python -m minimind_re.transfer3.additive_run --packet <exact packet> --admission <this receipt>; existing supervisor and PhaseGuard mandatory",
+  "authority": "Parent explicit independent-review assignment; execute only after coordinator resource handoff",
+  "utc": "2026-11-19T00:21:57.422036+00:00"
+}

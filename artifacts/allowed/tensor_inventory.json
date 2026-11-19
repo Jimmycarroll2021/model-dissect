@@ -1,0 +1,1307 @@
+{
+  "evidence_class": "observed checkpoint storage metadata; no operation roles inferred",
+  "checkpoint_sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+  "tensors": [
+    {
+      "name": "model.embed_tokens.weight",
+      "shape": [
+        6400,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 4915200,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 0
+    },
+    {
+      "name": "model.layers.0.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 1
+    },
+    {
+      "name": "model.layers.0.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 2
+    },
+    {
+      "name": "model.layers.0.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 3
+    },
+    {
+      "name": "model.layers.0.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 4
+    },
+    {
+      "name": "model.layers.0.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 5
+    },
+    {
+      "name": "model.layers.0.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 6
+    },
+    {
+      "name": "model.layers.0.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 7
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 8
+    },
+    {
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 9
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 10
+    },
+    {
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 11
+    },
+    {
+      "name": "model.layers.1.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 12
+    },
+    {
+      "name": "model.layers.1.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 13
+    },
+    {
+      "name": "model.layers.1.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 14
+    },
+    {
+      "name": "model.layers.1.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 15
+    },
+    {
+      "name": "model.layers.1.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 16
+    },
+    {
+      "name": "model.layers.1.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 17
+    },
+    {
+      "name": "model.layers.1.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 18
+    },
+    {
+      "name": "model.layers.1.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 19
+    },
+    {
+      "name": "model.layers.1.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 20
+    },
+    {
+      "name": "model.layers.1.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 21
+    },
+    {
+      "name": "model.layers.1.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 22
+    },
+    {
+      "name": "model.layers.2.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 23
+    },
+    {
+      "name": "model.layers.2.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 24
+    },
+    {
+      "name": "model.layers.2.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 25
+    },
+    {
+      "name": "model.layers.2.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 26
+    },
+    {
+      "name": "model.layers.2.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 27
+    },
+    {
+      "name": "model.layers.2.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 28
+    },
+    {
+      "name": "model.layers.2.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 29
+    },
+    {
+      "name": "model.layers.2.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 30
+    },
+    {
+      "name": "model.layers.2.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 31
+    },
+    {
+      "name": "model.layers.2.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 32
+    },
+    {
+      "name": "model.layers.2.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 33
+    },
+    {
+      "name": "model.layers.3.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 34
+    },
+    {
+      "name": "model.layers.3.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 35
+    },
+    {
+      "name": "model.layers.3.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 36
+    },
+    {
+      "name": "model.layers.3.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 37
+    },
+    {
+      "name": "model.layers.3.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 38
+    },
+    {
+      "name": "model.layers.3.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 39
+    },
+    {
+      "name": "model.layers.3.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 40
+    },
+    {
+      "name": "model.layers.3.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 41
+    },
+    {
+      "name": "model.layers.3.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 42
+    },
+    {
+      "name": "model.layers.3.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 43
+    },
+    {
+      "name": "model.layers.3.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 44
+    },
+    {
+      "name": "model.layers.4.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 45
+    },
+    {
+      "name": "model.layers.4.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 46
+    },
+    {
+      "name": "model.layers.4.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 47
+    },
+    {
+      "name": "model.layers.4.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 48
+    },
+    {
+      "name": "model.layers.4.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 49
+    },
+    {
+      "name": "model.layers.4.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 50
+    },
+    {
+      "name": "model.layers.4.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 51
+    },
+    {
+      "name": "model.layers.4.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 52
+    },
+    {
+      "name": "model.layers.4.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 53
+    },
+    {
+      "name": "model.layers.4.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 54
+    },
+    {
+      "name": "model.layers.4.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 55
+    },
+    {
+      "name": "model.layers.5.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 56
+    },
+    {
+      "name": "model.layers.5.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 57
+    },
+    {
+      "name": "model.layers.5.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 58
+    },
+    {
+      "name": "model.layers.5.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 59
+    },
+    {
+      "name": "model.layers.5.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 60
+    },
+    {
+      "name": "model.layers.5.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 61
+    },
+    {
+      "name": "model.layers.5.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 62
+    },
+    {
+      "name": "model.layers.5.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 63
+    },
+    {
+      "name": "model.layers.5.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 64
+    },
+    {
+      "name": "model.layers.5.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 65
+    },
+    {
+      "name": "model.layers.5.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 66
+    },
+    {
+      "name": "model.layers.6.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 67
+    },
+    {
+      "name": "model.layers.6.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 68
+    },
+    {
+      "name": "model.layers.6.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 69
+    },
+    {
+      "name": "model.layers.6.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 70
+    },
+    {
+      "name": "model.layers.6.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 71
+    },
+    {
+      "name": "model.layers.6.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 72
+    },
+    {
+      "name": "model.layers.6.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 73
+    },
+    {
+      "name": "model.layers.6.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 74
+    },
+    {
+      "name": "model.layers.6.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 75
+    },
+    {
+      "name": "model.layers.6.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 76
+    },
+    {
+      "name": "model.layers.6.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 77
+    },
+    {
+      "name": "model.layers.7.self_attn.q_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 78
+    },
+    {
+      "name": "model.layers.7.self_attn.k_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 79
+    },
+    {
+      "name": "model.layers.7.self_attn.v_proj.weight",
+      "shape": [
+        384,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 294912,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 80
+    },
+    {
+      "name": "model.layers.7.self_attn.o_proj.weight",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 589824,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 81
+    },
+    {
+      "name": "model.layers.7.self_attn.q_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 82
+    },
+    {
+      "name": "model.layers.7.self_attn.k_norm.weight",
+      "shape": [
+        96
+      ],
+      "dtype": "torch.float16",
+      "numel": 96,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 83
+    },
+    {
+      "name": "model.layers.7.input_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 84
+    },
+    {
+      "name": "model.layers.7.post_attention_layernorm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 85
+    },
+    {
+      "name": "model.layers.7.mlp.gate_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 86
+    },
+    {
+      "name": "model.layers.7.mlp.down_proj.weight",
+      "shape": [
+        768,
+        2432
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        2432,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 87
+    },
+    {
+      "name": "model.layers.7.mlp.up_proj.weight",
+      "shape": [
+        2432,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 1867776,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 88
+    },
+    {
+      "name": "model.norm.weight",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 768,
+      "stride": [
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 89
+    },
+    {
+      "name": "lm_head.weight",
+      "shape": [
+        6400,
+        768
+      ],
+      "dtype": "torch.float16",
+      "numel": 4915200,
+      "stride": [
+        768,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_group": 90
+    }
+  ],
+  "tensor_count": 91,
+  "stored_entry_numel": 68827392
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "native-goal-completion-v1",
+  "provenance": "Coordinator confirmed native update_goal tool result; this leaf records supplied exact fields without invoking lifecycle mutation",
+  "tool_result": {
+    "status": "complete",
+    "objective": "finish The broader reverse-engineering objective",
+    "threadId": "01a1e64b-cd50-7ed1-b50f-c201b0f3648d",
+    "updatedAt": 1795005146,
+    "tokensUsed": 1346888,
+    "timeUsedSeconds": 5535
+  },
+  "tokenBudget_present": false,
+  "closure_acceptance": {
+    "status": "PASS",
+    "receipt_sha256": "1f37a0dfca1d90e641a08eb17b372db7766f4c0f0fc516f8fa9fa3240b3bc009",
+    "closure_manifest_path": "evidence/cache-softmax-matrix/delivery/closure-manifest-v1.json",
+    "closure_manifest_sha256": "91114ad231f593961693473bf7005cac7da232c273113b22610d4a5567c50752",
+    "whole_objective_review_path": "evidence/goal-coverage/whole-objective-review-v2.json",
+    "whole_objective_review_sha256": "3c8b24d85027f656c139964152a668fa705d394a6c1dd9e0b84e56fd6b6b610f"
+  },
+  "usage_boundary": "Tool counters stayed unchanged during the blocked interval. These are reported tracked usage, not whole elapsed wall time or model-position accounting.",
+  "immutability": "Separate lifecycle receipt only; frozen task/state files, scientific artifacts and manifests unchanged.",
+  "new_model_calls": 0
+}

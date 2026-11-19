@@ -1,0 +1,30 @@
+{
+  "status": "implemented_pending_independent_review_and_pilot",
+  "mode": "all-affine-fixed-two-row-fp32-v1",
+  "api": "minimind_re.transfer.affine_all_candidate.CanonicalAllCandidate.from_directory(directory,expected_hashes=...)",
+  "files": {
+    "src/minimind_re/transfer/affine_all_candidate.py": "387d14fa848f6c17c2cdba5c1bb95b896ef4b6ea465d5796cd13251ba886ee00",
+    "tests/transfer/test_affine_all_candidate.py": "a4cc7cb8e7b138575075854e66ad1ee4dfa233479618a6436912a3b7ab943637",
+    "evidence/transfer-002/diagnosis/affine-all-candidate-tests-v1.txt": "c69b8aca4c7fecb6b04161c76c5abcd40b2a41ecf4e5419302cadf88471a09c9"
+  },
+  "unchanged_base": {
+    "src/minimind_re/transfer/gpt_neox_candidate.py": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f",
+    "src/minimind_re/transfer/affine_candidate.py": "aefe4086d236b8284dd87b63169dea8081bac31a10a573200d921fa34b3b0bf1"
+  },
+  "basis": "Parent-supplied independently diagnosed QKV canonical mode still has equal-input attention-output and MLP-expansion affine discrepancies. Diagnosis identity c033d09e974fca666e5f7e9f8d5e32ceb9148ce5c4d217707bb71fa3d8e59a96; no additional target investigation performed here.",
+  "semantics": "Every _linear input real row evaluated as fixed [real,zero] two-row FP32 F.linear; retain row0. All other operations inherited from original candidate.",
+  "scope": [
+    "QKV, attention output, MLP expansion, MLP contraction, untied vocabulary projection",
+    "Bias semantics preserved including absent output bias",
+    "Dummy rows never enter attention or cache",
+    "Cached calls compute only current input rows; original prefixes remain unchanged"
+  ],
+  "tests": "3 passed in0.68s; small synthetic tensors; fixed geometry for every affine, forward/norm function identity, normalization/embedding/rotary equality, query-only cache projection, prefix immutability, no dummy slots, cache/full tolerance and noop/restoration",
+  "limitations": [
+    "No target model loads or calls",
+    "No new reference-mode source inspected",
+    "Downstream MLP contraction/output canonicalization is a consistency design choice, not demonstrated isolated cause",
+    "Target full-native fidelity and cache/full numerical acceptance unverified",
+    "Tokenwise output projection may materially slow wide-vocabulary execution; performance awaits bounded pilot"
+  ]
+}

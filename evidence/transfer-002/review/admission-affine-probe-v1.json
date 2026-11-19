@@ -1,0 +1,7 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "2337062f3fcfcb8b6af03f7cf9fa75a6cb009ffd0adb0f6cee71cdc489f79bac",
+  "review_sha256": "cbea0edef2560d7cb368d9c66798064f859a4a2c796be9e1fb6bb48ba618e40d",
+  "scope": "Exactly frozen15primitivecalls20rowpositions; no model forward",
+  "reviewed_utc": "2026-11-18T19:42:32.559391+00:00"
+}

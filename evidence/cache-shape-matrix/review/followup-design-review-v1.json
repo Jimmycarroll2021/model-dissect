@@ -1,0 +1,54 @@
+{
+  "status": "CONDITIONAL_DESIGN_PASS_NOT_EXECUTABLE_ADMISSION",
+  "verifier": "matrix_finish_verifier",
+  "reviewed_manifest_sha256": "be12dffceddb6571bd1977a673eed55d03b74e7d2ac7f84122344f2550445ddc",
+  "checks": {
+    "diagnosis_manifest_and_three_files_hash_verified": true,
+    "reported_patterns_checked_against_saved_diagnosis": true,
+    "selected_fixture_shapes_masks_positions_checked": true,
+    "candidate_and_reference_projection_normalization_rotation_order_inspected": true,
+    "large_raw_tensor_audit_repeated": false,
+    "model_calls": 0
+  },
+  "assessment": "The proposed two-fixture baseline-only experiment can distinguish earlier block-state drift from the earliest layer-1 K/V-producing primitive mismatch if every intermediate listed below is captured from the actual executions and historical tokens are aligned by physical slot. It does not establish the cause of final-logit failure, necessity/sufficiency, or a repair. Both chosen fixtures have prior final-representation drift, so the passing sibling controls threshold crossing, not absence of numerical drift.",
+  "smallest_sufficient_schedule": {
+    "fixtures": ["heldout/length-1-left", "continuation/continuation-length-1-left"],
+    "actors": ["candidate", "independently_authored_reference"],
+    "arm": "baseline",
+    "per_actor_fixture_positions": "prefill4 + four cached appends1 each + final full8 =16",
+    "per_actor_fixture_calls": 6,
+    "positions_per_role": 64,
+    "calls_per_role": 24,
+    "reservation_per_role": 128,
+    "reservation_both_roles": 256,
+    "historical_reservations": 1137888,
+    "prospective_lifetime_ceiling": 1138144,
+    "extra_forward_calls_required_for_design": 0,
+    "scope_limit": "One final-prefix localization for this matched physical shape and two exposed token sequences; does not generalize to unpadded/other-length cases or all earlier full-prefix states."
+  },
+  "required_capture_and_controls": [
+    "Capture actual layer-0 output / layer-1 pre-attention RMSNorm input for every physical prefill and appended slot. Stitch cached-path initial and append states, compare with final full-pass tokenwise arrays, and separately label historical versus current slots and real versus padded slots.",
+    "Capture layer-1 pre-attention RMSNorm output (the actual K/V projection input), raw K and raw V projection outputs, K after head RMSNorm BEFORE rotation, K after RoPE, and final joined K/V cache. The phrase normalized/rotated K is insufficient unless these are separate arrays.",
+    "Retain exact input IDs, complete masks, logical position IDs, RoPE cosine/sine operands, tensor shape/dtype/stride/layout, stage labels and original source hashes. Same input values with different shape/layout localize a numerical-path mismatch; they do not prove a particular BLAS kernel explanation.",
+    "For each primitive, classify first mismatch only when its corresponding direct input values and parameters match. If earlier inputs differ, report confounded downstream comparisons rather than attributing projection/norm/rotation causality. Match token order and physical slots exactly; padded-query drift is not automatically a real-token failure.",
+    "Capture values from the executed primitive, without recomputing probes or replacing arithmetic. Native reference hooks must preserve outputs and restore on exception. Any instrumented candidate must be versioned with an exact arithmetic-preservation diff reviewed before runtime.",
+    "Keep all four original boundaries and full cache evidence on all24calls. Compare these bitwise with the corresponding existing matrix baseline call receipts, including final full step3, as an instrumentation-fidelity gate without additional model calls. Stop diagnosis claims on fidelity failure.",
+    "Independently repeat the same64position/24call schedule, compare all trace arrays and reconstruct tokenwise conclusions. Retain original finite/tolerance controls and full-matrix negative result unchanged."
+  ],
+  "decision_rules": [
+    "If historical block0 slots differ, the experiment detects an upstream/prefix-state contributor. It does not identify the responsible layer0 suboperation; report unresolved upstream localization.",
+    "If block0 values agree but layer1 input-normalized values differ, localize to the pre-attention normalization path under these shapes.",
+    "If projection inputs agree but rawK or rawV differs, localize to that projection numerical path; do not label a specific kernel causal without further evidence.",
+    "If rawK agrees but head-normalizedK differs, localize to head normalization. If normalizedK and position/cos/sin operands agree but rotatedK differs, localize to rotation arithmetic. If operands differ, identify that mismatch instead.",
+    "If all captured K/V stages agree but joined cache differs, inspect cache assembly/storage alignment, not attention contraction. If all stages and cache agree, the proposed K/V explanation is unsupported for these cases; do not expand scope automatically.",
+    "Q production, attention contraction/softmax, output projection, MLP and downstream layers remain alternative contributors to final logits. Capturing Q stages is optional for narrow K/V localization but required before claiming layer1 attention operands fully account for divergence. Even Q/K/V capture alone is not a causal repair experiment."
+  ],
+  "resource_review": {
+    "offline_two_GiB_compliance": "UNVERIFIED; preserve reported highwater6993481728 and absence of live samples during original offline task",
+    "observed_guard_highwater": "Both independently launched model guards reported final_guard_highwater_bytes6993481728 while preflight live RSS was approximately20MiB. An inherited or launcher-related highwater is a plausible explanation, not established by this review.",
+    "required_handling": "Record process-entry ru_maxrss, live current RSS and owned child/guard RSS through execution, retaining all measurements. Do not subtract an assumed inherited baseline, relax a threshold or rewrite old receipts. A future accounting change requires its own exact review; old guards remain unchanged.",
+    "admission": "New isolated guard, policy, packet, immutable history/clock accounting, disk projection and exact instrumentation must be independently reviewed before any model load. Current full-matrix ledger is exhausted and must remain untouched."
+  },
+  "unexecuted": ["New source/instrumentation review", "New runtime/resource admission", "New model run", "Independent diagnostic repeat"],
+  "next_action": "Producer should freeze the narrow tokenwise K/V-localization protocol and required separate intermediates in an exact versioned candidate; coordinator then commissions independent executable admission. This review supplies no runtime permission by itself."
+}

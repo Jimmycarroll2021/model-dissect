@@ -1,0 +1,22 @@
+{
+  "status": "READY_FOR_REVIEW_NOT_ADMITTED",
+  "packet": "./evidence/transfer-002/diagnosis/affine-probe-v1.packet.json",
+  "packet_sha256": "2337062f3fcfcb8b6af03f7cf9fa75a6cb009ffd0adb0f6cee71cdc489f79bac",
+  "files": {
+    "./src/minimind_re/transfer/affine_probe.py": "ec2a6a95856d24e69dd678aae5007e9a7aac80deadcebff9a50ad31287f9d053",
+    "./tests/transfer/test_affine_probe.py": "19689e3a8c8b842a5747a0dd97ca25c8d73cd0b8c45a49c85ba6c8d664ea9b80",
+    "./evidence/transfer-002/diagnosis/affine-probe-tests-v1.txt": "7671c412ef0e1008f99d43acf400084aaac29ec29e1a740c2bfdd3e187771ad1",
+    "./evidence/transfer-002/diagnosis/repair-proposal-v1.json": "bb79250aa7ab7ea65fdb0b6d666d5034caa52366bea7a2f7949513ff19239da6",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2/prefill/qkv_input.npy": "56182800a418986b0dd23a64ea4c111137cef05f82ca2cd995b0f20b0e54e5cf",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2/prefill/qkv_output.npy": "7d2750d1f72da53debd76983db9d51a4a2604b886417275bb6f2f94e79629edc",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2/cached.0/qkv_input.npy": "7a2be8e012c75b8fb4444cfdb0392aad29cff1fffa8fc077bbcf9a572ff0494a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2/cached.0/qkv_output.npy": "365c3f21ca21734122ac993616d13e11c4f8184b38f49db98c1d867819f69398",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2/full.0/qkv_input.npy": "e10d809ca9ad57809c2b60a1031866ced6e45e5771de9cdc805d23f849ecac94",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2/full.0/qkv_output.npy": "4e20dab3fe46fa05b7bd4b53489977e9cdc530b2693f89f4260435637e4c9227"
+  },
+  "tests": "2 synthetic tests pass exact15primitivecalls20rowpositions and frozenranking",
+  "scope": "No model forward; first QKV primitive only.3baselinecalls then4calls each canonical mode. Baseline byte reproduction required before selection.",
+  "ranking": "bitwise canonical consistency, then native full primitive tolerance violation count, max_abs, fixed_two_row_padded_fp32/rowwise_fp64_cast_fp32/rowwise_fp32",
+  "raw_payload_bytes": 24576,
+  "target_loaded": false
+}

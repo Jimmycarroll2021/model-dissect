@@ -1,0 +1,37 @@
+{
+  "status": "IMPLEMENTED_PENDING_INDEPENDENT_REVIEW_NOT_RUNTIME_ADMITTED",
+  "identities": {
+    "./src/minimind_re/transfer/reference.py": "23a9b37b742cb2d0a119037947d0f098d293d624c9612bfd8327ceabcffae89f",
+    "./src/minimind_re/transfer/numerical.py": "e7feefb7008c47ca1718845893bb9bb5122c3f15c796e4b35e96c6e64d82568c",
+    "./src/minimind_re/transfer/guard.py": "362215bc41ec2ce53db6bc9ddff157316c2200d911e619402963378bad225f93",
+    "./tests/transfer/test_reference_and_protocol.py": "309235515ff01f7c6db21565c1888a3d072b7456d960c1d130279ab2aa2379f7",
+    "./evidence/transfer-002/runtime/fixture-proposal-v1.json": "7b8f4fe275bcda41dd4608c5194ddbaeefb6b6993545242b46d0cc8be85c1220",
+    "./evidence/transfer-002/runtime/storage-v1.json": "7d7a4afc709f51156c032f663184dd4af23ca2230cd5bfd68c4e4c11f248ac0a",
+    "./evidence/transfer-002/runtime/tests-v1.txt": "0efefedbd55b28da5789a53d5621996c3a8abcf6708bcdf06d72f8c61f353318",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py": "1a329e0f839999e74d485ea5d0cf6bae36f389577a51db4887d9ee7837a29ff8",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/configuration_gpt_neox.py": "179103f2cd5ff557cb6bf8543cf8eaaa4c925ca098314b5d5b9f2e7401266e7d",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/cache_utils.py": "33070d40e73998b09369cbf5f4846fae40034155d0d71d52508493888ab98143",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/masking_utils.py": "0ca0ae8680c31947bd1111d92c11363c3d4d687efbd441f3431832fd2a8335a3"
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.1.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.8.0rc0",
+    "tokenizers": "0.22.2"
+  },
+  "producer_tests": "9 model-free tests pass; 2 threads; hanging synthetic child killed and reaped; failed reservation remains charged",
+  "limitations": [
+    "No target model or tokenizer loaded or forwarded",
+    "Separate exact candidate review and reviewed execution packet required",
+    "Fixture proposal is integer deterministic and producer-visible; evaluator must freeze/approve before exposure-sensitive use",
+    "Supervisor must wrap every production child and receive ledger_path; model process must use same PhaseGuard for every stage",
+    "Supervisor handles owned process group only; arbitrary escaped descendants and hostile code are outside tested containment",
+    "Production CLI and concrete identity-bound run packet require integration owner"
+  ],
+  "api": {
+    "reference": "NativeReference.load(directory, guard); forward(input_ids, attention_mask, position_ids, past_key_values=None, boundary_hook=None)",
+    "runner": "run_numerical(fixtures, factories, output, guard, hook_layer=0)",
+    "guard": "supervise(command,evidence_path,timeout=packet.seconds,ledger_path=phase_root/ledger.jsonl,disk_root=phase_root); child with PhaseGuard(phase_root).run(packet_path,admission_path)"
+  }
+}

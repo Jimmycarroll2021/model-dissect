@@ -1,0 +1,245 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_OUTPUT_AUDIT",
+  "result_sha256": "df4d93947c981721920b27b1332f10ff4dbad1d0e96dadc7bb729ca6f604b4dd",
+  "journal_sha256": "6992a75f279a4b08424922621ef681196f49525e699eff954995d7706432d88f",
+  "parity_metrics": [
+    {
+      "length": 128,
+      "boundary": "embedding",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        128,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "c0afcb6979b6a762d7ea695288d4a06a5d8d0f3e2832fe45c070cf4b120ade8c",
+      "reference_tensor_sha256": "c0afcb6979b6a762d7ea695288d4a06a5d8d0f3e2832fe45c070cf4b120ade8c"
+    },
+    {
+      "length": 128,
+      "boundary": "block",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        128,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "0846aa206b2217a1c462b6d4c1e431d89fe345f86c26961fcfa4ece249c5ac97",
+      "reference_tensor_sha256": "0846aa206b2217a1c462b6d4c1e431d89fe345f86c26961fcfa4ece249c5ac97"
+    },
+    {
+      "length": 128,
+      "boundary": "final",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        128,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "0df62d42637835b776988575731b5d18acf171a28c845ab25a67de3e8c2078d4",
+      "reference_tensor_sha256": "0df62d42637835b776988575731b5d18acf171a28c845ab25a67de3e8c2078d4"
+    },
+    {
+      "length": 128,
+      "boundary": "logits",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        128,
+        6400
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "6467dae54c06ddac70b6a6c3196d81a0499a20069c5230f3aa8c0654002e08fa",
+      "reference_tensor_sha256": "6467dae54c06ddac70b6a6c3196d81a0499a20069c5230f3aa8c0654002e08fa"
+    },
+    {
+      "length": 256,
+      "boundary": "embedding",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        256,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "68a9624289899de6877af45afaba83f8c6654c1f5941462c136ddc4b69363f72",
+      "reference_tensor_sha256": "68a9624289899de6877af45afaba83f8c6654c1f5941462c136ddc4b69363f72"
+    },
+    {
+      "length": 256,
+      "boundary": "block",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        256,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "08edbe662a329e04dc1bfec3e564c37bba599c8ed8c163eca9b25a50704462dd",
+      "reference_tensor_sha256": "08edbe662a329e04dc1bfec3e564c37bba599c8ed8c163eca9b25a50704462dd"
+    },
+    {
+      "length": 256,
+      "boundary": "final",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        256,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "adcd412b9ff23c32aceec2e3fa568409565501d0f87f76b8e4a9a3557377f018",
+      "reference_tensor_sha256": "adcd412b9ff23c32aceec2e3fa568409565501d0f87f76b8e4a9a3557377f018"
+    },
+    {
+      "length": 256,
+      "boundary": "logits",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        256,
+        6400
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "f06245e9c3e8c0a90da8b8c58ba23b7609886699d6854518ec3796b0c72602d6",
+      "reference_tensor_sha256": "f06245e9c3e8c0a90da8b8c58ba23b7609886699d6854518ec3796b0c72602d6"
+    },
+    {
+      "length": 319,
+      "boundary": "embedding",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        319,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "6b0499ee5fb41202421db15d9a732c47da52da39850cddf0ae51f3e2273030b7",
+      "reference_tensor_sha256": "6b0499ee5fb41202421db15d9a732c47da52da39850cddf0ae51f3e2273030b7"
+    },
+    {
+      "length": 319,
+      "boundary": "block",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        319,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "85aa35fdf8b5b239af61a83d728e4bb105077bd9b4a5eef6968084e6aa965113",
+      "reference_tensor_sha256": "85aa35fdf8b5b239af61a83d728e4bb105077bd9b4a5eef6968084e6aa965113"
+    },
+    {
+      "length": 319,
+      "boundary": "final",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        319,
+        768
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "04271c78779ffe37eba74fba500640f944f1f17dc4cdf474f6d44c222c2c84d2",
+      "reference_tensor_sha256": "04271c78779ffe37eba74fba500640f944f1f17dc4cdf474f6d44c222c2c84d2"
+    },
+    {
+      "length": 319,
+      "boundary": "logits",
+      "pass": true,
+      "finite": true,
+      "shape": [
+        1,
+        319,
+        6400
+      ],
+      "max_abs": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "top1_all_positions_equal": true,
+      "candidate_tensor_sha256": "22d065bd3c373af919ce2a0ee0a57c84dee77e81689f4dd0026356d37a3ee93e",
+      "reference_tensor_sha256": "22d065bd3c373af919ce2a0ee0a57c84dee77e81689f4dd0026356d37a3ee93e"
+    }
+  ],
+  "parity_array_files": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json.candidate-128.pt": "3433898f235e8de02703f8b7213058abb8cb1ea7c60a6ab4bb5271ebb71b6b75",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json.reference-128.pt": "adec867e66284fdc4d2fda4512e8d885613e3f98c6e27e5bc58baeba660c4c14",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json.candidate-256.pt": "df763ddd21d5636a743f524742995ebdafa2b30e7b230bd54e3ae37e93df0c6e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json.reference-256.pt": "5c8e0a85717c46504803e4a811eafd593ef17be166611268e8095b7613f69b31",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json.candidate-319.pt": "fb11f560697be4e8593088756a3a4673c7dc9d430a8aef84089540f853b1c266",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json.reference-319.pt": "0247a3efca995fe9ba2797b32f2bbda92a31aa82979e215cca351ac8f53b5ec8"
+  },
+  "generation_calls": 1024,
+  "parity_calls": 6,
+  "generation_positions": 163840,
+  "actual_positions": 165246,
+  "termination": [
+    {
+      "id": "behavior-copy-screen-00",
+      "stop": "length",
+      "tokens": 256,
+      "eos_probability_last": 1.671451743716636e-06,
+      "eos_rank_last": 147
+    },
+    {
+      "id": "behavior-subtract-screen-00",
+      "stop": "length",
+      "tokens": 256,
+      "eos_probability_last": 0.00031245333196858996,
+      "eos_rank_last": 162
+    },
+    {
+      "id": "behavior-compare-screen-00",
+      "stop": "eos",
+      "tokens": 256,
+      "eos_probability_last": 0.2695756577946693,
+      "eos_rank_last": 1
+    },
+    {
+      "id": "upstream-first-general-chat",
+      "stop": "length",
+      "tokens": 256,
+      "eos_probability_last": 2.2562828305913634e-09,
+      "eos_rank_last": 2043
+    }
+  ],
+  "independent_decoding_matches": true,
+  "old24_prefix_token_logit_hashes_match": true,
+  "all_journal_events_match": true,
+  "eos_rank_probability_limits": "Checked rank/selection consistency and probability bounds; full generation logits are hashes only. Exact independent repeat tests the recorded ranks/probabilities; cannot recompute softmax from a hash alone."
+}

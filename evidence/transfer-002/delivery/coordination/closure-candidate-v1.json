@@ -1,0 +1,46 @@
+{
+  "schema": "transfer-002-coordination-closure-candidate-v1",
+  "status": "SCIENTIFIC_SLICE_ACCEPTED_FINAL_DELIVERY_AUDIT_PENDING",
+  "strict_T2": "FAILED_UNCHANGED",
+  "strict_whole_objective_complete": false,
+  "prior_tasks": {
+    "path": "evidence/transfer-002/delivery/coordination/prior-tasks-v1.md",
+    "sha256": "1cafa5749c5725ba4b92eb1a1b718d356b2a25459de6db1609b1ecf9462be3c2"
+  },
+  "changed_files": [
+    {
+      "path": "TASK_STATE.md",
+      "sha256": "49330830f207d6c2a3258b91ef90d8353e5c814fd0ff647e3feaf6ea64316c4b"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "sha256": "d0afb0575bbd1b1486f9d2c505f592bfb7516fddf5e824e4a42db7ecef146f4b"
+    },
+    {
+      "path": "specs/002-model-transfer/TASK_STATE.md",
+      "sha256": "49330830f207d6c2a3258b91ef90d8353e5c814fd0ff647e3feaf6ea64316c4b"
+    },
+    {
+      "path": "specs/002-model-transfer/tasks.md",
+      "sha256": "ab143971b173bf265252ff0172c6d17d6a0e4661b8662701ebf89d6feb4a29c9"
+    }
+  ],
+  "scientific_review_sha256": "9fce319281f99807ab0b880a555b10c66a63dd432c8329fb4206a3f1aa912392",
+  "accounting": {
+    "ledger_path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/ledger.jsonl",
+    "ledger_sha256": "32017dfbb2500364eb25107d72c6a04016eb34b753715f9a679808532941674c",
+    "reserved_positions": 59450,
+    "reserved_seconds": 2265,
+    "actual_charged_positions": 59302,
+    "model_calls": 2092,
+    "model_positions": 59276,
+    "primitive_calls": 19,
+    "primitive_row_positions": 26,
+    "reservations": 12,
+    "terminal_records": 12,
+    "active_reservations": 0,
+    "historical_minimind_charged": 1239856,
+    "combined_reserved_positions": 1299306
+  },
+  "boundary": "Additive coordination snapshot only; no reviewed scientific artifact or ledger changed."
+}

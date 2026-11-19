@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SOURCE_AND_SYNTHETIC_HOLD_RUNTIME_ADMISSION",
+  "reviewed_utc": "2026-11-18T09:10:21.678512+00:00",
+  "source_sha256": "f4b0d82b6b20739c6b4044cd81a23d69a5a9edcbab0be58b4eec362560c6d67d",
+  "reviewed_source_sha256": "f4b0d82b6b20739c6b4044cd81a23d69a5a9edcbab0be58b4eec362560c6d67d",
+  "source_manifest_sha256": "86cbf64e6d40aa8afcd190701e166ac457cdb37cbb12811b7ec2ebf0d033aeae",
+  "checks": [
+    "Exact source manifest dependencies match.",
+    "Native Attention return xq is live normalized rotated transposed Q; past_kv holds complete unrepeated KV before repeat_kv views.",
+    "Native unprojected attention captured before projection line; block residual_pre cloned at call before in-place residual addition, post-attention cloned before MLP line.",
+    "Candidate pre-Q line captures input residual; MLP line captures post-attention residual; block anchor executes every layer after x+delta and captures current post-RoPE Q and complete KV, not stale operands.",
+    "Callbacks clone/detach tensor values and do not assign to frame locals or mutate tensors; finally clears trace; existing trace owner rejected.",
+    "Actual extracted callback tested with synthetic frames/values; Python line-event-before-semicolon behavior exercised.",
+    "Native ReferenceAdapter uses supplied actual cache for successive single-token calls, explicit positions8/9/10 and all-true complete mask. Full11 is a separate frozen control.",
+    "Sequential CPU FP32 native eval explicit attention and reconstructed adapter; strict backend env must be set by guard before fresh torch import.",
+    "Model accounting:2*(8+1+1+1+11)=44 positions and10 calls. Primitive accounting16 groups*3 schedules=48 schedules,144 operations; no model forwards.",
+    "Full operand primitive contracts preserve identical K/V and final Q row; causal mask makes last query see all11 keys. Comparisons preserve tolerance1e-5+1e-4*abs(reference)."
+  ],
+  "tests": {
+    "independent": "8 PASS, no torch/model/tokenizer imported",
+    "producer_contract": "5 PASS",
+    "checker_sha256": "74af1085d6977118c8aaa8513b0a337cba6deeebc88fc92b690d73a2b8a587da",
+    "independent_log_sha256": "d6f5fbc6e60b23c73186a9cd3e2de3bdc4d0956c5c11fe23fb237277ee6559d9",
+    "producer_log_sha256": "cf127edb352ae8c0958efe52266031c2b23b580939b300b3edb383a3992cd43a"
+  },
+  "pending": [
+    "Producer is replacing precomputed packet deadline with live guard-ledger clock/slot validation; changed source must be rechecked and rebound.",
+    "Exact staged guard, six historical ledgers, fixed phase clock, identities, reservations and limits require independent admission.",
+    "Actual saved tensor capture integrity, discrepancy recomputation and independent repeat remain unexecuted."
+  ],
+  "limits": [
+    "No actual models, tokenizer, checkpoint payload reads or tensor operations in this review.",
+    "Synthetic callback review establishes read-only operations and event semantics, not measured instrumented-versus-uninstrumented full-model numerical equality. No additional calls requested under current protocol.",
+    "Diagnostic cannot fix historical R2 FAIL or establish universal cache correctness."
+  ],
+  "authority": "Source review only; no runtime admission."
+}

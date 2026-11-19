@@ -1,0 +1,54 @@
+{
+  "candidate_id": "NUMERICS-003-ORACLE-POLICY-001",
+  "created_utc": "2026-11-17T07:37:47.271110+00:00",
+  "status": "FROZEN_PENDING_INDEPENDENT_REVIEW_AND_NATIVE_GATE",
+  "files": {
+    "oracle/policy_adapter.py": "f213ab56e94b687c89f20c8866c331c2904eb0d4a5abed04e8d7d567d7420b6c",
+    "oracle/policy_evaluate.py": "46f568ac71f5d424fef128ee5cd31ba3d8975a9247cf8932237772d7bde1502c",
+    "oracle/policy_primitive_check.py": "f2de8966c6c41132c242da3d3b92f2cc840601b0572d5b44a635e0b8a0be8ed2",
+    "oracle/policy_native_check.py": "c42422dc40e5aa5710814103821a9f1d66cea7efec5358acd0105d1da2f0f1d5",
+    "oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "fixtures/continuation-v2/parity.json": "47355bc811735d40d50010d71f09f52ce5a5049f93a9d190e0f9096288dd6ccc",
+    "fixtures/continuation-v2/manifest.json": "aea6aa848d8f2321c12ca19796fe595a21fc21fd79723191d2443eb51de369e3",
+    "evidence/continuation/policy-oracle-primitive.json": "24e59a5111664a667b0d33a2dd9ab53fb26beb2a85a9f471fb39f4053eb7aab4"
+  },
+  "provenance": "Curator inspected pinned native vendor and D4 math receipt, not new candidate source; independently implemented policy without shared candidate helper.",
+  "policy": "One query at a time against causal prefix, native finite additive key padding retained, FP32 feature reductions, native projections/normalization/rotary/MLP retained, genuine prefix KV reuse.",
+  "actors": {
+    "unchanged_native": "oracle.adapter.ReferenceAdapter",
+    "policy_reference": "oracle.policy_adapter.PolicyReferenceAdapter",
+    "candidate": "separate implementation, not imported here"
+  },
+  "admitted_environment": {
+    "MKL_CBWR": "AUTO,STRICT",
+    "MKL_DYNAMIC": "FALSE",
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "tests": {
+    "synthetic_primitive_status": "PASS",
+    "synthetic_comparison_rows": 57,
+    "synthetic_query_rows": 39,
+    "target_model_forwards": 0,
+    "source_AST_parse": "PASS",
+    "native_prefill_gate": "NOT_RUN",
+    "full_parity": "NOT_RUN"
+  },
+  "native_gate": {
+    "script": "oracle/policy_native_check.py",
+    "required": "Native contiguous unpadded prefill at1,8,32,128 over embedding/block/final/logits original tolerance+top1",
+    "padding_invariance": "Preserved supplementary diagnostic, not strengthened acceptance gate",
+    "tokens": 700
+  },
+  "full_eval": {
+    "module": "oracle.policy_evaluate",
+    "fixtures": "fixtures/continuation-v2/parity.json",
+    "tokens": 16938,
+    "rows": 2640
+  },
+  "total_combined_model_tokens": 17638,
+  "stop": "Only this selected policy candidate; failure of native gate or full R2 stops dependent mechanism and does not authorize another repair."
+}

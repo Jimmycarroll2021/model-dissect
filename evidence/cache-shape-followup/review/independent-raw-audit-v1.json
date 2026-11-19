@@ -1,0 +1,147 @@
+{
+  "status": "PASS_RAW_VALIDITY_AND_RECOMPUTED_TOKEN_COMPARISONS",
+  "role": "independent",
+  "result_sha256": "f9634c43bbd38c31cc4f0f01e0ac48fc844b4ece3233159b0f777012416bb5fb",
+  "calls": 24,
+  "positions": 64,
+  "fidelity_baseline_calls_verified": 24,
+  "arrays_checked": 732,
+  "token_comparison_rows": 288,
+  "findings": [
+    {
+      "fixture": "heldout/length-1-left",
+      "actor": "candidate",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "heldout/length-1-left",
+      "actor": "reference",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "continuation/continuation-length-1-left",
+      "actor": "candidate",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "continuation/continuation-length-1-left",
+      "actor": "reference",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "source_sha256": "23cc3e48fb16e0233047a3a0eac1764eb25a587615fc5ee55fad335170117a0a",
+  "model_calls_in_audit": 0,
+  "limits": "Observational localization only. Earlier differing layer0 inputs confound attribution of downstream projection differences; no arithmetic primitives replayed."
+}

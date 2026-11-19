@@ -1,0 +1,7 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "c35f0e76b03ecb3d94567af659c6e67fc2288b73b5a7b8d588d7e3b96a10e459",
+  "review_sha256": "303c038877ad4835375403d902412ae9f2c8643c29df37a4c30b49df77679267",
+  "scope": "Exactly6modelcalls8positions under declared QKV-only FP32 mode, native anchors unchanged.",
+  "reviewed_utc": "2026-11-18T19:46:32.009934+00:00"
+}

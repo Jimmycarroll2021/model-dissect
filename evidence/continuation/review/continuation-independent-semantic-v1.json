@@ -1,0 +1,50 @@
+{
+  "status": "COMMITTED_INDEPENDENT_GRADE_BEFORE_READING_PRODUCER_GRADE",
+  "epoch": 1794991140.3932931,
+  "result_sha256": "df4d93947c981721920b27b1332f10ff4dbad1d0e96dadc7bb729ca6f604b4dd",
+  "rubric_sha256": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+  "grader": "root/response_verify",
+  "producer_grade_read": false,
+  "grades": [
+    {
+      "id": "behavior-copy-screen-00",
+      "grade": "INCOMPLETE",
+      "reason": "NoEOS at256tokens takes precedence. Observed repetition and changed other-speaker digits are descriptive; no final semantic-success judgment.",
+      "observations": [
+        "Repeated甲只写下数字0 clauses",
+        "乙 value drifts9 to6 to0;丙 later0"
+      ]
+    },
+    {
+      "id": "behavior-subtract-screen-00",
+      "grade": "INCOMPLETE",
+      "reason": "NoEOS at256tokens takes precedence. Explicit false equations are observed despite censored final answer.",
+      "observations": [
+        "62×2=122 is false",
+        "62-122=12 is false",
+        "Repeated question/calculation cycle"
+      ]
+    },
+    {
+      "id": "behavior-compare-screen-00",
+      "grade": "WRONG",
+      "reason": "Completed withEOS, but rule3 treats an unretracted false intermediate mathematical assertion asWRONG. It repeatedly asserts50is defined as a comparison of two numbers and uses this claim to deny a determinate answer. Conditional repetitions of50比2大 are not a unique endorsed final answer.",
+      "evidence_spans": [
+        "在数学中，50通常被定义为两个数的比较",
+        "因此，没有具体的定义，我们无法给出一个确切的答案。"
+      ],
+      "rubric_rule": 3,
+      "secondary_description": "No unique endorsed answer; refusal/ambiguity in conclusion. If other grader prioritizes rule4 over false-assertion rule3, preserve disagreement asAMBIGUOUS per frozen reconciliation rule."
+    },
+    {
+      "id": "upstream-first-general-chat",
+      "grade": "INCOMPLETE",
+      "reason": "NoEOS at256tokens takes precedence. Text is an intelligible relevant capability list but unfinished and repetitive. Claims of retrieval/tool abilities are unverified.",
+      "observations": [
+        "Repeated多语言支持 items7and8",
+        "Repeated知识图谱构建 items4and9"
+      ]
+    }
+  ],
+  "possible_future_observable": "Deterministic repeated clauses/token sequences and EOS selection are observable even when task answer is wrong. A separately frozen perturbation could test a local next-token/repetition transition; current four examples do not identify its causal mechanism or generality."
+}

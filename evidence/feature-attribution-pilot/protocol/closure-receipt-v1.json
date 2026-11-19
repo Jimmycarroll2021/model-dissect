@@ -1,0 +1,34 @@
+{
+  "record_type": "POST_FREEZE_CONTROLLER_ACCEPTANCE_OVERLAY",
+  "created_utc": "2026-11-19T07:20:45.919312+00:00",
+  "status": "DISCOVERY_AND_PREREGISTRATION_COMPLETE",
+  "intervention_status": "INTERVENTION_EXECUTION_BLOCKED",
+  "controller_acceptance": "PASS_FROZEN_DESIGN_EXECUTION_BLOCKED",
+  "controller_acceptance_source": "Parent coordinator explicit task message; independent review bound below",
+  "review": {
+    "path": "evidence/feature-attribution-pilot/review/final-review-v1.md",
+    "sha256": "b5e14ab23a50838ef650aaaf63ed1c46914efb25f2e6631358c42f8fa8ca7c67"
+  },
+  "frozen_design_manifest": {
+    "path": "evidence/feature-attribution-pilot/protocol/frozen-design-manifest-v1.json",
+    "sha256": "03b42cb68c546709b3da3791f193069f8828e5ad988b78b2c43cd942d8968a73"
+  },
+  "frozen_files_modified": false,
+  "task_state_note": "TASK_STATE.md is manifest-bound and unchanged. This new receipt is the authoritative post-freeze status overlay.",
+  "observed_actions": {
+    "hosted_generations": 1,
+    "interventions": 0,
+    "evidence_boundary": "Operator receipts establish the recorded UI actions; not a provider-wide audit or proof concerning unobserved actors."
+  },
+  "remaining_execution_gates": [
+    "Pin exact original-model weight/config revision and file digests.",
+    "Pin exact tokenizer revision/files and all input/answer/comparator token IDs.",
+    "Pin exact transcoder release/files, dictionary metadata, encoder/decoder conventions and layer boundary.",
+    "Pin runtime/source/backend identities and demonstrate the defined original-model decoded-feature edit; no validated feature adapter is claimed.",
+    "Pass independently reviewed original-model fidelity, replacement reconstruction/output-error and intervention-locality/no-op/restoration gates.",
+    "Reconcile current resources, exact call/storage budget and independent-repeat reserve; obtain separately reviewed execution admission."
+  ],
+  "future_binding_policy": "Append-only separately reviewed binding packets must reference the immutable frozen design and cannot change its scientific criteria.",
+  "automatic_continuation": false,
+  "next_action": "No further automatic model, graph or intervention runs; retain blocked execution until all binding/admission requirements are fulfilled within authorized scope."
+}

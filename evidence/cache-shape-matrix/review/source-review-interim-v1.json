@@ -1,0 +1,22 @@
+{
+  "status": "STATIC_REVIEW_IN_PROGRESS_PENDING_NONFINITE_GATE_AND_FREEZE",
+  "reviewed_sources": {
+    "src/minimind_re/shape_cache_matrix_probe.py": "f194643a507aba798551472b4731352c91d6e58ab410d0af7473e3b122350df2",
+    "src/minimind_re/shape_cache_matrix_candidate.py": "d3009078f90ad10afaf331f96c381524250e4b157ecd71857a09d773189c1137",
+    "src/minimind_re/shape_cache_reference_matrix.py": "6a3b1cf59f2881cdf4a5e5085f975fc5848173dd06e64276693d50e2f005c07b"
+  },
+  "passed": [
+    "9120 unique comparison rows with correct real-token masks independently exercised using exact source comparison loop and synthetic fixtures.",
+    "Actual no-op hook call counts and restoration semantics; independent exception test preserves preexisting hooks.",
+    "All4boundaries everycall streamed to72archives/role; owning initial/appendKV chunks720files/role permit complete cached-path reconstruction.",
+    "Perfixture/actor models sequential; perfixture memory released after comparisons; no whole-matrix array retention.",
+    "Original comparator retained, finite/tolerance/logitstop1 on actual real tokens; no unbounded failed-index JSON.",
+    "8 producer synthetic tests rerun PASS and51guard tests rerun PASS;6 independent source/accounting tests PASS.",
+    "Exact torch version assertion added."
+  ],
+  "pending": [
+    "Immediate all4boundary finite assertion in call before hashes/save to match protocol hard-stop promise.",
+    "Final proposed manifest and resource projection identities."
+  ],
+  "authority": "No model admission or user resource approval; no new ledger/clock started."
+}

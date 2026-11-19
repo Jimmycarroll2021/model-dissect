@@ -1,0 +1,95 @@
+{
+  "status": "PRODUCER_MEASURED_INDEPENDENT_REPEAT_IN_PROGRESS",
+  "files": {
+    "docs/pythia-transfer-result.md": "b63a886f239b0c3346f8c555081d6f0415de324180a65d1aca6ae7de46754e5b",
+    "docs/model-transfer-usage.md": "f48d0953b602c7be9937430f2a394b761ae805ad6f4a85d9a921577f9f264e33",
+    "docs/figures/pythia-transfer-heldout.png": "ca5b662db6dfeedc3a81bbbf8914c417c46b7fb0db287e635c0dfe56e29642d3",
+    "docs/figures/pythia-transfer-heldout.svg": "7e5623af04cfc8d47b329527e5484c06a71b200bc05b93a220e4741285034f29"
+  },
+  "source_summary_sha256": "cf6506d43585c39820fbe66c3fef5d74ec31753de222c3fe8bc8edb3f230bffc",
+  "source_selection_sha256": "185b9d08a2ee6a5e9dceeacb4477a0fd8f3b4181570b1ba6013d3d5e3582b70b",
+  "source_trace_sha256": "c30746523ba5622bac2eed5ce178c61199a3b3c54754253075a3a1b111003d55",
+  "plot": "16 actual heldout_rows target/control primary scores; no simulation",
+  "trace_shapes": [
+    [
+      "embedding",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "block.0",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "block.1",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "block.2",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "block.3",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "block.4",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "block.5",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "final_norm",
+      [
+        1,
+        32,
+        128
+      ]
+    ],
+    [
+      "logits",
+      [
+        1,
+        32,
+        50304
+      ]
+    ]
+  ],
+  "protocol_body_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+  "amended_packet_protocol_sha256": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454",
+  "limitations": [
+    "independent repeat in progress per coordinator",
+    "final acceptance pending",
+    "producer outputs untouched",
+    "no model or tokenizer loaded"
+  ]
+}

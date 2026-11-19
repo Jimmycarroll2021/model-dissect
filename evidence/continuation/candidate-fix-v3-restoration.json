@@ -1,0 +1,48 @@
+{
+  "status": "v2_restored_no_R2_pass",
+  "created_utc": "2026-11-17T07:41:22Z",
+  "reason": "Coordinator reports canonical-v3 rejected by unchanged-native-prefill gate:6/16 failures",
+  "restored_forward_sha256": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+  "restored_manifest": "analysis/candidate-manifest-v2.json",
+  "restored_manifest_sha256": "f7c42733df7a08bbe09cacf07c8a3c802a88362bdb627beb26d86a4a5d37d795",
+  "v2_manifest_entry_checks": {
+    "src/minimind_re/forward.py": true,
+    "src/minimind_re/inventory.py": true,
+    "analysis/structural-map.json": true,
+    "analysis/exposure-ledger.json": true,
+    "runtime/environment.json": true,
+    "artifacts/allowed/supplied_config.json": true
+  },
+  "rejected_candidate_manifest": "analysis/candidate-manifest-v3.json",
+  "rejected_candidate_manifest_sha256": "937e4a556fd32b3ca3a683d3c72b8abf72c2e684e5738db5c877c7c32130892b",
+  "historical_mapping": {
+    "manifest_original_path": "src/minimind_re/forward.py",
+    "retained_path": "analysis/forward-v3-rejected.py",
+    "sha256": "2d8032802401727070739fdaf099eddf506661379e186de7638ddea739e0ff6e",
+    "permission_mode": "0o444"
+  },
+  "preserved": [
+    "v3 manifest",
+    "v3 policy source snapshot",
+    "v3 addendum",
+    "v3 diff",
+    "all historical failure receipts",
+    "analysis/rejected-v3/test_attention_policy.py"
+  ],
+  "model_runs": 0,
+  "limitations": [
+    "Restoration establishes exact v2 bytes only, not R2 PASS"
+  ],
+  "archived_v3_test": {
+    "original_path": "tests/test_attention_policy.py",
+    "archive_path": "analysis/rejected-v3/test_attention_policy.py",
+    "sha256": "eafe7c6d8532239fee95d879f3cda8054f37ff40f59fb7de456ee0a33538e4e0",
+    "scope": "Historical rejected-v3 candidate only; assertions preserved unchanged"
+  },
+  "active_v2_tests": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "status": "PASS",
+    "count": 7,
+    "target_model_runs": 0
+  }
+}

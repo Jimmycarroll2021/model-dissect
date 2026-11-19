@@ -1,0 +1,29 @@
+{
+  "schema": "CONTINUATION-001-protocol-v1",
+  "text_sha256": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+  "inputs": [
+    "behavior-copy-screen-00",
+    "behavior-subtract-screen-00",
+    "behavior-compare-screen-00",
+    "你有什么特长？"
+  ],
+  "max_new_tokens_including_eos": 256,
+  "prompt_cap": 64,
+  "parity_lengths": [
+    128,
+    256,
+    319
+  ],
+  "parity_positions_actual": 1406,
+  "parity_positions_reserved": 2048,
+  "positions_per_role": 176640,
+  "phase_positions": 353280,
+  "lifetime_positions_max": 804208,
+  "status": "NOT_RUN",
+  "parity_boundaries": [
+    "embedding",
+    "block",
+    "final",
+    "logits"
+  ]
+}

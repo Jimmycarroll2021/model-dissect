@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "supersedes_review": {
+    "path": "evidence/mechanism/final-document-review.json",
+    "sha256": "d3129c1d12e9bb758965f1a6895816ebc92e38dc3639065bff5dc8f3bd9fb969"
+  },
+  "reviewed_hashes": {
+    "docs/mechanism-investigation-result.md": "4e01a296dfa978eb10c00ed6a4abdbd7f66cdac86dc4f96ef9c7abd874f18cd8",
+    "TASK_STATE.md": "2aabfa50b7844a129b38d4182cd41cbb444eb89be7171e4e058630dcc5f441cc",
+    "CASE_FACTS.md": "ce6205c658513135de6687332df4e54674b8278e7162f7a9b3755fcd2b3fa1ce",
+    "specs/001-minimind-reproduction/tasks.md": "fe9c6c074c0b64f6513e8dd475a6a18a90c58dc6b351e195e477a0fdeaf3d1c9",
+    "specs/001-minimind-reproduction/quickstart.md": "2e6b54c545f2d0d7c0508e38300f454408bb64f9e859319a81b58621efbf1df1",
+    "evidence/mechanism/independent/execution-result.json": "0ca6895abbe9a46bd94255ec94610991e3abfc527cfec61650f9fca39b913228"
+  },
+  "resolved_findings": [
+    {
+      "id": "DOC-1",
+      "resolution": "Current MECHANISM guide and exact current manifest lead; old v2 instructions explicitly historical; generic report limitation disclosed; hypothesis complete and inconclusive clear."
+    }
+  ],
+  "checks": {
+    "current_candidate_guide": "PASS",
+    "historical_scope_boundaries": "PASS",
+    "unmodified_other_reviewed_documents": "PASS",
+    "prior_verified_runtime_evidence_reused": "PASS",
+    "scientific_and_tool_claims": "PASS"
+  },
+  "model_calls_this_review": 0,
+  "acceptance": "Final documentation accepted for bounded MECHANISM-001 investigation; M2 PASS, M3 procedure complete/scientific INCONCLUSIVE, M4 exact independent repeat. Original R2 FAIL retained. No further model runs.",
+  "authorized_clerical_finalization": "Mark T049 complete and TASK_STATE final-document acceptance with review pointer; separate pre/post receipt binds exact changed state."
+}

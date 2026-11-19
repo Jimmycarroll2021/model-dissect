@@ -1,0 +1,221 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_REPEAT_DIAGNOSED_NOT_FIXED",
+  "counts": {
+    "captured_arrays": 960,
+    "boundaries": 16,
+    "cache_tensors": 64,
+    "operation_records": 434,
+    "prior_failed_arrays": 960
+  },
+  "calls": [
+    {
+      "call": 1,
+      "producer_raw_sha256": "462d6ee99379f7814ec1a82a4e73767dd2342bde8fd3c7daffcc6b9ed59e5da2",
+      "independent_raw_sha256": "462d6ee99379f7814ec1a82a4e73767dd2342bde8fd3c7daffcc6b9ed59e5da2",
+      "prior_failed_raw_sha256": "ce2df465ad947f38ad72a252816e55b9ee64a074f3ba8a305e3bbb58d8117f28"
+    },
+    {
+      "call": 2,
+      "producer_raw_sha256": "7e464629175e29ff205acb57250ee6f80d42111d007792e82320cd9fa20cc453",
+      "independent_raw_sha256": "7e464629175e29ff205acb57250ee6f80d42111d007792e82320cd9fa20cc453",
+      "prior_failed_raw_sha256": "61ebf0d5f3ea3692b4f197222541d086f9771d4ce2283b4c28def7c0ddcc93a2"
+    },
+    {
+      "call": 3,
+      "producer_raw_sha256": "137e776701e93ecf1c388d4a611f61713f744e9f973cecb11d0fafc15cf58d28",
+      "independent_raw_sha256": "137e776701e93ecf1c388d4a611f61713f744e9f973cecb11d0fafc15cf58d28",
+      "prior_failed_raw_sha256": "88d8ecaf95816f80a05b6dc5b09daa1582347bf36c64f4deed677042205167a1"
+    },
+    {
+      "call": 4,
+      "producer_raw_sha256": "9dc514ed3ef3864cc006fba356598f57aa5a910bab87f22a4ad97909a4802e97",
+      "independent_raw_sha256": "9dc514ed3ef3864cc006fba356598f57aa5a910bab87f22a4ad97909a4802e97",
+      "prior_failed_raw_sha256": "89ab2d0a87530de3a67820315560d8b478b0d79339da8db0770275a9b05f9ec8"
+    }
+  ],
+  "localization_exact_repeat": true,
+  "localization": [
+    {
+      "actor": "candidate",
+      "operation": "aten.softmax.int",
+      "direct_common_input_uint8_equal": true,
+      "non_tensor_arguments_equal": true,
+      "extra_width8_columns_for_common_queries_all_negative_infinity": true,
+      "extra_probabilities_exact_zero": true,
+      "causal_negative_infinity_map_exact_both_widths": true,
+      "input_layout_width6": {
+        "kind": "array",
+        "array": "t00187",
+        "shape": [
+          1,
+          8,
+          6,
+          6
+        ],
+        "stride": [
+          288,
+          36,
+          6,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "input_layout_width8": {
+        "kind": "array",
+        "array": "t00187",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "stride": [
+          512,
+          64,
+          8,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "token5_probability_unequal_coordinates": [
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          0,
+          5,
+          4
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          0,
+          7,
+          3
+        ],
+        [
+          0,
+          7,
+          4
+        ],
+        [
+          0,
+          7,
+          5
+        ]
+      ],
+      "token5_max_abs": 1.1920928955078125e-07,
+      "common_prefix_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "actor": "native",
+      "operation": "aten.softmax.int",
+      "direct_common_input_uint8_equal": true,
+      "non_tensor_arguments_equal": true,
+      "extra_width8_columns_for_common_queries_all_negative_infinity": true,
+      "extra_probabilities_exact_zero": true,
+      "causal_negative_infinity_map_exact_both_widths": true,
+      "input_layout_width6": {
+        "kind": "array",
+        "array": "t00165",
+        "shape": [
+          1,
+          8,
+          6,
+          6
+        ],
+        "stride": [
+          288,
+          36,
+          6,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "input_layout_width8": {
+        "kind": "array",
+        "array": "t00165",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "stride": [
+          512,
+          64,
+          8,
+          1
+        ],
+        "storage_offset": 0,
+        "dtype": "torch.float32",
+        "contiguous": true
+      },
+      "token5_probability_unequal_coordinates": [
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          0,
+          5,
+          4
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          0,
+          7,
+          3
+        ],
+        [
+          0,
+          7,
+          4
+        ],
+        [
+          0,
+          7,
+          5
+        ]
+      ],
+      "token5_max_abs": 1.1920928955078125e-07,
+      "common_prefix_max_abs": 1.1920928955078125e-07
+    }
+  ],
+  "ledger_sha256": "a23da6c9d50d39c6e5625d5ffd63c3d6e1f2be3340c63daa055f0c74e68e3de4",
+  "total_charged_positions": 1138400,
+  "remaining_positions": 0,
+  "active_runs": 0,
+  "producer_result_sha256": "9eb7922695393caaccbe07608e05541441931764b66374c06bfa7a420776df53",
+  "independent_result_sha256": "40a0a1be0bd8f3c464599ce1a79edc0e5f908782594089a151ee2de8445cc65d",
+  "audit_receipts": {
+    "evidence/cache-prefix-width/resource-recovery/review/failure-raw-audit-v1.json": "9b1e1e02cfd779c26add1b61a95018857757fa33613a3bd3ef59e75318764706",
+    "evidence/cache-prefix-width/resource-recovery/review/independent-raw-audit-v1.json": "6f552d6baa9b5b61753a3629d84579aa089458f967534ef0a27f2f21be640e92",
+    "evidence/cache-prefix-width/resource-recovery/review/softmax-localization-v1.json": "aa1322f9a3e7518b463580d56a469775f62b3d20f90530219c85fff2f45e8c62",
+    "evidence/cache-prefix-width/resource-recovery/review/independent-localization-v1.json": "446250fb31980b6e39a2fa62360b65b15e52390af387baf0d52ee1ec396af721",
+    "evidence/cache-prefix-width/resource-recovery/review/independent-terminal-v1.json": "daca5525d2f25ead36811cd7f15e32ccb3e029e471bef6e08989e6eed9b490ab",
+    "evidence/cache-prefix-width/resource-recovery/review/runtime-admission-v1.json": "bcadbb32b2c7fe7998990715773d5eb30aa29b0f91105084a958074c22378140"
+  },
+  "science": "Earliest common-prefix difference at softmax in both actors, equal corresponding masked-score bytes/scalars, extra width8 future scores -Inf and probabilities exactly0. Token5 differs heads5,7keys3,4,5 maxabs1.1920928955078125e-7. Identical evidence in failed-resource raw and both admitted repeats.",
+  "limitations": [
+    "No arithmetic repair or R2 acceptance. Shape-dependent softmax rounding is observed, but intervention has not established sufficiency for original logits threshold failure.",
+    "Frozen-parameter metadata is exact across all three runs; parameter values themselves were not separately reconstructed in this audit.",
+    "Prior failed resource run remains FAILED and charged."
+  ]
+}

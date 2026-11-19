@@ -1,0 +1,21 @@
+{
+  "verdict": "PASS_INDEPENDENT_STATIC_EXACT_REPEAT",
+  "reviewed_utc": "2026-11-18T20:14:57.448283+00:00",
+  "checks": {
+    "exact_atlas": true,
+    "all48arrays": true,
+    "supervisor_success": true
+  },
+  "atlas_sha256": "62afcae307704dbb4c5a107a29f3da25ef26a0c90805c6be3a29c8f792863968",
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 676622336,
+    "elapsed": 2.897349154925905,
+    "added_disk_bytes": 3247034,
+    "total_phase_disk_bytes": 8340213993,
+    "packet_disk_limit": 16777216,
+    "phase_disk_limit": 25769803776
+  },
+  "scope": "All76tensor statistics,48raw views,8SVD vectors and all atlas metadata exactly reproduce producer.0modelpositions."
+}

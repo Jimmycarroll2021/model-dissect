@@ -1,0 +1,56 @@
+{
+  "status": "FAIL",
+  "receipt_sha256": "ba54282427df6f01b2563e7c35dd0533caa1639b59f38f4a23376097210a675b",
+  "rows": 2640,
+  "failed_rows": 234,
+  "fail_modes": {
+    "candidate-cache-full-2": 48,
+    "reference-cache-full-2": 48,
+    "candidate-cache-full-3": 36,
+    "reference-cache-full-3": 36,
+    "candidate-cache-full-1": 33,
+    "reference-cache-full-1": 33
+  },
+  "fail_sites": {
+    "logits": 204,
+    "final": 30
+  },
+  "worst_tolerance_ratio": 2.108029842376709,
+  "top1_mismatches": 0,
+  "all_finite": true,
+  "cross_candidate_reference_failed_rows": 0,
+  "tokens": 16938,
+  "calls": 648,
+  "elapsed_seconds": 27.48899194097612,
+  "mkl_verbose_lines": 46825,
+  "strict_dynamic0_threads2_lines": 46824,
+  "effective_backend_examples": [
+    "MKL_VERBOSE SGEMM(T,N,768,1,768,0x7ffc11b59830,0x527d2600,768,0x4cc26f80,768,0x7ffc11b59850,0x4cc27bc0,768) 256.70us CNR:AUTO,STRICT Dyn:0 FastMM:1 TID:0  NThr:2",
+    "MKL_VERBOSE SGEMM(T,N,384,1,768,0x7ffc11b59830,0x52a12640,768,0x4cc26f80,768,0x7ffc11b59850,0x4cc2b640,384) 90.67us CNR:AUTO,STRICT Dyn:0 FastMM:1 TID:0  NThr:2"
+  ],
+  "run_receipt": {
+    "id": "numerics002-evaluation-strict-v1",
+    "role": "evaluation",
+    "tokens_reserved": 18000,
+    "argv": [
+      "/usr/bin/python3",
+      "runs/continuation/evaluation-strict-runner.py"
+    ],
+    "start": 1794900211.164239,
+    "status": "failed",
+    "backend": "cpu",
+    "gpu_seconds": 0,
+    "pid": 1828749,
+    "exit_code": 1,
+    "end": 1794900242.1382256,
+    "wall_seconds": 30.971080376999453,
+    "cpu_seconds": 57.825114,
+    "peak_child_rss_kib": 1547376,
+    "disk_free_bytes": 2818973696,
+    "project_bytes": 158584467
+  },
+  "cumulative_tokens_reserved": 80924,
+  "cumulative_gpu_seconds": 0,
+  "remaining_deadline_seconds": 11763.126359939575,
+  "environment_manifest_sha256": "c45ff0e16c36eebb19fe4f701542a02350b91614e084effbea82759c78fc6465"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "required_fixes": [],
+  "script_sha256": "9de0139ef442f6f8403e79e66678b66aa2c9ea409fcd474bb02bda7957d60983",
+  "protocol_sha256": "af977948cde18431d67307fd44c4b6a98c93c7b8bacdb42c8a07b969a5dde90e",
+  "all_bound_files_match": true,
+  "synthetic_uuid_cases_independently_passed": 4,
+  "original_script_recovered_by_reversing_only_uuid_fix_sha256": "355f107f0178392422a34d0bb4b73f2095c391ae5bfcefa39d7cf279086b55ed",
+  "gpu_calls": 0,
+  "findings": [
+    "Only optional literalGPU-prefix normalization and corresponding comparison changed; reversing those changes exactly reproduces priorreviewedscriptbytes.",
+    "Different UUID rejected; same prefixed/bare identifier accepted in bothdirections.",
+    "Guard,adapter,nativevendor,comparator,fixtures and checkpoint unchanged.",
+    "Prior failedCUDAledgerrow and120secondreservation retained."
+  ],
+  "admission": "One diagnosed completion run9000positions120seconds under originalguardledger/caps. Previouscombinedreviewapplies to unchangedartifacts. Not numericalacceptance."
+}

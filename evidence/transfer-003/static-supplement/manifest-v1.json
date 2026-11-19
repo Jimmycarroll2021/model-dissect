@@ -1,0 +1,24 @@
+{
+  "status": "AUTHOR_DERIVATION_COMPLETE_PENDING_INDEPENDENT_REVIEW",
+  "files": {
+    "./evidence/transfer-003/static-supplement/derive_population_std.py": "95115289ed81ebfa9e36952e363ee23cd5e062304ab0376839fb992fb77076a1",
+    "./evidence/transfer-003/static-supplement/producer-population-std-v1.json": "e5871963bff86d21c31a8695ae84796d227a0a10b5f46aaebe155176937bace5"
+  },
+  "source_atlas_sha256": "c04d8aa62e826f169468a5dce3f2b4d4215cfad03d9ff75d6cf5787bab0e79a4",
+  "rows": 160,
+  "tiny_negative_clamps": 0,
+  "synthetic_checks": {
+    "pass": true,
+    "checks": [
+      "constant",
+      "symmetric",
+      "nonzero_mean",
+      "one_ulp_negative_rounding",
+      "material_negative_rejected",
+      "nonfinite_and_negative_rms_rejected"
+    ]
+  },
+  "target_weight_loads": 0,
+  "target_forwards": 0,
+  "original_artifacts_modified": false
+}

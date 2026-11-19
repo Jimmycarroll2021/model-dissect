@@ -1,0 +1,8 @@
+{
+  "status": "PASS_RAW_ARRAY_AUDIT",
+  "result_sha256": "c950fab6154821918b2cc7f981dd9009b1662cf2c9683fe4b67e6487e48f913c",
+  "tensor_checks": 400,
+  "metrics_recomputed": true,
+  "all48_primitive_schedules_recomputed": true,
+  "model_calls_in_audit": 0
+}

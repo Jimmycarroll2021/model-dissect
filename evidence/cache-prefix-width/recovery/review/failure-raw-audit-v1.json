@@ -1,0 +1,599 @@
+{
+  "status": "RAW_VALID_RESOURCE_RUN_FAILED",
+  "result_sha256": "8f7bf8a47b0097da8d38ad76f69195bcd0a12f44226958f84bd66ef7104fb92c",
+  "checks": [
+    {
+      "call": 1,
+      "actor": "candidate",
+      "width": 6,
+      "boundary_hashes": 4,
+      "cache_hashes": 16,
+      "operation_count": 120,
+      "array_references_checked": 262
+    },
+    {
+      "call": 2,
+      "actor": "candidate",
+      "width": 8,
+      "boundary_hashes": 4,
+      "cache_hashes": 16,
+      "operation_count": 120,
+      "array_references_checked": 262
+    },
+    {
+      "call": 3,
+      "actor": "native",
+      "width": 6,
+      "boundary_hashes": 4,
+      "cache_hashes": 16,
+      "operation_count": 97,
+      "array_references_checked": 218
+    },
+    {
+      "call": 4,
+      "actor": "native",
+      "width": 8,
+      "boundary_hashes": 4,
+      "cache_hashes": 16,
+      "operation_count": 97,
+      "array_references_checked": 218
+    }
+  ],
+  "prefix_output_comparisons": [
+    {
+      "actor": "candidate",
+      "first_common_prefix_output_difference": {
+        "index": 85,
+        "op": "aten.softmax.int",
+        "shape6": [
+          1,
+          8,
+          6,
+          6
+        ],
+        "max_abs_finite": 1.1920928955078125e-07,
+        "source": [
+          {
+            "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+            "function": "__call__",
+            "line": 48,
+            "module_type": "ShapeMatchedCandidate"
+          },
+          {
+            "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+            "function": "run",
+            "line": 57,
+            "module_type": "NoneType"
+          }
+        ]
+      },
+      "unequal_output_records": 23,
+      "first_ten": [
+        {
+          "index": 85,
+          "op": "aten.softmax.int",
+          "shape6": [
+            1,
+            8,
+            6,
+            6
+          ],
+          "max_abs_finite": 1.1920928955078125e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 48,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 86,
+          "op": "aten.matmul.default",
+          "shape6": [
+            1,
+            8,
+            6,
+            96
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 48,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 87,
+          "op": "aten.transpose.int",
+          "shape6": [
+            1,
+            6,
+            8,
+            96
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 48,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 88,
+          "op": "aten.contiguous.default",
+          "shape6": [
+            1,
+            6,
+            8,
+            96
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 48,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 89,
+          "op": "aten.view.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 48,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 99,
+          "op": "aten.detach.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 58,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 100,
+          "op": "aten.clone.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 58,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 101,
+          "op": "aten.linear.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.043081283569336e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 59,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 102,
+          "op": "aten.add.Tensor",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.043081283569336e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 59,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py",
+              "function": "run",
+              "line": 57,
+              "module_type": "NoneType"
+            }
+          ]
+        },
+        {
+          "index": 103,
+          "op": "aten.pow.Tensor_Scalar",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 8.940696716308594e-08,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "norm",
+              "line": 18,
+              "module_type": "ShapeMatchedCandidate"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py",
+              "function": "__call__",
+              "line": 59,
+              "module_type": "ShapeMatchedCandidate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actor": "native",
+      "first_common_prefix_output_difference": {
+        "index": 74,
+        "op": "aten.softmax.int",
+        "shape6": [
+          1,
+          8,
+          6,
+          6
+        ],
+        "max_abs_finite": 1.1920928955078125e-07,
+        "source": [
+          {
+            "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+            "function": "forward",
+            "line": 131,
+            "module_type": "Attention"
+          },
+          {
+            "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+            "function": "forward",
+            "line": 193,
+            "module_type": "MiniMindBlock"
+          }
+        ]
+      },
+      "unequal_output_records": 20,
+      "first_ten": [
+        {
+          "index": 74,
+          "op": "aten.softmax.int",
+          "shape6": [
+            1,
+            8,
+            6,
+            6
+          ],
+          "max_abs_finite": 1.1920928955078125e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 131,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 75,
+          "op": "aten.type_as.default",
+          "shape6": [
+            1,
+            8,
+            6,
+            6
+          ],
+          "max_abs_finite": 1.1920928955078125e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 131,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 76,
+          "op": "aten.dropout.default",
+          "shape6": [
+            1,
+            8,
+            6,
+            6
+          ],
+          "max_abs_finite": 1.1920928955078125e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 131,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 77,
+          "op": "aten.matmul.default",
+          "shape6": [
+            1,
+            8,
+            6,
+            96
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 131,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 78,
+          "op": "aten.transpose.int",
+          "shape6": [
+            1,
+            6,
+            8,
+            96
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 132,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 79,
+          "op": "aten.reshape.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.7881393432617188e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 132,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 80,
+          "op": "aten.linear.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.043081283569336e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 133,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 81,
+          "op": "aten.dropout.default",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.043081283569336e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 133,
+              "module_type": "Attention"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 193,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        },
+        {
+          "index": 82,
+          "op": "aten.add_.Tensor",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.043081283569336e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 197,
+              "module_type": "MiniMindBlock"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/adapter.py",
+              "function": "__call__",
+              "line": 34,
+              "module_type": "ReferenceAdapter"
+            }
+          ]
+        },
+        {
+          "index": 83,
+          "op": "aten.to.dtype",
+          "shape6": [
+            1,
+            6,
+            768
+          ],
+          "max_abs_finite": 1.043081283569336e-07,
+          "source": [
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 60,
+              "module_type": "RMSNorm"
+            },
+            {
+              "file": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-recovery-001-20261118/oracle/vendor/model_minimind.py",
+              "function": "forward",
+              "line": 198,
+              "module_type": "MiniMindBlock"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Common-prefix comparison is preliminary; not every direct operand equality or parameter view reconstruction completed.",
+    "No independent repeat performed; original R2 remains FAIL."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "OFFLINE_FINDINGS_PENDING_INDEPENDENT_REVIEW",
+  "files": {
+    "./evidence/cache-shape-matrix/diagnosis/offline-saved-boundary-v1.json": "0bf2df013ac8517d5c9089db3bab949a21a06c129984595dab259afef8d8123b",
+    "./evidence/cache-shape-matrix/diagnosis/findings-v1.md": "51e102c23a47f163c7fcca5936cb098922f0c8837a336c7560e15db9b6778abd",
+    "./evidence/cache-shape-matrix/diagnosis/offline_saved_boundary_v1.py": "586e951a3da5327809b318de0f8fa576d3dc75554cff2bd05c13efb51589cca2"
+  },
+  "model_calls": 0,
+  "proposed_test_actual_positions_per_role": 64,
+  "proposed_test_calls_per_role": 24,
+  "resource_limit_compliance": "UNVERIFIED_RSS_HIGHWATER_EXCEEDS_OFFLINE_LIMIT",
+  "no_further_tensor_work_after_observation": true
+}

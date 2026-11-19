@@ -1,0 +1,102 @@
+{
+  "status": "FROZEN",
+  "epoch": 1794910463.5500503,
+  "seed": 172901,
+  "hashes": {
+    "fixtures/behavior/screen.json": "f1c7445cc162a0fa4d3e7b3959747572034ce662f2b2dbc43f4d475018c2ce77",
+    "fixtures/behavior/qualify.json": "7747a71d4a334c1a0b351a448afe288e0732fe9e16ef547b7c9672d795910fc1",
+    "fixtures/behavior/development.json": "97a64b5852dd9d3b58adc6f26d74d7bbb41deb2ee89a071f11d9a3c9358e43b6",
+    "fixtures/behavior/intervention.json": "12f8aa2f01ea621903f0f28af28e4d07e99c2b8939c19478a36c10cda54a5ef9"
+  },
+  "counts": {
+    "screen": {
+      "COPY": {
+        "rows": 16,
+        "positions": 768,
+        "max_length": 48
+      },
+      "SUBTRACT": {
+        "rows": 16,
+        "positions": 470,
+        "max_length": 30
+      },
+      "COMPARE": {
+        "rows": 16,
+        "positions": 494,
+        "max_length": 32
+      }
+    },
+    "qualify": {
+      "COPY": {
+        "rows": 32,
+        "positions": 1536,
+        "max_length": 48
+      },
+      "SUBTRACT": {
+        "rows": 32,
+        "positions": 924,
+        "max_length": 30
+      },
+      "COMPARE": {
+        "rows": 32,
+        "positions": 999,
+        "max_length": 32
+      }
+    },
+    "development": {
+      "COPY": {
+        "rows": 16,
+        "positions": 768,
+        "max_length": 48
+      },
+      "SUBTRACT": {
+        "rows": 16,
+        "positions": 469,
+        "max_length": 30
+      },
+      "COMPARE": {
+        "rows": 16,
+        "positions": 502,
+        "max_length": 32
+      }
+    },
+    "intervention": {
+      "COPY": {
+        "rows": 32,
+        "positions": 1536,
+        "max_length": 48
+      },
+      "SUBTRACT": {
+        "rows": 32,
+        "positions": 931,
+        "max_length": 30
+      },
+      "COMPARE": {
+        "rows": 32,
+        "positions": 996,
+        "max_length": 32
+      }
+    }
+  },
+  "generator_sha256": "863a1beb4b10c32de4b56509e1d5f9ce69a4e386a39906a0eb1ec89b769de72b",
+  "protocol_sha256": "593cb1eae7738b971889e00b538f419cb026df2218a9d9ba5e801e5acce0fce0",
+  "tokenizer_hashes": {
+    "tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+    "tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668"
+  },
+  "tokenizer_options": {
+    "apply_chat_template": {
+      "tokenize": false,
+      "add_generation_prompt": true,
+      "open_thinking": false
+    },
+    "encode": "tokenizer(rendered_text).input_ids; defaults match upstream"
+  },
+  "rejections": 0,
+  "model_forwards": 0,
+  "model_input_positions": 0,
+  "all_new_input_ids_unique": true,
+  "all_disjoint_old_mechanism": true,
+  "exposure": "No model outcomes consulted. All pools frozen; selector may inspect screen only.",
+  "sample_rendered_repr": "'<|im_start|>user\\n甲写下数字0，乙写下数字9，丙写下数字6。甲写下的数字是什么？只回答一个数字。<|im_end|>\\n<|im_start|>assistant\\n<think>\\n\\n</think>\\n\\n'"
+}

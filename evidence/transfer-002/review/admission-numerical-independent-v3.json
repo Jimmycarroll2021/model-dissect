@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "176aadcaefd118e10af6a88f366cf4bbd2ae98ffa6c404ce5404ed139699f8a4",
+  "packet_path": "./evidence/transfer-002/runtime/numerical-independent-v3.packet.json",
+  "review_path": "./evidence/transfer-002/review/runtime-build-v3.json",
+  "review_sha256": "2db7d53149cf0c4469e514132acf5bbc1ef21cf8d81152b1414c8ab98ddd932d",
+  "reviewed_utc": "2026-11-18T19:19:39.884287+00:00",
+  "scope": "numerical-independent-v3",
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=./src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 /usr/bin/python -m minimind_re.transfer.run --packet ./evidence/transfer-002/runtime/numerical-independent-v3.packet.json --admission ./evidence/transfer-002/review/admission-numerical-independent-v3.json",
+  "conditions": [
+    "Execute serially using the supervised CLI. Preserve all failures.",
+    "No packet/code/fixture modification or hidden additional model calls.",
+    "Independent role must be executed by independent assigned verifier."
+  ]
+}

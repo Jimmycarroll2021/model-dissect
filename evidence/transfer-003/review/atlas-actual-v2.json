@@ -1,0 +1,134 @@
+{
+  "status": "success",
+  "verdict": "PASS_STATIC_ATLAS_REPEAT_WITH_DERIVED_POPULATION_STD_SUPPLEMENT",
+  "utc": "2026-11-19T00:30:12.538756+00:00",
+  "producer_receipt": {
+    "path": "evidence/transfer-003/runtime/additive-v2/atlas-producer-result.json",
+    "sha256": "90aad5b6aa7fe89e3d5276f2992347b2bacddff6534868c5548b9373cf9a5db1"
+  },
+  "independent_execution": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python -m minimind_re.transfer3.additive_run --packet evidence/transfer-003/runtime/additive-v2/packet-atlas-independent-v2.json --admission evidence/transfer-003/review/admission-atlas-independent-v2.json",
+    "packet_sha256": "d9991af94ace7542aaf539c0349618d095436d9e29a63c21ee00b643456be6e6",
+    "admission_sha256": "445ef3c8dc56b63f3373586bb32f692b992fe389309781c9b574b1bae71c0b9c",
+    "exit_code": 0,
+    "model_calls": 0,
+    "positions": 0,
+    "target_weight_loads": 1,
+    "retries": 0,
+    "phase_reinitialization": false
+  },
+  "actual_verification": {
+    "pass": true,
+    "raw_matrices_byte_equal": 24,
+    "raw_payload_bytes": 56623104,
+    "atlas_metadata_byte_equal": true,
+    "tensor_partition_independent_shape_check": {
+      "stored": 160,
+      "learned": 148,
+      "learned_elements": 124439808,
+      "causal_buffers": 12
+    },
+    "causal_statistics_analytic_check": true,
+    "all_head_norm_entries": 144,
+    "std_rows": 160,
+    "std_negative_clamps": 0,
+    "std_max_delta_vs_decimal_saved_moments": 2.220446049250313e-16,
+    "minimum_variance_over_second_moment": 0.014335407675859519,
+    "supervisor": {
+      "returncode": 0,
+      "stop_reason": null,
+      "peak_sampled_group_rss_bytes": 1357426688,
+      "elapsed": 3.9343481230316684,
+      "added_disk_bytes": 56741185,
+      "total_phase_disk_bytes": 3883177887,
+      "packet_disk_limit": 134217728,
+      "phase_disk_limit": 25769803776
+    },
+    "preservation": {
+      "before": "c16c141df46e9c6770f0b63eec745f9f3f9fac459f88759312c756cac791186c",
+      "after": "c16c141df46e9c6770f0b63eec745f9f3f9fac459f88759312c756cac791186c",
+      "pass": true
+    },
+    "artifact_final_pass": true,
+    "ledger_events": [
+      {
+        "disk_bytes": 134217728,
+        "event": "reserve",
+        "positions": 0,
+        "role": "independent",
+        "run_id": "additive-v2-atlas-independent",
+        "seconds": 180,
+        "time": 1795048119.34221,
+        "version": "transfer3-guard-v2"
+      },
+      {
+        "actual_positions": 0,
+        "elapsed": 2.6164924289332703,
+        "event": "finish",
+        "inherited_self_rusage_highwater_bytes": 1425018880,
+        "run_id": "additive-v2-atlas-independent",
+        "sampled_owned_tree_rss_bytes": 654823424,
+        "status": "completed",
+        "time": 1795048121.708217,
+        "version": "transfer3-guard-v2"
+      }
+    ],
+    "source_math_assessment": "Row-vector Conv1D orientation: Q/K/V are respective packed column slices; W_O per-head row slices; QK=Q K^T and OV=V O. No1/sqrt(d) factor, LN/bias/positions/context omitted as labeled. Exact repeated actual execution under reviewed source; no independent alternative weight-level recomputation claimed."
+  },
+  "supplement": {
+    "manifest": "evidence/transfer-003/static-supplement/manifest-v1.json",
+    "manifest_sha256": "2c43612547d0812f253d07605fdfbb719c3bfa0082f94398df0bb51727adbf57",
+    "path": "evidence/transfer-003/static-supplement/producer-population-std-v1.json",
+    "sha256": "e5871963bff86d21c31a8695ae84796d227a0a10b5f46aaebe155176937bace5",
+    "source_sha256": "95115289ed81ebfa9e36952e363ee23cd5e062304ab0376839fb992fb77076a1",
+    "author_synthetic_checks_independently_repeated": {
+      "pass": true,
+      "checks": [
+        "constant",
+        "symmetric",
+        "nonzero_mean",
+        "one_ulp_negative_rounding",
+        "material_negative_rejected",
+        "nonfinite_and_negative_rms_rejected"
+      ]
+    },
+    "independent_saved_moment_arithmetic": true,
+    "acceptance": "Accept population std requirement through additive160-row derived supplement, bound to unchanged raw atlas. No negative clamps; smallest variance/secondmoment ratio0.0143354, so no near-zero-variance cancellation observed in these summaries. Independent70-digit Decimal arithmetic on the same saved moments differs by at most2.220446049250313e-16 absolute. This does not bound upstream moment-reduction error."
+  },
+  "evidence": {
+    "precheck.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas-review-v2/precheck.py",
+      "sha256": "3689f85c0395f384d741d18fb3e47fe2c8638f9ca0b49adf441c321c077b9b6c"
+    },
+    "precheck.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas-review-v2/precheck.json",
+      "sha256": "dc4e16218cb49a2fe149660c9c0bd086dce2fd007d6d29fab2177b1325ab7699"
+    },
+    "independent-launch.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas-review-v2/independent-launch.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "recompute.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas-review-v2/recompute.py",
+      "sha256": "c53f12b800259988f3a36f935324ab5ea0da7d7fcc92fd2df556ed5e72a61b0a"
+    },
+    "recompute.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas-review-v2/recompute.json",
+      "sha256": "0883e86889f28c6f9d5e79875ea02f698fc7bcc5f505f0b1c392ef32c9135ed9"
+    },
+    "ledger-after-atlas-repeat.jsonl": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/atlas-review-v2/ledger-after-atlas-repeat.jsonl",
+      "sha256": "3adbceb04a9f652468b03f6fee2ebe87cd6fb22b03e84a66ae43c30d8109efc4"
+    }
+  },
+  "limits": [
+    "Source orientation and tensor partition independently reviewed; exact admitted actual atlas execution repeated; raw matrices and all statistics reproduced byte-for-byte. No independent alternative implementation directly recomputed weight-level QK/OV or learned-tensor moments.",
+    "All12 causal masks were value-validated by reviewed source during both admitted executions. Independently checked their saved statistics analytically; no additional unguarded weight reads performed.",
+    "Tied lm_head is source/model interpretation from absent alias plus verified native tie, not an additional stored tensor.",
+    "Standard deviation is population std derived from saved roundedFP64 mean/RMS, not direct centered weight reduction. Preserve this label and cancellation/reduction caveats.",
+    "Static QK/OV omit LN,biases,positions,softmax and context; no semantic or causal inference.",
+    "No scientific/tokenizer/model forward run by this assignment."
+  ],
+  "proportionality_decision": "Current requirements request descriptive complete atlas and independent repeat, not a second weight-statistics/QKOV engine. Reviewed source orientation plus exact actualrepeat, independent partition/mask-statistic checks and independently verified derived supplement suffice for stated static scope. Additional weight arithmetic would be new verification scope and was not silently performed.",
+  "next_action": "Controller may accept static atlas plus supplement; scientific trace/intervention outcome and final integrated delivery remain separate."
+}

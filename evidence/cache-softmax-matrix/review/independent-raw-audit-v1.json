@@ -1,0 +1,18 @@
+{
+  "status": "PASS_RAW_VALIDITY_SCIENTIFIC_PASS",
+  "result_sha256": "f66d40fb47884dca50b3e0035ad2e4bd0399e72ec88e2bbf407e427d1605a79b",
+  "role": "independent",
+  "actual_positions": 50526,
+  "calls": 1656,
+  "rows_recomputed": 9120,
+  "boundary_tensors_hashed": 6624,
+  "full_cache_tensors_reconstructed": 11520,
+  "prefixes_reconstructed": 9216,
+  "failed_rows": 0,
+  "failures": [],
+  "max_tolerance_ratio": 0.9981775283813477,
+  "top1_mismatches": 0,
+  "nonfinite_rows": 0,
+  "audit_source_sha256": "a5e538c5d390ce7e8b02eb66c66b96d7362faf6d8c83e135dfcc2bd7fb887411",
+  "limitation": "Unused full-control cache returns are hashed by runtime but not retained raw, as preregistered. Input nonmutation assertions are runtime receipts; returned cached-state prefix hashes independently reconstructed."
+}

@@ -1,0 +1,146 @@
+{
+  "status": "ACQUIRED_AND_BYTE_IDENTITY_VERIFIED_PENDING_INDEPENDENT_AUDIT",
+  "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+  "model": "EleutherAI/pythia-14m",
+  "artifact_directory": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original",
+  "files": [
+    {
+      "name": "README.md",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/README.md",
+      "bytes": 10560,
+      "sha256": "d1f2cf1d5181daedeaa70208ddd5cc5251867bde9acf6db7bb45a2265e25e163",
+      "git_blob_sha1": "b92833bc3eb40571a1a09c7f15318f2edf990ed9",
+      "expected_git_blob": "b92833bc3eb40571a1a09c7f15318f2edf990ed9",
+      "identity_check": "git_blob_sha1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/README.md",
+      "response": {
+        "http_status": 200,
+        "etag": "\"b92833bc3eb40571a1a09c7f15318f2edf990ed9\"",
+        "x_repo_commit": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "attempt": 1
+      },
+      "mode": "0444"
+    },
+    {
+      "name": "config.json",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/config.json",
+      "bytes": 698,
+      "sha256": "f97f966a66c444890ed461fff2a51eefb15d74303df05b948124719f199b0b17",
+      "git_blob_sha1": "d79c7e3f60eb0966575057b690330e3d6d4fcd5c",
+      "expected_git_blob": "d79c7e3f60eb0966575057b690330e3d6d4fcd5c",
+      "identity_check": "git_blob_sha1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/config.json",
+      "response": {
+        "http_status": 200,
+        "etag": "\"d79c7e3f60eb0966575057b690330e3d6d4fcd5c\"",
+        "x_repo_commit": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "attempt": 1
+      },
+      "mode": "0444"
+    },
+    {
+      "name": "generation_config.json",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/generation_config.json",
+      "bytes": 111,
+      "sha256": "494cbba887cc299273f0c54d7612596918e74c7881a27cbd95e4e7e2464ea090",
+      "git_blob_sha1": "59134f8bfb20c3e1fcb4365e72d1958a2ee4e3b9",
+      "expected_git_blob": "59134f8bfb20c3e1fcb4365e72d1958a2ee4e3b9",
+      "identity_check": "git_blob_sha1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/generation_config.json",
+      "response": {
+        "http_status": 200,
+        "etag": "\"59134f8bfb20c3e1fcb4365e72d1958a2ee4e3b9\"",
+        "x_repo_commit": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "attempt": 1
+      },
+      "mode": "0444"
+    },
+    {
+      "name": "model.safetensors",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/model.safetensors",
+      "bytes": 28143920,
+      "sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+      "git_blob_sha1": "0f1ea037853db4226f685e924f00929267277d9f",
+      "expected_git_blob": "7a9e83ddb5b2414bc5a3af483260bb7f3fc3d265",
+      "identity_check": "lfs_sha256",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/model.safetensors",
+      "response": {
+        "http_status": 200,
+        "etag": "\"9ed20a24980ebb7d3fb21ff193d88f70fe521293472e2a9fb71283283f1c43e1\"",
+        "x_repo_commit": null,
+        "attempt": 1
+      },
+      "mode": "0444"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/special_tokens_map.json",
+      "bytes": 441,
+      "sha256": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+      "git_blob_sha1": "7fb88369a36878182d8a7d1d9249cca0f6093b1a",
+      "expected_git_blob": "7fb88369a36878182d8a7d1d9249cca0f6093b1a",
+      "identity_check": "git_blob_sha1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/special_tokens_map.json",
+      "response": {
+        "http_status": 200,
+        "etag": "\"7fb88369a36878182d8a7d1d9249cca0f6093b1a\"",
+        "x_repo_commit": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "attempt": 1
+      },
+      "mode": "0444"
+    },
+    {
+      "name": "tokenizer.json",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/tokenizer.json",
+      "bytes": 2114042,
+      "sha256": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+      "git_blob_sha1": "eb39a3d940ed41b696b46287f39ba3b76aad03f6",
+      "expected_git_blob": "eb39a3d940ed41b696b46287f39ba3b76aad03f6",
+      "identity_check": "git_blob_sha1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/tokenizer.json",
+      "response": {
+        "http_status": 200,
+        "etag": "\"eb39a3d940ed41b696b46287f39ba3b76aad03f6\"",
+        "x_repo_commit": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "attempt": 1
+      },
+      "mode": "0444"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/tokenizer_config.json",
+      "bytes": 4834,
+      "sha256": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809",
+      "git_blob_sha1": "f4028db2dc43c02072d73bb93b4cdadf162588a3",
+      "expected_git_blob": "f4028db2dc43c02072d73bb93b4cdadf162588a3",
+      "identity_check": "git_blob_sha1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/tokenizer_config.json",
+      "response": {
+        "http_status": 200,
+        "etag": "\"f4028db2dc43c02072d73bb93b4cdadf162588a3\"",
+        "x_repo_commit": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "attempt": 1
+      },
+      "mode": "0444"
+    }
+  ],
+  "total_artifact_bytes": 30274606,
+  "network_payload_bytes_including_metadata": 30278426,
+  "network_cap_bytes": 104857600,
+  "elapsed_seconds": 5.373983463039622,
+  "retrieved_utc": "2026-11-18T19:05:12.057456+00:00",
+  "tokenizer_source_files": [
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "special_tokens_map.json"
+  ],
+  "no_model_or_tokenizer_load": true,
+  "no_remote_code_or_install": true,
+  "license_evidence": "./evidence/transfer-002/acquisition/license-evidence.json",
+  "upstream_metadata_path": "./evidence/transfer-002/acquisition/upstream-model-metadata.json",
+  "selection_verifier_sha256": "ee6e2b2580a675aea3e5bf75a430800beff5f1bb968e958b79b9c7d95527821b",
+  "limitations": [
+    "Byte integrity and metadata provenance only; tensor accounting, model loading, tokenization and behavior are unexecuted.",
+    "Permissions are read-only under ordinary writes, not cryptographic immutability; owner can change them."
+  ]
+}

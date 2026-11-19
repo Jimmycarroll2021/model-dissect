@@ -1,0 +1,7 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "0039d3898e22390e7e777c659c63f1ad9756fcec237dbac28e6a19da119da1ef",
+  "review_sha256": "ff37c87e6c7f919cd225b19a97d4d57c3c5642969724ea77df86494d03a5c8df",
+  "scope": "Exactly3calls4positions transparent canonical-QKV first-block diagnostic",
+  "reviewed_utc": "2026-11-18T19:49:47.650756+00:00"
+}

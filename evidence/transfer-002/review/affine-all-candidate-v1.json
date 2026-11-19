@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS_ALL_AFFINE_CANDIDATE_BUILD_ONLY",
+  "reviewed_utc": "2026-11-18T19:52:34.405244+00:00",
+  "checks": {
+    "manifest": true,
+    "files": true,
+    "base_unchanged": true,
+    "only_linear_override": true
+  },
+  "manifest_sha256": "d748562cc952bb0d5c38f578a45b3c6320e5da0083e58277c7181b14673a883f",
+  "source_sha256": "387d14fa848f6c17c2cdba5c1bb95b896ef4b6ea465d5796cd13251ba886ee00",
+  "tests": "3 focused synthetic tests independently passed",
+  "source_review": [
+    "Only _linear overridden; original forward/normalization/RoPE/masking/attention/cache logic inherited unchanged.",
+    "All real affine rows use [real,zero] FP32 pair and discard dummy output before returning.",
+    "Optional biases preserved; untied full vocabulary projection included.",
+    "No native/reference mathematical imports or helper sharing.",
+    "Query-only cached input geometry and history preservation covered by focused tests."
+  ],
+  "limits": [
+    "No target run in candidate review.",
+    "All-affine mode has not passed native anchors or whole-model cache/full checks.",
+    "Canonicalizing MLP contraction/output is design consistency, not isolated causal proof."
+  ]
+}

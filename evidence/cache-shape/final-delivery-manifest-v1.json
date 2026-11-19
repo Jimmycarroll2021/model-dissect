@@ -1,0 +1,35 @@
+{
+  "status": "PENDING_INDEPENDENT_DOCUMENT_REVIEW",
+  "files": [
+    {
+      "path": "./docs/cache-shape-result.md",
+      "sha256": "4bb86337c8760ff9863ddc42e62968bbf35d6debd5f963aab71b8ded8ea9d6fe"
+    },
+    {
+      "path": "./evidence/cache-shape/review/independent-repeat-final-v1.json",
+      "sha256": "7116e8136467817ae65dfad865b620da0fa89b66cc50bdb3050177e086ddc758"
+    },
+    {
+      "path": "./evidence/cache-shape/protocol-v1.md",
+      "sha256": "6adec9daaf1d1285a41777f8aa18483cdb14bbffe15262deb34e5ff8542b1962"
+    },
+    {
+      "path": "./evidence/cache-shape/candidate-manifest-v2.json",
+      "sha256": "7d340537e0efd206d200f53eeca2891b65da90b386423e8d83d2f30e7ce40e53"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118/runs/cache-shape-producer-v1/result.json",
+      "sha256": "44099a1030f33763d6f24b5ec4dd672fd0eaef74245c4d98371eca4fac5a9c50"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118/runs/cache-shape-independent-v1/result.json",
+      "sha256": "784b933f5c3896e524797c40842d8163817a2cdde20aeb9adf9702ce1eedd01f"
+    }
+  ],
+  "mutable_state_excluded": [
+    "TASK_STATE.md",
+    "CASE_FACTS.md",
+    "docs/reverse-engineering-goal.md"
+  ],
+  "scope": "Limited shape fixture only, not original full R2; broader goal active"
+}

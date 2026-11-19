@@ -1,0 +1,82 @@
+{
+  "status": "FAIL_NATIVE_GPU_FEASIBILITY",
+  "sha256": "9d62e9cbbb4b18fb9e2155eed0247c10f4684864dd8a7b6d28fd24a8e2639940",
+  "rows": 688,
+  "failed_rows": 30,
+  "native_prefill_failed": 0,
+  "fail_modes": {
+    "cache-full-0": 6,
+    "cache-full-1": 9,
+    "cache-full-3": 12,
+    "cache-full-2": 3
+  },
+  "fail_sites": {
+    "final": 6,
+    "logits": 24
+  },
+  "worst_tolerance_ratio": 1.8276290893554688,
+  "top1_mismatches": 0,
+  "finite": true,
+  "tokens": 8807,
+  "calls": 332,
+  "peak_allocated_bytes": 376866304,
+  "peak_reserved_bytes": 423624704,
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "device_total_memory": 25217400832,
+    "visible_uuid": "GPU-f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+    "device_uuid": "f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+    "threads": 2,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "float32_matmul_precision": "highest",
+    "deterministic": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "autocast": false,
+    "allocator_limit_bytes": 2147483648,
+    "env": {
+      "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+      "NVIDIA_TF32_OVERRIDE": "0",
+      "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": null
+    }
+  },
+  "guard": {
+    "id": "gpu-native-v2",
+    "role": "evaluation",
+    "tokens_reserved": 9000,
+    "argv": [
+      "python",
+      "-m",
+      "oracle.gpu_native_check",
+      "--output",
+      "runs/continuation/gpu-native-v2.json"
+    ],
+    "start": 1794901799.1789727,
+    "status": "failed",
+    "backend": "cuda",
+    "gpu_seconds": 7.983890054980293,
+    "gpu_device": {
+      "uuid": "GPU-f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "total_mib": 24564,
+      "free_mib": 22999
+    },
+    "gpu_seconds_reserved": 120.0,
+    "gpu_process_cap_mib": 3072,
+    "gpu_allocator_cap_bytes": 2147483648,
+    "gpu_process_peak_mib": 886,
+    "pid": 2115389,
+    "exit_code": 1,
+    "end": 1794901807.199734,
+    "wall_seconds": 7.983890054980293,
+    "cpu_seconds": 8.974042,
+    "peak_child_rss_kib": 1678776,
+    "disk_free_bytes": 2800537600,
+    "project_bytes": 161522773
+  },
+  "tokens_reserved_total": 125116,
+  "gpu_seconds_total": 12.621721199015155,
+  "gpu_seconds_reserved_total": 240.0
+}

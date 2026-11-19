@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_REPEAT",
+  "verdict": "SUPPORTED_BOUNDED_HEAD_MEDIATION",
+  "candidate_manifest_sha256": "e8304753794b8f92a9e4bc7d93ed4f7c1dc532ef6b13cecbca14c5b45a1471e6",
+  "runner_sha256": "56118f50556dc10eaf9f5f01337c0c4499d00f4d1f00d87491c213c033da4458",
+  "guard_sha256": "18db6242c07ab23831c769bb90152c0ee1ebfbfcbb2ebb3ef2d8ee7a6aee1d4e",
+  "policy_sha256": "843532ba84403425853fb2fa27b6ade14e8e020c7df4616e17be5cebfe9af590",
+  "producer_sha256": "00d301ddfdefeab2ee927f258624997883a962cc9ab368ff82b18b79ffb786d5",
+  "independent_sha256": "8e18729ba9ff0a78085b2a1a7db7380a80e970d0357a08a8b21514a0c1c14d67",
+  "independent_admission_sha256": "e04a0acee763b0316283e4f2b3213386c2c4eb28161c543ab7b104ffbf29f7a1",
+  "independent_raw_audit_sha256": "c6e48b05d0a46971865d153f3f6146a59f9138b74dcf1c2e5f21f79c3c224529",
+  "ledger_sha256": "58ddceb824689b72a05242cbe4ab7ffd0aa7b5d2e6e840627394d53742a04f7a",
+  "all1480_call_journal_fullvector_hashes_match": true,
+  "native52_128_all_boundary_tensors_exact": true,
+  "parity_prepared_instrumentation_records_exact": true,
+  "all512_dev_scores_selection_allheldout_traces_exact": true,
+  "both_run_weights_unchanged_checks_pass": true,
+  "all_admission1563_file_hashes_preserved": true,
+  "five_histories_unchanged": true,
+  "failed295_call_artifacts_unchanged": true,
+  "selected_head_zero_based": [
+    6,
+    2
+  ],
+  "control_zero_based": [
+    6,
+    5
+  ],
+  "development_eligible": 8,
+  "heldout": {
+    "eligible": 16,
+    "positive": 16,
+    "median_recovery": 0.5534745383939315,
+    "median_advantage": 0.5535074254291052,
+    "sign_test": {
+      "n": 16,
+      "positive": 16,
+      "null_p": 0.5,
+      "one_sided_probability": 1.52587890625e-05,
+      "ties_count_as_failure": true,
+      "descriptive_only": true
+    }
+  },
+  "posthoc_top1_descriptive": {
+    "target": {
+      "1": {
+        "donor_digit": 9,
+        "original_digit": 3
+      },
+      "0": {
+        "donor_digit": 11,
+        "original_digit": 4
+      }
+    },
+    "control": {
+      "1": {
+        "donor_digit": 0,
+        "original_digit": 16
+      },
+      "0": {
+        "donor_digit": 0,
+        "original_digit": 16
+      }
+    }
+  },
+  "heldout_target_min_recovery_range": [
+    0.4320575127490965,
+    0.6506104042720143
+  ],
+  "actual_calls_each": 1480,
+  "actual_positions_each": 76632,
+  "reserved_each": 76800,
+  "failed_reservation_retained": 78112,
+  "lifetime_reserved": 1035920,
+  "approved_ceiling": 1038544,
+  "unallocated": 2624,
+  "phase_logical_bytes": 243191768,
+  "active_runs": 0,
+  "repeat_wall_seconds": 64.68432513892185,
+  "repeat_peak_conservative_owned_rss_bytes": 8102506496,
+  "limits": [
+    "~55.35% is median minimum bidirectional normalized clean/corrupt digit-logit-gap recovery, not55%ofmodel/circuit/accuracy.",
+    "Head numbers zero-based; receiver is finalprefixposition51, sourceedge not isolated.",
+    "Same-layer weak control selected on development; not random-population estimate or uniqueness evidence.",
+    "Not necessity, arithmetic competence, whole-response quality, repetition or EOS explanation.",
+    "Prior failed developmental exposure preserved; no post-failure selection/prompt/threshold change.",
+    "Descriptive sign probability1/65536 is not random-sample causal-proof calibration."
+  ],
+  "next_action": "Deliver bounded verified mechanism result; no additional model execution authorized by this receipt."
+}

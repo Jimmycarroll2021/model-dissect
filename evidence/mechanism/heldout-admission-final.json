@@ -1,0 +1,34 @@
+{
+  "status": "success",
+  "verdict": "PASS_STATIC_HELDOUT_ADMISSION",
+  "reviewed_at_epoch": 1794907891.684059,
+  "packet": "evidence/mechanism/evaluator-heldout-packet-v1.json",
+  "packet_sha256": "f8bbc7949cb2c7712cfbc6fc21aa16f00cc3648da73e7be545f07942ced40d7f",
+  "helper_sha256": "7cbdb34a4bcc216b5f713299d1a74ad72a49d6e9daf1b1ae3660e3869a58c92b",
+  "development_audit_sha256": "e3e0321061a5028d0c6de70bd429eb8d8f8b91d84a5ed695ab6ff339aba9151a",
+  "binding_checks_passed": [
+    "scientific_protocol",
+    "candidate_manifest",
+    "inputs",
+    "m2_gate",
+    "config",
+    "environment",
+    "checkpoint",
+    "hypothesis",
+    "development_evaluation"
+  ],
+  "candidate_files_matched": 15,
+  "input_positions": 1985,
+  "model_calls": 160,
+  "timeout_seconds": 120,
+  "mode": "CPU FP32 full-prefill",
+  "development_verdict": "inconclusive; not an outcome gate",
+  "blocking_findings": [],
+  "prior_review": "evidence/mechanism/heldout-admission-review.json",
+  "limitations": [
+    "Static packet admission only; no model execution in review.",
+    "Live guard still must establish fresh run ID, no active run, original remaining deadline, reservation and disk reserve.",
+    "Keep development unrelated zero-baseline-accuracy limitation visible."
+  ],
+  "next_action": "Assigned evaluator may execute exact packet once through shared guard, save all rows, then await separate independent repeat."
+}

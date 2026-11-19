@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS_COORDINATION_CLOSURE_STANDBY",
+  "reviewed_utc": "2026-11-19T01:00:15.071965+00:00",
+  "overlay_sha256": "421d2caeb664cf7aad7b491e396fe6f892ce105b0fca6fd76dc20beccae79479",
+  "final_review_sha256": "a1b8bb85d061cc04cc2ada6d12555f06ea7533b4d57ee342273caabb497e161f",
+  "final_manifest_sha256": "f0b097d5183e1f256901b03c0355daaa98602d1e533da5b92bec9816db2af783",
+  "coordination_before_after_hashes_verified": 3,
+  "before_files_match_final_candidate_snapshots": true,
+  "changes": "Acceptance/standby annotations prepended, original historical content retained, T018 checkbox completed. No scientific verdict or scope changes.",
+  "immutable_manifest_files_rehashed_unchanged": 257,
+  "ledger_sha256_unchanged": "a2996e348a4c10636ac448426bea3a0acce820baca705ee8ea8bedbece6c8429",
+  "counts": {
+    "reservations": 9,
+    "completed": 9,
+    "unfinished": 0,
+    "reserved_process_seconds": 4320,
+    "reserved_positions": 86112,
+    "actual_positions": 24712,
+    "model_calls": 2612,
+    "active_target_executors": 0
+  },
+  "count_evidence": "Reused accepted final audit counts and unchanged ledger; no new live-runtime query or model work.",
+  "scope": "Three accepted scoped applications; Pythia strict cached/full failure and GPT2 qualified REFUTED retained. No fourth model or follow-up execution scheduled.",
+  "required_changes": [],
+  "runtime_or_tests_executed": false,
+  "source_or_delivery_docs_edited": false,
+  "next_action": "Stop; standby. No further review cycles required."
+}

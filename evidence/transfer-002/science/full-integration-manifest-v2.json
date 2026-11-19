@@ -1,0 +1,46 @@
+{
+  "status": "READY_FOR_REVIEW_NOT_RUNTIME_ADMITTED",
+  "files": {
+    "./src/minimind_re/transfer/science_full.py": "f045b70c8101f8485db97e844fb5804e08da6390b4b67385f820cd397c27973f",
+    "./evidence/transfer-002/science/full-implementation-manifest-v1.json": "fbb0c4f6c6ef96b44eef234ee2246ae523d875bb29442c8f68dfa2ab13221170",
+    "./src/minimind_re/transfer/science_full_run.py": "e64fdfc3d2b8d1d5947ee8ff82dcf50d8daadc3d9dee7a1300670106040d23e4",
+    "./tests/transfer/test_science_full_run.py": "4ede6fc37355c18e24ee3e126d1084abed4c6e6f34e13ae8e999c973788e45ac",
+    "./evidence/transfer-002/science/full-integration-tests-v1.txt": "f62e66c8d3d378d0908d75da496ba75c0ec3085859c2d096f99f0e24b809cc0a",
+    "./specs/002-model-transfer/internal-protocol-proposal.md": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454"
+  },
+  "packets": {
+    "./evidence/transfer-002/science/science-full-producer-v2.packet.json": "76ce25d8a9c88b7bb34780c91bf6e5e970dc4c95a0c9a327fbe7283cdbc8a7ff",
+    "./evidence/transfer-002/science/science-full-independent-v2.packet.json": "463504497826e93ecb2a77715668c3f24316bfd6f77dcb0d01fa43a4f5b5b22b"
+  },
+  "tests": "3 model-free testsPASS nativeparameter mutation detection,originalartifact snapshot,supervisedCLI wiring,admissiondenial",
+  "scope": "T2S_FULL_PREFILL_STRICT_T2_REMAINS_FAIL",
+  "per_role": {
+    "calls": 389,
+    "actual_positions": 12448,
+    "reserved_positions": 12500,
+    "seconds": 300,
+    "disk_bytes": 1073741824
+  },
+  "ledger_snapshot": {
+    "sha256": "52c106ca0c64065d81333a017b56804b80649a0204864d13ed0e7937b1cb8b39",
+    "reserved": {
+      "positions": 34450,
+      "seconds": 1545,
+      "disk_bytes": 8690597888
+    },
+    "with_both_new_packets": {
+      "positions": 59450,
+      "seconds": 2145,
+      "disk_bytes": 10838081536
+    },
+    "captured_unix": 1795032346.505991,
+    "all_old_failures_remain_charged": true
+  },
+  "integrity": "Native parameter digest before/after and all bound original artifacts before/after saved in finally,includingfailure;noKVreuse delegatedtoindependentlyreviewedscience_full",
+  "limitations": [
+    "No targetexecution",
+    "Independent realserialization storage admission remainsrequired",
+    "No cachedT2pass or wholetransfercompletion claim"
+  ],
+  "correction": "Rebind approved full-prefill protocol amendment; v1 packets preserved not admitted; executable source unchanged"
+}

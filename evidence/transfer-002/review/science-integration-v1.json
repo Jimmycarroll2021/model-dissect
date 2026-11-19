@@ -1,0 +1,51 @@
+{
+  "verdict": "PASS_INTEGRATION_FIXTURE_FREEZE_ONLY",
+  "reviewed_utc": "2026-11-18T19:27:10.421165+00:00",
+  "integration_manifest_sha256": "e6326edac49e5d42bf43501f00d5fd532f4b283014a948c3033c0dabd8740405",
+  "source_sha256": "f398f52846d88ce67919354f302644f91e28fab7921f8b3c60fc4efbc0b9c7f9",
+  "fixture_packet_sha256": "d74bc71e5ffe4e3e9e425dd2b694e08973ceccfd2f29b6a70b3fd72c76e5ff65",
+  "required_changes": [],
+  "checks": [
+    "Exact manifest and all bound integration files match;33 non-checkpoint packet identities independently rehashed",
+    "Original checkpoint digest reused from acquisition receipt; guard rehashes every identity before fixture operation",
+    "Safe local tokenizers.Tokenizer.from_file after exact hash verification, no remote code/download, explicit no_padding/no_truncation and add_special_tokens=False",
+    "Fixture freeze preserves proposal24 text pairs/order/splits; width1..32 enforced, padID0 and mask/logical positions correct;33-token input independently rejected before output directory creation",
+    "Parameter digest frames names/shapes/dtypes and all contiguous CPU parameter bytes; independent toy weight and name changes detected; author bias-mutation test passed",
+    "Actual native parameter callback invoked by science runner before/after; delayed heldout JSON parsing follows fsynced selection while raw-byte integrity checks precede execution",
+    "Guard reused unchanged with supervisor-parent checks, exact packet admission, nonblocking phase lock, immutable run IDs, failed-reservation retention and aggregate limits",
+    "Science execution templates explicitly rejected and not admitted by this receipt",
+    "Prior complete341-call real-array synthetic science build reused for serialization evidence"
+  ],
+  "tests": {
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m pytest -q tests/transfer/test_science_integration.py",
+    "result": "3 passed in2.41s",
+    "independent_checks": "Real toy parameter weight/name mutation detection; exact32-token fixture freeze over48 texts;33-token stop without truncation or output creation"
+  },
+  "ledger_snapshot": {
+    "reserved_positions": 34400,
+    "reserved_seconds": 1020,
+    "active_runs": [
+      "numerical-producer-v3"
+    ],
+    "live_snapshot_only": true
+  },
+  "planned_accounting": {
+    "numeric_and_science_reserved_positions": 90800,
+    "static_numeric_science_plus_fixture_seconds": 2760,
+    "position_cap": 250000,
+    "seconds_cap": 3600,
+    "remaining_planned_positions": 159200,
+    "remaining_planned_seconds": 840,
+    "fixture_freeze_positions": 0,
+    "fixture_freeze_seconds": 120,
+    "fixture_freeze_disk_bytes": 16777216
+  },
+  "science_runtime_admission": "NOT_ADMISSIBLE: actual frozen fixture receipts and T2PASS plus independent exact science packet review required",
+  "limits": [
+    "No real tokenizer instantiated, no target checkpoint/model loaded, no target inference",
+    "Checkpoint payload not re-read in this review; acquisition identity reused and guard will revalidate before operation",
+    "Integration tests stub NumPy writes; prior science-build-v1 review supplies actual82MB serialization proof",
+    "Parameter digest covers named parameters, not nonparameter buffers; target native adapter remains separately reviewed",
+    "Active numeric process must finish/reconcile before serialized fixture launch; no interruption or concurrent operation authorized"
+  ]
+}

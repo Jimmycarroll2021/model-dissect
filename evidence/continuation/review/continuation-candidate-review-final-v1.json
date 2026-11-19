@@ -1,0 +1,40 @@
+{
+  "status": "PASS_CONTINUATION_PRODUCER_ADMISSION",
+  "manifest_sha256": "729467fec18f7362622d7e57c6b1d123988dfbdd9d086de920622c4a509f8d16",
+  "staged_file_count": 24,
+  "project_file_count": 9,
+  "independent_tests": 11,
+  "source_unchanged_since_tests": true,
+  "all_three_history_chains": "PASS",
+  "read_only_guard_admission_history_disk": "PASS",
+  "phase_clock": "NOT_STARTED",
+  "model_or_tokenizer_loads": 0,
+  "admission_path": "./evidence/continuation/review/continuation-producer-admission-v1.json",
+  "admission_sha256": "13f1118d56f8c411f167b3daebeb8dc9f8e941fa5d3fa92675d937aa05e227e0",
+  "argv": [
+    "/usr/bin/python",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation_guard.py",
+    "--workspace",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118",
+    "--policy",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation-policy.json",
+    "--policy-hash",
+    "4061f8dd9acf1cbd72c370dd1c864a217702ae3860eb7c87230a42d34445cc3a",
+    "--admission",
+    "./evidence/continuation/review/continuation-producer-admission-v1.json",
+    "--run-id",
+    "continuation-producer-v1",
+    "--kind",
+    "model",
+    "--positions",
+    "176640",
+    "--timeout",
+    "900"
+  ],
+  "shell_command": "PYTHONDONTWRITEBYTECODE=1 /usr/bin/python EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation_guard.py --workspace EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118 --policy EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation-policy.json --policy-hash 4061f8dd9acf1cbd72c370dd1c864a217702ae3860eb7c87230a42d34445cc3a --admission ./evidence/continuation/review/continuation-producer-admission-v1.json --run-id continuation-producer-v1 --kind model --positions 176640 --timeout 900",
+  "limits": [
+    "Live guard checks still required; reference parity must pass before generation.",
+    "No current mathematical correctness/termination outcome or whole-goal completion established.",
+    "Independent repeat and separate semantic grades remain required."
+  ]
+}

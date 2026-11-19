@@ -1,0 +1,28 @@
+# Independent frozen-design review v1
+
+Verdict: PASS_FROZEN_DESIGN_EXECUTION_BLOCKED.
+
+Reviewed exact freeze manifest SHA25603b42cb68c546709b3da3791f193069f8828e5ad988b78b2c43cd942d8968a73, frozen2026-11-19T07:17:59.198638+00:00. Selected claim SHAb3500849251ffd2e7acb93fa58377f735fe3c5d5466796317bb98e06e58f5590; corpus SHAe69421dadee947ba7bd49e253affac00f40a5276e3676ddba064c5779fcc9855. This verdict accepts prospective scientific design only, not complete executable preregistration, runtime admission, implemented adapter, or scientific outcome.
+
+Independent checks: all12 manifest artifact/external-identity hashes match, all supplied sizes match. Direct saved-graph parsing verifies node20_15589_8, layer20, context8(final ` is`), activation52 and largest positive direct feature edge to Austin6.5; runner-up3.53125. Austin target27_22605_8 token22605 probability0.330078125. Official saved source schema1 decoding and independent integer Cantor calculation yield layer20/index15589 from121843834; saved modal DOM separately names source20-gemmascope-transcoder-16k/index15589. Current-main source is not asserted deployed-source identity. Broader geography/address annotation is preserved as a reason not to call Texas selectivity proven. Graph source/feature identity resolved; exact weights still unknown.
+
+Corpus check:16 unique Texas prompts,16 unique California counterparts, four non-target prompts; Dallas absent. Shared-template finite-corpus limitation explicit. Deterministic matched-feature and seeded norm control construction uses baselines/annotations, not observed intervention outcomes; missing match is INCOMPLETE without widening. No selective fixture removal or replacement. Frozen authority order resolves chronological proposal/template differences. Former donor-rescue ambiguity fixed: cross-prompt patch secondary, restoration technical only. SC002 explicitly retains complete identity/data/control requirements for execution-ready admission.
+
+Thresholds reviewed:
+- All16 Texas: finite baseline, coefficient>1e-6, Austin-minus-Sacramento contrast>=0.5. All16 California: reverse contrast>=0.5. Any failed eligibility invalidates whole fixed-corpus evaluation.
+- Target ablation median contrast decrease>=0.5logit.
+- For each matched-feature/random control: median target-minus-control>=0.25logit AND positive advantage on>=12/16.
+- Each California and four capability contrast changes <=0.1absolute logit.
+- Native/editable/no-op/identity/restoration/rescue: elementwise1e-5absolute+1e-4relative, finite, same argmax; untouched boundary coefficients/positions byte-identical.
+- Replacement separately: relative per-layer L2<=.10 with1e-6 denominator floor, full-output KL<=.01nats, contrast discrepancy<=.1logit.
+- Independent complete rerun:1e-5absolute+1e-4relative metric agreement and same eligibility/verdict. Bootstrap descriptive only.
+
+Taxonomy audit: zero/inactive target on any Texas baseline or wrong/insufficient baseline contrast is INCOMPLETE for this predeclared eligibility-conditioned design, not evidence of a zero causal effect and not permission to replace that item. Every such failure remains reportable evidence against applicability of the graph-derived hypothesis to the fixed bank. Conversely, a valid active feature with adequate baseline and complete valid measurements whose causal effect is zero or below primary thresholds is REFUTED. California inactivity is permitted and explicitly only limited specificity evidence. No graph-derived feature should be declared generally causal based on inactivity passing specificity. Degenerate/invalid control normalization remains a declared INCOMPLETE outcome; runtime binding must not silently widen or discard controls. No eligible-subset reanalysis may be reported as the frozen experiment.
+
+No remaining design-review blocker for the requested graph-plus-preregistered-scientific-threshold outcome. Execution remains BLOCKED on exact model/tokenizer/transcoder files/revisions and backend identity; token arrays, Sacramento/capability token IDs and single-token validity; layer/encoder/bias/decoder conventions; implemented, independently verified native-feature decoded-delta adapter preserving original residual and downstream computation; frozen dictionary annotation identity and executable control construction; actual CPU FP32 support, reconstruction/fidelity evidence, full raw captures and independent repeat; and demonstrated resource accounting/admission. Bounds of1024calls,65536positions,1800seconds,24GiB RAM,1GiB outputs per role are ceilings only, not feasibility claims. Unsupported binding must preserve this version blocked and use an explicit prospective new version if necessary.
+
+Preservation check: independently rehashed all257 files in prior transfer003 final-delivery manifest; zero mismatches. Bound manifest SHA f0b097d5183e1f256901b03c0355daaa98602d1e533da5b92bec9816db2af783. This covers manifest-bound files, not every workspace file or external model weight.
+
+Evidence boundaries: reviewer performed local static/source/data/hash checks only. No model/tokenizer loading, installation, graph generation, test inference or intervention. One generation/zero intervention history is supported by producer receipts and frozen records, not an independent provider-side activity audit. Prior scholarly validation exists; this work is replication/integration plus prospective independent testing, not first validation.
+
+Reproducible receipts: final-identity-checks.json; preservation-corpus-checks.json; preliminary-review.md. Reviewer writes confined to this review directory in this assignment. Earlier research leaf receipt is separately identified.

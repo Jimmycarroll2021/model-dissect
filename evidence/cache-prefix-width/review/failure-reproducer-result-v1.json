@@ -1,0 +1,26 @@
+{
+  "status": "REPRODUCED_INVALID_COMPLETENESS_PREDICATE",
+  "context": "torch.inference_mode outer context plus decorated synthetic callable, matching production execution mode",
+  "ops": [
+    "aten.linear.default",
+    "aten.transpose.int",
+    "aten.matmul.default",
+    "aten.ones.default",
+    "aten.triu.default",
+    "aten.masked_fill.Scalar",
+    "aten.softmax.int",
+    "aten.matmul.default",
+    "aten.silu.default",
+    "aten.linear.default",
+    "aten.add.Tensor"
+  ],
+  "operation_count": 11,
+  "actual_linear_and_matmul_present": true,
+  "old_any_mm_predicate": false,
+  "old_softmax_predicate": true,
+  "old_silu_predicate": true,
+  "trace_restored": true,
+  "checkpoint_loads": 0,
+  "target_model_calls": 0,
+  "source_sha256": "5da4fa5d0539f8549c9c7a00af51669823b4a0505f8a4783e849256f15e29977"
+}

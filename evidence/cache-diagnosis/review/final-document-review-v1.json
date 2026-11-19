@@ -1,0 +1,45 @@
+{
+  "status": "PASS_CACHE_FINAL_DOCUMENT_REVIEW",
+  "reviewed_utc": "2026-11-18T09:19:21.268282+00:00",
+  "manifest_sha256": "82340e44443245bd3aff8ff39fd61f7946227662305f96088c3d880220bc3d88",
+  "report_sha256": "db2b9b68edc595094184c379409c8a7b7dba6a6719729d3ac17f18db04132828",
+  "bound_files": [
+    {
+      "path": "./docs/cache-numerical-diagnosis.md",
+      "sha256": "db2b9b68edc595094184c379409c8a7b7dba6a6719729d3ac17f18db04132828"
+    },
+    {
+      "path": "./evidence/cache-diagnosis/producer-execution-v1.json",
+      "sha256": "285dcf8a8eea93c9d947637c705d64b9d8ed4b271ecc08e613dd34c8338f6c5c"
+    },
+    {
+      "path": "./evidence/cache-diagnosis/review/independent-repeat-final-v1.json",
+      "sha256": "c6e59c77278813c755385b56ee5f59aa9dc3fa5d2b056b48c2e09eaba5cd1309"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/result.json",
+      "sha256": "c950fab6154821918b2cc7f981dd9009b1662cf2c9683fe4b67e6487e48f913c"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-independent-v1/result.json",
+      "sha256": "bc2adb56a15f64951a3e8052001539d4172697165e9df8e75cafa28b9f96949f"
+    }
+  ],
+  "checks": [
+    "All five manifest identities match, including independent final receipt and both raw results.",
+    "400 repeated tensors and48 recomputed primitive schedules per run match audit scope.",
+    "All tabulated boundary errors, seven failed indices and maximum tolerance ratio match raw comparison evidence.",
+    "Layer0 QKV equality and subsequent attention difference correctly distinguished from later-layer operand drift and unique causation.",
+    "Shape-dependent numerical contributor described without claiming sole cause, undocumented kernel identification, repair or R2 PASS.",
+    "Actual88 model positions/20calls and512reserved are distinct; lifetime1036432 and2112remaining correct under approved1038544cap.",
+    "Historical clocks/chains and checkpoint file claims scoped to completed review; in-memory parameter hashing explicitly uninstrumented.",
+    "Broader goal remains unfinished; proposed repair and model-free preparation confer no runtime admission."
+  ],
+  "findings": [],
+  "authoritative_closure": "This receipt closes the frozen report and manifest pending document review; no frozen-file rewrite required.",
+  "limits": [
+    "Document and saved evidence review only; zero model calls or numerical implementation changes.",
+    "Other linked scientific work retains its separate exact review scope."
+  ],
+  "user_report_approved": true
+}

@@ -1,0 +1,225 @@
+{
+  "status": "PREREGISTERED_DESIGN_PENDING_INDEPENDENT_REVIEW_AND_TOKEN_FREEZE",
+  "protocol_path": "specs/003-model-dissection/internal-protocol-v1.md",
+  "protocol_sha256": "5e72dbaa6916223862ba31e60a74e65ab5aa15ac043b357230802d528ab0afb5",
+  "model_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "sites": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      11,
+      8
+    ]
+  ],
+  "fixtures": [
+    {
+      "id": "dev-01",
+      "split": "development",
+      "clean": "The code is red. The code is",
+      "corrupt": "The code is blue. The code is"
+    },
+    {
+      "id": "dev-02",
+      "split": "development",
+      "clean": "The key is green. The key is",
+      "corrupt": "The key is black. The key is"
+    },
+    {
+      "id": "dev-03",
+      "split": "development",
+      "clean": "The flag is white. The flag is",
+      "corrupt": "The flag is brown. The flag is"
+    },
+    {
+      "id": "dev-04",
+      "split": "development",
+      "clean": "The sign is pink. The sign is",
+      "corrupt": "The sign is gold. The sign is"
+    },
+    {
+      "id": "dev-05",
+      "split": "development",
+      "clean": "The box is blue. The box is",
+      "corrupt": "The box is red. The box is"
+    },
+    {
+      "id": "dev-06",
+      "split": "development",
+      "clean": "The bag is black. The bag is",
+      "corrupt": "The bag is green. The bag is"
+    },
+    {
+      "id": "dev-07",
+      "split": "development",
+      "clean": "The hat is brown. The hat is",
+      "corrupt": "The hat is white. The hat is"
+    },
+    {
+      "id": "dev-08",
+      "split": "development",
+      "clean": "The cup is gold. The cup is",
+      "corrupt": "The cup is pink. The cup is"
+    },
+    {
+      "id": "held-01",
+      "split": "heldout",
+      "clean": "The door is red. The door is",
+      "corrupt": "The door is blue. The door is"
+    },
+    {
+      "id": "held-02",
+      "split": "heldout",
+      "clean": "The wall is green. The wall is",
+      "corrupt": "The wall is black. The wall is"
+    },
+    {
+      "id": "held-03",
+      "split": "heldout",
+      "clean": "The car is white. The car is",
+      "corrupt": "The car is brown. The car is"
+    },
+    {
+      "id": "held-04",
+      "split": "heldout",
+      "clean": "The boat is pink. The boat is",
+      "corrupt": "The boat is gold. The boat is"
+    },
+    {
+      "id": "held-05",
+      "split": "heldout",
+      "clean": "The book is blue. The book is",
+      "corrupt": "The book is red. The book is"
+    },
+    {
+      "id": "held-06",
+      "split": "heldout",
+      "clean": "The shirt is black. The shirt is",
+      "corrupt": "The shirt is green. The shirt is"
+    },
+    {
+      "id": "held-07",
+      "split": "heldout",
+      "clean": "The coat is brown. The coat is",
+      "corrupt": "The coat is white. The coat is"
+    },
+    {
+      "id": "held-08",
+      "split": "heldout",
+      "clean": "The shoe is gold. The shoe is",
+      "corrupt": "The shoe is pink. The shoe is"
+    },
+    {
+      "id": "held-09",
+      "split": "heldout",
+      "clean": "The ball is red. The ball is",
+      "corrupt": "The ball is blue. The ball is"
+    },
+    {
+      "id": "held-10",
+      "split": "heldout",
+      "clean": "The card is green. The card is",
+      "corrupt": "The card is black. The card is"
+    },
+    {
+      "id": "held-11",
+      "split": "heldout",
+      "clean": "The pen is white. The pen is",
+      "corrupt": "The pen is brown. The pen is"
+    },
+    {
+      "id": "held-12",
+      "split": "heldout",
+      "clean": "The chair is pink. The chair is",
+      "corrupt": "The chair is gold. The chair is"
+    },
+    {
+      "id": "held-13",
+      "split": "heldout",
+      "clean": "The desk is blue. The desk is",
+      "corrupt": "The desk is red. The desk is"
+    },
+    {
+      "id": "held-14",
+      "split": "heldout",
+      "clean": "The room is black. The room is",
+      "corrupt": "The room is green. The room is"
+    },
+    {
+      "id": "held-15",
+      "split": "heldout",
+      "clean": "The house is brown. The house is",
+      "corrupt": "The house is white. The house is"
+    },
+    {
+      "id": "held-16",
+      "split": "heldout",
+      "clean": "The bus is gold. The bus is",
+      "corrupt": "The bus is pink. The bus is"
+    }
+  ],
+  "fixture_tokenization": "UNEXECUTED",
+  "calls_per_role": 1186,
+  "max_positions_per_role": 37952,
+  "reserved_positions_per_role": 40000,
+  "reserved_seconds_per_role": 1200,
+  "reserved_output_bytes_per_role": 1073741824,
+  "roles": [
+    "producer",
+    "independent_repeat"
+  ],
+  "bootstrap": {
+    "generator": "PCG64",
+    "seed": 20261119,
+    "iterations": 10000
+  },
+  "primary_thresholds": {
+    "eligible_held_pairs": 16,
+    "median_recovery_min": 0.2,
+    "median_advantage_min": 0.1,
+    "positive_advantage_pairs_min": 12
+  },
+  "runtime_admitted": false,
+  "model_loads_by_author": 0
+}

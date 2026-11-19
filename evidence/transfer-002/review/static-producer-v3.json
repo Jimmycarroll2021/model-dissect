@@ -1,0 +1,71 @@
+{
+  "verdict": "PASS_STATIC_PRODUCER_OUTPUT_AUDIT",
+  "reviewed_utc": "2026-11-18T19:25:05.165895+00:00",
+  "checks": {
+    "packet_identity": true,
+    "admission": true,
+    "code_identity": true,
+    "supervisor_success": true,
+    "ledger_zero_calls_completed": true,
+    "status": true,
+    "exhaustive_header_map": true,
+    "stored_parameters": true,
+    "views48": true,
+    "svd8": true,
+    "numeric_ids": true,
+    "exact_files": true,
+    "array_hashes": true,
+    "saved_view_statistics": true,
+    "payload_bytes": true
+  },
+  "atlas_sha256": "62afcae307704dbb4c5a107a29f3da25ef26a0c90805c6be3a29c8f792863968",
+  "supervisor_sha256": "bd7da8f1b0338e1fea5c92ebe44d0397f758e47b1d092c7e0051d40bacb72552",
+  "packet_sha256": "8a9e7e9d30103b380e5d6c62e6cc7d446d6258a63b918d3406f0d4475480a5ef",
+  "counts": {
+    "tensors": 76,
+    "parameters": 14067712,
+    "views": 48,
+    "svd_vectors": 8,
+    "view_payload_bytes": 3145728,
+    "model_positions": 0
+  },
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 674963456,
+    "elapsed": 1.5987743540899828,
+    "added_disk_bytes": 3247028,
+    "total_phase_disk_bytes": 3247028,
+    "packet_disk_limit": 16777216,
+    "phase_disk_limit": 25769803776
+  },
+  "producer_ledger_events": [
+    {
+      "disk_bytes": 16777216,
+      "event": "reserve",
+      "positions": 0,
+      "role": "producer",
+      "run_id": "static-producer-v3",
+      "seconds": 120,
+      "time": 1795029614.0263488,
+      "version": "transfer-guard-v3"
+    },
+    {
+      "actual_positions": 0,
+      "elapsed": 0.5896351559786126,
+      "event": "finish",
+      "inherited_self_rusage_highwater_bytes": 678612992,
+      "run_id": "static-producer-v3",
+      "sampled_owned_tree_rss_bytes": 674963456,
+      "status": "completed",
+      "time": 1795029614.5930371,
+      "version": "transfer-guard-v3"
+    }
+  ],
+  "limits": [
+    "Read-only audit of saved producer outputs, not independent target recomputation.",
+    "Finite tensor assertions reconciled against report/header; target weights were not loaded or recomputed in this audit.",
+    "Saved view hashes, finite values, minima/maxima/means independently checked; SVD ordering/length/finiteness checked, no target SVD recomputation.",
+    "Independent static execution and numerical parity remain separate. No target workload launched."
+  ]
+}

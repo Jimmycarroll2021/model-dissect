@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS_CANDIDATE_MODE_BUILD_ONLY",
+  "reviewed_utc": "2026-11-18T19:45:43.164643+00:00",
+  "checks": {
+    "manifest_identity": true,
+    "source_identity": true,
+    "all_files": true,
+    "unchanged_base": true,
+    "only_linear_overridden": true
+  },
+  "manifest_sha256": "a3ade66bb389a06f41b17d4958b9714d928bfc6e28b871cdad85272a952f027e",
+  "source_sha256": "aefe4086d236b8284dd87b63169dea8081bac31a10a573200d921fa34b3b0bf1",
+  "tests": "3 synthetic tests independently passed in0.98s",
+  "verified_behaviors": [
+    "Only names ending .attention.query_key_value use canonical path; all other affines delegate unchanged original primitive.",
+    "Each real query row forms CPU FP32 [2,H] paired input with zero dummy; row0 retained, original shape restored.",
+    "No reference or Transformers imports; inherited original expected-hash loader constructs subclass via cls.",
+    "Genuine cache path remains inherited: cached projection operates only on new query rows, historical prefix unchanged.",
+    "Dummy row discarded inside affine and never reaches attention/position/mask/cache logic.",
+    "Synthetic no-op/restoration and weight-preservation checks pass."
+  ],
+  "limits": [
+    "No target weights loaded or target forward run.",
+    "Original primitive probe used [1,2,H]; subclass uses [2,H]. Both represent two affine rows, but whole-model pilot must establish actual native anchor fidelity.",
+    "No guarantee of whole-model cache/full invariance; other primitive operations remain shape-dependent candidates.",
+    "Pilot reference source and combined exact packet require separate review/admission."
+  ]
+}

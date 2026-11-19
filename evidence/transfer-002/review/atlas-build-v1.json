@@ -1,0 +1,43 @@
+{
+  "verdict": "REQUIRED_CHANGES_DOCUMENT_EQUATIONS",
+  "reviewed_utc": "2026-11-18T19:15:32.036463+00:00",
+  "manifest_sha256": "540e7015fcc657fa8821ff8b3f21983e8904669b4c23a9503d95c626ab17cb6d",
+  "acquisition_receipt_sha256": "836f98f9234afa30961dafd3d2cf0a7b5d00ab950fe9dbb1708e985075c5134a",
+  "runner_sha256": "34eed1330166fb04a53c056b9d12453e668e61b5290b228feba96810ff53a27b",
+  "document_sha256": "26ab2f459dbd1a3f667cd9324391baae032db2a85c44db38538cdacd3323f96b",
+  "passed_checks": [
+    "Exact manifest identities and pinned installed Transformers source digest",
+    "76 table keys and shapes equal acquisition header; 14067712 values, F16 and separate embedding/output storage; vocabulary50304 with27 unmapped rows retained",
+    "Packed QKV head-major slices, four32-wide heads, first8 split-half rotary coordinates, parallel residual order, LayerNorm scales/biases, GELU and untied output match inspected source/config",
+    "Whole-tensor statistics include all entries; FP64 finite filtering bounded to65536-element chunks, nonfinite original values abort views",
+    "48 FP32 128x128 surrogates give3145728 raw bytes; first8 SVD views fixed to layer0 QK/OV head traversal; no full vocabulary square",
+    "Document explicitly omits LayerNorm/bias/context/partial-RoPE effects and makes no semantic/causal claim",
+    "No target payload run claimed; external guard and resource admission remain required"
+  ],
+  "tests": {
+    "producer_tests_command": "PYTHONPATH=src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m pytest -q tests/transfer/test_atlas.py",
+    "producer_tests_result": "3 passed in 0.66s",
+    "independent_toy": "Two-layer hidden8/head2/vocab7 synthetic fixture; NumPy float64 alternate-association direct QK and OV contractions compared against all8 runner views at rtol1e-4/atol1e-6; full tensor statistics independently compared; finite/nonfinite chunk test; all PASS",
+    "target_payload_loaded": false,
+    "model_forwards": 0,
+    "tokenizer_executions": 0,
+    "cpu_threads": 2
+  },
+  "required_changes": [
+    {
+      "id": "ATLAS-DOC-01",
+      "severity": "acceptance_gap",
+      "path": "docs/transfer-002-computation-map.md",
+      "requirement": "specs/002-model-transfer/spec.md User Story1: every tensor has dimensions, role, equation and provenance",
+      "finding": "Exhaustive table provides dimensions and roles, but core model equations are absent: LayerNorm mean/variance/epsilon/gamma/beta, affine biases, partial rotation, MLP and final projection are only prose descriptions. Explicit equations are supplied only for static QK/OV surrogate views.",
+      "requested_change": "Add compact source-cited equation section using row-vector convention, identifying tensor suffixes for LayerNorm, packed QKV, partial split-half RoPE, attention/output affine, parallel GELU MLP residual and final LayerNorm/output. No runtime needed."
+    }
+  ],
+  "limitations": [
+    "Not target atlas execution or T1 completion",
+    "No target finite statistics, views, spectral values or runtime memory/time measured",
+    "Current statistics include count/min/max/mean/L2/RMS, not standard deviation; no std claim exists in protocol",
+    "Budget512MiB extra/120s/16MiB is unmeasured proposal; caller must freeze dimensions, vocabulary IDs, SVD budget, dependencies and CPU2 under independent admission",
+    "Generic floating inputs could overflow FP32 surrogate products even when inputs are finite; this review targets pinned F16 bounded shapes, not arbitrary floating checkpoints"
+  ]
+}

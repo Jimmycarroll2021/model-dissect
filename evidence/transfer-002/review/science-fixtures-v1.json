@@ -1,0 +1,56 @@
+{
+  "verdict": "PASS_FROZEN_FIXTURES_NOT_SCIENCE_ADMISSION",
+  "checked_at_utc": "2026-11-18T19:35:12.832948+00:00",
+  "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/science-fixture-freeze-v1",
+  "file_sha256": {
+    "fixture-receipt.json": "32156d3dafb7b13642992f0cffc93c3be48ada162ae7c8e080f9884009799d6a",
+    "development.json": "0dce0b917d7fbeaf4ab68b3179938c7f9ab4bf10dcbab4bd16c092a7f285410a",
+    "heldout.json": "a1f6e86d016e006c372e0917da0c5719cd843fbdde3712e8176126f39ad5c0ac"
+  },
+  "canonical_development_sha256": "abfe265af37d560dd98cac247e4608d292c5c0451fef61a2088249a99e747287",
+  "canonical_heldout_sha256": "f4145e7474ad015d0d7809b98b25398d45714b9726951a55b4c90a3014955b2e",
+  "tokenizer_sha256": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+  "counts": {
+    "development_pairs": 8,
+    "heldout_pairs": 16,
+    "sequences": 48,
+    "physical_width": 32,
+    "real_lengths": [
+      15,
+      17
+    ],
+    "total_real_tokens": 756,
+    "physical_positions_stored": 1536,
+    "pair_differing_physical_positions": [
+      23,
+      24
+    ]
+  },
+  "checks": [
+    "Exact supplied three output file hashes and two canonical hashes",
+    "Exact proposal id/order/split/text fidelity, 24 unique pairs",
+    "Static tokenizer byte hash and all token-piece vocabulary lookups; no tokenizer execution",
+    "Full original text reconstructed from saved pieces for all 48 sequences: no dropped text or truncation",
+    "All IDs integer and in tokenizer and model ranges",
+    "32-wide left pad0, mask0 then1, logical positions0 then arange; all final positions real",
+    "All 24 pairs have identical masks/logical positions and differ at exactly one aligned token",
+    "Successful supervisor receipt, no stop reason"
+  ],
+  "model_calls": 0,
+  "positions_executed": 0,
+  "limits": [
+    "No checkpoint/model/tokenizer execution or held-out scoring",
+    "Static text reconstruction does not independently rerun BPE segmentation; encoding provenance reuses admitted source and exact tokenizer bytes",
+    "T2 cache/full failure remains unresolved per coordinator; no science runtime admission issued"
+  ],
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 662708224,
+    "elapsed": 4.443007558933459,
+    "added_disk_bytes": 102974,
+    "total_phase_disk_bytes": 7616623637,
+    "packet_disk_limit": 16777216,
+    "phase_disk_limit": 25769803776
+  }
+}

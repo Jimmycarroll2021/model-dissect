@@ -1,0 +1,73 @@
+{
+  "status": "PASS_BOTH_MATRICES_NEW_MODE",
+  "guard_exit_code": 0,
+  "run": {
+    "id": "cache-softmax-matrix-producer-v1",
+    "kind": "model",
+    "role": "implementation",
+    "positions_reserved": 50600,
+    "wall_reserved": 900.0,
+    "start": 1795004532.7990096,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.softmax_bucket_matrix_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/evidence/packet-producer-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runs/cache-softmax-matrix-producer-v1/result.json",
+    "guard_entry_rusage_maxrss_bytes": 21282816,
+    "guard_entry_proc_status": {
+      "VmHWM": "20784 kB",
+      "VmRSS": "20596 kB"
+    },
+    "sampled_live_peak_owned_rss_bytes": 1379926016,
+    "peak_owned_rss_bytes": 1382518784,
+    "owned_rss_cap_bytes": 10737418240,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 1523528,
+    "exit_code": 0,
+    "guard_completion_proc_status": {
+      "VmHWM": "20784 kB",
+      "VmRSS": "20756 kB"
+    },
+    "guard_completion_rusage_maxrss_bytes": 21282816,
+    "final_child_highwater_bytes": 1361235968,
+    "final_guard_highwater_bytes": 21282816,
+    "final_combined_highwater_bytes": 1382518784,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "child_completion_resource_snapshot": {
+      "pid": 1523528,
+      "statm_rss_bytes": 1327292416,
+      "proc_status": {
+        "VmHWM": "1329332 kB",
+        "VmRSS": "1296184 kB"
+      },
+      "rusage_maxrss_bytes": 1361235968
+    },
+    "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+    "output_sha256": "b69300eb1d3887d45474112fa96d492ef83c13a853033e0f3c5522c18ce5cfec",
+    "end": 1795004620.2741964,
+    "wall_seconds": 87.46304110100027,
+    "cpu_seconds": 144.966324,
+    "peak_child_rss_kib": 1329332
+  },
+  "calls": 1656,
+  "actual_positions": 50526,
+  "fixture_count": 24,
+  "rows": 9120,
+  "passing_rows": 9120,
+  "failed_rows": [],
+  "prefix_checks": 9216,
+  "boundary_archives": 72,
+  "cache_chunk_archives": 720,
+  "result_path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runs/cache-softmax-matrix-producer-v1/result.json",
+  "result_sha256": "b69300eb1d3887d45474112fa96d492ef83c13a853033e0f3c5522c18ce5cfec",
+  "ledger_sha256": "7961f8d4fcfd21f51b9cb70e4ae2cf1e9d2848a36c6503150aaed72ce18fc05a",
+  "lifetime_charged": 1189256,
+  "remaining_under_1239856": 50600,
+  "active_runs": 0,
+  "stage_bytes": 2086865339,
+  "limits": "Producer pass only; independent full repeat pending. Original native cached-self failure retained; no universal equivalence claim."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "separate sampled live peak survives final sum",
+    "9GiB accepted",
+    "10GiB live rejected",
+    "10GiB final rejected"
+  ],
+  "no_model_calls": true
+}

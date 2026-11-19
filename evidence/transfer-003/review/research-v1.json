@@ -1,0 +1,184 @@
+{
+  "status": "success",
+  "verdict": "PASS_ACQUISITION_ONLY",
+  "observed_utc": "2026-11-18T23:50:01.208115+00:00",
+  "reviewed_sha256": {
+    "model-selection-v1.json": "2cbb7adfb67abe0499f45d3b64b058a6f6fafd8234445493bb84b09c7223d65d",
+    "model-selection-v1.md": "0d9677c77fbd0f1343f03923e5452a5c5c65a6bec8fbb4a7a7da08cf0f9f0fea",
+    "methods-v1.md": "cfa4a4a57be975d95bb681554f34088f11e2114629c259ef5e9e220ea4e1aa8c"
+  },
+  "online_checks": [
+    {
+      "name": "api",
+      "url": "https://huggingface.co/api/models/openai-community/gpt2/revision/607a30d783dfa663caf39e06633721c8d4cfcd7e?blobs=true",
+      "sha256": "61264def405654e20ac5f777266790077238778700c099ceb60bf67476c007fd",
+      "bytes": 7896,
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "private": false,
+      "gated": false,
+      "license": "mit",
+      "files": [
+        {
+          "rfilename": "README.md",
+          "blobId": "a16a55fda99d2f2e7b69cce5cf93ff4ad3049930",
+          "size": 8092
+        },
+        {
+          "rfilename": "config.json",
+          "blobId": "10c66461e4c109db5a2196bff4bb59be30396ed8",
+          "size": 665
+        },
+        {
+          "rfilename": "generation_config.json",
+          "blobId": "3dc481ecc3b2c47a06ab4e20dba9d7f4b447bdf3",
+          "size": 124
+        },
+        {
+          "rfilename": "merges.txt",
+          "blobId": "226b0752cac7789c48f0cb3ec53eda48b7be36cc",
+          "size": 456318
+        },
+        {
+          "rfilename": "model.safetensors",
+          "blobId": "44b36d6e32d13c8fb28b0feab0ac8bfefa7efeda",
+          "size": 548105171,
+          "lfs": {
+            "sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+            "size": 548105171,
+            "pointerSize": 134
+          }
+        },
+        {
+          "rfilename": "tokenizer.json",
+          "blobId": "4b988bccc9dc5adacd403c00b4704976196548f8",
+          "size": 1355256
+        },
+        {
+          "rfilename": "tokenizer_config.json",
+          "blobId": "be4d21d94f3b4687e5a54d84bf6ab46ed0f8defd",
+          "size": 26
+        },
+        {
+          "rfilename": "vocab.json",
+          "blobId": "1f1d9aaca301414e7f6c9396df506798ff4eb9a6",
+          "size": 1042301
+        }
+      ],
+      "bundle_bytes": 550967953
+    },
+    {
+      "name": "config",
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json",
+      "sha256": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4",
+      "bytes": 665,
+      "matches": true
+    },
+    {
+      "name": "card",
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/README.md",
+      "sha256": "0fcd631078093c2aa1d93438b898320b8a1167784e2a1ab37b8016e9de8b3c2e",
+      "bytes": 8092,
+      "license_mit": true,
+      "advertises_124M": true
+    },
+    {
+      "name": "TransformerLensOrg/TransformerLens",
+      "url": "https://raw.githubusercontent.com/TransformerLensOrg/TransformerLens/284e35b4ee2deea0924894c221a3be8ad519474d/README.md",
+      "sha256": "3cbf244645c060d67db1ae8a1fbdf1524422a43081ba35522e43188811a211cd",
+      "bytes": 13193,
+      "matches": true
+    },
+    {
+      "name": "ndif-team/nnsight",
+      "url": "https://raw.githubusercontent.com/ndif-team/nnsight/ff4c2a3518e95cfdcd8d0745599be40784e8e2ca/README.md",
+      "sha256": "9be55046e173f1db667817ac06b693506489d10299a8b48109fc05f8e6253d22",
+      "bytes": 7324,
+      "matches": true
+    },
+    {
+      "name": "stanfordnlp/pyvene",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/pyvene/9e333904dcf9e597ca76170010d17f4d4580de8d/README.md",
+      "sha256": "a1f4ac9b4fed86461f8bdeb2588fbc64a5741ce7aa719828b8fbb5a3475f582e",
+      "bytes": 3307,
+      "matches": true
+    },
+    {
+      "name": "huggingface/transformers",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/90cbc670be7f8272dd4db2ebd5ba1cb3b918c4bc/src/transformers/models/gpt2/modeling_gpt2.py",
+      "sha256": "7b7ad00ce7f7be4283704b4aaeccdbd0d637981af1e8694f3a8c1aa5c3c4253b",
+      "bytes": 50167,
+      "matches": true
+    },
+    {
+      "name": "openai/gpt-2",
+      "url": "https://raw.githubusercontent.com/openai/gpt-2/9b63575ef42771a015060c964af2c3da4cf7c8ab/README.md",
+      "sha256": "cd6e0dd0636dd0cb6af5e15477caff74adc161d724cf59716113095bd358c8a3",
+      "bytes": 2831,
+      "matches": true
+    }
+  ],
+  "checks": {
+    "immutable_revision_bundle_matches": true,
+    "public_ungated": true,
+    "bundle_bytes": 550967953,
+    "cap_bytes": 629145600,
+    "config_matches": true,
+    "model_card_MIT": true,
+    "architecture_choice_reasonable": true,
+    "github_source_hashes_match": true,
+    "papers_support_metric_sensitivity_and_limited_interpretation": true
+  },
+  "installed_source": {
+    "version": "5.1.0",
+    "path": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py",
+    "sha256": "c05a34ca83eecf3c9c84627e4461b544b4628cf27c764509578710d8dd5f03ca",
+    "seam": "transformer.h[L].attn.c_proj forward pre-hook",
+    "evidence": "Eager attention matmul transposes head/sequence dimensions at lines 86-87; forward flattens final head dimensions at 265 and applies c_proj at 266; installed source uses learned wpe and tied lm_head/wte. For n_head=12 and hidden=768 the inferred head dimension is64."
+  },
+  "issues": [
+    {
+      "severity": "nonblocking_for_acquisition",
+      "finding": "methods-v1 is conditional GPT-NeoX guidance, not an implemented GPT-2 adapter. Use the separately checked GPT-2 seam and verify layout/no-op/complement/restoration experimentally before science admission."
+    }
+  ],
+  "acquisition_boundary": {
+    "repository": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "allowed_files": [
+      "README.md",
+      "config.json",
+      "generation_config.json",
+      "merges.txt",
+      "model.safetensors",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.json"
+    ],
+    "checkpoint_sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+    "conditions": [
+      "Exact pinned URLs only; no fallback main.",
+      "New destination only; preserve all originals.",
+      "Total selected payload<=600MiB.",
+      "No model imports/execution, no installs.",
+      "Independent local hashes, tensor header inventory, alias/buffer distinction and loader compatibility required after acquisition."
+    ]
+  },
+  "limitations": [
+    "Acquisition is not runtime or scientific acceptance.",
+    "Upstream metadata verified; checkpoint bytes not downloaded or hashed locally.",
+    "124M advertised and parameter arithmetic do not substitute for tensor/buffer inventory.",
+    "No installed optional-framework compatibility claim.",
+    "Only two directly relevant patching paper abstracts independently checked, not all cited papers.",
+    "Primary web tool could not open HF URLs; unauthenticated urllib read succeeded."
+  ],
+  "execution": {
+    "checkpoint_downloads": 0,
+    "model_calls": 0,
+    "installs": 0
+  },
+  "memory_routing": {
+    "path": "MEMORY.md",
+    "lines": "71-72"
+  },
+  "next_action": "Assign exact bounded acquisition, then independent artifact inventory verification; freeze GPT-2 experiment and runtime budget before pilot."
+}

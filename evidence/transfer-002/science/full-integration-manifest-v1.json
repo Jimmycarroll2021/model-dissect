@@ -1,0 +1,44 @@
+{
+  "status": "READY_FOR_REVIEW_NOT_RUNTIME_ADMITTED",
+  "files": {
+    "./src/minimind_re/transfer/science_full.py": "f045b70c8101f8485db97e844fb5804e08da6390b4b67385f820cd397c27973f",
+    "./evidence/transfer-002/science/full-implementation-manifest-v1.json": "fbb0c4f6c6ef96b44eef234ee2246ae523d875bb29442c8f68dfa2ab13221170",
+    "./src/minimind_re/transfer/science_full_run.py": "e64fdfc3d2b8d1d5947ee8ff82dcf50d8daadc3d9dee7a1300670106040d23e4",
+    "./tests/transfer/test_science_full_run.py": "4ede6fc37355c18e24ee3e126d1084abed4c6e6f34e13ae8e999c973788e45ac",
+    "./evidence/transfer-002/science/full-integration-tests-v1.txt": "f62e66c8d3d378d0908d75da496ba75c0ec3085859c2d096f99f0e24b809cc0a"
+  },
+  "packets": {
+    "./evidence/transfer-002/science/science-full-producer-v1.packet.json": "c57dc1ba73abf704e68134c924df5eef4d784cb5a15e787f2b554f103d70f9d9",
+    "./evidence/transfer-002/science/science-full-independent-v1.packet.json": "98d4cf441e64a7eb1479a49bd7490bb890eabc6c2e1714198dfbe0f58b4fc680"
+  },
+  "tests": "3 model-free testsPASS nativeparameter mutation detection,originalartifact snapshot,supervisedCLI wiring,admissiondenial",
+  "scope": "T2S_FULL_PREFILL_STRICT_T2_REMAINS_FAIL",
+  "per_role": {
+    "calls": 389,
+    "actual_positions": 12448,
+    "reserved_positions": 12500,
+    "seconds": 300,
+    "disk_bytes": 1073741824
+  },
+  "ledger_snapshot": {
+    "sha256": "52c106ca0c64065d81333a017b56804b80649a0204864d13ed0e7937b1cb8b39",
+    "reserved": {
+      "positions": 34450,
+      "seconds": 1545,
+      "disk_bytes": 8690597888
+    },
+    "with_both_new_packets": {
+      "positions": 59450,
+      "seconds": 2145,
+      "disk_bytes": 10838081536
+    },
+    "captured_unix": 1795032346.505991,
+    "all_old_failures_remain_charged": true
+  },
+  "integrity": "Native parameter digest before/after and all bound original artifacts before/after saved in finally,includingfailure;noKVreuse delegatedtoindependentlyreviewedscience_full",
+  "limitations": [
+    "No targetexecution",
+    "Independent realserialization storage admission remainsrequired",
+    "No cachedT2pass or wholetransfercompletion claim"
+  ]
+}

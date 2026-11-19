@@ -1,0 +1,54 @@
+{
+  "schema": "transfer-002-closure-overlay-v1",
+  "status": "FULL_PREFILL_SLICE_COMPLETE_STRICT_T2_FAILED",
+  "accepted_review_sha256": "c4c667fe542b5102f2e817e7aed694caa157a264b62bace977dca3b74632321c",
+  "unchanged_final_manifest_sha256": "a94f4c8f8d8937be01daaadab9641f2cfb2019fdb925e5aa2a14255cfe187f36",
+  "prior_closure_candidate": {
+    "path": "evidence/transfer-002/delivery/coordination/prior-closure-candidate-v1.json",
+    "sha256": "4f8ab3d87f1a4ca1842356f35b027ff0fa47e7fdd01e569afaba0728ca960731"
+  },
+  "prior_files": [
+    {
+      "path": "TASK_STATE.md",
+      "snapshot": "evidence/transfer-002/delivery/coordination/pre-final-closure-0-TASK_STATE.md",
+      "sha256": "49330830f207d6c2a3258b91ef90d8353e5c814fd0ff647e3feaf6ea64316c4b"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "snapshot": "evidence/transfer-002/delivery/coordination/pre-final-closure-1-CASE_FACTS.md",
+      "sha256": "d0afb0575bbd1b1486f9d2c505f592bfb7516fddf5e824e4a42db7ecef146f4b"
+    },
+    {
+      "path": "specs/002-model-transfer/TASK_STATE.md",
+      "snapshot": "evidence/transfer-002/delivery/coordination/pre-final-closure-2-TASK_STATE.md",
+      "sha256": "49330830f207d6c2a3258b91ef90d8353e5c814fd0ff647e3feaf6ea64316c4b"
+    },
+    {
+      "path": "specs/002-model-transfer/tasks.md",
+      "snapshot": "evidence/transfer-002/delivery/coordination/pre-final-closure-3-tasks.md",
+      "sha256": "ab143971b173bf265252ff0172c6d17d6a0e4661b8662701ebf89d6feb4a29c9"
+    }
+  ],
+  "current_files": [
+    {
+      "path": "TASK_STATE.md",
+      "sha256": "954e26e346084f49274ad84a10e0d9c5c8661360d8022c3500d96ac39ea62242"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "sha256": "ea57febf72d2c509ca114b59635370b1f8506a682a2b3a16984224bb8f7ab064"
+    },
+    {
+      "path": "specs/002-model-transfer/TASK_STATE.md",
+      "sha256": "954e26e346084f49274ad84a10e0d9c5c8661360d8022c3500d96ac39ea62242"
+    },
+    {
+      "path": "specs/002-model-transfer/tasks.md",
+      "sha256": "56d386b219f9f0b626d05adcbd10b96db7378f9a93d078615a2cca8423b15dd6"
+    }
+  ],
+  "strict_T2": "FAILED_UNCHECKED",
+  "new_native_goal": false,
+  "new_model_calls": 0,
+  "boundary": "Additive coordination/task closure only; scientific delivery manifest and all science/source/report/plot/ledger bytes unchanged."
+}

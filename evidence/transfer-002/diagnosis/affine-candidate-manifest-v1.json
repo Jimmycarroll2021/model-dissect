@@ -1,0 +1,31 @@
+{
+  "status": "implemented_pending_independent_review_and_pilot_admission",
+  "mode": "qkv-fixed-two-row-fp32-v1",
+  "api": "minimind_re.transfer.affine_candidate.CanonicalCandidate.from_directory(directory,expected_hashes=...)",
+  "files": {
+    "src/minimind_re/transfer/affine_candidate.py": "aefe4086d236b8284dd87b63169dea8081bac31a10a573200d921fa34b3b0bf1",
+    "tests/transfer/test_affine_candidate.py": "c7928697ffacc49835755327633ed5ab6f05f596c5bf9bdbb441f9c7baf5bb28",
+    "evidence/transfer-002/diagnosis/affine-candidate-tests-v1.txt": "dba1540da3ca17f5cd64776beb578def7ad4b07fa6e6a5814f3360b0cf032fbc"
+  },
+  "unchanged_base": {
+    "path": "src/minimind_re/transfer/gpt_neox_candidate.py",
+    "sha256": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f"
+  },
+  "operation": "For each real input row stack [real, zeros_like(real)] -> original FP32 F.linear -> retain row0; concatenate real outputs in original shape. Only attention.query_key_value affines overridden.",
+  "tests": "3 passed in0.72s; separate alias import identity check passed",
+  "scope": [
+    "All configured QKV blocks; config-derived shapes",
+    "Other affines, LayerNorm, RoPE, attention, GELU, residual order, output projection unchanged",
+    "Inherited expected-hash safetensors loader uses cls and constructs canonical subclass",
+    "Dummy rows are never attention positions or cache entries",
+    "Cached calls project only new query tokens and preserve incoming cache tensors"
+  ],
+  "limits": [
+    "No target weights loaded or target forwards executed",
+    "No reference-mode source inspected",
+    "No guarantee of full-model cache invariance or native-full fidelity; pilot required",
+    "Original native full-prefix anchor remains mandatory",
+    "Per-row Python loop may cost more time; target performance not measured"
+  ],
+  "reference_mode_independence": "No imports of reference adapter or Transformers; candidate inherits independent editable candidate only"
+}

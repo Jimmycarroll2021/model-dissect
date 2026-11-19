@@ -1,0 +1,62 @@
+{
+  "verdict": "PASS_EXACT_STATIC_PACKET_SERIALIZED_EXECUTION_ONLY",
+  "packet_sha256": "38448e8654ef18f662ad3f13c5e882d8ff12077538e5c02d564ecaad6cd37ec4",
+  "manifest_sha256": "5032848524b435955f56f585710077234002e00be133df5d2d60d834efcbf73e",
+  "scope": "Independent repeat of unchanged static atlas only:0 model calls/positions,120seconds,16MiB,2CPU. Safetensors weights may be loaded only during separately dispatched admitted static operation; no inference/tokenizer.",
+  "dependency_review": {
+    "bound_project_modules": [
+      "src/minimind_re/__init__.py",
+      "src/minimind_re/transfer/__init__.py",
+      "src/minimind_re/transfer/run.py",
+      "src/minimind_re/transfer/guard.py",
+      "src/minimind_re/transfer/atlas.py",
+      "src/minimind_re/transfer/gpt_neox_candidate.py",
+      "src/minimind_re/transfer/checkpoint_inventory.py"
+    ],
+    "relative_imports_ast": {
+      "src/minimind_re/__init__.py": [],
+      "src/minimind_re/transfer/__init__.py": [
+        "gpt_neox_candidate"
+      ],
+      "src/minimind_re/transfer/run.py": [
+        "guard",
+        "atlas",
+        "numerical",
+        "reference",
+        "gpt_neox_candidate"
+      ],
+      "src/minimind_re/transfer/guard.py": [],
+      "src/minimind_re/transfer/atlas.py": [
+        "gpt_neox_candidate"
+      ],
+      "src/minimind_re/transfer/gpt_neox_candidate.py": [
+        "checkpoint_inventory"
+      ],
+      "src/minimind_re/transfer/checkpoint_inventory.py": []
+    },
+    "conclusion": "run.py imports only guard at module scope; numerical/reference/candidate loader imports belong exclusively to numerical elif. Static branch imports atlas; atlas imports NeoXConfig from candidate, whose inventory helper is bound. transfer package initializer imports candidate too; both package initializers bound. Removed numerical/reference/Transformers/tokenizer identities are not executed/consumed by static path. Standard library and version-pinned Torch/safetensors dependencies remain existing environment scope."
+  },
+  "source_evidence_reused": "Unchanged atlas-build-v2 and static-producer-v3 receipts verified by packet hashes; no target payload reads or recomputation during this review.",
+  "raw_payload_bytes": 3145728,
+  "prior_actual_serialized_bytes": 3247028,
+  "readiness_snapshot": {
+    "active_runs": [
+      "science-full-producer-v2"
+    ],
+    "projected_after_this_packet": {
+      "positions": 46950,
+      "seconds": 1965,
+      "disk_bytes": 9781116928
+    },
+    "remaining_original_wall_seconds": 4116.1183071136475,
+    "free_bytes": 51998146560
+  },
+  "conditions": [
+    "Coordinator must wait for active science producer to finish and reconcile ledger before launch; serialize with independent science run",
+    "Use exact supervised run.py command and unchanged guard; fresh live readiness at dispatch",
+    "Preserve old packets/results/failure charges and original phase wall start",
+    "Separate output verification must compare atlas values/raw48views/SVD/statistics against producer after this independent run",
+    "No numerical/scientific/cache-equivalence or whole-transfer success implied"
+  ],
+  "admission_issued": true
+}

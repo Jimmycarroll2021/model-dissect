@@ -1,0 +1,895 @@
+{
+  "verdict": "PASS_ARTIFACT_AUDIT_ONLY",
+  "checked_utc": "2026-11-18T19:06:31.696327+00:00",
+  "manifest_sha256": "e8b772e59b2dc54f65deb04b31f4212b8ea60ee495873d8e3f27cbfc8e10404d",
+  "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+  "checks": {
+    "manifest_identity": true,
+    "exact_directory_allowlist": true,
+    "README.md": true,
+    "config.json": true,
+    "generation_config.json": true,
+    "model.safetensors": true,
+    "special_tokens_map.json": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true,
+    "header_contiguous_f16_exact_payload": true,
+    "stored_parameters_exact": true,
+    "config_exact": true,
+    "no_remote_code_mapping": true,
+    "vocabulary_range": true,
+    "tokenizer_bpe": true,
+    "expected_gpt_neox_keys_shapes": true,
+    "total_bytes": true
+  },
+  "inventory": [
+    {
+      "name": "README.md",
+      "bytes": 10560,
+      "sha256": "d1f2cf1d5181daedeaa70208ddd5cc5251867bde9acf6db7bb45a2265e25e163",
+      "git_blob_sha1": "b92833bc3eb40571a1a09c7f15318f2edf990ed9",
+      "upstream_match": true,
+      "mode": "0o444"
+    },
+    {
+      "name": "config.json",
+      "bytes": 698,
+      "sha256": "f97f966a66c444890ed461fff2a51eefb15d74303df05b948124719f199b0b17",
+      "git_blob_sha1": "d79c7e3f60eb0966575057b690330e3d6d4fcd5c",
+      "upstream_match": true,
+      "mode": "0o444"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 111,
+      "sha256": "494cbba887cc299273f0c54d7612596918e74c7881a27cbd95e4e7e2464ea090",
+      "git_blob_sha1": "59134f8bfb20c3e1fcb4365e72d1958a2ee4e3b9",
+      "upstream_match": true,
+      "mode": "0o444"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 28143920,
+      "sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+      "git_blob_sha1": "0f1ea037853db4226f685e924f00929267277d9f",
+      "upstream_match": true,
+      "mode": "0o444"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 441,
+      "sha256": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+      "git_blob_sha1": "7fb88369a36878182d8a7d1d9249cca0f6093b1a",
+      "upstream_match": true,
+      "mode": "0o444"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 2114042,
+      "sha256": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+      "git_blob_sha1": "eb39a3d940ed41b696b46287f39ba3b76aad03f6",
+      "upstream_match": true,
+      "mode": "0o444"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 4834,
+      "sha256": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809",
+      "git_blob_sha1": "f4028db2dc43c02072d73bb93b4cdadf162588a3",
+      "upstream_match": true,
+      "mode": "0o444"
+    }
+  ],
+  "header": {
+    "bytes": 8488,
+    "metadata": {
+      "format": "pt"
+    },
+    "tensor_count": 76,
+    "parameter_count": 14067712,
+    "dtype": "F16",
+    "inventory": {
+      "embed_out.weight": {
+        "dtype": "F16",
+        "shape": [
+          50304,
+          128
+        ],
+        "data_offsets": [
+          0,
+          12877824
+        ]
+      },
+      "gpt_neox.embed_in.weight": {
+        "dtype": "F16",
+        "shape": [
+          50304,
+          128
+        ],
+        "data_offsets": [
+          12877824,
+          25755648
+        ]
+      },
+      "gpt_neox.final_layer_norm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          25755648,
+          25755904
+        ]
+      },
+      "gpt_neox.final_layer_norm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          25755904,
+          25756160
+        ]
+      },
+      "gpt_neox.layers.0.attention.dense.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          25756160,
+          25756416
+        ]
+      },
+      "gpt_neox.layers.0.attention.dense.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          128
+        ],
+        "data_offsets": [
+          25756416,
+          25789184
+        ]
+      },
+      "gpt_neox.layers.0.attention.query_key_value.bias": {
+        "dtype": "F16",
+        "shape": [
+          384
+        ],
+        "data_offsets": [
+          25789184,
+          25789952
+        ]
+      },
+      "gpt_neox.layers.0.attention.query_key_value.weight": {
+        "dtype": "F16",
+        "shape": [
+          384,
+          128
+        ],
+        "data_offsets": [
+          25789952,
+          25888256
+        ]
+      },
+      "gpt_neox.layers.0.input_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          25888256,
+          25888512
+        ]
+      },
+      "gpt_neox.layers.0.input_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          25888512,
+          25888768
+        ]
+      },
+      "gpt_neox.layers.0.mlp.dense_4h_to_h.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          25888768,
+          25889024
+        ]
+      },
+      "gpt_neox.layers.0.mlp.dense_4h_to_h.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          512
+        ],
+        "data_offsets": [
+          25889024,
+          26020096
+        ]
+      },
+      "gpt_neox.layers.0.mlp.dense_h_to_4h.bias": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "data_offsets": [
+          26020096,
+          26021120
+        ]
+      },
+      "gpt_neox.layers.0.mlp.dense_h_to_4h.weight": {
+        "dtype": "F16",
+        "shape": [
+          512,
+          128
+        ],
+        "data_offsets": [
+          26021120,
+          26152192
+        ]
+      },
+      "gpt_neox.layers.0.post_attention_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26152192,
+          26152448
+        ]
+      },
+      "gpt_neox.layers.0.post_attention_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26152448,
+          26152704
+        ]
+      },
+      "gpt_neox.layers.1.attention.dense.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26152704,
+          26152960
+        ]
+      },
+      "gpt_neox.layers.1.attention.dense.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          128
+        ],
+        "data_offsets": [
+          26152960,
+          26185728
+        ]
+      },
+      "gpt_neox.layers.1.attention.query_key_value.bias": {
+        "dtype": "F16",
+        "shape": [
+          384
+        ],
+        "data_offsets": [
+          26185728,
+          26186496
+        ]
+      },
+      "gpt_neox.layers.1.attention.query_key_value.weight": {
+        "dtype": "F16",
+        "shape": [
+          384,
+          128
+        ],
+        "data_offsets": [
+          26186496,
+          26284800
+        ]
+      },
+      "gpt_neox.layers.1.input_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26284800,
+          26285056
+        ]
+      },
+      "gpt_neox.layers.1.input_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26285056,
+          26285312
+        ]
+      },
+      "gpt_neox.layers.1.mlp.dense_4h_to_h.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26285312,
+          26285568
+        ]
+      },
+      "gpt_neox.layers.1.mlp.dense_4h_to_h.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          512
+        ],
+        "data_offsets": [
+          26285568,
+          26416640
+        ]
+      },
+      "gpt_neox.layers.1.mlp.dense_h_to_4h.bias": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "data_offsets": [
+          26416640,
+          26417664
+        ]
+      },
+      "gpt_neox.layers.1.mlp.dense_h_to_4h.weight": {
+        "dtype": "F16",
+        "shape": [
+          512,
+          128
+        ],
+        "data_offsets": [
+          26417664,
+          26548736
+        ]
+      },
+      "gpt_neox.layers.1.post_attention_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26548736,
+          26548992
+        ]
+      },
+      "gpt_neox.layers.1.post_attention_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26548992,
+          26549248
+        ]
+      },
+      "gpt_neox.layers.2.attention.dense.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26549248,
+          26549504
+        ]
+      },
+      "gpt_neox.layers.2.attention.dense.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          128
+        ],
+        "data_offsets": [
+          26549504,
+          26582272
+        ]
+      },
+      "gpt_neox.layers.2.attention.query_key_value.bias": {
+        "dtype": "F16",
+        "shape": [
+          384
+        ],
+        "data_offsets": [
+          26582272,
+          26583040
+        ]
+      },
+      "gpt_neox.layers.2.attention.query_key_value.weight": {
+        "dtype": "F16",
+        "shape": [
+          384,
+          128
+        ],
+        "data_offsets": [
+          26583040,
+          26681344
+        ]
+      },
+      "gpt_neox.layers.2.input_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26681344,
+          26681600
+        ]
+      },
+      "gpt_neox.layers.2.input_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26681600,
+          26681856
+        ]
+      },
+      "gpt_neox.layers.2.mlp.dense_4h_to_h.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26681856,
+          26682112
+        ]
+      },
+      "gpt_neox.layers.2.mlp.dense_4h_to_h.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          512
+        ],
+        "data_offsets": [
+          26682112,
+          26813184
+        ]
+      },
+      "gpt_neox.layers.2.mlp.dense_h_to_4h.bias": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "data_offsets": [
+          26813184,
+          26814208
+        ]
+      },
+      "gpt_neox.layers.2.mlp.dense_h_to_4h.weight": {
+        "dtype": "F16",
+        "shape": [
+          512,
+          128
+        ],
+        "data_offsets": [
+          26814208,
+          26945280
+        ]
+      },
+      "gpt_neox.layers.2.post_attention_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26945280,
+          26945536
+        ]
+      },
+      "gpt_neox.layers.2.post_attention_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26945536,
+          26945792
+        ]
+      },
+      "gpt_neox.layers.3.attention.dense.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          26945792,
+          26946048
+        ]
+      },
+      "gpt_neox.layers.3.attention.dense.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          128
+        ],
+        "data_offsets": [
+          26946048,
+          26978816
+        ]
+      },
+      "gpt_neox.layers.3.attention.query_key_value.bias": {
+        "dtype": "F16",
+        "shape": [
+          384
+        ],
+        "data_offsets": [
+          26978816,
+          26979584
+        ]
+      },
+      "gpt_neox.layers.3.attention.query_key_value.weight": {
+        "dtype": "F16",
+        "shape": [
+          384,
+          128
+        ],
+        "data_offsets": [
+          26979584,
+          27077888
+        ]
+      },
+      "gpt_neox.layers.3.input_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27077888,
+          27078144
+        ]
+      },
+      "gpt_neox.layers.3.input_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27078144,
+          27078400
+        ]
+      },
+      "gpt_neox.layers.3.mlp.dense_4h_to_h.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27078400,
+          27078656
+        ]
+      },
+      "gpt_neox.layers.3.mlp.dense_4h_to_h.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          512
+        ],
+        "data_offsets": [
+          27078656,
+          27209728
+        ]
+      },
+      "gpt_neox.layers.3.mlp.dense_h_to_4h.bias": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "data_offsets": [
+          27209728,
+          27210752
+        ]
+      },
+      "gpt_neox.layers.3.mlp.dense_h_to_4h.weight": {
+        "dtype": "F16",
+        "shape": [
+          512,
+          128
+        ],
+        "data_offsets": [
+          27210752,
+          27341824
+        ]
+      },
+      "gpt_neox.layers.3.post_attention_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27341824,
+          27342080
+        ]
+      },
+      "gpt_neox.layers.3.post_attention_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27342080,
+          27342336
+        ]
+      },
+      "gpt_neox.layers.4.attention.dense.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27342336,
+          27342592
+        ]
+      },
+      "gpt_neox.layers.4.attention.dense.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          128
+        ],
+        "data_offsets": [
+          27342592,
+          27375360
+        ]
+      },
+      "gpt_neox.layers.4.attention.query_key_value.bias": {
+        "dtype": "F16",
+        "shape": [
+          384
+        ],
+        "data_offsets": [
+          27375360,
+          27376128
+        ]
+      },
+      "gpt_neox.layers.4.attention.query_key_value.weight": {
+        "dtype": "F16",
+        "shape": [
+          384,
+          128
+        ],
+        "data_offsets": [
+          27376128,
+          27474432
+        ]
+      },
+      "gpt_neox.layers.4.input_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27474432,
+          27474688
+        ]
+      },
+      "gpt_neox.layers.4.input_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27474688,
+          27474944
+        ]
+      },
+      "gpt_neox.layers.4.mlp.dense_4h_to_h.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27474944,
+          27475200
+        ]
+      },
+      "gpt_neox.layers.4.mlp.dense_4h_to_h.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          512
+        ],
+        "data_offsets": [
+          27475200,
+          27606272
+        ]
+      },
+      "gpt_neox.layers.4.mlp.dense_h_to_4h.bias": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "data_offsets": [
+          27606272,
+          27607296
+        ]
+      },
+      "gpt_neox.layers.4.mlp.dense_h_to_4h.weight": {
+        "dtype": "F16",
+        "shape": [
+          512,
+          128
+        ],
+        "data_offsets": [
+          27607296,
+          27738368
+        ]
+      },
+      "gpt_neox.layers.4.post_attention_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27738368,
+          27738624
+        ]
+      },
+      "gpt_neox.layers.4.post_attention_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27738624,
+          27738880
+        ]
+      },
+      "gpt_neox.layers.5.attention.dense.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27738880,
+          27739136
+        ]
+      },
+      "gpt_neox.layers.5.attention.dense.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          128
+        ],
+        "data_offsets": [
+          27739136,
+          27771904
+        ]
+      },
+      "gpt_neox.layers.5.attention.query_key_value.bias": {
+        "dtype": "F16",
+        "shape": [
+          384
+        ],
+        "data_offsets": [
+          27771904,
+          27772672
+        ]
+      },
+      "gpt_neox.layers.5.attention.query_key_value.weight": {
+        "dtype": "F16",
+        "shape": [
+          384,
+          128
+        ],
+        "data_offsets": [
+          27772672,
+          27870976
+        ]
+      },
+      "gpt_neox.layers.5.input_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27870976,
+          27871232
+        ]
+      },
+      "gpt_neox.layers.5.input_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27871232,
+          27871488
+        ]
+      },
+      "gpt_neox.layers.5.mlp.dense_4h_to_h.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          27871488,
+          27871744
+        ]
+      },
+      "gpt_neox.layers.5.mlp.dense_4h_to_h.weight": {
+        "dtype": "F16",
+        "shape": [
+          128,
+          512
+        ],
+        "data_offsets": [
+          27871744,
+          28002816
+        ]
+      },
+      "gpt_neox.layers.5.mlp.dense_h_to_4h.bias": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "data_offsets": [
+          28002816,
+          28003840
+        ]
+      },
+      "gpt_neox.layers.5.mlp.dense_h_to_4h.weight": {
+        "dtype": "F16",
+        "shape": [
+          512,
+          128
+        ],
+        "data_offsets": [
+          28003840,
+          28134912
+        ]
+      },
+      "gpt_neox.layers.5.post_attention_layernorm.bias": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          28134912,
+          28135168
+        ]
+      },
+      "gpt_neox.layers.5.post_attention_layernorm.weight": {
+        "dtype": "F16",
+        "shape": [
+          128
+        ],
+        "data_offsets": [
+          28135168,
+          28135424
+        ]
+      }
+    }
+  },
+  "tokenizer": {
+    "type": "BPE",
+    "base_vocab_count": 50254,
+    "unique_ids_including_added": 50277,
+    "maximum_id": 50276,
+    "output_vocab_rows": 50304,
+    "unused_output_rows": 27,
+    "class": "GPTNeoXTokenizer"
+  },
+  "limits": [
+    "No tensor values decoded or finite-value checks performed. Header contains valid integer shapes/offsets, not evidence of finite weights.",
+    "Static key/shape compatibility only; model and tokenizer loading untested.",
+    "Original artifacts opened read-only. Mode 0444 observed; owner can change permissions, so immutability not enforced.",
+    "No runtime admission or GPU work."
+  ]
+}

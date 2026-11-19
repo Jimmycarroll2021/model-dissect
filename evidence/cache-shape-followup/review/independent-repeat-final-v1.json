@@ -1,0 +1,277 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_DIAGNOSTIC_REPEAT",
+  "scientific_status": "UPSTREAM_HISTORICAL_PREFIX_DRIFT_OBSERVED_NOT_FIXED",
+  "candidate_manifest_sha256": "69dde2d8c745948a8e4996d15a8354f530bb0afdbfa0f8fd5e7ebe483ed251d6",
+  "producer_result_sha256": "af1d79d7feede35f7ba463b868d94f13dd24c2f6825609d4ebd41687aaead135",
+  "independent_result_sha256": "f9634c43bbd38c31cc4f0f01e0ac48fc844b4ece3233159b0f777012416bb5fb",
+  "producer_raw_audit_sha256": "7706e5483a3872184f927ead5e2a187de9cd691f1a0bb3569e6f71fa8fa8ffd3",
+  "independent_raw_audit_sha256": "ca0d0ecf7a56ea4dc063f8a23ad4d64623f474f24949572346e020aacc6c22a3",
+  "exact_tensor_count": 732,
+  "exact_call_metadata_records": 24,
+  "exact_token_comparison_rows": 288,
+  "baseline_fidelity_calls_verified_each": 24,
+  "model_calls_each": 24,
+  "actual_positions_each": 64,
+  "reserved_each": 128,
+  "findings": [
+    {
+      "fixture": "heldout/length-1-left",
+      "actor": "candidate",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "heldout/length-1-left",
+      "actor": "reference",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "continuation/continuation-length-1-left",
+      "actor": "candidate",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "continuation/continuation-length-1-left",
+      "actor": "reference",
+      "unequal_slots": {
+        "layer1_projected_k": [
+          5,
+          6
+        ],
+        "layer1_normalized_input": [
+          5,
+          6
+        ],
+        "layer0_output": [
+          5,
+          6
+        ],
+        "layer1_k_after_headnorm": [
+          5,
+          6
+        ],
+        "layer1_rope_cosine": [],
+        "layer1_position_ids": [],
+        "layer1_rope_sine": [],
+        "layer1_transformed_k_new": [
+          5,
+          6
+        ],
+        "layer1_projected_v": [
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "interpretation": "Both candidate/reference and failing/passing sibling have earliest captured difference at layer0 output in historical physical slots5,6. Layer1 normalization/projection/headnorm/rotatedK differ at those same slots with differing direct inputs. This does not isolate equal-input layer1 projection or normalization/RoPE error. Current slot7, padding slots0..2 and all position/cos/sin values are exact. The responsible layer0 suboperation and final-logit causality remain untested.",
+  "resources": {
+    "history": {
+      "tokens_reserved": 1137888,
+      "download_bytes": 138166822,
+      "gpu_seconds": 12.621721199015155,
+      "gpu_seconds_reserved": 240.0
+    },
+    "ledger_sha256": "6c3a5d23db8c25856339c6fa5bf5bf1bed683d7fe95e54cfc353dc2435617f3a",
+    "stage_bytes": 159000842,
+    "free_bytes": 65552404480,
+    "phase_start": 1795001978.9844809,
+    "phase_deadline": 1795003778.9844809,
+    "lifetime_reserved": 1138144,
+    "remaining": 0,
+    "active_runs": 0,
+    "runs": [
+      {
+        "id": "cache-followup-producer-v1",
+        "kind": "model",
+        "role": "implementation",
+        "positions_reserved": 128,
+        "wall_reserved": 300.0,
+        "start": 1795001978.9844809,
+        "status": "completed",
+        "argv": [
+          "/usr/bin/python",
+          "-m",
+          "minimind_re.cache_followup_probe",
+          "--packet",
+          "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-followup-001-20261118/evidence/packet-producer-v2.json"
+        ],
+        "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-followup-001-20261118/runs/cache-followup-producer-v1/result.json",
+        "guard_entry_rusage_maxrss_bytes": 21127168,
+        "guard_entry_proc_status": {
+          "VmHWM": "20632 kB",
+          "VmRSS": "20264 kB"
+        },
+        "peak_owned_rss_bytes": 1408581632,
+        "owned_rss_cap_bytes": 8589934592,
+        "owned_rss_scope": "guard plus direct child; descendants prohibited",
+        "pid": 1364991,
+        "exit_code": 0,
+        "guard_completion_proc_status": {
+          "VmHWM": "20632 kB",
+          "VmRSS": "20384 kB"
+        },
+        "guard_completion_rusage_maxrss_bytes": 21127168,
+        "final_child_highwater_bytes": 1387454464,
+        "final_guard_highwater_bytes": 21127168,
+        "final_combined_highwater_bytes": 1408581632,
+        "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+        "child_completion_resource_snapshot": {
+          "pid": 1364991,
+          "statm_rss_bytes": 1186529280,
+          "proc_status": {
+            "VmHWM": "1354936 kB",
+            "VmRSS": "1158720 kB"
+          },
+          "rusage_maxrss_bytes": 1387454464
+        },
+        "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+        "output_sha256": "af1d79d7feede35f7ba463b868d94f13dd24c2f6825609d4ebd41687aaead135",
+        "end": 1795001984.6470501,
+        "wall_seconds": 5.650316663086414,
+        "cpu_seconds": 6.475033,
+        "peak_child_rss_kib": 1354936
+      },
+      {
+        "id": "cache-followup-independent-v1",
+        "kind": "model",
+        "role": "verification",
+        "positions_reserved": 128,
+        "wall_reserved": 300.0,
+        "start": 1795002096.0203753,
+        "status": "completed",
+        "argv": [
+          "/usr/bin/python",
+          "-m",
+          "minimind_re.cache_followup_probe",
+          "--packet",
+          "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-followup-001-20261118/evidence/packet-independent-v2.json"
+        ],
+        "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-followup-001-20261118/runs/cache-followup-independent-v1/result.json",
+        "guard_entry_rusage_maxrss_bytes": 6993481728,
+        "guard_entry_proc_status": {
+          "VmHWM": "20424 kB",
+          "VmRSS": "20252 kB"
+        },
+        "peak_owned_rss_bytes": 8378810368,
+        "owned_rss_cap_bytes": 8589934592,
+        "owned_rss_scope": "guard plus direct child; descendants prohibited",
+        "pid": 1373244,
+        "exit_code": 0,
+        "guard_completion_proc_status": {
+          "VmHWM": "20424 kB",
+          "VmRSS": "20384 kB"
+        },
+        "guard_completion_rusage_maxrss_bytes": 6993481728,
+        "final_child_highwater_bytes": 1385328640,
+        "final_guard_highwater_bytes": 6993481728,
+        "final_combined_highwater_bytes": 8378810368,
+        "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+        "child_completion_resource_snapshot": {
+          "pid": 1373244,
+          "statm_rss_bytes": 1093283840,
+          "proc_status": {
+            "VmHWM": "1352860 kB",
+            "VmRSS": "1067660 kB"
+          },
+          "rusage_maxrss_bytes": 1385328640
+        },
+        "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+        "output_sha256": "f9634c43bbd38c31cc4f0f01e0ac48fc844b4ece3233159b0f777012416bb5fb",
+        "end": 1795002105.5609493,
+        "wall_seconds": 9.53044542693533,
+        "cpu_seconds": 9.803600000000001,
+        "peak_child_rss_kib": 1352860
+      }
+    ],
+    "measurement_limit": "Independent guard ru_maxrss6993481728 persists at entry/completion despite proc VmHWM20424kB; producer guard ru_maxrss21127168. Direct discrepancy observed; causal explanation unresolved. No subtraction or cap weakening; conservative independent combined8378810368 remained below8589934592."
+  },
+  "limitations": [
+    "No repair, threshold adjustment, retries, downloads, training or GPU.",
+    "Both original native and complete new-mode matrix failures remain unchanged.",
+    "These two exposed length1 left-padding fixtures support bounded localization only."
+  ]
+}

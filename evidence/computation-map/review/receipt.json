@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "review_scope": "Independent static key-to-computation review only; not broader goal acceptance",
+  "reviewed_utc": "2026-11-18T08:31:44.125131+00:00",
+  "manifest_sha256": "0a0ff43a8e6c240cfe8758988fa9109d5a50b350c496681e790a16d0d65e2643",
+  "guide_sha256": "5b34f92a2d16d0aebdc2e13f8e6c51ed0aff5ac44834e831acad06b3c1644e96",
+  "tensor_map_sha256": "ed404409484b58d207473e24a781fd844c354af154d51c93e28485cca4ceebfa",
+  "automated_checks": {
+    "command": "python evidence/computation-map/review/verify_metadata.py",
+    "result": "PASS",
+    "unique_key_count": 91,
+    "stored_values": 68827392,
+    "checks": [
+      "Exact supplied manifest digest and every candidate/source file hash",
+      "Independent expected key set and shapes for eight blocks plus embedding/final norm/head",
+      "Inventory metadata equality, atlas exact row/name/shape pointers",
+      "Per-entry source hashes and line ranges",
+      "Identical semantic templates and source references across all eight layers",
+      "Storage groups 0 and 90 and inventory-derived checkpoint identity"
+    ]
+  },
+  "manual_source_review": {
+    "files": [
+      "oracle/vendor/model_minimind.py",
+      "src/minimind_re/forward.py",
+      "oracle/adapter.py",
+      "artifacts/allowed/supplied_config.json"
+    ],
+    "checks": [
+      "Row-vector x W transpose orientation and all per-role input/output dimensions",
+      "RMS last-axis normalization and learned scales; Q/K head sharing",
+      "RMS before RoPE; split-half pairs and 1e6 base, no value rotation",
+      "Eight Q heads/four KV heads and adjacent pair repetition",
+      "sqrt(96) scaling, causal masking, finite additive padding, softmax over keys",
+      "Concatenation and o_proj column-slice head decomposition",
+      "Attention residual then post-attention RMS and SiLU-gated MLP residual",
+      "Final RMS and vocabulary projection; next-token softmax distinguished from returned logits",
+      "Cache stores rotated K and unrotated V; historical cache/full FAIL preserved",
+      "Vendor defaults tying while reconstruction stores separate arrays; no inequality or independent training claim",
+      "Schematic trace explicitly has no observed activations; semantic interpretations withheld"
+    ]
+  },
+  "findings": [],
+  "execution_limits": {
+    "checkpoint_payload_reads": 0,
+    "model_loads": 0,
+    "model_forwards": 0,
+    "tokenizer_runs": 0,
+    "package_installs": 0
+  },
+  "limitations": [
+    "Static source and metadata verification only; checkpoint identity reused from inventory, not rehashed",
+    "No numerical model fidelity, activation or causal behavior verification",
+    "Existing cache/full discrepancy remains unresolved FAIL",
+    "This receipt does not establish completion of the broader reverse-engineering goal"
+  ],
+  "verifier_script_sha256": "f2966054725b8c3de7af612ea75213f09015322ea99b4c2fce8b29f8881e0cdf"
+}

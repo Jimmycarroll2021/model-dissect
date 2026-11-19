@@ -1,0 +1,30 @@
+{
+  "verdict": "PASS_EXACT_BLOCK_DIAGNOSTIC",
+  "reviewed_utc": "2026-11-18T19:49:47.650756+00:00",
+  "checks": {
+    "manifest": true,
+    "packet": true,
+    "files": true,
+    "packet_identities": true,
+    "environment": true,
+    "budget": true,
+    "unused_output": true,
+    "settled_ledger": true,
+    "aggregate_budget": true,
+    "capacity": true,
+    "phase_time": true
+  },
+  "packet_sha256": "0039d3898e22390e7e777c659c63f1ad9756fcec237dbac28e6a19da119da1ef",
+  "manifest_sha256": "f9334198ac5187c19334818931ef0ddcb565194b2eae97ee87df960416a144ce",
+  "tests": "1 synthetic transparent observer/exception-cleanup test independently passed",
+  "source_review": [
+    "Twelve input/output hooks clone without replacement; setup and execution enclosed in finally teardown.",
+    "Uses unchanged canonical QKV reference and reviewed supervisor/guard.",
+    "3calls4positions;99arrays892928B;27canonical-pilot boundary byte checks mandatory.",
+    "Raw captures saved before mismatch rejection; original results retained."
+  ],
+  "limits": [
+    "Observers identify first captured differing site, not exact CPU kernel or sole cause.",
+    "No additional target run authorized by this admission."
+  ]
+}

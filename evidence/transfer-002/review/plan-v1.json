@@ -1,0 +1,53 @@
+{
+  "verdict": "PASS_BUILD_ONLY_RUNTIME_PENDING",
+  "checked_utc": "2026-11-18T19:08:21.732475+00:00",
+  "manifest_sha256": "aa9b3791b77a2a7ac9651f93da4f037fa399ef958a20d95830cb16b7ffcf010f",
+  "checks": {
+    "manifest_identity": true,
+    "all_11_files": true,
+    "agents_link_only": true,
+    "feature_pointer": true,
+    "schedule": true,
+    "budget": true,
+    "acquisition_pass": true,
+    "disk_capacity_now": true,
+    "memory_capacity_now": true
+  },
+  "arithmetic": {
+    "calls_per_role": 1296,
+    "positions_per_role": 34356,
+    "boundary_rows_per_role": 18792,
+    "raw_bytes_per_role": 7429048320,
+    "raw_bytes_both_roles": 14858096640,
+    "disk_remaining_for_artifact_metadata_science_trace": 10911707136,
+    "combined_position_ceiling": 1489856
+  },
+  "host_snapshot": {
+    "available_disk_bytes": 60861206528,
+    "MemAvailable": 19051773952,
+    "SwapTotal": 8589930496,
+    "SwapFree": 225280,
+    "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=73456617\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=72675000\n",
+    "swap_pages_delta_approx_1second": {
+      "pswpin": 0,
+      "pswpout": 0
+    }
+  },
+  "builder_admission": [
+    "May implement candidate primitives, independent reference, static atlas and aggregate guard in assigned new paths; no model execution yet.",
+    "Freeze exact fixture IDs/hashes, explicit position/mask semantics, hook boundary/count, all code/environment/source/tokenizer identities and unique output IDs.",
+    "Exact executable schedule must retain all nine boundaries, full vocabulary, genuine caches, incoming cache snapshots, no-op/restoration and independent full repeat.",
+    "Reserve array payload plus file-format metadata, artifact, trace and scientific storage before runtime; 24GiB cap and 2GiB free reserve are aggregate.",
+    "Guard must separately record inherited rusage and sampled owned-tree RSS, explicitly enforce conservative 10GiB policy and CPU2.",
+    "Refresh host memory/swap-pressure/active-workload preflight at runtime admission; swap is almost full, so this snapshot is not runtime clearance.",
+    "Freeze scientific qualification, five arms, matching, denominators and heldout ownership separately after T2.",
+    "Preserve all legacy code/evidence; whole-tree legacy snapshot validation remains an implementation/integration gate."
+  ],
+  "notes": [
+    "Frozen plan has stale acquisition-pending wording and AGENTS-update-omitted statement; verified acquisition receipt and link-only diff supersede those state annotations, not substantive acceptance.",
+    "No arbitrary numerical waiver appears: full matrix and original thresholds retained.",
+    "Padding comparison excludes only masked output rows; retains and finite-checks them. All real logits including 27 tokenizer-unmapped rows retained.",
+    "Incoming cache unchanged requires a pre-call snapshot; returned historical prefix unchanged requires comparison of preexisting slices, including padding.",
+    "Static plan review establishes design and arithmetic, not implemented guard correctness or actual CPU feasibility."
+  ]
+}

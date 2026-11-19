@@ -1,0 +1,20 @@
+{
+  "status": "V2_FIXED_FROZEN_PENDING_INDEPENDENT_REVIEW",
+  "files": {
+    "./src/minimind_re/transfer3/additive_run.py": "2c5edeeb24600ed73cda86442e4de846c9aa629e85e47566217f90074f8ca520",
+    "./tests/test_transfer3_additive.py": "44c7e31f7c99b0b3c7ff196fbca3361ba216e2f705b1de2257ead40515bd2c7b",
+    "./evidence/transfer-003/runtime/additive-v2/packet-atlas-independent-DRAFT.json": "3d04af555dd8da4e16a202ba811415ad9ed92e0c0a8d5b302690aed14c5d6fb9",
+    "./evidence/transfer-003/runtime/additive-v2/packet-atlas-producer-DRAFT.json": "f9eb35c8926b19dacb6222607f4c87557a2af120abc35bb22318a96655e439a6",
+    "./evidence/transfer-003/runtime/additive-v2/packet-science-independent-DRAFT.json": "69d7e5a74af7c1a687e17d7a8e8d43fa792e70955fdccc7986a5633ba6f1fac6",
+    "./evidence/transfer-003/runtime/additive-v2/packet-science-producer-DRAFT.json": "0b1681c3d51e7a4192fff432d9b68aa0767149cab7b821ed02c47f587969ce8b",
+    "./evidence/transfer-003/runtime/additive-v2/packet-tokenize-producer-DRAFT.json": "7300ba862b7b58c223d4cf570daabc63ff0807fd63e4e1edccfe1afeb4b872f2",
+    "./evidence/transfer-003/runtime/additive-v2/packet-tokenize-producer-v2.json": "ede311a5cbf5955ee60e1e1c33cbb41387188219e6bc6a31d74a0a7fdbe26e32",
+    "./evidence/transfer-003/runtime/additive-v2/tests-v2.json": "fa1cfc94f4f64b8d1dd54999357ccd4afe4f25ba2b7ddb51ed95e74102790791",
+    "./evidence/transfer-003/runtime/additive-v2/usage.md": "934daf489b8b241cdf64500018de6329d61cc955588c0364440a54882fdf772b"
+  },
+  "author_tests": "3 targeted nonmodel tests passed; v1 actual12site evidence reused unchanged trace/model path",
+  "tokenizer_packet_sha256": "ede311a5cbf5955ee60e1e1c33cbb41387188219e6bc6a31d74a0a7fdbe26e32",
+  "target_operations": 0,
+  "frozen_numerical_sources_edited": false,
+  "candidate_implementation_read": false
+}

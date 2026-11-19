@@ -1,0 +1,1119 @@
+{
+  "schema_version": 1,
+  "candidate_id": "reconstruction-v1",
+  "created_utc": "2026-11-17T06:48:24Z",
+  "provenance": "weights-first prior-informed; supplied settings disclosed",
+  "tensor_mappings": {
+    "model.embed_tokens.weight": {
+      "role": "token lookup",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.embed_tokens.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.0.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.0.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.1.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.1.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.2.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.2.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.3.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.4.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.5.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.6.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.self_attn.q_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.self_attn.k_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.self_attn.v_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "role": "attention projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.self_attn.o_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.self_attn.q_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.self_attn.q_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.self_attn.k_norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.self_attn.k_norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.input_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.input_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.post_attention_layernorm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.post_attention_layernorm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.mlp.gate_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.mlp.gate_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.mlp.down_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.mlp.down_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.layers.7.mlp.up_proj.weight": {
+      "role": "gated MLP projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.layers.7.mlp.up_proj.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "model.norm.weight": {
+      "role": "RMS scaling",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:model.norm.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    },
+    "lm_head.weight": {
+      "role": "vocabulary linear projection",
+      "status": "prior-informed",
+      "evidence": [
+        "tensor:lm_head.weight",
+        "generic transformer prior"
+      ],
+      "alternatives": [
+        "Names and shapes alone do not identify operation uniquely"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "0",
+      "operation": "input IDs -> embedding lookup",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Embedding matrix orientation inferred from dimensions"
+      ]
+    },
+    {
+      "id": "1",
+      "operation": "8 sequential pre-normalized residual blocks",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Order and residual connections not uniquely determined by weights"
+      ]
+    },
+    {
+      "id": "2",
+      "operation": "RMSNorm -> Q/K/V linears -> per-head Q/K RMSNorm -> split-half RoPE",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Normalization placement uncertain until oracle check"
+      ]
+    },
+    {
+      "id": "3",
+      "operation": "8 query heads, 4 KV heads, head dimension 96; repeated grouped keys/values",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Other head permutations fit stored shapes"
+      ]
+    },
+    {
+      "id": "4",
+      "operation": "causal scaled dot attention -> output projection -> residual add",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Masking conventions supplied"
+      ]
+    },
+    {
+      "id": "5",
+      "operation": "RMSNorm -> SiLU(gate) times up -> down -> residual add",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Activation supplied; ordering prior-informed"
+      ]
+    },
+    {
+      "id": "6",
+      "operation": "final RMSNorm -> vocabulary logits",
+      "status": "prior-informed",
+      "evidence": [
+        "checkpoint shapes/names",
+        "generic transformer prior"
+      ],
+      "required_path": true,
+      "alternatives": [
+        "Output projection numerical tie not assumed"
+      ]
+    }
+  ],
+  "supplied_settings": {
+    "rms_norm_eps": 1e-06,
+    "rope_theta": 1000000.0,
+    "max_position_embeddings": 32768,
+    "attention_backend": "explicit_matmul_softmax",
+    "dropout": 0.0,
+    "hidden_act": "silu",
+    "rotary_convention": "split_half",
+    "attention_scale": "sqrt_head_dim",
+    "masked_key_additive_value": -1000000000.0
+  },
+  "unknowns": [
+    "Training data/history",
+    "Unique original source",
+    "Semantic meaning of channels",
+    "All graph claims pending independent structural verification"
+  ]
+}

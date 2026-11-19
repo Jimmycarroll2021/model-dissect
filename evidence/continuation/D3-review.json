@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "Purpose amendment for the unused third diagnostic slot only; no model run performed by reviewer",
+  "script_sha256": "12364d4ca376e7e456a9e121c7dfe5dad6e5e0a44c4d9cb9fb46bc7c5824b5ee",
+  "proposal_sha256": "76d73c13820bbe2f2cca8c25e4eb8d87cec426b5ba42009d2bd65853e8aab7da",
+  "required_fixes": [],
+  "accepted_limits": {
+    "runs": 1,
+    "reservation": 4096,
+    "timeout_seconds": 300,
+    "model_calls": 5,
+    "model_positions": 22,
+    "derived_primitive_input_rows": 3628,
+    "total_counted_positions_and_rows": 3650,
+    "backend": "existing common CPU FP32 strict two-thread recipe",
+    "new_lifetime_budget": false
+  },
+  "findings": [
+    "Exact script hash matches parent assignment.",
+    "Fixed16shape matrix uses actual normalized embedding rows and same last input for isolated q/k/v projections; no backend sweep.",
+    "Tracing observes unchanged candidate first block at length8 continuation step2 and compares genuine cached execution to full11token pass. It is scientifically useful after the step0-only success failed to generalize.",
+    "No model/oracle source modifications, precision promotion, tolerance relaxation, cache disabling or full-prefix fake caching.",
+    "The newly evaluated parity set is explicitly disclosed as exposed diagnostic material; original mechanism heldout is not read."
+  ],
+  "limitations": [
+    "Line tracing locates sampled first-block variable discrepancies, not necessarily the first internal elementary arithmetic error. Last-row K/V comparison is not a complete prefix-cache audit.",
+    "Nonfinite trace tensors are omitted from trace rows; whole-model finite checks and output comparison remain operative. No conclusion about omitted trace entries is warranted.",
+    "Original guard, resource deadline and exact common environment must still be applied externally. This review does not grant another candidate/full-suite run.",
+    "An inconclusive or failed diagnostic still consumes the slot."
+  ],
+  "next_action": "Permit this single guarded D3 run after coordinator records the purpose amendment; use its evidence to decide any separately reviewed candidate amendment."
+}

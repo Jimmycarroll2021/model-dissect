@@ -1,0 +1,317 @@
+{
+  "status": "PASS_INDEPENDENT_DIAGNOSIS_REPEAT_NOT_FIXED",
+  "reviewed_utc": "2026-11-18T09:16:50.579851+00:00",
+  "producer_result_sha256": "c950fab6154821918b2cc7f981dd9009b1662cf2c9683fe4b67e6487e48f913c",
+  "independent_result_sha256": "bc2adb56a15f64951a3e8052001539d4172697165e9df8e75cafa28b9f96949f",
+  "candidate_manifest_sha256": "1bd60608d346f142fb01d67ebd0dd56d56dc15e8b7ebd0d2ee300c06eca8f70b",
+  "array_audit_sha256": "ec7ebd8fd400e4b8ced501163b6e23ab4c209fc7b02ee70c993227b1c58568c9",
+  "audit_script_sha256": "d1043fea6c2e8fb52f7279a590bed9f722b354db8420cf6481e5f2e154063c7f",
+  "exact_repeated_tensors": 400,
+  "comparisons_recomputed": true,
+  "all48_primitive_schedules_recomputed_for_each_run": true,
+  "same_mode_actor_boundaries_exact": true,
+  "summary": {
+    "native": {
+      "logits": {
+        "shape": [
+          1,
+          1,
+          6400
+        ],
+        "exact": false,
+        "max_abs": 3.0174851417541504e-05,
+        "max_tolerance_ratio": 1.4666059017181396,
+        "failed_elements": 7,
+        "failed_indices": [
+          [
+            0,
+            0,
+            322
+          ],
+          [
+            0,
+            0,
+            3834
+          ],
+          [
+            0,
+            0,
+            4757
+          ],
+          [
+            0,
+            0,
+            4815
+          ],
+          [
+            0,
+            0,
+            5050
+          ],
+          [
+            0,
+            0,
+            5395
+          ],
+          [
+            0,
+            0,
+            6037
+          ]
+        ],
+        "failed_a": [
+          0.10571599006652832,
+          0.04825544357299805,
+          0.03583049774169922,
+          -0.02426433563232422,
+          0.004592180252075195,
+          -0.01545482873916626,
+          0.04396197199821472
+        ],
+        "failed_b": [
+          0.10574616491794586,
+          0.048237144947052,
+          0.03581595420837402,
+          -0.02427774667739868,
+          0.004580497741699219,
+          -0.015470027923583984,
+          0.0439457893371582
+        ]
+      },
+      "layer0_qkv_exact": true,
+      "layer0_attention_unprojected_max_abs": 8.046627044677734e-07,
+      "layer0_single_query_primitives": {
+        "score": {
+          "shape": [
+            1,
+            8,
+            1,
+            11
+          ],
+          "exact": false,
+          "max_abs": 3.814697265625e-06,
+          "max_tolerance_ratio": 0.004331240896135569,
+          "failed_elements": 0,
+          "failed_indices": [],
+          "failed_a": [],
+          "failed_b": []
+        },
+        "probability": {
+          "shape": [
+            1,
+            8,
+            1,
+            11
+          ],
+          "exact": false,
+          "max_abs": 5.662441253662109e-07,
+          "max_tolerance_ratio": 0.01611768826842308,
+          "failed_elements": 0,
+          "failed_indices": [],
+          "failed_a": [],
+          "failed_b": []
+        },
+        "value": {
+          "shape": [
+            1,
+            8,
+            1,
+            96
+          ],
+          "exact": false,
+          "max_abs": 8.046627044677734e-07,
+          "max_tolerance_ratio": 0.04770996421575546,
+          "failed_elements": 0,
+          "failed_indices": [],
+          "failed_a": [],
+          "failed_b": []
+        }
+      },
+      "single_query_max_primitive_abs": 4.76837158203125e-06,
+      "all8_actor_layers_shape_matched_triples_exact": true
+    },
+    "candidate": {
+      "logits": {
+        "shape": [
+          1,
+          1,
+          6400
+        ],
+        "exact": false,
+        "max_abs": 3.0174851417541504e-05,
+        "max_tolerance_ratio": 1.4666059017181396,
+        "failed_elements": 7,
+        "failed_indices": [
+          [
+            0,
+            0,
+            322
+          ],
+          [
+            0,
+            0,
+            3834
+          ],
+          [
+            0,
+            0,
+            4757
+          ],
+          [
+            0,
+            0,
+            4815
+          ],
+          [
+            0,
+            0,
+            5050
+          ],
+          [
+            0,
+            0,
+            5395
+          ],
+          [
+            0,
+            0,
+            6037
+          ]
+        ],
+        "failed_a": [
+          0.10571599006652832,
+          0.04825544357299805,
+          0.03583049774169922,
+          -0.02426433563232422,
+          0.004592180252075195,
+          -0.01545482873916626,
+          0.04396197199821472
+        ],
+        "failed_b": [
+          0.10574616491794586,
+          0.048237144947052,
+          0.03581595420837402,
+          -0.02427774667739868,
+          0.004580497741699219,
+          -0.015470027923583984,
+          0.0439457893371582
+        ]
+      },
+      "layer0_qkv_exact": true,
+      "layer0_attention_unprojected_max_abs": 8.046627044677734e-07,
+      "layer0_single_query_primitives": {
+        "score": {
+          "shape": [
+            1,
+            8,
+            1,
+            11
+          ],
+          "exact": false,
+          "max_abs": 3.814697265625e-06,
+          "max_tolerance_ratio": 0.004331240896135569,
+          "failed_elements": 0,
+          "failed_indices": [],
+          "failed_a": [],
+          "failed_b": []
+        },
+        "probability": {
+          "shape": [
+            1,
+            8,
+            1,
+            11
+          ],
+          "exact": false,
+          "max_abs": 5.662441253662109e-07,
+          "max_tolerance_ratio": 0.01611768826842308,
+          "failed_elements": 0,
+          "failed_indices": [],
+          "failed_a": [],
+          "failed_b": []
+        },
+        "value": {
+          "shape": [
+            1,
+            8,
+            1,
+            96
+          ],
+          "exact": false,
+          "max_abs": 8.046627044677734e-07,
+          "max_tolerance_ratio": 0.04770996421575546,
+          "failed_elements": 0,
+          "failed_indices": [],
+          "failed_a": [],
+          "failed_b": []
+        }
+      },
+      "single_query_max_primitive_abs": 4.76837158203125e-06,
+      "all8_actor_layers_shape_matched_triples_exact": true
+    }
+  },
+  "accounting": {
+    "actual_model_positions_each": 44,
+    "actual_model_positions_phase": 88,
+    "model_calls_each": 10,
+    "model_calls_phase": 20,
+    "primitive_schedules_per_model_run": 48,
+    "phase_positions_reserved": 512,
+    "historical_positions_reserved": 1035920,
+    "lifetime_positions_reserved": 1036432,
+    "approved_lifetime_ceiling": 1038544,
+    "remaining_reserved_capacity": 2112,
+    "wall_seconds_phase": 13.265767570002936,
+    "clock_start": 1794993224.4247766,
+    "clock_deadline": 1794995024.4247766,
+    "active_rows": 0
+  },
+  "independent_guard_row": {
+    "id": "cache-operands-independent-v1",
+    "kind": "model",
+    "role": "verification",
+    "positions_reserved": 256,
+    "wall_reserved": 300.0,
+    "start": 1794993348.272686,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.cache_operand_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/evidence/cache-diagnosis/packet-independent-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-independent-v1/result.json",
+    "peak_owned_rss_bytes": 1303957504,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 845781,
+    "exit_code": 0,
+    "final_child_highwater_bytes": 1282387968,
+    "final_guard_highwater_bytes": 21430272,
+    "final_combined_highwater_bytes": 1303818240,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "output_sha256": "bc2adb56a15f64951a3e8052001539d4172697165e9df8e75cafa28b9f96949f",
+    "end": 1794993356.7493684,
+    "wall_seconds": 8.45627239602618,
+    "cpu_seconds": 7.379284999999999,
+    "peak_child_rss_kib": 1252332
+  },
+  "ledger_sha256": "3556dceae35aa6935f013994d6a20c43e413227cdc640d5970931ee85fa81504",
+  "checks": [
+    "All admitted sources, checkpoint file and producer outputs unchanged after independent execution.",
+    "All six historical chains unchanged and zero active; fixed phase clock preserved.",
+    "Every saved tensor matches producer exactly; individual mode files equal combined snapshot.",
+    "All operand/boundary failure indices, values, tolerance metrics independently recomputed.",
+    "All48 primitive schedules recomputed per audited run using saved full operands, with exact saved scores/probabilities/value arrays.",
+    "Call journals confirm8+1+1+1+11 positions per actor, genuine cached-step capture shapes and full control shapes."
+  ],
+  "interpretation": "On this single strict-CPU historical fixture, both implementations agree bitwise in the same mode yet share cache/full differences. Layer0 Q/K/V match exactly while attention already differs. Full-width shape-matched final query reproduces full-width primitive arrays exactly across all16 actor/layer groups; single-query schedules differ on the same operands. This supports shape-dependent numerical differences as a contributor in this diagnostic, without isolating a library kernel or proving an end-to-end repair.",
+  "limitations": [
+    "DIAGNOSED_NOT_FIXED: historical R2 remains FAIL; no numerical implementation changed and no tolerance relaxed.",
+    "One fixture/backend/continuation step only; no universal causal claim.",
+    "Checkpoint file hashes unchanged; in-memory parameter hashing not instrumented.",
+    "Read-only source/synthetic tracing review does not constitute an extra uninstrumented full-model parity run.",
+    "Saved-array audits used bounded CPU primitive recomputation, not additional model forwards."
+  ]
+}

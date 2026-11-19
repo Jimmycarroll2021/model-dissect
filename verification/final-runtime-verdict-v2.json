@@ -1,0 +1,97 @@
+{
+  "status": "partial",
+  "verdict": "NOT_ACCEPTED_FULL_DEMONSTRATION",
+  "utc": "2026-11-17T06:55:45.228172+00:00",
+  "candidate_manifest_sha256": "f7c42733df7a08bbe09cacf07c8a3c802a88362bdb627beb26d86a4a5d37d795",
+  "forward_sha256": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+  "identity_checks": {
+    "src/minimind_re/forward.py": true,
+    "src/minimind_re/inventory.py": true,
+    "analysis/structural-map.json": true,
+    "analysis/exposure-ledger.json": true,
+    "runtime/environment.json": true,
+    "artifacts/allowed/supplied_config.json": true,
+    "artifacts/original/tokenizer_config.json": true,
+    "artifacts/original/full_sft_768.pth": true,
+    "artifacts/original/tokenizer.json": true,
+    "oracle/vendor/model_minimind.py": true,
+    "oracle/vendor/__init__.py": true,
+    "evidence/execution/acquisition-report.md": true,
+    "evidence/execution/acquisition-download.py": true,
+    "evidence/execution/acquisition-tensors.allowed.json": true,
+    "evidence/execution/acquisition-imports.json": true,
+    "evidence/execution/acquisition.json": true
+  },
+  "validation_only_change_proof": {
+    "remove_exact_added_line_restores_original_sha256": "c58b7e49e3b6e1414c0d80fef9e6e2ae2b61f8e49ba5d188ef53751c88dd9544",
+    "expected_original_sha256": "c58b7e49e3b6e1414c0d80fef9e6e2ae2b61f8e49ba5d188ef53751c88dd9544"
+  },
+  "gates": {
+    "R0": "PASS: pinned artifacts verified; prior/supplied and post-oracle validation-only revision disclosed",
+    "R1": "PASS:91/91tensor accounting and7graph claims checked against pinned oracle; no unique/blind recovery claim",
+    "R2": "FAIL: required cached-vs-full logits fail original tolerance; same-shaped independent reconstruction agreement passes",
+    "R3": "NOT_RUN: prerequisite R2failed; no internal-mechanism claim",
+    "R4": "PARTIAL: frozen parity independently repeated; unresolved R2failure and R3notrun prevent full repeat acceptance"
+  },
+  "parity": {
+    "rows": 2640,
+    "failed": 102,
+    "candidate_reference_rows": 1296,
+    "candidate_reference_failures": 0,
+    "candidate_reference_max_abs": 0.0,
+    "restoration_rows": 192,
+    "restoration_failures": 0,
+    "cache_full_rows": 1152,
+    "cache_full_failures": 102,
+    "top1_mismatches": 0,
+    "max_abs_all_rows": 2.8014183044433594e-05,
+    "max_tolerance_ratio": 1.9053236246109009,
+    "tokens": 16938,
+    "calls": 648,
+    "elapsed_seconds": 15.240129176992923
+  },
+  "diagnosis": {
+    "observed": "Identical final vectors projected as singleton versus in2row batch differ by3.814697265625e-6 for both implementations; this demonstrates shape-dependent FP32 arithmetic in output projection. Cached/full discrepancies already occur at block boundary4.172325134277344e-7, grow to final9.059906005859375e-6 and logits1.5497207641601562e-5 on smallest repeated case. Same-shaped candidate/reference are exactly equal there.",
+    "limit": "Head-only diagnostic remains within tolerance and does not prove output projection is sole cause; no backend or model tuning attempted. Original gates unchanged."
+  },
+  "tests": {
+    "candidate_unit_tests": 3,
+    "guard_tests": 2,
+    "status": "PASS"
+  },
+  "usage": {
+    "verifier_model_calls": 654,
+    "verifier_model_input_tokens": 16946,
+    "extra_head_projection_rows": 6,
+    "ledger_reserved_tokens": 54732,
+    "gpu_seconds": 0,
+    "project_bytes": 148285981,
+    "execution_start": 1794897624.8448846,
+    "ledger_cpu_seconds": 75.58399,
+    "independent_run_ids": [
+      "independent-v2-full",
+      "independent-v2-diagnostic"
+    ]
+  },
+  "limits": [
+    "Full numerical tolerance remains failed for both candidate and pinned reference on common frozen CPU FP32 backend",
+    "No R3probe or causal internal mechanism established",
+    "Oracle exposure separation procedural, not access-enforced",
+    "Historical smoke CPU-time field missing; budget conservative reservations preserve token cap",
+    "Guard polling100ms and caller reservations are bounded-run mechanisms, not hard instantaneous hardware isolation",
+    "Validation-only v2 uses already exposed parity fixtures to independently reproduce failure; no new heldout-success/generalization claim"
+  ],
+  "next_action": "Stop model execution at diagnosed failure. Preserve evidence and report useful structural/reconstruction results plus incomplete R2/R3. Any future backend/protocol revision needs separately recorded new scope/freeze and fresh heldout evaluation; no additional retry in this assignment.",
+  "evidence_sha256": {
+    "verification/parity-v2-independent.json": "dc4e51c872a41b863c0876ea7d5875ae118185abaeef5704434c66c977d77b8b",
+    "verification/cache-full-independent-repeat.json": "f4500cd5c6f74a10c30ddf84a2e7bd032aaae964af702532ecff5272a013fe74",
+    "verification/repeat_cache_diagnostic.py": "bde1adb08d5434a8bb8bd5f97138cdaced36f61a48c84c008636188789f1c48e",
+    "verification/guard-repair-review.json": "bea37f2d72a6d1b622a759e1bd307beff3e8da3aa6a6276cbd0e3e0b39916ce6",
+    "verification/guard-independent-tests.log": "58a724a6e4a438d4ef904152dc7b4c5d5bb5c720c64eb8379cd0c4ac536ed935",
+    "verification/candidate-v2-unit-tests.log": "ffd62098d02db3d39b8953104059396ebafd83d853f01a09854aab1c960b34f7",
+    "runtime/guard.py": "632bd1709176b14a93985858394770d4764d8386d28a9d00f5b86895084a4b16",
+    "oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4",
+    "oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "oracle/protocol.json": "b563a5750412575fe06aefeb19db9cde7dd34a8fefde50129cd641d7bc125810"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SOFTWARE_SCOPE",
+  "manifest": "analysis/delivery-manifest-v4.json",
+  "manifest_sha256": "0256cfcaa150b2946840906c28e1e8a1833e9f52a11846ed7c37a651398c037c",
+  "identity_checks": {
+    ".gitignore": true,
+    "analysis/candidate-manifest-v2.json": true,
+    "analysis/candidate-manifest.json": true,
+    "analysis/exposure-ledger.json": true,
+    "analysis/structural-map.json": true,
+    "pyproject.toml": true,
+    "runtime/environment.json": true,
+    "runtime/guard.py": true,
+    "runtime/test_guard.py": true,
+    "src/minimind_re/__init__.py": true,
+    "src/minimind_re/__main__.py": true,
+    "src/minimind_re/forward.py": true,
+    "src/minimind_re/inventory.py": true,
+    "src/minimind_re/probe.py": true,
+    "tests/test_cli.py": true,
+    "tests/test_contract.py": true,
+    "tests/test_inventory.py": true,
+    "tests/test_probe.py": true
+  },
+  "core_candidate_manifest_sha256": "f7c42733df7a08bbe09cacf07c8a3c802a88362bdb627beb26d86a4a5d37d795",
+  "core_forward_sha256": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+  "resolved_finding": "SOFT-1 arbitrary selected config bypass",
+  "independent_negative_test": {
+    "alternate_epsilon": 42,
+    "rejected_before_adapter_construction": {
+      "forward": true,
+      "probe": true
+    },
+    "synthetic_R2_PASS_gate_bound_to_real_candidate": true
+  },
+  "synthetic_tests": {
+    "passed": 7,
+    "log": "verification/software-final-v4-tests.log"
+  },
+  "prior_failed_review": "verification/software-final-v3-review.json",
+  "confirmed": [
+    "selected config resolved path and content bound to exact frozen supplied-config manifest entry",
+    "runner/input/candidate hashes required",
+    "R2 PASS exact candidate receipt required for probe",
+    "guard admission and CPU FP32 required",
+    "stateless five-arm runner restores even on intervention error",
+    "UNASSESSED raw metrics do not claim causal support"
+  ],
+  "limitations": [
+    "Probe runner remains generic raw measurement code; no target hypothesis or norm-matching evidence established",
+    "Protocol/input identities require surrounding evidence manifest; output payload alone is not complete experiment provenance",
+    "No target model forward or new target experiment performed in this software verification"
+  ],
+  "target_acceptance": "PARTIAL: R0PASS R1PASS R2FAIL R3NOT_RUN R4PARTIAL unchanged",
+  "target_model_forwards": 0
+}

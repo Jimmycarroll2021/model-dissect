@@ -1,0 +1,139 @@
+{
+  "status": "success",
+  "verdict": "PASS_BUILD_DESIGN_ONLY_WITH_RUNTIME_GATES",
+  "observed_utc": "2026-11-18T23:55:32.902990+00:00",
+  "scope_manifest_sha256": "5b5fffd687a0915c75d340dbfc2584075aa17774c1952ec4b64b65bd815602e4",
+  "scope_files": {
+    "TASK_STATE.md": {
+      "expected": "cb1aa791013c1c424f2c6bc67dd4dff82e575cdab1fe0153f608806224b03913",
+      "observed": "cb1aa791013c1c424f2c6bc67dd4dff82e575cdab1fe0153f608806224b03913",
+      "match": true
+    },
+    "CASE_FACTS.md": {
+      "expected": "0212124255557f796c5c206f4a00657e5162e9e8eeaba79c612eee40701aff71",
+      "observed": "0212124255557f796c5c206f4a00657e5162e9e8eeaba79c612eee40701aff71",
+      "match": true
+    },
+    "AGENTS.md": {
+      "expected": "a09e9bb282b60f6ebc29f3e8d9cf0c7651f5e21b6816d1f4467ca91fe483a3e3",
+      "observed": "a09e9bb282b60f6ebc29f3e8d9cf0c7651f5e21b6816d1f4467ca91fe483a3e3",
+      "match": true
+    },
+    ".specify/feature.json": {
+      "expected": "c2a17c442a3637ea859ac9e05593dc7cce907147861f35d6aa31f5e07a756ac8",
+      "observed": "c2a17c442a3637ea859ac9e05593dc7cce907147861f35d6aa31f5e07a756ac8",
+      "match": true
+    },
+    "specs/003-model-dissection/checklists/requirements.md": {
+      "expected": "873dada0a06806767e23e5f9541128364b03d65e25d7932b2a881f6a8a302a17",
+      "observed": "873dada0a06806767e23e5f9541128364b03d65e25d7932b2a881f6a8a302a17",
+      "match": true
+    },
+    "specs/003-model-dissection/contracts/candidate.md": {
+      "expected": "4e03b0c2d9db98965489ca1d7f91bdddaf5ba6ff14f462c64f2938902ff7d2e9",
+      "observed": "4e03b0c2d9db98965489ca1d7f91bdddaf5ba6ff14f462c64f2938902ff7d2e9",
+      "match": true
+    },
+    "specs/003-model-dissection/internal-protocol-draft.md": {
+      "expected": "1e63d8f17a0b680115d7a97e4d6856607dda7cc33efae987219d81f4dc996fc0",
+      "observed": "1e63d8f17a0b680115d7a97e4d6856607dda7cc33efae987219d81f4dc996fc0",
+      "match": true
+    },
+    "specs/003-model-dissection/lessons.md": {
+      "expected": "272367316a3ed4b333d6b65edc4f65c77a52c8d09beceeaf6f4fc542e2b30f2d",
+      "observed": "272367316a3ed4b333d6b65edc4f65c77a52c8d09beceeaf6f4fc542e2b30f2d",
+      "match": true
+    },
+    "specs/003-model-dissection/numerical-protocol.md": {
+      "expected": "bd089576f7d31c5d6a2f8269545834754d9234fa204be4f87bed9d735f5cf203",
+      "observed": "bd089576f7d31c5d6a2f8269545834754d9234fa204be4f87bed9d735f5cf203",
+      "match": true
+    },
+    "specs/003-model-dissection/plan.md": {
+      "expected": "e9400087fb988f8c6776d3f33f26114de795fc7ef2c90654d044ff7808db9a49",
+      "observed": "e9400087fb988f8c6776d3f33f26114de795fc7ef2c90654d044ff7808db9a49",
+      "match": true
+    },
+    "specs/003-model-dissection/research.md": {
+      "expected": "54a22103c7eea45556088531fca8c1bd14e7d8c0cc9e44c042ff96a5a1827c5a",
+      "observed": "54a22103c7eea45556088531fca8c1bd14e7d8c0cc9e44c042ff96a5a1827c5a",
+      "match": true
+    },
+    "specs/003-model-dissection/runtime-protocol.md": {
+      "expected": "d97911d8028fbe968711e58cd7a4e70d62a4fafe6f254db908fc41d948294282",
+      "observed": "d97911d8028fbe968711e58cd7a4e70d62a4fafe6f254db908fc41d948294282",
+      "match": true
+    },
+    "specs/003-model-dissection/spec.md": {
+      "expected": "8e003d7d36965261b18a1b5b692b342a58ad2845d5b483f843081daa15b26b19",
+      "observed": "8e003d7d36965261b18a1b5b692b342a58ad2845d5b483f843081daa15b26b19",
+      "match": true
+    },
+    "specs/003-model-dissection/tasks.md": {
+      "expected": "d2f6d53696430e01f32c43246e9ff3af36e8c2fbc4210d2b4f9277d6c388b321",
+      "observed": "d2f6d53696430e01f32c43246e9ff3af36e8c2fbc4210d2b4f9277d6c388b321",
+      "match": true
+    },
+    "evidence/transfer-003/state/host-readiness-v1.json": {
+      "expected": "c8a20242a3816da6abbecc316e5cc7a7c2e8603e403f35fe583931f383cc3c35",
+      "observed": "c8a20242a3816da6abbecc316e5cc7a7c2e8603e403f35fe583931f383cc3c35",
+      "match": true
+    },
+    "evidence/transfer-003/state/preservation-manifest-v1.json": {
+      "expected": "aa6379d6d9938f232948e4bb026a3c1ceb365260759836fa2e5ba3804fa7d62b",
+      "observed": "aa6379d6d9938f232948e4bb026a3c1ceb365260759836fa2e5ba3804fa7d62b",
+      "match": true
+    },
+    "evidence/transfer-003/state/scope-manifest-v1.json": {
+      "expected": "886d880a6a4f09037c6c946f2778fcfd1546cf732f3384230076d254d855f65c",
+      "observed": "886d880a6a4f09037c6c946f2778fcfd1546cf732f3384230076d254d855f65c",
+      "match": true
+    }
+  },
+  "arithmetic": {
+    "boundaries": 15,
+    "hidden_width_arrays": 14,
+    "per_position_bytes": 244036,
+    "pilot_fixtures": 4,
+    "pilot_calls": 24,
+    "pilot_physical_positions": 156,
+    "pilot_raw_bytes": 38069616,
+    "full_fixtures": 16,
+    "full_calls_per_role": 96,
+    "full_positions_per_role": 2712,
+    "full_boundary_comparisons_per_role": 1680,
+    "full_raw_bytes_per_role": 661825632,
+    "full_two_role_raw_bytes": 1323651264,
+    "historical_reserved_positions": 1299306,
+    "new_ceiling": 250000,
+    "prospective_combined_ceiling": 1549306
+  },
+  "design_checks": [
+    "Mode scope matches candidate: CPU FP32 eager, two threads, full-prefill, none/right padding first key visible; no cache/left padding.",
+    "Full-vocabulary lossless evidence and all physical rows retained; comparator uses real rows and all arrays finite; no-op/restoration bitwise.",
+    "Native/candidate selected head edit equivalence required separately from baseline parity; last real token required under padding.",
+    "Failed reservations retained; new phase ledger; serial target actors; independent repeat budget; minimum disk/RAM reserves and no cleanup authority.",
+    "Science draft explicitly incomplete and requires separate preregistration/review before held-out execution."
+  ],
+  "required_before_runtime": [
+    {
+      "id": "P1",
+      "issue": "runtime-protocol states896MiB/full-role packet whereas numerical-protocol states1280MiB; resolve to one explicit packet value and rehash affected artifacts. Both exceed661825632 raw bytes but accounting must agree."
+    },
+    {
+      "id": "P2",
+      "issue": "Coordinator reports intended stricter24GiB/3600s guard versus plan32GiB/4800s. Stricter limits acceptable only when frozen in effective runtime manifest and all packet totals including independent repeats fit; guard implementation not audited here."
+    },
+    {
+      "id": "P3",
+      "issue": "Fixture identity, integrated native/candidate API contract and guard enforcement remain unverified. Target admission requires exact integrated review and fresh host readiness."
+    }
+  ],
+  "limitations": [
+    "Plan contains stale preliminary/acquisition-pending text; these are conservative documentary states, not evidence contradicting later acquisition receipt. Update live status at integration.",
+    "No runtime guard implementation tested by this review.",
+    "600-second full packet and 120-second pilot feasibility are hypotheses until measured.",
+    "No scientific threshold or head finding accepted from draft."
+  ],
+  "next_action": "Resolve packet disk discrepancy and effective stricter caps in integrated protocol, then independently verify guard/runtime synthetic behavior and admit only bounded pilot after readiness."
+}

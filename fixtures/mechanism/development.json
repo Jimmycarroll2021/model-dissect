@@ -1,0 +1,824 @@
+[
+  {
+    "id": "mech-development-copying-00",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-0",
+    "text": "请只重复这个字，不要解释：猫\n答案：",
+    "answer": "猫",
+    "foil": "狗",
+    "input_ids": [
+      [
+        960,
+        1547,
+        3347,
+        904,
+        702,
+        294,
+        3428,
+        2093,
+        337,
+        3583,
+        234,
+        4881,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 3583,
+    "foil_id": 5369,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-01",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-1",
+    "text": "把给出的字原样写一次：狗\n回答：",
+    "answer": "狗",
+    "foil": "山",
+    "input_ids": [
+      [
+        5038,
+        2928,
+        296,
+        702,
+        1184,
+        1129,
+        1226,
+        2641,
+        337,
+        5369,
+        234,
+        3854,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 5369,
+    "foil_id": 2302,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-02",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-0",
+    "text": "请只重复这个字，不要解释：山\n答案：",
+    "answer": "山",
+    "foil": "水",
+    "input_ids": [
+      [
+        960,
+        1547,
+        3347,
+        904,
+        702,
+        294,
+        3428,
+        2093,
+        337,
+        2302,
+        234,
+        4881,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 2302,
+    "foil_id": 952,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-03",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-1",
+    "text": "把给出的字原样写一次：水\n回答：",
+    "answer": "水",
+    "foil": "火",
+    "input_ids": [
+      [
+        5038,
+        2928,
+        296,
+        702,
+        1184,
+        1129,
+        1226,
+        2641,
+        337,
+        952,
+        234,
+        3854,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 952,
+    "foil_id": 2329,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-04",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-0",
+    "text": "请只重复这个字，不要解释：火\n答案：",
+    "answer": "火",
+    "foil": "木",
+    "input_ids": [
+      [
+        960,
+        1547,
+        3347,
+        904,
+        702,
+        294,
+        3428,
+        2093,
+        337,
+        2329,
+        234,
+        4881,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 2329,
+    "foil_id": 3919,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-05",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-1",
+    "text": "把给出的字原样写一次：木\n回答：",
+    "answer": "木",
+    "foil": "日",
+    "input_ids": [
+      [
+        5038,
+        2928,
+        296,
+        702,
+        1184,
+        1129,
+        1226,
+        2641,
+        337,
+        3919,
+        234,
+        3854,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 3919,
+    "foil_id": 1053,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-06",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-0",
+    "text": "请只重复这个字，不要解释：日\n答案：",
+    "answer": "日",
+    "foil": "月",
+    "input_ids": [
+      [
+        960,
+        1547,
+        3347,
+        904,
+        702,
+        294,
+        3428,
+        2093,
+        337,
+        1053,
+        234,
+        4881,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 1053,
+    "foil_id": 1728,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-copying-07",
+    "split": "development",
+    "category": "copying",
+    "template_id": "development-copy-1",
+    "text": "把给出的字原样写一次：月\n回答：",
+    "answer": "月",
+    "foil": "猫",
+    "input_ids": [
+      [
+        5038,
+        2928,
+        296,
+        702,
+        1184,
+        1129,
+        1226,
+        2641,
+        337,
+        1728,
+        234,
+        3854,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "expected_id": 1728,
+    "foil_id": 3583,
+    "last_real_position": 12
+  },
+  {
+    "id": "mech-development-unrelated-00",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-0",
+    "text": "一加一等于：",
+    "answer": "2",
+    "foil": "3",
+    "input_ids": [
+      [
+        349,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected_id": 53,
+    "foil_id": 54,
+    "last_real_position": 4
+  },
+  {
+    "id": "mech-development-unrelated-01",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-1",
+    "text": "二加一等于：",
+    "answer": "3",
+    "foil": "4",
+    "input_ids": [
+      [
+        1841,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected_id": 54,
+    "foil_id": 55,
+    "last_real_position": 4
+  },
+  {
+    "id": "mech-development-unrelated-02",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-2",
+    "text": "三加一等于：",
+    "answer": "4",
+    "foil": "5",
+    "input_ids": [
+      [
+        1441,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected_id": 55,
+    "foil_id": 56,
+    "last_real_position": 4
+  },
+  {
+    "id": "mech-development-unrelated-03",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-3",
+    "text": "四加一等于：",
+    "answer": "5",
+    "foil": "6",
+    "input_ids": [
+      [
+        2405,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected_id": 56,
+    "foil_id": 57,
+    "last_real_position": 4
+  },
+  {
+    "id": "mech-development-unrelated-04",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-4",
+    "text": "五加一等于：",
+    "answer": "6",
+    "foil": "7",
+    "input_ids": [
+      [
+        2884,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected_id": 57,
+    "foil_id": 58,
+    "last_real_position": 4
+  },
+  {
+    "id": "mech-development-unrelated-05",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-5",
+    "text": "六加一等于：",
+    "answer": "7",
+    "foil": "8",
+    "input_ids": [
+      [
+        5577,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected_id": 58,
+    "foil_id": 59,
+    "last_real_position": 4
+  },
+  {
+    "id": "mech-development-unrelated-06",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-6",
+    "text": "七加一等于：",
+    "answer": "8",
+    "foil": "9",
+    "input_ids": [
+      [
+        293,
+        261,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "expected_id": 59,
+    "foil_id": 60,
+    "last_real_position": 5
+  },
+  {
+    "id": "mech-development-unrelated-07",
+    "split": "development",
+    "category": "unrelated",
+    "template_id": "development-fact-7",
+    "text": "八加一等于：",
+    "answer": "9",
+    "foil": "1",
+    "input_ids": [
+      [
+        315,
+        140,
+        595,
+        349,
+        4502,
+        337
+      ]
+    ],
+    "attention_mask": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "position_ids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "expected_id": 60,
+    "foil_id": 52,
+    "last_real_position": 5
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "status": "CONTROLLER_ACCEPTED_A1_A6",
+  "authority": "Parent coordinator explicitly accepted A1–A6 and authorized clerical T067 completion after PASS_A1_A6_EXACT_DELIVERY.",
+  "review": {
+    "path": "./evidence/atlas/final-review-v1.json",
+    "sha256": "fc68791207e80506cfc3bf246000915f417e9fc6bb00e76463735a42c78dc7a9",
+    "verdict": "PASS_A1_A6_EXACT_DELIVERY",
+    "checks": 123,
+    "unresolved_blockers": []
+  },
+  "verified_candidate_manifest": {
+    "path": "./evidence/atlas/final-delivery-manifest-v1.json",
+    "sha256": "c702fa8f9010f0877ea509530a504461a6dcaa4e611505e56485ad935ff1315d"
+  },
+  "clerical_candidate_manifest": {
+    "path": "./evidence/atlas/final-delivery-manifest-v2.json",
+    "sha256": "0b968566617fd325f5ea1a72cc09cbeabfd2af3f5ce9ccfefbb3e76abee767ff"
+  },
+  "task_closure": {
+    "path": "./specs/001-minimind-reproduction/tasks.md",
+    "before_sha256": "7338064b2051bcb0dbd38288d587b2518c2e50b6e5551c45fbfb0b158f743e26",
+    "after_sha256": "a171c7a5b8c9e80e8c41220d121fa3760b30659d6575151d9ce9dfdca6739cff",
+    "change": "T067 checkbox only"
+  },
+  "native_goal_status": "Governed by native goal tool; this receipt does not assert tool lifecycle status.",
+  "scientific_result": "REFUTED; no scientific/source/report content changed",
+  "next_action": "Separate verifier checks clerical closure identities; no new scientific review or model execution.",
+  "visible_status_closure": {
+    "manifest": "./evidence/atlas/final-delivery-manifest-v3.json",
+    "sha256": "73cb5ce7dbba394997b12ca81d8daa2b332fc30347815068d06b11e52c6d21f4",
+    "prior_acceptance_receipt": "./evidence/atlas/controller-acceptance-v1.json",
+    "prior_sha256": "9034b06afda176cafc8e4946784803c03ae192b83c0dfe34c957bee80db6a9ae",
+    "scope": "Four visible document/task status corrections only; no science/code changes.",
+    "independent_check": "Pending closure-only verification"
+  }
+}

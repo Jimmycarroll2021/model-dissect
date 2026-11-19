@@ -1,0 +1,60 @@
+{
+  "status": "blocked",
+  "review_type": "independent scientific protocol static review",
+  "candidate": {
+    "path": "evidence/mechanism/protocol-v1.md",
+    "sha256": "3885ee91be2be39ad74c13868f5172d9a21b0b041bed16c785ace72ff0bf6192"
+  },
+  "reviewed_at_epoch": 1794906744.4906976,
+  "findings": [
+    {
+      "id": "P3",
+      "severity": "blocking",
+      "location": "evidence/mechanism/protocol-v1.md:37",
+      "finding": "Outcome precedence ambiguous: broad damage is said to imply inconclusive, but a nonpositive effect or D concurrently satisfies refuted.",
+      "required_fix": "Freeze mutually exclusive ordered decision logic: invalid prerequisite -> inconclusive/invalid; then explicit damage/control checks; then supported/refuted/other. State whether broad damage overrides directional refutation."
+    }
+  ],
+  "accepted_design_elements": [
+    "Native nn.Identity forward-hook adapter is a valid declared instrumentation candidate despite original callable adapter lacking module sites; installed behavior and new-candidate M2 still require execution.",
+    "Selection over all coordinates creates development selection bias, but predetermined rule and single untouched heldout evaluation support only the stated narrow descriptive result; no p-value or unique circuit claims.",
+    "Development 8 copying + 8 unrelated, heldout 16+16, frozen before observations and no reselection after interventions prevent result-driven fishing under procedural separation.",
+    "Frozen RMS-scaled control is implementable and expressly differs from readiness per-example equal-magnitude proposal; heldout group-specific norm gate required.",
+    "Same-mode M2 preserves original R2 FAIL/R3 NOT_RUN rather than counterfeiting full cached/full acceptance.",
+    "Five slot token caps sum to 200000 and time caps sum to 2700 seconds; original deadline/cap recheck and actual reservation remain runtime requirements.",
+    "Current spec/plan amendment explicitly supersedes old R2-blocks-probe dependency, retains historical failure, and names M2/M3/M4; reviewed amendment only, not all historical documents."
+  ],
+  "not_run": [
+    "No source implementation review",
+    "No model, tokenizer or synthetic execution",
+    "No budget live check"
+  ],
+  "limitations": [
+    "Static protocol review only; exact changed protocol requires rereview.",
+    "No external API-document validation; installed tool tests remain mandatory."
+  ],
+  "next_action": "Planner freezes mutually exclusive verdict order, completes amendment, then exact final hash rereview.",
+  "resolved_findings": [
+    {
+      "id": "P1",
+      "severity": "blocking",
+      "location": "evidence/mechanism/protocol-v1.md:7,15,33",
+      "finding": "No explicit bitwise equality rule for identical-shape baseline/noop/restored outputs; M2 tolerance could allow instrumentation or restoration drift. Readiness requires torch.equal.",
+      "required_fix": "Require torch.equal baseline/noop/restored logits and unaffected captured boundaries; exact capture/direct-tensor equality, zero owned handles after success and injected exception, unchanged weights. Reference M2 remains tolerance-based.",
+      "resolved": true
+    },
+    {
+      "id": "P2",
+      "severity": "blocking",
+      "location": "evidence/mechanism/protocol-v1.md:33",
+      "finding": "Held-out norm-mismatch group and denominator are not frozen. Aggregating copying and unrelated examples could conceal unmatched copying interventions.",
+      "required_fix": "Define copying-subset gate abs(mean_control_L2-mean_target_L2)/mean_target_L2 <=0.25; zero denominator/nonfinite is inconclusive. Report separate unrelated and combined statistics; do not substitute combined mean for copying gate.",
+      "resolved": true
+    }
+  ],
+  "related_candidates": {
+    "specs/001-minimind-reproduction/spec.md": "46d9f7c9bdad8c298e7c827fa8bcf59e34660902432756a37e3ab675c45e9474",
+    "specs/001-minimind-reproduction/plan.md": "ccf94cdcd36607d33aa580cf6788742107e60f0c14c3ceed880e571a4194237f",
+    "specs/001-minimind-reproduction/tasks.md": "d9d9b99de31b5e23d224f30b870e6a6222e25d189d92f4c24d902f78dfaaae0b"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "IMPLEMENTED_PENDING_REVIEW_ADMISSION_TARGET_UNEXECUTED",
+  "files": {
+    "src/minimind_re/transfer/science_full.py": "f045b70c8101f8485db97e844fb5804e08da6390b4b67385f820cd397c27973f",
+    "tests/transfer/test_science_full.py": "fec5b88247bef6ddaecef10cea524df34803bebc28fffb64fa8a563a70efcc55",
+    "evidence/transfer-002/science/full-implementation-tests-v1.txt": "812013367273caf72611457563b04c8ace57d792abaf31cef2a340a457fa47c1",
+    "evidence/transfer-002/science/full-implementation-tests-v2.txt": "50149cf3fd98b8f2fdb89f20e2d4f73d4c1bec8f5f5a2a0fb0acf036241f0426"
+  },
+  "frozen_protocol_source": {
+    "path": "src/minimind_re/transfer/science.py",
+    "sha256": "534e0076b83c924a499a763b0567971d85978368d35012ff206c0948a65b2df7"
+  },
+  "api": "run_science_full(development,heldout_provider,*,heldout_sha256,native,candidate,guard,output,parameter_digest,checkpoint_identity)",
+  "return_contract": {
+    "pass": "True only after required fullprefill parity, original tool/restoration/trace checks, accounting and parameter digest checks pass",
+    "status": "COMPLETED_FULL_PREFILL_SUPPORTED_SLICE",
+    "verdict": "Original frozen mechanism verdict, unchanged; not conflated with execution success"
+  },
+  "calls": 389,
+  "actual_positions": 12448,
+  "reserve_positions": 12500,
+  "reserve_seconds": 300,
+  "reserve_bytes": 1073741824,
+  "original_protocol_calls": 341,
+  "extra_candidate_baseline_calls": 48,
+  "raw_paired_baseline_payload_bytes": 630718464,
+  "producer_supplied_total_baseline_payload_estimate_bytes": 722278912,
+  "storage_note": "Raw paired arrays are written synchronously with save_arrays before parity; source uses torch-to-NumPy views without explicit owning copies. Existing scientific clone/copy behavior is inherited. Exact serialized total and peak memory need independent admission accounting; synthetic tests stub array writes.",
+  "test_result": "3 synthetic tests passed; full389-call schedule,195 actualcalls beforeheldout,48 paired checks, both finite mismatch/nonfinite failures retain rawarrays and stop beforeinterventions",
+  "parity_scope": "all9boundaries on all32physical rows including pads, full50304 logits; finite FP32 exactshape, unchanged elementwise tolerance and logits argmax",
+  "cache_scope": "past_key_values must be None on every actualforward; returned cache discarded",
+  "limitations": [
+    "No target calls/tokenizer/weights loaded",
+    "Does not establish cache/full T2 or wholetransfer completion",
+    "Original verdict thresholds/controls/selection are delegated unchanged",
+    "Independent serialization/storage accounting and exactcandidate review pending"
+  ]
+}

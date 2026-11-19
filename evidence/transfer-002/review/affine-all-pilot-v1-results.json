@@ -1,0 +1,129 @@
+{
+  "verdict": "CONFIRMED_ALL_AFFINE_PILOT_FAIL",
+  "reviewed_utc": "2026-11-18T19:53:37.887099+00:00",
+  "checks": {
+    "150arrays_hash_finite": true,
+    "payload": true,
+    "all81comparisons_recomputed": true,
+    "cache_invariants": true,
+    "6calls8positionscharged": true,
+    "failed_retained": true
+  },
+  "families": {
+    "cross": {
+      "rows": 27,
+      "failed": 0
+    },
+    "cache_full": {
+      "rows": 18,
+      "failed": 0
+    },
+    "native_anchor": {
+      "rows": 36,
+      "failed": 2
+    }
+  },
+  "failed_rows": [
+    {
+      "kind": "native_anchor",
+      "actor": "reference",
+      "call": "prefill",
+      "boundary": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.743171691894531e-05,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 3.743171691894531e-05,
+      "violations": 57,
+      "bitwise_equal": false
+    },
+    {
+      "kind": "native_anchor",
+      "actor": "candidate",
+      "call": "prefill",
+      "boundary": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.743171691894531e-05,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 3.743171691894531e-05,
+      "violations": 57,
+      "bitwise_equal": false
+    }
+  ],
+  "reference_cache_full_boundary_deltas": [
+    {
+      "boundary": "embedding",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.0",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.1",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.2",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.3",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.4",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.5",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "final_norm",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "logits",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    }
+  ],
+  "receipt_sha256": "b418d8eb535a2dd92867d9fa2512f3b53c367e9b4abeb917eb29cfc6f63d4db7",
+  "supervisor": {
+    "returncode": 1,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 994525184,
+    "elapsed": 8.201616732985713,
+    "added_disk_bytes": 1787219,
+    "total_phase_disk_bytes": 7622079569,
+    "packet_disk_limit": 16777216,
+    "phase_disk_limit": 25769803776
+  },
+  "ledger_finish": {
+    "actual_positions": 8,
+    "elapsed": 6.608009126968682,
+    "event": "finish",
+    "inherited_self_rusage_highwater_bytes": 1022472192,
+    "run_id": "affine-all-pilot-v1",
+    "sampled_owned_tree_rss_bytes": 994525184,
+    "status": "failed",
+    "time": 1795031592.0428941,
+    "version": "transfer-guard-v3"
+  },
+  "limits": [
+    "Original anchor and cache/full gates reported independently; no threshold relaxation.",
+    "No further model execution or source changes performed."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INDEPENDENT_REPEAT_ADMISSION",
+  "admission_path": "./evidence/continuation/review/continuation-independent-admission-v1.json",
+  "admission_sha256": "30d2ad9528fcd134af1a294b8eac3217539ec9014694dbef012719ca22c44dc0",
+  "phase_start": 1794990938.83567,
+  "phase_deadline": 1794994538.83567,
+  "positions": 176640,
+  "timeout": 900,
+  "required_parity_calls": 6,
+  "required_cases": 4,
+  "producer_audit_sha256": "d83d20e93c780aa5bf204667c6aec8e2aafb20a92e403c46906a94ca16fc2819",
+  "semantic_reconciliation": {
+    "behavior-copy-screen-00": "INCOMPLETE",
+    "behavior-subtract-screen-00": "INCOMPLETE",
+    "behavior-compare-screen-00": "WRONG",
+    "upstream-first-general-chat": "INCOMPLETE"
+  },
+  "execution": "NOT_STARTED"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Exact D4 diagnostic script review; one purpose-amended diagnostic within original lifetime limits; no model execution by reviewer",
+  "script_sha256": "24081bdd02860ac0a8cd4de57dbf5d7bf6ebae96432b4fc31d51a3b16cb71be9",
+  "proposal_sha256": "f89097893cf82fd5580cb72ce5dd3e12049dbd6a0fccebe7e4f9887b6420357f",
+  "required_fixes": [],
+  "limits": {
+    "additional_runs": 1,
+    "reservation_max": 4096,
+    "timeout_seconds": 300,
+    "model_calls": 10,
+    "expected_model_positions": 50,
+    "expected_primitive_input_rows": 1078,
+    "new_lifetime_budget": false
+  },
+  "findings": [
+    "Script identity matches assigned24081bdd02860ac0a8cd4de57dbf5d7bf6ebae96432b4fc31d51a3b16cb71be9.",
+    "Captured complete firstlayer K/V prefixes and last Q are compared before interpretation of contraction results.",
+    "Query prefix slicing removes only future causal positions; finite additive padding keys are retained. Native singleton comparison hard-masks future positions and preserves original finite padding bias.",
+    "Full model calls execute unchanged genuine cached and full paths. Canonical operations run only on captured operands, with no model forward patch, reference replacement, precision change or source update.",
+    "Native batched, native singleton and canonical comparisons remain separately recorded rather than treating canonical agreement as native-model acceptance.",
+    "One bounded none/left-padding diagnostic on exposed fixtures is justified after D3; no backend search or additional candidate evaluation is implied."
+  ],
+  "interpretation_limits": [
+    "If complete K/V or lastQ equality fails, shape-only contraction attribution is not established; diagnostic arithmetic may still be inspected but cannot promote a contraction-only remedy on that basis.",
+    "Raw score comparisons use pre-mask captured score tensors. Attention comparisons use post-mask outputs. Padded query rows are marked and must not be misrepresented as real-token acceptance.",
+    "DIAGNOSTIC_COMPLETE means execution completed, not all comparisons passed. Review actual row statuses.",
+    "No independently implemented policy-reference or full native-equivalence test runs here; this script cannot establish a final changed reference policy."
+  ],
+  "preserved_gates": [
+    "Original native-prefill equivalence at1/8/32/128 and padding invariance remain mandatory for any changed adapter.",
+    "No stronger requirement to match both historical native modes is introduced.",
+    "Full R2 numerical,cache,boundary,top1,no-op/restoration requirements and separate exact-candidate repeat remain mandatory before R3."
+  ],
+  "next_action": "Coordinator may admit this one guarded D4 after recording the purpose amendment. Original guard/resource/environment checks apply. Candidate changes need subsequent evidence-supported freeze and review."
+}

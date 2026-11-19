@@ -1,0 +1,38 @@
+{
+  "candidate_id": "MECHANISM-FIXTURES-001",
+  "created_utc": "2026-11-17T09:19:56.687083+00:00",
+  "seed": "literal-fixed-v1-no-randomness",
+  "hashes": {
+    "fixtures/mechanism/development.json": "ff6986475c020efe74182fe4184a96606dac165e994aa6c44466747f0fb12a1c",
+    "fixtures/mechanism/heldout.json": "53eb13186f8a07a30a061dffdc7ca531f2da39633feb74f97226eae270da998f",
+    "fixtures/mechanism/parity.json": "3dcfe14cf1323d60f649d9eeb5ce44db047a16da90c1888789b62cef5871c112"
+  },
+  "counts": {
+    "development": {
+      "rows": 16,
+      "input_positions": 146,
+      "max_length": 13
+    },
+    "heldout": {
+      "rows": 32,
+      "input_positions": 397,
+      "max_length": 21
+    },
+    "parity": {
+      "rows": 12,
+      "input_positions": 531,
+      "max_length": 131
+    }
+  },
+  "tokenizer_hashes": {
+    "artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110"
+  },
+  "generator_sha256": "d6af995ca69e7021695c09540b7538f9092a98a4290f817dbebc7d8a3595b38f",
+  "model_forwards": 0,
+  "model_input_positions": 0,
+  "tokenizer_validation": "Every answer and foil extends exact prompt encoding by one token; no special tokens; no outcomes consulted",
+  "split_design": "Disjoint copying items and templates; development arithmetic versus heldout antonym completions. Distribution shift limits generalization; unrelated categories are deliberately disjoint.",
+  "exposure": "Evaluator-owned heldout, procedural isolation only; publish development only",
+  "freeze_rule": "No fixture changes after development selection; invalid fixtures stop experiment"
+}

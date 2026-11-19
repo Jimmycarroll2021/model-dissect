@@ -1,0 +1,176 @@
+{
+  "verdict": "CONFIRMED_QKV_ONLY_PILOT_FAIL",
+  "reviewed_utc": "2026-11-18T19:47:17.885414+00:00",
+  "checks": {
+    "150arrays_hash_finite": true,
+    "payload": true,
+    "all81comparisons_recomputed": true,
+    "cache_invariants": true,
+    "6calls8positionscharged": true,
+    "failed_retained": true
+  },
+  "families": {
+    "cross": {
+      "rows": 27,
+      "failed": 0
+    },
+    "cache_full": {
+      "rows": 18,
+      "failed": 4
+    },
+    "native_anchor": {
+      "rows": 36,
+      "failed": 0
+    }
+  },
+  "earliest_failures": {
+    "cross": null,
+    "cache_full": {
+      "kind": "cache_full",
+      "actor": "reference",
+      "call": "cached.0",
+      "boundary": "final_norm",
+      "pass": false,
+      "finite": true,
+      "max_abs": 0.00016355514526367188,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 0.00016355514526367188,
+      "violations": 3,
+      "bitwise_equal": false
+    },
+    "native_anchor": null
+  },
+  "failed_rows": [
+    {
+      "kind": "cache_full",
+      "actor": "reference",
+      "call": "cached.0",
+      "boundary": "final_norm",
+      "pass": false,
+      "finite": true,
+      "max_abs": 0.00016355514526367188,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 0.00016355514526367188,
+      "violations": 3,
+      "bitwise_equal": false
+    },
+    {
+      "kind": "cache_full",
+      "actor": "candidate",
+      "call": "cached.0",
+      "boundary": "final_norm",
+      "pass": false,
+      "finite": true,
+      "max_abs": 0.00016355514526367188,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 0.00016355514526367188,
+      "violations": 3,
+      "bitwise_equal": false
+    },
+    {
+      "kind": "cache_full",
+      "actor": "reference",
+      "call": "cached.0",
+      "boundary": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 7.081031799316406e-05,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 7.081031799316406e-05,
+      "violations": 712,
+      "bitwise_equal": false
+    },
+    {
+      "kind": "cache_full",
+      "actor": "candidate",
+      "call": "cached.0",
+      "boundary": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 7.081031799316406e-05,
+      "argmax_equal": true,
+      "recomputed_pass": false,
+      "recomputed_max_abs": 7.081031799316406e-05,
+      "violations": 712,
+      "bitwise_equal": false
+    }
+  ],
+  "receipt_sha256": "3a63b4db0d5c3b8ee5843f1a19bddab8cbc5f209085587c9f75d7f32e723b30f",
+  "supervisor": {
+    "returncode": 1,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 995086336,
+    "elapsed": 9.043612394947559,
+    "added_disk_bytes": 1787461,
+    "total_phase_disk_bytes": 7619361611,
+    "packet_disk_limit": 16777216,
+    "phase_disk_limit": 25769803776
+  },
+  "ledger_finish": {
+    "actual_positions": 8,
+    "elapsed": 7.460497229010798,
+    "event": "finish",
+    "inherited_self_rusage_highwater_bytes": 1023033344,
+    "run_id": "affine-pilot-v1",
+    "sampled_owned_tree_rss_bytes": 995086336,
+    "status": "failed",
+    "time": 1795031209.2443957,
+    "version": "transfer-guard-v3"
+  },
+  "interpretation": [
+    "QKV-only mode passes all36 original-native-anchor rows but is insufficient for cache/full acceptance at original tolerances.",
+    "Cross-actor agreement establishes agreement of independently authored mode implementations for these calls only.",
+    "No further target execution authorized or performed after this failed pilot."
+  ],
+  "reference_cache_full_boundary_deltas": [
+    {
+      "boundary": "embedding",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "boundary": "block.0",
+      "bitwise_equal": false,
+      "max_abs": 1.043081283569336e-07
+    },
+    {
+      "boundary": "block.1",
+      "bitwise_equal": false,
+      "max_abs": 3.5762786865234375e-07
+    },
+    {
+      "boundary": "block.2",
+      "bitwise_equal": false,
+      "max_abs": 1.9073486328125e-06
+    },
+    {
+      "boundary": "block.3",
+      "bitwise_equal": false,
+      "max_abs": 2.384185791015625e-06
+    },
+    {
+      "boundary": "block.4",
+      "bitwise_equal": false,
+      "max_abs": 2.384185791015625e-06
+    },
+    {
+      "boundary": "block.5",
+      "bitwise_equal": false,
+      "max_abs": 3.5762786865234375e-06
+    },
+    {
+      "boundary": "final_norm",
+      "bitwise_equal": false,
+      "max_abs": 0.00016355514526367188
+    },
+    {
+      "boundary": "logits",
+      "bitwise_equal": false,
+      "max_abs": 7.081031799316406e-05
+    }
+  ]
+}

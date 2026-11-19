@@ -1,0 +1,12 @@
+{
+  "phase": "ECHO-MECHANISM-001",
+  "status": "FROZEN_CANDIDATE_NOT_RUN",
+  "protocol_sha256": "ec59becccab0eaecf787934ee77d1a46722de3ab5cf5f99255e27ffb023d0dff",
+  "fixtures_sha256": "a5f37e9e3e4b021d720869b23375f0f7cb33c09fe9ebc5be2c9fce2416af291c",
+  "per_role_reserved": 78112,
+  "per_role_actual_max": 76632,
+  "total_reserved": 156224,
+  "historical_reserved": 804208,
+  "lifetime_reserved_max": 960432,
+  "actual_forward_max": 1480
+}

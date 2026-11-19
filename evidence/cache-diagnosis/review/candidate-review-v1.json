@@ -1,0 +1,57 @@
+{
+  "status": "PASS_EXACT_CACHE_PRODUCER_ADMISSION",
+  "reviewed_utc": "2026-11-18T09:13:07.840242+00:00",
+  "candidate_manifest_sha256": "1bd60608d346f142fb01d67ebd0dd56d56dc15e8b7ebd0d2ee300c06eca8f70b",
+  "runner_sha256": "4aa17d8a6591f30382510b53f68f551e3a971ec18e90da5b796b89de5fe4862d",
+  "guard_sha256": "b0c0dbff9a7e843eedb185a00081f78ca826518c53e65854c8585c7548add41e",
+  "policy_sha256": "cf6341335205e95c67946a174597555a91dcd98039976d7ff8f7961b3d9caef7",
+  "stage_files_checked": 23,
+  "project_files_checked": 11,
+  "historical_reserved": 1035920,
+  "phase_reserved_cap": 512,
+  "lifetime_after_both_slots": 1036432,
+  "approved_lifetime_cap": 1038544,
+  "remaining_after_both": 2112,
+  "checks": [
+    "All candidate hashes including checkpoint payload verified.",
+    "Six live histories equal snapshots; no active historical runs; all six locks acquired read-only together and released.",
+    "Live ledger clock/PID/reservation binding:9 extracted-function synthetic checks PASS.",
+    "Trace source/synthetic checks8PASS on revised exact source; numerical capture code unchanged.",
+    "Guard tests50PASS, executed with synthetic children only.",
+    "MKL strict env set by guard before child import; fresh child rejects torch pre-import.",
+    "Disk caps/reserve pass; no phase ledger exists, clock not started.",
+    "Guard exact admission validation passes without launching run."
+  ],
+  "test_logs": {
+    "./evidence/cache-diagnosis/review/synthetic-v2.log": "d7927975d252f0b4f68919daa20dfca9f00f65094e66e48567a291e79796df96",
+    "./evidence/cache-diagnosis/review/guard-rerun-v1.log": "46e448197d7a99d96a38b64473c0009a55355417079d5d26e9e0465b6ba7ad23",
+    "./evidence/cache-diagnosis/review/live-binding-synthetic-v1.json": "532301933721fcdf4c5e135ad056bfb04d38b492d9fcc9a1a9941f97758bc476"
+  },
+  "admission_path": "./evidence/cache-diagnosis/review/producer-admission-v1.json",
+  "admission_sha256": "41498d37087bd6b3769aa423a57a1d3d81e0f37698d4b015e27289c98f3e9795",
+  "producer_command": [
+    "/usr/bin/python",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runtime/cache_guard.py",
+    "--workspace",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118",
+    "--policy",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runtime/cache-policy.json",
+    "--policy-hash",
+    "cf6341335205e95c67946a174597555a91dcd98039976d7ff8f7961b3d9caef7",
+    "--admission",
+    "./evidence/cache-diagnosis/review/producer-admission-v1.json",
+    "--run-id",
+    "cache-operands-producer-v1",
+    "--kind",
+    "model",
+    "--positions",
+    "256",
+    "--timeout",
+    "300"
+  ],
+  "limitations": [
+    "Source protocol mentions process-group timeout, but reviewed guard terminates its direct child; approved immutable child contains no subprocess launch. This is not an OS-enforced descendant sandbox.",
+    "Old source-manifest/protocol JSON preparation hashes are historical; exact final manifest and staging amendment are authoritative for revised runner.",
+    "No model run or actual tensor capture performed during this admission review; historical R2 remains FAIL."
+  ]
+}

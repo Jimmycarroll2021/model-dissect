@@ -1,0 +1,83 @@
+{
+  "status": "PASS_STATIC_REVIEW_FOR_USER_RESOURCE_APPROVAL",
+  "reviewed_utc": "2026-11-18T09:37:53.018877+00:00",
+  "candidate_manifest_sha256": "cb2d215e0ad08760915a0b07346c6b690beef38226116e99ef0eeefa2fb2ac3e",
+  "identities": {
+    "runner_sha256": "a82af82b632e48074e03bf216c7255e9b37b0782cb290a3cd437fd72f873d4f1",
+    "candidate_sha256": "d3009078f90ad10afaf331f96c381524250e4b157ecd71857a09d773189c1137",
+    "reference_sha256": "6a3b1cf59f2881cdf4a5e5085f975fc5848173dd06e64276693d50e2f005c07b",
+    "guard_sha256": "57ced1e1fb58774e6a1510e253e76a818ca5a30140c6720acbe006b8ede97a44",
+    "proposed_policy_sha256": "b0b8a435c6d8591eecf064a335a4eb19f36c35544856863bcfb91033cd54a62d",
+    "supersedes_manifest_sha256": "392fdfbd878a8faf2dc2c423ffad32501740b624442f1bf6c19fa222f63a7d78"
+  },
+  "verified_files": {
+    "files": 30,
+    "project_files": 12
+  },
+  "tests": {
+    "independent_source_synthetic": 7,
+    "producer_runner_synthetic_rerun": 9,
+    "reference_author_rerun": 7,
+    "guard_synthetic_rerun": 51,
+    "logs": {
+      "./evidence/cache-shape-matrix/review/source-synthetic-v2.log": "b83f6735950ed91d83db9b96250271cff3da748e1b41618bce4136e109f88657",
+      "./evidence/cache-shape-matrix/review/producer-tests-rerun-v2.log": "651ee20f624f28fc72e2bff8c1494045685ebcc13e54996068f64ed0cef44f6a",
+      "./evidence/cache-shape-matrix/review/reference-tests-rerun-v1.log": "3665a932b18be1c9c5f091a71a1a2f81422ec6a775a6f5f19c7d61ec34724385",
+      "./evidence/cache-shape-matrix/review/guard-rerun-v1.log": "3406e90ab7c05ec94a23d38f305a62661889d2fe4e06abbc77938d74f4102e2d"
+    }
+  },
+  "coverage": {
+    "fixtures": 24,
+    "arms_each": 3,
+    "positions_each": 50526,
+    "calls_each": 1656,
+    "rows_each": 9120,
+    "original_rows": 5280,
+    "untouched_native_fidelity_rows": 2880,
+    "untouched_native_restoration_rows": 960,
+    "cache_prefix_KV_checks_each": 9216,
+    "boundary_archives_each": 72,
+    "compact_KV_files_each": 720
+  },
+  "resource_request": {
+    "currently_approved_lifetime_ceiling": 1038544,
+    "historical_reserved": 1036688,
+    "new_reserved_each": 50600,
+    "new_reserved_total": 101200,
+    "requested_lifetime_ceiling": 1137888,
+    "increase_over_current_ceiling": 99344,
+    "new_phase_disk_cap": 4294967296,
+    "old_phase_disk_cap": 536870912,
+    "projected_phase_bytes": 4064750262,
+    "phase_disk_headroom": 230217034,
+    "unchanged_combined_disk_cap": 8589934592,
+    "combined_existing_plus_full_new_cap": 6202202458,
+    "unchanged_combined_RSS_cap": 8589934592,
+    "unchanged_free_disk_reserve": 2147483648,
+    "threads": 2,
+    "role_wall_seconds": 900,
+    "aggregate_role_wall_seconds": 1800,
+    "phase_seconds": 3600
+  },
+  "checks": [
+    "Exact complete comparison-loop source exercised with all24 synthetic fixture shapes and correct real-token masks;9120 unique rows.",
+    "Actual clone no-op hooks and restoration run for all actors/arms; existing hooks preserved on exception.",
+    "Full four-boundary raw arrays retained everycall; original elementwise/top1 comparator unchanged; independent repeat separately byte-exact.",
+    "Compact chunks use owning clones; initial+append data reconstruct every cached state against full-cache hashes/shapes/dtypes. Unusedfull-control KV excluded explicitly.",
+    "Sequential actors and fixture-scoped boundary retention bound working memory; raw data streamed, no whole-matrix retention.",
+    "Exact Torch version and all-four-boundary nonfinite hardstop corrected before freeze.",
+    "Eight historical chain hashes/snapshots verified and all8 locks acquired read-only then released; no active prior rows.",
+    "Disk preflight passes; projections fit4GiBphase and unchanged8GiBcombined cap with explicit64MiBserialization/metadata allowance.",
+    "Unapproved policy is rejected by guard; packets unapproved, no admission and no phase ledger/clock exist."
+  ],
+  "limitations": [
+    "Static approval readiness, not user approval or runtime admission.",
+    "No target model, tokenizer or checkpoint model-loading run; checkpoint file hash only.",
+    "After explicit user approval, approval-field packet/policy hashes must be rebound and exact runtime admission completed; numerical source changes require fresh review.",
+    "Original native cached-self R2 FAIL remains separate; proposed outcome validates only new mode on both frozen test matrices if all original gates and independent repeat pass.",
+    "Storage overhead is budgeted rather than measured target output; guard enforces cap and stops without retry if exceeded."
+  ],
+  "review_history": [
+    "Initial finalization attempt against superseded proposed-v1 detected packet hash mismatch during producer v2 freeze and wrote no acceptance. Final acceptance binds exact proposed-v2."
+  ]
+}

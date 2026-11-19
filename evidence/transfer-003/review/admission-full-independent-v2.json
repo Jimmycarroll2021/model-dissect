@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "scope": "NUMERICAL_FULL_ONLY_AFTER_PRODUCER_ACCEPTANCE",
+  "packet": "./evidence/transfer-003/runtime/packet-full-independent-v2.json",
+  "packet_sha256": "989b2b7aaccfbd20ec786d3631207f9f53dda44bde1cc01375388ee2d30546db",
+  "review": "./evidence/transfer-003/review/pilot-review-v2.json",
+  "review_sha256": "e0eff8551a543afcfbcf87cd15dbaaf2c7e932404056960dd48d5de5d9f5dd70",
+  "conditions": [
+    "Launch producer first using exact full packet/PASS receipt; independent full only after producer output/reload/fidelity/preservation/resource review passes.",
+    "Required prefix PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src; owned supervisor only, no direct child, no ledger initialization/reset.",
+    "Each full role remains capped2800positions/600seconds/896MiB; exactly96calls/2712physicalpositions/1680comparisons expected. Per-call120seconds remains enforced.",
+    "Fresh memory/disk/process/stall readiness before each launch and serialize with other target/synthetic model workloads.",
+    "Any failure retains charge/evidence and blocks dependent execution; no silent cap changes or retries.",
+    "No cache, left-padding, static/tokenizer/science run admitted here. Science12site and remaining gates are separate."
+  ],
+  "created_utc": "2026-11-19T00:16:04.704429+00:00"
+}

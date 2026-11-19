@@ -1,0 +1,122 @@
+{
+  "id": "ATLAS-001-A5-v1",
+  "status": "CANDIDATE_PENDING_INDEPENDENT_REVIEW_NO_FORWARD_ADMISSION",
+  "atlas_sha256": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd",
+  "question": "Does the strongest sampled raw OV direction identify a head with selective next-token log-odds sensitivity beyond an equal-weight-norm neighboring-head intervention?",
+  "selection": {
+    "algorithm": "Across the16 recorded OV direction rows, maximize residual_norm; ties by ascending layer, query_head, residual_coordinate. Freeze selection from actual atlas, no new weight search.",
+    "layer": 7,
+    "query_head": 7,
+    "kv_head": 3,
+    "residual_coordinate": 767,
+    "sampled_raw_ov_norm": 0.19334485834650597,
+    "positive_token_id": 302,
+    "negative_token_id": 3070,
+    "control_query_head": 6,
+    "control_kv_head": 3,
+    "head_dim": 96,
+    "target_columns": [
+      672,
+      768
+    ],
+    "control_columns": [
+      576,
+      672
+    ],
+    "weight_key": "model.layers.7.self_attn.o_proj.weight"
+  },
+  "hypothesis": "Across fresh fixed prompts, attenuating selected head7 by50percent causes a larger absolute change in log odds token302 versus3070 than a same-layer head6 perturbation of matched weight Frobenius norm, with greater contrast selectivity relative to whole-vocabulary logit change.",
+  "claim_limit": "A positive finding supports this head/contrast/input-distribution intervention only. Raw OV omits normalization, attention, residual and MLP computation. Neither selected coordinate nor tokens acquire a semantic interpretation. No claim of copying, punctuation skill, arithmetic, training history, or whole-model mechanism.",
+  "mode": {
+    "backend": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "cache": null,
+    "batch_size": 1,
+    "evaluation": "full-prefill last real token only; no generation",
+    "forward": "unchanged src/minimind_re/forward.py ReconstructedAdapter; inputs int64 ids/positions and boolean all-true mask; contiguous position_ids0..L-1"
+  },
+  "arms": {
+    "baseline": "original working weight",
+    "noop": "bitwise clone of original complete o_proj tensor substituted without arithmetic modification",
+    "target": "clone original; multiply target columns672:768 by0.5",
+    "control": "clone original; multiply control columns576:672 by1-alpha, alpha=0.5*Frobenius(original target slice)/Frobenius(original control slice)",
+    "restored": "restore original tensor object in finally; rerun baseline and require exact equality"
+  },
+  "norm_gate": {
+    "match": "Compute actual FP32 subtraction norms in float64. abs(target_delta_norm-control_delta_norm)<=1e-5+1e-5*target_delta_norm. Record both and alpha.",
+    "alpha_range": [
+      0.0,
+      1.0
+    ],
+    "invalid": "Zero/nonfinite control norm or alpha outside(0,1] is invalid control; do not pick another head, rescale target, or label scientific negative. Return BLOCKED_INVALID_CONTROL."
+  },
+  "fixtures": {
+    "development": 16,
+    "confirmation": 32,
+    "independent_repeat": "same32 frozen confirmation inputs in separate process; independent reviewer recomputes metrics",
+    "owner": "Separate evaluator authors and hashes exact development and confirmation text files before discovery admission; investigator sees development only until candidate/protocol frozen. Candidate/packet binds immutable text-file hashes, exact offline tokenizer/config/chat-template identities and deterministic renderer code hash. Token arrays are deterministically materialized and sealed before any model weights load or scores in each admitted slot.",
+    "schema": {
+      "id": "unique string",
+      "split": "development|confirmation",
+      "text": "exact user text",
+      "input_ids": "actual frozen tokenizer/chat-template result list[int]",
+      "attention_mask": "all true lengthL",
+      "position_ids": "0..L-1",
+      "format_provenance": "tokenizer/config/template hashes and exact rendering",
+      "category": "English descriptive|Chinese descriptive|English dialogue|Chinese dialogue"
+    },
+    "composition": "development4per category; confirmation8per category. Everyday factual/descriptive/chat prompts, no copying/arithmetic tests or claimed correct answers. Distinct text and token-array hashes across splits and old mechanism/behavior fixtures. Evaluator freezes exact texts before any A5 forward. No desired-token answers or logit-based selection.",
+    "length": "8<=L<=96 including frozen chat template. No truncation or replacement after text freeze. Any invalid or overlength fixture stops before weight load; preserve a charged failed-slot receipt. Do not use alternative prompts.",
+    "token_policy": "302/3070 are logit contrast indices, not required input tokens. Decode both for reporting with pinned tokenizer, preserve exact pieces; neither is used as a semantic feature. If either is special-token/unknown/out-of-range, fail protocol review without choosing a replacement. Numeric or byte-level pieces remain valid indices with no semantic claim.",
+    "tokenization_procedure": {
+      "admitted_location": "Within existing a5-discovery/a5-confirmation/a5-independent guarded process, before model weights load; never an additional unguarded/static process. CWD/TMP/cache/output paths stay in staged runtime workspace.",
+      "bounds": "Offline pinned tokenizer only; no model weights, network, installs or downloads; at most2threads and30seconds tokenizer preparation per slot, included in600second model-slot wall limit. Timeout/validation failure stops before load and retains slot charge.",
+      "freeze": "Before slot launch freeze exact texts and tokenizer/template/renderer/source identities. Deterministically encode all texts for that slot; save actual ids/masks/positions and hashes to immutable preparation receipt before any forward or model loading. Recheck prepared arrays against receipt before use.",
+      "confirmation": "Evaluator-authored confirmation texts frozen before discovery remain sealed from investigator until candidate/protocol freeze; confirmation process materializes and seals its arrays before weights/scores. Independent slot recomputes arrays and requires exact confirmation-array hashes before model load.",
+      "admission_basis": "Independent review approves deterministic representation from frozen text plus tokenizer/template/renderer hashes before launch; actual token-array hashes become available only during guarded preparation, before any scores. This explicit procedural amendment requires independent review."
+    }
+  },
+  "metrics": {
+    "per_case": "d_a=logits_a-logits_baseline at last real token; centered_a=d_a-mean_vocab(d_a); G_a=sqrt(mean_vocab(centered_a^2)); C_a=abs(d_a[302]-d_a[3070]); S_a=C_a/(sqrt(2)*max(G_a,1e-6)). Compute metrics in float64 from saved FP32 logits.",
+    "primary": "mean(C_target-C_control)",
+    "specificity": "mean(S_target-S_control)",
+    "consequence": "C=0.10 means a multiplicative change of at least exp(0.10) in odds of the two selected tokens for that case; means summarize magnitudes, not signed probability improvements.",
+    "support_all": [
+      "mean(C_target)>=0.10",
+      "mean(C_target-C_control)>=0.05",
+      "mean(S_target-S_control)>=0.25",
+      "count(C_target>C_control)>=24 of32"
+    ],
+    "refute": "if valid complete confirmation and mean(C_target-C_control)<=0 and count(C_target>C_control)<=16, REFUTED; otherwise if not all support thresholds INCONCLUSIVE.",
+    "development": "report same metrics descriptively; no stopping/reselection/tuning based on direction or magnitude. Development checks instrument validity only, not threshold selection.",
+    "diagnostics": "save signed contrast changes, G, full-vocab KL(baseline||arm) in stable log-softmax float64, top1 IDs/flips, both intervention norms, max baseline/noop/restored absolute differences. Whole-vocab damage is measured by G and KL; specificity normalization does not prove absence of damage."
+  },
+  "validity": [
+    "Independent mathematical atlas validation PASS before A5 launch; independently reviewed exact protocol/source/frozen-text-and-deterministic-renderer/guard packets. Prepared token arrays must be saved and hash-sealed during each guarded slot before model loading or any forward; independent repeat must reproduce confirmation arrays exactly.",
+    "Synthetic tests of clone isolation, arm slices, norm formula, zero-norm rejection, exception finally restoration, exact no-op and cleanup before real model execution.",
+    "Every case requires finite logits and baseline==noop==restored bitwise at logits plus embedding/block/final boundaries. Save failures; no tolerance relaxation.",
+    "Original checkpoint/config/tokenizer/forward hashes checked before/after each process. Original files never written. Working dict entry temporarily replaced; all other tensor objects/values unchanged. No in-place mutation of original working tensor. Restore even if forward throws.",
+    "Reuse unchanged same-mode M2 identity evidence only after verifier binds exact forward/backend/config hashes; otherwise require affected same-mode oracle checks within first slot, not a presumed equivalence.",
+    "Independent repeat requires exact per-case metrics/logits/arm identities under declared deterministic backend. Disagreement is verification failure, not a scientific verdict."
+  ],
+  "budgets": {
+    "slots": [
+      "a5-discovery",
+      "a5-confirmation",
+      "a5-independent"
+    ],
+    "each_max_positions": 40000,
+    "each_max_wall_seconds": 600,
+    "total_max_positions": 120000,
+    "total_max_model_wall_seconds": 1800,
+    "phase_start": 1794952381.8433254,
+    "phase_deadline": 1794959581.8433254,
+    "reserve_independent_positions": 40000,
+    "reserve_independent_wall_seconds": 600,
+    "accounting": "Immutable guard policy reserves40000positions for each named slot; all120000 reservations count against phase/lifetime caps even when actual usage is lower. Record actual processed input-position sums separately, including repeated prefixes, all five arms, required fidelity/instrument calls and failures; actual<=40000 per slot. Expected basic-arm maxima: development7680, confirmation15360, independent15360. No fourth model slot, refunds, or reservation reset. Preserve historical175600 and lifetime1M ceiling."
+  },
+  "outputs": "Per split raw JSONL case/arm metrics plus FP32 last-token full-vocabulary logits and declared boundary equality receipts; fixture/candidate/protocol/original manifests; frozen alpha/norms; resource receipt and restoration status. Independent verdict recomputed from raw arrays.",
+  "stop": "Invalid identity/control/fixture/fidelity/restoration/budget stops dependent work and is incomplete, not scientific negative. A valid REFUTED or INCONCLUSIVE confirmation plus exact independent repeat can satisfy A5. Do not weaken thresholds or search another hypothesis.",
+  "procedure_amendment": "Review fix changes immutable slot names/accounting and makes tokenizer preparation an explicit within-slot deterministic pre-load freeze. Scientific site, hypothesis, controls, metrics and thresholds are unchanged. Prior candidate preserved as a5-protocol-v1-pre-review-fix.json/md; revised candidate awaits separate independent review."
+}

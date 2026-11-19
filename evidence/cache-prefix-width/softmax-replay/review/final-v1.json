@@ -1,0 +1,70 @@
+{
+  "status": "PASS_MODEL_FREE_REPLAY_ELIGIBLE_FOR_SMALL_PROBE_ONLY",
+  "manifest_sha256": "41d496dd17e23ae469082284443952bd06bd110d98b1bb41dbac084454009a94",
+  "result_v2_sha256": "5d8bc4452e330857986e4b31bb4111cd012b54d93003ecaa7c60ffd54d2b9ce3",
+  "metadata_correction_verified_only_summary_count": true,
+  "preserved_author_primitive_execution_runs": 1,
+  "independent_primitive_execution_runs": 1,
+  "independent_softmax_calls": 4,
+  "policy_dispatch_operations": {
+    "aten.pad.default": 2,
+    "aten.softmax.int": 4,
+    "aten.slice.Tensor": 2,
+    "aten.contiguous.default": 2,
+    "aten.alias.default": 2
+  },
+  "details": [
+    {
+      "actor": "candidate",
+      "width": 6,
+      "bucket": 8,
+      "result_sha256": "9a04264972d876c205640d4d8120c73342b4024a053eb1cccc4e249a3ddd13e7",
+      "changed_values_from_observed": 6,
+      "token5_changed_values": 6,
+      "token5_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "actor": "candidate",
+      "width": 8,
+      "bucket": 8,
+      "result_sha256": "61150e3b8f4f1b978218d807d6e5d52b3879d3136eaf16312fe57f9faa08f4f1",
+      "changed_values_from_observed": 0,
+      "token5_changed_values": 0,
+      "token5_max_abs": 0.0
+    },
+    {
+      "actor": "native",
+      "width": 6,
+      "bucket": 8,
+      "result_sha256": "9a04264972d876c205640d4d8120c73342b4024a053eb1cccc4e249a3ddd13e7",
+      "changed_values_from_observed": 6,
+      "token5_changed_values": 6,
+      "token5_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "actor": "native",
+      "width": 8,
+      "bucket": 8,
+      "result_sha256": "61150e3b8f4f1b978218d807d6e5d52b3879d3136eaf16312fe57f9faa08f4f1",
+      "changed_values_from_observed": 0,
+      "token5_changed_values": 0,
+      "token5_max_abs": 0.0
+    }
+  ],
+  "common6x6_probability_uint8_exact_both_actors": true,
+  "width8_outputs_match_original": true,
+  "live_rss_sampled_peak_bytes": 648540160,
+  "rss_samples": 77,
+  "ru_maxrss_bytes_separate": 6993481728,
+  "elapsed_seconds": 1.1224109260365367,
+  "threads": 2,
+  "model_calls": 0,
+  "checkpoint_loads": 0,
+  "tokenizer_loads": 0,
+  "limitations": [
+    "Only observed widths6and8. Same power-of-two bucket consistency demonstrated; crossing buckets untested.",
+    "No logits intervention result or originalR2PASS.",
+    "LiveRSS sampled10ms, not kernel-enforced continuous cap; rusage separately retained.",
+    "Pad-via-F.pad independently implements identical fixed negative-infinity padding semantics; dispatch count need not equal author copy-based implementation."
+  ]
+}

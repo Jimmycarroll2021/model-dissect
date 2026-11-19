@@ -1,0 +1,10 @@
+{
+  "returncode": -9,
+  "stop_reason": "free_space",
+  "peak_sampled_group_rss_bytes": 27279360,
+  "elapsed": 0.056910264072939754,
+  "added_disk_bytes": 0,
+  "total_phase_disk_bytes": 82375886,
+  "packet_disk_limit": 1073741824,
+  "phase_disk_limit": 1073741824
+}

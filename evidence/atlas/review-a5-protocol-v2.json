@@ -1,0 +1,45 @@
+{
+  "status": "PASS_PROTOCOL_ONLY",
+  "reviewer": "/root/atlas_verify",
+  "created_utc": "2026-11-17T22:00:50.086153+00:00",
+  "candidate": {
+    "evidence/atlas/a5-protocol-v1.json": "87eb28803a9c6720ffd20db25ac6cddb34ca4b73aeb05a446cd791cf50befe16",
+    "evidence/atlas/a5-protocol-v1.md": "462d040c8f5b5724c38ada743812739fe45b71866a3fee9fc3d622d8e35d9a47"
+  },
+  "resolved_findings": [
+    "A5-SLOT: names match existing a5-discovery/a5-confirmation/a5-independent policy slots.",
+    "A5-ACCOUNTING:40000 fixed reservation each; actual all-arm processed positions recorded separately, no refunds/reset."
+  ],
+  "unchanged_scientific_contract": {
+    "selection": true,
+    "hypothesis": true,
+    "metrics": true,
+    "arms": true,
+    "norm_gate": true,
+    "mode": true,
+    "stop": true
+  },
+  "representation_amendment": {
+    "verdict": "ACCEPTABLE_PROCEDURE_SUBJECT_TO_EXACT_IMPLEMENTATION_REVIEW",
+    "rationale": "Exact evaluator text plus pinned deterministic tokenizer/template/renderer uniquely specifies inputs before scores. Materializing/sealing token arrays within existing guarded process before weights/scores preserves no-output-based-selection while charging preparation within existing600second slot. Early invalidity stops before loading with reservation retained; no replacement/truncation prevents post-freeze prompt selection.",
+    "required_checks": [
+      "Bind both frozen evaluator text identities, tokenizer JSON/config/template and exact rendering source before admission.",
+      "Enforce2threads and30second tokenizer preparation limit inside600second guard wall, including any library work; no network/install/cache writes outside runtime.",
+      "Save exact rendered strings, ids/masks/positions and array hashes before any checkpoint load. Verify8<=L<=96, valid nonspecial contrast IDs, unique text/token arrays against split and historical fixtures with explicitly bound reference metadata.",
+      "Recheck sealed arrays before use; independent confirmation repeat reproduces exact same arrays/hashes before weight load.",
+      "Preparation failures produce retained failed receipts and no model load, substitutions, truncation, refunds or new slots.",
+      "Keep evaluator confirmation hidden from investigator until final candidate/protocol freeze; do not tune hypothesis after development."
+    ]
+  },
+  "fixture_identity": {
+    "development_texts": "68dc20ee91aaa1723cf02c9509718b2b484b8cba301e3aee08c2b218dec4ab7e",
+    "confirmation_texts": "b237cdb65ace799211233d1960039ab399ce7880e4d6bc2a93dd0d401a273e15"
+  },
+  "limitations": [
+    "No tokenizer or model execution occurred in this review; lengths and actual decode remain unknown.",
+    "This approves the explicit procedural change, not a runner/fixture implementation or runtime admission.",
+    "Prior fixture-design.md instructions about separate tokenizer preparation are superseded for this A5 candidate by this explicit reviewed in-slot procedure.",
+    "Dependent A5 admission still requires independent atlas mathematics PASS, exact candidate/guard identity and reviewed restoration/fidelity checks."
+  ],
+  "next_action": "Exact runner/renderer/packet reviewer validates all preparation and no-load-on-failure conditions, then admits existing slots with frozen hashes; no extra tokenizer process required."
+}

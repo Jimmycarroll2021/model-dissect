@@ -1,0 +1,10 @@
+{
+  "old_manifest_sha256": "f0b097d5183e1f256901b03c0355daaa98602d1e533da5b92bec9816db2af783",
+  "old_manifest_files_checked": 257,
+  "old_manifest_mismatches": [],
+  "pair_count": 16,
+  "distinct_texas": 16,
+  "distinct_california": 16,
+  "discovery_absent": true,
+  "non_target_count": 4
+}

@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "phase": "CACHE-PREFIX-RESOURCE-001",
+  "verifier": "matrix_finish_verifier",
+  "implementer": "matrix_finish_executor",
+  "reviewed_utc": "2026-11-18T12:07:56.295393+00:00",
+  "candidate_manifest_sha256": "107ab08d5e27e76c3080e37dac9c1652be657460f4e82716b6ff6789f0de62ec",
+  "policy_sha256": "25be77127a1ac64d7481cf73180877619b51d86fa03d833cf1a0b8e590721513",
+  "files": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/original-ledger.json": "c1de84bd30b2df14edccaec8ec4f9e2246c5cef7ff908bc606025b14cf3a66ed",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/failed-resource-history.json": "016a41d8c717fe0b1f292dd99e6dd8df0907a60581b325400d393b7994bedf1c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/prefix_resource_guard.py": "fa311c296392b6517e70ab16017c10a6f475119f933d2f964c3c1bebb91d601e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/matrix-history.json": "a893d349de043fbe7c6750d09e53be0e732476f23e9e0f4c7e9418b9649acbd9",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/echo-recovery-ledger.json": "58ddceb824689b72a05242cbe4ab7ffd0aa7b5d2e6e840627394d53742a04f7a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/failed-prefix-history.json": "5333420c6e5658128d3f60e831518d5dd63d3bf452f56b319e94ef5683a5b23c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/cache-shape-ledger.json": "ecd9cc036de0ffd4e7feb12fb229977154717c7a46d191d84741e480d5864198",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/failed-echo-ledger.json": "95a0ed420be49265f9e853db393a1c723d76276fa771f630fc862553e162ed6f",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/cache-operand-ledger.json": "3556dceae35aa6935f013994d6a20c43e413227cdc640d5970931ee85fa81504",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/behavior-ledger.json": "465f9f3da6ba029932f7b9b8ff77f2118e5052c67ded11ea71721059621ed070",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/atlas-ledger.json": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/continuation-history.json": "9e749756068f8d47ee9f6b25890d1b255c4263ac0a1dbad0922c5b8cd09076c3",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/prefix-resource-policy.json": "25be77127a1ac64d7481cf73180877619b51d86fa03d833cf1a0b8e590721513",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/followup-history.json": "6c3a5d23db8c25856339c6fa5bf5bf1bed683d7fe95e54cfc353dc2435617f3a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/oracle/__init__.py": "7c091c93959b3b22084557fc4cb894f353b85c54f8d70f7733bf332d0a31e6db",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/fixtures/fixture-v1.json": "104e59e3157918889014050bbfd220df8f02b88851ac48d58824add0238860ac",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/evidence/packet-independent-v1.json": "c67e0072f396edca718b44a186e893f898aa1bec4c91aa5ca17648e0f4c68ead",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/evidence/protocol-v1.md": "779337e91f5a277f3d45b9369509213b9ca56603fd7952799ffcccd840c0c543",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/evidence/packet-producer-v1.json": "4e13b9cf6939a531e8bef5537e71889cf8e46e2b237a7ba7146aa871d3f5cd42",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/evidence/prior-calls.jsonl": "bb85de12f45edc32e37ed31018d3aff1cdff227d4483ac230e27c1d70b75656d",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_prefix_width_probe_resource.py": "674130f0c3027d84079eff62d86d3d6dcd985815a46c5874184897411f505082",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_followup_capture.py": "2b3dbd658f74b7a9a49e80890ca90239a250245767d5ede106032e8b5bf6904a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/shape_cache_probe.py": "c0d2395054c065c0bdafc00d8c7f0dd2b758a69c6322cc79153eec377efdfa2a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py": "d3009078f90ad10afaf331f96c381524250e4b157ecd71857a09d773189c1137",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_operand_probe.py": "4aa17d8a6591f30382510b53f68f551e3a971ec18e90da5b796b89de5fe4862d",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_prefix_width_capture.py": "1d23b3e6c48e33843ab9cd8deedbc4dfe975c58f7dffcedfc72c8d8a4f28e796",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_prefix_width_probe_recovery.py": "c8e9e62da9fdfc5c32eaed68daa9569b3a8e464c2077393b7f97f81466213643",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_prefix_width_probe.py": "f06f6953962d4f1b11d644989cd7b70985c69e6e7c0d96809d736e0d1e281b7b",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/shape_cache_matrix_probe.py": "a82af82b632e48074e03bf216c7255e9b37b0782cb290a3cd437fd72f873d4f1",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_prefix_width_capture_recovery.py": "7ec030efb5aedd63d5b5606c3c4b85a956c8b9f78f50587f0c7295e29cd75336",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/cache_followup_probe.py": "0026a94a9ef67da7adbe2762f2b1ccc57ca08af3ee8f2acf23ea2621f1697a26",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/src/minimind_re/shape_cache_reference_matrix.py": "6a3b1cf59f2881cdf4a5e5085f975fc5848173dd06e64276693d50e2f005c07b",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/oracle/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f"
+  },
+  "checks": {
+    "manifest_files_verified": 48,
+    "science_sources_unchanged": true,
+    "runner_only_schema_ledger_policy_history_binding_changes": true,
+    "focused_guard_checks": {
+      "status": "PASS",
+      "checks": [
+        "separate sampled live peak survives final sum",
+        "9GiB accepted",
+        "10GiB live rejected",
+        "10GiB final rejected"
+      ],
+      "no_model_calls": true
+    },
+    "history": {
+      "tokens_reserved": 1138272,
+      "download_bytes": 138166822,
+      "gpu_seconds": 12.621721199015155,
+      "gpu_seconds_reserved": 240.0
+    },
+    "history_locks": 12,
+    "stage_bytes": 144222599,
+    "free_bytes": 65083543552,
+    "disk_and_RSS": "PASS",
+    "reviewer_RSS": {
+      "sampled_live_peak_owned_rss_bytes": 20082688,
+      "peak_owned_rss_bytes": 20082688,
+      "owned_rss_cap_bytes": 10737418240,
+      "owned_rss_scope": "guard plus direct child; descendants prohibited"
+    },
+    "host_MemAvailable": "20337772 kB",
+    "phase_ledger_absent": true,
+    "output_dirs_absent": true,
+    "per_role_actual_positions": 28,
+    "per_role_calls": 4,
+    "per_role_reserved": 64,
+    "prospective_lifetime": 1138400,
+    "model_calls": 0
+  },
+  "review_evidence": {
+    "./evidence/cache-prefix-width/resource-recovery/review/focused-checks-v1.json": "f9b7bd2e1fb6dfd7f14a194cdd8d45594a33a6d292048fb86ca5853de8d1504e"
+  },
+  "source_review": [
+    "Explicit prospectively authorized conservative owned RSS cap8to10GiB; policy matches constant and no baseline subtraction. Both sampled-live and final conservative cap still reject at equality.",
+    "New sampled_live_peak_owned_rss_bytes maintained separately and remains intact when conservative combined highwater updates peak_owned_rss_bytes.",
+    "Failed64resource reservation, FAILED status and existing raw preserved through twelfth immutable hashed history chain and lock. No prior ledger/clock rewritten.",
+    "Exact arithmetic/capture and fidelity checks unchanged; prior synthetic science evidence reused. Runner changes only schema, ledger/policy names and historical total.",
+    "Guard remaining diff limited to versioned paths/phase, retained historical chain/disk accounting, approved additive ceiling and explicit resource policy."
+  ],
+  "producer_command": "/usr/bin/python EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/prefix_resource_guard.py --workspace EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118 --policy EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/prefix-resource-policy.json --policy-hash 25be77127a1ac64d7481cf73180877619b51d86fa03d833cf1a0b8e590721513 --admission './evidence/cache-prefix-width/resource-recovery/review/runtime-admission-v1.json' --run-id cache-prefix-resource-producer-v1 --kind model --positions 64 --timeout 300",
+  "independent_command": "/usr/bin/python EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/prefix_resource_guard.py --workspace EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118 --policy EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runtime/prefix-resource-policy.json --policy-hash 25be77127a1ac64d7481cf73180877619b51d86fa03d833cf1a0b8e590721513 --admission './evidence/cache-prefix-width/resource-recovery/review/runtime-admission-v1.json' --run-id cache-prefix-resource-independent-v1 --kind model --positions 64 --timeout 300",
+  "limitations": [
+    "Runtime resource success remains unobserved for new phase.",
+    "No repair or original R2 acceptance.",
+    "Independent repeat requires valid producer audit and controller authorization.",
+    "MemAvailable is current host snapshot, not reservation; guard enforces owned process cap."
+  ]
+}

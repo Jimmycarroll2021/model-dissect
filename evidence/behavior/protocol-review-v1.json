@@ -1,0 +1,23 @@
+{
+  "status": "HOLD_RENDERING_CLARIFICATION",
+  "reviewed_protocol_sha256": "800f90a8d50d275e0fa2d3407c6a8e64a9922e49e71a5e8a4ae58bdbf3b0b182",
+  "review_epoch": 1794910345.200744,
+  "checks": {
+    "fixed_three_families": true,
+    "screen_16_threshold_13": true,
+    "lowest_two_eligible_no_reselection": true,
+    "fresh_qualification_32_threshold_26_both": true,
+    "full_vocabulary_top1": true,
+    "negative_independent_repeat_required": true,
+    "original_deadline_preserved": true,
+    "aggregate_120000_additional_stricter_cap": true
+  },
+  "blockers": [
+    "Pinned tokenizer template JSON includes escaped literal newline sequences; protocol asserts actual-newline equivalence without rendering receipt. Require exact API-rendered bytes before freeze; no silent template rewrite."
+  ],
+  "limitations": [
+    "Static initial review only; no tokenizer/model imports, execution or tests. Runner/fixtures not yet reviewed.",
+    "Remaining elapsed budget must be checked at every admission and reserve required independent repeat."
+  ],
+  "next_action": "Fixture owner render exact pinned template under admitted tokenizer-only slot and reconcile expected representation before any model outputs."
+}

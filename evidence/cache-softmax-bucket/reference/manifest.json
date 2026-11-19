@@ -1,0 +1,21 @@
+{
+  "status": "IMPLEMENTED_SYNTHETIC_PASS_PENDING_INDEPENDENT_VERIFICATION",
+  "files": {
+    "src/minimind_re/softmax_bucket_reference.py": "fb8ec4b8218ac7e49087f5dfb44bee535681696e3049678a83b631f10b43d464",
+    "tests/test_softmax_bucket_reference.py": "1d908ee4b1f78518002d6fddade73d03d3487f832267b0a7efb0c36bf9265027",
+    "evidence/cache-softmax-bucket/reference/synthetic-tests-final.txt": "4a07a05fee0adc2903744eb08ce1d5097f4910f8819cff3c8838deaf9971b34a"
+  },
+  "api": "softmax_bucket_reference(adapter, *, capture=False)",
+  "tests": {
+    "passed": 7,
+    "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p test_softmax_bucket_reference.py",
+    "max_rss_kib": 968604,
+    "elapsed_seconds": 3.17
+  },
+  "target_model_loads": 0,
+  "target_model_forwards": 0,
+  "limits": [
+    "Synthetic attention checks only; no two-fixture model gate or full matrix executed.",
+    "Reference independently authored from existing shape reference and pinned native source; new candidate source not read."
+  ]
+}

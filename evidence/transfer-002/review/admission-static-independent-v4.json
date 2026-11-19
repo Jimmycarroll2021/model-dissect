@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "reviewed_utc": "2026-11-18T20:11:37.908199+00:00",
+  "packet_path": "./evidence/transfer-002/runtime/static-independent-v4.packet.json",
+  "packet_sha256": "38448e8654ef18f662ad3f13c5e882d8ff12077538e5c02d564ecaad6cd37ec4",
+  "review_path": "./evidence/transfer-002/review/static-independent-v4.json",
+  "review_sha256": "f7334e94c1475ee3a4f6e289d6153c23e881b65c0c3f236c4c25308590bf60b9",
+  "scope": "Independent repeat of unchanged static atlas only:0 model calls/positions,120seconds,16MiB,2CPU. Safetensors weights may be loaded only during separately dispatched admitted static operation; no inference/tokenizer.",
+  "conditions": [
+    "Coordinator must wait for active science producer to finish and reconcile ledger before launch; serialize with independent science run",
+    "Use exact supervised run.py command and unchanged guard; fresh live readiness at dispatch",
+    "Preserve old packets/results/failure charges and original phase wall start",
+    "Separate output verification must compare atlas values/raw48views/SVD/statistics against producer after this independent run",
+    "No numerical/scientific/cache-equivalence or whole-transfer success implied"
+  ],
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=./src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 /usr/bin/python -m minimind_re.transfer.run --packet ./evidence/transfer-002/runtime/static-independent-v4.packet.json --admission ./evidence/transfer-002/review/admission-static-independent-v4.json"
+}

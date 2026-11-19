@@ -1,0 +1,115 @@
+{
+  "status": "partial",
+  "verdict": "SYNTHETIC_BUILD_PASS_RUNTIME_ADMISSION_BLOCKED",
+  "observed_utc": "2026-11-18T23:59:45.989696+00:00",
+  "manifest_sha256": "570f2586b659859e9c7dccc493b509186a412017e22259f161800eb1e8d80ae8",
+  "identities": [
+    {
+      "path": "./src/minimind_re/transfer3/reference.py",
+      "sha256": "bf1e75c9872d7381f2329aec377b17c45d7cabc49f5602c14366921e8b6627c4",
+      "matches": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/runtime.py",
+      "sha256": "0cdd367ce6701bfd6601ed5b9a409952202d996bb82c2c8ad8e5cadb89d9175a",
+      "matches": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/numerical.py",
+      "sha256": "6ed6603d758e2f628ae4b00864a63706a96d9038363ba6c932fb1fcf2d9734df",
+      "matches": true
+    },
+    {
+      "path": "./src/minimind_re/transfer3/run.py",
+      "sha256": "a869a89a8e8eca8e3e725184fa783db2a75ffc02024b9806459dfb03c24be184",
+      "matches": true
+    },
+    {
+      "path": "./tests/test_transfer3_runtime.py",
+      "sha256": "90955203920de4da2dd4481aee02a994d8f718319dfd40cbf77a8ab361965735",
+      "matches": true
+    }
+  ],
+  "evidence": {
+    "tests.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/tests.txt",
+      "sha256": "474c3d17e70b93a68870fcd67f2812ac57d1086e59e5f7ee5e62e0216c2ddece"
+    },
+    "guard.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/guard.txt",
+      "sha256": "cc345130549f2028e8c0a803847ac6e48e991b5b8faf519c62839fed0c8ccae2"
+    },
+    "guard-v2.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/guard-v2.txt",
+      "sha256": "f803ee3edb575687b1aad3eaa347dd377efb5b20bade79d92a3385f5d046176c"
+    },
+    "guard_regression.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/guard_regression.py",
+      "sha256": "2a89a88624c93ea3b13b20280967ac4eca5b8847cde305e8b73e0cd0086eb852"
+    },
+    "guard_regression_v2.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/guard_regression_v2.py",
+      "sha256": "3756f3d202d29e918648d7155f6eaa56da8f25592b5d95455c6d92d6908829f5"
+    },
+    "cancel.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/cancel.py",
+      "sha256": "e75b7b553b2a128794cce57bc34d3ac815c56283d0db03b2e79c36ea4cc44857"
+    },
+    "cancel.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v1/cancel.txt",
+      "sha256": "509eb3d852111a8afea8504bd79e8ab3057b7cf4cf20513ac7192cce0785d4db"
+    }
+  },
+  "tests": {
+    "supplied": "7 passed, 2 warnings in3.12s",
+    "independent": [
+      "Exception inside charged call leaves reserve,call,call_end,finish(failed); actual_positions3 retained.",
+      "Duplicate run ID rejected with no new reserve.",
+      "Owned-child timeout after call reservation kills child; unresolved reserve rejects later run.",
+      "Missing ledger rejected without recreating ledger.",
+      "Fast child exit exceeding packet disk caught by final accounting.",
+      "SIGINT to synthetic supervisor propagates KeyboardInterrupt, kills/reaps owned child and retains receipt."
+    ],
+    "failed_probe": "Initial0.3-second timeout fired during import before reserve; assertion expecting active call was invalid. Preserved original receipt; revised4-second probe exercises active-call interruption successfully."
+  },
+  "review_findings": [
+    {
+      "id": "R1",
+      "severity": "runtime_admission_blocker",
+      "path": "src/minimind_re/transfer3/numerical.py",
+      "finding": "Frozen numerical protocol requires weight hashes before/after. run_numerical records no live parameter hashes/snapshots; run.execute rehashes artifact/source files only. This cannot detect in-memory model weight mutation.",
+      "required_fix": "Add native and candidate live parameter-state identity before and after each actor schedule, retain identities and fail on mutation; verify with synthetic injected mutation. Original file hashes remain separately required."
+    },
+    {
+      "id": "R2",
+      "severity": "runtime_admission_blocker_unless_exact_launch_environment_supplies_it",
+      "path": "src/minimind_re/transfer3/runtime.py",
+      "finding": "supervise pins offline/CPU variables but does not set TMPDIR or cache destinations; exact invocation has no enforced EXTERNAL_ARTIFACT_ROOT temp/cache routing despite resource protocol.",
+      "required_fix": "Freeze explicit TMPDIR/cache routing under phase workspace and disable bytecode or route its cache; validate resolved destinations in integrated admission/launcher. Existing supplied tests were run with reviewer-supplied EXTERNAL_ARTIFACT_ROOT TMPDIR and bytecode disabled."
+    },
+    {
+      "id": "R3",
+      "severity": "evidence_limitation",
+      "finding": "Cancellation receipt has returncode-9 and stop_reason null; cancellation is propagated and child reaped, but retained receipt alone does not distinguish cancellation from other supervisor exceptions.",
+      "required_fix": "Prefer recording cancelled/supervisor_exception and exception type; never interpret null reason as success without returncode."
+    }
+  ],
+  "checked_design": [
+    "Independent native math and explicit160-to148-plus12 buffer mapping; native tied output pointer assertion and finiteCPUFP32 eager checks.",
+    "Native hook installation inside try/finally; exception cleanup tested.",
+    "Per-call charge before forward; raw arrays saved before numerical comparisons; bitwise restoration compares all rows via shared compare.",
+    "Historical1299306 and new250000 combined1549306; aggregate24GiB3600s7200wall; processgroup polling120s call limit; free RAM/disk reserves.",
+    "Exclusive nonblocking phase flock, append/fsync ledger, duplicate and unresolved reservations rejected; failed charges retained."
+  ],
+  "unexecuted": [
+    "Target load and native/candidate integration.",
+    "All live memory/call-time/phase-wall thresholds.",
+    "Concurrent lock contention and surviving-grandchild cancellation; inspected source only.",
+    "Exact packet/fixture admission and post-acquisition source preservation integration."
+  ],
+  "limitations": [
+    "7 supplied tests use random tiny native models only. Independent guard probes load no target/tokenizer.",
+    "No full inherited guard suite run.",
+    "Runtime build is not target runtime admission; blockers must be resolved with changed exact hashes and bounded regression evidence."
+  ]
+}

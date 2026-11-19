@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "candidate_id": "NUMERICS-002-FIXTURES-001",
+  "created_utc": "2026-11-17T07:21:27.970266+00:00",
+  "provenance": "Curator-only frozen new parity inputs before numerical repair selection; source-oracle exposure disclosed. No model computation.",
+  "parent_protocol_sha256": "35517aa209d27f1fd95927926cfb4a193d918acd22b5c1c9007eb7ddb3b30607",
+  "parity_path": "fixtures/continuation/parity.json",
+  "parity_sha256": "f9411b52e3613337ec53a4916f6c4791af5a12fb9c44aed8ac4a73c0e23602af",
+  "parity_count": 12,
+  "coverage": {
+    "real_lengths": [
+      1,
+      8,
+      32,
+      128
+    ],
+    "padding": [
+      "none",
+      "left",
+      "right"
+    ],
+    "padding_width": 3,
+    "continuation_tokens": 4,
+    "arms": [
+      "baseline",
+      "noop",
+      "restored"
+    ],
+    "sites": [
+      "embedding",
+      "block",
+      "final",
+      "logits"
+    ],
+    "backend": "cpu",
+    "dtype": "float32"
+  },
+  "compatible_interface": "oracle.evaluate --fixtures fixtures/continuation/parity.json; existing tensor_input and evaluator cache/full path unchanged",
+  "token_positions_per_full_suite": 16938,
+  "retained_mechanism_split": {
+    "fixtures/development/inputs.json": "688cbac3ba697a33d8a927262329a29a507d133c8ec0a44941e31d6e97de1633",
+    "fixtures/heldout/inputs.json": "3dfb7e3876fad5e166d65ab860929c2f474b08345e476193cb46f7ed137cc60b"
+  },
+  "heldout_retention_basis": "No mechanism observation or heldout value disclosure known in curator assignments; original32 heldout and16 development unchanged. Parent must disclose any external exposure if known.",
+  "checks": {
+    "all12_input_sequences_distinct_from_corresponding_old_case": true,
+    "all_continuations_distinct_from_old": true,
+    "all_mask_and_position_shapes_valid": true,
+    "original_fixture_hashes_unchanged": true
+  },
+  "model_runs": 0,
+  "download_bytes": 0
+}

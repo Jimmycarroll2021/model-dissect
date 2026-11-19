@@ -1,0 +1,49 @@
+{
+  "verdict": "PASS_ACQUISITION_ONLY",
+  "checked_utc": "2026-11-18T19:04:06.246505+00:00",
+  "candidate": "EleutherAI/pythia-14m",
+  "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+  "proposal_sha256": "48511963a19b6ccd34287d05f240f6aa760c588b9efe520ab0f825e446d07bb5",
+  "proposal_md_sha256": "47d3d2675c053fc46ceebbaee203503e5cbe2bf404ff5078ed2550e7269eb376",
+  "checks": {
+    "proposal_hash": true,
+    "revision": true,
+    "public_ungated": true,
+    "config_exact": true,
+    "card_apache": true,
+    "implementation_apache": true,
+    "no_auto_map": true,
+    "allowlist_sizes": true,
+    "allowlist_sum": true,
+    "weight_lfs": true,
+    "parameters": true,
+    "installed_sources": true,
+    "installed_version": true
+  },
+  "check_count": 13,
+  "sources": [
+    "https://huggingface.co/api/models/EleutherAI/pythia-14m/revision/cf967c0a9a04383db6f7b1108d86b2962634b4ac?blobs=true",
+    "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/README.md",
+    "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/config.json",
+    "https://huggingface.co/EleutherAI/pythia-14m/resolve/cf967c0a9a04383db6f7b1108d86b2962634b4ac/tokenizer_config.json",
+    "https://raw.githubusercontent.com/huggingface/transformers/v5.1.0/LICENSE",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox"
+  ],
+  "installed_hashes": {
+    "modeling_gpt_neox.py": "1a329e0f839999e74d485ea5d0cf6bae36f389577a51db4887d9ee7837a29ff8",
+    "configuration_gpt_neox.py": "179103f2cd5ff557cb6bf8543cf8eaaa4c925ca098314b5d5b9f2e7401266e7d"
+  },
+  "allowlist_bytes": 30274606,
+  "checkpoint_bytes": 28143920,
+  "checkpoint_expected_sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+  "risks": [
+    "Packed head-local QKV must not be split as three global matrices.",
+    "Partial RoPE covers 8 of 32 head dimensions; preserve unrotated dimensions.",
+    "Parallel residual and LayerNorm/GELU differ meaningfully from MiniMind.",
+    "50304 output rows need not equal tokenizer vocabulary; independently audit vocabulary gap.",
+    "CPU feasibility is size-based inference only; float32 weights approximately 56.3 MB, runtime overhead unmeasured.",
+    "License attribution is upstream declaration; card discourages human-facing deployment.",
+    "No checkpoint downloaded, loaded, executed, or hashed locally. No runtime admission."
+  ],
+  "next_gate": "Download only seven exact pinned allowlist files; verify weight hash and all sizes, then independent artifact audit before runtime."
+}

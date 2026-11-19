@@ -1,0 +1,80 @@
+{
+  "status": "MEASURED",
+  "summary": {
+    "families": [
+      {
+        "family_index": 0,
+        "task": "COPY",
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.1936076805344365
+        ],
+        "eligible": false
+      },
+      {
+        "family_index": 1,
+        "task": "SUBTRACT",
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.1936076805344365
+        ],
+        "eligible": false
+      },
+      {
+        "family_index": 2,
+        "task": "COMPARE",
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.1936076805344365
+        ],
+        "eligible": false
+      }
+    ],
+    "threshold": 13,
+    "selected": [],
+    "verdict": "NO_QUALIFY"
+  },
+  "screen_receipt_sha256": "2aba8344df5e14ebbadf8ccecf420eb4dfc950b21379eaad16bd68b56ba00242",
+  "screen_rows_sha256": "ba3f2b2944e0304964cd45f6124b1212f1b9a7f050ab84c80cb8f836fc97a97b",
+  "actual_model_calls": 48,
+  "actual_input_positions": 1732,
+  "guard_row": {
+    "id": "behavior-screen-v1",
+    "role": "evaluation",
+    "tokens_reserved": 1732,
+    "argv": [
+      "/usr/bin/python",
+      "scripts/behavior/run.py",
+      "screen",
+      "--packet",
+      "evidence/behavior/fixture-screen-packet-v2.json",
+      "--output",
+      "runs/behavior/screen-v1.json"
+    ],
+    "start": 1794910593.8158772,
+    "status": "completed",
+    "backend": "cpu",
+    "gpu_seconds": 0,
+    "pid": 3243778,
+    "exit_code": 0,
+    "end": 1794910596.990528,
+    "wall_seconds": 3.1682676509954035,
+    "cpu_seconds": 4.313172,
+    "peak_child_rss_kib": 1026272,
+    "disk_free_bytes": 2869116928,
+    "project_bytes": 199788191
+  },
+  "active_rows": [],
+  "lifetime_reserved_positions": 173868,
+  "original_deadline": 1794912024.8448846,
+  "remaining_seconds": 1420.913601398468
+}

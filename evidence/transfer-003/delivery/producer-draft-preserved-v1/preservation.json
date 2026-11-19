@@ -1,0 +1,62 @@
+[
+  {
+    "source": "TASK_STATE.md",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/TASK_STATE.md",
+    "sha256": "2769e4c41bea0615b7a61f573038036903c3a027f5f864a25d6943af0c4378d4"
+  },
+  {
+    "source": "CASE_FACTS.md",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/CASE_FACTS.md",
+    "sha256": "f504541c2fa4f574909c1b5c1f649c9f7e9a3db4c3d59bebfe3cc23a41202eff"
+  },
+  {
+    "source": "docs/gpt2-transfer-result.md",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "sha256": "56ea977e643d4fef8635c6f1e1e4a6c71f2882cb55a56936809d641ba2afeaca"
+  },
+  {
+    "source": "docs/three-model-transfer-lessons.md",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "sha256": "6028550e409b8478d41b0c9890fd3aa615c820ff2ec63c13b71ab4592720739b"
+  },
+  {
+    "source": "docs/figures/gpt2-plot-producer-v1.py",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/figures/gpt2-plot-producer-v1.py",
+    "sha256": "166f6bb42da21b84c5f1911ebded55ecc586f8a43ab11dff871f5f0bd42c0658"
+  },
+  {
+    "source": "docs/figures/gpt2-heldout-producer-v1.png",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/figures/gpt2-heldout-producer-v1.png",
+    "sha256": "965b9331fdc0e03cd824a76ae073ce52c71c159205653aabfe974360b1954a48"
+  },
+  {
+    "source": "docs/figures/gpt2-heldout-producer-v1.svg",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/figures/gpt2-heldout-producer-v1.svg",
+    "sha256": "5c55142936a77d633a45d01bb0267b277db70b29c169e249fc8180d37f098a2e"
+  },
+  {
+    "source": "evidence/transfer-003/delivery/producer-report-metrics-v1.json",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/evidence/transfer-003/delivery/producer-report-metrics-v1.json",
+    "sha256": "52e165ab5772f80a6f6c34e22105833fbbe59bdcc7d97894deef0b90bfb20648"
+  },
+  {
+    "source": "evidence/transfer-003/delivery/producer-chart-v1.json",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/evidence/transfer-003/delivery/producer-chart-v1.json",
+    "sha256": "91009fd508b17ddf3a3d5e37746fbf72789cba9769e8f8999aea8f70b69f9310"
+  },
+  {
+    "source": "specs/003-model-dissection/tasks.md",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/specs/003-model-dissection/tasks.md",
+    "sha256": "b3a473bc4e7b4c4bf7c7460eec190902a97ae1eafdcd6881e9e6c6be6b3184f8"
+  },
+  {
+    "source": "evidence/transfer-003/delivery/report-draft-producer-v1.json",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/evidence/transfer-003/delivery/report-draft-producer-v1.json",
+    "sha256": "98a30cc7adb59a7fdec8aadc1521c04bcbabf1b95ab30f19131fac4380c05ab0"
+  },
+  {
+    "source": "evidence/transfer-003/review/report-draft-v1.json",
+    "snapshot": "evidence/transfer-003/delivery/producer-draft-preserved-v1/evidence/transfer-003/review/report-draft-v1.json",
+    "sha256": "3d090d7eaaa8cec510e79f7ba9b9b2ad9a7246641f13724aeec4c47a65506f4e"
+  }
+]

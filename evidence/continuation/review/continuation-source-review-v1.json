@@ -1,0 +1,40 @@
+{
+  "status": "PASS_CORRECTED_SOURCE_PROTOCOL_PENDING_MANIFEST",
+  "epoch": 1794990871.7203465,
+  "files": {
+    "./src/minimind_re/continuation_probe.py": "6686a66392b83a3654555e3dd3a2f48cef072988f395d77de29c2522a29d1b62",
+    "./verification/continuation_probe_check.py": "74d66e4c0e10ffdbd03e120d4885d1822ff75432b7827dbafdaa7f065cb7677e",
+    "./evidence/continuation/response-window-protocol-v1.md": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+    "./evidence/continuation/response-window-protocol-v1.json": "061826fa97099bf831022209e908aef52db5522333b08388cc1e4468c77f1672",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation_guard.py": "f7e172cbea23fa947df30f56ea30d1d9ddb62c31e74ecf47177204be8fc8ad20",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation-policy.json": "4061f8dd9acf1cbd72c370dd1c864a217702ae3860eb7c87230a42d34445cc3a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/packet-producer-v1.json": "11549479553afc72b9076e0c66f0c1bf1a9cca4faecff71df83786ab70441ed7",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/packet-independent-v1.json": "5da4568ce37f3a232c63a3b896bf1ee792e1fdc003b7ad4b7f6893303eb28a84"
+  },
+  "independent_tests": {
+    "count": 11,
+    "status": "PASS",
+    "log": "evidence/continuation/review/continuation-synthetic-v2.log",
+    "log_sha256": "f9becad96e1741b8398e428b747f6b38c7e02cb37008aef06cb58fbf32312356"
+  },
+  "corrected_finding": "Initial source saved/compared logits only. Producer corrected to full embedding/block/final/logits at128/256/319 with unchanged tolerance, mandatory all-position logit top1. No extra forwards. Frozen protocol updated before model outputs.",
+  "checks": [
+    "Generation full256calls and prefix319 edge charged correctly",
+    "EOS256 accepted, earlyEOS accounted, noEOS censored",
+    "EOSrank uses fullvocabulary lowestIDties",
+    "Old24token and hash drift rejected",
+    "All-position parity errors, tolerance thresholds, dtype/shape/nonfinite and argmax drift rejected",
+    "All3 historical locks serialize and hashes/chain checked",
+    "Failed synthetic child remains charged",
+    "Independent reserve and immutable3600phase clock enforced",
+    "Complete conservative semantic rubric and no familyqualification claim",
+    "Exact source-to-stage byte equality for generator, forward, oldparser, oracleadapter and vendor"
+  ],
+  "runtime": "NOT_RUN",
+  "pending": [
+    "Final immutable manifest",
+    "Producer runtime admission",
+    "Actual parity and generated response observations",
+    "Independent repeat, fulltensor audit and separate semantic grades"
+  ]
+}

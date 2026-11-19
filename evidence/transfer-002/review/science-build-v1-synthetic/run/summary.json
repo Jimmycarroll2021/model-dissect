@@ -1,0 +1,962 @@
+{
+  "verdict": "SUPPORTED_BOUNDED_BLOCK_EFFECT",
+  "denominator": 16,
+  "eligible": 16,
+  "positive_bidirectional": 16,
+  "median_target_primary": 1.0,
+  "median_paired_advantage": 1.0,
+  "thresholds": {
+    "eligible": true,
+    "positive": true,
+    "target": true,
+    "advantage": true
+  },
+  "selection": {
+    "selected_layer": 0,
+    "medians": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0,
+      "4": 1.0
+    },
+    "development_sha256": "cdb63d7597f97b35ec061e94fd5456b5f01687de231147b2bb79475117c0cbe3",
+    "heldout_sha256": "5b9f5afd5ef4a46e363ab5ec0dc0d32b060f8b62b8c228d9479b87b363f8cdf3"
+  },
+  "calls": 341,
+  "actual_positions": 10912,
+  "checkpoint_identity": "SYNTHETIC_NO_MODEL",
+  "parameter_digest_before": "immutable-synthetic-parameter-bytes",
+  "parameter_digest_after": "immutable-synthetic-parameter-bytes",
+  "protocol_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+  "heldout_rows": [
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-08",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-09",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-10",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-11",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-12",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-13",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-14",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-15",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-16",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-17",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-18",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-19",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-20",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.0027948907006173545,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-21",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.007557183885695468,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-22",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    },
+    {
+      "contrast": {
+        "u": 1,
+        "v": 0,
+        "gap": 6.0,
+        "eligible": true
+      },
+      "eligible": true,
+      "arms": {
+        "target": {
+          "forward_recovery": 1.0,
+          "reverse_recovery": 1.0,
+          "primary": 1.0,
+          "forward": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.018916247711449435,
+            "centered_rms": 0.018916247711449435,
+            "total_variation": 0.02025161252947038,
+            "cosine_toward_donor": 1.0000000000000002,
+            "top1_changed": false
+          }
+        },
+        "control": {
+          "forward_recovery": 0.0,
+          "reverse_recovery": 0.0,
+          "primary": 0.0,
+          "forward": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          },
+          "reverse": {
+            "rms": 0.0,
+            "centered_rms": 0.0,
+            "total_variation": 0.0,
+            "cosine_toward_donor": null,
+            "top1_changed": false
+          }
+        }
+      },
+      "advantage": 1.0,
+      "pair_id": "pair-23",
+      "layer": 0,
+      "edit_quality": {
+        "norm": 3.0,
+        "control_norm": 3.0,
+        "relative_norm_error": 0.0,
+        "normalized_dot": 0.0
+      }
+    }
+  ]
+}

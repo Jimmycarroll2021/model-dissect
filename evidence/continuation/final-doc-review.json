@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "required_corrections": [],
+  "scope": "Exact final-document review against already independently reviewed results; no new research or model execution",
+  "files": {
+    "docs/numerics-continuation-result.md": "06ffb739e2cc1c5cbc9f8c74e523aa79e171be13a42a69b8f11649ba0d6e6cb1",
+    "TASK_STATE.md": "4d566c50cdaea3a4a880d76c6a3ea93e1d0773d840dae15233f912eea9c6c747",
+    "CASE_FACTS.md": "552610560bace38bd0fc1ea11170a436a96918ef711445c1af99f95f946c36cc"
+  },
+  "checks": [
+    "All three requested hashes match.",
+    "Current R2FAIL/R3NOT_RUN unambiguous; no claimed arithmeticfix,invalidtestcorrection or completedmechanismexperiment.",
+    "CPUstrict234/2640,canonicalnative6/16,GPU30/688 and16nativeprefillpass outcomes match reviewed evidence.",
+    "Restoredv2identity andsynthetictest evidence explicitly distinguished from numericalacceptance.",
+    "GPUreference-onlyscope,no candidateGPUport and failedinitialization accounting preserved.",
+    "Scopequestion is pending and proposedrevision notapproved; no useranswerpresumed.",
+    "Lifetimebudget snapshots,originaldeadline and noreset constraints retained.",
+    "Historical sections explicitly superseded by latestcheckpoint; no activeexecutionpromised."
+  ],
+  "limitations": [
+    "Userquestion issuance/pendingstatus is coordinator-supplied state; this leaf has no independent conversation-surface receipt.",
+    "Processabsence is attributed to coordinator/ledger snapshot rather than newly checked here."
+  ],
+  "model_runs": 0
+}

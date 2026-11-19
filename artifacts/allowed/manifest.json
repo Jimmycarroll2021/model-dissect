@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ALLOWED-001",
+  "created_utc": "2026-11-17T06:47:08.725820+00:00",
+  "provenance": "Curator published allowed evidence before inference",
+  "allowed": [
+    {
+      "path": "artifacts/original/full_sft_768.pth",
+      "sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0"
+    },
+    {
+      "path": "artifacts/original/tokenizer.json",
+      "sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668"
+    },
+    {
+      "path": "artifacts/original/tokenizer_config.json",
+      "sha256": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110"
+    },
+    {
+      "path": "artifacts/allowed/supplied_config.json",
+      "sha256": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874"
+    },
+    {
+      "path": "artifacts/allowed/tensor_inventory.json",
+      "sha256": "6462751d85e5dd48e12031bcb759e26fc1dcde1fa55196d72a27c4461df6f060"
+    },
+    {
+      "path": "fixtures/development/inputs.json",
+      "sha256": "688cbac3ba697a33d8a927262329a29a507d133c8ec0a44941e31d6e97de1633"
+    }
+  ],
+  "withheld": [
+    "oracle/",
+    "fixtures/heldout/",
+    "evidence/execution/readiness-minimind-3.json",
+    "runs/evaluation/"
+  ],
+  "disclosures": [
+    "Tensor names/shapes/dtypes/storage are observed.",
+    "Supplied configuration fields are evaluator-provided and source-assisted.",
+    "Observation embedding/block/final names reveal correspondence; log as supplied.",
+    "Curator inspected upstream source; investigator must not read curator private files."
+  ],
+  "interface": {
+    "constructor": "ReferenceAdapter(weights_path)",
+    "call": "(input_ids, attention_mask, position_ids, cache=None, intervention=None)",
+    "returns": [
+      "logits",
+      "embedding",
+      "block",
+      "final",
+      "cache"
+    ],
+    "batch_size": 1,
+    "attention_mask": "boolean full cached+new length",
+    "position_ids": "explicit per-new-token; pad positions zero; real positions contiguous",
+    "cache": "opaque per-layer list; cached output only new positions"
+  },
+  "site_correspondence": {
+    "embedding": "input embedding before first complete block",
+    "block": "first complete block output",
+    "final": "final representation immediately before output projection"
+  }
+}

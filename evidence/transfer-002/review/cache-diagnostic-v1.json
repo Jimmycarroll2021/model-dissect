@@ -1,0 +1,36 @@
+{
+  "verdict": "BLOCKED_PACKET_ACCOUNTING_ONLY",
+  "reviewed_utc": "2026-11-18T19:36:35.154789+00:00",
+  "manifest_sha256": "37ba13c463e144babdc7560d516c2db45802dfaf31847c8df9f197568ac15eba",
+  "packet_sha256": "5b4615a585aa0e487feb3047e69165c06c8202ef8421dd0d7141896e9fa33cb7",
+  "checks": {
+    "manifest_identity": true,
+    "packet_identity": true,
+    "all_manifest_files": true,
+    "packet_identities": true,
+    "environment": true
+  },
+  "tests": "3 synthetic observer and setup/forward cleanup tests independently passed in0.78s",
+  "source_findings": [
+    "Transparent observers clone outputs and inputs without returning replacements; hooks removed on setup/forward exceptions.",
+    "Three native calls charged before attempt: lengths1,1,2; explicit mask and positions preserve original fixture.",
+    "Nine boundaries plus three observer arrays and twelve returned cache arrays saved per call before baseline comparisons.",
+    "All27 boundary arrays must byte-match native v3; failed reproduction retains captures and fails run.",
+    "Existing reviewed guard/source/environment bindings unchanged."
+  ],
+  "required_change": {
+    "field": "raw_payload_bytes",
+    "current": 7593314304,
+    "correct": 862208,
+    "derivation": {
+      "nine_boundaries": 821248,
+      "three_first_layer_observers": 10240,
+      "returned_cache": 30720
+    },
+    "reason": "Stale inherited full-matrix payload exceeds declared8MiB allowance; correct packet and refreeze before exact admission."
+  },
+  "limits": [
+    "No target model/tokenizer loaded or executed.",
+    "No admission emitted; other source checks reusable after packet-only correction."
+  ]
+}

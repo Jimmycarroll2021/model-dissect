@@ -1,0 +1,22 @@
+{
+  "verdict": "PASS",
+  "packet_path": "./evidence/transfer-003/runtime/additive-v2/packet-atlas-independent-v2.json",
+  "packet_sha256": "d9991af94ace7542aaf539c0349618d095436d9e29a63c21ee00b643456be6e6",
+  "reviewer": "third_science_verifier",
+  "review": "./evidence/transfer-003/review/atlas-science-packets-v2.json",
+  "review_sha256": "f33c36c3032b7d25518efe41b8049d800f3adbc24fdbbf3fafc9a87b397ebf18",
+  "positions": 0,
+  "seconds": 180,
+  "disk_bytes": 134217728,
+  "operation": "atlas",
+  "role": "independent",
+  "execution_path": "Existing additive_run launch supervisor and PhaseGuard; no direct child bypass",
+  "preconditions": [
+    "fresh readiness and coordinator serialized resource handoff",
+    "unchanged identities and unused run ID",
+    "retain all terminal, raw and preservation evidence",
+    "Corresponding producer actual evidence independently accepted before launch; no automatic repeat after failed or INCOMPLETE producer"
+  ],
+  "utc": "2026-11-19T00:26:08.574672+00:00",
+  "conditional_on_producer_acceptance": true
+}

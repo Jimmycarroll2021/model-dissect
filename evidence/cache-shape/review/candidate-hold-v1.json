@@ -1,0 +1,13 @@
+{
+  "status": "HOLD_BYTE_PRESERVATION_GATE",
+  "manifest_sha256": "56129a9544503c427d8202bb3034b26d3b727f9d169540fee78e5ea9e0af7b8c",
+  "stage_files_checked": 26,
+  "finding": "Float torch.equal accepts +0/-0 despite different bytes, insufficient for explicit prefix byte preservation acceptance.",
+  "reproduction": {
+    "float_equal": true,
+    "byte_equal": false
+  },
+  "required_change": "Compare same-shape/dtype contiguous uint8 views for input cache and returned prefix; rebind exact runner/packets/manifest before admission.",
+  "other_checks": "6 independent source tests and10 author tests and50 guard tests PASS; import blocker corrected.",
+  "model_calls": 0
+}

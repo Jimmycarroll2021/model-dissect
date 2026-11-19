@@ -1,0 +1,31 @@
+{
+  "status": "DOC_REFERENCE_CORRECTION_ONLY_INDEPENDENT_RESULTS_PENDING",
+  "files": {
+    "docs/model-transfer-usage.md": "665424f3fa0e01f3a7683900ef026369c7cf6a116240a62adacaa100be75a20a",
+    "docs/pythia-transfer-result.md": "b63a886f239b0c3346f8c555081d6f0415de324180a65d1aca6ae7de46754e5b"
+  },
+  "prior_usage_snapshot": {
+    "path": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "sha256": "f48d0953b602c7be9937430f2a394b761ae805ad6f4a85d9a921577f9f264e33"
+  },
+  "verified_packet_bindings": {
+    "producer": {
+      "packet": "evidence/transfer-002/science/science-full-producer-v2.packet.json",
+      "sha256": "76ce25d8a9c88b7bb34780c91bf6e5e970dc4c95a0c9a327fbe7283cdbc8a7ff",
+      "admission": "evidence/transfer-002/review/admission-science-full-producer-v1.json",
+      "binding_pass": true
+    },
+    "independent": {
+      "packet": "evidence/transfer-002/science/science-full-independent-v2.packet.json",
+      "sha256": "463504497826e93ecb2a77715668c3f24316bfd6f77dcb0d01fa43a4f5b5b22b",
+      "admission": "evidence/transfer-002/review/admission-science-full-independent-v1.json",
+      "binding_pass": true
+    }
+  },
+  "changes": [
+    "v2 producer and independent packets paired with actual v1 admission filenames",
+    "table reflects measured producer and available trace; independent acceptance pending",
+    "single-use historical reference and fresh-reproduction requirements explicit"
+  ],
+  "no_model_runs": true
+}

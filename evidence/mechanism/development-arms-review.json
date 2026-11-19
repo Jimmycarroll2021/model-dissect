@@ -1,0 +1,1903 @@
+{
+  "status": "PASS",
+  "receipt_sha256": "042920c3ff0b60fdbe0d64412f91f57d8935f9b65e2fca37c6a6158fbf669e68",
+  "checks": [
+    {
+      "name": "exact_receipt",
+      "pass": true
+    },
+    {
+      "name": "hypothesis",
+      "pass": true
+    },
+    {
+      "name": "fixtures",
+      "pass": true
+    },
+    {
+      "name": "journal",
+      "pass": true
+    },
+    {
+      "name": "complete_order",
+      "pass": true
+    },
+    {
+      "name": "candidate",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/__init__.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/__main__.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/forward.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/inventory.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/probe.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:scripts/mechanism/run.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:tests/test_mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:runtime/guard.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:runtime/environment.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:artifacts/allowed/supplied_config.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:analysis/structural-map.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:analysis/exposure-ledger.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:analysis/forward-v2-preserved.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:evidence/mechanism/protocol-v1.md",
+      "pass": true
+    },
+    {
+      "name": "M2_identity",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-00:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-01:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-02:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-03:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-04:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-05:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-06:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-copying-07:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-00:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-01:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-02:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-03:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-04:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-05:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-06:restoration",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:labels",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:5arms",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:baseline:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:baseline:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:baseline:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:baseline:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:noop:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:noop:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:noop:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:noop:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:target:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:target:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:target:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:target:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:matched:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:matched:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:matched:coordinate",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:matched:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:restored:finite",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:restored:capturebaseline",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:restored:nochange",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:restored:metrics",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:effects",
+      "pass": true
+    },
+    {
+      "name": "mech-development-unrelated-07:restoration",
+      "pass": true
+    },
+    {
+      "name": "groups",
+      "pass": true
+    },
+    {
+      "name": "descriptive_verdict",
+      "pass": true
+    },
+    {
+      "name": "summary_metrics",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:baseline:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:baseline:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:baseline:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:baseline:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:baseline:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:baseline:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:noop:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:noop:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:noop:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:noop:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:noop:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:noop:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:target:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:target:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:target:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:target:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:target:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:target:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:matched:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:matched:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:matched:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:matched:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:matched:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:matched:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:restored:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:restored:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:restored:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:restored:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:restored:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:copying:restored:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:baseline:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:baseline:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:baseline:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:baseline:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:baseline:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:baseline:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:noop:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:noop:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:noop:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:noop:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:noop:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:noop:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:target:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:target:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:target:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:target:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:target:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:target:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:matched:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:matched:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:matched:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:matched:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:matched:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:matched:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:restored:margin",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:restored:expected_nll",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:restored:expected_correct",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:restored:top1_changed",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:restored:mean_abs_logit_difference",
+      "pass": true
+    },
+    {
+      "name": "mean:unrelated:restored:removed_l2",
+      "pass": true
+    },
+    {
+      "name": "guard730",
+      "pass": true
+    }
+  ],
+  "independent_development_verdict": "inconclusive",
+  "copying_mean_E_target": 0.01288297027349472,
+  "copying_mean_E_control": 0.002089090645313263,
+  "copying_mean_D": 0.010793879628181458,
+  "target_positive_count": 6,
+  "copying_norm_mismatch": 0.0016284622585962527,
+  "unrelated_target_nll_increase": 0.00302278995513916,
+  "unrelated_accuracy_drop": 0,
+  "copying_correct_vs_foil": 8,
+  "heldout_prerequisites_ready": true,
+  "model_calls_this_review": 0,
+  "method": "Independent Python scalar arithmetic from raw logits and before/after activation arrays, no producer metric functions",
+  "limitations": [
+    "Development unrelated expected-next-token top1 baseline accuracy is0/8; accuracy retention alone is therefore weak evidence",
+    "Unrelated control/target norm mismatch is descriptive, not the protocol copying-norm gate",
+    "Weak positive development verdict does not establish heldout outcome"
+  ]
+}

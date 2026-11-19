@@ -1,0 +1,70 @@
+{
+  "status": "PASS_BOUNDED_OUTPUT_REUSE_RUNTIME_FAILURE_PRESERVED",
+  "reviewer": "/root/atlas_guard_verify",
+  "scope": "Independent adjudication of saved repeat evidence and preparation for later math admission; no checkpoint loading",
+  "source_receipt": {
+    "path": "evidence/atlas/independent-repeat-receipt.json",
+    "sha256": "b72d641912227a60fbbe25400c3ab12c3e098bf69ea10941c4d46399157ec523"
+  },
+  "actual_ledger": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-ledger.json",
+    "sha256": "bff4dae663cbe254844d3a21bb38bfb74ff651f1e348016dd9fb14487c1f5ef7",
+    "repeat_status": "failed",
+    "child_exit_code": 0,
+    "repeat_reserved_wall": 300,
+    "aggregate_static_reserved_wall": 600,
+    "positions_reserved": 0,
+    "start": 1794952381.8433254,
+    "deadline": 1794959581.8433254,
+    "active_rows": 0,
+    "ledger_unchanged": true
+  },
+  "output_identities": {
+    "producer": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "sha256": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd"
+    },
+    "repeat": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-independent-v1/atlas.json",
+      "sha256": "30dfe513867de37dae068dc9f7a3bf412dec22b6fc51e30938d85c708e35a0da"
+    },
+    "manifests": {
+      "producer": "dbfe40d5044302e948b865e3c1361430d547866c1bae31b991ca2f6085803ba1",
+      "repeat": "f3f96699d256ed17157872b3e087196e6a3e91a3710633b368f801bc7fc7a1a2"
+    }
+  },
+  "checks": {
+    "all_six_packet_inputs_hash_verified": true,
+    "all_seven_original_source_hashes_verified": true,
+    "producer_repeat_files_match_manifests": true,
+    "normalized_complete_report_equality": true,
+    "only_normalized_fields": "elapsed_seconds and location-only path/checkpoint members in config/tokenizer/provenance",
+    "report_tensor_count": 91,
+    "unique_keys": 91,
+    "frozen_selection_matches": true,
+    "selected_scalar_count": 8,
+    "owned_child_pid_absent": true
+  },
+  "decision": {
+    "reuse": "The exact complete output artifacts may be used as inputs to independent mathematical checking. Output identity and full normalized agreement establish a reproducibility observation despite failed guard execution.",
+    "runtime": "FAIL remains unchanged. No successful guard run, accepted monitored repeat, or final combined highwater check is inferred.",
+    "retry": "No duplicate repeat justified by the inspected artifact evidence; numerical validation can proceed using preserved artifacts once its own revised guard and admission pass.",
+    "causal_diagnosis": "Observed nonpositive resident reading plus later child exit0 and complete output supports terminal-transition hypothesis; exact process state at failure was not captured and causality remains unproven."
+  },
+  "math_packet": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/math-check-packet.json",
+    "sha256": "d8a12de9ffcce2669c1a8046774b309de42197f691e9f8b64095e90e902f5645",
+    "status": "VERIFIED_INPUT_BINDINGS_NOT_ADMITTED",
+    "pending": [
+      "Independent exact guard-v5 review and staged guard identity transition under unchanged policy/ledger",
+      "New math admission binds exact checker, packet, data, both report manifests and reports",
+      "Actual300-second static mathematical verification"
+    ]
+  },
+  "limitations": [
+    "No independent tensor mathematics performed here; matching reports can share a calculation defect.",
+    "No recovered guard PASS or retroactive ledger edit. Failed300seconds stays charged.",
+    "Future checker300seconds would make aggregate static reservation900/1200; model budgets unaffected."
+  ],
+  "next_action": "Accept bounded artifact reuse only; await reviewed guard replacement before authoring math admission."
+}

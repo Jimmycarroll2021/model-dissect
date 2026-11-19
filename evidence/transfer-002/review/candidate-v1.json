@@ -1,0 +1,44 @@
+{
+  "verdict": "PASS_BUILD_CANDIDATE_RUNTIME_PENDING",
+  "checked_utc": "2026-11-18T19:12:43.135331+00:00",
+  "candidate_sha256": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f",
+  "checks": {
+    "manifest_files": true,
+    "reference_identity": true,
+    "reject_hidden_act": true,
+    "reject_use_parallel_residual": true,
+    "reject_tie_word_embeddings": true,
+    "reject_rope_scaling": true,
+    "reject_sliding_window": true,
+    "reject_rope_parameters": true,
+    "reject_attention_bias": true,
+    "reject_missing_dimensions": true,
+    "reject_nonfinite_weights": true,
+    "reject_nonfinite_cache": true,
+    "reject_position_overflow": true,
+    "reject_negative_position": true,
+    "exception_hook_restoration": true,
+    "input_weight_preservation": true,
+    "cache_false": true,
+    "no_transformers_import": true
+  },
+  "developer_tests": "Independently reran 8 synthetic tests: 8 passed in 0.69 seconds. No target weights loaded.",
+  "source_review": [
+    "Head-local packed QKV reshape then chunk matches native.",
+    "Partial RoPE rotates first rotary_dim only using half-split pairing; untouched tail retained.",
+    "LayerNorm epsilon, exact GELU, parallel residual ordering mlp + attention + residual match native eager.",
+    "Attention uses head_dim**-0.5, FP32 softmax and additive causal/key-padding mask.",
+    "Untied embedding/output matrix retains full configured vocabulary; actual target config gives 50304 rows.",
+    "Returned boundaries use block.i keys; hooks internally use blocks.i, translated by boundary_hook API.",
+    "Independent tensor primitives; no native forward or Hugging Face math helper import."
+  ],
+  "runtime_requirements": [
+    "Frozen external admission must enforce target/config/source/environment/tokenizer identities; hash-only loader is deliberately not runtime authority.",
+    "Output finiteness is not enforced inside forward/boundary hooks; comparison/runner must reject nonfinite retained boundaries and caches including masked rows.",
+    "True target parity, all 9 boundaries, full schedule, all cache invariants and independent repeat remain unexecuted.",
+    "Candidate accepts generic supported shapes; external exact-target admission must prevent substituting arbitrary hash/config pairs.",
+    "Caller owns cache model/arm provenance; runner must isolate arms and snapshot incoming caches.",
+    "Watchdog/aggregate guard not reviewed in this source-only assignment; no runtime admission."
+  ],
+  "findings": []
+}

@@ -1,0 +1,30 @@
+{
+  "candidate_id": "NUMERICS-003-FIXTURES-001",
+  "created_utc": "2026-11-17T07:36:54.394645+00:00",
+  "path": "fixtures/continuation-v2/parity.json",
+  "sha256": "47355bc811735d40d50010d71f09f52ce5a5049f93a9d190e0f9096288dd6ccc",
+  "coverage": {
+    "lengths": [
+      1,
+      8,
+      32,
+      128
+    ],
+    "padding": [
+      "none",
+      "left",
+      "right"
+    ],
+    "padding_width": 3,
+    "continuations": 4,
+    "count": 12
+  },
+  "full_parity_tokens": 16938,
+  "retained_mechanism_files": {
+    "fixtures/development/inputs.json": "688cbac3ba697a33d8a927262329a29a507d133c8ec0a44941e31d6e97de1633",
+    "fixtures/heldout/inputs.json": "3dfb7e3876fad5e166d65ab860929c2f474b08345e476193cb46f7ed137cc60b"
+  },
+  "private": "Evaluator-only; not disclosed to numerical implementation owner",
+  "distinct_from_both_previous_suites": true,
+  "model_forwards": 0
+}

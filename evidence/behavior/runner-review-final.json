@@ -1,0 +1,15 @@
+{
+  "status": "PASS_STATIC_AND_SYNTHETIC",
+  "manifest": "analysis/behavior-runner-manifest-v3.json",
+  "manifest_sha256": "67b8d42028492335b09374e4641f569177a2d3846c5b11e23cb13eba913cef59",
+  "runner_sha256": "1521bb95d91778e1a449d5380032746444879cc33cbb0fbbdf679f4cfaa633a2",
+  "manifest_dependency_drift": [],
+  "independent_tests": {
+    "command": "/usr/bin/python -m unittest discover -s tests -p 'test_behavior*.py' -v",
+    "passed": 6,
+    "failed": 0
+  },
+  "finite_gate": "All vocabulary logits explicitly checked before argmax/metrics; independent regression rejects nonlabel negative infinity, positive infinity, NaN.",
+  "model_or_tokenizer_execution": false,
+  "review_epoch": 1794910552.2858067
+}

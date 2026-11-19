@@ -1,0 +1,55 @@
+{
+  "status": "PASS_STATIC_STORAGE_REPAIR_ONLY",
+  "repair_manifest_sha256": "97b80c88d9dbf56de47c8a5030173d67be65494fcc0b55474515bcad2b119b6e",
+  "repair_source_sha256": "7c91612b305dd981c602f77fef1b2d155d96826701471fd041751ef6b93cde8d",
+  "old_source_sha256": "47f61d8f571dbcc1e0acc1c86dcdb6dc50ff2f3c30308e5970ff846c94099716",
+  "exact_ast_equivalence_after_removing_only_helper_and_save_wrapper": true,
+  "synthetic_checks": [
+    {
+      "prefix_length": 52,
+      "index": 0,
+      "storage_payload_bytes": 25600,
+      "serialized_bytes": 27177,
+      "values_digest_top1_preserved": true
+    },
+    {
+      "prefix_length": 52,
+      "index": 51,
+      "storage_payload_bytes": 25600,
+      "serialized_bytes": 27177,
+      "values_digest_top1_preserved": true
+    },
+    {
+      "prefix_length": 128,
+      "index": 0,
+      "storage_payload_bytes": 25600,
+      "serialized_bytes": 27177,
+      "values_digest_top1_preserved": true
+    },
+    {
+      "prefix_length": 128,
+      "index": 127,
+      "storage_payload_bytes": 25600,
+      "serialized_bytes": 27177,
+      "values_digest_top1_preserved": true
+    }
+  ],
+  "old_staged_runner_policy_failed_ledger_unchanged": true,
+  "proposed_clean_restart": {
+    "prior_charged_including_failure": 882320,
+    "producer_reservation": 78112,
+    "independent_reservation": 78112,
+    "proposed_lifetime_ceiling": 1038544,
+    "increase_over_current": 38544,
+    "scientific_protocol": "unchanged full8dev/16held/all64scan/parity/hooks/fullindependentrepeat",
+    "status": "AWAITING_USER_CAP_DECISION_AND_SUBSEQUENT_EXACT_RUNTIME_ADMISSION"
+  },
+  "runtime_admitted": false,
+  "model_calls": 0,
+  "tokenizer_executions": 0,
+  "limitations": [
+    "Versioned repair retains old staged path assertions and is not directly runnable.",
+    "New staged candidate, compatible guard/policy, disk projection and independent admission must be reviewed after any cap authorization.",
+    "Failed reservation and original artifacts must remain retained."
+  ]
+}

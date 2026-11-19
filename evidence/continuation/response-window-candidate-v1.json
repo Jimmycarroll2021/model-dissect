@@ -1,0 +1,67 @@
+{
+  "status": "PRE_RUNTIME_CANDIDATE_PENDING_REVIEW",
+  "epoch": 1794990852.9268944,
+  "stage": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118",
+  "phase_clock": "NOT_STARTED",
+  "checkpoint_loads": 0,
+  "tokenizer_loads": 0,
+  "model_forwards": 0,
+  "historical_totals": {
+    "tokens_reserved": 450928,
+    "download_bytes": 138166822,
+    "gpu_seconds": 12.621721199015155,
+    "gpu_seconds_reserved": 240.0
+  },
+  "files": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/packet-independent-v1.json": "5da4568ce37f3a232c63a3b896bf1ee792e1fdc003b7ad4b7f6893303eb28a84",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/packet-producer-v1.json": "11549479553afc72b9076e0c66f0c1bf1a9cca4faecff71df83786ab70441ed7",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/previous-screen.json": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/protocol-v1.json": "061826fa97099bf831022209e908aef52db5522333b08388cc1e4468c77f1672",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/evidence/continuation/protocol-v1.md": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/fixtures/behavior/screen.json": "f1c7445cc162a0fa4d3e7b3959747572034ce662f2b2dbc43f4d475018c2ce77",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/oracle/__init__.py": "7c091c93959b3b22084557fc4cb894f353b85c54f8d70f7733bf332d0a31e6db",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/oracle/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/atlas-ledger.json": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/behavior-ledger.json": "465f9f3da6ba029932f7b9b8ff77f2118e5052c67ded11ea71721059621ed070",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation-policy.json": "4061f8dd9acf1cbd72c370dd1c864a217702ae3860eb7c87230a42d34445cc3a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/continuation_guard.py": "f7e172cbea23fa947df30f56ea30d1d9ddb62c31e74ecf47177204be8fc8ad20",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runtime/original-ledger.json": "c1de84bd30b2df14edccaec8ec4f9e2246c5cef7ff908bc606025b14cf3a66ed",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/src/minimind_re/continuation_probe.py": "6686a66392b83a3654555e3dd3a2f48cef072988f395d77de29c2522a29d1b62",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/src/minimind_re/response_probe.py": "6acce1a4055f79ed000100dbcb6f87ef7a4b84d84aebb5329cc7f515825528df"
+  },
+  "project_files": {
+    "./src/minimind_re/continuation_probe.py": "6686a66392b83a3654555e3dd3a2f48cef072988f395d77de29c2522a29d1b62",
+    "./tests/test_continuation_probe.py": "5d713265ff7b2523a4302b4dd9ae1a1613dfb8d47b57e8eab206bebff9df9342",
+    "./tests/test_continuation_guard.py": "f8371b1dbdd1d686e01e3a9e6695a5a62e40429cc6fdd572c6f7a57d5a287414",
+    "./evidence/continuation/response-window-protocol-v1.md": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+    "./evidence/continuation/response-window-protocol-v1.json": "061826fa97099bf831022209e908aef52db5522333b08388cc1e4468c77f1672",
+    "./specs/001-minimind-reproduction/spec.md": "31849dad91a777c001f14bfecca01340ac8ffe9238aa232b9f9082242fd4e5b0",
+    "./specs/001-minimind-reproduction/plan.md": "3e9222ac71909ac4fb9b881006c00d4d203078d6d73519608146d8f7724bb9f5",
+    "./specs/001-minimind-reproduction/tasks.md": "bc4707883535c6e5b03a754d87caa1e08a5405189c78b30a2e76e26d37e81cb7",
+    "./docs/continuation-result.md": "48e41c92a5647193bdad483aa8d8220d12e456b4f892374130a608e28226fe22"
+  },
+  "resource_preflight": {
+    "phase_bytes": 138683523,
+    "free_bytes": 74190725120,
+    "meminfo": "MemTotal:       65660636 kB\nMemFree:         5071404 kB\nMemAvailable:   21054440 kB\nBuffers:          541848 kB\nCached:         19162204 kB\nSwapCached:       362560 kB\nActive:         24045724 kB\nInactive:       31405152 kB\nActive(anon):   22238660 kB\nInactive(anon): 18360880 kB\nActive(file):    1807064 kB\nInactive(file): 13044272 kB\nUnevictable:         480 kB\nMlocked:             396 kB\nSwapTotal:       8388604 kB\nSwapFree:            140 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              6396 kB\nWriteback:             0 kB\nAnonPages:      35405868 kB\nMapped:          5206020 kB\nShmem:           5027892 kB\nKReclaimable:    1849096 kB\nSlab:            2865012 kB\nSReclaimable:    1824596 kB\nSUnreclaim:      1040416 kB\nKernelStack:      210032 kB\nPageTables:       729252 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    41218920 kB\nCommitted_AS:   155102064 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      345384 kB\nVmallocChunk:          0 kB\nPercpu:            48832 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:     61440 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    221184 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:          136000 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     9730240 kB\nDirectMap2M:    51963904 kB\nDirectMap1G:     7340032 kB\n"
+  },
+  "reservation": {
+    "each": 176640,
+    "both": 353280,
+    "lifetime_max": 804208,
+    "remaining_after_max": 195792
+  },
+  "boundary_review_amendment": "Before any model execution, reviewer requested full embedding/block/final/logit parity instead of logits-only; implemented without extra forwards. Updated candidate in place before first freeze, old scientific artifacts untouched.",
+  "state_owner": "Separate assigned leaf; no TASK_STATE/CASE_FACTS edits",
+  "source_exposure": "Existing oracle adapter/source read for same-mode boundary checking; unchanged candidate is not copied from oracle",
+  "next_action": "Independent exact review/admission only; no actual runtime from this manifest"
+}

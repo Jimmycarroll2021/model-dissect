@@ -1,0 +1,133 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_REPEAT_FULL_NEW_MODE",
+  "scientific_status": "PASS_BOTH_MATRICES_NEW_MODE",
+  "producer_result_sha256": "b69300eb1d3887d45474112fa96d492ef83c13a853033e0f3c5522c18ce5cfec",
+  "independent_result_sha256": "f66d40fb47884dca50b3e0035ad2e4bd0399e72ec88e2bbf407e427d1605a79b",
+  "producer_raw_audit_sha256": "a6b2785f841ea93d11c37dee0b998f7dd77568d65460385df496237bb7ff8762",
+  "independent_raw_audit_sha256": "c98424f24d35a4c73baa515abb8abd02d6b5f814046825577619dd3920701071",
+  "exact_boundary_and_chunk_tensors": 18144,
+  "exact_call_journal": true,
+  "exact_comparison_rows": 9120,
+  "failed_rows_each": 0,
+  "failed_fixtures": [],
+  "max_tolerance_ratio": 0.9981775283813477,
+  "top1_mismatches": 0,
+  "nonfinite_rows": 0,
+  "ledger_sha256": "0a858fe1bf02f97a08fa6ec3a80f8a54540e3fe06665742d620357a1615440fb",
+  "lifetime_reserved": 1239856,
+  "remaining_lifetime": 0,
+  "phase_start": 1795004532.7990096,
+  "phase_deadline": 1795008132.7990096,
+  "guard_runs": [
+    {
+      "id": "cache-softmax-matrix-producer-v1",
+      "kind": "model",
+      "role": "implementation",
+      "positions_reserved": 50600,
+      "wall_reserved": 900.0,
+      "start": 1795004532.7990096,
+      "status": "completed",
+      "argv": [
+        "/usr/bin/python",
+        "-m",
+        "minimind_re.softmax_bucket_matrix_probe",
+        "--packet",
+        "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/evidence/packet-producer-v1.json"
+      ],
+      "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runs/cache-softmax-matrix-producer-v1/result.json",
+      "guard_entry_rusage_maxrss_bytes": 21282816,
+      "guard_entry_proc_status": {
+        "VmHWM": "20784 kB",
+        "VmRSS": "20596 kB"
+      },
+      "sampled_live_peak_owned_rss_bytes": 1379926016,
+      "peak_owned_rss_bytes": 1382518784,
+      "owned_rss_cap_bytes": 10737418240,
+      "owned_rss_scope": "guard plus direct child; descendants prohibited",
+      "pid": 1523528,
+      "exit_code": 0,
+      "guard_completion_proc_status": {
+        "VmHWM": "20784 kB",
+        "VmRSS": "20756 kB"
+      },
+      "guard_completion_rusage_maxrss_bytes": 21282816,
+      "final_child_highwater_bytes": 1361235968,
+      "final_guard_highwater_bytes": 21282816,
+      "final_combined_highwater_bytes": 1382518784,
+      "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+      "child_completion_resource_snapshot": {
+        "pid": 1523528,
+        "statm_rss_bytes": 1327292416,
+        "proc_status": {
+          "VmHWM": "1329332 kB",
+          "VmRSS": "1296184 kB"
+        },
+        "rusage_maxrss_bytes": 1361235968
+      },
+      "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+      "output_sha256": "b69300eb1d3887d45474112fa96d492ef83c13a853033e0f3c5522c18ce5cfec",
+      "end": 1795004620.2741964,
+      "wall_seconds": 87.46304110100027,
+      "cpu_seconds": 144.966324,
+      "peak_child_rss_kib": 1329332
+    },
+    {
+      "id": "cache-softmax-matrix-independent-v1",
+      "kind": "model",
+      "role": "verification",
+      "positions_reserved": 50600,
+      "wall_reserved": 900.0,
+      "start": 1795004681.7844515,
+      "status": "completed",
+      "argv": [
+        "/usr/bin/python",
+        "-m",
+        "minimind_re.softmax_bucket_matrix_probe",
+        "--packet",
+        "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/evidence/packet-independent-v1.json"
+      ],
+      "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runs/cache-softmax-matrix-independent-v1/result.json",
+      "guard_entry_rusage_maxrss_bytes": 21286912,
+      "guard_entry_proc_status": {
+        "VmHWM": "20788 kB",
+        "VmRSS": "20624 kB"
+      },
+      "sampled_live_peak_owned_rss_bytes": 1378689024,
+      "peak_owned_rss_bytes": 1477332992,
+      "owned_rss_cap_bytes": 10737418240,
+      "owned_rss_scope": "guard plus direct child; descendants prohibited",
+      "pid": 1531720,
+      "exit_code": 0,
+      "guard_completion_proc_status": {
+        "VmHWM": "20788 kB",
+        "VmRSS": "20712 kB"
+      },
+      "guard_completion_rusage_maxrss_bytes": 21286912,
+      "final_child_highwater_bytes": 1456046080,
+      "final_guard_highwater_bytes": 21286912,
+      "final_combined_highwater_bytes": 1477332992,
+      "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+      "child_completion_resource_snapshot": {
+        "pid": 1531720,
+        "statm_rss_bytes": 1123700736,
+        "proc_status": {
+          "VmHWM": "1421920 kB",
+          "VmRSS": "1097364 kB"
+        },
+        "rusage_maxrss_bytes": 1456046080
+      },
+      "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+      "output_sha256": "f66d40fb47884dca50b3e0035ad2e4bd0399e72ec88e2bbf407e427d1605a79b",
+      "end": 1795004770.9890215,
+      "wall_seconds": 89.19194522104226,
+      "cpu_seconds": 147.55290000000002,
+      "peak_child_rss_kib": 1421920
+    }
+  ],
+  "limitations": [
+    "Frozen new cached-softmax mode passes both complete matrices; this does not alter the historical untouched-native cached-self failure.",
+    "Historical untouched-native R2 FAIL remains unchanged.",
+    "Full-control unused KV returns are not retained raw, per frozen protocol.",
+    "No repairs, retries, downloads, training, GPU or new model calls beyond admitted complete roles."
+  ]
+}

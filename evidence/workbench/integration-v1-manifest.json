@@ -1,0 +1,41 @@
+{
+  "status": "PENDING_INDEPENDENT_DOCUMENT_REVIEW",
+  "files": [
+    {
+      "path": "docs/reverse-engineering-workbench.md",
+      "sha256": "d759539c355c4f460c34bb5e9bd37a068ddc997e9f8da3464469d1ffda2d456a"
+    },
+    {
+      "path": "evidence/workbench/integration-v1-prior-workbench.md",
+      "sha256": "d85d21be96b053846efe15d6643c7f810752646ca868d893ee8ba793718e26b9"
+    },
+    {
+      "path": "evidence/workbench/integration-v1-author-checks.json",
+      "sha256": "38432bae30aaf3436d32c2a83b2cc4a7218f9fd5bbbec722d9292e3bdde25ea6"
+    },
+    {
+      "path": "evidence/workbench/review-v2.json",
+      "sha256": "635183983b66f7459d6b7f74b6b8c06f1cc1fa90232774189ed66baf05e32495"
+    },
+    {
+      "path": "evidence/actual-input/review/final-review-v1.json",
+      "sha256": "1743b12e2ec445760c0b9e3ac7de08ec3a2feb08e8552acc87a56132a210602f"
+    },
+    {
+      "path": "evidence/cache-shape/review/independent-repeat-final-v1.json",
+      "sha256": "7116e8136467817ae65dfad865b620da0fa89b66cc50bdb3050177e086ddc758"
+    },
+    {
+      "path": "evidence/cache-shape/review/final-document-review-v1.json",
+      "sha256": "b4c58829d8da09a3944871ea5c96dfac27bdadb10d218b1593bd550b60e3afc5"
+    },
+    {
+      "path": "evidence/cache-shape-matrix/review/static-approval-review-v1.json",
+      "sha256": "c3578ab333d00d1a55280f80c9203373f8ccea48dfa835b1fb8cfc6c31a6f4c3"
+    },
+    {
+      "path": "evidence/goal-coverage/current-audit.json",
+      "sha256": "b1df6f416a16df3f85967e73c08c8821df1cac89b3ab0bf6244a085c4b39db95"
+    }
+  ]
+}

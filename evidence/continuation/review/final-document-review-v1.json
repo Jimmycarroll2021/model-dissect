@@ -1,0 +1,79 @@
+{
+  "status": "PASS_CONTINUATION_FINAL_DOCUMENT_REVIEW",
+  "reviewed_utc": "2026-11-18T08:46:33.657194+00:00",
+  "manifest_sha256": "e628a14d6b65b119723323ad4803d2f2f0b3d1d247a23d9599ae54ad90e66d2b",
+  "report_sha256": "a47f822c1dbd25ba97f7719362097cafb9d85622eee3a80d7861fcbf82691e25",
+  "files": [
+    {
+      "path": "./docs/continuation-result.md",
+      "sha256": "a47f822c1dbd25ba97f7719362097cafb9d85622eee3a80d7861fcbf82691e25",
+      "role": "report",
+      "actual_sha256": "a47f822c1dbd25ba97f7719362097cafb9d85622eee3a80d7861fcbf82691e25",
+      "match": true
+    },
+    {
+      "path": "./evidence/continuation/review/continuation-repeat-final-v1.json",
+      "sha256": "b051bdf6013ff6e7f43e7c5d03b0523e4b5a6ea0990a4c4b21f0ed04841589eb",
+      "role": "evidence_reference",
+      "actual_sha256": "b051bdf6013ff6e7f43e7c5d03b0523e4b5a6ea0990a4c4b21f0ed04841589eb",
+      "match": true
+    },
+    {
+      "path": "./evidence/continuation/response-window-producer-execution-v1.json",
+      "sha256": "4a9a8c980badf208dfe47194324f9c3a193795e79019dac9901d535befb7f52f",
+      "role": "evidence_reference",
+      "actual_sha256": "4a9a8c980badf208dfe47194324f9c3a193795e79019dac9901d535befb7f52f",
+      "match": true
+    },
+    {
+      "path": "./evidence/continuation/response-window-protocol-v1.md",
+      "sha256": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+      "role": "evidence_reference",
+      "actual_sha256": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+      "match": true
+    },
+    {
+      "path": "./evidence/continuation/response-window-candidate-v1.json",
+      "sha256": "729467fec18f7362622d7e57c6b1d123988dfbdd9d086de920622c4a509f8d16",
+      "role": "evidence_reference",
+      "actual_sha256": "729467fec18f7362622d7e57c6b1d123988dfbdd9d086de920622c4a509f8d16",
+      "match": true
+    },
+    {
+      "path": "./evidence/computation-map/review/receipt.json",
+      "sha256": "14bf5bfa1a464aeb34ec39ded16dfb0bf1399dfa3731aecb8f735ab9a596ac8f",
+      "role": "evidence_reference",
+      "actual_sha256": "14bf5bfa1a464aeb34ec39ded16dfb0bf1399dfa3731aecb8f735ab9a596ac8f",
+      "match": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json",
+      "sha256": "df4d93947c981721920b27b1332f10ff4dbad1d0e96dadc7bb729ca6f604b4dd",
+      "role": "evidence_reference",
+      "actual_sha256": "df4d93947c981721920b27b1332f10ff4dbad1d0e96dadc7bb729ca6f604b4dd",
+      "match": true
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-independent-v1.json",
+      "sha256": "727b9002d1a9d5b035db4eaac60ecb63e4c22ea41046d3f55abc503fa80b81a8",
+      "role": "evidence_reference",
+      "actual_sha256": "727b9002d1a9d5b035db4eaac60ecb63e4c22ea41046d3f55abc503fa80b81a8",
+      "match": true
+    }
+  ],
+  "checks": [
+    "Report grades match independently committed frozen-rubric assessment: three INCOMPLETE and COMPARE WRONG with EOS at token256.",
+    "Parity boundaries, exact repeat, old24-token prefixes, timings, actual and reserved position accounting match independent final receipt.",
+    "EOS probability verification limits and termination censoring explicitly preserved.",
+    "Exact repeated span lengths match independently saved static observations.",
+    "Static computation-map claim bounded to separate PASS receipt; echo observation attributed to separate preliminary review and not causal runtime evidence.",
+    "Historical cache/full FAIL, coordinate INCONCLUSIVE and OV REFUTED preserved; broader goal explicitly active and unfinished."
+  ],
+  "findings": [],
+  "authority": "This separate receipt closes the pending document-review status in the frozen report/manifest; no rewrite of frozen artifacts is required.",
+  "limitations": [
+    "Document and saved-evidence review only; no new model calls, tokenizer runs or runtime admission.",
+    "Mutable goal/task state excluded from this exact-document manifest."
+  ],
+  "user_report_approved": true
+}

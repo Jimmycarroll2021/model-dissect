@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "scope": "NUMERICAL_PILOT_AFTER_PRODUCER_ACCEPTANCE",
+  "packet": "./evidence/transfer-003/runtime/packet-pilot-independent-v2.json",
+  "packet_sha256": "f0542784713865a755ace9666480e87ad125cd03b66223331286cede88347409",
+  "review": "./evidence/transfer-003/review/runtime-build-v2.json",
+  "review_sha256": "d8e16238cd1eec782a71544eae490dc76a856a782cea517fc4fff8c29eda3be7",
+  "conditions": [
+    "All initializing/supervisor launch commands MUST prefix PYTHONDONTWRITEBYTECODE=1 and use existing pinned PYTHONPATH=src; child inherits bytecode disable, supervisor routes TMPDIR/HF/Torch caches to owned workspace.",
+    "Initialize only once using exact producer pilot packet and its PASS receipt; no existing ledger may be overwritten or reset.",
+    "Producer pilot first; review producer successful completion, finite/fidelity/preservation/raw reload and budget receipts before independent pilot. Any failure stops dependent execution, preserves charge and requires bounded diagnosis.",
+    "Fresh guard/supervisor checks at each launch remain mandatory; current snapshot not continuing resource reservation.",
+    "Only numerical pilot stages admitted. Full packets structurally checked but NOT admitted until measured fidelity/feasibility and independent review; no static/science/tokenizer admission follows.",
+    "No runtime/source/fixture identity changes permitted under these receipts."
+  ],
+  "not_admitted": [
+    "numerical-full",
+    "science",
+    "static",
+    "tokenizer"
+  ],
+  "created_utc": "2026-11-19T00:11:31.873083+00:00"
+}

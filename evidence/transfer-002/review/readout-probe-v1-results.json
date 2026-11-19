@@ -1,0 +1,70 @@
+{
+  "verdict": "PASS_CROSSED_READOUT_RESULTS",
+  "reviewed_utc": "2026-11-18T19:58:27.650505+00:00",
+  "checks": {
+    "all4hashes": true,
+    "payload": true,
+    "both_original_cells_byteexact": true,
+    "allcomparisons_reproduced": true,
+    "4calls6rows": true,
+    "completed": true
+  },
+  "rows": {
+    "canonical.fixed_m2": {
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.743171691894531e-05,
+      "argmax_equal": true,
+      "violations": 57
+    },
+    "canonical.native_m1": {
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.743171691894531e-05,
+      "argmax_equal": true,
+      "violations": 56
+    },
+    "native.fixed_m2": {
+      "pass": true,
+      "finite": true,
+      "max_abs": 6.198883056640625e-06,
+      "argmax_equal": true,
+      "violations": 0
+    },
+    "native.native_m1": {
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "argmax_equal": true,
+      "violations": 0
+    }
+  },
+  "canonical_modes_passing": [],
+  "receipt_sha256": "2d7f362cd4eff091ad876b65cfb4ba59907ec394011ceea0f365029431970a50",
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 672235520,
+    "elapsed": 4.161747729987837,
+    "added_disk_bytes": 808566,
+    "total_phase_disk_bytes": 7622888395,
+    "packet_disk_limit": 8388608,
+    "phase_disk_limit": 25769803776
+  },
+  "ledger_finish": {
+    "actual_positions": 6,
+    "elapsed": 2.8583141380222514,
+    "event": "finish",
+    "inherited_self_rusage_highwater_bytes": 680562688,
+    "run_id": "readout-probe-v1",
+    "sampled_owned_tree_rss_bytes": 672235520,
+    "status": "completed",
+    "time": 1795031889.0024946,
+    "version": "transfer-guard-v3"
+  },
+  "limits": [
+    "Only two saved singleton states and readout primitives tested; no whole-model remedy established.",
+    "Both original cells reproduce exactly; original all-affine pilot remains FAIL.",
+    "No further model calls or source changes."
+  ]
+}

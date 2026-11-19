@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "observation_exact_hash",
+      "pass": true
+    },
+    {
+      "name": "hypothesis_exact_hash",
+      "pass": true
+    },
+    {
+      "name": "packet_binding",
+      "pass": true
+    },
+    {
+      "name": "journal_exact",
+      "pass": true
+    },
+    {
+      "name": "rows_fixture_binding",
+      "pass": true
+    },
+    {
+      "name": "dependency:candidate_manifest",
+      "pass": true
+    },
+    {
+      "name": "receipt_binding:candidate_manifest",
+      "pass": true
+    },
+    {
+      "name": "dependency:scientific_protocol",
+      "pass": true
+    },
+    {
+      "name": "receipt_binding:scientific_protocol",
+      "pass": true
+    },
+    {
+      "name": "dependency:checkpoint",
+      "pass": true
+    },
+    {
+      "name": "receipt_binding:checkpoint",
+      "pass": true
+    },
+    {
+      "name": "dependency:environment",
+      "pass": true
+    },
+    {
+      "name": "receipt_binding:environment",
+      "pass": true
+    },
+    {
+      "name": "dependency:m2_gate",
+      "pass": true
+    },
+    {
+      "name": "receipt_binding:m2_gate",
+      "pass": true
+    },
+    {
+      "name": "dependency:inputs",
+      "pass": true
+    },
+    {
+      "name": "receipt_binding:inputs",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/__init__.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/__main__.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/forward.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/inventory.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:src/minimind_re/probe.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:scripts/mechanism/run.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:tests/test_mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:runtime/guard.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:runtime/environment.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:artifacts/allowed/supplied_config.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:analysis/structural-map.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:analysis/exposure-ledger.json",
+      "pass": true
+    },
+    {
+      "name": "candidate:analysis/forward-v2-preserved.py",
+      "pass": true
+    },
+    {
+      "name": "candidate:evidence/mechanism/protocol-v1.md",
+      "pass": true
+    },
+    {
+      "name": "M2_tool_pass",
+      "pass": true
+    },
+    {
+      "name": "balanced",
+      "pass": true
+    },
+    {
+      "name": "all_statistics_finite_match",
+      "pass": true
+    },
+    {
+      "name": "selected_target_control_scale",
+      "pass": true
+    },
+    {
+      "name": "dev_prerequisite",
+      "pass": true
+    },
+    {
+      "name": "hypothesis_inputs_identity",
+      "pass": true
+    },
+    {
+      "name": "baseline_only_schema",
+      "pass": true
+    },
+    {
+      "name": "freeze_order",
+      "pass": true
+    },
+    {
+      "name": "guard_accounting",
+      "pass": true
+    }
+  ],
+  "hashes": {
+    "observation": "2b4a79eccb6699b4c4e9b4b4031b577c698b2edee0187556a433e8b2d0a96707",
+    "hypothesis": "df8697a5dccfa9d43f662f4e0def2ed2d20e26aee77e31ed815e43b5be28252d",
+    "packet": "a5641675a7ddc7e5f3c5baf91f87bc17c83457c5f6115736c6e6ceb9309dcac3"
+  },
+  "method": "Independent Python math/statistics, all768 Pearson/RMS values and deterministic tie breaks recomputed; no producer selection/report function imported",
+  "target": {
+    "channel": 732,
+    "rms": 0.061937446561274735,
+    "correlation": 0.8085411470245343
+  },
+  "control": {
+    "channel": 27,
+    "rms": 0.07067502950620044,
+    "correlation": -0.01264793884705621
+  },
+  "control_to_target_rms_ratio": 1.1410710875250825,
+  "control_scale": 0.876369589005136,
+  "copying_correct_vs_foil": 8,
+  "input_positions": 146,
+  "model_calls_from_frozen_observe_branch_and_16_complete_rows": 16,
+  "model_calls_this_review": 0,
+  "no_intervention_evidence": "Frozen observe code has one baseline capture forward per fixture, no hook; exact guarded argv selected observe and development packet; rows contain no arms",
+  "heldout_selection_exposure": "No heldout file contents read in this audit; observation inputs bind only frozen development",
+  "limitations": [
+    "Baseline margins are recorded observations; compact observation rows do not retain raw logits for independent margin reconstruction",
+    "No process sandbox or security isolation claimed"
+  ],
+  "heldout_admission_rule": "Require valid frozen selection, M2/tool PASS, completed16development five-arm rows, identity/finite/restoration/hook/control validity. Development supported/refuted verdict is not itself a gate; fixed heldout rules adjudicate hypothesis. Task prerequisite failure implies inconclusive. No reselection."
+}

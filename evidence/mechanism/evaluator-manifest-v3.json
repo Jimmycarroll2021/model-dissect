@@ -1,0 +1,23 @@
+{
+  "candidate_id": "MECHANISM-EVALUATOR-003",
+  "files": {
+    "src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "src/minimind_re/mechanism.py": "ea78e8ae078bce77d4d150058691e64acf879cdbc095b3d729df7e06fe539ce2",
+    "analysis/forward-v2-preserved.py": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+    "oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "oracle/mechanism_m2.py": "4bfa1bde16c1df45dcd1ef00c44569aef62db25b890cfc762708f100128ccbe0",
+    "oracle/mechanism_fixtures.py": "d6af995ca69e7021695c09540b7538f9092a98a4290f817dbebc7d8a3595b38f",
+    "fixtures/mechanism/parity.json": "3dcfe14cf1323d60f649d9eeb5ce44db047a16da90c1888789b62cef5871c112",
+    "fixtures/mechanism/development.json": "ff6986475c020efe74182fe4184a96606dac165e994aa6c44466747f0fb12a1c",
+    "fixtures/mechanism/heldout.json": "53eb13186f8a07a30a061dffdc7ca531f2da39633feb74f97226eae270da998f",
+    "fixtures/mechanism/manifest.json": "10847a2b7bdeaf252e6f4ad8d5e685bc46f1d9f983ff85624157d1c81dc2f9f2",
+    "evidence/mechanism/protocol-v1.md": "b4126dba857be7daed77613665622938260f1d7a67ff031e5f38e6a251404f6a",
+    "artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+    "oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4",
+    "runtime/environment.json": "59e4e0f48c07357c0ff9e7655c559b4c15b96f7ec760d2f6375ce8f8bba9c17c",
+    "runtime/guard.py": "455aca3291038d32c7813035474c9e66735382539c430976aa07b94cc523673a"
+  }
+}

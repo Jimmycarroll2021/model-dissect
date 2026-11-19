@@ -1,0 +1,78 @@
+{
+  "status": "PROPOSED_CAPTURE_SOURCE_AND_PROTOCOL_PENDING_INDEPENDENT_REVIEW",
+  "phase": "CACHE-SHAPE-FOLLOWUP-001",
+  "files": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/fixtures/continuation/parity.json": "f9411b52e3613337ec53a4916f6c4791af5a12fb9c44aed8ac4a73c0e23602af",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/fixtures/heldout/parity.json": "616d04c0a2ad37d389233e833071036be75680ebbbdf9329430b84d2e01b551d",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/oracle/__init__.py": "7c091c93959b3b22084557fc4cb894f353b85c54f8d70f7733bf332d0a31e6db",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/oracle/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/cache_operand_probe.py": "4aa17d8a6591f30382510b53f68f551e3a971ec18e90da5b796b89de5fe4862d",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/shape_cache_matrix_candidate.py": "d3009078f90ad10afaf331f96c381524250e4b157ecd71857a09d773189c1137",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/shape_cache_matrix_probe.py": "a82af82b632e48074e03bf216c7255e9b37b0782cb290a3cd437fd72f873d4f1",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/shape_cache_probe.py": "c0d2395054c065c0bdafc00d8c7f0dd2b758a69c6322cc79153eec377efdfa2a",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/src/minimind_re/shape_cache_reference_matrix.py": "6a3b1cf59f2881cdf4a5e5085f975fc5848173dd06e64276693d50e2f005c07b",
+    "./evidence/cache-shape-followup/protocol-v1.md": "0be2f7f542b0d21584d176e49fdc2f2b1233a996b8c3d04952a119b3c9d8df6c",
+    "./evidence/cache-shape-followup/rss-probe-v1.py": "71124279e5d81161302a7a2edafb4f20f631b91b2a0a114df1dd50efb968249d",
+    "./evidence/cache-shape-followup/rss-probe-v1.jsonl": "64e3a23ab8ef24ee3046a196ff65939e6391f5471e1f765713d745909a8c44e2",
+    "./evidence/cache-shape-followup/capture-synthetic-v2.log": "e0a6ea218ea5d725ce7272da8d68d45a029e489423e03af6960c7bff0f7fe414",
+    "./evidence/cache-shape-followup/capture-synthetic-v1.log": "fcd476841e8af121ff907e81a92a59579b64c007b70cb79f9d096806f703fc7e",
+    "./evidence/cache-shape-followup/fixtures-v1.json": "b7965c2520222d9140071818ef7d3d7ea9e10f1d5c22dc44422165465cfa6d3d",
+    "./src/minimind_re/cache_followup_capture.py": "8e447ffbdda9449d6058a443f3fa7a6806a088d2b73bfdc54713bfe8f8e1a3c5",
+    "./tests/test_cache_followup_capture.py": "2ac58f8ce146f19aed626443e3eab536ed4405bc1cbc2796406288fe4954d6c0",
+    "./docs/cache-shape-matrix-result.md": "f375de97ed46c2492e654032a3c8f5e2aaf2d3ee4a9200b7bda04958279c94de",
+    "./evidence/cache-shape-matrix/review/independent-repeat-final-v1.json": "24c565a10005660b9d952045990fae9a25f32e4d2b1bdba64f7873022acae738"
+  },
+  "scientific_gate": "Original tolerance unchanged; diagnostic does not claim repair or R2 PASS.",
+  "schedule": {
+    "fixtures": 2,
+    "actors": 2,
+    "arms": [
+      "baseline"
+    ],
+    "per_actor_fixture_call_positions": [
+      4,
+      1,
+      1,
+      1,
+      1,
+      8
+    ],
+    "actual_positions_each": 64,
+    "model_calls_each": 24,
+    "reservation_each": 128,
+    "reservation_combined": 256,
+    "historical_charged": 1137888,
+    "proposed_lifetime_ceiling": 1138144
+  },
+  "resource_bounds": {
+    "threads": 2,
+    "owned_RSS_bytes": 8589934592,
+    "phase_disk_bytes": 536870912,
+    "combined_disk_bytes": 8589934592,
+    "free_reserve_bytes": 2147483648,
+    "role_seconds": 300,
+    "phase_elapsed_seconds": 1800,
+    "aggregate_model_seconds": 600
+  },
+  "tests": {
+    "synthetic_capture_checks": 3,
+    "log": "./evidence/cache-shape-followup/capture-synthetic-v2.log"
+  },
+  "runtime_authorized": false,
+  "model_calls_during_preparation": 0,
+  "missing_before_execution": [
+    "Independent source/protocol review",
+    "Guarded standalone runner and isolated staging",
+    "Nine immutable histories and live resources reconciliation",
+    "Approved exact packets/policy and separate runtime admission"
+  ],
+  "RSS_note": "Clean torch import current RSS524304384bytes; older offline ru_maxrss6993481728 not explained. No subtraction or weakened guard accepted."
+}

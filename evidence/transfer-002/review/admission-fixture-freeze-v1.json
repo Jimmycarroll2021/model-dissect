@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "reviewed_utc": "2026-11-18T19:27:10.421165+00:00",
+  "packet_path": "./evidence/transfer-002/science/fixture-freeze-v1.packet.json",
+  "packet_sha256": "d74bc71e5ffe4e3e9e425dd2b694e08973ceccfd2f29b6a70b3fd72c76e5ff65",
+  "review_path": "./evidence/transfer-002/review/science-integration-v1.json",
+  "review_sha256": "9071c17e05619928dd87022f74fee8cdc016fb1e9b65ec2215eddb6b17a936cc",
+  "scope": "science-fixture-freeze-v1 ONLY: static local tokenizer fixture freeze; zero model loads/forwards/processed positions",
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=./src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 /usr/bin/python -m minimind_re.transfer.science_run --packet ./evidence/transfer-002/science/fixture-freeze-v1.packet.json --admission ./evidence/transfer-002/review/admission-fixture-freeze-v1.json",
+  "conditions": [
+    "Coordinator serializes after current numerical-producer-v3 completes and ledger reconciles; use unchanged shared phase guard and supervised command only",
+    "Only exact operation fixture_freeze, stage static,0positions,120seconds,16MiBoutput; no new science/model execution",
+    "Preserve output once created and retain failed reservations; no unchanged automatic retry",
+    "All packet identities/environment checked by guard; changed source/proposal/tokenizer requires new exact review",
+    "Independent check of actual frozen arrays/receipt required before science packet finalization; T2PASS and separate exact scientific admission remain mandatory"
+  ]
+}

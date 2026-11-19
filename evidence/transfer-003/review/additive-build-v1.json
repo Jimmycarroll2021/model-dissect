@@ -1,0 +1,17 @@
+{
+  "verdict": "BLOCKED",
+  "source_sha256": "b07cbb864ff1dea8119ff4972c2f15b8db945b840d4024b70b47f4abe59d2661",
+  "manifest_sha256": "fdc20005258fa32da586360a1c7d138b57de8195934cbfe4521b209d751ae564",
+  "tokenizer_packet_sha256": "34935fbe891b50387cf42ddff606ae6138deeba96cfbf433df1c728d0ddbff45",
+  "admission_issued": false,
+  "blockers": [
+    "tokenization receipt protocol/bank linkage not checked",
+    "missing/unreadable identity prevents final preservation receipt"
+  ],
+  "atlas_metadata_correction": "PASS",
+  "independent_synthetic_execution": "HELD_BY_COORDINATOR",
+  "target_operations": 0,
+  "report": "evidence/transfer-003/review/additive-build-v1.md",
+  "report_sha256": "7ef4b8439d7e40cb004b64cd65853ad0e19d4efddfcb842ba8b9228c1f1dab5b",
+  "static_identity_receipt_sha256": "01f8be0bd09a576da79546bb289af0387966df6addc4bf48aec9a4e17024e00a"
+}

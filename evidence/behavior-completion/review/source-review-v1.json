@@ -1,0 +1,73 @@
+{
+  "status": "PASS_SOURCE_PROTOCOL_SYNTHETIC_REVIEW_PENDING_STAGED_MANIFEST",
+  "epoch": 1794985465.627433,
+  "files": {
+    "./src/minimind_re/response_probe.py": "6acce1a4055f79ed000100dbcb6f87ef7a4b84d84aebb5329cc7f515825528df",
+    "./verification/response_probe_check.py": "9b0842f783aeb9ea08bd08121b73c1541c2769b0e450faf4d0755cc223470f93",
+    "./evidence/behavior-completion/protocol-v1.md": "42b335c3e57a3a51eea2d8a42d57ade66132f0ccef9fb0f4a095df63eebf1fde",
+    "./evidence/behavior-completion/protocol-v1.json": "3bbb22a0cd5bb0f3107f5a3e07c4dec94557df5e189080ea81c7a1da89d3f64e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response_guard.py": "b349c802fcbb2b471a658c507aeed2daba3ff19ae9c55cccad962fa43e0df36c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response-policy.json": "fd9526336aa45b5e9a30b4ec40ded91d02baf788d45990c2682a754bc4d9c784",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-independent-v1.json": "d2ac52a11da23f00fb328140b351352a09dce58c27b7cc1479549c74e4f40a24",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-screen-v1.json": "6a53f3b2bb92a6e79935f1a0967cce4e915c5f71e7f7f749726a3022b94353c5",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-qualify-v1.json": "78d0ebf1bf079bc38d64bc297911dde0ce5d6be046dd6f132918004db5bd8a2d"
+  },
+  "independent_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python verification/response_probe_check.py",
+    "passed": 11,
+    "log": "evidence/behavior-completion/review/independent-synthetic-v2.log",
+    "log_sha256": "345301843f25e3572864c101400db416c94d0b608ce99362830dbce7a45c89d1"
+  },
+  "test_correction": "v1 verifier test incorrectly assumed all added control tokens were special; pinned config proves special IDs0..20 and non-special tool/thinking/buffer IDs21..35. Corrected verifier assertion only; v1 log retained. Candidate unchanged.",
+  "fixture_accounting": {
+    "screen": 54816,
+    "qualify_by_family": {
+      "COPY": 45696,
+      "SUBTRACT": 31008,
+      "COMPARE": 32808
+    },
+    "all_prompt_min": 28,
+    "all_prompt_max": 48,
+    "maximum_forward_context": 71,
+    "policy_reserved": 201024,
+    "historical_reserved": 295600,
+    "maximum_lifetime_reserved": 496624
+  },
+  "history": {
+    "historical": {
+      "source": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-ledger.json",
+      "snapshot": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/atlas-ledger.json",
+      "source_sha256": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+      "snapshot_sha256": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+      "match_policy": true,
+      "active_rows": 0
+    },
+    "original": {
+      "source": "./runtime/ledger.json",
+      "snapshot": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/original-ledger.json",
+      "source_sha256": "c1de84bd30b2df14edccaec8ec4f9e2246c5cef7ff908bc606025b14cf3a66ed",
+      "snapshot_sha256": "c1de84bd30b2df14edccaec8ec4f9e2246c5cef7ff908bc606025b14cf3a66ed",
+      "match_policy": true,
+      "active_rows": 0
+    }
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.1.0",
+    "tokenizers": "0.22.2",
+    "jinja2": "3.1.6"
+  },
+  "findings": [],
+  "pending": [
+    "Staged response_probe.py and complete independent manifest identity review",
+    "Actual tokenizer render/prompt validation within admitted runtime",
+    "Actual screen/conditional qualification and independent repeat",
+    "Final raw-response taxonomy, strict counts and Wilson interval reporting"
+  ],
+  "limitations": [
+    "No actual checkpoint or tokenizer loaded during this verification",
+    "Guard watchdog polling is not kernel enforcement; direct child only; reviewed runner creates no subprocesses",
+    "Conservative grammar is not unrestricted semantic-answer understanding",
+    "Old cache/full discrepancy remains unresolved"
+  ]
+}

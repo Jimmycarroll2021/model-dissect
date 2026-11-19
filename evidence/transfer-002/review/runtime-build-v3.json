@@ -1,0 +1,64 @@
+{
+  "verdict": "PASS_EXACT_V3_PACKETS",
+  "reviewed_utc": "2026-11-18T19:19:39.884287+00:00",
+  "manifest_sha256": "c93ed8de7162ad40dcf27699347eb45d47b7133a8f17a3b0ed66bc0ca4ff97a1",
+  "checks": {
+    "manifest_identity": true,
+    "all_manifest_files": true,
+    "all_packet_hashes": true,
+    "all_packet_bound_files": true,
+    "environments": true,
+    "historical_identity": true,
+    "unique_outputs_unconsumed": true,
+    "new_phase_no_ledger": true,
+    "outputs_inside_phase": true,
+    "numerical_accounting": true,
+    "nine_calls_masks_positions": true,
+    "numerical_reservations": true,
+    "atlas_pass_identity": true,
+    "atlas_source_binding": true,
+    "aggregate_reservations": true,
+    "static_zero_positions": true,
+    "current_capacity": true
+  },
+  "regressions": "Independently executed tests/transfer/test_reference_and_protocol.py and tests/transfer/test_runtime_integration.py: 15 passed in 3.37s. Includes cumulative/perpacket/final disk and setup cleanup regressions, hung-child reap, charged failure retention, supervised CLI integration and duplicate rejection.",
+  "resolved": [
+    "R1 cumulative actual phase and packet-delta disk checks in child/supervisor; final disk/free checks after exit and receipt write",
+    "R2 all hook setup and cache initialization cleanup protected",
+    "R3 all current manifest and packet identities match"
+  ],
+  "fixture_approval": {
+    "verdict": "APPROVED_NUMERICAL_EVALUATOR_FIXTURES",
+    "sha256": "7b8f4fe275bcda41dd4608c5194ddbaeefb6b6993545242b46d0cc8be85c1220",
+    "count": 24,
+    "scope": "Two distinct producer-visible deterministic sets covering all frozen lengths/padding/continuations and numeric unmapped vocabulary IDs. Approved for numerical correctness; not scientific heldout secrecy."
+  },
+  "accounting": {
+    "calls_per_role": 1296,
+    "positions_per_role": 34356,
+    "boundary_payload_per_role": 7053699072,
+    "returned_cache_payload_per_role": 375349248,
+    "incoming_cache_payload_per_role": 164265984,
+    "all_payload_both_roles": 15186628608
+  },
+  "reservations": {
+    "positions": 68800,
+    "seconds": 2040,
+    "disk_bytes": 17213423616
+  },
+  "host": {
+    "MemAvailable": 18059264000,
+    "SwapTotal": 8589930496,
+    "SwapFree": 45056,
+    "available_disk_bytes": 60859305984,
+    "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=73528246\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=72746194\n",
+    "io_pressure": "some avg10=0.00 avg60=0.18 avg300=0.11 total=3513668512\nfull avg10=0.00 avg60=0.17 avg300=0.10 total=3388563183\n"
+  },
+  "limits": [
+    "No target payload/model/tokenizer loaded in this review. Admissions permit only four exact packet runs; they are not successful execution evidence.",
+    "Swap nearly full but available memory exceeds cap and sampled memory PSI is zero; guard continually samples and enforces caps.",
+    "Owned process group containment tested; no hostile escape or parent-death containment claim.",
+    "Numerical/scientific acceptance still requires independent results; scientific trace/intervention stages are not admitted by these receipts.",
+    "Model runtime measurements and full 18792-row parity remain unexecuted."
+  ]
+}

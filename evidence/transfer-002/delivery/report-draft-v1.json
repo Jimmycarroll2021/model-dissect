@@ -1,0 +1,31 @@
+{
+  "status": "DRAFT_SCIENCE_IN_PROGRESS_NO_COMPLETION_CLAIM",
+  "files": {
+    "docs/pythia-transfer-result.md": "f26988d3e919f433a51b212fa36c8647dc96ab64219f91bc87b6461adf05aeff",
+    "docs/model-transfer-usage.md": "3b0fd264c82834be341f8a792dab859926286cda44c7ac8390e6bcd39411cb2e"
+  },
+  "prior_usage_snapshot": {
+    "path": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "sha256": "fa6e79cc1d6d7b95cf737a5490755fa94fd9df9623f3ebc890f4e097f5025635"
+  },
+  "source_identities": {
+    "src/minimind_re/transfer/science_full_run.py": "e64fdfc3d2b8d1d5947ee8ff82dcf50d8daadc3d9dee7a1300670106040d23e4",
+    "evidence/transfer-002/amendments/full-prefill-slice-v1/manifest-v1.json": "83243ab3fdde971b33eebe83a5f058b9df7f0171281d0eed81f1d4655c14e314"
+  },
+  "read_only_measurements": {
+    "atlas_tensors": 76,
+    "atlas_nonfinite": 0,
+    "atlas_svd_count": 8,
+    "cross_rows": 5832,
+    "cross_pass": 5832,
+    "cross_max_abs": 0.0,
+    "strict_T2": "FAIL"
+  },
+  "science_status": "coordinator reports producer active; no partial output interpreted",
+  "unexecuted": [
+    "model runs by this author",
+    "independent report verification",
+    "final science result reconciliation"
+  ],
+  "next_action": "final owner insert completed producer/independent/science/trace receipts and freeze integrated report"
+}

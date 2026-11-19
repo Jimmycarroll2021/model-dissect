@@ -1,0 +1,52 @@
+{
+  "status": "success",
+  "verdict": "PASS_SYNTHETIC_BUILD_ONLY",
+  "observed_utc": "2026-11-18T23:55:32.902990+00:00",
+  "candidate_manifest_sha256": "8bde4c5d6ae4b47e5728eae12ae5c64d69fbb27d58a8b453fa5124a7ddc968e2",
+  "source_files": {
+    "src/minimind_re/transfer3/__init__.py": {
+      "expected": "8853ad3167d6aa33e4c27960a21c59f9c90a1b51a96d39f894777fb713ef9326",
+      "observed": "8853ad3167d6aa33e4c27960a21c59f9c90a1b51a96d39f894777fb713ef9326",
+      "match": true
+    },
+    "src/minimind_re/transfer3/gpt2_candidate.py": {
+      "expected": "1a72d0f04007e1272b295618a2f8a8ac638c5bad38fbc855e75ff0d69b6d7889",
+      "observed": "1a72d0f04007e1272b295618a2f8a8ac638c5bad38fbc855e75ff0d69b6d7889",
+      "match": true
+    },
+    "tests/transfer3/test_gpt2_candidate.py": {
+      "expected": "8ae77bfdc7b6e4b715f82a909438cfb9fe7317646d9b35db70f41fd74d52f46d",
+      "observed": "8ae77bfdc7b6e4b715f82a909438cfb9fe7317646d9b35db70f41fd74d52f46d",
+      "match": true
+    },
+    "evidence/transfer-003/implementation/candidate-tests-v4.txt": {
+      "expected": "514a9bb0abf5f9d5b8bad742480739bb7530c2ecf62d00a0122e2c15aaa70ede",
+      "observed": "514a9bb0abf5f9d5b8bad742480739bb7530c2ecf62d00a0122e2c15aaa70ede",
+      "match": true
+    }
+  },
+  "independent_execution": {
+    "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONDONTWRITEBYTECODE=1 TMPDIR=EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-build-v1/tmp PYTHONPATH=src HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python -m pytest -q -p no:cacheprovider --basetemp=EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-build-v1/pytest tests/transfer3/test_gpt2_candidate.py",
+    "exit_code": 0,
+    "result": "21 passed, 2 warnings in 2.74s",
+    "log": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-build-v1/tests.txt",
+    "log_sha256": "119987e306a67920b7519b3c0f06a6a1f8165fe8c7556e01d1c7b97a784fda16",
+    "outputs_on_mnt_ai": true
+  },
+  "source_review": [
+    "Candidate has no transformers imports/native math helper reuse; source-assisted implementation explicitly declared.",
+    "Independent composition retains Conv1D addmm orientation, packed QKV and packed projection; head edit receives owned B,Q,H,D clone.",
+    "Base namespace normalized explicitly; mixed namespaces rejected, optional lm_head equality validated, historical F32 causal buffers validated against triangular mask.",
+    "Weights cloned privately; safe loader binds decoded bytes to caller hash; resource admission external.",
+    "CPU FP32 eager full-prefill, unsupported cache and first-key-hidden mask rejected; no-op/restoration and native head intervention parity tested synthetically."
+  ],
+  "limitations": [
+    "Target checkpoint/tokenizer never loaded; no target numeric/runtime admission.",
+    "Synthetic head test zeros one head at all positions and confirms native/candidate logits; target donor patch, exact edit complement and selected-position behavior remain integrated scientific checks.",
+    "Synthetic suite checks native final logits, not native every-boundary parity; full 15-boundary target matrix remains required.",
+    "Config/keyword and boundary names differ from provisional candidate contract; contract explicitly permits API refinement before freeze; integration manifest must bind actual API.",
+    "Passing synthetic tests does not establish arbitrary masks or every unsupported input behavior."
+  ],
+  "blockers": [],
+  "next_action": "Integrate separately owned oracle/runtime using actual candidate API, freeze fixtures and exact source identities, independently verify guard and integrated runtime before target load."
+}

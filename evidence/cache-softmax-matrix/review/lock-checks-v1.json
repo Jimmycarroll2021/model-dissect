@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source": "exact staged AST ExitStack block through validate_history, no run invocation",
+  "checks": [
+    "all14history+phase handles held during revalidation and closed",
+    "partial_open fails closed/releases acquired locks/preserves contents",
+    "contended_lock fails closed/releases acquired locks/preserves contents",
+    "revalidation_error fails closed/releases acquired locks/preserves contents"
+  ],
+  "model_calls": 0
+}

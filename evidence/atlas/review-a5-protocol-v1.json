@@ -1,0 +1,67 @@
+{
+  "status": "CHANGES_REQUIRED",
+  "reviewer": "/root/atlas_verify",
+  "scope": "A5 protocol independent scientific/read-only source review plus evaluator text-only fixture freeze; no tokenizer/model execution",
+  "candidate": {
+    "evidence/atlas/a5-protocol-v1.json": "55c641d1d9052593c4a795e25a69c9008fcf772e58a2d81df553f7030e77abbc",
+    "atlas.json": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd"
+  },
+  "created_utc": "2026-11-17T21:58:47.973747+00:00",
+  "findings": [
+    {
+      "id": "A5-SLOT",
+      "severity": "blocking integration",
+      "issue": "budgets.slots names a5-development-v1/a5-confirmation-v1/a5-independent-v1 differ from immutable policy a5-discovery/a5-confirmation/a5-independent.",
+      "required_change": "Align protocol to existing exact run IDs; no new slots or policy/clock reset."
+    },
+    {
+      "id": "A5-ACCOUNTING",
+      "severity": "blocking integration",
+      "issue": "Protocol says guard charges exact token-length sums before launch; immutable policy reserves40000positions for each selected model slot.",
+      "required_change": "State fixed40000 reservation per slot; independently calculate actual sum for all forward calls and ensure <=40000, recording actual consumption separately without refunds or additional search authority."
+    }
+  ],
+  "scientific_checks": [
+    {
+      "id": "atlas_selection",
+      "status": "PASS",
+      "evidence": "Independently scanned16 existing report OV rows: maximum residual_norm0.19334485834650597 at layer7/head7/coordinate767. That row highest token302 and lowest3070. No new weights loaded/search."
+    },
+    {
+      "id": "contrast_ids",
+      "status": "PASS_RAW_MAPPING",
+      "evidence": "Pinned tokenizer JSON maps302 to raw piece ãĢĤ and3070 to ons; both in vocab, absent from added-special-token set. Actual decoded text pending."
+    },
+    {
+      "id": "question_metrics",
+      "status": "PASS",
+      "evidence": "Directional comparison is greater absolute log-odds sensitivity and contrast selectivity versus norm-matched adjacent head; no semantic/correct-answer gate required. Raw OV selection is acknowledged hypothesis heuristic, not causal evidence."
+    },
+    {
+      "id": "controls",
+      "status": "PASS_PROTOCOL",
+      "evidence": "Five arms, noninplace clones, same-layer/head6 matched actual FP32 delta norm, invalid-control stop, bitwise baseline/noop/restored boundary equality and finally cleanup. Adjacent head sharesKV group, providing explicit local control; not whole-mechanism proof."
+    },
+    {
+      "id": "decision_rule",
+      "status": "PASS",
+      "evidence": "Frozen nonoverlapping support/refute/inconclusive thresholds, general-damage G/KL diagnostics, no development threshold tuning or replacement hypothesis. Complete valid negative may satisfyA5; invalid control/restoration cannot."
+    }
+  ],
+  "fixtures": {
+    "fixtures/atlas/a5-development-texts.json": "68dc20ee91aaa1723cf02c9509718b2b484b8cba301e3aee08c2b218dec4ab7e",
+    "fixtures/atlas/a5-confirmation-texts.json": "b237cdb65ace799211233d1960039ab399ce7880e4d6bc2a93dd0d401a273e15",
+    "evidence/atlas/fixture-design.md": "9f944972bc348785407fb34c481912bdf2a850d19d70fa3532dbb0371aad6303"
+  },
+  "remaining_gates": [
+    "Correct protocol integration findings and freeze revised exact identity.",
+    "Tokenize/render/check lengths and token-array freshness under explicitly admitted preparation, with evaluator ownership; current texts not executable fixtures.",
+    "Independently validate unchanged M2/backend/config identity, exact intervention runner, exception restoration, guard packets and mathematical atlas results before model execution.",
+    "Fresh confirmation contents remain undisclosed to investigator until permitted final freeze."
+  ],
+  "limitations": [
+    "No tokenizer library, model checkpoint, model forward or intervention executed.",
+    "Numerical effect and alpha feasibility remain unknown; protocol must fail invalid control rather than adapt.",
+    "Shared filesystem fixture ownership is behavioral only."
+  ]
+}

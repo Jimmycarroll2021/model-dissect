@@ -1,0 +1,54 @@
+{
+  "status": "PASS_GOVERNANCE_AND_DIAGNOSTIC_DIRECTION_HOLD_EXACT_RUNTIME",
+  "epoch": 1794990591.1743484,
+  "reviewed_files": {
+    "docs/reverse-engineering-goal.md": "5a5a2b4b5a9891c4f46fdac6699d45589aa601b95e2b4d7b3078ce2d210c87c4",
+    "TASK_STATE.md": "a3b22e2ab33fd60c4491321403beb35996137883b060ff0367996980d7ebe2f4",
+    "CASE_FACTS.md": "94effdfb560745c47076bdd01abad60ae9c825ae1d24d4883591962a84b8e5a8",
+    "evidence/inference-diagnosis/research.md": "2ed5e3c3ac52835423a3cacbb721abf02288e5a94f323895bbc470f158c948b9",
+    "evidence/inference-diagnosis/research.json": "f5ef76cacf13de45eee3a4f3a5acc6337f7af2634eaaad64771f7b5ad4aab8cd"
+  },
+  "scope_review": {
+    "B1_B6_preserves_whole_objective": true,
+    "old_negative_not_whole_completion": true,
+    "original_R2_FAIL_remains_unresolved": true,
+    "native_goal_active": "Coordinator-confirmed; verifier did not independently invoke lifecycle tool",
+    "current_lifetime_reserved": 450928,
+    "remaining_lifetime_positions": 549072,
+    "proposed_generation_max_both_roles": 349184,
+    "parity_allowance_both_roles": 4096,
+    "proposed_total_max": 353280,
+    "remaining_after_max": 195792
+  },
+  "source_checks": {
+    "pinned_eval": "https://raw.githubusercontent.com/jingyaogong/minimind/233d00fa068ec2b8c0d4f07b703934d6391a5a73/eval_llm.py",
+    "pinned_dataset": "https://raw.githubusercontent.com/jingyaogong/minimind/233d00fa068ec2b8c0d4f07b703934d6391a5a73/dataset/lm_dataset.py",
+    "findings": [
+      "Pinned evaluation defaults to non-thinking chat with no history; first listed prompt is exactly\u4f60\u6709\u4ec0\u4e48\u7279\u957f\uff1f.",
+      "Upstream sampled half-precision8192-token limit differs intentionally from local greedy FP32; cap is not a demonstrated capability.",
+      "Pinned SFT postprocessing probabilistically removes empty thinking blocks80%; actual checkpoint training mix not established.",
+      "Saved copy00 rendered_repr contains7 real newlines and0 literal backslash-n sequences; no escape defect established."
+    ]
+  },
+  "required_freeze_checks": [
+    "Declare phase clock/maximum process wall and new-phase authority explicitly; preserve all three historical clocks and ledgers. No repurposing failed-prerequisite qualification.",
+    "Freeze fourth prompt rendered bytes/IDs before model output using admitted tokenizer-only or preforward guarded step; do not silently replace if >64 tokens.",
+    "Freeze parity input IDs before execution at representative lengths128/256/319 (suggested). Candidate and reference both count:1406positions for those three lengths perrole; additional calls must fit declared2048.",
+    "Check full embedding/block/final/logits with unchanged abs tolerance1e-5+1e-4*abs(reference), real-position top1, finite values; stop generation on failed long-prefix parity. This is sampled same-mode evidence, not universal fidelity or repaired cache/full.",
+    "Require first24 token IDs and recorded full-vocabulary hashes for all three reused prompts match BEHAVIOR-002; mismatch is technical and ends dependent interpretation.",
+    "Keep EOS termination separate from semantic answer and strict formatting; prefreeze correct/wrong/ambiguous/incomplete rubric, explanation contradictions, retractions, multiple conclusions and non-EOS control treatment. Record evidence spans, not convenient digit extraction.",
+    "Independent grade applies same frozen rubric; disagreements remain ambiguous or explicitly adjudicated with reasons rather than post-hoc rubric tuning.",
+    "General chat is a source-selected descriptive control, not held-out competence. Four outputs cannot qualify families or authorize causal intervention by themselves.",
+    "All three historical source/snapshot identities and locks must be checked live, original+atlas+behavior totaling450928; independent positions/time reserved before producer.",
+    "Long-prefix reference plus candidate may increase RSS. Prior highwater is no guarantee; keep8GiB cap and conservative final highwater gate without adjustment.",
+    "All256-token truncations remain censored. No automatic cap extension, template/decoding search, fallback tasks or inference retries."
+  ],
+  "governance_note": "B1-B6 is an operational map, not newly approved numerical completion thresholds. Final whole-objective acceptance must expose any unsatisfied original R2 or causal-explanation requirement; integrated guide alone cannot mark them passed.",
+  "unexecuted": [
+    "New model or tokenizer loads",
+    "New parity or generation",
+    "Exact new protocol/runner/guard/manifest review",
+    "New runtime admission"
+  ],
+  "next_action": "Review frozen continuation candidate, rubric, parity identity and finite policy before any actual model admission."
+}

@@ -1,0 +1,71 @@
+{
+  "verdict": "BLOCKED_EXACT_PACKET_IDENTITY",
+  "manifest_sha256": "7a6f5c43a01e288799a625aaf3ddfbc51d3c76f6214f5009647658a9af9702c9",
+  "packet_sha256": {
+    "./evidence/transfer-002/science/science-full-producer-v1.packet.json": "c57dc1ba73abf704e68134c924df5eef4d784cb5a15e787f2b554f103d70f9d9",
+    "./evidence/transfer-002/science/science-full-independent-v1.packet.json": "98d4cf441e64a7eb1479a49bd7490bb890eabc6c2e1714198dfbe0f58b4fc680"
+  },
+  "findings": [
+    {
+      "id": "FULL-INTEGRATION-01",
+      "severity": "blocking",
+      "description": "Both packets bind superseded protocol document bytes. Installed guard hashes exact identities before reservation/load and will reject current packets. Rebind approved amended protocol and regenerate exact packet/integration identities; retain old candidate receipts.",
+      "evidence": [
+        {
+          "packet": "./evidence/transfer-002/science/science-full-producer-v1.packet.json",
+          "path": "./specs/002-model-transfer/internal-protocol-proposal.md",
+          "bound": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+          "actual": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454"
+        },
+        {
+          "packet": "./evidence/transfer-002/science/science-full-independent-v1.packet.json",
+          "path": "./specs/002-model-transfer/internal-protocol-proposal.md",
+          "bound": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+          "actual": "bbab2d7e97f36ba56ecf364905e66ee7df43dd53d7ab08510c3a09df8375e454"
+        }
+      ]
+    }
+  ],
+  "cli_static_assessment": "Scope/budget gates, supervised launch, original native/candidate loading, all bound original-artifact snapshots before/after, framed native named-parameter digest before/after, heldout JSON callback and canonical digest checks are present. Ordinary scientific exceptions execute integrity finally then propagate to guard. Snapshot/digest I/O failure or process kill cannot guarantee integrity receipt, but cannot yield successful completed run. Strict cached T2 explicitly remains FAIL.",
+  "tests": {
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m pytest -q tests/transfer/test_science_full_run.py",
+    "result": "3 passed in 0.70s"
+  },
+  "identity_checks_noncheckpoint": 82,
+  "live_ledger_sha256": "52c106ca0c64065d81333a017b56804b80649a0204864d13ed0e7937b1cb8b39",
+  "existing_reservations": {
+    "positions": 34450,
+    "seconds": 1545,
+    "disk_bytes": 8690597888
+  },
+  "with_both_proposed": {
+    "positions": 59450,
+    "seconds": 2145,
+    "disk_bytes": 10838081536
+  },
+  "unfinished_runs": [],
+  "phase_elapsed_seconds_snapshot": 2811.4352145195007,
+  "filesystem_free_bytes_snapshot": 52344623104,
+  "memory_snapshot": {
+    "MemAvailable": "14774944 kB",
+    "SwapTotal": "8388604 kB",
+    "SwapFree": "1564 kB"
+  },
+  "installed_guard_limits": {
+    "cpu_threads": 2,
+    "positions": 250000,
+    "seconds": 3600,
+    "memory_bytes": 10737418240,
+    "disk_bytes": 25769803776,
+    "free_bytes": 2147483648,
+    "wall_seconds": 7200
+  },
+  "admissions_issued": false,
+  "remaining_requirements": [
+    "Corrected exact packet identities",
+    "Separate science_full source and real389-call serialization PASS from coordinator",
+    "Fresh live readiness and unchanged original deadline at actual dispatch"
+  ],
+  "target_execution": false,
+  "checkpoint_payload_read": false
+}

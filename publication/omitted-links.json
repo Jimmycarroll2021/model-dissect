@@ -1,0 +1,442 @@
+[
+  {
+    "document": "README.md",
+    "reference": "publication/source-map.json"
+  },
+  {
+    "document": "docs/gpt2-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py:53"
+  },
+  {
+    "document": "docs/gpt2-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/pytorch_utils.py:97"
+  },
+  {
+    "document": "docs/gpt2-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/activations.py:59"
+  },
+  {
+    "document": "docs/gpt2-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt2/configuration_gpt2.py:132"
+  },
+  {
+    "document": "docs/weight-atlas-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md"
+  },
+  {
+    "document": "docs/weight-atlas-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json"
+  },
+  {
+    "document": "docs/weight-atlas-result.md",
+    "reference": "../TASK_STATE.md"
+  },
+  {
+    "document": "docs/pythia-transfer-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/static-producer-v3/atlas.json"
+  },
+  {
+    "document": "docs/pythia-transfer-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/numerical-producer-v3/comparison.json"
+  },
+  {
+    "document": "docs/pythia-transfer-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/science-full-producer-v2/summary.json"
+  },
+  {
+    "document": "docs/pythia-transfer-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/science-full-producer-v2/selection.json"
+  },
+  {
+    "document": "docs/pythia-transfer-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/science-full-producer-v2/trace-input.json"
+  },
+  {
+    "document": "docs/execution-result.md",
+    "reference": "../runs/evaluation/parity-v1-interface-fix.json"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.arms.jsonl"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.prepared.json"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas.py"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas_probe.py"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/forward.py"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas_guard.py"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/producer-execution.json"
+  },
+  {
+    "document": "docs/weight-dissection-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-policy.json"
+  },
+  {
+    "document": "docs/cache-numerical-diagnosis.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/result.json"
+  },
+  {
+    "document": "docs/cache-numerical-diagnosis.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/all-operands.pt"
+  },
+  {
+    "document": "docs/continuation-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json"
+  },
+  {
+    "document": "docs/continuation-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-independent-v1.json"
+  },
+  {
+    "document": "docs/atlas-goal.md",
+    "reference": "../TASK_STATE.md"
+  },
+  {
+    "document": "docs/atlas-goal.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md"
+  },
+  {
+    "document": "docs/atlas-goal.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:404"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/torch/nn/modules/normalization.py:106"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:255"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:189"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:52"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:119"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:162"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:189"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:38"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/activations.py:70"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:255"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:494"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:527"
+  },
+  {
+    "document": "docs/transfer-002-computation-map.md",
+    "reference": "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py:594"
+  },
+  {
+    "document": "docs/model-computation-map.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json"
+  },
+  {
+    "document": "docs/cache-shape-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118/runs/cache-shape-producer-v1/result.json"
+  },
+  {
+    "document": "docs/cache-shape-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118/runs/cache-shape-independent-v1/result.json"
+  },
+  {
+    "document": "docs/mechanism-investigation-result.md",
+    "reference": "../runs/mechanism/heldout-evaluate-v1.json.rows.jsonl"
+  },
+  {
+    "document": "docs/echo-mechanism-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runs/echo-recovery-producer-v1.json"
+  },
+  {
+    "document": "docs/echo-mechanism-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runs/echo-recovery-independent-v1.json"
+  },
+  {
+    "document": "docs/behavior-completion-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json"
+  },
+  {
+    "document": "docs/behavior-completion-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json.steps.jsonl"
+  },
+  {
+    "document": "docs/behavior-completion-result.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-independent-v1.json"
+  },
+  {
+    "document": "docs/reverse-engineering-workbench.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md"
+  },
+  {
+    "document": "docs/reverse-engineering-workbench.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json"
+  },
+  {
+    "document": "docs/reverse-engineering-workbench.md",
+    "reference": "../TASK_STATE.md"
+  },
+  {
+    "document": "docs/reverse-engineering-workbench.md",
+    "reference": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runs/echo-recovery-producer-v1.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "reverse-engineering-workbench.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "cache-softmax-matrix-result.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "../evidence/transfer-002/delivery/final-review-v1.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "pythia-transfer-result.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "../evidence/transfer-003/review/full-review-v2.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "../evidence/transfer-003/research/methods-v1.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "../evidence/transfer-003/research/model-selection-v1.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "../evidence/transfer-003/review/atlas-actual-v2.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/three-model-transfer-lessons.md",
+    "reference": "../evidence/transfer-003/static-supplement/producer-population-std-v1.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/runtime/additive-v2/science-producer-result.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "gpt2-computation-map.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/review/full-review-v2.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/review/atlas-actual-v2.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/static-supplement/producer-population-std-v1.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/review/acquisition-v1.json"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "gpt2-computation-map.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../specs/003-model-dissection/internal-protocol-v1.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "figures/gpt2-plot-producer-v1.py"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/research/model-selection-v1.md"
+  },
+  {
+    "document": "evidence/transfer-003/delivery/producer-draft-preserved-v1/docs/gpt2-transfer-result.md",
+    "reference": "../evidence/transfer-003/research/methods-v1.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "model-computation-map.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "transfer-002-computation-map.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../src/minimind_re/softmax_bucket_candidate.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../src/minimind_re/transfer/gpt_neox_candidate.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "weight-atlas-result.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../src/minimind_re/transfer/atlas.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../evidence/goal-coverage/whole-objective-review-v2.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../specs/002-model-transfer/numerical-protocol.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "actual-input-walkthrough.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "echo-mechanism-result.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../specs/002-model-transfer/internal-protocol-proposal.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../src/minimind_re/transfer/reference.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "../src/minimind_re/transfer/run.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v1.md",
+    "reference": "tool-landscape.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "pythia-transfer-result.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "model-computation-map.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "transfer-002-computation-map.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../src/minimind_re/softmax_bucket_candidate.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../src/minimind_re/transfer/gpt_neox_candidate.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "weight-atlas-result.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../src/minimind_re/transfer/atlas.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../evidence/goal-coverage/whole-objective-review-v2.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../specs/002-model-transfer/numerical-protocol.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "actual-input-walkthrough.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "echo-mechanism-result.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../specs/002-model-transfer/internal-protocol-proposal.md"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../src/minimind_re/transfer/reference.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "../src/minimind_re/transfer/run.py"
+  },
+  {
+    "document": "evidence/transfer-002/delivery/usage-before-report-draft-v3.md",
+    "reference": "tool-landscape.md"
+  },
+  {
+    "document": "specs/001-minimind-reproduction/quickstart.md",
+    "reference": "../../TASK_STATE.md"
+  }
+]

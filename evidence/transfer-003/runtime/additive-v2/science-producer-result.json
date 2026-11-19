@@ -1,0 +1,67 @@
+{
+  "science_summary": {
+    "bootstrap": {
+      "indices_sha256": "8f0131688484f26758a721a81072f12727bedb8727559746589a4dfb3141c6fd",
+      "intervals": {
+        "mean_KL": [
+          0.043243403157836424,
+          0.14042572594611485
+        ],
+        "median_P": [
+          0.07034081888094251,
+          0.09900662063046933
+        ],
+        "median_Q": [
+          0.07314895278785793,
+          0.10513940342360756
+        ]
+      },
+      "iterations": 10000,
+      "numpy_version": "2.2.6",
+      "seed": 20261119
+    },
+    "bytes_before_summary": 313063110,
+    "calls": 1186,
+    "elapsed_seconds": 510.777919425047,
+    "median_P": 0.08404521678273584,
+    "median_Q": 0.09451938285766666,
+    "positions": 9488,
+    "positive_Q_pairs": 16,
+    "selected": [
+      8,
+      8
+    ],
+    "selection_sha256": "f426a0fbcc80e6ea033a4553fba98a445ff0dacd87ded7adfc1b68179e7e8442",
+    "skipped_ineligible_intervention_calls": 0,
+    "verdict": "REFUTED"
+  },
+  "live_and_bound_identity_preserved": true,
+  "outer_file_identity_preserved": true,
+  "heldout_metrics": {
+    "rows": 16,
+    "all_eligible": true
+  },
+  "development_sites": 12,
+  "eligible_development_sites": 12,
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 2284425216,
+    "elapsed": 517.4306551560294,
+    "added_disk_bytes": 313519939,
+    "total_phase_disk_bytes": 4196698090,
+    "packet_disk_limit": 1073741824,
+    "phase_disk_limit": 25769803776
+  },
+  "actual_output_bytes": 313063988,
+  "completed_call_receipts": 1186,
+  "raw_npz_files": 1186,
+  "identities": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/summary.json": "795a463a4c943612fd20c699be255e018b33e26bc7ec9f77886c821566349172",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/selection.json": "f426a0fbcc80e6ea033a4553fba98a445ff0dacd87ded7adfc1b68179e7e8442",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/identity-before.json": "e151fa16a0c328a93bb57a3eecaea4b067e639bddb8d428f66d611e6f4337192",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/science/additive-v2-producer/identity-after.json": "e151fa16a0c328a93bb57a3eecaea4b067e639bddb8d428f66d611e6f4337192",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/additive-v2-science-producer.supervisor.json": "a8aeb0c33bb89db816d40fed5a08082d625581d9f7ab210f81c5c2358d1dd2de",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/ledger.jsonl": "5c7b4f0f4b732cec657eddd2f5da8fce95d76836448dd01b8ab4cc105305071c"
+  }
+}

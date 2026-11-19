@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact-protocol review; diagnostic admission only, not runtime guard certification or R2 acceptance",
+  "manifest_sha256": "3fa425ca4c643f47176fb6beb57d83d2e74fc690e3dede93581d0adc7237ba1b",
+  "protocol_sha256": "35517aa209d27f1fd95927926cfb4a193d918acd22b5c1c9007eb7ddb3b30607",
+  "manifest_files_checked": 11,
+  "manifest_files_matching": 11,
+  "model_runs": 0,
+  "required_fixes": [],
+  "checks": {
+    "unchanged_fp32_thresholds_top1_finiteness_boundaries_cache_full": true,
+    "genuine_cache_retained_no_source_copy_or_silent_oracle_monkeypatch": true,
+    "max_3_diagnostics_4096_tokens_300_seconds_each": true,
+    "max_2_full_suites_18000_tokens_600_seconds_each": true,
+    "original_budget_start_and_deadline_match_ledger": true,
+    "fresh_elapsed_window_forbidden": true,
+    "backend_applicability_probe_and_inconclusive_fallback_explicit": true,
+    "rowwise_candidate_requires_separate_amendment": true,
+    "fresh_12_length_padding_fixtures_required_before_candidate_evaluation": true,
+    "mechanism_blocked_until_R2_pass": true
+  },
+  "limitations": [
+    "No runtime guard implementation checked in this assignment. Admission still requires the separate guard review and live ownership/resource checks.",
+    "Fresh heldout fixture creation/privacy has not yet been verified. Freeze and keep private before promoted-candidate evaluation; no evaluation result may be labeled heldout without this evidence.",
+    "Strict CNR is a reasonable bounded diagnostic, not a guaranteed cross-shape numerical fix.",
+    "Advisor authored numerics-advisor.md, but did not author protocol or planning files under review."
+  ],
+  "evidence": [
+    "evidence/continuation/manifest-v1.json",
+    "evidence/continuation/numerics-protocol-v1.json",
+    "runtime/ledger.json",
+    "evidence/continuation/reconciliation.json"
+  ],
+  "observed_epoch": 1794900031.2192554
+}

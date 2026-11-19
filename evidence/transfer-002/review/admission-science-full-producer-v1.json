@@ -1,0 +1,18 @@
+{
+  "verdict": "PASS",
+  "reviewed_utc": "2026-11-18T20:08:32.010044+00:00",
+  "packet_path": "./evidence/transfer-002/science/science-full-producer-v2.packet.json",
+  "packet_sha256": "76ce25d8a9c88b7bb34780c91bf6e5e970dc4c95a0c9a327fbe7283cdbc8a7ff",
+  "review_path": "./evidence/transfer-002/review/science-full-integration-v2.json",
+  "review_sha256": "bbcc703f2aea38eefc9f81020f44897c8138047fab0dd66956c84644fbcc02cc",
+  "scope": "FULL-PREFILL-SLICE-v1 only; strict cached T2 FAIL unchanged",
+  "conditions": [
+    "Only original native/candidate full-prefill science; no cache reuse/canonical repairs",
+    "Each role389calls12448actualpositions12500reserved300seconds1GiB, CPU2; serialized supervised execution",
+    "No guaranteed target outcome/timing from synthetic run; timeout/failure retained and fully charged",
+    "Run independent only after producer completes/reconciles, with fresh live host/deadline checks; no automatic unchanged retry",
+    "Original24GiB3600seconds250000positions10GiBmemory2GiBfree7200originalwall guard unchanged",
+    "No strict transfer completion claim; independently audit actual arrays/metrics/integrity and scope verdict after both runs"
+  ],
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=./src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 /usr/bin/python -m minimind_re.transfer.science_full_run --packet ./evidence/transfer-002/science/science-full-producer-v2.packet.json --admission ./evidence/transfer-002/review/admission-science-full-producer-v1.json"
+}

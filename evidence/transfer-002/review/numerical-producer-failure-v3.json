@@ -1,0 +1,258 @@
+{
+  "verdict": "CONFIRMED_NUMERICAL_GATE_FAIL",
+  "reviewed_utc": "2026-11-18T19:32:32.454061+00:00",
+  "checks": {
+    "terminal_identity": true,
+    "comparison_identity": true,
+    "counts": true,
+    "failure_counts": true,
+    "cache_invariants": true,
+    "saved_finite_all": true,
+    "sample_raw_hashes": true,
+    "sample_comparisons_match": true,
+    "ledger_charged_failed": true
+  },
+  "failure_counts": {
+    "kind": {
+      "cache_full": 1758
+    },
+    "actor": {
+      "reference": 879,
+      "candidate": 879
+    },
+    "boundary": {
+      "final_norm": 552,
+      "logits": 570,
+      "block.5": 426,
+      "block.4": 150,
+      "block.3": 60
+    }
+  },
+  "families": {
+    "restoration": {
+      "rows": 7776,
+      "failed": 0
+    },
+    "cross": {
+      "rows": 5832,
+      "failed": 0
+    },
+    "cache_full": {
+      "rows": 5184,
+      "failed": 1758
+    }
+  },
+  "argmax_mismatches_all_rows": 0,
+  "first_fixture_raw_recomputation": [
+    {
+      "actor": "reference",
+      "boundary": "embedding",
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "block.0",
+      "bitwise_equal": false,
+      "max_abs": 1.1920928955078125e-07,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "block.1",
+      "bitwise_equal": false,
+      "max_abs": 2.682209014892578e-07,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "block.2",
+      "bitwise_equal": false,
+      "max_abs": 1.430511474609375e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "block.3",
+      "bitwise_equal": false,
+      "max_abs": 1.5497207641601562e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "block.4",
+      "bitwise_equal": false,
+      "max_abs": 1.5497207641601562e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "block.5",
+      "bitwise_equal": false,
+      "max_abs": 4.9620866775512695e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "final_norm",
+      "bitwise_equal": false,
+      "max_abs": 0.00023984909057617188,
+      "violations": 5,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": false,
+      "matches_saved": true
+    },
+    {
+      "actor": "reference",
+      "boundary": "logits",
+      "bitwise_equal": false,
+      "max_abs": 0.00014281272888183594,
+      "violations": 2050,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": false,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "embedding",
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "block.0",
+      "bitwise_equal": false,
+      "max_abs": 1.1920928955078125e-07,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "block.1",
+      "bitwise_equal": false,
+      "max_abs": 2.682209014892578e-07,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "block.2",
+      "bitwise_equal": false,
+      "max_abs": 1.430511474609375e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "block.3",
+      "bitwise_equal": false,
+      "max_abs": 1.5497207641601562e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "block.4",
+      "bitwise_equal": false,
+      "max_abs": 1.5497207641601562e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "block.5",
+      "bitwise_equal": false,
+      "max_abs": 4.9620866775512695e-06,
+      "violations": 0,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": true,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "final_norm",
+      "bitwise_equal": false,
+      "max_abs": 0.00023984909057617188,
+      "violations": 5,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": false,
+      "matches_saved": true
+    },
+    {
+      "actor": "candidate",
+      "boundary": "logits",
+      "bitwise_equal": false,
+      "max_abs": 0.00014281272888183594,
+      "violations": 2050,
+      "finite": true,
+      "argmax_equal": true,
+      "pass": false,
+      "matches_saved": true
+    }
+  ],
+  "interpretation": [
+    "Earliest scheduled threshold failure: A-1-none baseline cached.0 versus full.0 final_norm for both actors.",
+    "First non-bitwise difference occurs earlier within blocks; inspect detailed deltas, which initially remain inside original tolerance.",
+    "Identical failure families in native and candidate with passing cross-actor comparisons support a native cache/full numerical-shape sensitivity hypothesis; these saved arrays alone do not establish its cause.",
+    "Original threshold 1e-5+1e-4*abs(full_reference) independently recomputed without relaxation; exact logits argmax enforced.",
+    "Full independent repetition of unchanged failing protocol not launched."
+  ],
+  "limits": [
+    "Read-only sample recomputation of 18 boundary comparisons, not all18792 raw comparisons.",
+    "All failure family/count/finiteness summaries inspected; full raw cache audit and target rerun not performed.",
+    "No source changes, target loads, tokenization or model calls."
+  ]
+}

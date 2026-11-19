@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "status": "TEXT_FROZEN_TOKENIZATION_PENDING_NOT_FORWARD_READY",
+  "owner": "/root/atlas_verify evaluator",
+  "created_utc": "2026-11-17T21:58:13.432910+00:00",
+  "no_model_scoring": true,
+  "split": "confirmation",
+  "cases": [
+    {
+      "id": "a5-confirmation-1-05",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "Describe a kitchen just before breakfast.",
+      "text_sha256": "afa1f5904987dd4d189b7e32b22b14e38ba9fac285fb71be4a1c09b77508a9f8"
+    },
+    {
+      "id": "a5-confirmation-1-06",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "What might you see beside a village pond?",
+      "text_sha256": "c09df4a28fdcc5679feee885c3538e74d60ffe45eb6d52ab9f120f4394acaf3e"
+    },
+    {
+      "id": "a5-confirmation-1-07",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "Describe a railway platform on a calm morning.",
+      "text_sha256": "cec2484814979dd3af51c751b59de5b9c4f6a24a4feb4d4b6d8e717a3e89f95e"
+    },
+    {
+      "id": "a5-confirmation-1-08",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "Explain the purpose of a coat rack near a door.",
+      "text_sha256": "69aa3fea7987cffdbb4e175c3c3d9f6668a1c66ae9d62ec606a811c83ab662ee"
+    },
+    {
+      "id": "a5-confirmation-1-09",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "Describe the texture of a wool scarf.",
+      "text_sha256": "2170b5f252122d4f3ab50ece4f2a5285565a886fa8b4166a06934dfa4e201b2e"
+    },
+    {
+      "id": "a5-confirmation-1-10",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "What makes a shaded courtyard pleasant?",
+      "text_sha256": "da72cfb9671b7b179460f05e701642888c4ee59f6b1bb9abde2fc058a8a52b00"
+    },
+    {
+      "id": "a5-confirmation-1-11",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "Describe a grocery shop near closing time.",
+      "text_sha256": "820ded321c63fd99d2d51b75548f3c635e94abe444e14b355704cf1c686d752d"
+    },
+    {
+      "id": "a5-confirmation-1-12",
+      "split": "confirmation",
+      "category": "English descriptive",
+      "text": "Explain what a calendar helps someone remember.",
+      "text_sha256": "83d469f22bc869324dd538b689024946b9703182764c7ebd5fed5671bb8f63d8"
+    },
+    {
+      "id": "a5-confirmation-2-05",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请描述清晨厨房里的景象。",
+      "text_sha256": "1206806199e005c2be1f91322c1994528ee2045fba657629ceb5338a0fb302e3"
+    },
+    {
+      "id": "a5-confirmation-2-06",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请介绍村边池塘周围的环境。",
+      "text_sha256": "6e20063d60c526c80baa7a70fe89710305286a2e8f099b5ba7d1954a21271fd4"
+    },
+    {
+      "id": "a5-confirmation-2-07",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请描述一个安静的公交车站。",
+      "text_sha256": "177efc3b1abf51c9464b95cccbc157ec8542274b2ed7de895ed35dc0066af982"
+    },
+    {
+      "id": "a5-confirmation-2-08",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请介绍门边衣帽架的用途。",
+      "text_sha256": "bd22a3c6a341a118566d76b1d77998df045ffaed9f3eed0e917167d62f99ee41"
+    },
+    {
+      "id": "a5-confirmation-2-09",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请描述羊毛围巾的触感。",
+      "text_sha256": "9aa66b7a42c9d319bcb1224a34a959ee5709ef6119eda82bd3f02857b99f4109"
+    },
+    {
+      "id": "a5-confirmation-2-10",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请介绍树荫下庭院的特点。",
+      "text_sha256": "17961e17c2afc61f55339589a086f21307f214f93e6f523a5b5f6cb5f729287e"
+    },
+    {
+      "id": "a5-confirmation-2-11",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请描述傍晚杂货店的气氛。",
+      "text_sha256": "8fba0a2067cf9ba0c3ed1b19316636b2a48d36d67642cbc22aaead7548b33acb"
+    },
+    {
+      "id": "a5-confirmation-2-12",
+      "split": "confirmation",
+      "category": "Chinese descriptive",
+      "text": "请介绍日历在生活中的用途。",
+      "text_sha256": "3023819572e634766618825c4dab025a9ed0ed421060ece802e94fe8ef909ffd"
+    },
+    {
+      "id": "a5-confirmation-3-05",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "I would like a quieter evening. What could I do?",
+      "text_sha256": "b80aa5f7c135f14a4430d3e25354077261f65d2f0b212a2d90f8bb053e066895"
+    },
+    {
+      "id": "a5-confirmation-3-06",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "My friend enjoys gardens. Suggest a topic for conversation.",
+      "text_sha256": "23466c0cfbb7aa3126246e19764882023c7fc4f1dccc03d4cc8869cb02d05fe0"
+    },
+    {
+      "id": "a5-confirmation-3-07",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "I am planning a short walk. What should I take?",
+      "text_sha256": "422f076ca5297e2637ecaa6dde7d596730671c704e945844dc2e659344971b22"
+    },
+    {
+      "id": "a5-confirmation-3-08",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "I want to make my room comfortable. Suggest a small change.",
+      "text_sha256": "c3fa8dff2bba26e7b645f7577406c722e7b2192531859aea3bbb416e11eb6318"
+    },
+    {
+      "id": "a5-confirmation-3-09",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "A guest will arrive early. How can I make them feel welcome?",
+      "text_sha256": "a6f502ca2b782a2761f5911c9a213617ec91f31a27b83819bec39eae8c34d486"
+    },
+    {
+      "id": "a5-confirmation-3-10",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "I am waiting at a station. Suggest a polite way to ask for help.",
+      "text_sha256": "1bc6e9759fd9bfa90338e0b4a3ff34f539a6ac4ca5188c137171864f2756d50a"
+    },
+    {
+      "id": "a5-confirmation-3-11",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "I have a new notebook. Suggest a useful way to use it.",
+      "text_sha256": "096ff955d55120b06cab905923b2276772b3abef4c64f27b4bbaa84f92e91f1d"
+    },
+    {
+      "id": "a5-confirmation-3-12",
+      "split": "confirmation",
+      "category": "English dialogue",
+      "text": "I want to thank someone for lending a book. Help me phrase it.",
+      "text_sha256": "1c7eec7e1445d598678de5470e696a294c1adb4a3b3731c76625751666aebd6c"
+    },
+    {
+      "id": "a5-confirmation-4-05",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "我想度过一个安静的晚上，有什么建议？",
+      "text_sha256": "9eaa70668f1a5cc653b330257a5872df0537ef650056bd8fcb74e2e3545577a7"
+    },
+    {
+      "id": "a5-confirmation-4-06",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "朋友喜欢园艺，可以聊些什么话题？",
+      "text_sha256": "753dfadd78f5e439388e6a06cdb59ade851abef61cd2ec6e2b9e8324d8cf27be"
+    },
+    {
+      "id": "a5-confirmation-4-07",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "我准备出去散步，应该带些什么？",
+      "text_sha256": "06e001914f8c8e98ff37b5dd46aff1d33c4eb9b386cdabc25dd2327151f7f431"
+    },
+    {
+      "id": "a5-confirmation-4-08",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "我想让房间更舒适，可以做什么小改变？",
+      "text_sha256": "b2e3db39ca13b6137a865fd93f90424040fe4a3d89b4c0654389c201fa8d6a86"
+    },
+    {
+      "id": "a5-confirmation-4-09",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "客人提前到了，我怎样让他感到自在？",
+      "text_sha256": "c71a8c0f718c0234ad64f03e4b647ae6ff0699f34f946ce4f19b689b2f304d1d"
+    },
+    {
+      "id": "a5-confirmation-4-10",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "我在车站需要帮助，怎样礼貌地询问？",
+      "text_sha256": "6f24f456610b2c9f72af81de03d3fee9724a6eb4482468a09c15dfda542475c1"
+    },
+    {
+      "id": "a5-confirmation-4-11",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "我有一本新笔记本，可以怎样使用？",
+      "text_sha256": "3bf1510cb2b8f87b20b477c8d81aabf645528b3989871b61dae12e49ccbad90a"
+    },
+    {
+      "id": "a5-confirmation-4-12",
+      "split": "confirmation",
+      "category": "Chinese dialogue",
+      "text": "朋友借给我一本书，我怎样表达感谢？",
+      "text_sha256": "20f7c38a749b6f69d49c74280083a50086f2920ef572f72984113b2e1aaa803b"
+    }
+  ],
+  "tokenization_status": "NOT_RUN; input_ids/attention_mask/position_ids/rendering/length checks pending separate authorized preparation. No truncation permitted."
+}

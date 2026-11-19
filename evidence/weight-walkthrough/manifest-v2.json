@@ -1,0 +1,45 @@
+{
+  "status": "candidate for independent verification",
+  "artifacts": [
+    {
+      "path": "docs/gpt2-weight-walkthrough.html",
+      "sha256": "cf91f5bc68e0b0218b234bea9d9ec83dab28efdff14ce71b19cb343cea7d0db8",
+      "bytes": 278641
+    },
+    {
+      "path": "docs/gpt2-weight-walkthrough.md",
+      "sha256": "7ddd5f7093a21238bc7b5842d16655ce8b6bf20f444086fc14e3ee9cfc9f9d78",
+      "bytes": 4945
+    },
+    {
+      "path": "evidence/weight-walkthrough/build.py",
+      "sha256": "f522bfba0c88d9d33144772ed1ab442f2fdcd577308be4799771264c38b610db",
+      "bytes": 9509
+    },
+    {
+      "path": "evidence/weight-walkthrough/template.html",
+      "sha256": "c9a9353fd16d1278ac7949a3ac4acee04990cd057d1b9047880e713a2b031a72",
+      "bytes": 16885
+    },
+    {
+      "path": "evidence/weight-walkthrough/sources.json",
+      "sha256": "78ac378a068e93c92c655d51063e884c626e902125cb0c32c898e898656df30e",
+      "bytes": 12138
+    },
+    {
+      "path": "evidence/weight-walkthrough/checks.json",
+      "sha256": "9bdc69714ca36a58481e0d7e7b34ab216bdc31b1f1c5b8e7e0a53a711c890e25",
+      "bytes": 2125
+    },
+    {
+      "path": "evidence/weight-walkthrough/smoke-test.cjs",
+      "sha256": "29bd6f8d7df5ba01eac22f42370688ba50c22b5fda66bf90aa529fc3ba2d6803",
+      "bytes": 2009
+    },
+    {
+      "path": "evidence/weight-walkthrough/ui-checks.json",
+      "sha256": "897b67721b0e8c2de07681ce630a2b7bbecfa35f8b2808961ba8cfb60248d6ef",
+      "bytes": 1858
+    }
+  ]
+}

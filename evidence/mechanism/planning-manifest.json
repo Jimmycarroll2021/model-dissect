@@ -1,0 +1,32 @@
+{
+  "candidate": "MECHANISM-001-plan-v1",
+  "status": "pending_independent_verification",
+  "epoch": 1794906799.8178256,
+  "paths": {
+    ".specify/memory/constitution.md": "76b8b0c21619ce5d21cc20ea7812b103a3a5c4922aaa4e3ae3394479b42f2304",
+    "TASK_STATE.md": "722741d3dd3f1c74b690562ff1bc1bad54aec335e17751b7870590cead30ade4",
+    "CASE_FACTS.md": "1a7cc8ebd7c50b0915b4ee032ddd79b1b3dd6defdcdcd44264fb6c7b4dd79c5c",
+    "evidence/mechanism/protocol-v1.md": "b4126dba857be7daed77613665622938260f1d7a67ff031e5f38e6a251404f6a",
+    "evidence/mechanism/setup-plan.json": "35d03dbf7c9ec8e583205c7f0fe36c775baa96417277fa05d2a6bc1ff4a921cb",
+    "evidence/mechanism/setup-tasks.json": "70f5a7a7b3ab5bb89dda0ffed00ece4778cc027f63801f01581ef5048583aa7f",
+    "specs/001-minimind-reproduction/research.md": "0027be695aac5cce1c42c5aee403fd006cae24a39b1d4c0767c9b816f8cdb5d1",
+    "specs/001-minimind-reproduction/quickstart.md": "59cbcd629bd60307a0c1a4a18b028375032a72c44fdd11483d16142748955b88",
+    "specs/001-minimind-reproduction/tasks.md": "d9d9b99de31b5e23d224f30b870e6a6222e25d189d92f4c24d902f78dfaaae0b",
+    "specs/001-minimind-reproduction/plan.md": "ccf94cdcd36607d33aa580cf6788742107e60f0c14c3ceed880e571a4194237f",
+    "specs/001-minimind-reproduction/data-model.md": "dc5a1fa688e579e98aee9bf9f82625d7ad537ae37021d0be90217ee5818d2f43",
+    "specs/001-minimind-reproduction/spec.md": "46d9f7c9bdad8c298e7c827fa8bcf59e34660902432756a37e3ab675c45e9474",
+    "specs/001-minimind-reproduction/contracts/local-workflow.md": "7516163a92ad6f89723b220c610860def51d4993c5e00b0288800d1d2f47a908"
+  },
+  "original_snapshots": "evidence/mechanism/pre-amendment/",
+  "model_execution": false,
+  "ownership": "released",
+  "memory": [
+    "MEMORY.md:28-34; rollout01a1e64b-cd50-7ed1-b50f-c201b0f3648d"
+  ],
+  "limitations": [
+    "No runtime gates executed",
+    "Historical R2 remains FAIL",
+    "No new elapsed allowance",
+    "Fresh evaluator fixtures not yet created"
+  ]
+}

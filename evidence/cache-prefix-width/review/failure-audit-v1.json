@@ -1,0 +1,80 @@
+{
+  "status": "CONFIRMED_OBSERVATION_HARNESS_FAILURE_NOT_SCIENTIFIC_RESULT",
+  "candidate_manifest_sha256": "cf4fdd5333f9e0d14d68013f9db93d9c4fb41d51f599fd227f4e516711a4de9a",
+  "ledger_sha256": "5333420c6e5658128d3f60e831518d5dd63d3bf452f56b319e94ef5683a5b23c",
+  "log_sha256": "6d43255dc6d9597a1c08762fee7d3d72be6cd6af1e36132dabcc3a47edb14891",
+  "runner_sha256": "f06f6953962d4f1b11d644989cd7b70985c69e6e7c0d96809d736e0d1e281b7b",
+  "capture_sha256": "1d23b3e6c48e33843ab9cd8deedbc4dfe975c58f7dffcedfc72c8d8a4f28e796",
+  "failed_run": {
+    "id": "cache-prefix-producer-v1",
+    "kind": "model",
+    "role": "implementation",
+    "positions_reserved": 64,
+    "wall_reserved": 300.0,
+    "start": 1795002920.7611678,
+    "status": "failed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.cache_prefix_width_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-width-001-20261118/evidence/packet-producer-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-width-001-20261118/runs/cache-prefix-producer-v1/result.json",
+    "guard_entry_rusage_maxrss_bytes": 21213184,
+    "guard_entry_proc_status": {
+      "VmHWM": "20716 kB",
+      "VmRSS": "20288 kB"
+    },
+    "peak_owned_rss_bytes": 1415405568,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 1427567,
+    "exit_code": 1,
+    "guard_completion_proc_status": {
+      "VmHWM": "20716 kB",
+      "VmRSS": "20448 kB"
+    },
+    "guard_completion_rusage_maxrss_bytes": 21213184,
+    "final_child_highwater_bytes": 1394192384,
+    "final_guard_highwater_bytes": 21213184,
+    "final_combined_highwater_bytes": 1415405568,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "error": "Child failed",
+    "end": 1795002924.3924203,
+    "wall_seconds": 3.621136280009523,
+    "cpu_seconds": 3.748401,
+    "peak_child_rss_kib": 1361516
+  },
+  "durable_outputs": [
+    "entry-rss.json"
+  ],
+  "no_raw_trace_or_result": true,
+  "executed_scope_boundary": "Traceback occurs at first candidate width6 completeness check after baseline request/fourboundary/allcache assertions. Therefore first forward and those assertions were reached successfully by control-flow evidence; no per-call receipt/raw arrays survived for independent verification. No subsequent model call is reached.",
+  "cause": "Completeness requires substring mm. Under actual inference_mode dispatch, linear/matmul remain aten.linear.default and aten.matmul.default; neither contains mm. Tests outside that execution context observed lower-level mm/bmm and did not cover the production lowering.",
+  "synthetic_reproducer": "./evidence/cache-prefix-width/review/failure_reproducer_v1.py",
+  "synthetic_result_sha256": "a08c7eddca4f71b982cdbeb333798c3b0185a07a2429e784b8c7446dc4daee21",
+  "required_fix": [
+    "Replace substring heuristic with an explicit, tested operation-family/semantic-stage check covering natural inference linear/matmul and noninference mm/bmm/addmm variants only where valid. Preserve required linear projection, QK/value contraction, softmax and activation coverage; do not simply remove the assertion.",
+    "Test both candidate and native natural capture under actual outer inference_mode, decorated candidate and widths6/8, plus relevant stage-presence failures. Verify arithmetic fidelity and restoration unchanged.",
+    "Persist owning raw trace and metadata immediately after each forward and before completeness/fidelity assertions. Metadata must distinguish attempted/completed call, checks not yet run/passed/failed and failure reason. Preserve partial trace on capture exception where available; never label partial coverage successful.",
+    "Retain all original failure outputs, full64position charge and original phase clock. No unchanged retry or independent repeat of invalid producer. Fresh exact candidate/recovery reservation and independent admission needed before any target-model call."
+  ],
+  "accounting": {
+    "prior_charged": 1138144,
+    "failed_producer_reserved": 64,
+    "lifetime_charged": 1138208,
+    "old_ceiling": 1138272,
+    "remaining_under_old_ceiling": 64,
+    "active_runs": 0,
+    "independent_run": "NOT_RUN_NOT_ADMITTED_FOR_INVALID_PRODUCER",
+    "prospective_clean_producer_plus_repeat_if_64_each": 128,
+    "prospective_total_if_separately_authorized": 1138336
+  },
+  "limitations": [
+    "Synthetic reproduction establishes observer completeness bug; lost production trace cannot be recovered or claimed verified.",
+    "No layer0 scientific localization or repair result from failed run.",
+    "Historical native/fullmatrix FAIL unchanged.",
+    "No source implementation changes or target model calls performed by verifier."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "IMPLEMENTED_SYNTHETIC_ONLY_AWAITING_INDEPENDENT_REVIEW",
+  "created_epoch": 1794985496.8347347,
+  "stage": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118",
+  "phase_clock": "NOT_STARTED",
+  "native_goal": null,
+  "checkpoint_loads": 0,
+  "tokenizer_loads": 0,
+  "model_forwards": 0,
+  "synthetic_tests": {
+    "passed": 54,
+    "receipt": "./evidence/behavior-completion/synthetic-tests-v3.log",
+    "sha256": "f8c019ed0a4b25fa23166f8626a5a3d23f58116a2542bc2a24579ba38e189aec"
+  },
+  "historical_totals": {
+    "tokens_reserved": 295600,
+    "download_bytes": 138166822,
+    "gpu_seconds": 12.621721199015155,
+    "gpu_seconds_reserved": 240.0
+  },
+  "positions": {
+    "screen": 54816,
+    "qualification_max": 45696,
+    "independent_max": 100512,
+    "new_max": 201024,
+    "lifetime_max_after_three_slots": 496624
+  },
+  "disk": {
+    "phase_bytes": 138581788,
+    "original_bytes": 214810461,
+    "atlas_bytes": 192504150,
+    "free_bytes": 73875820544
+  },
+  "files": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-independent-v1.json": "d2ac52a11da23f00fb328140b351352a09dce58c27b7cc1479549c74e4f40a24",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-qualify-v1.json": "78d0ebf1bf079bc38d64bc297911dde0ce5d6be046dd6f132918004db5bd8a2d",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/packet-screen-v1.json": "6a53f3b2bb92a6e79935f1a0967cce4e915c5f71e7f7f749726a3022b94353c5",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/protocol-v1.json": "3bbb22a0cd5bb0f3107f5a3e07c4dec94557df5e189080ea81c7a1da89d3f64e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/evidence/behavior-completion/protocol-v1.md": "42b335c3e57a3a51eea2d8a42d57ade66132f0ccef9fb0f4a095df63eebf1fde",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/fixtures/behavior/qualify.json": "7747a71d4a334c1a0b351a448afe288e0732fe9e16ef547b7c9672d795910fc1",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/fixtures/behavior/screen.json": "f1c7445cc162a0fa4d3e7b3959747572034ce662f2b2dbc43f4d475018c2ce77",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/atlas-ledger.json": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/original-ledger.json": "c1de84bd30b2df14edccaec8ec4f9e2246c5cef7ff908bc606025b14cf3a66ed",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response-policy.json": "fd9526336aa45b5e9a30b4ec40ded91d02baf788d45990c2682a754bc4d9c784",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response_guard.py": "b349c802fcbb2b471a658c507aeed2daba3ff19ae9c55cccad962fa43e0df36c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/src/minimind_re/response_probe.py": "6acce1a4055f79ed000100dbcb6f87ef7a4b84d84aebb5329cc7f515825528df"
+  },
+  "project_files": {
+    "./src/minimind_re/response_probe.py": "6acce1a4055f79ed000100dbcb6f87ef7a4b84d84aebb5329cc7f515825528df",
+    "./tests/test_response_probe.py": "eb235680b2915bf50f74160156e68ef15dfff9c56f472286598f73ffa040b71f",
+    "./tests/test_response_guard.py": "4f367fb6f0217645f40dc51233b437c1e944050f62ea17a7ddabb725e3048f4d",
+    "./evidence/behavior-completion/protocol-v1.md": "42b335c3e57a3a51eea2d8a42d57ade66132f0ccef9fb0f4a095df63eebf1fde",
+    "./evidence/behavior-completion/protocol-v1.json": "3bbb22a0cd5bb0f3107f5a3e07c4dec94557df5e189080ea81c7a1da89d3f64e",
+    "./specs/001-minimind-reproduction/spec.md": "e4e25cf3bf3202333d71fb37c587af3188b67cd36149bb70224ba2b8b14c5994",
+    "./specs/001-minimind-reproduction/plan.md": "7771e2a61cc35dfc5f393116ea26d976124a3f870d6e8442abc67eca48c77766",
+    "./specs/001-minimind-reproduction/tasks.md": "2967d8c67a7ad2b382a398bee6ecf1623326a7c545e3bbeec295f5b995998dbc",
+    "./TASK_STATE.md": "641d713a1088e277a9a743c04743da39cb64732bb4737be82f54b03d4aa5632b",
+    "./CASE_FACTS.md": "d11ce6448add7f912c291ba39ed9d4304027b5faa63665766ef7604bf5deb3f5",
+    "./docs/behavior-completion-result.md": "3a384eaa150dc50c29c0ee9e962de0c89e3b5416fdad0e793df5921778982041"
+  },
+  "preserved_failure": "guard-tests-v1.log has stale atlas test cap/mock expectations; fixed new test fixtures, not weakened guard. guard-tests-v2.log43pass; synthetic-tests-v3.log54pass.",
+  "limitations": [
+    "No actual runtime or new native goal",
+    "No independent acceptance yet",
+    "No causal finding, cache/full repair or broad semantic scoring",
+    "Historical feature checklists include prior future-gate items; explicit current implementation authorization governs only this amendment; new runtime gates remain pending"
+  ],
+  "next_action": "Independent exact-candidate review; reviewer owns admissions. No implementer-created PASS admission."
+}

@@ -1,0 +1,53 @@
+{
+  "status": "SCOPED_THIRD_APPLICATION_ACCEPTED_THREE_APPLICATIONS_COMPLETE_STANDBY",
+  "created_utc": "2026-11-19T00:59:16.431490+00:00",
+  "controller_acceptance": "Parent coordinator explicitly accepted final independent verdict; standby after user requested three applications.",
+  "final_review": {
+    "path": "evidence/transfer-003/delivery/final-review-v1.json",
+    "sha256": "a1b8bb85d061cc04cc2ada6d12555f06ea7533b4d57ee342273caabb497e161f"
+  },
+  "immutable_final_manifest": {
+    "path": "evidence/transfer-003/delivery/final-delivery-manifest-v1.json",
+    "sha256": "f0b097d5183e1f256901b03c0355daaa98602d1e533da5b92bec9816db2af783"
+  },
+  "acceptance": "S0-S5 PASS; no required fixes",
+  "coordination_files": [
+    {
+      "path": "TASK_STATE.md",
+      "before_sha256": "43a8b35970448284d6338d1975aa23ad58fc0b4f7d9bfc3555087fef910c9e70",
+      "preserved_path": "evidence/transfer-003/delivery/coordination/before-final-closure-v1/TASK_STATE.md",
+      "after_sha256": "29b279f266e21d8d59f14096aa6379025bf488c27744169f83f73b83d700d1af"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "before_sha256": "6c947d585394c64d3cae4f9c8589bfadb4632a2c3036cc607d88e577822a6c27",
+      "preserved_path": "evidence/transfer-003/delivery/coordination/before-final-closure-v1/CASE_FACTS.md",
+      "after_sha256": "842f46336a4b2144a4129f8a0d2c4b659bb0f3e704ca101caceb3e7586896252"
+    },
+    {
+      "path": "specs/003-model-dissection/tasks.md",
+      "before_sha256": "4ebbc4bc5e4dd81338c8be527634edd3cbab15c277a0614118fa98e1b0946257",
+      "preserved_path": "evidence/transfer-003/delivery/coordination/before-final-closure-v1/specs__003-model-dissection__tasks.md",
+      "after_sha256": "d9fe9acfcd120ae9657f701dbb9e20f28fabe6b5a6de28b1ea637bf58543513e"
+    }
+  ],
+  "counts": {
+    "reservations": 9,
+    "completed": 9,
+    "unfinished": 0,
+    "reserved_process_seconds": 4320,
+    "reserved_positions": 86112,
+    "actual_positions": 24712,
+    "model_calls": 2612,
+    "active_target_executors": 0
+  },
+  "scope_limits": [
+    "Pythia strict cached/full T2 FAILED unchanged",
+    "GPT-2 qualified REFUTED remains unchanged",
+    "source-assisted and frozen-input scope; no arbitrary-model claim"
+  ],
+  "manifest_bound_artifacts_modified": false,
+  "ledger_modified": false,
+  "new_goal_or_runtime": false,
+  "next_action": "Standby; separate thin verification of coordination overlay only."
+}

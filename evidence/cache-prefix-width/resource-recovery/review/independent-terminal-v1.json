@@ -1,0 +1,58 @@
+{
+  "status": "INDEPENDENT_TERMINAL_PENDING_RAW_AUDIT",
+  "run": {
+    "id": "cache-prefix-resource-independent-v1",
+    "kind": "model",
+    "role": "verification",
+    "positions_reserved": 64,
+    "wall_reserved": 300.0,
+    "start": 1795003778.084328,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.cache_prefix_width_probe_resource",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/evidence/packet-independent-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-prefix-resource-001-20261118/runs/cache-prefix-resource-independent-v1/result.json",
+    "guard_entry_rusage_maxrss_bytes": 21315584,
+    "guard_entry_proc_status": {
+      "VmHWM": "20816 kB",
+      "VmRSS": "20396 kB"
+    },
+    "sampled_live_peak_owned_rss_bytes": 1514483712,
+    "peak_owned_rss_bytes": 1650405376,
+    "owned_rss_cap_bytes": 10737418240,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 1477143,
+    "exit_code": 0,
+    "guard_completion_proc_status": {
+      "VmHWM": "20816 kB",
+      "VmRSS": "20544 kB"
+    },
+    "guard_completion_rusage_maxrss_bytes": 21315584,
+    "final_child_highwater_bytes": 1629089792,
+    "final_guard_highwater_bytes": 21315584,
+    "final_combined_highwater_bytes": 1650405376,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "child_completion_resource_snapshot": {
+      "pid": 1477143,
+      "statm_rss_bytes": 1275564032,
+      "proc_status": {
+        "VmHWM": "1590908 kB",
+        "VmRSS": "1245668 kB"
+      },
+      "rusage_maxrss_bytes": 1629089792
+    },
+    "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+    "output_sha256": "40a0a1be0bd8f3c464599ce1a79edc0e5f908782594089a151ee2de8445cc65d",
+    "end": 1795003782.7156959,
+    "wall_seconds": 4.618864097050391,
+    "cpu_seconds": 5.005789,
+    "peak_child_rss_kib": 1590908
+  },
+  "ledger_sha256": "a23da6c9d50d39c6e5625d5ffd63c3d6e1f2be3340c63daa055f0c74e68e3de4",
+  "result_sha256": "40a0a1be0bd8f3c464599ce1a79edc0e5f908782594089a151ee2de8445cc65d",
+  "total_charged": 1138400
+}

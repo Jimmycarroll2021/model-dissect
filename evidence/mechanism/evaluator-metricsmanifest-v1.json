@@ -1,0 +1,22 @@
+{
+  "candidate_id": "MECHANISM-INDEPENDENT-METRICS-001",
+  "files": {
+    "oracle/mechanism_metrics.py": "c0b16a5f4e700e33774932e10666dbd26178f827d211340224a9d94cf588c037"
+  },
+  "status": "SYNTHETIC_PASS_REAL_DATA_NOT_RUN",
+  "checks": [
+    "supported-rule",
+    "refuted-rule",
+    "M2-failure-inconclusive",
+    "tampered-effect-rejected",
+    "raw-scalar-recompute",
+    "activation-control-recompute",
+    "baseline-correlation-selection-recompute"
+  ],
+  "model_forwards": 0,
+  "limitations": [
+    "Not an independent runtime repeat",
+    "Requires independent code review",
+    "Compact raw logsumexp cannot prove full-vocabulary tensor integrity alone; M2/tool execution and producer captures supply additional evidence"
+  ]
+}

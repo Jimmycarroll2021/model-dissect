@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "phase": "ECHO-RECOVERY-001",
+  "verifier": "root/echo_protocol_verify",
+  "implementer": "root/echo_recovery_producer",
+  "policy_sha256": "843532ba84403425853fb2fa27b6ade14e8e020c7df4616e17be5cebfe9af590",
+  "files": {
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/evidence/echo-mechanism/fixtures-v1.json": "a5f37e9e3e4b021d720869b23375f0f7cb33c09fe9ebc5be2c9fce2416af291c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/evidence/echo-mechanism/original-scientific-protocol-v1.md": "ec59becccab0eaecf787934ee77d1a46722de3ab5cf5f99255e27ffb023d0dff",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/evidence/echo-mechanism/packet-independent-v1.json": "009ba30fdd593734c426d3b4c8e23df4f19da965de547271e45ee34fcda8d288",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/evidence/echo-mechanism/packet-producer-v1.json": "e85a40515929017a6c07f6f00ee664bad8e9f9e63fcdbabff3fd9dd1abbc9303",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/evidence/echo-mechanism/protocol-v1.json": "0621622dc56209f553949906bcab2d72b5d42ae648039d9b60150b0e94ca1c61",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/evidence/echo-mechanism/protocol-v1.md": "e2d6c77079ed4e5aab11d2076954e09d8eaa9f121e8da6d2f796b8989a3072fa",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/oracle/__init__.py": "7c091c93959b3b22084557fc4cb894f353b85c54f8d70f7733bf332d0a31e6db",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/oracle/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/atlas-ledger.json": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/behavior-ledger.json": "465f9f3da6ba029932f7b9b8ff77f2118e5052c67ded11ea71721059621ed070",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/continuation-history.json": "9e749756068f8d47ee9f6b25890d1b255c4263ac0a1dbad0922c5b8cd09076c3",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/echo-policy.json": "843532ba84403425853fb2fa27b6ade14e8e020c7df4616e17be5cebfe9af590",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/echo_guard.py": "18db6242c07ab23831c769bb90152c0ee1ebfbfcbb2ebb3ef2d8ee7a6aee1d4e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/failed-echo-ledger.json": "95a0ed420be49265f9e853db393a1c723d76276fa771f630fc862553e162ed6f",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/runtime/original-ledger.json": "c1de84bd30b2df14edccaec8ec4f9e2246c5cef7ff908bc606025b14cf3a66ed",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/src/minimind_re/continuation_probe.py": "6686a66392b83a3654555e3dd3a2f48cef072988f395d77de29c2522a29d1b62",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/src/minimind_re/echo_probe.py": "56118f50556dc10eaf9f5f01337c0c4499d00f4d1f00d87491c213c033da4458",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-echo-recovery-001-20261118/src/minimind_re/response_probe.py": "6acce1a4055f79ed000100dbcb6f87ef7a4b84d84aebb5329cc7f515825528df"
+  },
+  "candidate_manifest_sha256": "e8304753794b8f92a9e4bc7d93ed4f7c1dc532ef6b13cecbca14c5b45a1471e6",
+  "created_epoch": 1794992507.8782663,
+  "scope": "Once-only echo-recovery-producer-v1. Fresh complete original scientific sequence with owning-clone serialization fix. Independent repeat requires its own bound-output admission.",
+  "verification": {
+    "staged_files_hashed": 27,
+    "project_files_hashed": 10,
+    "source_bound_receipt": "recovery-position-bound.json",
+    "new_guard_cases": "recovery-guard-check.json",
+    "independent_existing_guard_suite": "recovery-independent-suite.log",
+    "existing_guard_tests_passed": 48,
+    "prior_failed295_artifacts_unchanged": true,
+    "histories": {
+      "tokens_reserved": 882320,
+      "download_bytes": 138166822,
+      "gpu_seconds": 12.621721199015155,
+      "gpu_seconds_reserved": 240.0
+    },
+    "runtime_versions_exact": true,
+    "disk_preflight": "PASS",
+    "current_phase_bytes": 138361744,
+    "conservative_two_role_projection_bytes": 272415632,
+    "projection_assumption": "Each vector<=29696bytes; full boundary payload6266880+32768overhead each role;16MiBJSON/head/scoring/journal allowance per role. Runtime guard still enforces actual512MiB.",
+    "rss": {
+      "peak_owned_rss_bytes": 23433216,
+      "owned_rss_cap_bytes": 8589934592,
+      "owned_rss_scope": "guard plus direct child; descendants prohibited"
+    },
+    "no_existing_phase_ledger": true
+  },
+  "positions": {
+    "exact_max_each": 76632,
+    "reserved_each": 76800,
+    "combined": 153600,
+    "prior_charged": 882320,
+    "lifetime_after_both": 1035920,
+    "approved_ceiling": 1038544,
+    "remaining_unallocated": 2624
+  },
+  "unexecuted": [
+    "recovery tokenizer validation",
+    "recovery actual parity/hooks",
+    "recovery head scan and heldout",
+    "independent actual repeat"
+  ],
+  "no_model_calls_this_review": true
+}

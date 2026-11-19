@@ -1,0 +1,81 @@
+{
+  "candidate": "REALIGNMENT-001-v1",
+  "scope": "changed active documents and new realignment evidence; excludes this manifest",
+  "files": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 3681,
+      "sha256": "aea77ab0939225f9a1b488252fad8c605f61546c979af484e966a7aa0466e884"
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "bytes": 936,
+      "sha256": "ecd5cc063a334fab5e4e0dab9b47ac926d74ab931b757e3d2630c80c49695675"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2139,
+      "sha256": "2ec66b2b0ed11a4200a9800e73299d3bdf89cff75e6e161bae15dd58c0956eaa"
+    },
+    {
+      "path": "TASK_STATE.md",
+      "bytes": 2008,
+      "sha256": "a8f666744924fee3bb58ea52d67847d2c758f0562bbcb7ac06fef64997b12ac2"
+    },
+    {
+      "path": "evidence/realignment/REALIGNMENT.md",
+      "bytes": 2027,
+      "sha256": "029783a8c2b7bd0b626d371d7bcfc1be139cabfebe35f30a457a8d465d5fbf25"
+    },
+    {
+      "path": "evidence/realignment/preservation.json",
+      "bytes": 2480,
+      "sha256": "f21a36afd2c9ad413e87ae98841383a2bf74b8457218133cfd2195759379b5dc"
+    },
+    {
+      "path": "evidence/realignment/superseded/.specify/memory/constitution.md",
+      "bytes": 2920,
+      "sha256": "a080a1af577075d9e749ed060a4fd285a7913feb9c82366564f6bc5f3abf53ff"
+    },
+    {
+      "path": "evidence/realignment/superseded/CASE_FACTS.md",
+      "bytes": 605,
+      "sha256": "6aecbde1f5dd432d777cd51fb7bfdc7d06e9b9089b1f106a6f2b67ad172684fe"
+    },
+    {
+      "path": "evidence/realignment/superseded/README.md",
+      "bytes": 1625,
+      "sha256": "0d91fececf52eccee890f140f675b37bc1218f27f564da77b8994ece0d36e935"
+    },
+    {
+      "path": "evidence/realignment/superseded/TASK_STATE.md",
+      "bytes": 1492,
+      "sha256": "85df69dc3e2777aaefa46e8bf504afc9ea268efeefb176e5fd62f4aac91ccf83"
+    },
+    {
+      "path": "evidence/realignment/superseded/specs/001-minimind-reproduction/checklists/requirements.md",
+      "bytes": 1090,
+      "sha256": "14636d28844fac18d182513b3d35018b68313bb762b8052b86fabbdb5dcfdd46"
+    },
+    {
+      "path": "evidence/realignment/superseded/specs/001-minimind-reproduction/spec.md",
+      "bytes": 11129,
+      "sha256": "96f16526b84ddebe5502a060066928e8250e5553fbfc12cac80fd7e27175b648"
+    },
+    {
+      "path": "evidence/realignment/worker-checks.json",
+      "bytes": 439,
+      "sha256": "fbea1dd205b3ec22d1898f487f48a356592fe9a9b4dc3543d88328354a277059"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/checklists/requirements.md",
+      "bytes": 1389,
+      "sha256": "1dec4649422def40d31bf51bb4369c08dd512e341190b96074c02bfe07574383"
+    },
+    {
+      "path": "specs/001-minimind-reproduction/spec.md",
+      "bytes": 14356,
+      "sha256": "4fb95ce2fcec1a1b6ace3a41a2ff677752c497ac51b05cb99f469b47edbf2c60"
+    }
+  ]
+}

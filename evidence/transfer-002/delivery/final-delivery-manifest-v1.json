@@ -1,0 +1,48 @@
+{
+  "status": "FINAL_DOCUMENT_CANDIDATE_READY_WHOLE_DELIVERY_AUDIT",
+  "scientific_scope": "independently verified full-prefill transfer and bounded investigation",
+  "strict_T2": "FAIL_UNCHANGED_FULL_STRICT_TRANSFER_NOT_COMPLETE",
+  "files": {
+    "docs/pythia-transfer-result.md": "0fc410c181792b4ac8ce4b30158579c8962f2ad45b187b776e247b6ec21053f0",
+    "docs/model-transfer-usage.md": "36dd9aa46267367a88f4ee784ac80a93a47310676a3a4412f6dc4ced596c5c05",
+    "docs/figures/pythia-transfer-heldout.png": "e5d822d0f988e6b4e7c8238d240774d5cd8804b1b3307b2a6f5a8d012f24a440",
+    "docs/figures/pythia-transfer-heldout.svg": "0758ade6c924541256133068dce1f0c2be9886a98177cb69b7715b3169a7e508"
+  },
+  "previous_artifacts": {
+    "evidence/transfer-002/delivery/before-final-v1/pythia-transfer-result.md": "b63a886f239b0c3346f8c555081d6f0415de324180a65d1aca6ae7de46754e5b",
+    "evidence/transfer-002/delivery/before-final-v1/model-transfer-usage.md": "665424f3fa0e01f3a7683900ef026369c7cf6a116240a62adacaa100be75a20a",
+    "evidence/transfer-002/delivery/before-final-v1/pythia-transfer-heldout.png": "ca5b662db6dfeedc3a81bbbf8914c417c46b7fb0db287e635c0dfe56e29642d3",
+    "evidence/transfer-002/delivery/before-final-v1/pythia-transfer-heldout.svg": "7e5623af04cfc8d47b329527e5484c06a71b200bc05b93a220e4741285034f29"
+  },
+  "verification_receipts": {
+    "evidence/transfer-002/review/science-full-independent-v2-results.json": "9fce319281f99807ab0b880a555b10c66a63dd432c8329fb4206a3f1aa912392",
+    "evidence/transfer-002/review/static-independent-v4-results.json": "82d46dbfd4366849a9d5f736df076d704d901866ec4eec03cd149f119958ed38"
+  },
+  "execution_packet_pointers": {
+    "evidence/transfer-002/science/science-full-producer-v2.packet.json": "76ce25d8a9c88b7bb34780c91bf6e5e970dc4c95a0c9a327fbe7283cdbc8a7ff",
+    "evidence/transfer-002/science/science-full-independent-v2.packet.json": "463504497826e93ecb2a77715668c3f24316bfd6f77dcb0d01fa43a4f5b5b22b"
+  },
+  "current_tool_sources": {
+    "src/minimind_re/transfer/science_full_run.py": "e64fdfc3d2b8d1d5947ee8ff82dcf50d8daadc3d9dee7a1300670106040d23e4",
+    "src/minimind_re/transfer/science_full.py": "f045b70c8101f8485db97e844fb5804e08da6390b4b67385f820cd397c27973f",
+    "src/minimind_re/transfer/science.py": "534e0076b83c924a499a763b0567971d85978368d35012ff206c0948a65b2df7",
+    "src/minimind_re/transfer/gpt_neox_candidate.py": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f",
+    "src/minimind_re/transfer/reference.py": "b0c736a240b1dd0a6e92d4dea9b02e9684be9ade8ab78deef72a6b8b7ff83d38",
+    "src/minimind_re/transfer/guard.py": "d8123376ceafee0ffae097ac4cff472385b3e6bb72b8013058c52f84ef16778d",
+    "src/minimind_re/transfer/atlas.py": "34eed1330166fb04a53c056b9d12453e668e61b5290b228feba96810ff53a27b"
+  },
+  "raw_evidence": "Referenced through exact independent receipts; no GB-scale raw payload rehash performed by documentation worker",
+  "plot_data_source": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/science-full-producer-v2/summary.json",
+    "sha256": "cf6506d43585c39820fbe66c3fef5d74ec31753de222c3fe8bc8edb3f230bffc",
+    "data_changed": false,
+    "annotation_changed": "independently repeated; no pending label"
+  },
+  "limits": [
+    "native interventions only; candidate intervention equivalence not established",
+    "identical frozen fixtures in independent repeat",
+    "source-assisted architecture-specific result",
+    "whole-delivery audit pending"
+  ],
+  "no_source_state_ledger_changes": true
+}

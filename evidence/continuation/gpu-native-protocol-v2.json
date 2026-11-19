@@ -1,0 +1,76 @@
+{
+  "id": "GPU-NATIVE-002-UUID-REPRESENTATION-FIX",
+  "status": "FROZEN_PENDING_REVIEW_NO_RETRY_RUN",
+  "created_utc": "2026-11-17T07:49:02.095701+00:00",
+  "files": {
+    "oracle/gpu_adapter.py": "305fbcd79b3632f46516e987a1cc40bff2a4b8d20597677659d493e17bbdef36",
+    "oracle/gpu_native_check.py": "9de0139ef442f6f8403e79e66678b66aa2c9ea409fcd474bb02bda7957d60983",
+    "oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4",
+    "fixtures/heldout/parity.json": "616d04c0a2ad37d389233e833071036be75680ebbbdf9329430b84d2e01b551d",
+    "artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0"
+  },
+  "device_only_adapter": "Copied original ReferenceAdapter arithmetic unchanged; explicit CUDA device placement and precision/allocation guards only. No policy attention or candidate import.",
+  "precision_api": "Installed torch2.11 legacy allow_tf32 getter/setters source confirmed; highest matmul, both TF32False; no fp32_precision setters mixed. CUBLAS_WORKSPACE_CONFIG=:4096:8 follows reviewed proposal; runtime deterministic call failures remain failures.",
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "NVIDIA_TF32_OVERRIDE": "0",
+    "GPU_UUID": "GPU-f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6"
+  },
+  "caps": {
+    "timeout_seconds": 120,
+    "reserved_tokens": 9000,
+    "allocator_bytes": 2147483648,
+    "guard_process_memory_bytes": 3221225472,
+    "original_hard_allocation_bytes": 17179869184
+  },
+  "exact_work": {
+    "native_prefill_tokens": 338,
+    "matrix_tokens": 8469,
+    "total_tokens": 8807,
+    "calls": 332,
+    "rows": 688,
+    "cases": 12,
+    "continuations": 4,
+    "arms": [
+      "baseline",
+      "noop",
+      "restored"
+    ],
+    "setup_primitive_rows": 1,
+    "total_model_plus_primitive_positions": 8808
+  },
+  "guard_report": "MINIMIND_GPU_REPORT; records required actual precision/peak telemetry after synchronize",
+  "static_checks": "AST parse and exact workload accounting PASS; no target model construction or CUDA allocation",
+  "outcomes": "Native gate fail stops remaining matrix; cache/full failure stops candidate port; no hiddenheldout or R2completion claim.",
+  "guard_sha256": "455aca3291038d32c7813035474c9e66735382539c430976aa07b94cc523673a",
+  "parent_protocol_sha256": "17f1a7ddb197ce33c5920b96740614e083a4659ae6157720d043fe7097e2310c",
+  "change": "Canonicalize only optional literal GPU- prefix on both UUID values before equality. Different UUID still rejected. No numerical operations/thresholds/settings/guard changed.",
+  "preserved_failed_receipt_sha256": "6d3756b1e5e1e2837db320e64ef709e938c94d5470e5b1110e9beed8eaec3d22",
+  "uuid_tests": [
+    {
+      "left": "f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "right": "GPU-f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "expected_equal": true,
+      "pass": true
+    },
+    {
+      "left": "GPU-f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "right": "f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "expected_equal": true,
+      "pass": true
+    },
+    {
+      "left": "f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "right": "f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "expected_equal": true,
+      "pass": true
+    },
+    {
+      "left": "GPU-f7a1f5ca-bc64-00aa-e0f6-7d8bed681bd6",
+      "right": "GPU-00000000-0000-0000-0000-000000000000",
+      "expected_equal": false,
+      "pass": true
+    }
+  ]
+}

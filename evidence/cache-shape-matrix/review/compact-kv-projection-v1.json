@@ -1,0 +1,20 @@
+{
+  "status": "PASS_COMPACT_KV_STORAGE_PROJECTION_PENDING_IMPLEMENTATION",
+  "kv_position_units_per_role": 6948,
+  "bytes_per_kv_position_all8layers": 24576,
+  "compact_kv_raw_bytes_per_role": 170754048,
+  "compact_kv_raw_bytes_both_roles": 341508096,
+  "boundary_plus_kv_raw_bytes_both_roles": 3859734528,
+  "phase_cap_proposed": 4294967296,
+  "margin_before_stage_inputs_metadata": 435232768,
+  "checkpoint_bytes": 138166822,
+  "margin_after_checkpoint_before_other_metadata": 297065946,
+  "representation": "Each policy actor/case/arm: save original prefill KV once and four newly appended single-token KV chunks, each independent owning contiguous storage. Reconstruct all cached states by concatenation.",
+  "verification_required": [
+    "Input and returned prefix byte checks during runtime.",
+    "Each reconstructed complete cache array compared against recorded full-output raw-byte hash, shape and dtype at every append.",
+    "Independent repeated initial/chunk tensor bytes and reconstructed full hashes agree.",
+    "Reject generic view serialization retaining larger backing storage; exact file-byte estimates and measured staging size before approval."
+  ],
+  "model_calls": 0
+}

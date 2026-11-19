@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": [
+    "orig_mutation_rejected",
+    "h_mutation_rejected",
+    "behavior_mutation_rejected",
+    "cont_mutation_rejected",
+    "failed_mutation_rejected",
+    "orig_held_lock_rejected",
+    "h_held_lock_rejected",
+    "behavior_held_lock_rejected",
+    "cont_held_lock_rejected",
+    "failed_held_lock_rejected",
+    "synthetic_success_preserves_all5_and882320"
+  ],
+  "guard_sha256": "18db6242c07ab23831c769bb90152c0ee1ebfbfcbb2ebb3ef2d8ee7a6aee1d4e",
+  "policy_sha256": "843532ba84403425853fb2fa27b6ade14e8e020c7df4616e17be5cebfe9af590",
+  "actual_model_calls": 0,
+  "scope": "Disposable histories and trivial static child only; actual histories read-only."
+}

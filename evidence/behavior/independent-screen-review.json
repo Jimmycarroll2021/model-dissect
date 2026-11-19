@@ -1,0 +1,102 @@
+{
+  "status": "PASS_INDEPENDENT_NEGATIVE_REPLICATION",
+  "scientific_outcome": "STOP_NO_QUALIFIED_PAIR",
+  "qualification": "NOT_RUN",
+  "causal_work": "NOT_RUN",
+  "original_receipt": {
+    "path": "runs/behavior/screen-v1.json",
+    "sha256": "2aba8344df5e14ebbadf8ccecf420eb4dfc950b21379eaad16bd68b56ba00242"
+  },
+  "independent_receipt": {
+    "path": "runs/behavior/independent-screen-v1.json",
+    "sha256": "6a10b195383adf8aa11e6e9a5db11182de6b6b8bc575d4cc361a2574b6192f74"
+  },
+  "raw_journal": {
+    "path": "runs/behavior/independent-screen-v1.json.rows.jsonl",
+    "sha256": "ba3f2b2944e0304964cd45f6124b1212f1b9a7f050ab84c80cb8f836fc97a97b"
+  },
+  "packet_sha256": "0a970e5e1b654dc98f832603506ed0c0556749f2c00a0991d7e7dd06c263ffa6",
+  "checks": {
+    "exact_all_48_metric_rows": true,
+    "exact_summaries": true,
+    "exact_candidate_fixture_protocol_environment_identities": true,
+    "raw_journal_matches": true,
+    "packet_only_role_differs": true,
+    "independent_correct_counts": {
+      "COPY": 0,
+      "SUBTRACT": 0,
+      "COMPARE": 0
+    },
+    "threshold": 13,
+    "denominator_per_family": 16,
+    "selected_pair": [],
+    "actual_calls": 48,
+    "actual_positions": 1732,
+    "vocabulary_piece_distribution": {
+      "5078": {
+        "count": 16,
+        "decoded_vocab_piece": "甲"
+      },
+      "773": {
+        "count": 5,
+        "decoded_vocab_piece": "我们"
+      },
+      "420": {
+        "count": 18,
+        "decoded_vocab_piece": "要"
+      },
+      "59": {
+        "count": 2,
+        "decoded_vocab_piece": "8"
+      },
+      "2316": {
+        "count": 1,
+        "decoded_vocab_piece": "15"
+      },
+      "4582": {
+        "count": 6,
+        "decoded_vocab_piece": "这个问题"
+      }
+    }
+  },
+  "guard_row": {
+    "id": "behavior-independent-screen-v1",
+    "role": "verification",
+    "tokens_reserved": 1732,
+    "argv": [
+      "/usr/bin/python",
+      "scripts/behavior/run.py",
+      "screen",
+      "--packet",
+      "evidence/behavior/independent-screen-packet-v1.json",
+      "--output",
+      "runs/behavior/independent-screen-v1.json"
+    ],
+    "start": 1794910661.2415335,
+    "status": "completed",
+    "backend": "cpu",
+    "gpu_seconds": 0,
+    "pid": 3251055,
+    "exit_code": 0,
+    "end": 1794910664.1811557,
+    "wall_seconds": 2.933276985073462,
+    "cpu_seconds": 4.3108830000000005,
+    "peak_child_rss_kib": 1025600,
+    "disk_free_bytes": 2868531200,
+    "project_bytes": 199843275
+  },
+  "ledger_totals": {
+    "tokens_reserved": 175600,
+    "cpu_seconds": 245.532523,
+    "gpu_seconds": 12.621721199015155,
+    "active_rows": 0
+  },
+  "owner_released": true,
+  "review_epoch": 1794910698.1199005,
+  "limitations": [
+    "Measures exact next-token behavior for three frozen prompts; not complete-answer ability.",
+    "Some predicted pieces begin explanatory/repetitive text; no continuation was generated, so later correctness is unknown.",
+    "Frozen protocol prohibits prompt changes or new task search after these outcomes.",
+    "Historical R2 FAIL/cache-full discrepancy remains unresolved."
+  ]
+}

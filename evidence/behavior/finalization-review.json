@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_CLERICAL_FINALIZATION",
+  "pre_hashes": {
+    "docs/behavior-qualification-result.md": "ef75025a4b233efb6068e7485148ac790bb0fa1d772893359a0b35698932fa04",
+    "TASK_STATE.md": "13c8858aa69fd4742a210b24f5f4e174a233c31f0afda85fd21922586d70e5dd",
+    "CASE_FACTS.md": "0b05dc558dfd325994981eb8de313da56d432cf0dca6ed5859db1ac1238ee21e",
+    "specs/001-minimind-reproduction/tasks.md": "85bbdcd70a77522ddad6287f5ac58268ce1bceae4dc74c7eb132f83ab0d3be99"
+  },
+  "post_hashes": {
+    "docs/behavior-qualification-result.md": "ef75025a4b233efb6068e7485148ac790bb0fa1d772893359a0b35698932fa04",
+    "TASK_STATE.md": "c6caade13fe323d3e07b91421bac272ab56dccf2b828cfff7aaeadbf08ac5fd6",
+    "CASE_FACTS.md": "1c2895fd42829dddd60038847dcccbf9acee08fb6139fabacfc7c741f79b9853",
+    "specs/001-minimind-reproduction/tasks.md": "accd200f6e41da5799d6715e31a13378d1af217f94ae24c7219f29bf2a60e44e"
+  },
+  "review_sha256": "04d1713c363ebdeede5b85ed1db3e5b63daa0b3a861f18e4ee1821b2b6ecafed",
+  "changed_scope": [
+    "T057 completion line only",
+    "TASK_STATE current review pending header/sentence only",
+    "CASE_FACTS current review pending line only"
+  ],
+  "authority": "Parent explicitly authorized clerical completion conditional on PASS; no runtime or source edits",
+  "epoch": 1794910824.0028284
+}

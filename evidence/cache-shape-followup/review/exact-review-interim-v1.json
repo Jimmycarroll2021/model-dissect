@@ -1,0 +1,31 @@
+{
+  "status": "IDENTITY_HISTORY_LIVE_PREFLIGHT_PASS_PENDING_PROTOCOL_GUARD_MEASUREMENT_FIX",
+  "candidate_manifest_sha256": "0606b6c9b1db2cc0afc9249329574dc4c521775e2fc75ca74bafd81768781032",
+  "verified_files": 40,
+  "history": {
+    "tokens_reserved": 1137888,
+    "download_bytes": 138166822,
+    "gpu_seconds": 12.621721199015155,
+    "gpu_seconds_reserved": 240.0
+  },
+  "locks_checked": 9,
+  "stage_bytes": 144171033,
+  "free_bytes": 65550688256,
+  "reviewer_current_rss": {
+    "peak_owned_rss_bytes": 26025984,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited"
+  },
+  "ledger_absent": true,
+  "outputs_absent": true,
+  "schedule_actual_positions": 64,
+  "schedule_calls": 24,
+  "per_role_reservation": 128,
+  "lifetime_after": 1138144,
+  "synthetic_tests": {
+    "./evidence/cache-shape-followup/review/independent-capture-checks-v1.log": "0a2d5a95432f0a841240f14187c619c6ab9c7f97f8cc43fff65276903b0cd2fe",
+    "./evidence/cache-shape-followup/review/capture-tests-rerun-v1.log": "dcd2fc11b74c50d78836ff1e0b5e5dd74f904dad3ec2b897e13765b81cab7225"
+  },
+  "model_calls": 0,
+  "blocker": "Protocol completion guard VmHWM required but guard only records entry /proc status and completion rusage; no PASS admission until resolved."
+}

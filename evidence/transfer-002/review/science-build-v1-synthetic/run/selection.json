@@ -1,0 +1,12 @@
+{
+  "selected_layer": 0,
+  "medians": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0
+  },
+  "development_sha256": "cdb63d7597f97b35ec061e94fd5456b5f01687de231147b2bb79475117c0cbe3",
+  "heldout_sha256": "5b9f5afd5ef4a46e363ab5ec0dc0d32b060f8b62b8c228d9479b87b363f8cdf3"
+}

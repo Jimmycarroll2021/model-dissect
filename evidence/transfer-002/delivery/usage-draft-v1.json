@@ -1,0 +1,21 @@
+{
+  "status": "DRAFT_PENDING_RUNTIME_AND_SCIENCE_RESULTS",
+  "file": "docs/model-transfer-usage.md",
+  "sha256": "fa6e79cc1d6d7b95cf737a5490755fa94fd9df9623f3ebc890f4e097f5025635",
+  "source_identities": {
+    "src/minimind_re/transfer/run.py": "b561599dd1ff119a0397ded3be59a937ae662539c9d8a5a6097bb25611c37e6f",
+    "src/minimind_re/transfer/gpt_neox_candidate.py": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f",
+    "src/minimind_re/transfer/reference.py": "b0c736a240b1dd0a6e92d4dea9b02e9684be9ade8ab78deef72a6b8b7ff83d38",
+    "src/minimind_re/transfer/atlas.py": "34eed1330166fb04a53c056b9d12453e668e61b5290b228feba96810ff53a27b",
+    "evidence/transfer-002/runtime/numerical-producer-v3.packet.json": "112f5150f13ab77cbad09ccc5b65105d539c30a67686038e7587e048af7d8982",
+    "evidence/transfer-002/runtime/static-producer-v3.packet.json": "8a9e7e9d30103b380e5d6c62e6cc7d446d6258a63b918d3406f0d4475480a5ef",
+    "evidence/transfer-002/atlas/manifest-v2.json": "5c65c87dc13edeab2b57805794188029fa112450970a126ec1ab507da5b3b908"
+  },
+  "validation": "Read current source signatures and packets; no commands executed, model imports, tokenizer load or target load. Exact commands are documented audit recipes, not reruns.",
+  "unexecuted": [
+    "independent documentation verification",
+    "CLI execution",
+    "final results reconciliation"
+  ],
+  "next_action": "final documentation owner updates actual runtime/science result links and exact final candidate before independent delivery review"
+}

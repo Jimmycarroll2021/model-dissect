@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS_EXACT_ALL_AFFINE_PILOT",
+  "reviewed_utc": "2026-11-18T19:52:58.696511+00:00",
+  "checks": {
+    "manifest": true,
+    "packet": true,
+    "files": true,
+    "packet_identities": true,
+    "environment": true,
+    "budget": true,
+    "unused": true,
+    "settled": true,
+    "aggregate": true,
+    "capacity": true,
+    "phase_time": true
+  },
+  "packet_sha256": "c7edb02e20ad2184a863bb255fcf8305b8b6aa44c92152af909ada2f431371a2",
+  "tests": "3 native all-affine geometry/cleanup tests independently passed; candidate3tests passed separately",
+  "source_review": [
+    "Exactly25distinct native Linear modules patched, fixed[2,H]FP32 perrealrow; optionalbias preserved.",
+    "Normal,exception,partial-setup restoration covered.",
+    "No shared adapter mathematical helper with candidate.",
+    "Runner diff from reviewed QKV pilot limited to imported reference, label and own CLI module. Same81originaltolerance/argmax/cache/anchor gates retained.",
+    "All150arrays1716224B retained before failure."
+  ],
+  "limits": [
+    "Diagnostic only; no full-mode promotion."
+  ]
+}

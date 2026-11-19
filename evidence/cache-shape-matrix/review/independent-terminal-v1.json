@@ -1,0 +1,39 @@
+{
+  "status": "INDEPENDENT_TERMINAL_PENDING_RAW_AUDIT",
+  "result_sha256": "9260232e677db11a8c2ede89dc20fc2f1794d41ca8b0ff64c767d5db9b1034b4",
+  "scientific_status": "FAIL_BOTH_MATRICES_NEW_MODE",
+  "failed_rows": 24,
+  "guard_run": {
+    "id": "cache-shape-matrix-independent-v1",
+    "kind": "model",
+    "role": "verification",
+    "positions_reserved": 50600,
+    "wall_reserved": 900.0,
+    "start": 1795001225.9394653,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.shape_cache_matrix_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/evidence/cache-shape-matrix/packet-independent-approved-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-matrix-001-20261118/runs/cache-shape-matrix-independent-v1/result.json",
+    "peak_owned_rss_bytes": 8410447872,
+    "owned_rss_cap_bytes": 8589934592,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 1323018,
+    "exit_code": 0,
+    "final_child_highwater_bytes": 1416966144,
+    "final_guard_highwater_bytes": 6993481728,
+    "final_combined_highwater_bytes": 8410447872,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "output_sha256": "9260232e677db11a8c2ede89dc20fc2f1794d41ca8b0ff64c767d5db9b1034b4",
+    "end": 1795001315.1461337,
+    "wall_seconds": 89.19661264994647,
+    "cpu_seconds": 147.64503299999998,
+    "peak_child_rss_kib": 1383756
+  },
+  "ledger_sha256": "a893d349de043fbe7c6750d09e53be0e732476f23e9e0f4c7e9418b9649acbd9",
+  "lifetime_reserved": 1137888
+}

@@ -1,0 +1,41 @@
+{
+  "status": "DRAFT_PENDING_IDENTITY_AND_INDEPENDENT_REVIEW",
+  "created_at_utc": "2026-11-19T07:15:22.373007+00:00",
+  "artifacts": [
+    {
+      "path": "specs/004-feature-attribution-validation/checklists/requirements.md",
+      "sha256": "579301a9e9c7a27647b0918a77f04ccfdb6bb5d06a9eebf887b18149fb949f2b",
+      "bytes": 1347
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/discovery-and-threshold-proposal.md",
+      "sha256": "f49f446b4b2242d77810d2c3d7efd51afb605e7faf65dcdef526740873b0dec4",
+      "bytes": 9686
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/integration-boundary.md",
+      "sha256": "5f8cc9bfd19b56075a59def01e8863d13423d2cf20c90cbd0fefc366b9a8d6e6",
+      "bytes": 3180
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/preregistration-template.md",
+      "sha256": "e2b77a3f0a460f19f0a3899bad51c65f9879b737922e6732a1de3fe0685e024a",
+      "bytes": 10149
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/selected-claim-v1.md",
+      "sha256": "4bcbed171097406ab2a624a3adc788600a00390c3c9106df1fb830e5da91491e",
+      "bytes": 10565
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/spec.md",
+      "sha256": "c6d3a72e826a0db8b3f872a8c4f0d775c9d37ab97caed4ea5425edc596c9031b",
+      "bytes": 7256
+    },
+    {
+      "path": "evidence/feature-attribution-pilot/protocol/TASK_STATE.md",
+      "sha256": "f3469557146a9356d7f1a9f0139c3ae8bdd5accca8ecbc80cf28fb8de9337b1d",
+      "bytes": 2683
+    }
+  ]
+}

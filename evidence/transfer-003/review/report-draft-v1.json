@@ -1,0 +1,93 @@
+{
+  "verdict": "PASS_DRAFT_ONLY_SCIENCE_REPEAT_AND_FINAL_MANIFEST_PENDING",
+  "reviewed_utc": "2026-11-19T00:44:49.092935+00:00",
+  "draft_manifest_sha256": "98a30cc7adb59a7fdec8aadc1521c04bcbabf1b95ab30f19131fac4380c05ab0",
+  "files_verified": [
+    {
+      "path": "TASK_STATE.md",
+      "matches": true
+    },
+    {
+      "path": "CASE_FACTS.md",
+      "matches": true
+    },
+    {
+      "path": "docs/gpt2-transfer-result.md",
+      "matches": true
+    },
+    {
+      "path": "docs/three-model-transfer-lessons.md",
+      "matches": true
+    },
+    {
+      "path": "docs/figures/gpt2-plot-producer-v1.py",
+      "matches": true
+    },
+    {
+      "path": "docs/figures/gpt2-heldout-producer-v1.png",
+      "matches": true
+    },
+    {
+      "path": "docs/figures/gpt2-heldout-producer-v1.svg",
+      "matches": true
+    },
+    {
+      "path": "evidence/transfer-003/delivery/producer-report-metrics-v1.json",
+      "matches": true
+    },
+    {
+      "path": "evidence/transfer-003/delivery/producer-chart-v1.json",
+      "matches": true
+    }
+  ],
+  "saved_metric_checks": {
+    "source_files_hashed": 20,
+    "heldout_rows_exact_underlying_fields": 16,
+    "native_and_candidate_directional_P_Q_independently_recomputed": true,
+    "median_P": 0.08404521678273584,
+    "median_Q": 0.09451938285766666,
+    "positive_Q": 16,
+    "frozen_thresholds": [
+      0.2,
+      0.1,
+      12
+    ],
+    "verdict": "REFUTED_if_all_validity_gates_pass"
+  },
+  "render": {
+    "independent_rerender_directory": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/report-draft-review-v1",
+    "png_and_svg_byte_identical": true,
+    "png_visually_inspected": true,
+    "readability": "Clear labels, all16points visible, median vs criterion distinction explicit, producer-only pending annotation visible",
+    "receipt_sha256": "91009fd508b17ddf3a3d5e37746fbf72789cba9769e8f8999aea8f70b69f9310"
+  },
+  "interpretation_checks": {
+    "pending_science_repeat_explicit": true,
+    "pythia_strict_cached_full_FAILURE_retained": true,
+    "three_model_completion_not_claimed": true,
+    "source_assisted_and_mode_scope_clear": true,
+    "research_is_method_inspiration_not_installed_framework_integration": true,
+    "head_edit_trace_explains_donor_final_token64value_preprojection_edit_and_unchanged_parameters": true,
+    "no_arbitrary_model_or_complete_understanding_claim": true,
+    "atlas_alternative_arithmetic_and_derived_std_limits_clear": true,
+    "no_broken_local_document_links": true
+  },
+  "usability": "Report is an inspection guide; no executable model rerun command asserted. Chart script reproduced from a copied tree with model-free Matplotlib only. Actual additive CLI requires --packet and --admission; report correctly requires fresh identity/readiness/budget reconciliation instead of presenting historical admissions as standing authority.",
+  "required_draft_changes": [],
+  "final_closure_requirements": [
+    "Bind exact independently accepted actual science repeat/raw/control/trace evidence before claiming third completed application.",
+    "Review final changed documents, figure annotations, state and exact final manifest after science acceptance."
+  ],
+  "limits": [
+    "This review independently checks saved metric aggregation/report provenance and rendering, not raw scientific logits or target execution. Scientific verifier owns that gate.",
+    "No new online research or installed third-party framework compatibility test. Reuses exact upstream research and prior source review."
+  ],
+  "model_calls": 0,
+  "target_weight_loads": 0,
+  "implementation_or_docs_edited": false,
+  "review_check_receipt": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/report-draft-review-v1/checks.json",
+    "sha256": "34f8e73a37f50de3a0e529cf32c846b52c9d70b75b01b063f555cb4f0d471e13"
+  },
+  "preserved_check_correction": "Initial exact row comparison rejected report-added pair label; all four underlying raw fields then verified exactly. No target or source change."
+}

@@ -1,0 +1,3324 @@
+{
+  "status": "PASS",
+  "gate_version": "M2-v1",
+  "M2": "PASS",
+  "tool_validation": "PASS",
+  "candidate_manifest_sha256": "f851aea7915dd711998f91d15085d2c0f941be715503897676e9f24ef98c8590",
+  "scientific_protocol_sha256": "b4126dba857be7daed77613665622938260f1d7a67ff031e5f38e6a251404f6a",
+  "mode": "full-prefill",
+  "original_R2": "FAIL",
+  "tokens": 2655,
+  "model_calls": 60,
+  "rows": [
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-none",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-none",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-none",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-none",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "baseline",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "baseline",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "baseline",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "baseline",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "noop",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "noop",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "noop",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "noop",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "restored",
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "restored",
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "restored",
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "restored",
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    }
+  ],
+  "diagnostics": [
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 5.513429641723633e-07,
+      "mean_abs": 1.3538010534830391e-07,
+      "max_relative": 0.0002634607662912458,
+      "max_tolerance_ratio": 0.03518740087747574,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 1.1712312698364258e-05,
+      "mean_abs": 2.946551830973476e-06,
+      "max_relative": 0.0037339371629059315,
+      "max_tolerance_ratio": 0.42054203152656555,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 1.9073486328125e-05,
+      "mean_abs": 4.066682777192909e-06,
+      "max_relative": 0.010640569031238556,
+      "max_tolerance_ratio": 1.3401955366134644,
+      "elementwise_failures": 2,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 5.513429641723633e-07,
+      "mean_abs": 1.3538010534830391e-07,
+      "max_relative": 0.0002634607662912458,
+      "max_tolerance_ratio": 0.03518740087747574,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 1.1712312698364258e-05,
+      "mean_abs": 2.946551830973476e-06,
+      "max_relative": 0.0037339371629059315,
+      "max_tolerance_ratio": 0.42054203152656555,
+      "elementwise_failures": 0,
+      "elements": 768
+    },
+    {
+      "fixture": "mech-parity-1-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 1.9073486328125e-05,
+      "mean_abs": 4.066682777192909e-06,
+      "max_relative": 0.010640569031238556,
+      "max_tolerance_ratio": 1.3401955366134644,
+      "elementwise_failures": 2,
+      "elements": 6400,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 1.1641532182693481e-06,
+      "mean_abs": 1.0210070655602976e-07,
+      "max_relative": 0.0035211266949772835,
+      "max_tolerance_ratio": 0.08919478952884674,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 1.5020370483398438e-05,
+      "mean_abs": 2.760705683613196e-06,
+      "max_relative": 0.004705413710325956,
+      "max_tolerance_ratio": 0.8991013765335083,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.266334533691406e-05,
+      "mean_abs": 4.115977390029002e-06,
+      "max_relative": 0.027233116328716278,
+      "max_tolerance_ratio": 1.7883459329605103,
+      "elementwise_failures": 40,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 1.1641532182693481e-06,
+      "mean_abs": 1.0210070655602976e-07,
+      "max_relative": 0.0035211266949772835,
+      "max_tolerance_ratio": 0.08919478952884674,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 1.5020370483398438e-05,
+      "mean_abs": 2.760705683613196e-06,
+      "max_relative": 0.004705413710325956,
+      "max_tolerance_ratio": 0.8991013765335083,
+      "elementwise_failures": 0,
+      "elements": 6144
+    },
+    {
+      "fixture": "mech-parity-8-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.266334533691406e-05,
+      "mean_abs": 4.11594055549358e-06,
+      "max_relative": 0.027233116328716278,
+      "max_tolerance_ratio": 1.7883459329605103,
+      "elementwise_failures": 40,
+      "elements": 51200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 9.5367431640625e-07,
+      "mean_abs": 1.256262720517043e-07,
+      "max_relative": 0.011641005985438824,
+      "max_tolerance_ratio": 0.0713823214173317,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": false,
+      "finite": true,
+      "max_abs": 1.9818544387817383e-05,
+      "mean_abs": 3.0646217510366114e-06,
+      "max_relative": 0.015058550983667374,
+      "max_tolerance_ratio": 1.0753464698791504,
+      "elementwise_failures": 3,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.997981548309326e-05,
+      "mean_abs": 4.553472990664886e-06,
+      "max_relative": 0.5,
+      "max_tolerance_ratio": 2.084615707397461,
+      "elementwise_failures": 131,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 7.82310962677002e-07,
+      "mean_abs": 1.267644051949901e-07,
+      "max_relative": 0.011641005985438824,
+      "max_tolerance_ratio": 0.06200888380408287,
+      "elementwise_failures": 0,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": false,
+      "finite": true,
+      "max_abs": 1.9818544387817383e-05,
+      "mean_abs": 3.065793180212495e-06,
+      "max_relative": 0.015058550983667374,
+      "max_tolerance_ratio": 1.0753464698791504,
+      "elementwise_failures": 3,
+      "elements": 24576
+    },
+    {
+      "fixture": "mech-parity-32-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 3.997981548309326e-05,
+      "mean_abs": 4.5535362005466595e-06,
+      "max_relative": 0.5,
+      "max_tolerance_ratio": 2.084615707397461,
+      "elementwise_failures": 133,
+      "elements": 204800,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 9.08970832824707e-07,
+      "mean_abs": 7.35526350936766e-09,
+      "max_relative": 0.001977504463866353,
+      "max_tolerance_ratio": 0.07452408224344254,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 9.000301361083984e-06,
+      "mean_abs": 1.3391051822964073e-07,
+      "max_relative": 0.015668299049139023,
+      "max_tolerance_ratio": 0.541914165019989,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-left",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": false,
+      "finite": true,
+      "max_abs": 1.811981201171875e-05,
+      "mean_abs": 2.1312008868790144e-07,
+      "max_relative": 0.023733410984277725,
+      "max_tolerance_ratio": 1.058552622795105,
+      "elementwise_failures": 2,
+      "elements": 819200,
+      "top1_mismatches": 0
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "embedding",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "block",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "final",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 98304
+    },
+    {
+      "fixture": "mech-parity-128-right",
+      "arm": "reference_mask_invariance",
+      "gating": false,
+      "site": "logits",
+      "pass": true,
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "elementwise_failures": 0,
+      "elements": 819200,
+      "top1_mismatches": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "candidate_identity:src/minimind_re/__init__.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:src/minimind_re/__main__.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:src/minimind_re/forward.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:src/minimind_re/inventory.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:src/minimind_re/mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:src/minimind_re/probe.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:scripts/mechanism/run.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:tests/test_mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:runtime/guard.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:runtime/environment.json",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:artifacts/allowed/supplied_config.json",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:analysis/structural-map.json",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:analysis/exposure-ledger.json",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:analysis/forward-v2-preserved.py",
+      "pass": true
+    },
+    {
+      "name": "candidate_identity:evidence/mechanism/protocol-v1.md",
+      "pass": true
+    },
+    {
+      "name": "identity:src/minimind_re/forward.py",
+      "pass": true
+    },
+    {
+      "name": "identity:src/minimind_re/mechanism.py",
+      "pass": true
+    },
+    {
+      "name": "identity:analysis/forward-v2-preserved.py",
+      "pass": true
+    },
+    {
+      "name": "identity:oracle/adapter.py",
+      "pass": true
+    },
+    {
+      "name": "identity:oracle/vendor/model_minimind.py",
+      "pass": true
+    },
+    {
+      "name": "identity:oracle/mechanism_m2.py",
+      "pass": true
+    },
+    {
+      "name": "identity:oracle/mechanism_fixtures.py",
+      "pass": true
+    },
+    {
+      "name": "identity:fixtures/mechanism/parity.json",
+      "pass": true
+    },
+    {
+      "name": "identity:fixtures/mechanism/development.json",
+      "pass": true
+    },
+    {
+      "name": "identity:fixtures/mechanism/heldout.json",
+      "pass": true
+    },
+    {
+      "name": "identity:fixtures/mechanism/manifest.json",
+      "pass": true
+    },
+    {
+      "name": "identity:evidence/mechanism/protocol-v1.md",
+      "pass": true
+    },
+    {
+      "name": "identity:artifacts/original/full_sft_768.pth",
+      "pass": true
+    },
+    {
+      "name": "identity:artifacts/original/tokenizer.json",
+      "pass": true
+    },
+    {
+      "name": "identity:artifacts/original/tokenizer_config.json",
+      "pass": true
+    },
+    {
+      "name": "identity:oracle/evaluate.py",
+      "pass": true
+    },
+    {
+      "name": "identity:runtime/environment.json",
+      "pass": true
+    },
+    {
+      "name": "identity:runtime/guard.py",
+      "pass": true
+    },
+    {
+      "name": "identity_complete",
+      "pass": true
+    },
+    {
+      "name": "one_live_guard_row",
+      "pass": true
+    },
+    {
+      "name": "live_guard_identity",
+      "pass": true
+    },
+    {
+      "name": "reservation_and_original_deadline",
+      "pass": true
+    },
+    {
+      "name": "actual_environment_matches_frozen",
+      "pass": true
+    },
+    {
+      "name": "12_shapes",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-none:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-left:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-1-right:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-none:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-left:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-8-right:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-none:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-left:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-32-right:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-none:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-left:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:baseline:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:baseline:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:baseline:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:baseline:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:noop:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:noop:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:noop:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:noop:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:restored:embedding:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:restored:block:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:restored:final:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:restored:logits:pristine_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:capture_direct_bitwise",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:reference_contribution_correspondence",
+      "pass": true
+    },
+    {
+      "name": "mech-parity-128-right:hook_cleanup",
+      "pass": true
+    },
+    {
+      "name": "single_coordinate_replacement:0",
+      "pass": true
+    },
+    {
+      "name": "single_coordinate_replacement:1",
+      "pass": true
+    },
+    {
+      "name": "injected_exception",
+      "pass": true
+    },
+    {
+      "name": "exception_cleanup",
+      "pass": true
+    },
+    {
+      "name": "all_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "planned_accounting",
+      "pass": true
+    }
+  ],
+  "hashes": {
+    "src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "src/minimind_re/mechanism.py": "ea78e8ae078bce77d4d150058691e64acf879cdbc095b3d729df7e06fe539ce2",
+    "analysis/forward-v2-preserved.py": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+    "oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "oracle/mechanism_m2.py": "4bfa1bde16c1df45dcd1ef00c44569aef62db25b890cfc762708f100128ccbe0",
+    "oracle/mechanism_fixtures.py": "d6af995ca69e7021695c09540b7538f9092a98a4290f817dbebc7d8a3595b38f",
+    "fixtures/mechanism/parity.json": "3dcfe14cf1323d60f649d9eeb5ce44db047a16da90c1888789b62cef5871c112",
+    "fixtures/mechanism/development.json": "ff6986475c020efe74182fe4184a96606dac165e994aa6c44466747f0fb12a1c",
+    "fixtures/mechanism/heldout.json": "53eb13186f8a07a30a061dffdc7ca531f2da39633feb74f97226eae270da998f",
+    "fixtures/mechanism/manifest.json": "10847a2b7bdeaf252e6f4ad8d5e685bc46f1d9f983ff85624157d1c81dc2f9f2",
+    "evidence/mechanism/protocol-v1.md": "b4126dba857be7daed77613665622938260f1d7a67ff031e5f38e6a251404f6a",
+    "artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+    "artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+    "oracle/evaluate.py": "da0bea639a8e843ab8afb7161d800b743283124c134d56db64f504e93c8716b4",
+    "runtime/environment.json": "59e4e0f48c07357c0ff9e7655c559b4c15b96f7ec760d2f6375ce8f8bba9c17c",
+    "runtime/guard.py": "455aca3291038d32c7813035474c9e66735382539c430976aa07b94cc523673a"
+  },
+  "source_exposure": "Evaluator observes reference block0 MLP down_proj correspondence; candidate implementer not given reference code",
+  "admission": {
+    "id": "mechanism-m2-001",
+    "pid": 2850961,
+    "role": "evaluation",
+    "backend": "cpu",
+    "tokens_reserved": 2655,
+    "start": 1794907502.4060001
+  },
+  "environment_observed": {
+    "python": "/usr/bin/python3.12",
+    "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "torch": "2.11.0+cu128",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "tf32": false,
+    "deterministic": true,
+    "deterministic_warn_only": false
+  },
+  "planned_positions": 2655
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_POSTRUN_IDENTITIES_HISTORY_RESOURCES",
+  "history": {
+    "tokens_reserved": 1036688,
+    "download_bytes": 138166822,
+    "gpu_seconds": 12.621721199015155,
+    "gpu_seconds_reserved": 240.0
+  },
+  "ledger_sha256": "a893d349de043fbe7c6750d09e53be0e732476f23e9e0f4c7e9418b9649acbd9",
+  "stage_bytes": 4035503152,
+  "phase_cap_bytes": 4294967296,
+  "free_bytes": 65994268672,
+  "phase_deadline": 1795004608.7803597,
+  "phase_start": 1795001008.7803597,
+  "active_runs": 0,
+  "lifetime_reserved": 1137888,
+  "remaining_lifetime": 0,
+  "source_manifest_sha256": "a079d11e4fedffd1aaf3bd2f3bbaf4111c5b4a733f0f614083519d37262f284a"
+}

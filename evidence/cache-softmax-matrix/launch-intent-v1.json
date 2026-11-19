@@ -1,0 +1,7 @@
+{
+  "status": "NOT_EXECUTED",
+  "cwd": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118",
+  "producer_command": "/usr/bin/python EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runtime/softmax_matrix_guard.py --workspace EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118 --policy EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runtime/softmax-matrix-policy.json --policy-hash 92fe6bf42dfe3537e5123e988be9205905197871f2e9eac2609e65300cc8e102 --admission './evidence/cache-softmax-matrix/review/runtime-admission-v1.json' --run-id cache-softmax-matrix-producer-v1 --kind model --positions 50600 --timeout 900",
+  "independent_command": "/usr/bin/python EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runtime/softmax_matrix_guard.py --workspace EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118 --policy EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-matrix-001-20261118/runtime/softmax-matrix-policy.json --policy-hash 92fe6bf42dfe3537e5123e988be9205905197871f2e9eac2609e65300cc8e102 --admission './evidence/cache-softmax-matrix/review/runtime-admission-v1.json' --run-id cache-softmax-matrix-independent-v1 --kind model --positions 50600 --timeout 900",
+  "manifest_sha256": "05be22754d6fdccf48addaeb169fa5a688289d6444172116f2a895b23811f938"
+}

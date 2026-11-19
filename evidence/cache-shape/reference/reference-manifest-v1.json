@@ -1,0 +1,26 @@
+{
+  "schema": "SHAPE-CACHE-REFERENCE-001",
+  "status": "PREPARED_SYNTHETIC_PASS_TARGET_NOT_RUN",
+  "files": {
+    "./src/minimind_re/shape_cache_reference.py": "00a1283645c79aac9befeb04a3a21dbb4884150893695bdce35cb32136009b3a",
+    "./tests/test_shape_cache_reference.py": "11c6917f50f15353258ab7466640913398ac6ca553e7880c7c4509296ba0b4b5",
+    "./evidence/cache-shape/reference/design.md": "a4a38e1b6fee8973f571a07c7f39750d3619e67baa4ef100bae04fa9ab6b5631",
+    "./oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "./oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c"
+  },
+  "api": "shape_cache_reference(adapter, capture=False) context manager",
+  "tests": {
+    "passed": 6,
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src:. python -m unittest discover -s tests -p test_shape_cache_reference.py -v"
+  },
+  "target_model_calls": 0,
+  "checkpoint_loads": 0,
+  "tokenizer_calls": 0,
+  "producer_candidate_read": false,
+  "limitations": [
+    "target numerical behavior unexecuted",
+    "unpadded single-token cached scope",
+    "historical R2 FAIL unchanged"
+  ],
+  "independent_review": "PENDING"
+}

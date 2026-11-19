@@ -1,0 +1,78 @@
+{
+  "verdict": "PASS_SCOPED_THIRD_APPLICATION_DELIVERY",
+  "reviewed_utc": "2026-11-19T00:58:19.024291+00:00",
+  "manifest": "evidence/transfer-003/delivery/final-delivery-manifest-v1.json",
+  "manifest_sha256": "f0b097d5183e1f256901b03c0355daaa98602d1e533da5b92bec9816db2af783",
+  "local_files_verified": 257,
+  "external_metadata_files_verified": 2433,
+  "acceptance_review_hashes": {
+    "science-review-v2.json": "c39f1bd9a10f318ef3ed91d83fc023b43e3041de69958d5c83e7775f37e8d633",
+    "full-review-v2.json": "fa9c83e11fd60e2b94c5350f464c05c0337c5cda9ccc697d0edc83e65d874d62",
+    "atlas-actual-v2.json": "67a97c9740b7d1ca29f1275029d21565ba1e20b1eac900f5c38dbbd3bf99cafc",
+    "report-draft-v1.json": "3d090d7eaaa8cec510e79f7ba9b9b2ad9a7246641f13724aeec4c47a65506f4e"
+  },
+  "raw_payload_review_reuse": "Exact accepted numerical, atlas and scientific raw-payload reviews reused; no new model or payload replay. Indexed metadata directly rehashed.",
+  "S0": "PASS pinned identity, preservation and actual admitted runtime receipts",
+  "S1": "PASS all160stored tensors148learned124439808parameters12buffers with source-assisted map; derived population std caveat retained",
+  "S2": "PASS independently repeated16fixture numerical matrix,15boundaries1680comparisons,1440identical arrays zero core error",
+  "S3": "PASS actual attention trace independently reconstructed QK/causal-softmax and attention@V",
+  "S4": "PASS all16heldout eligible, actual native/candidate edits and controls,6584raw arrays byte-identical across actual repeat; qualified REFUTED magnitude claim",
+  "S5": "PASS final reports/reuse matrix/usage/plot/provenance and exact manifest audit",
+  "scientific_result": {
+    "selected_layer_head": [
+      8,
+      8
+    ],
+    "median_P": 0.08404521678273584,
+    "median_Q": 0.09451938285766666,
+    "positive_Q_pairs": 16,
+    "verdict": "REFUTED",
+    "scope": "Frozen head-transfer effect thresholds only, not head uselessness or entire-model understanding"
+  },
+  "plot": {
+    "independent_model_free_rerender": true,
+    "png_svg_byte_identical": true,
+    "visual_inspection": "Clear full16points, medians, threshold lines, independent-repeat annotation",
+    "draft_metric_data_unchanged": true
+  },
+  "usage": "Documented plotting command executed against a copied tree with exact environment prefix; deterministic outputs match. Consumed runtime admissions explicitly forbidden; no standing rerun permission or fourth-model schedule.",
+  "historical_preservation": {
+    "old_manifest_files_checked": 43,
+    "mismatches": 0,
+    "mutable_old_tasks_excluded": [
+      "./specs/001-minimind-reproduction/tasks.md"
+    ],
+    "pythia_strict_cached_full": "FAILED_UNCHANGED",
+    "three_model_metrics": "Explicitly not ranked: earlier minimum-direction versus GPT2 mean-direction plus distinct interventions/contrasts"
+  },
+  "accounting": {
+    "external_count": 2433,
+    "external_bad": [],
+    "ledger_sha256": "a2996e348a4c10636ac448426bea3a0acce820baca705ee8ea8bedbece6c8429",
+    "live_ledger_matches_snapshot": true,
+    "reserves": 9,
+    "finishes": 9,
+    "seconds": 4320,
+    "reserved_positions": 86112,
+    "actual_positions": 24712,
+    "calls": 2612
+  },
+  "active_transfer3_python_executors_observed": [],
+  "tasks": "Frozen final-candidate snapshot T001-T017 complete,T018 pending this audit; no unmet scientific/runtime requirement. Older pending checkpoint paragraphs are explicitly historical.",
+  "required_changes": [],
+  "remaining_substantive_work": [],
+  "authorized_next_action": "Controller may accept third scoped application and close T018/root state through a separate coordination-only overlay preserving snapshots; do not rewrite this manifest or its bound files. Then standby; no fourth model or further target work.",
+  "model_calls": 0,
+  "target_loads": 0,
+  "implementation_edits": 0,
+  "evidence": [
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/final-delivery-review-v1/metadata-checks.json",
+      "sha256": "8506f440511a0eb7302b43d3bd40f6a9b721edad033a21a0cd1e94b11aa93efa"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/final-delivery-review-v1/historical-checks.json",
+      "sha256": "076f68ca4957e979edd22d41b960ddb4e42589c8510980d1517f1ee71a4373b9"
+    }
+  ]
+}

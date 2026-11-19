@@ -1,0 +1,80 @@
+{
+  "status": "success",
+  "verdict": "PASS_INDEPENDENT_REPEAT_WITH_INCONCLUSIVE_SCIENTIFIC_RESULT",
+  "reviewed_at_epoch": 1794908209.2394643,
+  "executor": "/root/review_mechanism_protocol",
+  "runtime_ownership": "released; final authorized model slot consumed; no further model runs",
+  "run_id": "mechanism-independent-repeat-v1",
+  "repeat_receipt": {
+    "path": "evidence/mechanism/independent/repeat-v1.json",
+    "sha256": "6fca282b5f9f744f860268489ffc1e3b195a6f0d295bcf5e87a1557afc7320a6"
+  },
+  "stage_artifacts": [
+    {
+      "stage": "M2",
+      "path": "evidence/mechanism/independent/m2-v1.json",
+      "sha256": "aecaebcc4967e84893b8468291060c82a99e8099d52a95e0b751e575e4338a2c",
+      "input_positions": 2655,
+      "model_calls": 60
+    },
+    {
+      "stage": "heldout",
+      "path": "runs/mechanism/independent-heldout-v1.json",
+      "sha256": "9bbdb70abf193f5c768fb9e346febb914c44f57a5ff5f4de3d098f896dbac60a",
+      "input_positions": 1985,
+      "model_calls": 160,
+      "packet": {
+        "path": "evidence/mechanism/independent/heldout-packet-v1.json",
+        "sha256": "77ad92abaf872108e0e1df39887676711e36cbf6aa6bf98a14048677aa931009"
+      }
+    },
+    {
+      "stage": "metrics",
+      "path": "evidence/mechanism/independent/metrics-v1.json",
+      "sha256": "37b0433debd6005b926c2143628d665385793d4e06b37e27fbe16e5bf869f787",
+      "input_positions": 0,
+      "model_calls": 0
+    }
+  ],
+  "journal_sha256": "1c30dd6387d38c4e5d27fca7c3450438a9a0bf0cb8def47aac8f49f1ad27beb7",
+  "postrun_identity_entries_matched": 40,
+  "M2": {
+    "verdict": "PASS",
+    "required_rows": 144,
+    "required_failures": 0,
+    "maximum_absolute_error": 0.0,
+    "checks": 225,
+    "check_failures": 0,
+    "cross_padding_diagnostic_rows": 32,
+    "cross_padding_diagnostic_failures": 9,
+    "diagnostics_gating": false
+  },
+  "heldout": {
+    "rows": 32,
+    "arms_per_row": 5,
+    "paired_rows_exact_to_producer": true,
+    "independent_metric_checker": "PASS",
+    "scientific_verdict": "inconclusive",
+    "repeat_verdict_agreement": true
+  },
+  "resource_accounting": {
+    "reserved_and_actual_positions": 4640,
+    "model_calls": 220,
+    "wall_seconds": 9.334912932943553,
+    "cpu_seconds": 14.254246,
+    "gpu_seconds": 0,
+    "peak_child_rss_kib": 1837132,
+    "disk_free_bytes_at_completion": 2680311808,
+    "lifetime_tokens_reserved": 168040,
+    "original_deadline": 1794912024.8448846,
+    "completed_before_deadline": true,
+    "active_ledger_rows": 0
+  },
+  "limitations": [
+    "Scientific effect thresholds not met; no copying-specific mechanism discovery established.",
+    "Copying baseline top1 accuracy1/16 and unrelated0/16; expected-vs-foil success is a narrower task.",
+    "Original R2 remains FAIL, original R3 NOT_RUN; unresolved cache/full and cross-padding diagnostics preserved.",
+    "Actual installed PyTorch hook tool validated; no external interpretability framework capability claimed."
+  ],
+  "next_action": "Coordinator may record amended M2/M3/M4 completion from independent receipts and produce bounded truthful delivery; do not launch another hypothesis or model run."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "AMENDMENT_DRAFT_FOR_INDEPENDENT_REVIEW",
+  "prior_files": {
+    "specs/002-model-transfer/spec.md": "5d0b2264dd77041c7b8f1d6eb21073f7e6d7444be40b9517147d2c00c06aff6b",
+    "specs/002-model-transfer/plan.md": "2ca5fd96e6072b79cd1241ea1764b59ddce1556be2a9f375542c259270edfaa8",
+    "specs/002-model-transfer/numerical-protocol.md": "305421951fee77843c37d15c0830df69d0d4b1c36f9840573781601861c7c87d"
+  },
+  "prior_snapshots": {
+    "evidence/transfer-002/amendments/canonical-affine-v1/prior-spec.md": "5d0b2264dd77041c7b8f1d6eb21073f7e6d7444be40b9517147d2c00c06aff6b",
+    "evidence/transfer-002/amendments/canonical-affine-v1/prior-plan.md": "2ca5fd96e6072b79cd1241ea1764b59ddce1556be2a9f375542c259270edfaa8",
+    "evidence/transfer-002/amendments/canonical-affine-v1/prior-numerical-protocol.md": "305421951fee77843c37d15c0830df69d0d4b1c36f9840573781601861c7c87d"
+  },
+  "amended_files": {
+    "specs/002-model-transfer/spec.md": "5c509af8c0b8689a6cc0c4f5e4c9199f3ed4aa0206b876d2c5d69dba577e8e16",
+    "specs/002-model-transfer/plan.md": "2ab40a546147d36a709a865af58b23cf6bd7d113b9b544f9018afec5a797d021",
+    "specs/002-model-transfer/numerical-protocol.md": "4d373be0c76795b242b23d2433a87bebdc0625ff95bc67c721b82efa36a445d9",
+    "specs/002-model-transfer/resource-amendment-v1.json": "9db9b28b559ff8a3a7b9c0f78d6dac9d76d2a0c0722c1d7662668447ce9ff18d"
+  },
+  "no_runtime_changes": true,
+  "claims": "Conditional mode only; original failure preserved; source/ledger/coordination state unchanged"
+}

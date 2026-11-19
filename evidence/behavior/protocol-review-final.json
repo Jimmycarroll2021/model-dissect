@@ -1,0 +1,15 @@
+{
+  "status": "PASS_STATIC_PROTOCOL",
+  "protocol": "evidence/behavior/protocol-v1.md",
+  "sha256": "593cb1eae7738b971889e00b538f419cb026df2218a9d9ba5e801e5acce0fce0",
+  "checks": [
+    "Fixed three families, thresholds, lowest-two selection, fresh qualification",
+    "API-rendered bytes authoritative; no manual unescaping",
+    "Negative independent repeat",
+    "Original deadline and lifetime totals; strict aggregate caps"
+  ],
+  "limitations": [
+    "No runtime evidence; executable/fixture admission remains separate"
+  ],
+  "review_epoch": 1794910461.6183724
+}

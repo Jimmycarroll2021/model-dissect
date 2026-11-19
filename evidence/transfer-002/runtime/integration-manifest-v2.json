@@ -1,0 +1,55 @@
+{
+  "status": "READY_FOR_INDEPENDENT_REVIEW_NOT_RUNTIME_ADMITTED",
+  "identities": {
+    "./src/minimind_re/transfer/reference.py": "8a51ae0afd3f96235da91daf4f338441f2015ce110f95bd2a2a9dccebaf05811",
+    "./src/minimind_re/transfer/numerical.py": "437076483a9c9d8f2ebcd267c787f6bfa4d6e717e3ad046d812227b74b921152",
+    "./src/minimind_re/transfer/guard.py": "e93adb417214cb9b3c66c4eb2456cf92bbcf602e692a04a68df1b6a33d1d3655",
+    "./tests/transfer/test_reference_and_protocol.py": "309235515ff01f7c6db21565c1888a3d072b7456d960c1d130279ab2aa2379f7",
+    "./evidence/transfer-002/runtime/fixture-proposal-v1.json": "7b8f4fe275bcda41dd4608c5194ddbaeefb6b6993545242b46d0cc8be85c1220",
+    "./evidence/transfer-002/runtime/storage-v1.json": "7d7a4afc709f51156c032f663184dd4af23ca2230cd5bfd68c4e4c11f248ac0a",
+    "./evidence/transfer-002/runtime/tests-v1.txt": "0efefedbd55b28da5789a53d5621996c3a8abcf6708bcdf06d72f8c61f353318",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py": "1a329e0f839999e74d485ea5d0cf6bae36f389577a51db4887d9ee7837a29ff8",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/models/gpt_neox/configuration_gpt_neox.py": "179103f2cd5ff557cb6bf8543cf8eaaa4c925ca098314b5d5b9f2e7401266e7d",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/cache_utils.py": "33070d40e73998b09369cbf5f4846fae40034155d0d71d52508493888ab98143",
+    "PRIVATE_HOME/.local/lib/python3.12/site-packages/transformers/masking_utils.py": "0ca0ae8680c31947bd1111d92c11363c3d4d687efbd441f3431832fd2a8335a3",
+    "./src/minimind_re/transfer/checkpoint_inventory.py": "45f53a1ef923db98db073256869fa18235522f0fba6e212496f18aa0268d26b1",
+    "./src/minimind_re/transfer/run.py": "083e2704b8f99f7e1314c467f36232ca005fd8064cd7c011f1bfc9aacccd9253",
+    "./src/minimind_re/transfer/atlas.py": "34eed1330166fb04a53c056b9d12453e668e61b5290b228feba96810ff53a27b",
+    "./src/minimind_re/transfer/gpt_neox_candidate.py": "01a5abc2be91451df45fe744482c2b7b4abff05fbc841fba232063d977e5a85f",
+    "./src/minimind_re/transfer/__init__.py": "a6318acd38c71150493f89c7360b00710e602845c5d58276c76ea13fe5c0363e",
+    "./tests/transfer/test_runtime_integration.py": "b70e605aa89bc556a386bdcf6bddb036be244ff1aade328d3c59daaee3436e2e",
+    "./evidence/transfer-002/runtime/integration-tests-v1.txt": "ae60eefef7f5aa6bf5877c1ada801827f74fec97aa0528aa5407faca73a99edf",
+    "./evidence/transfer-002/runtime/tests-v2.txt": "e548f0461b5c46135fd746bf964e0bbf383eaa308c8c1cf360328013d82fd8dc",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/model.safetensors": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/generation_config.json": "494cbba887cc299273f0c54d7612596918e74c7881a27cbd95e4e7e2464ea090",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/README.md": "d1f2cf1d5181daedeaa70208ddd5cc5251867bde9acf6db7bb45a2265e25e163",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/tokenizer.json": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/tokenizer_config.json": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/config.json": "f97f966a66c444890ed461fff2a51eefb15d74303df05b948124719f199b0b17",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/artifacts/original/special_tokens_map.json": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c"
+  },
+  "packets": {
+    "./evidence/transfer-002/runtime/static-producer-v1.packet.json": "53ab7e42fe9a18fdb4d6f23e81f84425981bbd80cafdcf7bfb54f13a484e629d",
+    "./evidence/transfer-002/runtime/static-independent-v1.packet.json": "d2e615fc6fe6c3620cd9a47a95de1b14aaebd2db480b839cdad8481aefef9dc1",
+    "./evidence/transfer-002/runtime/numerical-producer-v1.packet.json": "8b74c3b0da39a92f37a43495a267147016a9211cdb3f0b7f8db0e08043fe3a22",
+    "./evidence/transfer-002/runtime/numerical-independent-v1.packet.json": "eaa238b262118b39bf04e72b2c32d373af3f4077ff855cba1706b793c5f5f123"
+  },
+  "tests": "9 protocol/guard plus 2 integrated supervisor-child tests pass; no target load",
+  "changes_from_v1": [
+    "guard v2 permits zero positions only static stage; forward budget remains zero",
+    "numerical validates exact 50304/128 boundary shapes and FP32 finite arrays",
+    "reference validates all loaded native parameters finite",
+    "concrete supervised CLI and four identity-bound packets"
+  ],
+  "reservations": {
+    "positions": 68800,
+    "seconds": 2040,
+    "disk_bytes": 17213423616
+  },
+  "limitations": [
+    "Independent exact review required",
+    "No target execution",
+    "Fixture proposal producer-visible; evaluator approval required",
+    "No parent-death containment proof; owned process-group watchdog only"
+  ]
+}

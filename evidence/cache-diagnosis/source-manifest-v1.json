@@ -1,0 +1,21 @@
+{
+  "schema": "CACHE-OPERAND-001-source-manifest",
+  "status": "PREPARED_NOT_ADMITTED",
+  "files": {
+    "./src/minimind_re/cache_operand_probe.py": "f4b0d82b6b20739c6b4044cd81a23d69a5a9edcbab0be58b4eec362560c6d67d",
+    "./tests/test_cache_operand_probe.py": "0fdb4e2958b06c7908e7f4707a2e7c6b838ddddddf55e2d60efe69689ea87c14",
+    "./evidence/cache-diagnosis/protocol-v1.md": "5bbd8c571d0b47e712f63550753e2bb16bddfc8ee236746fd83e1073c128ceb3",
+    "./src/minimind_re/forward.py": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+    "./src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "./src/minimind_re/__init__.py": "88be1d5a0d419129ad03d87a0d6c934d7bd802bef013292d45040deffb4c1879",
+    "./oracle/adapter.py": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c",
+    "./oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "./oracle/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "./fixtures/continuation/parity.json": "f9411b52e3613337ec53a4916f6c4791af5a12fb9c44aed8ac4a73c0e23602af",
+    "./artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874",
+    "./runtime/environment.json": "59e4e0f48c07357c0ff9e7655c559b4c15b96f7ec760d2f6375ce8f8bba9c17c"
+  },
+  "checkpoint_expected_sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+  "checkpoint_status": "expected original acquisition identity; admission must rehash actual path",
+  "guard": "NOT_IMPLEMENTED_OR_STAGED"
+}

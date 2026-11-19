@@ -1,0 +1,43 @@
+{
+  "status": "READY_FOR_INDEPENDENT_WHOLE_OBJECTIVE_REVIEW",
+  "scientific_mode": "cached-softmax-power-of-two-v1",
+  "scientific_full_matrix_status": "INDEPENDENT_PASS_BOTH_MATRICES",
+  "scientific_candidate_manifest_sha256": "05be22754d6fdccf48addaeb169fa5a688289d6444172116f2a895b23811f938",
+  "independent_final_receipt_sha256": "956615edb52d3017d9f43b36bbc497733960e5d3633f9b936348d4f3a4c03e8a",
+  "files": {
+    "./README.md": "7b4279579a18a3986afd55b628137a351878170bb700f7577c4c1fbcf2c24e3c",
+    "./docs/cache-softmax-matrix-result.md": "8e127f948c93f81697b834a11750663ba9c5b3d60636dd6a33124e4c5e33e9ab",
+    "./docs/reverse-engineering-workbench.md": "fc8dfb9b1648579187845a8c2278cde88b1e4d7d6a0df9ba4b5456586c442605",
+    "./specs/001-minimind-reproduction/quickstart.md": "8c2ee2acb1330d5fdb2ea4bd4eb11d87178388b16482d033ad356be38b95b366",
+    "./specs/001-minimind-reproduction/spec.md": "dbcc85113facb7e60f1fc80a4a6058456f40ee4e441b7080b024a2676badf652",
+    "./specs/001-minimind-reproduction/plan.md": "6369fbb33a2f16fa584f211ffed499acae089b4bda9243a7eec6f332dfddf65e",
+    "./specs/001-minimind-reproduction/tasks.md": "a53e61ed5e2fdc5082474496ae726110095e620e10b4e93d0b1ee7f39e7d41be",
+    "./evidence/cache-softmax-matrix/candidate-manifest-v1.json": "05be22754d6fdccf48addaeb169fa5a688289d6444172116f2a895b23811f938",
+    "./evidence/cache-softmax-matrix/review/runtime-admission-v1.json": "c77cd000c6a05e162b4da812635c8ff8f6b66f286c24dd20ecdcde866e3529bc",
+    "./evidence/cache-softmax-matrix/review/independent-repeat-final-v1.json": "956615edb52d3017d9f43b36bbc497733960e5d3633f9b936348d4f3a4c03e8a",
+    "./evidence/cache-softmax-matrix/producer-terminal-v1.json": "7e9a1be5f34bff3cf8df4407bc10ac8675fd4d3101a301e89a36c1a45d6df2cb",
+    "./evidence/cache-softmax-matrix/launch-intent-v1.json": "d3ccc07f0ddb44cf9160644d1e7adca06b83ecc0ca5fee18720dc002825704b6",
+    "./src/minimind_re/softmax_bucket_candidate.py": "b9d685f1af23267b7e8c904b01a06e81ae9d7e47fdf71a42688b2b55000c88b3",
+    "./src/minimind_re/softmax_bucket_reference.py": "fb8ec4b8218ac7e49087f5dfb44bee535681696e3049678a83b631f10b43d464",
+    "./src/minimind_re/softmax_bucket_matrix_probe.py": "22b247938019920dae98aaa40c5308547aa4b2589ed1242513cb81f566a92867",
+    "./docs/cache-shape-matrix-result.md": "f375de97ed46c2492e654032a3c8f5e2aaf2d3ee4a9200b7bda04958279c94de",
+    "./docs/cache-shape-followup-result.md": "37e02bcf2b64476376e24b16cf054f38cefd81a5837a35e950927bbde883ad04",
+    "./docs/model-computation-map.md": "5b34f92a2d16d0aebdc2e13f8e6c51ed0aff5ac44834e831acad06b3c1644e96",
+    "./docs/actual-input-walkthrough.md": "d5b96adb4b026509a6f3d293f05978bb5f135f551b3f6830651aa019bb6f8b5e",
+    "./docs/echo-mechanism-result.md": "85d5677f7ad53dbc2e13a4a1f2d4f0eacbd6ed828f4d1a4ad522a9a464b984da",
+    "./docs/weight-atlas-result.md": "57ca7c45f503fc0a8d4478d07eefed6885f71fde86b0caa5d7ceba058f1d5cdb"
+  },
+  "prior_snapshots": {
+    "./evidence/cache-softmax-matrix/delivery/prior-specs_001-minimind-reproduction_spec.md": "27e8e06c91459a510cfa491fb4dea4cae59c06e53c5dbf18bbc69c7a6e9f3377",
+    "./evidence/cache-softmax-matrix/delivery/prior-specs_001-minimind-reproduction_tasks.md": "31923329ea9bb76e46b46304b9117fbc0c1de7bb6c77a2e0d3e84f1c02f13acb",
+    "./evidence/cache-softmax-matrix/delivery/prior-README.md": "31e0ae2b0d46c08efcd1f32673030e78f8ef95af4ca21dc6d3359313e9607af9",
+    "./evidence/cache-softmax-matrix/delivery/prior-specs_001-minimind-reproduction_plan.md": "46bc6d88169d77ee0b1cce506754aba0123405808f2ddd2e64917805f075894c",
+    "./evidence/cache-softmax-matrix/delivery/prior-docs_reverse-engineering-workbench.md": "f906aa5b2eeb6f4be60353e29bb42a8899bff4e40cdbc2cc61d5c41aca0c4989",
+    "./evidence/cache-softmax-matrix/delivery/prior-quickstart.md": "2e6b54c545f2d0d7c0508e38300f454408bb64f9e859319a81b58621efbf1df1"
+  },
+  "checks": {
+    "./evidence/cache-softmax-matrix/delivery/checks-v1.json": "e171392976e3bf907c1df48e717cd07d4bc31a47d929a3c0e3e11c3f55510b5c"
+  },
+  "whole_objective_complete": false,
+  "remaining": "Separate final R0\u2013R4/B1\u2013B6 integration audit and controller acceptance; T121 remains open."
+}

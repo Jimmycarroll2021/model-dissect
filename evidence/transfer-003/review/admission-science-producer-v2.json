@@ -1,0 +1,21 @@
+{
+  "verdict": "PASS",
+  "packet_path": "./evidence/transfer-003/runtime/additive-v2/packet-science-producer-v2.json",
+  "packet_sha256": "3636639225d33d0884d6e759ef01a9dacd0d5b567dcc62760bed552384548d49",
+  "reviewer": "third_science_verifier",
+  "review": "./evidence/transfer-003/review/atlas-science-packets-v2.json",
+  "review_sha256": "f33c36c3032b7d25518efe41b8049d800f3adbc24fdbbf3fafc9a87b397ebf18",
+  "positions": 40000,
+  "seconds": 1200,
+  "disk_bytes": 1073741824,
+  "operation": "science",
+  "role": "producer",
+  "execution_path": "Existing additive_run launch supervisor and PhaseGuard; no direct child bypass",
+  "preconditions": [
+    "fresh readiness and coordinator serialized resource handoff",
+    "unchanged identities and unused run ID",
+    "retain all terminal, raw and preservation evidence"
+  ],
+  "utc": "2026-11-19T00:26:08.574744+00:00",
+  "conditional_on_producer_acceptance": false
+}

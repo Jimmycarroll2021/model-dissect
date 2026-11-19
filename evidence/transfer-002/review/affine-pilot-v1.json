@@ -1,0 +1,31 @@
+{
+  "verdict": "PASS_EXACT_SIX_CALL_PILOT",
+  "reviewed_utc": "2026-11-18T19:46:32.009934+00:00",
+  "checks": {
+    "manifest": true,
+    "packet": true,
+    "files": true,
+    "packet_identities": true,
+    "environment": true,
+    "budget": true,
+    "unused_output": true,
+    "settled_ledger": true,
+    "aggregate_budget": true,
+    "capacity": true,
+    "phase_time": true
+  },
+  "packet_sha256": "c35f0e76b03ecb3d94567af659c6e67fc2288b73b5a7b8d588d7e3b96a10e459",
+  "manifest_sha256": "2ce1bb28aa2d5851ceeda563f1faa5fb2738290ece9ad5665516b7a3395c2776",
+  "tests": "3 native adapter synthetic tests passed independently in0.67s; candidate reviewed separately",
+  "source_review": [
+    "Reference patch independently implements fixed[2,H] row geometry only for QKV affines; normal/exception/partial-setup cleanup verified.",
+    "Candidate and reference share no mathematical adapter helper.",
+    "Original native prefill/full arrays are pinned and retained as36 unchanged-threshold anchor comparisons.",
+    "27cross+18cachefull+36anchor=81 rows; exact logits argmax required.",
+    "6calls8positions;9boundaries+12cache arrays percall plus24incoming arrays gives150arrays1716224raw bytes.",
+    "All arrays persist before finite/cache/numerical rejection; genuine cached query positions maintained."
+  ],
+  "limits": [
+    "Diagnostic admission only; no full numerical promotion or further runs permitted by receipt."
+  ]
+}

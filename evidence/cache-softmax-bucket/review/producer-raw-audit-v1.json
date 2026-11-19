@@ -1,0 +1,18 @@
+{
+  "status": "PASS_VALID_LIMITED_SCREEN",
+  "role": "producer",
+  "result_sha256": "6e002a043590444138c51d4fad3c5b3649fe9f349252a5a887165e5919d470a8",
+  "calls": 28,
+  "actual_positions": 88,
+  "rows_recomputed_exact": 80,
+  "row_failures": 0,
+  "source_fidelity_rows": 32,
+  "returned_prefix_tensors_independently_bytechecked": 256,
+  "inprocess_checks_reported": 512,
+  "inprocess_input_mutation_checks": 256,
+  "prefix_limit": "Saved archives independently establish256returned-prefix checks; input-object mutation256checks are in-process-only, supported by reviewed clone/assert code and successful completion; pre/post input clones were not separately persisted.",
+  "max_tolerance_ratio": 0.0,
+  "max_final_cache_full_ratio": 0.0,
+  "source_fidelity_precedes_all_cached_calls": true,
+  "finite_tensors_all_archives": true
+}

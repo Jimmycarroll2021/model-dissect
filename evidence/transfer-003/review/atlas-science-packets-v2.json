@@ -1,0 +1,55 @@
+{
+  "verdict": "PASS_EXACT_PACKETS_WITH_CONDITIONAL_INDEPENDENT_REPEATS",
+  "utc": "2026-11-19T00:26:08.574195+00:00",
+  "report": "./evidence/transfer-003/review/atlas-science-packets-v2.md",
+  "report_sha256": "d3b739fa4ca79c0c8372ba39c1db33f51ea275e86151a3293b39483a7f0ee9b1",
+  "evidence": {
+    "evidence/transfer-003/review/token-corpus-v2-check.py": "156866c79ccd29bf60296ee0ae4a0dda86a80c8dd4a155bf5a2521f0828c5315",
+    "evidence/transfer-003/review/token-corpus-v2-check.json": "527782cc91038e59a971d9c31705de012a1fddb03024cf86af65ed4ccda15f64",
+    "evidence/transfer-003/runtime/additive-v2/tokenization-result.json": "3a87e5ef930c26163eca49b2b3939739b24c225335b20f71681f1746d94dbefa",
+    "evidence/transfer-003/runtime/additive-v2/prepared-packets-v2.json": "8d6581fea73a39e4e9dbd3b0ab66a25450bfbe0d44658f9ddbc760f33aaa502e"
+  },
+  "unique_identities_verified": 45,
+  "packets": {
+    "packet-atlas-producer-v2.json": {
+      "sha256": "1a855fdf022da99f8b0471bbfdcde7a62033faace4c8402f7c0512f586184286",
+      "positions": 0,
+      "seconds": 180,
+      "disk_bytes": 134217728,
+      "role": "producer",
+      "operation": "atlas"
+    },
+    "packet-atlas-independent-v2.json": {
+      "sha256": "d9991af94ace7542aaf539c0349618d095436d9e29a63c21ee00b643456be6e6",
+      "positions": 0,
+      "seconds": 180,
+      "disk_bytes": 134217728,
+      "role": "independent",
+      "operation": "atlas"
+    },
+    "packet-science-producer-v2.json": {
+      "sha256": "3636639225d33d0884d6e759ef01a9dacd0d5b567dcc62760bed552384548d49",
+      "positions": 40000,
+      "seconds": 1200,
+      "disk_bytes": 1073741824,
+      "role": "producer",
+      "operation": "science"
+    },
+    "packet-science-independent-v2.json": {
+      "sha256": "23b987528c7dfec28898bc5dd095d60bd5695972d0a47155a392eaa1dc2f08f5",
+      "positions": 40000,
+      "seconds": 1200,
+      "disk_bytes": 1073741824,
+      "role": "independent",
+      "operation": "science"
+    }
+  },
+  "planned_total_reservations": {
+    "positions": 86112,
+    "seconds": 4320,
+    "disk_bytes": 4580179968
+  },
+  "tokenization_verification": "Exact independent saved-ID decoding/text/structure; not independent encoder execution",
+  "target_operations_in_review": 0,
+  "independent_launch_gate": "Corresponding producer evidence accepted and coordinator resource handoff required; guard does not implement this future condition."
+}

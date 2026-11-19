@@ -1,0 +1,19 @@
+{
+  "status": "PASS_MODEL_FREE_BUILD",
+  "target_admission": "NOT_ESTABLISHED",
+  "reviewer": "third_science_verifier",
+  "utc": "2026-11-19T00:11:29.075041+00:00",
+  "artifacts": {
+    "src/minimind_re/transfer3/atlas.py": "be2d9380cb611e96ac126d4cb3d37b43998c4decb3f3e128329ab5cd695cf8dd",
+    "tests/transfer3/test_atlas.py": "5721cc5e2384737cd896713a560c1b571a9fe066a49f2ef6c0e206ab16e6a380",
+    "docs/gpt2-computation-map.md": "742c38a0ab2782ac6cd5e6ea59eb310b14eb62c8478aea8b20dceec5e925d865",
+    "evidence/transfer-003/atlas/manifest-v2.json": "5d1895f11ff36f73150f60df4a828df35824162ea779ac2f0fac60dcb67d991f"
+  },
+  "report": "evidence/transfer-003/review/atlas-build-v1.md",
+  "report_sha256": "4d7042c04b68727696fc183a02c6d6bf87983e11c53e62d41e202434e872ce5c",
+  "target_loads": 0,
+  "target_forwards": 0,
+  "implementation_changes": false,
+  "independent_named_tests": "11 passed in 20.54s (4 science, 7 atlas)",
+  "limitations": "See immutable markdown report; synthetic algorithm success is not target runtime admission."
+}

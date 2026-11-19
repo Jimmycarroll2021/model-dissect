@@ -1,0 +1,21 @@
+{
+  "status": "PASS_FOR_UNCHANGED_NEGATIVE_RESULT_REPEAT",
+  "producer_raw_audit_sha256": "3b239dc9daef7656656354af44b78593c09cb1574071c9b44f44542a08f1d586",
+  "candidate_manifest_sha256": "a079d11e4fedffd1aaf3bd2f3bbaf4111c5b4a733f0f614083519d37262f284a",
+  "ledger_sha256_before": "0fc76eb91bfef434901f2c3c74041b5d7548788da871473ed409a0cdcf8e6823",
+  "phase_start": 1795001008.7803597,
+  "phase_deadline": 1795004608.7803597,
+  "remaining_phase_seconds": 3389.5254991054535,
+  "lifetime_before": 1087288,
+  "independent_reservation": 50600,
+  "lifetime_after": 1137888,
+  "history": {
+    "tokens_reserved": 1036688,
+    "download_bytes": 138166822,
+    "gpu_seconds": 12.621721199015155,
+    "gpu_seconds_reserved": 240.0
+  },
+  "memory_available_bytes": 20840919040,
+  "free_bytes": 68100648960,
+  "stage_bytes": 2086732597
+}

@@ -1,0 +1,44 @@
+{
+  "verdict": "PASS_SCIENTIFIC_PROPOSAL_NOT_RUNTIME_ADMISSION",
+  "reviewed_utc": "2026-11-18T19:20:26.111810+00:00",
+  "protocol_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+  "proposal_json_sha256": "2e8f57cac267fe1907507b6b1e39f271c14d2dfd4ad193138f9364706f62bb9b",
+  "required_protocol_changes": [],
+  "scientific_assessment": {
+    "question": "Bounded distributional effect of a matched donor residual replacement versus one deterministic equal-norm orthogonal perturbation at an intermediate block output",
+    "metric_meaning": "Min bidirectional recovery of a pair-adaptive but prespecified baseline digit-free vocabulary contrast. The max/min baseline-difference rule maximizes observable baseline separation; it is not a semantic target, calibrated probability of mechanism or model fraction. Fixed heldout rule and no intervention-outcome contrast selection avoid result-driven target selection.",
+    "nontriviality": "Excluding final block avoids direct replacement of the state immediately before final normalization/unembedding. Full-vector intervention remains coarse and naturally donor-directed; it establishes local conditional block-output sensitivity, not a localized head/circuit or unique mediator.",
+    "holdout": "Eight development and sixteen heldout text pairs with unique names; noun families repeat. Protocol discloses limited name-context generalization and procedural rather than enforced isolation. Runtime must keep heldout baseline/patch outcomes out of selection until receipt frozen.",
+    "control": "Same-site norm-matched orthogonal vector with reverse-sign reuse is a useful nontrivial direction control. One deterministic roll-derived direction is not a random-control distribution and cannot support uniqueness or generic perturbation superiority.",
+    "weak_denominators": "g>=0.01 and edit norm>=1e-8; zero/ineligible primary scores retain fixed denominators, raw changes retained, all-ineligible verdict explicitly disallows donor-mediated discovery.",
+    "negative_outcomes": "A valid REFUTED or INCONCLUSIVE experiment can supply bounded intervention evidence when all required arms and repeat complete. All-ineligible data supply sensitivity/restoration observations only and cannot be relabelled a qualifying mechanism or automatically satisfy T4."
+  },
+  "verified_counts": {
+    "fixtures": 24,
+    "development_pairs": 8,
+    "heldout_pairs": 16,
+    "sites": 5,
+    "calls_each": 341,
+    "positions_each": 10912,
+    "reserved_positions_each": 11000,
+    "raw_base_bytes_each": 81902080,
+    "disk_reserved_each": 134217728,
+    "science_positions_combined": 22000,
+    "science_seconds_combined": 600
+  },
+  "mandatory_preexecution_conditions_already_declared": [
+    "Native numerical T2 PASS and scientific runner/guard admission",
+    "Pin token arrays/masks/positions before observations; stop without substitution if any length exceeds32",
+    "Freeze exact control/metric dtype and implementation, including zero-delta branch before projection division, tie handling and FP32 cast tolerance",
+    "Selection receipt committed before heldout baseline/patch outcomes accessible to producer selection",
+    "Implementation independently verifies complement preservation, hook counts/exception teardown, full finite boundaries, bitwise noop/restoration and parameter digests",
+    "Exact serialized output estimate and ledger reconciliation, including failed reservations and other work",
+    "Independent actual341-call repetition with exact per-call artifacts and selection comparison"
+  ],
+  "limitations": [
+    "Protocol review only: no tokenization, model loading, target payload reading or inference",
+    "300 seconds and128MiB are resource proposals; runtime time/storage adequacy not measured",
+    "This PASS does not grant execution authority or certify scientific implementation",
+    "Not head attribution, attention-source localization, task competence, necessity, uniqueness, semantic-family generalization or complete circuit recovery"
+  ]
+}

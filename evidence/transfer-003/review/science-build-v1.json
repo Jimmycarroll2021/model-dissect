@@ -1,0 +1,22 @@
+{
+  "status": "PASS_MODEL_FREE_BUILD",
+  "target_admission": "NOT_ESTABLISHED",
+  "reviewer": "third_science_verifier",
+  "utc": "2026-11-19T00:11:29.074830+00:00",
+  "artifacts": {
+    "src/minimind_re/transfer3/science.py": "93b231b47c171660a403e5875f818e74eb389e7b1a8893da68772a608560067d",
+    "tests/transfer3/test_science.py": "dc5dbb590fdd080da1a8512bb4e7b9eb75d0cdab79019e7640a39f1af9352af5",
+    "specs/003-model-dissection/internal-protocol-v1.md": "5e72dbaa6916223862ba31e60a74e65ab5aa15ac043b357230802d528ab0afb5",
+    "evidence/transfer-003/science/protocol-v1.json": "da5469ec7a9c39d8e9b5e35a5e598327f210b41f266955dffa56d14716839eaf",
+    "evidence/transfer-003/science/implementation-v1.json": "ebd5622a20656b2126b09a0f892fe818103264641a2b52dc0240b2ebdd769ae9",
+    "evidence/transfer-003/review/science-build-v1-check.py": "87b73644fb0f55a6db9e4a577ffd0228ab86e15b55962cc266b28922f907c7e6",
+    "evidence/transfer-003/review/science-build-v1-check.txt": "1c14293ccae70cfe42284d68a4c8d6b118fd8ec76a368f319cae5ff91c1c4639"
+  },
+  "report": "evidence/transfer-003/review/science-build-v1.md",
+  "report_sha256": "e365e83d0f90d5ab51d55fff1e2f0a50905b33e10677b912ad4847e2c7cfa2b1",
+  "target_loads": 0,
+  "target_forwards": 0,
+  "implementation_changes": false,
+  "independent_named_tests": "11 passed in 20.54s (4 science, 7 atlas)",
+  "limitations": "See immutable markdown report; synthetic algorithm success is not target runtime admission."
+}

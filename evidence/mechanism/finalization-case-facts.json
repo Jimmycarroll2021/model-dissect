@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "role": "Explicitly authorized clerical CASE_FACTS final-review status synchronization",
+  "path": "CASE_FACTS.md",
+  "before_sha256": "ce6205c658513135de6687332df4e54674b8278e7162f7a9b3755fcd2b3fa1ce",
+  "after_sha256": "2b08c249667fadbb68dbad2f46683e31f9b89ddc86988e8ce79dbc27d8ff372a",
+  "review": {
+    "path": "evidence/mechanism/final-document-review-final.json",
+    "sha256": "deda23176f0c8233ae81bdce4569590a6c61406d7b1c761d0d937588027ecf9a",
+    "status": "PASS"
+  },
+  "changed_occurrences": 1,
+  "all_other_text_exactly_preserved": true,
+  "model_calls": 0,
+  "prior_receipts_modified": false
+}

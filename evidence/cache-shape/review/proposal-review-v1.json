@@ -1,0 +1,31 @@
+{
+  "status": "PASS_PROPOSAL_SCOPE_PENDING_SOURCE_AND_RUNTIME_REVIEW",
+  "reviewed_utc": "2026-11-18T09:20:32.326336+00:00",
+  "proposal_sha256": "d0b5e5c637fa344a7fd0c06e72768f27b403fea802221be471440eba69709c84",
+  "prior_independent_diagnosis_sha256": "c6e59c77278813c755385b56ee5f59aa9dc3fa5d2b056b48c2e09eaba5cd1309",
+  "required_gates": [
+    "Apply cached query-shape policy from first appended token, every layer.",
+    "Only new token hidden/Q/K/V/projection/MLP computed; historical rotatedK/unrotatedV reused, not recomputed.",
+    "Only attention query work padded with zero historical rows; original causal/additive padding masks and actual suffix row extracted.",
+    "Unchanged original no-cache prefill behavior checked against untouched native8/11-boundary outputs.",
+    "Original comparator1e-5+1e-4*abs(reference) for four final cached/full boundaries; separate same-mode exact candidate/reference gates.",
+    "Every append retains every layer historical KV prefix byte-exact; snapshots must precede calls to catch in-place mutation.",
+    "Reference-policy source authored independently; trace anchors must bind actual override code and capture live values.",
+    "All failures/indices retained; no automatic retry or wider numerical changes."
+  ],
+  "accounting": {
+    "actual_positions_each": 63,
+    "model_calls_each": 12,
+    "reserved_each": 128,
+    "reserved_phase": 256,
+    "historical_reserved": 1036432,
+    "lifetime_after_phase": 1036688,
+    "remaining_after_phase": 1856,
+    "full_original_suite_single_run": 16938
+  },
+  "limits": [
+    "Minimal exposed fixture only; original R2 remains FAIL regardless of minimal new-policy outcome.",
+    "Padded attention arithmetic explicitly extra work, no cache-efficiency benchmark claim.",
+    "No runtime admission, model calls, tensor computations or source changes in this preliminary review."
+  ]
+}

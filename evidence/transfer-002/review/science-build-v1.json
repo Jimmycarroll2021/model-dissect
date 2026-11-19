@@ -1,0 +1,64 @@
+{
+  "verdict": "PASS_SYNTHETIC_SCIENCE_BUILD_NOT_RUNTIME_ADMISSION",
+  "reviewed_utc": "2026-11-18T19:24:08.418074+00:00",
+  "manifest_sha256": "47ecf8d2ac9bdccc6dd839f29d38fc155d3fbeec15bac36db1b1c0de705af357",
+  "source_sha256": "534e0076b83c924a499a763b0567971d85978368d35012ff206c0948a65b2df7",
+  "protocol_sha256": "ab8eac0f5a5ad71afbb2f37e1320ab7d7e38bcd9965e7f5fac95e2d236d6452f",
+  "required_changes": [],
+  "producer_utility_tests": {
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m pytest -q tests/transfer/test_science.py",
+    "result": "5 passed in1.59s"
+  },
+  "independent_full_runner": {
+    "script": "evidence/transfer-002/review/science-build-v1-synthetic/check.py",
+    "script_sha256": "dc7952cca543197f44ba40920dad18051dbdf8c978f47ce0264c41e132e3c678",
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python evidence/transfer-002/review/science-build-v1-synthetic/check.py",
+    "result": "PASS",
+    "fake_adapter_only": true,
+    "calls": 341,
+    "positions": 10912,
+    "heldout_provider_at_call": 179,
+    "selection_existed_before_provider": true,
+    "parameter_digest_callback_at_calls": [
+      0,
+      341
+    ],
+    "unique_journal_labels": 341,
+    "all_journal_file_hashes_verified": true,
+    "saved_npy_arrays": 407,
+    "saved_bytes": 82253635,
+    "summary_sha256": "f9f654ec9720121c3985f22cae02710c86bd24784149a26548757e5cebf15150",
+    "journal_sha256": "1c7885896b4c2a3d646aeadbd0fa101fc255194533454d584fd2b206da83d9b7",
+    "expected_synthetic_verdict": "SUPPORTED_BOUNDED_BLOCK_EFFECT",
+    "expected_selected_layer": 0
+  },
+  "independent_metric_checks": [
+    "Direct donor recovery1/control0/gap5 toy calculation",
+    "Weak denominator produces null recovery, primary0 and all-ineligible verdict",
+    "Zero vector, degenerate constant-vector fallback and ordinary orthogonal-control norm/cosine bounds",
+    "Nonfinite baseline rejected"
+  ],
+  "source_review": [
+    "Donor and reverse replacements use baseline recipient/donor block snapshots; control uses same-site signed orthogonal vector",
+    "All unselected token positions and original hook inputs preserved by PatchHook, exactly one selected-site hit checked",
+    "Fixed8development/16heldout denominators, lower-layer ties and fixed thresholds match protocol",
+    "All341 final50304-logit arrays and48 baseline block arrays plus18 full trace boundary arrays serialized; fake run fits128MiB",
+    "Nine full finite shapes/dtypes checked; all-boundary tool noop/restoration and heldout full-logit/selected-vector noop checks executed",
+    "Selection JSON flush/fsync precedes heldout callback and canonical heldout digest check",
+    "Parameter digest callback called before and after; mismatch path raises; checkpoint identity supplied by external admitted caller",
+    "Trace compares all9 native/candidate boundaries and exact top1; no target science inference from synthetic result"
+  ],
+  "runtime_dependencies_not_certified": [
+    "Actual native adapter exception-path hook teardown must be independently demonstrated; fake adapter has no persistent hooks",
+    "Real in-memory native parameter digest callback, checkpoint revalidation and guard/admission identities must be supplied and reviewed",
+    "Frozen token/mask/position fixtures must be bound to exact protocol texts/IDs; heldout secrecy remains procedural",
+    "Actual output estimate/host memory/time and lifetime ledger reconciliation still required",
+    "Target T2 and separate scientific admission must PASS before execution"
+  ],
+  "limits": [
+    "No target weights/model/tokenizer loads or inference",
+    "341 calls were synthetic Fake.forward invocations, not target model calls",
+    "No real heldout data or mechanism result observed",
+    "This build review does not admit execution or certify independent target repetition"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "status": "TEXT_FROZEN_TOKENIZATION_PENDING_NOT_FORWARD_READY",
+  "owner": "/root/atlas_verify evaluator",
+  "created_utc": "2026-11-17T21:58:13.432752+00:00",
+  "no_model_scoring": true,
+  "split": "development",
+  "cases": [
+    {
+      "id": "a5-development-1-01",
+      "split": "development",
+      "category": "English descriptive",
+      "text": "Describe a quiet room with a wooden desk.",
+      "text_sha256": "47a435d2e674b50ac2f82d26548441b0e58464e847fca851d0f0343010e06f19"
+    },
+    {
+      "id": "a5-development-1-02",
+      "split": "development",
+      "category": "English descriptive",
+      "text": "Explain what a person might notice in a small garden.",
+      "text_sha256": "e1eab595ad4577aea9e60805c785a65233a5d46ab972620b83388a7c3821f1f8"
+    },
+    {
+      "id": "a5-development-1-03",
+      "split": "development",
+      "category": "English descriptive",
+      "text": "Describe the sound of rain against a window.",
+      "text_sha256": "324c8ef4e445a61a7775791def4b292194b9050e065c72684bb2348f8f265f46"
+    },
+    {
+      "id": "a5-development-1-04",
+      "split": "development",
+      "category": "English descriptive",
+      "text": "Explain how a public library is usually arranged.",
+      "text_sha256": "a8a93286f89f8bb56ef8dd7d772054bbec6b97a5551d66c50544562305cf2ecc"
+    },
+    {
+      "id": "a5-development-2-01",
+      "split": "development",
+      "category": "Chinese descriptive",
+      "text": "请描述一间有木桌的安静书房。",
+      "text_sha256": "41859ea865b7410813f0546bbf9c356e0a6045cd2e1c127bb8a421f3721550c1"
+    },
+    {
+      "id": "a5-development-2-02",
+      "split": "development",
+      "category": "Chinese descriptive",
+      "text": "请介绍小公园里常见的景物。",
+      "text_sha256": "d9038d150504561861105daed1b1ebc4ef7635db5299fb9d19323dac396e8c11"
+    },
+    {
+      "id": "a5-development-2-03",
+      "split": "development",
+      "category": "Chinese descriptive",
+      "text": "请描述窗外细雨的声音。",
+      "text_sha256": "36eacdfe614152ae9cbc5bceeb44b8b88bf2b46f1a3cf500c571ed99bd91ed69"
+    },
+    {
+      "id": "a5-development-2-04",
+      "split": "development",
+      "category": "Chinese descriptive",
+      "text": "请介绍社区图书馆的日常用途。",
+      "text_sha256": "26063e3b9654a1fb4ac11665b59da504d2e1652c0acd6ca6ac5ca473cce47375"
+    },
+    {
+      "id": "a5-development-3-01",
+      "split": "development",
+      "category": "English dialogue",
+      "text": "I have a free afternoon. Suggest a calm indoor activity.",
+      "text_sha256": "e90a3f7f60eac8fb1a0a0bc18a268bba5f0af3fdf73b75190dee60b87a7f9996"
+    },
+    {
+      "id": "a5-development-3-02",
+      "split": "development",
+      "category": "English dialogue",
+      "text": "A friend is visiting tomorrow. How could I welcome them?",
+      "text_sha256": "a11428ddc1b9437f830d07fb96787d2398cdcfd0f158f8276829e6294e685eb8"
+    },
+    {
+      "id": "a5-development-3-03",
+      "split": "development",
+      "category": "English dialogue",
+      "text": "I want to organize my desk. Where could I begin?",
+      "text_sha256": "1a136ab67300c6d94dd28f65d97437401064b4ecec8ed01b4fc98313741eab43"
+    },
+    {
+      "id": "a5-development-3-04",
+      "split": "development",
+      "category": "English dialogue",
+      "text": "I am choosing a gift for a neighbor. Suggest something simple.",
+      "text_sha256": "34bbfb29d0f5dedbf4ef62bfd9733479fd60f9bb48df3e10bf9e54cfceee7b4a"
+    },
+    {
+      "id": "a5-development-4-01",
+      "split": "development",
+      "category": "Chinese dialogue",
+      "text": "我下午有空，请推荐一个安静的室内活动。",
+      "text_sha256": "dbe50b97a6c7b6214ca578c5781ec0075346df06a8a11ecd9eade2a1ef37a853"
+    },
+    {
+      "id": "a5-development-4-02",
+      "split": "development",
+      "category": "Chinese dialogue",
+      "text": "朋友明天来做客，我可以怎样欢迎他？",
+      "text_sha256": "cfbe867733513dc0df8e3087f70d25ec284ca65a2ebdfdd0fa0c2142c4e12e8f"
+    },
+    {
+      "id": "a5-development-4-03",
+      "split": "development",
+      "category": "Chinese dialogue",
+      "text": "我想整理书桌，可以从哪里开始？",
+      "text_sha256": "c782dbab5c15f3040b238e9058b386ecd2262d5e2452d9834962546a35dc5279"
+    },
+    {
+      "id": "a5-development-4-04",
+      "split": "development",
+      "category": "Chinese dialogue",
+      "text": "我想给邻居送个小礼物，请给个简单建议。",
+      "text_sha256": "d1187ff1ba528ab608fae9ff245b8f38c204c067860435a91ae5c3c2b4dc40cd"
+    }
+  ],
+  "tokenization_status": "NOT_RUN; input_ids/attention_mask/position_ids/rendering/length checks pending separate authorized preparation. No truncation permitted."
+}

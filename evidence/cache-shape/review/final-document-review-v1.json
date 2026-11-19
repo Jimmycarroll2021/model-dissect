@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-18T09:33:13.171309+00:00",
+  "scope": "Final limited-fixture report verification against exact independent-repeat evidence; not a new numerical audit or full-matrix acceptance",
+  "document_sha256": "4bb86337c8760ff9863ddc42e62968bbf35d6debd5f963aab71b8ded8ea9d6fe",
+  "delivery_manifest_sha256": "1b42f1e66f84dd7947f7b8f3c55b885ed870632d3eb0d4426786a3386a3eab49",
+  "independent_receipt_sha256": "7116e8136467817ae65dfad865b620da0fa89b66cc50bdb3050177e086ddc758",
+  "manifest_files_verified": 6,
+  "links_checked": 6,
+  "required_changes": [],
+  "checks": [
+    "All six bound manifest file identities match, including producer and independent raw JSON results",
+    "All six report link occurrences resolve to live files",
+    "800 repeat arrays, 44 boundary comparisons, 112 final-step layer operands, 96 returned-prefix byte checks, 96 source-reviewed live input-cache checks faithfully distinguish their evidence types",
+    "Reference lifecycle counts and exact restoration match final receipt",
+    "12 calls/63 actual positions each; phase 24 calls/126 positions/256 reserved; lifetime 1036688 and remaining 1856 under 1038544 verified",
+    "Versioned shape-matched policy limited to exposed unpadded length8 plus three single-token appends; no full9/full10 claim",
+    "Untouched original native cached R2 FAIL remains, in-memory parameter hashes explicitly uninstrumented, no full-matrix/padding/long-context/efficiency claim",
+    "Planned matrix counts and disk allowance clearly preliminary and subject to review/approval, with no completed matrix run claimed",
+    "Broader reverse-engineering goal explicitly active"
+  ],
+  "limits": [
+    "No model loading, inference, tokenization, checkpoint payload access or installation",
+    "Numerical audit results rely on exact hashed independent-repeat receipt; not recomputed from arrays during this document review",
+    "Preliminary future full-matrix resource estimates are not certified by this review"
+  ],
+  "final_document_closure": "Accepted for this exact document hash; producer document and manifest retain historical pending-review labels and this receipt supplies final review status."
+}

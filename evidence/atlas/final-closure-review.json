@@ -1,0 +1,46 @@
+{
+  "status": "PASS_IDENTITY_ONLY_STATUS_METADATA_FIX_REQUIRED",
+  "reviewer": "/root/atlas_guard_verify",
+  "created_epoch": 1794954479.600621,
+  "accepted_candidate_manifest": "./evidence/atlas/final-delivery-manifest-v2.json",
+  "accepted_candidate_sha256": "0b968566617fd325f5ea1a72cc09cbeabfd2af3f5ce9ccfefbb3e76abee767ff",
+  "preserved_parent_manifest_sha256": "c702fa8f9010f0877ea509530a504461a6dcaa4e611505e56485ad935ff1315d",
+  "controller_acceptance_sha256": "9034b06afda176cafc8e4946784803c03ae192b83c0dfe34c957bee80db6a9ae",
+  "prior_scientific_review_sha256": "fc68791207e80506cfc3bf246000915f417e9fc6bb00e76463735a42c78dc7a9",
+  "checks": {
+    "all31_current_file_identities": "PASS",
+    "same31_manifest_paths": "PASS",
+    "only_manifest_file_identity_change": "tasks.md T067 checkbox",
+    "reverse_exact_checkbox_recovers_prior_task_sha256": "PASS",
+    "remaining30_scientific_source_report_files_unchanged": "PASS",
+    "original_v1_manifest_preserved": "PASS",
+    "task_state_hash": "87d28e94698591b66a8320dda0b3c2f1dcbc74d60d300672c64611658b7d9680",
+    "case_facts_hash": "c0da4389b95cd489bbfc8173fc202fc873966e1cbf3634df43a7cd1351f2db71"
+  },
+  "unresolved_blockers": [
+    "Additional coordinator criterion: current user-facing status labels still state A6 pending although accepted; minimal status-only correction required before native goal completion."
+  ],
+  "notes": [
+    "Historical checkpoint prose can remain with explicit historical labels; current completion headings/openings must be corrected under newly added coordinator requirement.",
+    "No new scientific review, model execution, tokenization or testing performed.",
+    "Native goal completion remains a coordinator tool action; this receipt does not assert it has occurred."
+  ],
+  "next_action": "Writer corrects current status metadata and links accepted review/controller receipts, freezes new manifest; verifier checks only metadata diff before native goal completion.",
+  "status_metadata_findings": {
+    "docs/weight-dissection-result.md": [
+      1,
+      3,
+      62
+    ],
+    "docs/atlas-goal.md": [
+      1,
+      3
+    ],
+    "docs/weight-atlas-result.md": [
+      3
+    ],
+    "specs/001-minimind-reproduction/tasks.md": [
+      3
+    ]
+  }
+}

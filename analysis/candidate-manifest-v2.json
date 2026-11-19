@@ -1,0 +1,14 @@
+{
+  "candidate_id": "reconstruction-v2-validation-only",
+  "frozen_utc": "2026-11-17T06:53:35Z",
+  "files": {
+    "src/minimind_re/forward.py": "c0074633fd21da99e31cf6f8769bddee71bbcb0d231b3063463799f54620eb81",
+    "src/minimind_re/inventory.py": "1c947ed95eb79c44ab3461efedeb82a6431e09b30e5c68c493c27dbfb946dd66",
+    "analysis/structural-map.json": "5dcca730fb2ed406d9b88f277ae4e47f737931fcb1ce2711f5f7241825061cce",
+    "analysis/exposure-ledger.json": "c74f39988f65d435146195e4d7bdef5774dec084f6835ad0a9832f950258f6f3",
+    "runtime/environment.json": "59e4e0f48c07357c0ff9e7655c559b4c15b96f7ec760d2f6375ce8f8bba9c17c",
+    "artifacts/allowed/supplied_config.json": "63d49dcbb83eedfdaf7f7e731fc17e95ee009ec2f889fe33500231159d261874"
+  },
+  "parent_manifest_sha256": "8ba1b1c3d90c4a93786ad4c3503e41d84abb2d0cf71299e9b66640440584a7b1",
+  "change": "After oracle feedback: reject all-masked rows before computation. No numerical expressions, cache or model operations changed."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS_SCREEN_ADMISSION",
+  "candidate_manifest_sha256": "f589ef6490bc27793efafb1aefe708d0d8f3244d058febbb18d6aec27f67601c",
+  "stage_file_count": 19,
+  "project_file_count": 11,
+  "reviewed_source_unchanged_since_independent_tests": true,
+  "guard_readonly_admitted_validate_history_disk_check": "PASS",
+  "phase_clock": "NOT_STARTED",
+  "actual_model_runs": 0,
+  "actual_tokenizer_loads": 0,
+  "admission_path": "./evidence/behavior-completion/review/screen-admission-v1.json",
+  "admission_sha256": "f8af15223b2361e51a4648ea4ae224e6adee239da08af08e8b50b4ce59906e3f",
+  "argv": [
+    "/usr/bin/python",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response_guard.py",
+    "--workspace",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118",
+    "--policy",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response-policy.json",
+    "--policy-hash",
+    "fd9526336aa45b5e9a30b4ec40ded91d02baf788d45990c2682a754bc4d9c784",
+    "--admission",
+    "./evidence/behavior-completion/review/screen-admission-v1.json",
+    "--run-id",
+    "response-screen-v1",
+    "--kind",
+    "model",
+    "--positions",
+    "54816",
+    "--timeout",
+    "900"
+  ],
+  "shell_command": "PYTHONDONTWRITEBYTECODE=1 /usr/bin/python EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response_guard.py --workspace EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118 --policy EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response-policy.json --policy-hash fd9526336aa45b5e9a30b4ec40ded91d02baf788d45990c2682a754bc4d9c784 --admission ./evidence/behavior-completion/review/screen-admission-v1.json --run-id response-screen-v1 --kind model --positions 54816 --timeout 900",
+  "remaining_gates": [
+    "Guard must pass live locks, hashes, time, disk and RSS at actual invocation",
+    "Within admitted screen, pinned tokenizer rendering must match every prompt before model load",
+    "Qualification only if selected, after independent result/admission binding",
+    "Independent repeat still NOT_RUN"
+  ]
+}

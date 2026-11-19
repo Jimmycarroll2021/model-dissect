@@ -1,0 +1,9 @@
+# Independent pilot acceptance and full numerical admission
+
+Both pilots PASS. Independent target repeat executed once under its exact admitted packet, using existing ledger.24calls/156positions per role; all420 comparisons per role independently recomputed from360 lossless arrays. Native/candidate max absolute error and tolerance ratio were0 on real rows; logits top1 matches. No-op/restoration arrays match bytewise across all rows. All360 arrays (38069616payload bytes) match producer/repeat bytewise. Parameter/buffer preservation digests match before/after and across repeats; native strict mapping validates160stored tensors,148learned entries,12causal buffers and tied output.
+
+Producer elapsed21.560s; independent20.840s, sampled peak2078752768bytes. Independent largest guarded call0.16433s; producer0.16920s. Each serialized output approximately38.3MB. Exact resource/ledger/identity receipts checked;512positions and240seconds reserved across both pilots,312positions actually executed, no unresolved reservations.
+
+Admit the frozen full numerical producer packet, then independent only after producer evidence review. Each2800positions/600seconds/896MiB, expected96calls/2712positions/1680comparisons. Full serialized projection665774147bytes. Linear total-time extrapolation374.81s; quadratic call plus linear noncall scenario552.89s. These estimates justify a bounded attempt, not a guarantee of completion or fidelity at longer lengths. Stop limits remain unchanged.
+
+No full run executed by reviewer. Fresh readiness and serialized ownership required before launching. Mandatory PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src prefix and owned supervisor, never reinitialize ledger. Source/fixture identities frozen. No scientific, tokenizer, static, cached or left-padding admission follows. Standalone verifier source and all evidence identities are in pilot-review-v2.json.

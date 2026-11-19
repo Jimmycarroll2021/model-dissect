@@ -1,0 +1,105 @@
+{
+  "status": "DRAFT_A1_A4_ACCEPTED_A5_REPEAT_A6_PENDING",
+  "exclusions": [
+    "TASK_STATE.md",
+    "CASE_FACTS.md",
+    "canonical runtime ledger (changing)"
+  ],
+  "files": [
+    {
+      "path": "./docs/weight-dissection-result.md",
+      "sha256": "adf82fd6d5642bf98cedb079bcae28328fe01786a957ac28dd4662a8c2846586",
+      "bytes": 7108
+    },
+    {
+      "path": "./docs/atlas-goal.md",
+      "sha256": "cfface5a8a37e9ebb19cf68ad2979be6f5b8d931d926a178dd484541559d0cc6",
+      "bytes": 3485
+    },
+    {
+      "path": "./specs/001-minimind-reproduction/tasks.md",
+      "sha256": "9c53d21de274c1f97b376dfc3a123593e910ef9ea881de3653c412208fb34ee8",
+      "bytes": 21640
+    },
+    {
+      "path": "./evidence/atlas/atlas-acceptance-v1.json",
+      "sha256": "a6122e2318d9ee8da969dffe5b4024d620881ddc6a4e9a4a6801097c2482d89a",
+      "bytes": 7017
+    },
+    {
+      "path": "./evidence/atlas/a5-protocol-v1.json",
+      "sha256": "87eb28803a9c6720ffd20db25ac6cddb34ca4b73aeb05a446cd791cf50befe16",
+      "bytes": 11265
+    },
+    {
+      "path": "./evidence/atlas/review-a5-confirmation-result-v1.json",
+      "sha256": "d1a3c7144ecba421036faeedf99b559efccd51bad7cbf57afe42a32c735e093e",
+      "bytes": 151665
+    },
+    {
+      "path": "./evidence/atlas/review-repeat-evidence-v1.json",
+      "sha256": "63ca42ab22812cacce5acb5e0c69a3a0c225a361881202033c33961fd2224e8a",
+      "bytes": 3825
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas.py",
+      "sha256": "c1b2e114ffff62ef585112c56ef0dbde360203380b3b2deb6c273cf3367e5fd2",
+      "bytes": 22718
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas_probe.py",
+      "sha256": "8ca8b53627f70a59eb968c4a19ea87109f585e025dc3c9c59ad5d5c65530550c",
+      "bytes": 24580
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/forward.py",
+      "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+      "bytes": 4919
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas_guard.py",
+      "sha256": "1d7d8e8105de8145b18b74b0da426f08d21df2ed93d8a5a7a364ba993ab73673",
+      "bytes": 16050
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-policy.json",
+      "sha256": "a8a2ab2d2138062cd266aac645f8d898e08f984ee9d46f1239c3f97523e4d21a",
+      "bytes": 9490
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "sha256": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd",
+      "bytes": 308800
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md",
+      "sha256": "9984ff702eb8268a192dab4ba860358a707fa4f330b807c3984df89ca8e5a972",
+      "bytes": 123036
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/manifest.json",
+      "sha256": "dbfe40d5044302e948b865e3c1361430d547866c1bae31b991ca2f6085803ba1",
+      "bytes": 1062
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-discovery.json",
+      "sha256": "268be6681c819b4cb35f0f597b885e303bca7709e9671aa95a8b9f3af1c4b24b",
+      "bytes": 30469
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json",
+      "sha256": "f7450051ba9844e43c03c8f5b53a7f21421d26914cd4f5613b73f934d60a2d50",
+      "bytes": 59405
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.prepared.json",
+      "sha256": "ec744df05aa027fffc1dc36197766d0e12fedbc7c7bff75ed48722290ffa729d",
+      "bytes": 108272
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.arms.jsonl",
+      "sha256": "3bfa63233e0d7d28b0a042889c60838bd63ca6f884053a43ef8606e17b66b467",
+      "bytes": 20810846
+    }
+  ]
+}

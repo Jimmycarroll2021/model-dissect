@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "verdict": "PASS_M2_RESULT_REVIEW",
+  "reviewed_at_epoch": 1794907566.3763173,
+  "result_path": "evidence/mechanism/evaluator-m2-v1.json",
+  "result_sha256": "c9ed8efdb51337a7b9c5488eee92690961fb69af6714a31a887ffc3003214a01",
+  "evaluator_manifest_sha256": "7ca466120730f4e20efffecb0b9c7e71fb6482508e8824f637b1bf351ebe5885",
+  "candidate_manifest_sha256": "f851aea7915dd711998f91d15085d2c0f941be715503897676e9f24ef98c8590",
+  "protocol_sha256": "b4126dba857be7daed77613665622938260f1d7a67ff031e5f38e6a251404f6a",
+  "blocking_findings": [],
+  "checks": {
+    "all_manifest_identities_match_current": true,
+    "all12_shapes_times3arms_times4boundaries_present_once": true,
+    "required_rows": 144,
+    "required_failures": 0,
+    "maximum_absolute_error": 0.0,
+    "top1_mismatches": 0,
+    "tool_and_identity_checks": 225,
+    "check_failures": 0,
+    "pristine_bitwise_checks_pass": true,
+    "actual_environment_matches_frozen": true,
+    "guard_run": "mechanism-m2-001",
+    "ledger_completed_exit0": true,
+    "input_positions": 2655,
+    "calls": 60,
+    "wall_seconds": 5.897890896070749,
+    "deadline_preserved": true
+  },
+  "preserved_diagnostics": {
+    "cross_padding_rows": 32,
+    "failed": 9,
+    "gating": false,
+    "interpretation": "Unresolved shape/padding sensitivity retained; not a same-shape M2 failure and not cached/full recovery."
+  },
+  "scope": "Exact candidate CPU FP32 full-prefill same-shape M2 and native hook-tool validation accepted from independently checked execution receipt. Historical original R2 remains FAIL and R3 NOT_RUN.",
+  "limitations": [
+    "Receipt/source/identity verification only in this assignment; no new model execution.",
+    "Mandatory independent exact-candidate M2/heldout repeat still outstanding for final mechanism acceptance."
+  ],
+  "next_action": "Assigned runtime owner may prepare and run bounded development observation via reviewed helper and live guard, then freeze deterministic selection before interventions."
+}

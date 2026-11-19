@@ -1,0 +1,58 @@
+{
+  "schema": "continuation-final-delivery-v1",
+  "status": "REPORT_CANDIDATE_PENDING_INDEPENDENT_DOCUMENT_REVIEW",
+  "created_utc": "2026-11-18T08:44:37.079119+00:00",
+  "scope": "Bounded CONTINUATION-001 report and immutable source evidence; broader goal remains active",
+  "files": [
+    {
+      "path": "./docs/continuation-result.md",
+      "sha256": "a47f822c1dbd25ba97f7719362097cafb9d85622eee3a80d7861fcbf82691e25",
+      "role": "report"
+    },
+    {
+      "path": "./evidence/continuation/review/continuation-repeat-final-v1.json",
+      "sha256": "b051bdf6013ff6e7f43e7c5d03b0523e4b5a6ea0990a4c4b21f0ed04841589eb",
+      "role": "evidence_reference"
+    },
+    {
+      "path": "./evidence/continuation/response-window-producer-execution-v1.json",
+      "sha256": "4a9a8c980badf208dfe47194324f9c3a193795e79019dac9901d535befb7f52f",
+      "role": "evidence_reference"
+    },
+    {
+      "path": "./evidence/continuation/response-window-protocol-v1.md",
+      "sha256": "3e921e5ae16643d34c117ac138c83e3aef704f347b4873d7f5e56a5fee0e1ddd",
+      "role": "evidence_reference"
+    },
+    {
+      "path": "./evidence/continuation/response-window-candidate-v1.json",
+      "sha256": "729467fec18f7362622d7e57c6b1d123988dfbdd9d086de920622c4a509f8d16",
+      "role": "evidence_reference"
+    },
+    {
+      "path": "./evidence/computation-map/review/receipt.json",
+      "sha256": "14bf5bfa1a464aeb34ec39ded16dfb0bf1399dfa3731aecb8f735ab9a596ac8f",
+      "role": "evidence_reference"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-producer-v1.json",
+      "sha256": "df4d93947c981721920b27b1332f10ff4dbad1d0e96dadc7bb729ca6f604b4dd",
+      "role": "evidence_reference"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-continuation-001-20261118/runs/continuation-independent-v1.json",
+      "sha256": "727b9002d1a9d5b035db4eaac60ecb63e4c22ea41046d3f55abc503fa80b81a8",
+      "role": "evidence_reference"
+    }
+  ],
+  "mutable_state_excluded": [
+    "TASK_STATE.md",
+    "CASE_FACTS.md",
+    "docs/reverse-engineering-goal.md"
+  ],
+  "limits": [
+    "No new model calls",
+    "State progress is separate from frozen report candidate",
+    "Echo proposal is not an executed causal finding"
+  ]
+}

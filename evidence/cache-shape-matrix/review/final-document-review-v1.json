@@ -1,0 +1,44 @@
+{
+  "status": "PASS_NEGATIVE_MATRIX_REPORT",
+  "reviewed_utc": "2026-11-18T11:32:30.927295+00:00",
+  "document": "./docs/cache-shape-matrix-result.md",
+  "document_sha256": "f375de97ed46c2492e654032a3c8f5e2aaf2d3ee4a9200b7bda04958279c94de",
+  "independent_final_sha256": "24c565a10005660b9d952045990fae9a25f32e4d2b1bdba64f7873022acae738",
+  "postrun_resources_sha256": "28fbb38df415a200c80d32e6d769b2b8586d065f91e3337a90269764d4afbca9",
+  "checks": [
+    "Scientific FAIL and historical native R2 FAIL preserved; no repair or universal-equivalence claim.",
+    "24 failures/9120rows, four exact fixture identities, step3/all3arms/bothpolicyactors, maxratio1.4585776329040527, zero top1/nonfinite agree with independent evidence.",
+    "9096 passing rows arithmetic correct; full24fixture/1656call/50526actual/50600reserved coverage agrees with audits.",
+    "18144 exact tensors, identical journals and result hash, final review hash match.",
+    "Rounded walltimes, total1137888 charged, zero remaining and stage4035503152bytes match terminal evidence.",
+    "Raw-cache limitations explicitly disclosed.",
+    "Offline diagnosis attributed to implementer; followup described as proposed/unexecuted, not causal resolution.",
+    "All3 relative document links resolve to existing expected evidence files."
+  ],
+  "links": [
+    {
+      "link": "../evidence/cache-shape-matrix/review/independent-repeat-final-v1.json",
+      "resolved": "./evidence/cache-shape-matrix/review/independent-repeat-final-v1.json",
+      "sha256_at_review": "24c565a10005660b9d952045990fae9a25f32e4d2b1bdba64f7873022acae738"
+    },
+    {
+      "link": "../evidence/cache-shape-matrix/diagnosis/findings-v1.md",
+      "resolved": "./evidence/cache-shape-matrix/diagnosis/findings-v1.md",
+      "sha256_at_review": "51e102c23a47f163c7fcca5936cb098922f0c8837a336c7560e15db9b6778abd"
+    },
+    {
+      "link": "../evidence/cache-shape-followup/protocol-v1.md",
+      "resolved": "./evidence/cache-shape-followup/protocol-v1.md",
+      "sha256_at_review": "cc9dfa4e4f9428c63aea9b2068e131e3c77e03096b19ac0671eaa576f78dadb0"
+    }
+  ],
+  "followup_context_only": {
+    "manifest_sha256": "390425ff09ac9c4edc29341f837d72f932b26b438ddc39d3b67fd8fe916c4c77",
+    "runtime_authorized": false,
+    "status": "Incomplete cosine/sine capture, runner/staging/history/resource/exact admission outstanding; implementation ongoing. No source or executable review performed in this assignment."
+  },
+  "model_calls": 0,
+  "source_changes": 0,
+  "blocking_findings": [],
+  "scope": "Report review only; no new diagnostic admission or broader-goal completion."
+}

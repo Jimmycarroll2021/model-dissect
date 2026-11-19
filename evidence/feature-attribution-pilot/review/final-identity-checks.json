@@ -1,0 +1,81 @@
+{
+  "manifest_sha256": "03b42cb68c546709b3da3791f193069f8828e5ad988b78b2c43cd942d8968a73",
+  "checks": [
+    {
+      "path": "specs/004-feature-attribution-validation/checklists/requirements.md",
+      "sha256": "02a2048d708cb57baa3186713cc8c06410e6baa5b5ba417813186d141912d793",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/discovery-and-threshold-proposal.md",
+      "sha256": "f49f446b4b2242d77810d2c3d7efd51afb605e7faf65dcdef526740873b0dec4",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/integration-boundary.md",
+      "sha256": "5f8cc9bfd19b56075a59def01e8863d13423d2cf20c90cbd0fefc366b9a8d6e6",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/preregistration-template.md",
+      "sha256": "e2b77a3f0a460f19f0a3899bad51c65f9879b737922e6732a1de3fe0685e024a",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/selected-claim-v1.md",
+      "sha256": "b3500849251ffd2e7acb93fa58377f735fe3c5d5466796317bb98e06e58f5590",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/spec.md",
+      "sha256": "b90751f21ef1505da7647463d44efad08ecd76936ca94bb8a94c256fdfd508cd",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "specs/004-feature-attribution-validation/corpus-v1.json",
+      "sha256": "e69421dadee947ba7bd49e253affac00f40a5276e3676ddba064c5779fcc9855",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "evidence/feature-attribution-pilot/protocol/TASK_STATE.md",
+      "sha256": "700dadf509447bb23f8585532aca9059f32f6ef05a2a3d1db023b7584dbf671d",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "evidence/feature-attribution-pilot/graph-ui/graph-with-labels.json",
+      "sha256": "f36a28b2d4802ab6a555fb918f4ee5fcf78a33aaf5a08940706c638e4c5393ad",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "evidence/feature-attribution-pilot/graph-ui/identity-reconciliation.json",
+      "sha256": "b6c46ca333e8cc00485bf020f260223951861bde957ccdf79b96d509fec48927",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "evidence/feature-attribution-pilot/graph-ui/identity-modal-dom.txt",
+      "sha256": "74c1da51449a7526e16c6757b5d2409946f79434ffed89e08ce9cda565c539b3",
+      "matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "evidence/feature-attribution-pilot/graph-ui/identity-modal.png",
+      "sha256": "e24fcab5400a35491775f2b60eac96117010c6470e89ada9ca7a74aadd338c99",
+      "matches": true,
+      "size_matches": true
+    }
+  ],
+  "cantor": {
+    "layer": 20,
+    "index": 15589
+  }
+}

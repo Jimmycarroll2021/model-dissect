@@ -1,0 +1,23 @@
+{
+  "status": "PASS_CLOSURE_OVERLAY",
+  "closure_manifest_sha256": "91114ad231f593961693473bf7005cac7da232c273113b22610d4a5567c50752",
+  "reviewed_delivery_manifest_sha256": "6253df406308997d535ab54c9e928a8ba716b6d8f3607673f5d8675d5053a9cd",
+  "acceptance_receipt_sha256": "3c8b24d85027f656c139964152a668fa705d394a6c1dd9e0b84e56fd6b6b610f",
+  "checks": [
+    "Closure manifest matches supplied91114 hash",
+    "Original final delivery manifest and independent whole-objective acceptance receipt unchanged",
+    "All28 reviewed manifest entries match, with exactly one explicit tasks.md override",
+    "Pre-closure task snapshot exactly matches original reviewed tasks hash",
+    "Only one task line changed: T121 checkbox plus explicit controller-acceptance/remaining-lifecycle sentence; all other task lines unchanged",
+    "All six closure-status file hashes match overlay",
+    "Completion wording correctly distinguishes controller accepted outcome from pending native goal tool confirmation",
+    "Current coverage/reference identities and reservation1239856/zero remaining/zero active snapshot consistent with accepted evidence",
+    "Previously accepted scientific/source/report files unchanged; no scientific recomputation required"
+  ],
+  "changed_task_line": 259,
+  "native_goal_complete_confirmed": false,
+  "model_calls": 0,
+  "scientific_reruns": 0,
+  "required_changes": [],
+  "next_action": "Coordinator may record actual native goal completion from the tool result in a separate lifecycle receipt. Preserve both frozen manifests and this verification; do not rewrite the overlay to incorporate future lifecycle observations."
+}

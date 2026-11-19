@@ -1,0 +1,207 @@
+{
+  "status": "success",
+  "verdict": "PILOT_PRODUCER_AND_INDEPENDENT_PASS_FULL_NUMERICAL_PACKETS_ADMITTED",
+  "observed_utc": "2026-11-19T00:16:04.704429+00:00",
+  "producer_receipt": {
+    "path": "evidence/transfer-003/runtime/pilot-producer-v2-result.json",
+    "sha256": "aa3e5a8d20d5e3a0dda0e2635993912dbc14b42c6966a2ba5f304ac2d5a2230a"
+  },
+  "results": {
+    "producer": {
+      "pass": true,
+      "arrays": 360,
+      "payload_bytes": 38069616,
+      "comparisons": 420,
+      "max_tolerance_ratio": 0.0,
+      "max_abs": 0.0,
+      "max_call_seconds": 0.1692028045654297,
+      "call_seconds_sum": 2.254856586456299,
+      "supervisor": {
+        "returncode": 0,
+        "stop_reason": null,
+        "peak_sampled_group_rss_bytes": 2078425088,
+        "elapsed": 21.560101324110292,
+        "added_disk_bytes": 38296595,
+        "total_phase_disk_bytes": 2405729606,
+        "packet_disk_limit": 134217728,
+        "phase_disk_limit": 25769803776
+      },
+      "guard_finish": {
+        "actual_positions": 156,
+        "elapsed": 19.754823693074286,
+        "event": "finish",
+        "inherited_self_rusage_highwater_bytes": 2194255872,
+        "run_id": "v2-pilot-producer",
+        "sampled_owned_tree_rss_bytes": 1238454272,
+        "status": "completed",
+        "time": 1795047179.0498815,
+        "version": "transfer3-guard-v2"
+      },
+      "preservation": {
+        "reference": {
+          "actor": "reference",
+          "before": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "after": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "pass": true
+        },
+        "candidate": {
+          "actor": "candidate",
+          "before": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "after": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "pass": true
+        }
+      },
+      "comparison_sha256": "72e9e9142541fcf1a2f882b774f0e694484fed5d6536dfdaa8aa26ca434b5e0a",
+      "requests_sha256": "495b5dc9a76cabedf450a24b022d382bb7ba71b2d42ce0f6be8274ff6be08aa6",
+      "native_loading_sha256": "8778c0c14f119df40a0ffb3fa88f6f821529eac9431d8737cd1535763b962187"
+    },
+    "independent": {
+      "pass": true,
+      "arrays": 360,
+      "payload_bytes": 38069616,
+      "comparisons": 420,
+      "max_tolerance_ratio": 0.0,
+      "max_abs": 0.0,
+      "max_call_seconds": 0.16432881355285645,
+      "call_seconds_sum": 2.254572629928589,
+      "supervisor": {
+        "returncode": 0,
+        "stop_reason": null,
+        "peak_sampled_group_rss_bytes": 2078752768,
+        "elapsed": 20.839776780921966,
+        "added_disk_bytes": 38296743,
+        "total_phase_disk_bytes": 2444033901,
+        "packet_disk_limit": 134217728,
+        "phase_disk_limit": 25769803776
+      },
+      "guard_finish": {
+        "actual_positions": 156,
+        "elapsed": 19.393809120054357,
+        "event": "finish",
+        "inherited_self_rusage_highwater_bytes": 2194419712,
+        "run_id": "v2-pilot-independent",
+        "sampled_owned_tree_rss_bytes": 1274384384,
+        "status": "completed",
+        "time": 1795047303.2360563,
+        "version": "transfer3-guard-v2"
+      },
+      "preservation": {
+        "reference": {
+          "actor": "reference",
+          "before": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "after": "8bd6eab9b529a7a19be955136d1a8ad669c231b99fc9a97c3238d3befccb6bbd",
+          "pass": true
+        },
+        "candidate": {
+          "actor": "candidate",
+          "before": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "after": "fbba4b372df9f09d8c06b6540c0a6da106749db492ef34e2e325d1cb6da01d81",
+          "pass": true
+        }
+      },
+      "comparison_sha256": "72e9e9142541fcf1a2f882b774f0e694484fed5d6536dfdaa8aa26ca434b5e0a",
+      "requests_sha256": "495b5dc9a76cabedf450a24b022d382bb7ba71b2d42ce0f6be8274ff6be08aa6",
+      "native_loading_sha256": "8778c0c14f119df40a0ffb3fa88f6f821529eac9431d8737cd1535763b962187"
+    },
+    "repeat": {
+      "byte_identical_arrays": 360,
+      "byte_identical_payload": 38069616
+    }
+  },
+  "independent_execution": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python -m minimind_re.transfer3.run --packet evidence/transfer-003/runtime/packet-pilot-independent-v2.json --admission evidence/transfer-003/review/admission-pilot-independent-v2.json",
+    "exit_code": 0,
+    "target_calls": 24,
+    "physical_positions": 156,
+    "no_phase_reinitialization": true,
+    "packet_sha256": "f0542784713865a755ace9666480e87ad125cd03b66223331286cede88347409",
+    "admission_sha256": "43574b7639052f444b6ad62c229d7d68842d0a44957b982d94efb1de7576ee3b"
+  },
+  "independent_comparator": "Standalone NumPy verifier did not import production comparator. Checks each.npy SHA256/dtype/shape/payload/finiteness, all real-row elementwise tolerances and logits top1, all-row bitwise no-op/restoration, exact requests, every saved420 comparison row, loader/preservation/ledger/supervisor receipts; then byte-compares all360 producer/repeat arrays.",
+  "projection": {
+    "physical_position_ratio": 17.384615384615383,
+    "attention_area_ratio": 96.35897435897436,
+    "linear_total_seconds": 374.81406917299427,
+    "quadratic_calls_plus_linear_noncall_seconds": 552.8899226674918,
+    "largest_call_scaled_by_max_sequence_squared_seconds": 5.4332900577121315,
+    "full_raw_bytes": 661825632,
+    "full_serialized_bytes_projection": 665774147,
+    "full_packet_seconds": 600,
+    "per_call_cap": 120,
+    "full_packet_bytes": 939524096,
+    "interpretation": "Extrapolation from pilot, not measured full run or proof of upper bound. Larger sequence behavior remains tested only when admitted full packet executes; supervisor retains hard stop."
+  },
+  "full_packets": [
+    {
+      "role": "producer",
+      "path": "./evidence/transfer-003/runtime/packet-full-producer-v2.json",
+      "sha256": "89da37b18ed9ac9994c98f9e034169db99f36976c98729564eb63e95ab6c93ac",
+      "identities_match": true,
+      "positions": 2800,
+      "seconds": 600,
+      "disk_bytes": 939524096
+    },
+    {
+      "role": "independent",
+      "path": "./evidence/transfer-003/runtime/packet-full-independent-v2.json",
+      "sha256": "989b2b7aaccfbd20ec786d3631207f9f53dda44bde1cc01375388ee2d30546db",
+      "identities_match": true,
+      "positions": 2800,
+      "seconds": 600,
+      "disk_bytes": 939524096
+    }
+  ],
+  "ledger_summary": {
+    "reserved_positions": 512,
+    "actual_positions": 312,
+    "reserved_seconds": 240,
+    "reserved_disk_bytes": 268435456,
+    "unresolved": [],
+    "with_two_full_packets_reserved_seconds": 1440,
+    "phase_start": 1795047151.9022968
+  },
+  "evidence": {
+    "recompute.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/pilot-review-v2/recompute.py",
+      "sha256": "ca337196ccc8654fe0d034ec61e830ee65ba160e333e38c0a4b109eed8dfbcef"
+    },
+    "recompute-producer.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/pilot-review-v2/recompute-producer.json",
+      "sha256": "9476b8b68c162ef8822022a89bf8fab2dc20a3401ebdc97a74c5e66b4f6069a1"
+    },
+    "recompute-producer-independent.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/pilot-review-v2/recompute-producer-independent.json",
+      "sha256": "dae844ec702dbeec3781c0f156a7c655c8bd42e0cf671671ee69efb1f9610140"
+    },
+    "repeat-readiness.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/pilot-review-v2/repeat-readiness.json",
+      "sha256": "1915ed6fb7bb23ea2617e1bf85050ad98d03d727df2095d99018afd6075e7a24"
+    },
+    "independent-launch.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/pilot-review-v2/independent-launch.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ledger-after-pilots.jsonl": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/pilot-review-v2/ledger-after-pilots.jsonl",
+      "sha256": "945c49872a6f1397dce18430ef091c3ff4fb0e82e397f2c2ac7deb1952af3dbf"
+    }
+  },
+  "repeat_supervisor": {
+    "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/v2-pilot-independent.supervisor.json",
+    "sha256": "92a647f498f21f10086a515eecc5af9de1220e54ef669f12138dd4c9714daa4a"
+  },
+  "full_admission_conditions": [
+    "Launch producer first using exact full packet/PASS receipt; independent full only after producer output/reload/fidelity/preservation/resource review passes.",
+    "Required prefix PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src; owned supervisor only, no direct child, no ledger initialization/reset.",
+    "Each full role remains capped2800positions/600seconds/896MiB; exactly96calls/2712physicalpositions/1680comparisons expected. Per-call120seconds remains enforced.",
+    "Fresh memory/disk/process/stall readiness before each launch and serialize with other target/synthetic model workloads.",
+    "Any failure retains charge/evidence and blocks dependent execution; no silent cap changes or retries.",
+    "No cache, left-padding, static/tokenizer/science run admitted here. Science12site and remaining gates are separate."
+  ],
+  "limitations": [
+    "Pilot establishes lengths1,8 and padded physical5,12 only; full lengths32,64 and physical36,68 not yet executed.",
+    "Full feasibility figures are conservative scaling scenarios, not guaranteed bounds.",
+    "Preservation validated by pinned runtime live digests, cross-repeat equality and injected-mutation synthetic regression; no uncharged extra target load used to reproduce tensor digests."
+  ],
+  "full_runs_executed": 0
+}

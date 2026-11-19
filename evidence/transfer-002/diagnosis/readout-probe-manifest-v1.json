@@ -1,0 +1,19 @@
+{
+  "status": "READY_FOR_REVIEW_NOT_ADMITTED",
+  "packet": "./evidence/transfer-002/diagnosis/readout-probe-v1.packet.json",
+  "packet_sha256": "9175c76846dc40f6bc4e710e4194a9ac98a0a08167d67b2d9a21cb98b080afa8",
+  "files": {
+    "./src/minimind_re/transfer/readout_probe.py": "bdd64b005e0f574009a8164f1043cb1f00a3100e34330e4fd97f22acadd820d4",
+    "./tests/transfer/test_readout_probe.py": "ca6ea598fb7cc9a2f5da6e74cc16328f43e110f60f411144caa8562c468ce544",
+    "./evidence/transfer-002/diagnosis/readout-probe-tests-v1.txt": "bf5a31488c1f0a5192c901fedf512531f1bd986fc2c4354cdbfee6d68e4cf39a",
+    "./evidence/transfer-002/diagnosis/readout-proposal-v1.json": "ef6eb4510c7a1b5267f524b49b099abf780e4e7f1a6c4762023ad4dcb6ddba7b",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/numerical-producer-v3/reference/A-1-none/baseline/prefill/final_norm.npy": "7e4928441144ddba4c3efa294e0db4750e820f67a06797efbf9844d85f8a1c64",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/affine-all-pilot-v1/reference/prefill/final_norm.npy": "b77b4e542e770a742f431dbc89ddb3b7076a2ca9cf58c2de533734d9eec14664",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/numerical-producer-v3/reference/A-1-none/baseline/prefill/logits.npy": "700c47c6fd3b86da98f133f5e8c06f4d5d51bd74b9e82139353841a14b388898",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/affine-all-pilot-v1/reference/prefill/logits.npy": "8aeb05809d47f473c8b3582bdfe552b8ae44f42f9795df32d325103118454102"
+  },
+  "tests": "1synthetic crossed schedule test PASS 4calls6rows",
+  "decision": "Only after bothoriginalcells reproduce, report each canonical-hidden readout geometry passing unchanged native singleton tolerance and exactargmax; emptylist meansneither; no predeterminedwinner",
+  "target_loaded": false,
+  "raw_payload_bytes": 804864
+}

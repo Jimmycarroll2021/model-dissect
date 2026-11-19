@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "status": "producer_offline_checks_pass_independent_review_pending",
+  "artifacts": [
+    {
+      "path": "./docs/actual-input-walkthrough.md",
+      "sha256": "d5b96adb4b026509a6f3d293f05978bb5f135f551b3f6830651aa019bb6f8b5e"
+    },
+    {
+      "path": "./visualization/actual-input/index.html",
+      "sha256": "dcc257563865e83a8d7a9dab51fcb605f4cc9dcee58f427684b305487672092e"
+    },
+    {
+      "path": "./evidence/actual-input/trace-summary.json",
+      "sha256": "cf17922ca6282c7f14a874bcbec37985d237e8c6df5a92dd6b561c638c279c57"
+    },
+    {
+      "path": "./evidence/actual-input/build_trace.py",
+      "sha256": "defcfdacbd4e7ca5a30ba60cc444fca863a31f0a35a5b2a266106146219db125"
+    }
+  ],
+  "input_sources": [
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/all-operands.pt",
+      "sha256": "df9d35d20f7f5480475067b42f66c6d7ddf8df4786cc4ed24a298498d955e998"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/native-full.pt",
+      "sha256": "36f1ed5ed934bf7681914e705aea68ee1abf3a2da459cc947aa59ae77ef428aa"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/runs/cache-operands-producer-v1/result.json",
+      "sha256": "c950fab6154821918b2cc7f981dd9009b1662cf2c9683fe4b67e6487e48f913c"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/fixtures/continuation/parity.json",
+      "sha256": "f9411b52e3613337ec53a4916f6c4791af5a12fb9c44aed8ac4a73c0e23602af"
+    },
+    {
+      "path": "./artifacts/original/tokenizer.json",
+      "sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/src/minimind_re/cache_operand_probe.py",
+      "sha256": "4aa17d8a6591f30382510b53f68f551e3a971ec18e90da5b796b89de5fe4862d"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/oracle/vendor/model_minimind.py",
+      "sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/oracle/adapter.py",
+      "sha256": "132b5bde6467bbf0a8c04e737356efe42c5867b3b83a4e18fedd962bb6f5889c"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/src/minimind_re/forward.py",
+      "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-operands-001-20261118/evidence/cache-diagnosis/packet-producer-v1.json",
+      "sha256": "f251002f0869e3ccd147f2f99970e33bc55d3f4e9d21af6715aa1815f3abbea9"
+    }
+  ],
+  "checks": {
+    "input_length_11": true,
+    "all_8_layers": true,
+    "native_archive_matches_all_operands": true,
+    "saved_primitive_values_match_direct_unprojected_all_8_layers": true,
+    "residual_chain_exact": true,
+    "all_attention_rows_sum_within_1e_6": true
+  },
+  "scope": "Offline summary of saved native full-prefill captures, last position 10 of artificial 11-token diagnostic fixture",
+  "model_loads": 0,
+  "model_forwards": 0,
+  "checkpoint_loads": 0,
+  "new_matrix_contractions": 0,
+  "tokenizer_executions": 0,
+  "cpu_threads": 2,
+  "limits": [
+    "Artificial historical fixture; continuation IDs supplied by fixture, not newly generated",
+    "Attention probabilities were saved primitive replay on full native Q/K/V, not direct softmax hooks; weighted-value equality checked",
+    "Net post-block minus post-attention residual is not the exact MLP output because addition rounded",
+    "No normalization denominators or MLP gate/up/products captured here",
+    "No causal attribution from attention weights, norms or token spellings",
+    "No new model calls, matrix contractions, checkpoint loads or tokenizer execution"
+  ],
+  "html_static_checks": {
+    "svg_heatmaps": 8,
+    "probability_cells": 704,
+    "local_links_exist": true,
+    "scripts_or_network_resources": false,
+    "browser_rendering": "NOT_RUN"
+  },
+  "pre_review_manifest_sha256": "dacb2839e0b8a85693fa51cc816972858b1651e6d5d22bf0644968c41f473e16"
+}

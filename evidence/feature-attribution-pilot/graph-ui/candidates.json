@@ -1,0 +1,371 @@
+{
+  "graph_sha256": "f36a28b2d4802ab6a555fb918f4ee5fcf78a33aaf5a08940706c638e4c5393ad",
+  "node_count": 1385,
+  "link_count": 56758,
+  "target_logits": [
+    {
+      "node_id": "27_22605_8",
+      "feature": 22605,
+      "layer": "27",
+      "ctx_idx": 8,
+      "feature_type": "logit",
+      "token_prob": 0.330078125,
+      "is_target_logit": true,
+      "run_idx": 0,
+      "reverse_ctx_idx": 0,
+      "jsNodeId": "L_22605-8",
+      "clerp": "Output \" Austin\" (p=0.330)",
+      "influence": null,
+      "activation": null
+    }
+  ],
+  "selection": "Top 15 direct incoming edges to Austin by absolute exported edge weight; descriptive only, not interventions",
+  "identity_caution": "Preserve node_id AND exported feature field: node middle component differs from feature value. Do not assume exported feature field is local latent index. Layer20 node 20_15589_8 has exported feature=121843834. Source-local ID interpretation requires separate verification.",
+  "candidates": [
+    {
+      "node": {
+        "node_id": "20_15589_8",
+        "feature": 121843834,
+        "layer": "20",
+        "ctx_idx": 8,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "20_15589-0",
+        "clerp": "Texas",
+        "influence": 0.2607000470161438,
+        "activation": 52
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "20_15589_8",
+        "target": "27_22605_8",
+        "weight": 6.5
+      }
+    },
+    {
+      "node": {
+        "node_id": "E_26865_7",
+        "feature": 7,
+        "layer": "E",
+        "ctx_idx": 7,
+        "feature_type": "embedding",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "E_26865-7",
+        "clerp": "Emb: \"  Dallas\"",
+        "influence": 0.16174811124801636,
+        "activation": null
+      },
+      "token_at_context": " Dallas",
+      "edge_to_austin": {
+        "source": "E_26865_7",
+        "target": "27_22605_8",
+        "weight": 6
+      }
+    },
+    {
+      "node": {
+        "node_id": "24_6044_8",
+        "feature": 18419390,
+        "layer": "24",
+        "ctx_idx": 8,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "24_6044-0",
+        "clerp": "in",
+        "influence": 0.277231365442276,
+        "activation": 56.5
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "24_6044_8",
+        "target": "27_22605_8",
+        "weight": -5.1875
+      }
+    },
+    {
+      "node": {
+        "node_id": "24_-1_8",
+        "feature": -1,
+        "layer": "24",
+        "ctx_idx": 8,
+        "feature_type": "mlp reconstruction error",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "24_-1-8",
+        "clerp": "Err: mlp \"  is\"",
+        "influence": 0.2885565459728241,
+        "activation": null
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "24_-1_8",
+        "target": "27_22605_8",
+        "weight": 3.9375
+      }
+    },
+    {
+      "node": {
+        "node_id": "21_5943_8",
+        "feature": 17793573,
+        "layer": "21",
+        "ctx_idx": 8,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "21_5943-0",
+        "clerp": "cities",
+        "influence": 0.28302261233329773,
+        "activation": 57.75
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "21_5943_8",
+        "target": "27_22605_8",
+        "weight": 3.53125
+      }
+    },
+    {
+      "node": {
+        "node_id": "23_12237_8",
+        "feature": 75172167,
+        "layer": "23",
+        "ctx_idx": 8,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "23_12237-0",
+        "clerp": "Cities and states names",
+        "influence": 0.3155272603034973,
+        "activation": 50
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "23_12237_8",
+        "target": "27_22605_8",
+        "weight": 2.8125
+      }
+    },
+    {
+      "node": {
+        "node_id": "25_13300_8",
+        "feature": 88797775,
+        "layer": "25",
+        "ctx_idx": 8,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "25_13300-0",
+        "clerp": "Texas",
+        "influence": 0.30118563771247864,
+        "activation": 32.75
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "25_13300_8",
+        "target": "27_22605_8",
+        "weight": -2.78125
+      }
+    },
+    {
+      "node": {
+        "node_id": "24_6394_8",
+        "feature": 20604965,
+        "layer": "24",
+        "ctx_idx": 8,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "24_6394-0",
+        "clerp": "locations",
+        "influence": 0.3188733160495758,
+        "activation": 32.5
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "24_6394_8",
+        "target": "27_22605_8",
+        "weight": -2.625
+      }
+    },
+    {
+      "node": {
+        "node_id": "16_25_7",
+        "feature": 886,
+        "layer": "16",
+        "ctx_idx": 7,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "16_25-0",
+        "clerp": "Texas legal documents",
+        "influence": 0.2931704819202423,
+        "activation": 34.25
+      },
+      "token_at_context": " Dallas",
+      "edge_to_austin": {
+        "source": "16_25_7",
+        "target": "27_22605_8",
+        "weight": 2.59375
+      }
+    },
+    {
+      "node": {
+        "node_id": "20_15589_7",
+        "feature": 121843834,
+        "layer": "20",
+        "ctx_idx": 7,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "20_15589-0",
+        "clerp": "Texas",
+        "influence": 0.3120577037334442,
+        "activation": 52.75
+      },
+      "token_at_context": " Dallas",
+      "edge_to_austin": {
+        "source": "20_15589_7",
+        "target": "27_22605_8",
+        "weight": 2.375
+      }
+    },
+    {
+      "node": {
+        "node_id": "14_2268_7",
+        "feature": 2607171,
+        "layer": "14",
+        "ctx_idx": 7,
+        "feature_type": "cross layer transcoder",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "14_2268-0",
+        "clerp": "Texas",
+        "influence": 0.29740312695503235,
+        "activation": 27
+      },
+      "token_at_context": " Dallas",
+      "edge_to_austin": {
+        "source": "14_2268_7",
+        "target": "27_22605_8",
+        "weight": 2.0625
+      }
+    },
+    {
+      "node": {
+        "node_id": "E_603_8",
+        "feature": 8,
+        "layer": "E",
+        "ctx_idx": 8,
+        "feature_type": "embedding",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "E_603-8",
+        "clerp": "Emb: \"  is\"",
+        "influence": 0.21417641639709473,
+        "activation": null
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "E_603_8",
+        "target": "27_22605_8",
+        "weight": 1.8359375
+      }
+    },
+    {
+      "node": {
+        "node_id": "21_-1_8",
+        "feature": -1,
+        "layer": "21",
+        "ctx_idx": 8,
+        "feature_type": "mlp reconstruction error",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "21_-1-8",
+        "clerp": "Err: mlp \"  is\"",
+        "influence": 0.30851879715919495,
+        "activation": null
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "21_-1_8",
+        "target": "27_22605_8",
+        "weight": 1.71875
+      }
+    },
+    {
+      "node": {
+        "node_id": "23_-1_8",
+        "feature": -1,
+        "layer": "23",
+        "ctx_idx": 8,
+        "feature_type": "mlp reconstruction error",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "23_-1-8",
+        "clerp": "Err: mlp \"  is\"",
+        "influence": 0.32220184803009033,
+        "activation": null
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "23_-1_8",
+        "target": "27_22605_8",
+        "weight": 1.4609375
+      }
+    },
+    {
+      "node": {
+        "node_id": "13_-1_8",
+        "feature": -1,
+        "layer": "13",
+        "ctx_idx": 8,
+        "feature_type": "mlp reconstruction error",
+        "token_prob": 0,
+        "is_target_logit": false,
+        "run_idx": 0,
+        "reverse_ctx_idx": 0,
+        "jsNodeId": "13_-1-8",
+        "clerp": "Err: mlp \"  is\"",
+        "influence": 0.32841816544532776,
+        "activation": null
+      },
+      "token_at_context": " is",
+      "edge_to_austin": {
+        "source": "13_-1_8",
+        "target": "27_22605_8",
+        "weight": -1.4140625
+      }
+    }
+  ]
+}

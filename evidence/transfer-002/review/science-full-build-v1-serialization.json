@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "calls": 389,
+  "positions": 12448,
+  "heldout_reveal_calls": 195,
+  "paired_checks": 48,
+  "paired_saved_arrays": 864,
+  "npy_files": 1271,
+  "npy_payload_bytes": 712620544,
+  "serialized_total_bytes": 713482447,
+  "verdict": "INCONCLUSIVE_NO_ELIGIBLE_CONTRAST",
+  "elapsed_seconds": 10.598075044923462,
+  "serialization": "Real numpy.save/numpy.load with no monkeypatches; all arrays finite and paired hashes checked"
+}

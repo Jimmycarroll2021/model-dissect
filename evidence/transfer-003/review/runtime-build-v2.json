@@ -1,0 +1,180 @@
+{
+  "status": "success",
+  "verdict": "PASS_INITIALIZE_AND_NUMERICAL_PILOTS_ONLY",
+  "observed_utc": "2026-11-19T00:11:31.873083+00:00",
+  "manifests": [
+    {
+      "path": "evidence/transfer-003/runtime/build-v2.json",
+      "sha256": "62f44586fb3968eacecf7f7ee7534abe121dad3f7136a2eaea34d9e35d44a913",
+      "match": true
+    },
+    {
+      "path": "evidence/transfer-003/implementation/candidate-manifest-v3.json",
+      "sha256": "d768bf9ccabc67a864baa14e3f0fd402c374ad3bb1f76ff9e89a0d67310b7f6e",
+      "match": true
+    },
+    {
+      "path": "evidence/transfer-003/state/scope-manifest-v3.json",
+      "sha256": "5d79d6d0ac5955f2668d6cc29ef8a0f9bbee94266639d7384ab8e30f24c88f8e",
+      "match": true
+    }
+  ],
+  "packet_checks": [
+    {
+      "path": "evidence/transfer-003/runtime/packet-full-independent-v2.json",
+      "sha256": "989b2b7aaccfbd20ec786d3631207f9f53dda44bde1cc01375388ee2d30546db",
+      "mismatched_inputs": [],
+      "positions": 2800,
+      "seconds": 600,
+      "disk_bytes": 939524096,
+      "output_exists": false,
+      "receipt_exists": false
+    },
+    {
+      "path": "evidence/transfer-003/runtime/packet-full-producer-v2.json",
+      "sha256": "89da37b18ed9ac9994c98f9e034169db99f36976c98729564eb63e95ab6c93ac",
+      "mismatched_inputs": [],
+      "positions": 2800,
+      "seconds": 600,
+      "disk_bytes": 939524096,
+      "output_exists": false,
+      "receipt_exists": false
+    },
+    {
+      "path": "evidence/transfer-003/runtime/packet-pilot-independent-v2.json",
+      "sha256": "f0542784713865a755ace9666480e87ad125cd03b66223331286cede88347409",
+      "mismatched_inputs": [],
+      "positions": 256,
+      "seconds": 120,
+      "disk_bytes": 134217728,
+      "output_exists": false,
+      "receipt_exists": false
+    },
+    {
+      "path": "evidence/transfer-003/runtime/packet-pilot-producer-v2.json",
+      "sha256": "a31a5ffbbe8edd4617a7a41d7ca0e3797f3313fd5cb20abe5e499851539ddde5",
+      "mismatched_inputs": [],
+      "positions": 256,
+      "seconds": 120,
+      "disk_bytes": 134217728,
+      "output_exists": false,
+      "receipt_exists": false
+    }
+  ],
+  "readiness": {
+    "observed_utc": "2026-11-19T00:10:54.207610+00:00",
+    "memory": {
+      "MemAvailable": 14509203456,
+      "SwapFree": 249856
+    },
+    "disk_free_bytes": 48360284160,
+    "loadavg": [
+      1.330078125,
+      1.9296875,
+      1.7998046875
+    ],
+    "cpus": 28,
+    "target_or_prior_science_processes": [],
+    "D_state": [],
+    "ledger_exists": false,
+    "phase_bytes": 2367432070,
+    "limits_note": "10GiB owned cap and2GiB continuously monitored free RAM reserve; no swap treated as capacity; snapshot not reservation."
+  },
+  "checks": {
+    "supplied_tests": "33 passed in2.89s:10runtime+23candidate",
+    "independent": [
+      "reference failure preservation mutate=False:PASS",
+      "reference failure preservation mutate=True:PASS",
+      "candidate failure preservation mutate=False:PASS",
+      "candidate failure preservation mutate=True:PASS",
+      "owned temp/cache environment verified; bytecode-disabled launch inherited",
+      "SIGINT explicit cancellation receipt and owned-child reaping PASS",
+      "4799+2 seconds rejected by4800 aggregate cap without new reservation"
+    ],
+    "all_packet_inputs_match": true,
+    "scope_overlay": {
+      "path": "evidence/transfer-003/state/build-v2-coordination-update.json",
+      "sha256": "4da0d3d2778cf327c6c39cde75a9aeafb8e9e556bb1110712249427deb31514d",
+      "prior_snapshots_and_current_metadata_match": true,
+      "explanation": "Only TASK_STATE/CASE_FACTS advanced; frozen scope manifest remains historical snapshot. All other scope entries and every packet dependency match."
+    },
+    "historical_chain": {
+      "pythia_ledger_sha256": "32017dfbb2500364eb25107d72c6a04016eb34b753715f9a679808532941674c",
+      "pythia_reserved_positions": 59450,
+      "pythia_unresolved_reservations": [],
+      "minimind_historical_positions": 1239856,
+      "combined_historical_positions": 1299306,
+      "new_limit": 250000,
+      "combined_ceiling": 1549306,
+      "source": "Pinned transfer-002 final-review and exact ledger sum; prior strictT2 failure remains preserved."
+    },
+    "effective_caps": {
+      "seconds": 4800,
+      "disk_bytes": 25769803776,
+      "wall_seconds": 7200,
+      "positions": 250000,
+      "per_call_seconds": 120,
+      "owned_memory_bytes": 10737418240,
+      "free_memory_disk_reserve_bytes": 2147483648,
+      "cpu_threads": 2
+    },
+    "candidate_observer": "Actual q/k/v, softmax attention and weighted-V heads passed as clones, ignored callback return; destructive observation and observer exception leave baseline/weights unchanged in synthetic checks; source diff adds no arithmetic changes on None path."
+  },
+  "evidence": {
+    "tests.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/tests.txt",
+      "sha256": "39a94f184384fca7c3e6cb68aca21018017bb58c45c5833f51ed881e0bed9e5d"
+    },
+    "independent.py": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/independent.py",
+      "sha256": "40c6947b9f71aea04320c01b263d3e1e7858bf57a3e9d0fa5b4ee24000b7f72e"
+    },
+    "independent.txt": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/independent.txt",
+      "sha256": "8a4350315f138a35f17eafce452761e6e09b1388a89c8e18244643d01f534079"
+    },
+    "independent-results.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/independent-results.json",
+      "sha256": "08a82a7aa60dad2c1f3bc92e5482800f67c86a3c7d21027c577bbb55fefbe669"
+    },
+    "identity-readiness.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/identity-readiness.json",
+      "sha256": "187043cdb2648b7198abc507cabb5479ab84077f1f9bfb5476f7348ddd4236f2"
+    },
+    "io-first.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/io-first.json",
+      "sha256": "c78b5e3b637462b8cdeeab613ba71deda8cf047cc7d87848f6b695d085c54566"
+    },
+    "io-second.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/io-second.json",
+      "sha256": "5b0786c353abcd4a7cd2bc6588d95be7db6a0de22ceac53f1da91da390d8daa6"
+    },
+    "readiness-final.json": {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-003-gpt2/review-runtime-v2/readiness-final.json",
+      "sha256": "e617d95cb6c539e8bfe930cb72f355df9ac73144a4923f46e23d7cb4beb480bc"
+    }
+  },
+  "reused_evidence": {
+    "path": "evidence/transfer-003/review/runtime-build-v1.json",
+    "sha256": "c92262887d106f68f27d22ea3ee0b879de7ce532a5bd3753a4fd6f3b2939b139",
+    "scope": "Unchanged lock/accounting/missing-ledger/duplicate/reservation/final-disk mechanics; v2 changed preservation/env/cancellation/cap exercised afresh."
+  },
+  "transient_storage": "Science synthetic PID4058403 observed D/jbd2_log_wait_commit. Subsequently exited; final independent snapshot has no D-state process and no target/science verifier process. No signals sent by this reviewer. Not a persistent storage-stall claim.",
+  "admission_conditions": [
+    "All initializing/supervisor launch commands MUST prefix PYTHONDONTWRITEBYTECODE=1 and use existing pinned PYTHONPATH=src; child inherits bytecode disable, supervisor routes TMPDIR/HF/Torch caches to owned workspace.",
+    "Initialize only once using exact producer pilot packet and its PASS receipt; no existing ledger may be overwritten or reset.",
+    "Producer pilot first; review producer successful completion, finite/fidelity/preservation/raw reload and budget receipts before independent pilot. Any failure stops dependent execution, preserves charge and requires bounded diagnosis.",
+    "Fresh guard/supervisor checks at each launch remain mandatory; current snapshot not continuing resource reservation.",
+    "Only numerical pilot stages admitted. Full packets structurally checked but NOT admitted until measured fidelity/feasibility and independent review; no static/science/tokenizer admission follows.",
+    "No runtime/source/fixture identity changes permitted under these receipts."
+  ],
+  "limitations": [
+    "No target model/tokenizer loaded or target forwards executed; target feasibility remains pilot question.",
+    "Guard initialize inspected, not called on real phase by reviewer.",
+    "Science12site synthetic gate remains separate and unreviewed here.",
+    "Historical MiniMind total reused from pinned independent closure receipt rather than recomputing every old model call."
+  ],
+  "model_calls": 0,
+  "phase_initialized": false,
+  "full_packet_verdict": "CONDITIONAL_NOT_ADMITTED"
+}

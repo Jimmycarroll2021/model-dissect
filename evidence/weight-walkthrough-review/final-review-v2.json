@@ -1,0 +1,37 @@
+{
+  "status": "success",
+  "verdict": "PASS_WITH_BROWSER_UNVERIFIED",
+  "candidate_manifest": "evidence/weight-walkthrough/manifest-v2.json",
+  "candidate_manifest_sha256": "0939fe9c7ded1953352bf8ac096305c61383645b15480ac298b244978a5296fb",
+  "html_sha256": "cf91f5bc68e0b0218b234bea9d9ec83dab28efdff14ce71b19cb343cea7d0db8",
+  "checks": {
+    "all_eight_v1_artifacts_preserved": true,
+    "all_eight_v2_artifacts_verified": true,
+    "only_three_prose_corrections": [
+      "docs/gpt2-weight-walkthrough.html",
+      "docs/gpt2-weight-walkthrough.md",
+      "evidence/weight-walkthrough/template.html"
+    ],
+    "held01_prose_matches_independent_token_oracle": true,
+    "embedded_numeric_data_identical": true,
+    "accepted_files_unchanged": 257,
+    "reuse_numeric_provenance_static_evidence": "candidate-v1-check.json",
+    "reuse_oracle_numeric_widget_evidence": "static-widget-result.json"
+  },
+  "resolved_findings": [
+    "held-01 prose label corrected to door; full clean/corrupt prompts match saved token IDs"
+  ],
+  "limitations": [
+    "Actual browser rendering, keyboard behavior, layout and interaction UNVERIFIED: tool denied file URL and prohibited workaround; none attempted.",
+    "DOM stub verifies numeric text and event calculations only, not a browser.",
+    "Offline self-containment established statically; actual local-file browser execution unverified.",
+    "No new model calls, checkpoint loads, training, installs or scientific re-execution. Existing accepted science is reused."
+  ],
+  "scientific_finding": {
+    "verdict": "qualified REFUTED",
+    "median_P": 0.08404521678273584,
+    "median_Q": 0.09451938285766666,
+    "positive_Q": 16
+  },
+  "unresolved_blockers": []
+}

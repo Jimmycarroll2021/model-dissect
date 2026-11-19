@@ -1,0 +1,231 @@
+{
+  "verdict": "PASS_BLOCK_DIAGNOSTIC_RESULTS",
+  "reviewed_utc": "2026-11-18T19:50:23.702928+00:00",
+  "checks": {
+    "all99_raw_hashes_finite": true,
+    "payload": true,
+    "all27baseline_bytes": true,
+    "3calls4positions": true,
+    "completed": true
+  },
+  "comparisons": [
+    {
+      "site": "input_ln.input",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "input_ln.input",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "input_ln.output",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "input_ln.output",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "qkv.input",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "qkv.input",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "qkv.output",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "qkv.output",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "attention_dense.input",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "attention_dense.input",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "attention_dense.output",
+      "part": "prefix",
+      "byte_equal": false,
+      "different_elements": 96,
+      "max_abs": 5.960464477539063e-08,
+      "violations": 0
+    },
+    {
+      "site": "attention_dense.output",
+      "part": "current",
+      "byte_equal": false,
+      "different_elements": 102,
+      "max_abs": 5.960464477539063e-08,
+      "violations": 0
+    },
+    {
+      "site": "post_attention_ln.input",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "post_attention_ln.input",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "post_attention_ln.output",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "post_attention_ln.output",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "mlp_up.input",
+      "part": "prefix",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "mlp_up.input",
+      "part": "current",
+      "byte_equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "violations": 0
+    },
+    {
+      "site": "mlp_up.output",
+      "part": "prefix",
+      "byte_equal": false,
+      "different_elements": 234,
+      "max_abs": 5.960464477539063e-08,
+      "violations": 0
+    },
+    {
+      "site": "mlp_up.output",
+      "part": "current",
+      "byte_equal": false,
+      "different_elements": 396,
+      "max_abs": 3.5762786865234375e-07,
+      "violations": 0
+    },
+    {
+      "site": "mlp_down.input",
+      "part": "prefix",
+      "byte_equal": false,
+      "different_elements": 211,
+      "max_abs": 4.470348358154297e-08,
+      "violations": 0
+    },
+    {
+      "site": "mlp_down.input",
+      "part": "current",
+      "byte_equal": false,
+      "different_elements": 369,
+      "max_abs": 2.2351741790771484e-07,
+      "violations": 0
+    },
+    {
+      "site": "mlp_down.output",
+      "part": "prefix",
+      "byte_equal": false,
+      "different_elements": 117,
+      "max_abs": 4.470348358154297e-08,
+      "violations": 0
+    },
+    {
+      "site": "mlp_down.output",
+      "part": "current",
+      "byte_equal": false,
+      "different_elements": 116,
+      "max_abs": 9.685754776000977e-08,
+      "violations": 0
+    }
+  ],
+  "receipt_sha256": "138a560b3d45feb1a038b2efeaf4d9fadb21d6ed1097a48a0df845053f6a30a7",
+  "supervisor": {
+    "returncode": 0,
+    "stop_reason": null,
+    "peak_sampled_group_rss_bytes": 963088384,
+    "elapsed": 8.865349742001854,
+    "added_disk_bytes": 930221,
+    "total_phase_disk_bytes": 7620292092,
+    "packet_disk_limit": 8388608,
+    "phase_disk_limit": 25769803776
+  },
+  "ledger_finish": {
+    "actual_positions": 4,
+    "elapsed": 7.0860556670231745,
+    "event": "finish",
+    "inherited_self_rusage_highwater_bytes": 963088384,
+    "run_id": "block-diagnostic-v1",
+    "sampled_owned_tree_rss_bytes": 963088384,
+    "status": "completed",
+    "time": 1795031400.8005002,
+    "version": "transfer-guard-v3"
+  },
+  "limits": [
+    "No cause claim beyond captured sites. No CPU kernel identification or sole-cause attribution.",
+    "No follow-on pilot or source change performed."
+  ]
+}

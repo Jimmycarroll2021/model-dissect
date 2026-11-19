@@ -1,0 +1,12 @@
+{
+  "artifacts/original/tokenizer_config.json": "d7cd6a60c9f191c4f9ffec69b2eb289ad2f960366724f328b681ae1e46e4c110",
+  "artifacts/original/full_sft_768.pth": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+  "artifacts/original/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+  "oracle/vendor/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+  "oracle/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence/execution/acquisition-report.md": "a5f97f21beebfa37fd60978b241a3b9d280a2499abace8516ceb7c3c142ee87f",
+  "evidence/execution/acquisition-download.py": "b573b8b279a3bf1cdd07814c6b3ce11ef9f6d064d81b54ec1fc055aeee544d73",
+  "evidence/execution/acquisition-tensors.allowed.json": "6462751d85e5dd48e12031bcb759e26fc1dcde1fa55196d72a27c4461df6f060",
+  "evidence/execution/acquisition-imports.json": "b76d3dbecc6521109f8bb195f61ba7d8ee27988c8700da3e25fd78f132c4d8be",
+  "evidence/execution/acquisition.json": "16979b7a37dedcfc58af1562a844a3b123c71ce604c3ad8555c9cf0c56590962"
+}

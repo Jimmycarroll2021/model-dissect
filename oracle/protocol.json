@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ORACLE-001",
+  "created_utc": "2026-11-17T06:47:08.725741+00:00",
+  "backend": "cpu",
+  "dtype": "float32",
+  "threads": 2,
+  "atol": 1e-05,
+  "rtol": 0.0001,
+  "sites": [
+    "embedding",
+    "block",
+    "final",
+    "logits"
+  ],
+  "site_correspondence": {
+    "embedding": "input embedding before first complete block",
+    "block": "first complete block output",
+    "final": "final representation immediately before output projection"
+  },
+  "adapter_declaration": "Pinned unchanged upstream layers; outer adapter gathers explicit rotary positions because native model top-level ignores position_ids. Native-equivalence check required for contiguous unpadded positions; padding invariance required separately.",
+  "interface": {
+    "constructor": "ReferenceAdapter(weights_path)",
+    "call": "(input_ids, attention_mask, position_ids, cache=None, intervention=None)",
+    "returns": [
+      "logits",
+      "embedding",
+      "block",
+      "final",
+      "cache"
+    ],
+    "batch_size": 1,
+    "attention_mask": "boolean full cached+new length",
+    "position_ids": "explicit per-new-token; pad positions zero; real positions contiguous",
+    "cache": "opaque per-layer list; cached output only new positions"
+  },
+  "arms": [
+    "baseline",
+    "noop",
+    "restored"
+  ],
+  "native_equivalence": "NOT_RUN",
+  "model_forwards": "HOLD pending coordinator admission",
+  "fixture_protocol_sha256": "4659c4f82e3a37f22f4167c7b096d300ffde3c492035a2bfba057e61c2d92eef"
+}

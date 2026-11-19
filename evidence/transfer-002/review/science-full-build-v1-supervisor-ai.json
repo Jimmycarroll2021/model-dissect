@@ -1,0 +1,10 @@
+{
+  "returncode": 0,
+  "stop_reason": null,
+  "peak_sampled_group_rss_bytes": 590864384,
+  "elapsed": 11.725145986070856,
+  "added_disk_bytes": 713482447,
+  "total_phase_disk_bytes": 713482447,
+  "packet_disk_limit": 1073741824,
+  "phase_disk_limit": 1073741824
+}

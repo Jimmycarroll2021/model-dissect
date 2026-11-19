@@ -1,0 +1,70 @@
+{
+  "verdict": "PASS_EXACT_DIAGNOSTIC_V2",
+  "reviewed_utc": "2026-11-18T19:37:16.649391+00:00",
+  "packet_sha256": "ff90ed0317365f52b1220aead86fd8b21297b36629859a80f04c3c6f023e46ee",
+  "manifest_sha256": "ec7169cc269663c4e323c0621d99e80b500f4446c670344887dc2084c95bfbfb",
+  "checks": {
+    "manifest_identity": true,
+    "packet_identity": true,
+    "manifest_packet_binding": true,
+    "all_manifest_files": true,
+    "packet_identities": true,
+    "source_unchanged": true,
+    "correct_payload": true,
+    "allocation": true,
+    "environment": true,
+    "output_unused": true,
+    "no_interrupted_run": true,
+    "budget_room": true,
+    "free_space": true,
+    "phase_time": true
+  },
+  "packet_changes": {
+    "storage_accounting": {
+      "old": null,
+      "new": {
+        "physical_output_rows": 4,
+        "boundary_values_per_row": 51328,
+        "boundary_payload_bytes": 821248,
+        "observer_values_per_row": 640,
+        "observer_payload_bytes": 10240,
+        "returned_cache_token_rows": 5,
+        "returned_cache_bytes_per_token": 6144,
+        "returned_cache_payload_bytes": 30720,
+        "total_raw_payload_bytes": 862208,
+        "npy_array_count": 72,
+        "reservation_bytes": 8388608,
+        "reservation_covers": "raw arrays, NPY headers, per-call manifests, receipt and ledger additions"
+      }
+    },
+    "raw_payload_bytes": {
+      "old": 7593314304,
+      "new": 862208
+    },
+    "run_id": {
+      "old": "cache-diagnostic-v1",
+      "new": "cache-diagnostic-v2"
+    },
+    "output": {
+      "old": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v1",
+      "new": "EXTERNAL_ARTIFACT_ROOT/workspaces/model-transfer-002-pythia-14m/phase/outputs/cache-diagnostic-v2"
+    }
+  },
+  "raw_bytes": {
+    "boundaries": 821248,
+    "observer_arrays": 10240,
+    "returned_caches": 30720,
+    "total": 862208,
+    "array_count": 72
+  },
+  "reused_source_test_review": {
+    "path": "evidence/transfer-002/review/cache-diagnostic-v1.json",
+    "sha256": "f2d09e28bb179e54a36fdffaecee632a28a49445204bb68b26fbf934ee8deec9",
+    "reason": "Diagnostic source and synthetic tests unchanged; three passing tests and cleanup/source review remain valid."
+  },
+  "scope": "Exactly three native diagnostic calls and4processed positions; preserve all27boundary byte-reproduction checks and all output evidence. Not numerical acceptance or cause proof.",
+  "limits": [
+    "No target model/tokenizer loaded in review.",
+    "Only packet accounting/run identity corrected; original failure remains retained."
+  ]
+}

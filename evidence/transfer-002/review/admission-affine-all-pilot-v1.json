@@ -1,0 +1,7 @@
+{
+  "verdict": "PASS",
+  "packet_sha256": "c7edb02e20ad2184a863bb255fcf8305b8b6aa44c92152af909ada2f431371a2",
+  "review_sha256": "0ef45e74bf6359fd6d14ab9203fa292c00602400e56ee3cc82ee784669f09e6c",
+  "scope": "Exactly6calls8positions all-affine diagnostic; no further runs.",
+  "reviewed_utc": "2026-11-18T19:52:58.696511+00:00"
+}

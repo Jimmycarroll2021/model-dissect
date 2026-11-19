@@ -1,0 +1,699 @@
+{
+  "status": "PASS_A1_A6_EXACT_DELIVERY",
+  "reviewer": "/root/atlas_guard_verify",
+  "created_epoch": 1794954371.7222617,
+  "candidate_manifest_sha256": "c702fa8f9010f0877ea509530a504461a6dcaa4e611505e56485ad935ff1315d",
+  "candidate_files": [
+    {
+      "path": "./docs/weight-dissection-result.md",
+      "sha256": "07e213e052a875dab4ceeca969fc715a1f9cb8df0e2f1141692c60c6484cc2e1",
+      "bytes": 9295
+    },
+    {
+      "path": "./docs/atlas-goal.md",
+      "sha256": "d07b26281936367a6918519ac30ac1ac55bda1f946a03421b234c33fc5308792",
+      "bytes": 4175
+    },
+    {
+      "path": "./specs/001-minimind-reproduction/tasks.md",
+      "sha256": "7338064b2051bcb0dbd38288d587b2518c2e50b6e5551c45fbfb0b158f743e26",
+      "bytes": 21703
+    },
+    {
+      "path": "./evidence/atlas/atlas-acceptance-v1.json",
+      "sha256": "a6122e2318d9ee8da969dffe5b4024d620881ddc6a4e9a4a6801097c2482d89a",
+      "bytes": 7017
+    },
+    {
+      "path": "./evidence/atlas/a5-protocol-v1.json",
+      "sha256": "87eb28803a9c6720ffd20db25ac6cddb34ca4b73aeb05a446cd791cf50befe16",
+      "bytes": 11265
+    },
+    {
+      "path": "./evidence/atlas/review-a5-confirmation-result-v1.json",
+      "sha256": "d1a3c7144ecba421036faeedf99b559efccd51bad7cbf57afe42a32c735e093e",
+      "bytes": 151665
+    },
+    {
+      "path": "./evidence/atlas/review-repeat-evidence-v1.json",
+      "sha256": "63ca42ab22812cacce5acb5e0c69a3a0c225a361881202033c33961fd2224e8a",
+      "bytes": 3825
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas.py",
+      "sha256": "c1b2e114ffff62ef585112c56ef0dbde360203380b3b2deb6c273cf3367e5fd2",
+      "bytes": 22718
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas_probe.py",
+      "sha256": "8ca8b53627f70a59eb968c4a19ea87109f585e025dc3c9c59ad5d5c65530550c",
+      "bytes": 24580
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/forward.py",
+      "sha256": "de1c58d45526dee4ce0b4fb35b6fdf16998bec1bb643539dbb4bb24550179778",
+      "bytes": 4919
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas_guard.py",
+      "sha256": "1d7d8e8105de8145b18b74b0da426f08d21df2ed93d8a5a7a364ba993ab73673",
+      "bytes": 16050
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-policy.json",
+      "sha256": "a8a2ab2d2138062cd266aac645f8d898e08f984ee9d46f1239c3f97523e4d21a",
+      "bytes": 9490
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "sha256": "8ffa74400bac03473103fed7dee048c2ac9506cf1441d04d8c0cbdbf434d7fbd",
+      "bytes": 308800
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md",
+      "sha256": "9984ff702eb8268a192dab4ba860358a707fa4f330b807c3984df89ca8e5a972",
+      "bytes": 123036
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/manifest.json",
+      "sha256": "dbfe40d5044302e948b865e3c1361430d547866c1bae31b991ca2f6085803ba1",
+      "bytes": 1062
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-discovery.json",
+      "sha256": "268be6681c819b4cb35f0f597b885e303bca7709e9671aa95a8b9f3af1c4b24b",
+      "bytes": 30469
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json",
+      "sha256": "f7450051ba9844e43c03c8f5b53a7f21421d26914cd4f5613b73f934d60a2d50",
+      "bytes": 59405
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.prepared.json",
+      "sha256": "ec744df05aa027fffc1dc36197766d0e12fedbc7c7bff75ed48722290ffa729d",
+      "bytes": 108272
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.arms.jsonl",
+      "sha256": "3bfa63233e0d7d28b0a042889c60838bd63ca6f884053a43ef8606e17b66b467",
+      "bytes": 20810846
+    },
+    {
+      "path": "./docs/weight-atlas-result.md",
+      "sha256": "27ceb0aeb54c18951a24d8026ea9c6cc1a496495c49bbbaa595a6ae6ddbaf615",
+      "bytes": 3916
+    },
+    {
+      "path": "./evidence/atlas/review-a5-independent-result-v1.json",
+      "sha256": "7485ea9d73c0b7c8563d439008819340a41bbd28c863bc02000804605a4563af",
+      "bytes": 42925
+    },
+    {
+      "path": "./evidence/atlas/a5-independent-execution.json",
+      "sha256": "ddee3a766d2cee2f66cd9c5a72818204ba49b2e0d63132fe7e3c7b5727ecb110",
+      "bytes": 2304
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json",
+      "sha256": "d3fec07a735223b35660558f56c2dcf54e7e084ac1ab7bf0d31f9d8738c7491f",
+      "bytes": 59402
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json.prepared.json",
+      "sha256": "ec744df05aa027fffc1dc36197766d0e12fedbc7c7bff75ed48722290ffa729d",
+      "bytes": 108272
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json.arms.jsonl",
+      "sha256": "3bfa63233e0d7d28b0a042889c60838bd63ca6f884053a43ef8606e17b66b467",
+      "bytes": 20810846
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-protocol.json",
+      "sha256": "87eb28803a9c6720ffd20db25ac6cddb34ca4b73aeb05a446cd791cf50befe16",
+      "bytes": 11265
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-discovery-packet.json",
+      "sha256": "2554e10e306cda2b994977546abc1a655acba8ab690c097d448d97fdaff17791",
+      "bytes": 2649
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-confirmation-packet.json",
+      "sha256": "2746804203c99e37d6f0c714fc9b63b68c0bf02e0f4fda674ac48a275c650032",
+      "bytes": 2850
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-independent-packet.json",
+      "sha256": "a6c10f8cd5a992fce90480de410838d3d0cdf96a40bb046ee721c4b8c378ff31",
+      "bytes": 2848
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/admission-a5-independent.json",
+      "sha256": "900a1a8698ec93f04cfc7dd7f3186b7ae40d44f5a6d0e69037adab732ba5611a",
+      "bytes": 8251
+    },
+    {
+      "path": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/verification/atlas_check.py",
+      "sha256": "cda9a4d35d62dcb7d399339dd86afdf4c8d52c61709a96dac7bd740bb1aeba4e",
+      "bytes": 10493
+    }
+  ],
+  "acceptance": {
+    "A1": "PASS complete91tensor accounting; prior independently accepted exact candidate reused",
+    "A2": "PASS all91roles/statistics;8representative scalar recomputations, disclosed source assistance",
+    "A3": "PASS bounded16spectra/4heads/16OV; static and sampled limitations explicit",
+    "A4": "PASS actual executed CLI, readable91row report, raw JSON, tested invocation and synthetic validation command; consumed run IDs explicitly not reusable",
+    "A5": "PASS procedural and exact independent repeat; frozen hypothesis scientifically REFUTED",
+    "A6": "PASS exact31file identity, usable local links, cumulative resource/original reconciliation, scientific limits and preserved failures"
+  },
+  "checks_passed": 123,
+  "checks": [
+    {
+      "check": "Exact final manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./docs/weight-dissection-result.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./docs/atlas-goal.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./specs/001-minimind-reproduction/tasks.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./evidence/atlas/atlas-acceptance-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./evidence/atlas/a5-protocol-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./evidence/atlas/review-a5-confirmation-result-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./evidence/atlas/review-repeat-evidence-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas_probe.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/forward.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas_guard.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-policy.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-discovery.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.prepared.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.arms.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./docs/weight-atlas-result.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./evidence/atlas/review-a5-independent-result-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity ./evidence/atlas/a5-independent-execution.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json.prepared.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json.arms.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-protocol.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-discovery-packet.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-confirmation-packet.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/a5-independent-packet.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/admission-a5-independent.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest identity EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/verification/atlas_check.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Source/staged src/minimind_re/atlas.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Source/staged src/minimind_re/atlas_probe.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Source/staged src/minimind_re/forward.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Source/staged runtime/atlas_guard.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Source/staged verification/atlas_check.py",
+      "status": "PASS"
+    },
+    {
+      "check": "91 unique tensor rows and stored element count",
+      "status": "PASS"
+    },
+    {
+      "check": "Readable report every tensor row",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> ../evidence/atlas/atlas-acceptance-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> ../evidence/atlas/a5-protocol-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> ../evidence/atlas/review-a5-independent-result-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-independent.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> ../evidence/atlas/review-a5-confirmation-result-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.arms.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/a5-confirmation.json.prepared.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/atlas_probe.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/src/minimind_re/forward.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas_guard.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/evidence/atlas/producer-execution.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runtime/atlas-policy.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-dissection-result.md -> ../evidence/atlas/review-repeat-evidence-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> weight-dissection-result.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> ../evidence/atlas/review-a5-independent-result-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> ../evidence/atlas/protocol-v1.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> ../TASK_STATE.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> ../specs/001-minimind-reproduction/tasks.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> weight-atlas-result.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> ../evidence/atlas/atlas-acceptance-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/atlas-goal.md -> weight-dissection-result.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-atlas-result.md -> weight-dissection-result.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-atlas-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-atlas-result.md -> EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-atlas-001-20261118/runs/atlas-v1/atlas.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-atlas-result.md -> ../evidence/atlas/atlas-acceptance-v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Resolvable docs/weight-atlas-result.md -> ../TASK_STATE.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Independent A5 acceptance and scientific negative",
+      "status": "PASS"
+    },
+    {
+      "check": "Repeated artifact runs/a5-independent.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Repeated artifact runs/a5-independent.json.prepared.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Repeated artifact runs/a5-independent.json.arms.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "160arm journals exact bytes by SHA256",
+      "status": "PASS"
+    },
+    {
+      "check": "Entire preparation exact bytes by SHA256",
+      "status": "PASS"
+    },
+    {
+      "check": "Untouched original/source/staged artifacts/original/full_sft_768.pth",
+      "status": "PASS"
+    },
+    {
+      "check": "Untouched original/source/staged artifacts/allowed/supplied_config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Untouched original/source/staged artifacts/original/tokenizer.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Untouched original/source/staged artifacts/original/tokenizer_config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input protocol",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input checkpoint",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input config",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input tokenizer",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input tokenizer_config",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input fixtures",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input other_fixtures",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input exclusions",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input policy",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet discovery input scientific_gate",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input protocol",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input checkpoint",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input config",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input tokenizer",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input tokenizer_config",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input fixtures",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input other_fixtures",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input exclusions",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input policy",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input scientific_gate",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet confirmation input prerequisite",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input protocol",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input checkpoint",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input config",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input tokenizer",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input tokenizer_config",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input fixtures",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input other_fixtures",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input exclusions",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input policy",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input scientific_gate",
+      "status": "PASS"
+    },
+    {
+      "check": "Packet independent input prerequisite",
+      "status": "PASS"
+    },
+    {
+      "check": "Immutable phase times",
+      "status": "PASS"
+    },
+    {
+      "check": "Reconciled caps",
+      "status": "PASS"
+    },
+    {
+      "check": "No active runs",
+      "status": "PASS"
+    },
+    {
+      "check": "Final independent successful guard",
+      "status": "PASS"
+    },
+    {
+      "check": "Failed static repeat retained and charged",
+      "status": "PASS"
+    },
+    {
+      "check": "Historical unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "Actual positions distinct from reservations",
+      "status": "PASS"
+    },
+    {
+      "check": "Historical tested CLI points to actual policy argv",
+      "status": "PASS"
+    },
+    {
+      "check": "One-use CLI clearly disclosed",
+      "status": "PASS"
+    },
+    {
+      "check": "T067 sole new unchecked delivery task",
+      "status": "PASS"
+    }
+  ],
+  "evidence_reused": {
+    "A1_A4": "a6122e2318d9ee8da969dffe5b4024d620881ddc6a4e9a4a6801097c2482d89a",
+    "A5": "7485ea9d73c0b7c8563d439008819340a41bbd28c863bc02000804605a4563af"
+  },
+  "scientific_verdict": "REFUTED",
+  "ledger_sha256": "1760cb33968d4840d0f0a18d7583916cee2e3fcea0a56a71bfcb26fbafac1f95",
+  "resources": {
+    "active_rows": 0,
+    "static_reserved_seconds": 900,
+    "model_reserved_seconds": 1800,
+    "phase_positions_reserved": 120000,
+    "historical_positions_reserved": 175600,
+    "lifetime_positions_reserved": 295600,
+    "actual_A5_positions": 12750,
+    "start": 1794952381.8433254,
+    "deadline": 1794959581.8433254
+  },
+  "unresolved_blockers": [],
+  "controller_action": "Record A1\u2013A6 acceptance and complete native goal only after receiving this verdict; reviewer did not mark goal complete. T067 checkbox and related task/state/final-metadata completion are permitted clerical follow-through, not an unreviewed scientific/code change. Preserve reviewed manifest as pre-acceptance snapshot.",
+  "limitations": [
+    "One frozen cue/head/contrast/input distribution; no whole-model mechanism or semantic feature claim",
+    "Roles/conventions source-assisted; only selected structural math independently checked",
+    "Boundary hashes and zero-difference receipts retained, not full hidden-state arrays; full final-token logits compared",
+    "Static repeat guard FAIL remains charged with missing final resource gate; output reuse is not retrospective runtime PASS",
+    "Current report and goal documents intentionally retain pre-A6/past checkpoint status; this final verdict and controller state supersede only those status labels",
+    "Original project has no Git repository; no external integration/install, publication, training or kernel sandbox claim",
+    "No model execution, tokenization, checkpoint load or broad rerun tests during final review"
+  ],
+  "allowed_changes_after_review": [
+    "T067 completion checkbox",
+    "TASK_STATE.md and CASE_FACTS.md acceptance state",
+    "Final metadata recording this exact verdict; no scientific/code/fixture/threshold edits"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PASS_EXACT_SHAPE_PRODUCER_ADMISSION",
+  "reviewed_utc": "2026-11-18T09:26:15.814009+00:00",
+  "candidate_manifest_sha256": "7d340537e0efd206d200f53eeca2891b65da90b386423e8d83d2f30e7ce40e53",
+  "probe_sha256": "c0d2395054c065c0bdafc00d8c7f0dd2b758a69c6322cc79153eec377efdfa2a",
+  "candidate_sha256": "d3009078f90ad10afaf331f96c381524250e4b157ecd71857a09d773189c1137",
+  "reference_sha256": "00a1283645c79aac9befeb04a3a21dbb4884150893695bdce35cb32136009b3a",
+  "guard_sha256": "341e81d17d27262c4780e63918acf29d7c646af6fa0c70d4a0c3d9a1500206d0",
+  "policy_sha256": "c30c76c9c1224f5725596fbe000088fff4032728eca08e07c03535cbe197151c",
+  "files_verified": {
+    "stage": 27,
+    "project": 15
+  },
+  "tests": {
+    "independent_source_synthetics": 7,
+    "author_synthetics_rerun_before_byte_gate": 10,
+    "guard_synthetics": 50,
+    "logs": {
+      "./evidence/cache-shape/review/source-synthetic-v3.log": "0da6f0fa138a71ee4dbd0c96c5da081a643d5919e44d5f5c50ba5c50f530e525",
+      "./evidence/cache-shape/review/author-tests-rerun-v1.log": "36728ecca9498ee0514af1f72edf05b464d42afd2ead8690fc8b718f79d04c59",
+      "./evidence/cache-shape/review/guard-rerun-v1.log": "74346d40720dffa4d17962fac3bcf72af8113f1c1280e3d4f79c87433e84415c"
+    }
+  },
+  "resolved_findings": [
+    "Incorrect oracle import replaced with package-relative independent reference import.",
+    "Float equality prefix check replaced with shape/dtype-checked contiguous uint8 equality; independent signed-zero/dtype/shape/noncontiguous tests PASS. Prior failing/held evidence retained."
+  ],
+  "checks": [
+    "Entire candidate network/prefill AST matches original after removing capture-only statements and replacing new cached branch with preserved original branch.",
+    "Exact cached branch synthetic attention matches full-width final row and leaves operand tensors unchanged.",
+    "Independent native context delegates no-cache, restores exact instance bindings, and probe enforces24cached/16prefill attention calls.",
+    "Native block trace plus explicit override receipt captures actual live Q/K/V and attention/residual fields.",
+    "Probe snapshots old cache before call and checks both input cache and returned historical prefix bytes at all layers/three appends.",
+    "All four boundaries compared to untouched native8/11 and final cached/full at original tolerance; cross-policy all five modes require exact equality.",
+    "Seven source/snapshot historical chains verified with read-only lock acquisition; no active prior rows.",
+    "Strict MKL environment established before fresh interpreter imports; fixed phase1800, role300,128+128 reservation and combined memory/disk safeguards retained.",
+    "Exact guard admission validation passes; new phase clock has not started."
+  ],
+  "accounting": {
+    "actual_positions_each": 63,
+    "model_calls_each": 12,
+    "phase_reserved": 256,
+    "historical_reserved": 1036432,
+    "lifetime_after_both": 1036688,
+    "remaining_after_both": 1856,
+    "approved_ceiling": 1038544
+  },
+  "producer_command": [
+    "/usr/bin/python",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118/runtime/shape_guard.py",
+    "--workspace",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118",
+    "--policy",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-shape-001-20261118/runtime/shape-policy.json",
+    "--policy-hash",
+    "c30c76c9c1224f5725596fbe000088fff4032728eca08e07c03535cbe197151c",
+    "--admission",
+    "./evidence/cache-shape/review/producer-admission-v2.json",
+    "--run-id",
+    "cache-shape-producer-v1",
+    "--kind",
+    "model",
+    "--positions",
+    "128",
+    "--timeout",
+    "300"
+  ],
+  "admission_sha256": "ee231dc13b99002e62eea43d6601a36d24b1ec4db26a8a67f4f5cda4d053d907",
+  "limitations": [
+    "No target model calls in this review; synthetic attention tensors only.",
+    "Minimal exposed fixture cannot certify full16938-position original matrix; native historical R2 remains FAIL.",
+    "Dummy query attention arithmetic explicitly adds work; no efficiency benchmark claim.",
+    "Guard controls direct immutable child; not an OS-enforced descendant sandbox."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "verdict": "BLOCKED_RUNTIME_BUILD_FIXES_REQUIRED",
+  "checked_utc": "2026-11-18T19:14:41.546792+00:00",
+  "manifest_sha256": "92aa6c056ee100fa012c8e741fc8e4cc59c9cbe765f1bb735a95a40aa38fd666",
+  "checks": {
+    "manifest_identity": true,
+    "file_identities": false
+  },
+  "author_tests": "Independently reran 9 model-free tests: 9 passed in 1.06s.",
+  "storage": {
+    "calls_per_role": 1296,
+    "positions_per_role": 34356,
+    "boundary_payload_per_role": 7053699072,
+    "returned_cache_payload_per_role": 375349248,
+    "incoming_cache_payload_per_role": 164265984,
+    "all_payload_both_roles": 15186628608
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "blocking",
+      "file": "src/minimind_re/transfer/guard.py",
+      "issue": "Supervisor actual disk check subtracts per-run initial_size and does not enforce total phase disk usage or per-packet reservation. Guard only sums declared reservations. Fast successful child exit also bypasses final disk/free-space limit validation.",
+      "reproduction": {
+        "preexisting_bytes": 256,
+        "new_bytes": 64,
+        "configured_disk_bytes": 128,
+        "actual_total_bytes": 320,
+        "supervisor_receipt": {
+          "returncode": 0,
+          "stop_reason": null,
+          "peak_sampled_group_rss_bytes": 11702272,
+          "elapsed": 0.38651428697630763,
+          "added_disk_bytes": 64
+        }
+      },
+      "required_fix": "Bind supervisor to exact packet disk allowance and enforce aggregate actual phase size including prior outputs; check final size/free reserve after child exit; preserve failed reservation and receipt."
+    },
+    {
+      "id": "R2",
+      "severity": "blocking",
+      "file": "src/minimind_re/transfer/reference.py",
+      "issue": "Hooks registered before DynamicCache construction, which is outside try/finally. Cache initialization failure leaves hooks installed.",
+      "reproduction": {
+        "hook_counts_after_exception": [
+          1,
+          1,
+          1
+        ]
+      },
+      "required_fix": "Put hook registration and cache preparation inside cleanup-protected try/finally; test setup failures as well as forward failures."
+    },
+    {
+      "id": "R3",
+      "severity": "blocking",
+      "issue": "Manifest identity mismatch found during verification; refreeze changed artifact and independently review exact candidate before admission.",
+      "mismatches": {
+        "./src/minimind_re/transfer/numerical.py": {
+          "expected": "e7feefb7008c47ca1718845893bb9bb5122c3f15c796e4b35e96c6e64d82568c",
+          "actual": "437076483a9c9d8f2ebcd267c787f6bfa4d6e717e3ad046d812227b74b921152"
+        },
+        "./src/minimind_re/transfer/guard.py": {
+          "expected": "362215bc41ec2ce53db6bc9ddff157316c2200d911e619402963378bad225f93",
+          "actual": "e93adb417214cb9b3c66c4eb2456cf92bbcf602e692a04a68df1b6a33d1d3655"
+        }
+      }
+    }
+  ],
+  "positive_evidence": [
+    "New owned session/process group; timeout test kills and reaps child; cleanup attempts remove remaining owned group members.",
+    "Continuous sampled group RSS/free-space/time polling present; inherited highwater separately measured inside child checks.",
+    "Per-call positions appended before forward; failures preserve reservation; lock and identity/admission checks present.",
+    "Native source has no candidate imports; local safetensors eager FP32 eval; cache clones and transformed hidden captured in correct order.",
+    "Numerical comparison finite-checks retained boundaries including masked rows; output cache finite checks and incoming-byte prefix checks present.",
+    "All raw call arrays persisted before numerical comparison; incoming cache adds explicit retained payload."
+  ],
+  "limits": [
+    "No target model/tokenizer loaded or model calls.",
+    "Combined CLI/packet/environment/fixture admission remains separate.",
+    "Whole watchdog security isolation against hostile escaped processes not established."
+  ],
+  "identity_mismatches": {
+    "./src/minimind_re/transfer/numerical.py": {
+      "expected": "e7feefb7008c47ca1718845893bb9bb5122c3f15c796e4b35e96c6e64d82568c",
+      "actual": "437076483a9c9d8f2ebcd267c787f6bfa4d6e717e3ad046d812227b74b921152"
+    },
+    "./src/minimind_re/transfer/guard.py": {
+      "expected": "362215bc41ec2ce53db6bc9ddff157316c2200d911e619402963378bad225f93",
+      "actual": "e93adb417214cb9b3c66c4eb2456cf92bbcf602e692a04a68df1b6a33d1d3655"
+    }
+  }
+}

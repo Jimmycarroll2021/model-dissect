@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-18T09:45:53.465371+00:00",
+  "manifest_sha256": "a9f896523650e52396703ac8ad091ac88eedab5b7c49f9d46241c5645c1808f6",
+  "artifacts": [
+    {
+      "path": "./docs/actual-input-walkthrough.md",
+      "sha256": "d5b96adb4b026509a6f3d293f05978bb5f135f551b3f6830651aa019bb6f8b5e"
+    },
+    {
+      "path": "./visualization/actual-input/index.html",
+      "sha256": "dcc257563865e83a8d7a9dab51fcb605f4cc9dcee58f427684b305487672092e"
+    },
+    {
+      "path": "./evidence/actual-input/trace-summary.json",
+      "sha256": "cf17922ca6282c7f14a874bcbec37985d237e8c6df5a92dd6b561c638c279c57"
+    },
+    {
+      "path": "./evidence/actual-input/build_trace.py",
+      "sha256": "defcfdacbd4e7ca5a30ba60cc444fca863a31f0a35a5b2a266106146219db125"
+    }
+  ],
+  "numeric_summary_unchanged_sha256": "cf17922ca6282c7f14a874bcbec37985d237e8c6df5a92dd6b561c638c279c57",
+  "checks": [
+    "All artifact and ten source identities match final manifest",
+    "All 11 fixture IDs and ByteLevel inverse byte pieces independently verified using pinned JSON only; 10 output-token byte displays also checked",
+    "All 64 head rows / 704 probabilities identical to saved native_primitives layer full probability arrays; all viewer cells match stated rounding",
+    "Eight saved weighted-value outputs byte-identical to captured unprojected last-token attention",
+    "Independent NumPy recomputation of all displayed L2/RMS/min/max, residual net differences, peak/entropy/query/weighted-value summaries",
+    "All eight residual links and duplicate native archives byte-identical; QKV dimensions verified",
+    "Top ten IDs/logits and float64-derived softmax independently verified from all 6400 saved logits",
+    "All Markdown scalar/peak tables match summary rounding; all links resolve",
+    "Artificial fixed continuation, saved primitive rather than direct softmax capture, no exact MLP activation, no source-edge/semantic/causal transfer claim clearly stated",
+    "Requested corrections applied: rounded viewer table no longer called exact; per-head norms correctly located in JSON"
+  ],
+  "browser_review": {
+    "status": "PASS_DESKTOP_RENDER",
+    "command": "chromium --headless --disable-gpu --no-sandbox --no-first-run --disable-background-networking --user-data-dir=/tmp/minimind-actual-input-review-browser --screenshot=<review/viewer.png> --window-size=1280,2200 <project>/visualization/actual-input/index.html",
+    "screenshot": "evidence/actual-input/review/viewer.png",
+    "screenshot_sha256": "db96bcaa1cfa3f209861936ce5ea7c5f0723d99b3ad633c150d0c2aa2ca214d1",
+    "observed": "Input table, residual table, headings, first heatmap and next heatmap visibly readable; all eight SVG structures and 704 cells checked in HTML. No external resources or scripts.",
+    "scope": "Screenshot predates only wording fixes; layout/numeric content unchanged. Did not exercise all disclosure controls or mobile layout.",
+    "stderr": "Nonfatal inotify_init too many open files warning; browser exited zero and produced inspected screenshot."
+  },
+  "verification_script": "evidence/actual-input/review/check_saved.py",
+  "verification_script_sha256": "8b6b8c53682cb761e8486c53d1697300dff81dbb2ee5a765d55c7f5bddd1117d",
+  "required_changes": [],
+  "resolved_findings": [
+    "Guide had claimed per-head norms appeared in viewer when only JSON supplied them",
+    "Viewer rounded probability table had misleading Exact label"
+  ],
+  "execution_limits": {
+    "checkpoint_loads": 0,
+    "model_forwards": 0,
+    "tokenizer_executions": 0,
+    "matrix_contractions": 0,
+    "torch_threads": 2
+  },
+  "limits": [
+    "Only selected last-token full-prefill observations; no new mechanism or cache parity evidence",
+    "No full RMS denominator or MLP gate/product arrays captured",
+    "Browser review is desktop screenshot plus static whole-page checks, not complete interaction/accessibility certification"
+  ]
+}

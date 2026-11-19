@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_REPEAT_ADMISSION",
+  "admission_path": "./evidence/behavior-completion/review/independent-admission-v1.json",
+  "admission_sha256": "7c750a3752d5dbe21f1ab797f8f89cd6827d2b42d4a154ebcf8b3fd15abe9ddf",
+  "phase_start": 1794985573.2121327,
+  "phase_deadline": 1794992773.2121327,
+  "reserved_positions": 100512,
+  "timeout": 1500,
+  "repeat_rows": 48,
+  "expected_actual_positions": 54816,
+  "qualification": "FORBIDDEN_NO_SELECTED_FAMILY",
+  "source_receipt_sha256": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf",
+  "model_execution": "NOT_STARTED"
+}

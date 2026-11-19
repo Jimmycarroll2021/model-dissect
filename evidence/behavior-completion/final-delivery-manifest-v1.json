@@ -1,0 +1,36 @@
+{
+  "status": "FINAL_DELIVERY_CANDIDATE_PENDING_EXACT_REVIEW",
+  "created_epoch": 1794985870.910681,
+  "scientific_review": {
+    "path": "./evidence/behavior-completion/review/independent-repeat-final-v1.json",
+    "sha256": "d1bf47d47029b2de42e5eafb5296ee78f2bde3532f8c4ea852c391082169bb4e",
+    "verdict": "PASS_INDEPENDENT_NEGATIVE_REPLICATION"
+  },
+  "outcome": "STOP_NO_QUALIFIED_FAMILY",
+  "scope": "Bounded response diagnostic complete; broader model-understanding objective unfinished",
+  "files": {
+    "./docs/behavior-completion-result.md": "cd4b30927c749ae183389f46144042528c41fcbc9318c46f1c6800e1ee3b5553",
+    "./TASK_STATE.md": "5e8db5084f97bac1fa721374f2311084445f453c9d1fb6bb5100aa832b8d4c32",
+    "./CASE_FACTS.md": "6a968cd82e4c2ad5e4c3a48cae48bb72520f9861d85d9f240bfb5ad7fe4db9f0",
+    "./specs/001-minimind-reproduction/spec.md": "ea9e6771309678d4222dba9e84109539be2672d468ca3c43d4c2419366bdb0c2",
+    "./specs/001-minimind-reproduction/plan.md": "37f5c5f7e94d3c9b73660b4700a52050e359fdc99de4598473396e099ad64748",
+    "./specs/001-minimind-reproduction/tasks.md": "c41880b75b3003bd305aaaa30bc1b132515ca6df1a83a266f92c0b081c966b9a",
+    "./evidence/behavior-completion/candidate-manifest-v1.json": "f589ef6490bc27793efafb1aefe708d0d8f3244d058febbb18d6aec27f67601c",
+    "./evidence/behavior-completion/screen-execution-v1.json": "0f6059d75a7d903f48728ba6c299c099697cc9edc36266de5c40d5c988dbb593",
+    "./evidence/behavior-completion/review/independent-repeat-final-v1.json": "d1bf47d47029b2de42e5eafb5296ee78f2bde3532f8c4ea852c391082169bb4e",
+    "./evidence/behavior-completion/review/screen-raw-review-v1.json": "3903f3e447837f5136e26183dbc8f99a0ebc502b2f0dfa01dab44fb32942b698",
+    "./evidence/behavior-completion/protocol-v1.md": "42b335c3e57a3a51eea2d8a42d57ade66132f0ccef9fb0f4a095df63eebf1fde",
+    "./evidence/behavior-completion/protocol-v1.json": "3bbb22a0cd5bb0f3107f5a3e07c4dec94557df5e189080ea81c7a1da89d3f64e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json": "87c82eef89d6985f6334cecd3302e0a032210d7af7b0132a1295ca71a42c90cf",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-screen-v1.json.steps.jsonl": "a57ede30c8601e039f693194a99ebd5bdb28117aea63304f86f15a479bb962bb",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-independent-v1.json": "17d70fd7f8ab4f8172c3f45b858feddc5b1d41bfc4478c88d16d6536b26e4e4e",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runs/response-independent-v1.json.steps.jsonl": "a57ede30c8601e039f693194a99ebd5bdb28117aea63304f86f15a479bb962bb",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response-ledger.json": "465f9f3da6ba029932f7b9b8ff77f2118e5052c67ded11ea71721059621ed070",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response-policy.json": "fd9526336aa45b5e9a30b4ec40ded91d02baf788d45990c2682a754bc4d9c784",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/src/minimind_re/response_probe.py": "6acce1a4055f79ed000100dbcb6f87ef7a4b84d84aebb5329cc7f515825528df",
+    "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-behavior-002-20261118/runtime/response_guard.py": "b349c802fcbb2b471a658c507aeed2daba3ff19ae9c55cccad962fa43e0df36c"
+  },
+  "native_goal": null,
+  "active_runtime_rows": 0,
+  "next_action": "Independent exact-document/metadata review; then controller accepts C4 and closes T075 with separate clerical identity receipt. No new model work."
+}

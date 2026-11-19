@@ -1,0 +1,14 @@
+{
+  "status": "AGREEMENT_ALL4",
+  "independent_committed_sha256": "739c884e8a0ab33d99f0d0131e31de521b004c22d16c07b15270c828dec9767f",
+  "producer_sha256": "51eca7100747b5eff3fd837ae50837d187a0a464a7f84141424f92242ce222ef",
+  "independent_committed_before_producer_read": true,
+  "grades": {
+    "behavior-copy-screen-00": "INCOMPLETE",
+    "behavior-subtract-screen-00": "INCOMPLETE",
+    "behavior-compare-screen-00": "WRONG",
+    "upstream-first-general-chat": "INCOMPLETE"
+  },
+  "disagreements": [],
+  "note": "Three INCOMPLETE; completed COMPARE WRONG under frozen false-mathematical-assertion rule. No semantic success or family qualification."
+}

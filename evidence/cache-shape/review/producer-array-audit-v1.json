@@ -1,0 +1,13 @@
+{
+  "status": "PASS_RAW_SHAPE_AUDIT",
+  "result_sha256": "44099a1030f33763d6f24b5ec4dd672fd0eaef74245c4d98371eca4fac5a9c50",
+  "counts": {
+    "boundaries": 44,
+    "operands": 112,
+    "raw_prefix_byte_comparisons": 96,
+    "input_prefix_runtime_checks": 96
+  },
+  "all44_boundary_comparisons_exact": true,
+  "all112_operand_comparisons_exact": true,
+  "model_calls_in_audit": 0
+}

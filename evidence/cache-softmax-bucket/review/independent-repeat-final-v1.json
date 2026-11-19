@@ -1,0 +1,84 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_REPEAT_LIMITED_SCREEN",
+  "producer_result_sha256": "6e002a043590444138c51d4fad3c5b3649fe9f349252a5a887165e5919d470a8",
+  "independent_result_sha256": "df50fd0e6cc5054681151edab6bca27f284a079b529ea8f596ab9d30188960d8",
+  "raw_archives_per_role": 28,
+  "exact_tensor_comparisons": 560,
+  "comparison_rows_per_role": 80,
+  "comparison_rows_recomputed_per_role": 80,
+  "all_rows_max_tolerance_ratio": 0.0,
+  "top1_mismatches": 0,
+  "independent_saved_prefix_bytechecks_per_role": 256,
+  "inprocess_input_mutation_assertions_per_role": 256,
+  "total_inprocess_prefix_checks_per_role": 512,
+  "call_and_fidelity_metadata_exact": true,
+  "result_exact_excluding_exit_rss": true,
+  "ledger_sha256": "5dc56213dc4ab976e6b7f029ba8255b64923057f2de8556bb3d64054d4a3fe0d",
+  "charged_positions": 1138656,
+  "remaining_positions": 0,
+  "active_runs": 0,
+  "independent_resource": {
+    "id": "cache-softmax-bucket-independent-v1",
+    "kind": "model",
+    "role": "verification",
+    "positions_reserved": 128,
+    "wall_reserved": 300.0,
+    "start": 1795004244.430368,
+    "status": "completed",
+    "argv": [
+      "/usr/bin/python",
+      "-m",
+      "minimind_re.softmax_bucket_probe",
+      "--packet",
+      "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-bucket-001-20261118/evidence/packet-independent-v1.json"
+    ],
+    "output": "EXTERNAL_ARTIFACT_ROOT/workspaces/minimind-cache-softmax-bucket-001-20261118/runs/cache-softmax-bucket-independent-v1/result.json",
+    "guard_entry_rusage_maxrss_bytes": 21553152,
+    "guard_entry_proc_status": {
+      "VmHWM": "21048 kB",
+      "VmRSS": "20500 kB"
+    },
+    "sampled_live_peak_owned_rss_bytes": 1304477696,
+    "peak_owned_rss_bytes": 1388314624,
+    "owned_rss_cap_bytes": 10737418240,
+    "owned_rss_scope": "guard plus direct child; descendants prohibited",
+    "pid": 1508300,
+    "exit_code": 0,
+    "guard_completion_proc_status": {
+      "VmHWM": "21048 kB",
+      "VmRSS": "20640 kB"
+    },
+    "guard_completion_rusage_maxrss_bytes": 21553152,
+    "final_child_highwater_bytes": 1366761472,
+    "final_guard_highwater_bytes": 21553152,
+    "final_combined_highwater_bytes": 1388314624,
+    "final_highwater_scope": "conservative sum of independent process highwaters; child highwater cumulative within guard process",
+    "child_completion_resource_snapshot": {
+      "pid": 1508300,
+      "statm_rss_bytes": 1101066240,
+      "proc_status": {
+        "VmHWM": "1334728 kB",
+        "VmRSS": "1075260 kB"
+      },
+      "rusage_maxrss_bytes": 1366761472
+    },
+    "child_completion_resource_snapshot_source": "Frozen child self-sample immediately before result serialization; post-exit procfs is unavailable",
+    "output_sha256": "df50fd0e6cc5054681151edab6bca27f284a079b529ea8f596ab9d30188960d8",
+    "end": 1795004250.0877523,
+    "wall_seconds": 5.642114476999268,
+    "cpu_seconds": 6.63805,
+    "peak_child_rss_kib": 1334728
+  },
+  "evidence": {
+    "evidence/cache-softmax-bucket/review/runtime-admission-v1.json": "96dba381720274fd7fef58adc9b0cfa1fb2f9e999d0fca3de29b8fcbf555c860",
+    "evidence/cache-softmax-bucket/review/producer-raw-audit-v1.json": "9eeb5bdc6f7d8ad9285f31994555ef933613e9ab309bd975c4c7d9d3ec00f0b1",
+    "evidence/cache-softmax-bucket/review/independent-raw-audit-v1.json": "ecc2c0bb9f1454a54a74516f2475d58ed537473d22da9e72432d55c55372d7ea",
+    "evidence/cache-softmax-bucket/review/independent-terminal-v1.json": "fcee74db9839ede1532b8356fa72b5b14c09e69d4bec993ca54646c91014a6c5"
+  },
+  "limits": [
+    "Only two exposed fixtures, baseline arm, final fourth append cached/full. Intermediate cached/full not executed.",
+    "All actual source fidelity, final cached/full and paired cached comparisons in this screen exact, but complete24fixture3arm matrix and independentrepeat remain unexecuted for newmode.",
+    "Saved raw independently checks returned prefixes; input-object mutation checks executed in process but before/after clones not independently persisted.",
+    "No full R2 or whole-goal completion claim."
+  ]
+}
