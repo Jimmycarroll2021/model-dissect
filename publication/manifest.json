@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4966,
-      "sha256": "583f4cf6bec1ab9cd417247691059784e1f5c04a286df9fd947f7c986794de14"
+      "bytes": 5272,
+      "sha256": "91d80290a34f92d21e7c78a4db4fee9797eef584bb47be3b421bc443f3168d10"
     },
     {
       "path": "analysis/candidate-manifest-v2.json",
@@ -3278,8 +3278,8 @@
     },
     {
       "path": "publication/REPRODUCTION.md",
-      "bytes": 6545,
-      "sha256": "ee6dc0ccc334630b0f45953998c080be51273b130f376e9bbd2fc4034078c7f2"
+      "bytes": 6905,
+      "sha256": "9c582c0059c62514b29a44694dbffcfd0fcf3c5a2638de26a480a46e81364fad"
     },
     {
       "path": "publication/omitted-links.json",
@@ -3293,8 +3293,8 @@
     },
     {
       "path": "publication/validation.json",
-      "bytes": 2159,
-      "sha256": "f88ec635b4f46166abd968ba5bf1baeaa499839982bb5bffe44ecdd2a1ce910f"
+      "bytes": 3079,
+      "sha256": "fe03401060d86fa32553c5594a6afc75f7e0c91a4dbb74b3bad2a8f06610fb8f"
     },
     {
       "path": "pyproject.toml",
@@ -3658,8 +3658,8 @@
     },
     {
       "path": "src/minimind_re/paths.py",
-      "bytes": 312,
-      "sha256": "8bf910f5ed7a21704017326024340cf237a5f2e95f707471835f44a8aecba357"
+      "bytes": 1471,
+      "sha256": "2eea699fadab657760c37413055206e23223a32e9e52bc8dc2e88ae91ff693d6"
     },
     {
       "path": "src/minimind_re/probe.py",
@@ -3970,6 +3970,11 @@
       "path": "tests/test_mechanism.py",
       "bytes": 6484,
       "sha256": "5cc0143a758a676e3afec720fdc7d3fddfeeafd71e819e7f709b2496265c65b7"
+    },
+    {
+      "path": "tests/test_paths.py",
+      "bytes": 2923,
+      "sha256": "92d4f537bd044fcdb8ff650ac547710077606e0a8b35cad263249b3f7dd4fde3"
     },
     {
       "path": "tests/test_probe.py",

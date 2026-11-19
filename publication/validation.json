@@ -3,10 +3,10 @@
   "scope": "Portable publication only; no target model inference, downloads, installs or historical raw re-audit.",
   "tests": {
     "command": "PYTHONPATH=src:. OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1 python -m pytest -q tests",
-    "passed": 423,
+    "passed": 434,
     "subtests_passed": 59,
     "warnings": 3,
-    "elapsed_seconds": 47.1,
+    "elapsed_seconds": 45.97,
     "initial_run": {
       "passed": 420,
       "failed": 3,
@@ -15,7 +15,8 @@
         "Two legacy guard tests used the immutable historical phase epoch and correctly hit the elapsed cap."
       ],
       "correction": "Import test uses a clean subprocess; synthetic guard tests patch only EXECUTION_START to their test epoch. Production guard unchanged."
-    }
+    },
+    "path_regressions_added": 11
   },
   "bundle_check": {
     "command": "PYTHONPATH=src:. python scripts/publication/check_bundle.py",
@@ -42,5 +43,15 @@
   "whitespace_check": {
     "status": "NONBLOCKING_HISTORICAL_FORMATTING",
     "detail": "git diff --check reports trailing spaces in generated SVG paths, unchanged vendored source and historical Markdown line breaks; preserved upstream bytes instead of rewriting scientific/vendor artifacts."
+  },
+  "prior_candidate_review": {
+    "candidate": "7318d68bc7c5cbe75f815ef43536f5409614469d",
+    "status": "BLOCKED",
+    "external_review_id": "model-dissect-publication-review/review-v1.json",
+    "review_sha256": "a9f10f5b12bc118962827e0d75736f1e6f7c6c4e4e8537b5e5eacda497c35b18",
+    "probe_sha256": "d1a9fb446388de7f26da1669b513769f765f25b66ca2377146c12d3890ff985e",
+    "finding": "MODEL_DISSECT_DATA=/ made Evidence containment universal; artifact_path accepted absolute, parent-traversal and symlink escape paths.",
+    "correction": "Validate dedicated absolute root after resolving symlinks; reject broad roots and absolute/traversal/resolved-escape child paths. Add actual Evidence regression and valid-root checks.",
+    "review_scope": "Independent reviewer reported other provenance/privacy/link checks passing; new candidate still requires independent delta review."
   }
 }

@@ -24,7 +24,7 @@ Use official Hugging Face `resolve/<revision>/<filename>` endpoints for model fi
 
 ## New runtime procedure
 
-1. Allocate a fresh `MODEL_DISSECT_DATA` directory on suitable storage. Reserve CPU/RAM/disk and time according to the applicable protocol; the guards retain limits and exact identity checks.
+1. Allocate a fresh absolute `MODEL_DISSECT_DATA` directory on suitable storage. Relative overrides, broad system roots, home/checkout/current-directory roots and their ancestors are rejected after symlink resolution. Use a dedicated child directory; artifact child paths cannot be absolute, contain `..`, or resolve outside that root. These checks do not provide an OS sandbox or protection against concurrent filesystem mutation. Reserve CPU/RAM/disk and time according to the applicable protocol; the guards retain limits and exact identity checks.
 2. Set `PYTHONPATH=src:.` when using the complete checkout. `pip install -e` installs the core package; reference/runtime scripts and reports remain checkout resources.
 3. Verify model input hashes, environment and tokenizer configuration. Historical environment included Python 3.12, torch 2.11.0+cu128, transformers 5.1.0, tokenizers 0.22.2, numpy 2.2.6 and safetensors 0.8.0rc0; these are recorded versions, not an assertion of compatibility with every current release.
 4. Use the selected model's spec/contracts to prepare new packet IDs, source/artifact hashes, fixture hashes, reservations and independently reviewed admission. Regenerate all relocation-sensitive hashes. Never replay consumed IDs or old ledgers.

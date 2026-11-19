@@ -44,7 +44,7 @@ PYTHONPATH=src:. OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 HF_H
 
 The synthetic tests do not reproduce accepted checkpoint results. They exercise small randomly initialized models, metric arithmetic, malformed inputs and runtime accounting. Reference behavior is version-sensitive: historical versions are listed in [reproduction notes](publication/REPRODUCTION.md).
 
-Set `MODEL_DISSECT_DATA` to an absolute directory on a filesystem with sufficient capacity before a new runtime. The portable default is `.model-dissect-data` under the working directory. The software keeps its original isolation and admission gates; selecting a directory does not authorize or initialize a run. Historical admission IDs and source hashes cannot be reused after relocation.
+Set `MODEL_DISSECT_DATA` to an absolute, dedicated directory on a filesystem with sufficient capacity before a new runtime. Relative overrides and broad locations (filesystem root, top-level system directories, home, checkout, current directory or their ancestors) are rejected after resolving symlinks. Artifact child paths reject absolute paths, parent traversal and symlinks that resolve outside the dedicated root. The portable default is `.model-dissect-data` under the working directory. The software keeps its original isolation and admission gates; selecting a directory does not authorize or initialize a run. Historical admission IDs and source hashes cannot be reused after relocation.
 
 The generic CLI `report` describes the early MiniMind baseline only. Read the reports above for later results. This is an inspectable research workbench, not an automatic arbitrary-model reverse-engineering service.
 
