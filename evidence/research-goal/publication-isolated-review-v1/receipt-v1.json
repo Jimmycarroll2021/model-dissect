@@ -1,0 +1,8 @@
+{
+  "status": "PASS_SCOPED_ISOLATED_MODEL_FREE_EVIDENCE_REVIEW",
+  "candidate_receipt_sha256": "26e874073bdbbb63e97750aed2cf2e044e02962f24e7cfe191270201cb007a90",
+  "report_sha256": "8d2639a7fbccf663cb30b632a620fa052c0533fae74e28d2863780709cd88cbd",
+  "manifest_sha256": "14deb8cff129bd611ca7e523105d1b1e2b4d399fba751f4677333ae7bdc95cf5",
+  "scientific_status": "INCOMPLETE",
+  "required_fixes": []
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_BOUNDED_SOURCE_AND_MODEL_FREE_POLICY_INTEGRATION",
+  "candidate_manifest_sha256": "7b7f6bf8df2a4bfee21fc0e92efd1d6e5a9e9caead6194798c84470651bfe260",
+  "review_sha256": "489685b5982c5ea409ad3236c3ad3e1be4bbecc42ee4a0016561001031130d80",
+  "evidence": [
+    {
+      "path": "evidence/research-goal/target-production-policy-review/v1/review-v1.json",
+      "sha256": "489685b5982c5ea409ad3236c3ad3e1be4bbecc42ee4a0016561001031130d80",
+      "bytes": 3831
+    },
+    {
+      "path": "evidence/research-goal/target-production-policy-review/v1/check.py",
+      "sha256": "914b3b2fc778ed163ef5c7eb1ab014f3a6677498a8e4a7838ac112d77135c9c9",
+      "bytes": 5415
+    },
+    {
+      "path": "evidence/research-goal/target-production-policy-review/v1/tests.txt",
+      "sha256": "c33eeab97ba11aabdeb85f28510c45dbd6f06ac7d3c5bd527bd2a91b1c07f8c9",
+      "bytes": 2565
+    },
+    {
+      "path": "evidence/research-goal/target-production-policy-review/v1/identity-check.json",
+      "sha256": "1eb72d2814921abb06c4a1cb5f407ee9254497cff36fc0c20277cf1803f2944f",
+      "bytes": 6602
+    }
+  ],
+  "execution_admitted": false,
+  "target_scientific_status": "INCOMPLETE"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_NAMED_MODEL_FREE_TESTS_ON_THIS_HOST_AFTER_HARNESS_CPU_METADATA_EXCEPTION",
+  "manifest_sha256": "876855422fe57ff253928e241d2ff6440b5d1172ffebf53a462e83eb6f040f2e",
+  "report_sha256": "49ec3c8c543d980e05784caa96cf31e6d9563bf2c9cf1186bf2942a91f242fc4",
+  "tests_passed": 25,
+  "candidate_unchanged": true,
+  "independent_review_pending": true,
+  "scientific_status": "INCOMPLETE"
+}

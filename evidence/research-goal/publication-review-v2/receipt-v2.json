@@ -1,0 +1,42 @@
+{
+  "verdict": "PASS_FOCUSED_PUB_DOC01_AND_PUB_DOC02_REPAIR",
+  "candidate_identities": {
+    "candidate-manifest-v2.json": "bd38e40b2ffe4508f05c0cd191d423717e4ae5cd1d1f20add5d73a72b6df2219",
+    "receipt-v2.json": "b736c6a582df4b53c3df5385773789f1132ccca414578f99bd212c7c91b2a7ed",
+    "allowlist.json": "4e12a8ec1b64f2d5d8bb69c43f40d222f044ed89484454c5c5390071dffca0cf"
+  },
+  "snapshot_utc": "2026-11-20T10:51:25.483409+00:00",
+  "verified": {
+    "selected_rows_byte_equivalent_to_v1": true,
+    "existing_files": 33,
+    "existing_source_bytes": 419234,
+    "generated_manifest_files": 4,
+    "curated_receipt_pins_verified": 7,
+    "prior_v1_packet_preserved": true
+  },
+  "finding_closure": {
+    "PUB-DOC-01": "Closed: dated snapshot acknowledges accepted V8 source repair, both failed probes and32MiB prior charge, explicitly attributes V3 child0/wrapper1 to producer pending independent audit. No overall or production pass inferred.",
+    "PUB-DOC-02": "Closed: historical charter and frozen1GiB text retained; dated overlay explains approved29GiBperrole/96GiBproject storage-only supersession, unchanged scientific/RAM/time/call/position limits and included1GiBpublication suballowance. Omitted design links identified as external provenance; exact runtime receipt kept."
+  },
+  "later_evidence_at_final_integration": {
+    "actual_v3_audit_sha256": "931b815a6b14b5c17d34f559d1ce8c923391e520090aa7fb3eb84835f5d0e408",
+    "required_update": "At final integration cite later independent V3 audit: bounded child containment observations accepted but wrapper repair required; preserve cumulative50338791byte charge and no production admission. This is a later event, not a reason to rewrite this correctly dated snapshot now.",
+    "guard_child_refresh": "Future exact accepted cleanup repair and matching production child closure remain separate reviewed integration work."
+  },
+  "remaining_delivery_gates": [
+    "Isolated exact packet staging, bounded named tests and publication bundle validator, independent final candidate verification.",
+    "Final privacy/license/provenance check and original-to-publication source map.",
+    "Refresh dated status to accepted evidence selected at integration; preserve historical snapshots.",
+    "Resolve current private destination HEAD, deliver through authorized private workflow and verify delivered commit.",
+    "No native/model installation or production/scientific admission follows."
+  ],
+  "actions": {
+    "tests": false,
+    "network": false,
+    "staging": false,
+    "commit": false,
+    "push": false,
+    "source_edits": false
+  },
+  "scientific_status": "INCOMPLETE"
+}

@@ -1,0 +1,44 @@
+{
+  "verdict": "PASS_FOCUSED_GUARD_CLEANUP01_SOURCE_MODEL_FREE_REPAIR",
+  "candidate_manifest_sha256": "0ec3bb39dcea73c8a02c13152a9e69229973ea0c27105d3e9f34fafe2d34b7f7",
+  "build_receipt_sha256": "71f3e4084c4fb31fe44d54ba5904cbaf55c3bc4185633d19a1775ac8286b7782",
+  "guard_sha256": "b69a4a0c6e3b93c37a014c1956727fb88f67b37f7bcb8a95d034b4caf80f4edd",
+  "finding_closed_prospectively": "GUARD-CLEANUP-01",
+  "verification": {
+    "candidate_rows_verified": 36,
+    "named_tests": 11,
+    "independent_checks": [
+      "appearance_after_query_pid",
+      "appearance_after_query_cgroup",
+      "actual_identity_binding_success",
+      "unrelated_process_cgroup_rejected",
+      "binding_failure_no_ack",
+      "pipe_close_failure_not_reconciled",
+      "truncated_command_failures_block"
+    ],
+    "kernel_or_systemd_commands": 0,
+    "old_charges_modified": false
+  },
+  "accepted_behavior": [
+    "Exact ready-check PID/startticks and cgroup relation/path/device/inode bound before parent acknowledgement; startticks read twice, conflicting relation or reuse rejects.",
+    "Actual observer requires successfully reaped child plus PID/cgroup absence before and after exact-unit query; present/reused PID, remaining cgroup, missing identity, query errors/truncation/ambiguity/conflicts or failed reaping remain uncertain.",
+    "Only complete recorded stop/reset CalledProcessError outcomes may be reconciled against positively established absence. Raw action status/argv/stdout/stderr/truncation and failure messages retained. No status5/1 whitelist.",
+    "Independent observer appearance-after-query PID/cgroup regressions, binding success/conflict, no-ack binding failure, unreconciled pipe failure and truncated-output failure passed.",
+    "admission/bootstrap/config/ledger_binding byte-identicalV8, unchanged prior guard functions AST verified by named test;36candidate rows verified.",
+    "All raw-manifest files for consumed V1/V2/V3 attempts rehashed unchanged, including journals and retained failure receipts. No old charge release."
+  ],
+  "scope_limits": [
+    "No runtime/probe admission or kernel/systemd run performed. Accepted source must be integrated into exact new probe/production child closures with independent combined review before any separately admitted run.",
+    "A fresh bounded zero-model fixture attempt is needed to establish real auto-collected-unit reconciliation and query fields; successful model-free doubles alone do not prove actual revised wrapper behavior.",
+    "Retained response prefixes bounded64KiB perstream; subprocess capture_output is not a streaming hard-memory quota. Commandtimeout5seconds remains.",
+    "Generic probe bounded_raw short-read limitation is outsideV9 and unchanged; future probe relying on complete reads needs its own reviewed repair.",
+    "Pretrained target and production admission remain INCOMPLETE. Historical wrapperfailure and50338791byte cumulative charge remain preserved."
+  ],
+  "evidence_sha256": {
+    "candidate-manifest-v9.json.gz": "a92bff8f3f02d479b0319e0c3f2c18138412094a8884550814d56ea8a6f12ac8",
+    "tests.txt": "c0a7d19432ffb5f66f12bc3ea607f15451ca448426afa4bb5ee6e2007f41daa1",
+    "guard.py.gz": "6f5eb4c31f92284998c02dc96f7c0a51a3e63a13fe4326b08bf06ac93a206a85",
+    "review.py": "634db3684426d5f32d75ac323bc760c6925f037881c18103266858a8bef5c4f3",
+    "checks.json": "e86cbd17b7752b90384580f2c499b4e72fe9e10c26895eb75e6b1390b9d1a319"
+  }
+}

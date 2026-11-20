@@ -1,0 +1,51 @@
+{
+  "verdict": "PASS_BOUNDED_COMBINED_LAUNCH_V3_SOURCE_MODEL_FREE",
+  "identities": {
+    "candidate-manifest-v3.json": "8881bde3787be8e364e73d938942a6c59085633f9d5082e98adf5c115e78327e",
+    "receipt-v3.json": "977cf41fa2d9f157d954071760e87fefbeb21c8275f1d81415a79d9c5f0e6b0c",
+    "entry.py": "0413f2a57b6af91f1353873469825f7559124672c764fa694f38f402b5091c0f",
+    "source-pins.json": "3809d11dbc43b10f142b572c2dce74c42c1ad93bbba1dfcd12db13ad35426c5b"
+  },
+  "candidate_records_verified": 15,
+  "entry_change": "Exactly3guard routing/hash constants V6toV9, no behavioral child edit",
+  "verification": {
+    "verdict": "PASS_BOUNDED_COMBINED_SOURCE_MODEL_FREE",
+    "exact_three_replacements_only": true,
+    "independent_review_receipts_verified": 1,
+    "closure_files": 58,
+    "live_feature_modules": 24,
+    "closure_exact_required_set": true,
+    "actual_live_SourcePins_and_ProjectLedger_to_ChildAuthority": true,
+    "missing_terminal_parent_reservation_rejected": true,
+    "admission_kernel": "explicit doubles; no real authority",
+    "native_calls": 0,
+    "runtime_admitted": false
+  },
+  "named_tests": "20PASS0.561seconds: original child composition, realV9Allocation/ProjectLedger lost parent reservation, changed admission identity/expiry, changedguardmanifest rejection,7GUARD04immutable-byte regressions",
+  "independent_boundary": "Actual live SourcePins/ProjectLedger connected through actual ChildAuthority with V9Allocation prefix/parent-reservation verification; terminal reservation settlement causes next authority.check rejection. Kernel/admission entry are explicit test doubles.",
+  "preservation": "58exact required source paths include24unchanged live feature modules; pins verified before/afterchecks; priorV2entry unchanged, newentrysource preservedgzip. Fixture metadata redirected to owned temporary scratch.",
+  "findings": [],
+  "remaining": [
+    "No runtime or admission authority follows this source review. Concurrent V4probe requires separate actual receipt and independent audit.",
+    "Actual original checkpoint/tokenizer/runtime artifacts, authenticated complete input inventory, ownership/staging/allocation feasibility and final exact combined admission remain required.",
+    "No actual production load, primary experiment or independent target repeat established.",
+    "Historical failed attempts and pending charges remain unreleased; source acceptance does not supersede actual failure records."
+  ],
+  "actions": {
+    "kernel_or_systemd_launch": false,
+    "model_native_import": false,
+    "network": false,
+    "runtime_admitted": false,
+    "production_source_edits": false
+  },
+  "scientific_status": "INCOMPLETE",
+  "evidence_sha256": {
+    "check.py": "0a425b287f80d784d6004679ec2358fd60198ccb14f50df113c68c468f2ed0ab",
+    "candidate-manifest-v3.json.gz": "8769e17e24b4b0c45e95080de9389db4b11e69d793dc331a5394b6adb7c711f5",
+    "tests.txt": "10b9b6c5209b6ef2f9dd6e4e4e5209fb1809a071926f692b9c7e1893291bed1f",
+    "source-pins.json.gz": "24ba6d18a76ebfdde28b567d45453fb7f43e27dc76280d5c693203d89a1770da",
+    "run-tests.py": "ffb7d20b7259c83b67f9a77cb6e32082636e02dd2c269f10b0fd921df413be5f",
+    "entry.py.gz": "1df9f3aab7b3a52ca87c4a76ae084778caa26a618a8bd672fb24a5ce388dce52",
+    "check-output.json": "64121cd8a06caa2b13ab013df839fb36edafb9be47ed00967ce2b9d1539cb003"
+  }
+}

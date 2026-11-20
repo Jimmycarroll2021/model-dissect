@@ -1,0 +1,20 @@
+{
+  "snapshot_utc": "2026-11-20T11:03:22.715295+00:00",
+  "per_file_inventory": "destination-map.json",
+  "license_evidence": {
+    "README.md": "91d80290a34f92d21e7c78a4db4fee9797eef584bb47be3b421bc443f3168d10",
+    "NOTICE.md": "ed63ec379e1b4ee17876fe08fc3e760d1b18594e8229ee592409da579c4fcdf0",
+    "statement": "README explicitly states no repository-wide license selected for project-authored material. No blanket open-source grant inferred. Existing NOTICE pertains to separately vendored MiniMind source, which this incremental packet does not newly include."
+  },
+  "third_party": "NumPy/Python for model-free checks; PyTorch/Transformers/tokenizers/safetensors native dependencies external. No dependency distribution or new license grant supplied. Gemma/tokenizer and dictionary terms/entitlement remain separate; no payload redistributed.",
+  "original_provenance": "Selected feature modules match accepted production-policy source manifest; V9 frozen copies deliberately preserve same authenticated bytes. Historical protocol/charter exact. Independent review receipts are scoped attestations with external evidence links, not self-contained raw scientific proof.",
+  "privacy_review_required": [
+    "All proposed exact source/index/review bytes require final private-destination privacy/provenance check.",
+    "Absolute host paths in source-pins and candidate manifests intentionally retained because authentication binds them.",
+    "No raw operational artifacts selected. No comprehensive secret scan or legal/license certification performed in this assembly."
+  ],
+  "unresolved": [
+    "Private source-delivery authorization does not establish model entitlement or portability.",
+    "Final independent packet verification, bundle validator and exact delivery commit verification remain."
+  ]
+}

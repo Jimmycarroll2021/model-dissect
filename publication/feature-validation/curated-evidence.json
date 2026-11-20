@@ -1,0 +1,34 @@
+{
+  "snapshot_utc": "2026-11-20T11:06:26.235052+00:00",
+  "status": "CONCRETE_PROSPECTIVE_PRIVATE_ENGINEERING_DELIVERY_CANDIDATE_PENDING_REVIEW",
+  "prior_integration_receipt_sha256": "82733b8a7ddc3291f952f5d3f789b3146c7600e57a4ca23e18c40ea4eb4b1b61",
+  "guard_source_review_sha256": "9072b5ca413a45aec30f830c05d55d6ad51a91437e74e028a4f0d58a7bbc1b73",
+  "launcher_review_sha256": "445a2cc8734ac54bf27a4ce2db62614efd5d403b747a29ba8ced4652ad8e5c5d",
+  "actual_v4_audit": {
+    "path": "evidence/research-goal/production-containment-probe-review/actual-v4/receipt-v4.json",
+    "sha256": "99967ed82f2b9480361487e8f8dcecf33d7fbd39e04372ffd874846b72772004",
+    "verdict": "PASS_ACTUAL_ONE_ZERO_MODEL_CONTAINMENT_AND_RECONCILED_CLEANUP_PROBE",
+    "limits": [
+      "Acceptance is one actual zero-model fixture probe only, not complete production inventory, production runtime admission, model/tokenizer loading, pretrained computation or scientific outcome.",
+      "Normal successful completion does not test timeout/kill cleanup or all failure paths.",
+      "Network namespace and emptyroutes observed; no active network-access attempt. GPU nodes absent; direct device-policy enforcement not tested.",
+      "Terminal cgroupMemoryPeak unavailable after transientunit collection. sampled_peak_bytes denotes sampled output, not peakRAM;24GiBceiling is not measured production feasibility or physicalreservation.",
+      "4MiB monitoring/logicalpublication accounting are not hard filesystemquota or streaming subprocess memoryquota.",
+      "No old failed attempt is converted to success and no historical charge is released by this audit. No additional launch/model/network/source edits occurred."
+    ],
+    "accounting": {
+      "prior_carried_bytes": 50338791,
+      "new_child_settled": 14099,
+      "new_parent_terminal_settled": 33582,
+      "new_parent_log_settled": 0,
+      "new_pending": {},
+      "new_output_bytes": 47681,
+      "cumulative_retained": 50386472,
+      "historical_pending_unreleased": 50331648
+    }
+  },
+  "scientific_status": "INCOMPLETE",
+  "production_runtime_admitted": false,
+  "checkpoint_access": "Last bounded verified configured originals missing; no refreshed access/entitlement check.",
+  "delivery_status": "No staging/commit/push. Exact independent integration review and final delivery verification required; no license grant."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_APPROVED_STORAGE_POLICY_AND_BOUNDED_FIXTURE_EVIDENCE",
+  "policy_sha256": "5813a9e5da0f94137c2ce257567533019233d63083a2ba8ef1e3514cb157d5d8",
+  "manifest_sha256": "fedba7095b101552283e95cc3d16320cb9bcc2598c2cd534a3eb99a813738770",
+  "build_receipt_sha256": "2945b8766b70184e1cc290ae79333ed516963737e85e673b05fa6fe2f96169d1",
+  "per_role_evidence_bytes": 31138512896,
+  "total_project_envelope_bytes": 103079215104,
+  "ram_per_role_bytes_unchanged": 25769803776,
+  "frozen_claim_and_corpus_unchanged": true,
+  "fixture_logical_bytes_verified": 69629,
+  "fixture_allocated_regular_bytes_verified": 69632,
+  "read_only_replay_and_nofollow_verified": true,
+  "new_write_operations_tested": false,
+  "powerloss_recovery_proven": false,
+  "actual_space_reserved": false,
+  "runtime_admitted": false,
+  "scientific_status": "INCOMPLETE",
+  "evidence": {
+    "check.py": "fb26119228e81826658e2bf07653272798233dbed1a0e3e55d690c645eaeae05",
+    "check-output.txt": "a0ad92605394b11af821ab39c1976f7662ee8b7199d05278c25f0db5a6947a61",
+    "review.md": "7e3b8f1ff108760f5f92b3e7c99d08e46897cd2ce76879bc6ec80ee6ca046692",
+    "checks.json": "4b2c3e4f7623dc164c351505b80ba7144ac05138bb3f0d196d1f921db38db96c"
+  }
+}

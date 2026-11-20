@@ -1,0 +1,74 @@
+{
+  "verdict": "PASS_ACTUAL_ONE_ZERO_MODEL_CONTAINMENT_AND_RECONCILED_CLEANUP_PROBE",
+  "actual_receipt_sha256": "2626129db80565c77d62caf9bcb84a9e53f7e79c0c2d5a8e2c08cbee99fc8c04",
+  "raw_manifest_sha256": "242530c947403714aa7cad79de2fb581da4ae87dbed0df08ed058fa117a8e34d",
+  "candidate_manifest_sha256": "c9ef0f974c6d82e553b77d6646fad6df191f02d222a6f87afb345e55d131cc87",
+  "admission_sha256": "85e7a4f43222d1ca929bbfe6c9d8bc6f99603f73e1643a05f3d499d9438976f4",
+  "prerun_review_sha256": "f69dbf7e9e2756ea900a544f5c7de482811e931750799b80841cd20ffa10f851",
+  "guard_manifest_sha256": "0ec3bb39dcea73c8a02c13152a9e69229973ea0c27105d3e9f34fafe2d34b7f7",
+  "verification": {
+    "utc": "2026-11-20T11:04:24.941424+00:00",
+    "raw_files_verified": 11,
+    "source_pins_verified": 64,
+    "prior_files_unchanged": 27,
+    "remaining_admission_seconds_at_launch": 3376.678081512451,
+    "complete_mountinfo_bytes": 10274,
+    "all_observations_eof_complete": true,
+    "sentinel_denial_unchanged": true,
+    "exact_saved_mount_checker_and_cleanup_classification_replayed": true,
+    "matching_authenticated_child_identity": {
+      "cgroup": "/sys/fs/cgroup/system.slice/gemma-production-e4a0e9e8334a4164959aae376db22a56.service",
+      "cgroup_device": 31,
+      "cgroup_inode": 3448258,
+      "pid": 971368,
+      "start_ticks": 104087821,
+      "unit": "gemma-production-e4a0e9e8334a4164959aae376db22a56"
+    },
+    "current_pid_cgroup_absent": true,
+    "current_unit_query": {
+      "returncode": 0,
+      "stdout": "MainPID=0\nControlGroup=\nLoadState=not-found\nActiveState=inactive\n",
+      "stderr": ""
+    },
+    "prior_carried_bytes": 50338791,
+    "new_child_settled": 14099,
+    "new_parent_terminal_settled": 33582,
+    "new_parent_log_settled": 0,
+    "new_pending": {},
+    "cumulative_retained": 50386472,
+    "new_output_bytes": 47681,
+    "historical_pending_unreleased": 50331648,
+    "actual_kernel_model_network_runs_by_auditor": 0
+  },
+  "established": [
+    "Exact candidate/admission source closure verified; full1800second fresh window satisfied; one recorded attempt and no auditor retry.",
+    "Matching child-ready,parent-ack and probe facts establish completed parent/child handshake. Source guard validates actual kernel resource/network/mount constraints before entry; saved cgroupvalues/CPUaffinity/routes and complete10274byte mountinfo independently checked.",
+    "Owned sentinel open-for-write returnsEROFS30 without truncation/write; original contents unchanged. Actual allowed14099byte publication and real serialized ledger reservation/settlement verified.",
+    "Exact pure mount checker and cleanup classifier replayed against saved actual data. Successful reaping plus bound PID/startticks/cgroup inode and absent observations support recorded cleanup certainty. Fresh PID/cgroup absence and unit not-found/inactive/MainPID0/emptyControlGroup independently corroborated.",
+    "Raw stop5/reset1 failures retained with fullstderr explaining unitnotloaded, exact argv and no truncation. They are positively reconciled, not erased or accepted by status whitelist.",
+    "Every resource/status/routes/mount observation reports EOF and no truncation; retained-byte counts agree.",
+    "New ledger pendingempty;14099child+33582parentterminal+0log=47681newretained;50338791oldcarried+47681=50386472cumulative.27oldfiles unchanged including oldjournals;50331648historical pending parent charges remain unreleased."
+  ],
+  "producer_tool_observation": {
+    "exit_code": 0,
+    "wall_seconds": 0.464608277,
+    "chunk_id": "d1a93e",
+    "independently_timed": false
+  },
+  "limits": [
+    "Acceptance is one actual zero-model fixture probe only, not complete production inventory, production runtime admission, model/tokenizer loading, pretrained computation or scientific outcome.",
+    "Normal successful completion does not test timeout/kill cleanup or all failure paths.",
+    "Network namespace and emptyroutes observed; no active network-access attempt. GPU nodes absent; direct device-policy enforcement not tested.",
+    "Terminal cgroupMemoryPeak unavailable after transientunit collection. sampled_peak_bytes denotes sampled output, not peakRAM;24GiBceiling is not measured production feasibility or physicalreservation.",
+    "4MiB monitoring/logicalpublication accounting are not hard filesystemquota or streaming subprocess memoryquota.",
+    "No old failed attempt is converted to success and no historical charge is released by this audit. No additional launch/model/network/source edits occurred."
+  ],
+  "production_runtime_admitted": false,
+  "scientific_status": "INCOMPLETE",
+  "findings": [],
+  "evidence_sha256": {
+    "audit.py": "c5c94f655152daa652bf7af9f6b6569998ef40fc7ee9998994d3a230c772f47f",
+    "checks.json": "ec5396a493b9779aee6d83176268b22a4889e1870f2d7522b935bc710d6cd3c1",
+    "status-only/observation.json": "749589ac181b3e7bb8f96bc264c1f2901ce8976f2db6dfa588aeb5d4ac05a41e"
+  }
+}

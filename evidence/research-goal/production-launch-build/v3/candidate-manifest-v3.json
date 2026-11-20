@@ -1,0 +1,145 @@
+{
+  "status": "V9_GUARD_CHILD_REFRESH_INDEPENDENT_COMBINED_REVIEW_PENDING",
+  "created_utc": "2026-11-20T11:00:08.843061+00:00",
+  "guard_manifest_sha256": "0ec3bb39dcea73c8a02c13152a9e69229973ea0c27105d3e9f34fafe2d34b7f7",
+  "guard_review_sha256": "9072b5ca413a45aec30f830c05d55d6ad51a91437e74e028a4f0d58a7bbc1b73",
+  "candidate": [
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/entry.py",
+      "sha256": "0413f2a57b6af91f1353873469825f7559124672c764fa694f38f402b5091c0f",
+      "bytes": 11810
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/test_entry.py",
+      "sha256": "fcb4f2709a0afb3361128d44f73640b49d6bafa78cffbad9899114e7425f5eaf",
+      "bytes": 8345
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/test_combined.py",
+      "sha256": "e64a7bd761fb5537f77f52410bb9f4506882e699a89230e05ba4242f83039e90",
+      "bytes": 3202
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/test_refresh.py",
+      "sha256": "a6285e060fccd078793d966e2bfba84c83f28ec756fd6ccd26adf2c58aa0d3df",
+      "bytes": 1839
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/run-tests.py",
+      "sha256": "264cfdede6f4057fa427c829050595fbf3e75484b8f42435ea3f61ad912cec23",
+      "bytes": 1212
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/source-pins.json",
+      "sha256": "3809d11dbc43b10f142b572c2dce74c42c1ad93bbba1dfcd12db13ad35426c5b",
+      "bytes": 10829
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/accepted-component-reviews.json",
+      "sha256": "58b8f7a4e8c848db54e3567469cef6390c33ffcf1cca22ebd1dd6c5424fcd95d",
+      "bytes": 581
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/policy-source-review.json",
+      "sha256": "de954286a2579af567dc176c21ff792b33e1f555c3aa937351ef7cb46b76e3b4",
+      "bytes": 1175
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/preservation-check.json",
+      "sha256": "f091f806d70560bcbf655176cde16df96f83f2ad05e9cef8cac10b9f7afb282a",
+      "bytes": 331
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/STATUS.md",
+      "sha256": "ec9ee146a28c19f4d442f433f6c7b8e67e561bdce351250092306ad943cb25e2",
+      "bytes": 3501
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/tests.txt",
+      "sha256": "280d8a6a45611aa263946b8082449c8be14647c7c783c1ea5469e7e758549a1f",
+      "bytes": 2853
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/preserved-v2/candidate-manifest-v2.json",
+      "sha256": "6e383a9b09405fe809c725a9abf5d177d28b99066d72dae5c9702166732b62d3",
+      "bytes": 14692
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/preserved-v2/entry.py",
+      "sha256": "a353783d2f473bcad43c76461a9983fa19f628a3db1b275e4e90dedfb4a8cfe8",
+      "bytes": 11810
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/preserved-v2/receipt-v2.json",
+      "sha256": "fac6c011c0377335fa181e37e61f073b346ef789c134cdb0b63f67770e108422",
+      "bytes": 634
+    },
+    {
+      "path": "evidence/research-goal/production-launch-build/v3/preserved-v2/source-pins.json",
+      "sha256": "93c2f2b2deded848bdde3b80ef1b644701caed23ef6b732837e079132fde9a38",
+      "bytes": 10829
+    }
+  ],
+  "execution_source_pins_sha256": "3809d11dbc43b10f142b572c2dce74c42c1ad93bbba1dfcd12db13ad35426c5b",
+  "execution_source_pins": {
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/admission.py": "54cb35cded67fb03d9e941ff3bab8364989e07e3de2ac7ecbec368ac3dcfb200",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/bootstrap.py": "2d45d5f3fa60b7cdf67487c1078a81e16dfd97b53f5baefb0eb3adb18b459882",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/config.py": "f481f31f1f7ebcc578a6bcb6a36660ca438d89bd4ef6eb7fdc698fd6744b5a68",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/evidence/research-goal/production-resource-policy-review-v2/receipt-v2.json": "603ac24ab0e187f9df9b89e18f118592695b66137d3ececaca099358e9114b02",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/__init__.py": "00efc0adc4299ff6192beab8aefd72a656dded809191f84fd212b2dd80ed2a43",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/adapter.py": "0ac8b8c1118432b3e6cd1c91eb2c865601abee0a17f173843134023e78b03ef7",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/contract.py": "12d339b31ea3d372dbcd835651987a6029372714138e86169a44d9e3960906c9",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/controls.py": "4c7e81ac0e0aa9ce5087934c1bba1d4e1d990050ab74c57ad40d39eced1c0003",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/dictionary_provider.py": "78e1c713aa91c6f38be3a51b111f00ea579583b0dd13bba05af8d5ff23bb02b8",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/engineering_spec.py": "63a774b6f64e5db95152835ec62470fd2a613db072db02329315fb4bda2c0c7c",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/evaluate.py": "cf0877cf3928e15d05aa3c4a8cc0a7cc9bae7bc6774f5ddc5c83ec41d7caaac2",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_artifact_view.py": "596a3c73c0416fbcc7504b003f5e04cf47d2627d0880b232ffd601d8c1738a57",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_artifacts.py": "64fac5e542c913d12b4ac4074b68f9fb9f229b20e2158d0e326199124e5eb1ae",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_binding.py": "fb5758cb7a1bf96889ca69e520ee7f2e564e862104714379d8a9473ecf7aa2c2",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_capture.py": "88e1bf82dc0b06d53d8996838c7de8ce29797cc4b4ced460c42238bbd2df4e13",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_capture_bridge.py": "4c0b119ac69bd94a776e2a8ac7b77dc9dcb478bec8d59105a48436fb8e755b5a",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_capture_partition.py": "7fe540ce99923355f8a13110830298a53d416eda05784b82296f82ced7dc9668",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_controls.py": "87be74f589b97d941cd2b6e8412b8758af41cee4cf847cd0777da3a0d593f7cf",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_entry.py": "04f90bc7e4086e2acf0dd27189d370bbfdffb02d75c816af2926174ea8b84bc8",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_evaluate.py": "deaa6d6097f93c746ec55c5c02d65d4b5b3b072cba966313e7700d401c1d9060",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_evidence.py": "b17d9f28d3d221e1224dd837da35c43ad980fa9a9719a20c39a58fe93920bf47",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_evidence_journal.py": "b7a6fbaae3cf67bd1bbd6a5a659b0bdffe79f6e7e4e4cbf19c7fb36a7bf8ce93",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_gemma_adapter.py": "b74796a4e431f24edf4469a6d74d446b89703bc764daaa0bf9d74449b5b9db6d",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_local_attachment.py": "a9d3c8b56291b46a2eb1596921fb436c1634514c7fd26f540dca0ebe871dc9ea",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_phase_gates.py": "08c89057df018730ae2139ab6a1aa99a3c56ee5fa6b62a509f24925d904e18a4",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_pipeline.py": "d330aa6de5ab1adeb60b51a009d279625026e26470e17613be9f78e2c9e5f6fa",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_resource_policy.py": "412aa8c6d2e47a539b3148874b26272381327b15352cf2bee8a65bb7f9b1cef3",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/feature_validation/target_runtime.py": "0ec9f997f64fc5ae9e2ea91a448211d25db4f48dd2a64d76f35e554d338b05eb",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/frozen/specs/004-feature-attribution-validation/production-resource-policy-v2.md": "5813a9e5da0f94137c2ce257567533019233d63083a2ba8ef1e3514cb157d5d8",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/guard.py": "b69a4a0c6e3b93c37a014c1956727fb88f67b37f7bcb8a95d034b4caf80f4edd",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/ledger_binding.py": "3036e811f48657e52618dc4473b87444b292adac9e1ae2bbd405a02d316d4e81",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/policy-candidate-manifest.json": "7b7f6bf8df2a4bfee21fc0e92efd1d6e5a9e9caead6194798c84470651bfe260",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-guard-build/v9/policy-source-review.json": "de954286a2579af567dc176c21ff792b33e1f555c3aa937351ef7cb46b76e3b4",
+    "/mnt/ai/workspaces/model-dissect-publication/evidence/research-goal/production-launch-build/v3/entry.py": "0413f2a57b6af91f1353873469825f7559124672c764fa694f38f402b5091c0f",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/__init__.py": "00efc0adc4299ff6192beab8aefd72a656dded809191f84fd212b2dd80ed2a43",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/adapter.py": "0ac8b8c1118432b3e6cd1c91eb2c865601abee0a17f173843134023e78b03ef7",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/contract.py": "12d339b31ea3d372dbcd835651987a6029372714138e86169a44d9e3960906c9",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/controls.py": "4c7e81ac0e0aa9ce5087934c1bba1d4e1d990050ab74c57ad40d39eced1c0003",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/dictionary_provider.py": "78e1c713aa91c6f38be3a51b111f00ea579583b0dd13bba05af8d5ff23bb02b8",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/engineering_spec.py": "63a774b6f64e5db95152835ec62470fd2a613db072db02329315fb4bda2c0c7c",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/evaluate.py": "cf0877cf3928e15d05aa3c4a8cc0a7cc9bae7bc6774f5ddc5c83ec41d7caaac2",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_artifact_view.py": "596a3c73c0416fbcc7504b003f5e04cf47d2627d0880b232ffd601d8c1738a57",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_artifacts.py": "64fac5e542c913d12b4ac4074b68f9fb9f229b20e2158d0e326199124e5eb1ae",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_binding.py": "fb5758cb7a1bf96889ca69e520ee7f2e564e862104714379d8a9473ecf7aa2c2",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_capture.py": "88e1bf82dc0b06d53d8996838c7de8ce29797cc4b4ced460c42238bbd2df4e13",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_capture_bridge.py": "4c0b119ac69bd94a776e2a8ac7b77dc9dcb478bec8d59105a48436fb8e755b5a",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_capture_partition.py": "7fe540ce99923355f8a13110830298a53d416eda05784b82296f82ced7dc9668",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_controls.py": "87be74f589b97d941cd2b6e8412b8758af41cee4cf847cd0777da3a0d593f7cf",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_entry.py": "04f90bc7e4086e2acf0dd27189d370bbfdffb02d75c816af2926174ea8b84bc8",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_evaluate.py": "deaa6d6097f93c746ec55c5c02d65d4b5b3b072cba966313e7700d401c1d9060",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_evidence.py": "b17d9f28d3d221e1224dd837da35c43ad980fa9a9719a20c39a58fe93920bf47",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_evidence_journal.py": "b7a6fbaae3cf67bd1bbd6a5a659b0bdffe79f6e7e4e4cbf19c7fb36a7bf8ce93",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_gemma_adapter.py": "b74796a4e431f24edf4469a6d74d446b89703bc764daaa0bf9d74449b5b9db6d",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_local_attachment.py": "a9d3c8b56291b46a2eb1596921fb436c1634514c7fd26f540dca0ebe871dc9ea",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_phase_gates.py": "08c89057df018730ae2139ab6a1aa99a3c56ee5fa6b62a509f24925d904e18a4",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_pipeline.py": "d330aa6de5ab1adeb60b51a009d279625026e26470e17613be9f78e2c9e5f6fa",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_resource_policy.py": "412aa8c6d2e47a539b3148874b26272381327b15352cf2bee8a65bb7f9b1cef3",
+    "/mnt/ai/workspaces/model-dissect-publication/feature_validation/target_runtime.py": "0ec9f997f64fc5ae9e2ea91a448211d25db4f48dd2a64d76f35e554d338b05eb"
+  },
+  "runtime_admitted": false
+}
