@@ -1,0 +1,80 @@
+| graph | edge | W (graph) | E (measured) | E/W | random mean / max | size-matched | verdict | specific |
+|---|---|---|---|---|---|---|---|---|
+| gemma-fact-dallas-austin | 20/15589 | 5.31 | 1.37 | 0.26 | 0.11 / 1.36 | 0.34 | WEAKER | yes (max 0.00) |
+| gemma-fact-dallas-austin | 21/5943 | 3.17 | 3.30 | 1.04 | 0.08 / 1.32 | 0.78 | HOLDS | no (max 0.40) |
+| gemma-fact-dallas-austin | 23/12237 | 2.81 | 1.81 | 0.65 | 0.14 / 1.40 | 0.22 | HOLDS | no (max 0.13) |
+| gemma-fact-oakland-sacramento | 21/5943 | 3.33 | 2.64 | 0.79 | 0.16 / 1.95 | 0.78 | HOLDS | no (max 1.17) |
+| gemma-fact-oakland-sacramento | 19/9209 | 3.19 | 1.16 | 0.36 | -0.02 / 1.02 | 0.00 | WEAKER | yes (max 0.00) |
+| gemma-fact-oakland-sacramento | 24/13277 | 1.64 | 1.65 | 1.01 | 1.10 / 3.57 | -0.44 | NOT_DISTINCT | no (max 0.27) |
+| gemma-small-big-en | 23/8683 | 2.29 | 1.09 | 0.48 | -0.08 / 0.27 | -0.10 | WEAKER | yes (max 0.00) |
+| gemma-small-big-en | 23/14350 | 1.71 | 0.85 | 0.50 | -0.27 / 1.32 | -0.01 | NOT_DISTINCT | no (max 1.71) |
+| gemma-small-big-en | 21/10062 | 1.49 | 0.02 | 0.02 | -0.08 / 0.15 | 0.11 | NOT_DISTINCT | yes (max 0.00) |
+| gemma-small-big-fr | 23/14350 | 1.76 | 0.73 | 0.42 | 0.05 / 1.17 | 0.56 | NOT_DISTINCT | no (max 0.71) |
+| gemma-small-big-fr | 24/4707 | 1.71 | 0.13 | 0.08 | 0.11 / 1.96 | 0.06 | NOT_DISTINCT | no (max 0.65) |
+| gemma-small-big-fr | 24/16045 | 1.49 | 1.35 | 0.91 | -0.06 / 0.47 | -0.15 | HOLDS | yes (max 0.09) |
+| gemma-addition | 24/14176 | 6.31 | 1.37 | 0.22 | 1.25 / 2.78 | 1.63 | NOT_DISTINCT | no (max 0.84) |
+| gemma-addition | 25/14682 | 4.12 | 3.86 | 0.94 | 0.14 / 0.66 | -4.25 | HOLDS | yes (max 0.00) |
+| gemma-addition | 24/2998 | 3.57 | 1.11 | 0.31 | 0.19 / 0.65 | 0.44 | WEAKER | yes (max 0.00) |
+| dallas-austin | 20/15589 | 299.71 | | | | | UNTESTABLE | |
+| dallas-austin | 23/12237 | 239.31 | | | | | UNTESTABLE | |
+| dallas-austin | 21/5943 | 210.14 | | | | | UNTESTABLE | |
+| gemma-G | 25/5604 | 2.87 | 2.71 | 0.94 | 0.06 / 1.05 | -0.25 | HOLDS | yes (max 0.00) |
+| gemma-G | 22/12304 | 1.49 | 0.51 | 0.34 | 0.02 / 0.64 | -1.46 | NOT_DISTINCT | yes (max 0.00) |
+| gemma-G | 23/14585 | 0.97 | -0.04 | -0.04 | -0.05 / 0.76 | 0.77 | WRONG_SIGN | yes (max 0.00) |
+| gemma-Mexico-Spanish | 22/12284 | 7.30 | 1.76 | 0.24 | 0.06 / 1.46 | -0.78 | WEAKER | yes (max 0.00) |
+| gemma-Mexico-Spanish | 19/13366 | 6.85 | 1.13 | 0.16 | 0.20 / 2.04 | 1.50 | NOT_DISTINCT | yes (max 0.04) |
+| gemma-Mexico-Spanish | 24/410 | 3.03 | 0.79 | 0.26 | 0.00 / 0.93 | 0.07 | NOT_DISTINCT | yes (max 0.01) |
+| gemma-basket | 21/4818 | 3.55 | 1.57 | 0.44 | 0.14 / 1.52 | 1.58 | NOT_DISTINCT | no (max 0.84) |
+| gemma-basket | 21/9324 | 2.12 | 1.49 | 0.70 | 0.12 / 1.42 | 1.44 | NOT_DISTINCT | no (max 0.74) |
+| gemma-basket | 23/3604 | 1.51 | 1.05 | 0.70 | -0.12 / 0.39 | -0.08 | HOLDS | no (max 0.53) |
+| gemma-bee-insect | 22/16038 | 5.90 | -0.45 | -0.08 | 0.01 / 1.66 | -0.91 | WRONG_SIGN | yes (max 0.00) |
+| gemma-bee-insect | 14/11504 (earlier token) | 3.11 | -0.44 | -0.14 | -0.15 / 0.48 | 0.02 | WRONG_SIGN |  |
+| gemma-bee-insect | 19/5460 | 2.84 | -1.00 | -0.35 | 0.01 / 1.12 | -0.39 | WRONG_SIGN | yes (max 0.00) |
+| gemma-cat-hat | 25/10571 | 1.85 | 1.32 | 0.72 | 0.22 / 1.06 | 0.84 | HOLDS | yes (max 0.00) |
+| gemma-cat-hat | 24/1512 | 1.43 | 1.04 | 0.72 | 0.06 / 0.63 | -0.55 | HOLDS | yes (max 0.00) |
+| gemma-cat-hat | 22/10393 | 0.87 | 0.55 | 0.64 | -0.03 / 0.43 | 0.01 | HOLDS | yes (max 0.02) |
+| gemma-dollar | 18/10102 | 2.93 | -0.52 | -0.18 | -0.29 / 2.35 | 0.47 | WRONG_SIGN | yes (max 0.02) |
+| gemma-dollar | 20/5796 | 2.63 | -0.92 | -0.35 | -0.09 / 1.03 | -0.53 | WRONG_SIGN | yes (max 0.03) |
+| gemma-dollar | 18/10914 | 2.45 | 0.34 | 0.14 | -0.24 / 1.73 | -0.41 | NOT_DISTINCT | yes (max 0.07) |
+| gemma-english | 25/6667 | 2.05 | 0.97 | 0.47 | 0.46 / 2.15 | -3.24 | NOT_DISTINCT | no (max 0.32) |
+| gemma-english | 23/2040 | 1.68 | 0.40 | 0.24 | -0.00 / 0.37 | -0.63 | WEAKER | no (max 0.12) |
+| gemma-english | 19/13366 | 1.67 | -0.13 | -0.08 | -0.00 / 0.47 | -0.29 | WRONG_SIGN | no (max 0.44) |
+| gemma-euro | 23/7512 | 4.72 | 0.56 | 0.12 | 0.29 / 1.14 | 1.97 | NOT_DISTINCT | yes (max 0.01) |
+| gemma-euro | 21/467 | 3.38 | 0.89 | 0.26 | 0.05 / 1.33 | 0.77 | NOT_DISTINCT | yes (max 0.00) |
+| gemma-euro | 23/6406 | 2.45 | 0.67 | 0.27 | 0.05 / 0.40 | -0.25 | WEAKER | yes (max 0.00) |
+| gemma-fact-shanghai-beijing | 21/5943 | 4.72 | 2.67 | 0.57 | 0.11 / 1.61 | 0.80 | HOLDS | no (max 1.13) |
+| gemma-fact-shanghai-beijing | 19/12274 | 3.26 | 1.10 | 0.34 | -0.07 / 0.43 | 0.04 | WEAKER | yes (max 0.00) |
+| gemma-fact-shanghai-beijing | 19/12274 (earlier token) | 2.51 | 0.67 | 0.27 | 0.05 / 0.35 | 0.07 | WEAKER |  |
+| gemma-fact-vancouver-victoria | 21/2236 | 2.36 | 2.16 | 0.91 | 0.43 / 1.43 | 4.09 | NOT_DISTINCT | yes (max 0.00) |
+| gemma-fact-vancouver-victoria | 19/15123 | 1.74 | 0.13 | 0.07 | 0.08 / 0.74 | 0.71 | NOT_DISTINCT | yes (max 0.00) |
+| gemma-fact-vancouver-victoria | 24/13277 | 0.91 | 0.83 | 0.91 | 0.92 / 2.15 | -0.15 | NOT_DISTINCT | no (max 0.36) |
+| gemma-girl-is | 25/11727 | 1.19 | 1.11 | 0.93 | 0.11 / 0.64 | 0.25 | HOLDS | yes (max 0.05) |
+| gemma-girl-is | 24/13277 | 1.13 | 0.51 | 0.45 | 0.30 / 1.58 | -1.21 | NOT_DISTINCT | no (max 0.36) |
+| gemma-girl-is | 24/13814 | 0.88 | 0.72 | 0.82 | -0.00 / 0.24 | 0.08 | HOLDS | yes (max 0.00) |
+| gemma-girls-are | 22/11517 | 5.14 | 3.51 | 0.68 | 0.09 / 0.45 | 0.68 | HOLDS | yes (max 0.03) |
+| gemma-girls-are | 25/9974 | 2.08 | 2.02 | 0.97 | 0.09 / 0.53 | 0.14 | HOLDS | yes (max 0.00) |
+| gemma-girls-are | 24/13277 | 1.03 | 0.66 | 0.65 | 0.45 / 1.20 | -1.44 | NOT_DISTINCT | no (max 0.36) |
+| gemma-gp-nps | 22/7306 | 2.97 | 1.59 | 0.54 | 0.01 / 0.15 | 0.70 | HOLDS | yes (max 0.00) |
+| gemma-gp-nps | 21/11913 | 1.98 | 0.88 | 0.44 | 0.03 / 0.47 | -0.91 | WEAKER | yes (max 0.00) |
+| gemma-gp-nps | 18/4181 | 1.96 | 3.89 | 1.98 | -0.01 / 0.97 | 1.72 | HOLDS | yes (max 0.00) |
+| gemma-keys-cabinet | 22/11517 | 5.60 | 1.70 | 0.30 | 0.09 / 0.54 | -0.01 | WEAKER | no (max 0.39) |
+| gemma-keys-cabinet | 23/4388 | 1.77 | 3.15 | 1.78 | 0.03 / 0.61 | 0.67 | HOLDS | yes (max 0.08) |
+| gemma-keys-cabinet | 0/9026 | 1.30 | 2.86 | 2.20 | 0.48 / 2.35 | -1.48 | STRONGER | no (max 0.12) |
+| gemma-michael-jordan-es | 21/9324 | 1.61 | 0.52 | 0.32 | 0.22 / 0.99 | 1.08 | NOT_DISTINCT | no (max 0.74) |
+| gemma-michael-jordan-es | 21/4818 | 1.52 | 0.99 | 0.65 | 0.21 / 0.95 | 0.48 | HOLDS | no (max 0.43) |
+| gemma-michael-jordan-es | 25/13416 | 1.36 | 0.42 | 0.31 | 0.07 / 1.59 | 0.27 | NOT_DISTINCT | no (max 0.15) |
+| gemma-michael-jordan | 21/9324 | 2.40 | 0.05 | 0.02 | -0.04 / 1.42 | 0.28 | NOT_DISTINCT | no (max 0.74) |
+| gemma-michael-jordan | 20/9090 | 2.00 | 0.16 | 0.08 | 0.03 / 1.31 | 0.39 | NOT_DISTINCT | no (max 0.35) |
+| gemma-michael-jordan | 21/4818 | 1.96 | 0.28 | 0.14 | -0.03 / 1.43 | 0.05 | NOT_DISTINCT | no (max 0.84) |
+| gemma-saison | 20/9338 | 3.89 | 1.21 | 0.31 | -0.01 / 0.91 | -0.20 | WEAKER | no (max 0.37) |
+| gemma-saison | 24/3772 | 1.84 | 0.03 | 0.01 | 0.05 / 1.26 | 1.18 | NOT_DISTINCT | no (max 0.45) |
+| gemma-saison | 24/9342 | 1.27 | 1.17 | 0.92 | 0.05 / 1.28 | 0.02 | NOT_DISTINCT | yes (max 0.08) |
+| gemma-small-big-zh | 24/2394 | 6.66 | 2.50 | 0.38 | 0.70 / 3.20 | -0.56 | NOT_DISTINCT | yes (max 0.06) |
+| gemma-small-big-zh | 23/8488 | 2.55 | -0.60 | -0.23 | -0.08 / 0.45 | -0.28 | WRONG_SIGN | no (max 0.43) |
+| gemma-small-big-zh | 23/8683 | 2.40 | 0.92 | 0.38 | -0.05 / 0.22 | -0.19 | WEAKER | yes (max 0.07) |
+| gemma-tom-brady | 23/8855 | 2.42 | 1.11 | 0.46 | -0.09 / 0.63 | 0.18 | WEAKER | no (max 0.33) |
+| gemma-tom-brady | 24/13277 | 1.68 | 1.33 | 0.79 | 0.22 / 2.46 | -0.51 | NOT_DISTINCT | no (max 0.36) |
+| gemma-tom-brady | 19/15763 | 1.53 | 0.09 | 0.06 | 0.02 / 0.55 | 0.41 | NOT_DISTINCT | no (max 0.20) |
+| gemma-verano | 20/9338 | 3.86 | 1.17 | 0.30 | 0.07 / 0.74 | -0.19 | WEAKER | no (max 0.60) |
+| gemma-verano | 24/13490 | 1.62 | -0.13 | -0.08 | 0.19 / 1.60 | 0.34 | WRONG_SIGN | no (max 0.17) |
+| gemma-verano | 25/2591 | 1.56 | 1.32 | 0.84 | 0.12 / 1.27 | 0.84 | HOLDS | no (max 0.35) |
