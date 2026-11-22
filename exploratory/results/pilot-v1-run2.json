@@ -1,0 +1,2876 @@
+{
+ "graphs": {
+  "gemma-fact-dallas-austin": "0a6ddc39ec89417144ee86250a799b1c7ea8885861a72efa28b67127c65de2b0",
+  "gemma-fact-oakland-sacramento": "4a42f4dfbab163e6054058f4f5c14d95e10ad49af0d0da7cf58e8b8c39b9615a",
+  "gemma-small-big-en": "c3cb6b028abcce7cfa916e59ff35e79619079be268ef06ca4923ff48a5217565",
+  "gemma-small-big-fr": "5e60000e9b54d51a8d8b36305f33d664a05bea52e41ce34b695708e973906168",
+  "gemma-addition": "4ebea468635f3ba1d21bca63038a9e96db60973d27aa36f86558f827ac368b78"
+ },
+ "edges": [
+  {
+   "graph": "gemma-fact-dallas-austin",
+   "node": "20_15589_10",
+   "layer": 20,
+   "feature": 15589,
+   "W": 5.312557697296143,
+   "graph_activation": 49.562408447265625,
+   "activation": 49.56245422363281,
+   "target": " Austin",
+   "runner_up": " not",
+   "p_target": 0.4504156708717346,
+   "identity_ok": true,
+   "direct_nocap": 3.51901912689209,
+   "direct_cap": 0.7759774923324585,
+   "noop": 0.0,
+   "E": 1.3741950988769531,
+   "E_postcap": 0.5058269500732422,
+   "E_gap": 0.8698348999023438,
+   "ratio": 0.2586692092918554,
+   "C_R_mean": 0.11099767684936523,
+   "C_R_max": 1.3636207580566406,
+   "matched_feature": 5916,
+   "matched_norm_ratio": 1.078048643448143,
+   "C_M1": 0.3811988830566406,
+   "C_M2": 0.3383140563964844,
+   "removed_norm": 49.56245422363281,
+   "verdict": "WEAKER",
+   "variants": [
+    {
+     "prompt": "Fact: The capital of the state containing Houston is",
+     "p_target": 0.3722775876522064,
+     "valid": true,
+     "coef": 58.70336151123047,
+     "E": 1.6618118286132812,
+     "C_R": 0.9768218994140625
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Antonio is",
+     "p_target": 0.46755078434944153,
+     "valid": true,
+     "coef": 72.08244323730469,
+     "E": 1.832366943359375,
+     "C_R": 3.0759124755859375
+    },
+    {
+     "prompt": "Fact: The capital of the state containing El Paso is",
+     "p_target": 0.34639209508895874,
+     "valid": true,
+     "coef": 48.857513427734375,
+     "E": 1.7776260375976562,
+     "C_R": -2.454051971435547
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Fort Worth is",
+     "p_target": 0.26143670082092285,
+     "valid": true,
+     "coef": 53.42186737060547,
+     "E": 1.5023231506347656,
+     "C_R": 1.8258857727050781
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Lubbock is",
+     "p_target": 0.20356830954551697,
+     "valid": true,
+     "coef": 51.875030517578125,
+     "E": 1.55426025390625,
+     "C_R": 1.0325660705566406
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Amarillo is",
+     "p_target": 0.22854991257190704,
+     "valid": true,
+     "coef": 42.946868896484375,
+     "E": 2.3652305603027344,
+     "C_R": 0.7361335754394531
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Corpus Christi is",
+     "p_target": 0.36249974370002747,
+     "valid": true,
+     "coef": 72.72784423828125,
+     "E": 1.5790252685546875,
+     "C_R": -0.412353515625
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Waco is",
+     "p_target": 0.51401686668396,
+     "valid": true,
+     "coef": 55.17662048339844,
+     "E": 1.3081436157226562,
+     "C_R": -0.3300819396972656
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 1.6204185485839844,
+    "beats_random_frac": 0.75
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Los Angeles is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Francisco is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Diego is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Jose is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Fresno is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Bakersfield is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Long Beach is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Stockton is",
+     "coef": -0.0,
+     "top": " Sacramento",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.0,
+    "max_abs_gap_change": 0.0,
+    "specific": true
+   }
+  },
+  {
+   "graph": "gemma-fact-dallas-austin",
+   "node": "21_5943_10",
+   "layer": 21,
+   "feature": 5943,
+   "W": 3.1703619956970215,
+   "graph_activation": 56.36967086791992,
+   "activation": 56.36971664428711,
+   "target": " Austin",
+   "runner_up": " not",
+   "p_target": 0.4504156708717346,
+   "identity_ok": true,
+   "direct_nocap": 2.586956024169922,
+   "direct_cap": 0.5439630150794983,
+   "noop": 0.0,
+   "E": 3.3005714416503906,
+   "E_postcap": 1.1570549011230469,
+   "E_gap": 2.622833251953125,
+   "ratio": 1.041070844947705,
+   "C_R_mean": 0.08034229278564453,
+   "C_R_max": 1.3222999572753906,
+   "matched_feature": 10336,
+   "matched_norm_ratio": 0.34417008532797255,
+   "C_M1": 0.20119476318359375,
+   "C_M2": 0.7847938537597656,
+   "removed_norm": 56.36971664428711,
+   "verdict": "HOLDS",
+   "variants": [
+    {
+     "prompt": "Fact: The capital of the state containing Houston is",
+     "p_target": 0.3722775876522064,
+     "valid": true,
+     "coef": 48.8267936706543,
+     "E": 3.2821617126464844,
+     "C_R": -0.4012413024902344
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Antonio is",
+     "p_target": 0.46755078434944153,
+     "valid": true,
+     "coef": 50.00908279418945,
+     "E": 3.3801498413085938,
+     "C_R": 1.6639518737792969
+    },
+    {
+     "prompt": "Fact: The capital of the state containing El Paso is",
+     "p_target": 0.34639209508895874,
+     "valid": true,
+     "coef": 53.987545013427734,
+     "E": 3.273834228515625,
+     "C_R": -1.93048095703125
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Fort Worth is",
+     "p_target": 0.26143670082092285,
+     "valid": true,
+     "coef": 52.142826080322266,
+     "E": 2.4793701171875,
+     "C_R": 0.8960800170898438
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Lubbock is",
+     "p_target": 0.20356830954551697,
+     "valid": true,
+     "coef": 47.26340866088867,
+     "E": 3.272968292236328,
+     "C_R": 0.6973114013671875
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Amarillo is",
+     "p_target": 0.22854991257190704,
+     "valid": true,
+     "coef": 49.772396087646484,
+     "E": 3.2817535400390625,
+     "C_R": 0.9456825256347656
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Corpus Christi is",
+     "p_target": 0.36249974370002747,
+     "valid": true,
+     "coef": 49.19160079956055,
+     "E": 2.905963897705078,
+     "C_R": 0.35993194580078125
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Waco is",
+     "p_target": 0.51401686668396,
+     "valid": true,
+     "coef": 48.9859504699707,
+     "E": 3.0566940307617188,
+     "C_R": -0.15877532958984375
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 3.2734012603759766,
+    "beats_random_frac": 1.0
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Los Angeles is",
+     "coef": 53.279239654541016,
+     "top": " Sacramento",
+     "gap_change": -0.40105438232421875
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Francisco is",
+     "coef": 54.78267288208008,
+     "top": " Sacramento",
+     "gap_change": 0.24913597106933594
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Diego is",
+     "coef": 55.06472396850586,
+     "top": " Sacramento",
+     "gap_change": 0.11507797241210938
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Jose is",
+     "coef": 54.071720123291016,
+     "top": " Sacramento",
+     "gap_change": 0.05062675476074219
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Fresno is",
+     "coef": 53.070926666259766,
+     "top": " Sacramento",
+     "gap_change": -0.1579570770263672
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Bakersfield is",
+     "coef": 53.40847396850586,
+     "top": " Sacramento",
+     "gap_change": 0.10745811462402344
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Long Beach is",
+     "coef": 55.242977142333984,
+     "top": " Sacramento",
+     "gap_change": 0.3028526306152344
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Stockton is",
+     "coef": 56.45017623901367,
+     "top": " Sacramento",
+     "gap_change": 0.11542892456054688
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 0.40105438232421875,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-fact-dallas-austin",
+   "node": "23_12237_10",
+   "layer": 23,
+   "feature": 12237,
+   "W": 2.8115811347961426,
+   "graph_activation": 54.44023895263672,
+   "activation": 54.440223693847656,
+   "target": " Austin",
+   "runner_up": " not",
+   "p_target": 0.4504156708717346,
+   "identity_ok": true,
+   "direct_nocap": 2.738422393798828,
+   "direct_cap": 0.6488990187644958,
+   "noop": 0.0,
+   "E": 1.8145790100097656,
+   "E_postcap": 0.5210742950439453,
+   "E_gap": 1.3422966003417969,
+   "ratio": 0.6453945033107977,
+   "C_R_mean": 0.1434929370880127,
+   "C_R_max": 1.4026527404785156,
+   "matched_feature": 11444,
+   "matched_norm_ratio": 0.5795980191684247,
+   "C_M1": 0.0835418701171875,
+   "C_M2": 0.22347640991210938,
+   "removed_norm": 54.440223693847656,
+   "verdict": "HOLDS",
+   "variants": [
+    {
+     "prompt": "Fact: The capital of the state containing Houston is",
+     "p_target": 0.3722775876522064,
+     "valid": true,
+     "coef": 49.732872009277344,
+     "E": 1.8003692626953125,
+     "C_R": 0.06365585327148438
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Antonio is",
+     "p_target": 0.46755078434944153,
+     "valid": true,
+     "coef": 50.425514221191406,
+     "E": 1.833343505859375,
+     "C_R": 1.5914840698242188
+    },
+    {
+     "prompt": "Fact: The capital of the state containing El Paso is",
+     "p_target": 0.34639209508895874,
+     "valid": true,
+     "coef": 58.530982971191406,
+     "E": 1.8388023376464844,
+     "C_R": -1.6123046875
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Fort Worth is",
+     "p_target": 0.26143670082092285,
+     "valid": true,
+     "coef": 52.430564880371094,
+     "E": 1.636932373046875,
+     "C_R": 0.8873062133789062
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Lubbock is",
+     "p_target": 0.20356830954551697,
+     "valid": true,
+     "coef": 52.280181884765625,
+     "E": 1.7473907470703125,
+     "C_R": 1.0511093139648438
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Amarillo is",
+     "p_target": 0.22854991257190704,
+     "valid": true,
+     "coef": 49.09565734863281,
+     "E": 1.6585884094238281,
+     "C_R": 0.8787422180175781
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Corpus Christi is",
+     "p_target": 0.36249974370002747,
+     "valid": true,
+     "coef": 49.91327667236328,
+     "E": 1.8428421020507812,
+     "C_R": 0.0415802001953125
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Waco is",
+     "p_target": 0.51401686668396,
+     "valid": true,
+     "coef": 44.98802947998047,
+     "E": 1.5370826721191406,
+     "C_R": -0.12815093994140625
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 1.7738800048828125,
+    "beats_random_frac": 1.0
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Los Angeles is",
+     "coef": 11.854122161865234,
+     "top": " Sacramento",
+     "gap_change": -0.00675201416015625
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Francisco is",
+     "coef": 13.970722198486328,
+     "top": " Sacramento",
+     "gap_change": -0.0010471343994140625
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Diego is",
+     "coef": 23.27743148803711,
+     "top": " Sacramento",
+     "gap_change": -0.013454437255859375
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Jose is",
+     "coef": 19.81346893310547,
+     "top": " Sacramento",
+     "gap_change": -0.020517349243164062
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Fresno is",
+     "coef": 8.239013671875,
+     "top": " Sacramento",
+     "gap_change": -0.0055065155029296875
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Bakersfield is",
+     "coef": 10.860252380371094,
+     "top": " Sacramento",
+     "gap_change": -0.010896682739257812
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Long Beach is",
+     "coef": 21.593975067138672,
+     "top": " Sacramento",
+     "gap_change": -0.1289825439453125
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Stockton is",
+     "coef": 16.58279800415039,
+     "top": " Sacramento",
+     "gap_change": 0.010837554931640625
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 0.1289825439453125,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-fact-oakland-sacramento",
+   "node": "21_5943_10",
+   "layer": 21,
+   "feature": 5943,
+   "W": 3.3280110359191895,
+   "graph_activation": 58.581668853759766,
+   "activation": 58.5816764831543,
+   "target": " Sacramento",
+   "runner_up": " San",
+   "p_target": 0.35545480251312256,
+   "identity_ok": true,
+   "direct_nocap": 2.7631027698516846,
+   "direct_cap": 0.5063884854316711,
+   "noop": 0.0,
+   "E": 2.644481658935547,
+   "E_postcap": 0.8508243560791016,
+   "E_gap": -0.3790702819824219,
+   "ratio": 0.7946132480913324,
+   "C_R_mean": 0.1629340648651123,
+   "C_R_max": 1.9506721496582031,
+   "matched_feature": 15366,
+   "matched_norm_ratio": 0.36452602375424364,
+   "C_M1": 0.20867156982421875,
+   "C_M2": 0.7758140563964844,
+   "removed_norm": 58.5816764831543,
+   "verdict": "HOLDS",
+   "variants": [
+    {
+     "prompt": "Fact: The capital of the state containing Los Angeles is",
+     "p_target": 0.413552850484848,
+     "valid": true,
+     "coef": 53.279239654541016,
+     "E": 2.188671112060547,
+     "C_R": -0.6993675231933594
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Francisco is",
+     "p_target": 0.4453953504562378,
+     "valid": true,
+     "coef": 54.78267288208008,
+     "E": 2.669727325439453,
+     "C_R": 1.2250480651855469
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Diego is",
+     "p_target": 0.4226740300655365,
+     "valid": true,
+     "coef": 55.06472396850586,
+     "E": 2.4585723876953125,
+     "C_R": -1.8873634338378906
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Jose is",
+     "p_target": 0.302141934633255,
+     "valid": true,
+     "coef": 54.071720123291016,
+     "E": 2.4989891052246094,
+     "C_R": -0.17210769653320312
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Fresno is",
+     "p_target": 0.2845143675804138,
+     "valid": true,
+     "coef": 53.070926666259766,
+     "E": 2.425304412841797,
+     "C_R": 0.046550750732421875
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Bakersfield is",
+     "p_target": 0.37915101647377014,
+     "valid": true,
+     "coef": 53.40847396850586,
+     "E": 2.198863983154297,
+     "C_R": 1.3862762451171875
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Long Beach is",
+     "p_target": 0.25420716404914856,
+     "valid": true,
+     "coef": 55.242977142333984,
+     "E": 1.8597564697265625,
+     "C_R": 1.6065902709960938
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Stockton is",
+     "p_target": 0.4732261896133423,
+     "valid": true,
+     "coef": 56.45017623901367,
+     "E": 2.8713760375976562,
+     "C_R": -0.8950347900390625
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 2.4419384002685547,
+    "beats_random_frac": 1.0
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Houston is",
+     "coef": 48.8267936706543,
+     "top": " Austin",
+     "gap_change": -0.7641811370849609
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Antonio is",
+     "coef": 50.00908279418945,
+     "top": " Austin",
+     "gap_change": -0.04767799377441406
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing El Paso is",
+     "coef": 53.987545013427734,
+     "top": " Austin",
+     "gap_change": -0.1849651336669922
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Fort Worth is",
+     "coef": 52.142826080322266,
+     "top": " Austin",
+     "gap_change": 0.0502471923828125
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Lubbock is",
+     "coef": 47.26340866088867,
+     "top": " Lubbock",
+     "gap_change": 0.5639553070068359
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Amarillo is",
+     "coef": 49.772396087646484,
+     "top": " Austin",
+     "gap_change": -0.37500762939453125
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Corpus Christi is",
+     "coef": 49.19160079956055,
+     "top": " Austin",
+     "gap_change": -0.0878753662109375
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Waco is",
+     "coef": 48.9859504699707,
+     "top": " Austin",
+     "gap_change": -1.1746864318847656
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 1.1746864318847656,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-fact-oakland-sacramento",
+   "node": "19_9209_10",
+   "layer": 19,
+   "feature": 9209,
+   "W": 3.1900570392608643,
+   "graph_activation": 34.50288009643555,
+   "activation": 34.50288391113281,
+   "target": " Sacramento",
+   "runner_up": " San",
+   "p_target": 0.35545480251312256,
+   "identity_ok": true,
+   "direct_nocap": 2.1309385299682617,
+   "direct_cap": 0.45150551199913025,
+   "noop": 0.0,
+   "E": 1.1589241027832031,
+   "E_postcap": 0.3596343994140625,
+   "E_gap": -0.33750152587890625,
+   "ratio": 0.363292595875253,
+   "C_R_mean": -0.023474454879760742,
+   "C_R_max": 1.0165824890136719,
+   "matched_feature": 1445,
+   "matched_norm_ratio": 0.9004325062876435,
+   "C_M1": -0.021877288818359375,
+   "C_M2": 0.00319671630859375,
+   "removed_norm": 34.50288391113281,
+   "verdict": "WEAKER",
+   "variants": [
+    {
+     "prompt": "Fact: The capital of the state containing Los Angeles is",
+     "p_target": 0.413552850484848,
+     "valid": true,
+     "coef": 0.0,
+     "E": 0.0,
+     "C_R": 0.0
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Francisco is",
+     "p_target": 0.4453953504562378,
+     "valid": true,
+     "coef": 45.842899322509766,
+     "E": 1.0916061401367188,
+     "C_R": 1.1029396057128906
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Diego is",
+     "p_target": 0.4226740300655365,
+     "valid": true,
+     "coef": -0.0,
+     "E": 0.0,
+     "C_R": 0.0
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Jose is",
+     "p_target": 0.302141934633255,
+     "valid": true,
+     "coef": 34.22956085205078,
+     "E": 0.7768898010253906,
+     "C_R": 0.17942047119140625
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Fresno is",
+     "p_target": 0.2845143675804138,
+     "valid": true,
+     "coef": 28.584693908691406,
+     "E": 0.00506591796875,
+     "C_R": 0.23003768920898438
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Bakersfield is",
+     "p_target": 0.37915101647377014,
+     "valid": true,
+     "coef": 20.93179702758789,
+     "E": 0.4034156799316406,
+     "C_R": 0.6603012084960938
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Long Beach is",
+     "p_target": 0.25420716404914856,
+     "valid": true,
+     "coef": -0.0,
+     "E": 0.0,
+     "C_R": 0.0
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Stockton is",
+     "p_target": 0.4732261896133423,
+     "valid": true,
+     "coef": 40.19447708129883,
+     "E": 0.020961761474609375,
+     "C_R": -1.0477218627929688
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 0.625,
+    "median_E": 0.013013839721679688,
+    "beats_random_frac": 0.25
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Houston is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Antonio is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing El Paso is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Fort Worth is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Lubbock is",
+     "coef": -0.0,
+     "top": " Lubbock",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Amarillo is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Corpus Christi is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Waco is",
+     "coef": -0.0,
+     "top": " Austin",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.0,
+    "max_abs_gap_change": 0.0,
+    "specific": true
+   }
+  },
+  {
+   "graph": "gemma-fact-oakland-sacramento",
+   "node": "24_13277_10",
+   "layer": 24,
+   "feature": 13277,
+   "W": 1.6448463201522827,
+   "graph_activation": 113.4029769897461,
+   "activation": 113.4029769897461,
+   "target": " Sacramento",
+   "runner_up": " San",
+   "p_target": 0.35545480251312256,
+   "identity_ok": true,
+   "direct_nocap": 1.7840404510498047,
+   "direct_cap": 1.987083077430725,
+   "noop": 0.0,
+   "E": 1.6533737182617188,
+   "E_postcap": 1.6076087951660156,
+   "E_gap": 0.693359375,
+   "ratio": 1.005184312968914,
+   "C_R_mean": 1.0986018180847168,
+   "C_R_max": 3.5678062438964844,
+   "matched_feature": 5999,
+   "matched_norm_ratio": 0.4451886496434731,
+   "C_M1": -0.3271293640136719,
+   "C_M2": -0.43695831298828125,
+   "removed_norm": 113.40298461914062,
+   "verdict": "NOT_DISTINCT",
+   "variants": [
+    {
+     "prompt": "Fact: The capital of the state containing Los Angeles is",
+     "p_target": 0.413552850484848,
+     "valid": true,
+     "coef": 109.56140899658203,
+     "E": 1.4835357666015625,
+     "C_R": 0.9255485534667969
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Francisco is",
+     "p_target": 0.4453953504562378,
+     "valid": true,
+     "coef": 122.0718002319336,
+     "E": 1.7317733764648438,
+     "C_R": 2.3610687255859375
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Diego is",
+     "p_target": 0.4226740300655365,
+     "valid": true,
+     "coef": 114.0451889038086,
+     "E": 1.503753662109375,
+     "C_R": -0.5003700256347656
+    },
+    {
+     "prompt": "Fact: The capital of the state containing San Jose is",
+     "p_target": 0.302141934633255,
+     "valid": true,
+     "coef": 118.26358795166016,
+     "E": 1.8347663879394531,
+     "C_R": 0.7497215270996094
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Fresno is",
+     "p_target": 0.2845143675804138,
+     "valid": true,
+     "coef": 126.38420867919922,
+     "E": 1.8439903259277344,
+     "C_R": 1.538818359375
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Bakersfield is",
+     "p_target": 0.37915101647377014,
+     "valid": true,
+     "coef": 117.0012435913086,
+     "E": 1.736053466796875,
+     "C_R": 2.2929229736328125
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Long Beach is",
+     "p_target": 0.25420716404914856,
+     "valid": true,
+     "coef": 107.56694030761719,
+     "E": 1.4219970703125,
+     "C_R": 1.6525077819824219
+    },
+    {
+     "prompt": "Fact: The capital of the state containing Stockton is",
+     "p_target": 0.4732261896133423,
+     "valid": true,
+     "coef": 121.2978515625,
+     "E": 1.8530158996582031,
+     "C_R": 0.5808372497558594
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 1.7339134216308594,
+    "beats_random_frac": 0.625
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Houston is",
+     "coef": 115.8442611694336,
+     "top": " Austin",
+     "gap_change": -0.1890583038330078
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing San Antonio is",
+     "coef": 114.60814666748047,
+     "top": " Austin",
+     "gap_change": -0.004825592041015625
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing El Paso is",
+     "coef": 109.4859619140625,
+     "top": " Austin",
+     "gap_change": -0.021291732788085938
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Fort Worth is",
+     "coef": 111.54058074951172,
+     "top": " Austin",
+     "gap_change": 0.08043861389160156
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Lubbock is",
+     "coef": 109.27442169189453,
+     "top": " Lubbock",
+     "gap_change": -0.2748088836669922
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Amarillo is",
+     "coef": 110.872314453125,
+     "top": " Austin",
+     "gap_change": 0.22056961059570312
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Corpus Christi is",
+     "coef": 112.44011688232422,
+     "top": " Austin",
+     "gap_change": -0.024301528930664062
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Fact: The capital of the state containing Waco is",
+     "coef": 112.05562591552734,
+     "top": " Austin",
+     "gap_change": -0.021816253662109375
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": 86.9043960571289,
+     "top": " the",
+     "gap_change": 0.013708114624023438
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": 102.6082534790039,
+     "top": " little",
+     "gap_change": -0.12108039855957031
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": 126.24532318115234,
+     "top": " blue",
+     "gap_change": -0.03163909912109375
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": 78.81241607666016,
+     "top": " H",
+     "gap_change": 0.036617279052734375
+    }
+   ],
+   "spec": {
+    "active_frac": 1.0,
+    "max_abs_gap_change": 0.2748088836669922,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-small-big-en",
+   "node": "23_8683_8",
+   "layer": 23,
+   "feature": 8683,
+   "W": 2.285520553588867,
+   "graph_activation": 15.543116569519043,
+   "activation": 15.54312801361084,
+   "target": "large",
+   "runner_up": "big",
+   "p_target": 0.4196641445159912,
+   "identity_ok": true,
+   "direct_nocap": 2.153181314468384,
+   "direct_cap": 0.8712202906608582,
+   "noop": 0.0,
+   "E": 1.0924301147460938,
+   "E_postcap": 0.4622478485107422,
+   "E_gap": 0.1700286865234375,
+   "ratio": 0.47797868762575413,
+   "C_R_mean": -0.08237743377685547,
+   "C_R_max": 0.26827239990234375,
+   "matched_feature": 5188,
+   "matched_norm_ratio": 1.0540787111372327,
+   "C_M1": -0.10594940185546875,
+   "C_M2": -0.1006317138671875,
+   "removed_norm": 15.54312801361084,
+   "verdict": "WEAKER",
+   "variants": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "p_target": 0.49814900755882263,
+     "valid": true,
+     "coef": 16.04613494873047,
+     "E": 1.1731491088867188,
+     "C_R": -0.06745529174804688
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "p_target": 0.38534238934516907,
+     "valid": true,
+     "coef": 18.298175811767578,
+     "E": 1.1670417785644531,
+     "C_R": 0.1741485595703125
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "p_target": 0.3025488257408142,
+     "valid": true,
+     "coef": 14.454657554626465,
+     "E": 1.0525054931640625,
+     "C_R": -0.3209381103515625
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "p_target": 0.1372225433588028,
+     "valid": true,
+     "coef": 20.388446807861328,
+     "E": 1.0182533264160156,
+     "C_R": 0.17919921875
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "p_target": 0.34664618968963623,
+     "valid": true,
+     "coef": 17.981964111328125,
+     "E": 1.1657485961914062,
+     "C_R": 0.2251739501953125
+    },
+    {
+     "prompt": "If something is not \"small\", it is \"",
+     "p_target": 0.21827346086502075,
+     "valid": true,
+     "coef": 22.216110229492188,
+     "E": 1.1930274963378906,
+     "C_R": -0.23653030395507812
+    },
+    {
+     "prompt": "The opposite of \"little\" is \"",
+     "p_target": 0.11205365508794785,
+     "valid": true,
+     "coef": 12.150763511657715,
+     "E": 0.8465480804443359,
+     "C_R": -0.19692230224609375
+    },
+    {
+     "prompt": "The opposite of \"tiny\" is \"",
+     "p_target": 0.15413472056388855,
+     "valid": true,
+     "coef": 25.81927490234375,
+     "E": 1.2706527709960938,
+     "C_R": -0.2683677673339844
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 1.1663951873779297,
+    "beats_random_frac": 1.0
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"hot\" is \"",
+     "coef": -0.0,
+     "top": "cold",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"fast\" is \"",
+     "coef": -0.0,
+     "top": "slow",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"happy\" is \"",
+     "coef": -0.0,
+     "top": "sad",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"dark\" is \"",
+     "coef": -0.0,
+     "top": "light",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"wet\" is \"",
+     "coef": -0.0,
+     "top": "dry",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"early\" is \"",
+     "coef": -0.0,
+     "top": "late",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"open\" is \"",
+     "coef": -0.0,
+     "top": "closed",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"up\" is \"",
+     "coef": -0.0,
+     "top": "down",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.0,
+    "max_abs_gap_change": 0.0,
+    "specific": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-en",
+   "node": "23_14350_8",
+   "layer": 23,
+   "feature": 14350,
+   "W": 1.7068662643432617,
+   "graph_activation": 75.22197723388672,
+   "activation": 75.221923828125,
+   "target": "large",
+   "runner_up": "big",
+   "p_target": 0.4196641445159912,
+   "identity_ok": true,
+   "direct_nocap": 1.6786350011825562,
+   "direct_cap": 1.30338454246521,
+   "noop": 0.0,
+   "E": 0.8493194580078125,
+   "E_postcap": 0.8133411407470703,
+   "E_gap": -0.07886695861816406,
+   "ratio": 0.4975899259070533,
+   "C_R_mean": -0.26742708683013916,
+   "C_R_max": 1.3173942565917969,
+   "matched_feature": 9338,
+   "matched_norm_ratio": 0.6035620818811364,
+   "C_M1": -0.24929237365722656,
+   "C_M2": -0.011877059936523438,
+   "removed_norm": 75.22191619873047,
+   "verdict": "NOT_DISTINCT",
+   "variants": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "p_target": 0.49814900755882263,
+     "valid": true,
+     "coef": 77.37361145019531,
+     "E": 0.8712081909179688,
+     "C_R": -0.324798583984375
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "p_target": 0.38534238934516907,
+     "valid": true,
+     "coef": 76.59880828857422,
+     "E": 0.8002586364746094,
+     "C_R": 0.6876411437988281
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "p_target": 0.3025488257408142,
+     "valid": true,
+     "coef": 73.73600769042969,
+     "E": 0.7374649047851562,
+     "C_R": -1.3758392333984375
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "p_target": 0.1372225433588028,
+     "valid": true,
+     "coef": 74.7149887084961,
+     "E": -0.412689208984375,
+     "C_R": 1.0770606994628906
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "p_target": 0.34664618968963623,
+     "valid": true,
+     "coef": 78.49248504638672,
+     "E": 0.8665046691894531,
+     "C_R": 1.1481361389160156
+    },
+    {
+     "prompt": "If something is not \"small\", it is \"",
+     "p_target": 0.21827346086502075,
+     "valid": true,
+     "coef": 78.06071472167969,
+     "E": 0.11029434204101562,
+     "C_R": -0.6398353576660156
+    },
+    {
+     "prompt": "The opposite of \"little\" is \"",
+     "p_target": 0.11205365508794785,
+     "valid": true,
+     "coef": 75.71887969970703,
+     "E": 0.6917667388916016,
+     "C_R": -1.035491943359375
+    },
+    {
+     "prompt": "The opposite of \"tiny\" is \"",
+     "p_target": 0.15413472056388855,
+     "valid": true,
+     "coef": 80.87930297851562,
+     "E": 0.16785430908203125,
+     "C_R": -0.7033309936523438
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 0.7146158218383789,
+    "beats_random_frac": 0.75
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"hot\" is \"",
+     "coef": 75.84867095947266,
+     "top": "cold",
+     "gap_change": -0.05203056335449219
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"fast\" is \"",
+     "coef": 78.0492172241211,
+     "top": "slow",
+     "gap_change": -0.11591529846191406
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"happy\" is \"",
+     "coef": 86.85527038574219,
+     "top": "sad",
+     "gap_change": 0.06098175048828125
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"dark\" is \"",
+     "coef": 83.8561019897461,
+     "top": "light",
+     "gap_change": 0.1921367645263672
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"wet\" is \"",
+     "coef": 77.53265380859375,
+     "top": "dry",
+     "gap_change": -1.7129840850830078
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"early\" is \"",
+     "coef": 85.59841918945312,
+     "top": "late",
+     "gap_change": -0.07617378234863281
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"open\" is \"",
+     "coef": 75.15448760986328,
+     "top": "closed",
+     "gap_change": -0.15011978149414062
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"up\" is \"",
+     "coef": 72.86924743652344,
+     "top": "down",
+     "gap_change": 0.09869384765625
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 1.7129840850830078,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-small-big-en",
+   "node": "21_10062_8",
+   "layer": 21,
+   "feature": 10062,
+   "W": 1.4853894710540771,
+   "graph_activation": 10.864972114562988,
+   "activation": 10.864995002746582,
+   "target": "large",
+   "runner_up": "big",
+   "p_target": 0.4196641445159912,
+   "identity_ok": true,
+   "direct_nocap": 1.283721923828125,
+   "direct_cap": 0.5016994476318359,
+   "noop": 0.0,
+   "E": 0.023393630981445312,
+   "E_postcap": 0.03141975402832031,
+   "E_gap": 0.08433341979980469,
+   "ratio": 0.01574915632385928,
+   "C_R_mean": -0.07759296894073486,
+   "C_R_max": 0.15422630310058594,
+   "matched_feature": 10855,
+   "matched_norm_ratio": 0.938538843879361,
+   "C_M1": 0.10059547424316406,
+   "C_M2": 0.10866355895996094,
+   "removed_norm": 10.864995002746582,
+   "verdict": "NOT_DISTINCT",
+   "variants": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "p_target": 0.49814900755882263,
+     "valid": true,
+     "coef": 15.93700885772705,
+     "E": 0.00716400146484375,
+     "C_R": -0.2622528076171875
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "p_target": 0.38534238934516907,
+     "valid": true,
+     "coef": 13.643950462341309,
+     "E": 0.053684234619140625,
+     "C_R": 0.10500717163085938
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "p_target": 0.3025488257408142,
+     "valid": true,
+     "coef": 14.362473487854004,
+     "E": 0.24220657348632812,
+     "C_R": -0.20994186401367188
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "p_target": 0.1372225433588028,
+     "valid": true,
+     "coef": 0.0,
+     "E": 0.0,
+     "C_R": 0.0
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "p_target": 0.34664618968963623,
+     "valid": true,
+     "coef": 15.985234260559082,
+     "E": -0.11370849609375,
+     "C_R": 0.028583526611328125
+    },
+    {
+     "prompt": "If something is not \"small\", it is \"",
+     "p_target": 0.21827346086502075,
+     "valid": true,
+     "coef": 13.570157051086426,
+     "E": -0.037258148193359375,
+     "C_R": 0.005939483642578125
+    },
+    {
+     "prompt": "The opposite of \"little\" is \"",
+     "p_target": 0.11205365508794785,
+     "valid": true,
+     "coef": 0.0,
+     "E": 0.0,
+     "C_R": 0.0
+    },
+    {
+     "prompt": "The opposite of \"tiny\" is \"",
+     "p_target": 0.15413472056388855,
+     "valid": true,
+     "coef": 18.021495819091797,
+     "E": -0.08715438842773438,
+     "C_R": -0.09527206420898438
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 0.75,
+    "median_E": 0.0,
+    "beats_random_frac": 0.375
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"hot\" is \"",
+     "coef": -0.0,
+     "top": "cold",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"fast\" is \"",
+     "coef": -0.0,
+     "top": "slow",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"happy\" is \"",
+     "coef": -0.0,
+     "top": "sad",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"dark\" is \"",
+     "coef": -0.0,
+     "top": "light",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"wet\" is \"",
+     "coef": -0.0,
+     "top": "dry",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"early\" is \"",
+     "coef": -0.0,
+     "top": "late",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"open\" is \"",
+     "coef": -0.0,
+     "top": "closed",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "The opposite of \"up\" is \"",
+     "coef": -0.0,
+     "top": "down",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": 0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.0,
+    "max_abs_gap_change": 0.0,
+    "specific": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-fr",
+   "node": "23_14350_8",
+   "layer": 23,
+   "feature": 14350,
+   "W": 1.7597098350524902,
+   "graph_activation": 69.93781280517578,
+   "activation": 69.93785858154297,
+   "target": "grand",
+   "runner_up": "gros",
+   "p_target": 0.8168278336524963,
+   "identity_ok": true,
+   "direct_nocap": 1.2373607158660889,
+   "direct_cap": 1.0965148210525513,
+   "noop": 0.0,
+   "E": 0.7337303161621094,
+   "E_postcap": 0.7847270965576172,
+   "E_gap": 0.18037033081054688,
+   "ratio": 0.4169609679656209,
+   "C_R_mean": 0.053853392601013184,
+   "C_R_max": 1.1665611267089844,
+   "matched_feature": 2592,
+   "matched_norm_ratio": 0.9479489999557101,
+   "C_M1": 0.5229969024658203,
+   "C_M2": 0.5620517730712891,
+   "removed_norm": 69.93785095214844,
+   "verdict": "NOT_DISTINCT",
+   "variants": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "p_target": 0.7727085947990417,
+     "valid": true,
+     "coef": 70.93038940429688,
+     "E": 0.972412109375,
+     "C_R": -0.1866302490234375
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "p_target": 0.7642817497253418,
+     "valid": true,
+     "coef": 67.3890151977539,
+     "E": 0.46566009521484375,
+     "C_R": 1.011962890625
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "p_target": 0.7294437885284424,
+     "valid": true,
+     "coef": 70.94113159179688,
+     "E": 0.5802421569824219,
+     "C_R": -1.2034988403320312
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "p_target": 0.7896981239318848,
+     "valid": true,
+     "coef": 75.646484375,
+     "E": 0.8252906799316406,
+     "C_R": 0.4979686737060547
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "p_target": 0.019461875781416893,
+     "valid": false,
+     "coef": 65.77804565429688,
+     "E": 0.2920207977294922,
+     "C_R": -0.7595462799072266
+    },
+    {
+     "prompt": "Le contraire de \"minuscule\" est \"",
+     "p_target": 0.10466763377189636,
+     "valid": true,
+     "coef": 70.58714294433594,
+     "E": 0.38713645935058594,
+     "C_R": -0.565399169921875
+    },
+    {
+     "prompt": "Le mot contraire de \"petit\" est \"",
+     "p_target": 0.777347981929779,
+     "valid": true,
+     "coef": 68.72545623779297,
+     "E": 0.5264625549316406,
+     "C_R": -0.09927749633789062
+    },
+    {
+     "prompt": "Quel est le contraire de \"petit\" ? \"",
+     "p_target": 0.10120994597673416,
+     "valid": true,
+     "coef": 78.33013916015625,
+     "E": 0.11606025695800781,
+     "C_R": 1.2037887573242188
+    }
+   ],
+   "gen": {
+    "n_valid": 7,
+    "active_frac": 1.0,
+    "median_E": 0.5264625549316406,
+    "beats_random_frac": 0.7142857142857143
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"chaud\" est \"",
+     "coef": 64.9169692993164,
+     "top": "f",
+     "gap_change": 0.5272960662841797
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"rapide\" est \"",
+     "coef": 63.9998779296875,
+     "top": "lent",
+     "gap_change": 0.45329856872558594
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"heureux\" est \"",
+     "coef": 62.60966491699219,
+     "top": "mal",
+     "gap_change": 0.7127094268798828
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"sombre\" est \"",
+     "coef": 74.34535217285156,
+     "top": "clair",
+     "gap_change": 0.1353435516357422
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"mouillé\" est \"",
+     "coef": 72.35617065429688,
+     "top": "sec",
+     "gap_change": 0.18396377563476562
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"ouvert\" est \"",
+     "coef": 61.739776611328125,
+     "top": "fer",
+     "gap_change": 0.17243576049804688
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"haut\" est \"",
+     "coef": 68.65937042236328,
+     "top": "bas",
+     "gap_change": 0.026006698608398438
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"jeune\" est \"",
+     "coef": 63.16316223144531,
+     "top": "vieux",
+     "gap_change": -0.1764354705810547
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 0.7127094268798828,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-small-big-fr",
+   "node": "24_4707_8",
+   "layer": 24,
+   "feature": 4707,
+   "W": 1.7092070579528809,
+   "graph_activation": 133.4568634033203,
+   "activation": 133.45700073242188,
+   "target": "grand",
+   "runner_up": "gros",
+   "p_target": 0.8168278336524963,
+   "identity_ok": true,
+   "direct_nocap": 1.7186501026153564,
+   "direct_cap": 0.5971023440361023,
+   "noop": 0.0,
+   "E": 0.1298980712890625,
+   "E_postcap": 0.175689697265625,
+   "E_gap": -0.2008342742919922,
+   "ratio": 0.07599902579658287,
+   "C_R_mean": 0.10656964778900146,
+   "C_R_max": 1.960988998413086,
+   "matched_feature": 3772,
+   "matched_norm_ratio": 0.8760433914558465,
+   "C_M1": 0.005565643310546875,
+   "C_M2": 0.06417465209960938,
+   "removed_norm": 133.45700073242188,
+   "verdict": "NOT_DISTINCT",
+   "variants": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "p_target": 0.7727085947990417,
+     "valid": true,
+     "coef": 130.00108337402344,
+     "E": 0.2702674865722656,
+     "C_R": 1.1221752166748047
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "p_target": 0.7642817497253418,
+     "valid": true,
+     "coef": 134.40293884277344,
+     "E": 0.018903732299804688,
+     "C_R": 1.4481487274169922
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "p_target": 0.7294437885284424,
+     "valid": true,
+     "coef": 139.03758239746094,
+     "E": 0.04115104675292969,
+     "C_R": -0.3692607879638672
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "p_target": 0.7896981239318848,
+     "valid": true,
+     "coef": 157.1133575439453,
+     "E": 0.04044914245605469,
+     "C_R": 1.045114517211914
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "p_target": 0.019461875781416893,
+     "valid": false,
+     "coef": 151.9179229736328,
+     "E": 0.3535423278808594,
+     "C_R": -0.6473712921142578
+    },
+    {
+     "prompt": "Le contraire de \"minuscule\" est \"",
+     "p_target": 0.10466763377189636,
+     "valid": true,
+     "coef": 130.37271118164062,
+     "E": 0.25757789611816406,
+     "C_R": -0.16231727600097656
+    },
+    {
+     "prompt": "Le mot contraire de \"petit\" est \"",
+     "p_target": 0.777347981929779,
+     "valid": true,
+     "coef": 133.92103576660156,
+     "E": 0.02599334716796875,
+     "C_R": 1.534402847290039
+    },
+    {
+     "prompt": "Quel est le contraire de \"petit\" ? \"",
+     "p_target": 0.10120994597673416,
+     "valid": true,
+     "coef": 167.73951721191406,
+     "E": -0.2215728759765625,
+     "C_R": 1.5567893981933594
+    }
+   ],
+   "gen": {
+    "n_valid": 7,
+    "active_frac": 1.0,
+    "median_E": 0.04044914245605469,
+    "beats_random_frac": 0.2857142857142857
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"chaud\" est \"",
+     "coef": 122.07011413574219,
+     "top": "f",
+     "gap_change": 0.23844432830810547
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"rapide\" est \"",
+     "coef": 130.26527404785156,
+     "top": "lent",
+     "gap_change": -0.05927467346191406
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"heureux\" est \"",
+     "coef": 106.63957214355469,
+     "top": "mal",
+     "gap_change": 0.6509246826171875
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"sombre\" est \"",
+     "coef": 115.02090454101562,
+     "top": "clair",
+     "gap_change": 0.5124111175537109
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"mouillé\" est \"",
+     "coef": 120.44017028808594,
+     "top": "sec",
+     "gap_change": -0.2265453338623047
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"ouvert\" est \"",
+     "coef": 124.18978881835938,
+     "top": "fer",
+     "gap_change": 0.34586334228515625
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"haut\" est \"",
+     "coef": 125.45556640625,
+     "top": "bas",
+     "gap_change": -0.46175193786621094
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"jeune\" est \"",
+     "coef": 111.91334533691406,
+     "top": "vieux",
+     "gap_change": 0.021595001220703125
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 0.6509246826171875,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-small-big-fr",
+   "node": "24_16045_8",
+   "layer": 24,
+   "feature": 16045,
+   "W": 1.4900355339050293,
+   "graph_activation": 36.089256286621094,
+   "activation": 36.08924865722656,
+   "target": "grand",
+   "runner_up": "gros",
+   "p_target": 0.8168278336524963,
+   "identity_ok": true,
+   "direct_nocap": 1.4088903665542603,
+   "direct_cap": 0.6982488036155701,
+   "noop": 0.0,
+   "E": 1.3496665954589844,
+   "E_postcap": 0.6258926391601562,
+   "E_gap": 0.8766098022460938,
+   "ratio": 0.9057949053884834,
+   "C_R_mean": -0.06029021739959717,
+   "C_R_max": 0.465545654296875,
+   "matched_feature": 406,
+   "matched_norm_ratio": 1.0193141435303121,
+   "C_M1": -0.15012359619140625,
+   "C_M2": -0.14729690551757812,
+   "removed_norm": 36.08924865722656,
+   "verdict": "HOLDS",
+   "variants": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "p_target": 0.7727085947990417,
+     "valid": true,
+     "coef": 36.07170867919922,
+     "E": 1.375131607055664,
+     "C_R": 0.2562408447265625
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "p_target": 0.7642817497253418,
+     "valid": true,
+     "coef": 38.930686950683594,
+     "E": 1.4395809173583984,
+     "C_R": 0.3387413024902344
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "p_target": 0.7294437885284424,
+     "valid": true,
+     "coef": 35.758827209472656,
+     "E": 1.3353500366210938,
+     "C_R": -0.2689037322998047
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "p_target": 0.7896981239318848,
+     "valid": true,
+     "coef": 36.606544494628906,
+     "E": 1.2442874908447266,
+     "C_R": 0.13016510009765625
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "p_target": 0.019461875781416893,
+     "valid": false,
+     "coef": 6.379384994506836,
+     "E": 0.32366943359375,
+     "C_R": -0.06975746154785156
+    },
+    {
+     "prompt": "Le contraire de \"minuscule\" est \"",
+     "p_target": 0.10466763377189636,
+     "valid": true,
+     "coef": 23.880441665649414,
+     "E": 0.9880638122558594,
+     "C_R": -0.07066726684570312
+    },
+    {
+     "prompt": "Le mot contraire de \"petit\" est \"",
+     "p_target": 0.777347981929779,
+     "valid": true,
+     "coef": 38.97284698486328,
+     "E": 1.4974365234375,
+     "C_R": 0.3057441711425781
+    },
+    {
+     "prompt": "Quel est le contraire de \"petit\" ? \"",
+     "p_target": 0.10120994597673416,
+     "valid": true,
+     "coef": 28.650968551635742,
+     "E": 1.1342525482177734,
+     "C_R": 0.13796615600585938
+    }
+   ],
+   "gen": {
+    "n_valid": 7,
+    "active_frac": 1.0,
+    "median_E": 1.3353500366210938,
+    "beats_random_frac": 1.0
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"chaud\" est \"",
+     "coef": -0.0,
+     "top": "f",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"rapide\" est \"",
+     "coef": 0.0,
+     "top": "lent",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"heureux\" est \"",
+     "coef": -0.0,
+     "top": "mal",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"sombre\" est \"",
+     "coef": -0.0,
+     "top": "clair",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"mouillé\" est \"",
+     "coef": -0.0,
+     "top": "sec",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"ouvert\" est \"",
+     "coef": -0.0,
+     "top": "fer",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"haut\" est \"",
+     "coef": 0.0,
+     "top": "bas",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "Le contraire de \"jeune\" est \"",
+     "coef": 15.80219841003418,
+     "top": "vieux",
+     "gap_change": -0.08861732482910156
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.08333333333333333,
+    "max_abs_gap_change": 0.08861732482910156,
+    "specific": true
+   }
+  },
+  {
+   "graph": "gemma-addition",
+   "node": "24_14176_6",
+   "layer": 24,
+   "feature": 14176,
+   "W": 6.309392929077148,
+   "graph_activation": 234.48321533203125,
+   "activation": 234.48306274414062,
+   "target": "8",
+   "runner_up": "1",
+   "p_target": 0.6901049017906189,
+   "identity_ok": true,
+   "direct_nocap": 6.5003180503845215,
+   "direct_cap": 2.9855291843414307,
+   "noop": 0.0,
+   "E": 1.3674087524414062,
+   "E_postcap": 1.2704334259033203,
+   "E_gap": 0.48674774169921875,
+   "ratio": 0.216725882792881,
+   "C_R_mean": 1.2539136409759521,
+   "C_R_max": 2.7795677185058594,
+   "matched_feature": 4707,
+   "matched_norm_ratio": 0.37001762143147143,
+   "C_M1": 0.492462158203125,
+   "C_M2": 1.6273765563964844,
+   "removed_norm": 234.4830780029297,
+   "verdict": "NOT_DISTINCT",
+   "variants": [
+    {
+     "prompt": "1 + 7 = ",
+     "p_target": 0.8425896167755127,
+     "valid": true,
+     "coef": 257.9803466796875,
+     "E": 0.21865081787109375,
+     "C_R": 0.6587028503417969
+    },
+    {
+     "prompt": "2 + 6 = ",
+     "p_target": 0.6875365972518921,
+     "valid": true,
+     "coef": 216.95584106445312,
+     "E": 0.6760368347167969,
+     "C_R": 3.1977005004882812
+    },
+    {
+     "prompt": "4 + 4 = ",
+     "p_target": 0.8460146188735962,
+     "valid": true,
+     "coef": 220.9976806640625,
+     "E": 2.8427505493164062,
+     "C_R": -2.1560096740722656
+    },
+    {
+     "prompt": "5 + 3 = ",
+     "p_target": 0.8156786561012268,
+     "valid": true,
+     "coef": 228.86264038085938,
+     "E": 2.5939674377441406,
+     "C_R": 3.0558128356933594
+    },
+    {
+     "prompt": "6 + 2 = ",
+     "p_target": 0.7798230051994324,
+     "valid": true,
+     "coef": 209.71371459960938,
+     "E": 2.0890159606933594,
+     "C_R": 2.0731430053710938
+    },
+    {
+     "prompt": "7 + 1 = ",
+     "p_target": 0.8749870657920837,
+     "valid": true,
+     "coef": 226.92205810546875,
+     "E": 2.4341773986816406,
+     "C_R": 0.8205413818359375
+    },
+    {
+     "prompt": "0 + 8 = ",
+     "p_target": 0.35590454936027527,
+     "valid": true,
+     "coef": 217.3670654296875,
+     "E": -2.0593490600585938,
+     "C_R": 0.3556175231933594
+    },
+    {
+     "prompt": "8 + 0 = ",
+     "p_target": 0.7212846875190735,
+     "valid": true,
+     "coef": 228.40435791015625,
+     "E": 2.791107177734375,
+     "C_R": -0.18132781982421875
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 2.2615966796875,
+    "beats_random_frac": 0.5
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "3 + 4 = ",
+     "coef": 233.10415649414062,
+     "top": "7",
+     "gap_change": -0.01779937744140625
+    },
+    {
+     "kind": "contrast",
+     "prompt": "2 + 5 = ",
+     "coef": 243.80462646484375,
+     "top": "7",
+     "gap_change": -0.3430461883544922
+    },
+    {
+     "kind": "contrast",
+     "prompt": "1 + 2 = ",
+     "coef": 253.810791015625,
+     "top": "3",
+     "gap_change": -0.8411579132080078
+    },
+    {
+     "kind": "contrast",
+     "prompt": "4 + 5 = ",
+     "coef": 231.80697631835938,
+     "top": "9",
+     "gap_change": 0.0059986114501953125
+    },
+    {
+     "kind": "contrast",
+     "prompt": "6 + 1 = ",
+     "coef": 234.46029663085938,
+     "top": "7",
+     "gap_change": -0.4105377197265625
+    },
+    {
+     "kind": "contrast",
+     "prompt": "2 + 2 = ",
+     "coef": 232.24859619140625,
+     "top": "4",
+     "gap_change": 0.13209152221679688
+    },
+    {
+     "kind": "contrast",
+     "prompt": "5 + 1 = ",
+     "coef": 242.0706787109375,
+     "top": "6",
+     "gap_change": -0.5192184448242188
+    },
+    {
+     "kind": "contrast",
+     "prompt": "1 + 3 = ",
+     "coef": 251.6038818359375,
+     "top": "4",
+     "gap_change": 0.4973716735839844
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.6666666666666666,
+    "max_abs_gap_change": 0.8411579132080078,
+    "specific": false
+   }
+  },
+  {
+   "graph": "gemma-addition",
+   "node": "25_14682_6",
+   "layer": 25,
+   "feature": 14682,
+   "W": 4.122248649597168,
+   "graph_activation": 47.84059524536133,
+   "activation": 47.84061050415039,
+   "target": "8",
+   "runner_up": "1",
+   "p_target": 0.6901049017906189,
+   "identity_ok": true,
+   "direct_nocap": 4.122250080108643,
+   "direct_cap": 0.7616618275642395,
+   "noop": 0.0,
+   "E": 3.8597564697265625,
+   "E_postcap": 0.80572509765625,
+   "E_gap": 4.423858642578125,
+   "ratio": 0.9363230600133118,
+   "C_R_mean": 0.1418933868408203,
+   "C_R_max": 0.6635055541992188,
+   "matched_feature": 13723,
+   "matched_norm_ratio": 0.8164662992888201,
+   "C_M1": -3.4854507446289062,
+   "C_M2": -4.2483062744140625,
+   "removed_norm": 47.840614318847656,
+   "verdict": "HOLDS",
+   "variants": [
+    {
+     "prompt": "1 + 7 = ",
+     "p_target": 0.8425896167755127,
+     "valid": true,
+     "coef": 68.46809387207031,
+     "E": 5.075946807861328,
+     "C_R": -0.7140388488769531
+    },
+    {
+     "prompt": "2 + 6 = ",
+     "p_target": 0.6875365972518921,
+     "valid": true,
+     "coef": 54.57634353637695,
+     "E": 4.331256866455078,
+     "C_R": 0.30584716796875
+    },
+    {
+     "prompt": "4 + 4 = ",
+     "p_target": 0.8460146188735962,
+     "valid": true,
+     "coef": 69.07630920410156,
+     "E": 5.3207855224609375,
+     "C_R": 0.4075736999511719
+    },
+    {
+     "prompt": "5 + 3 = ",
+     "p_target": 0.8156786561012268,
+     "valid": true,
+     "coef": 51.659793853759766,
+     "E": 3.8275222778320312,
+     "C_R": 0.36986541748046875
+    },
+    {
+     "prompt": "6 + 2 = ",
+     "p_target": 0.7798230051994324,
+     "valid": true,
+     "coef": 51.126590728759766,
+     "E": 3.7998504638671875,
+     "C_R": -0.3269500732421875
+    },
+    {
+     "prompt": "7 + 1 = ",
+     "p_target": 0.8749870657920837,
+     "valid": true,
+     "coef": 45.73514175415039,
+     "E": 2.938436508178711,
+     "C_R": 0.058658599853515625
+    },
+    {
+     "prompt": "0 + 8 = ",
+     "p_target": 0.35590454936027527,
+     "valid": true,
+     "coef": 34.5473747253418,
+     "E": 2.9040145874023438,
+     "C_R": -0.09972763061523438
+    },
+    {
+     "prompt": "8 + 0 = ",
+     "p_target": 0.7212846875190735,
+     "valid": true,
+     "coef": 50.89790725708008,
+     "E": 3.9140663146972656,
+     "C_R": -0.29291534423828125
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 3.8707942962646484,
+    "beats_random_frac": 1.0
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "3 + 4 = ",
+     "coef": -0.0,
+     "top": "7",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "2 + 5 = ",
+     "coef": -0.0,
+     "top": "7",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "1 + 2 = ",
+     "coef": -0.0,
+     "top": "3",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "4 + 5 = ",
+     "coef": -0.0,
+     "top": "9",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "6 + 1 = ",
+     "coef": -0.0,
+     "top": "7",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "2 + 2 = ",
+     "coef": -0.0,
+     "top": "4",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "5 + 1 = ",
+     "coef": -0.0,
+     "top": "6",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "1 + 3 = ",
+     "coef": -0.0,
+     "top": "4",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.0,
+    "max_abs_gap_change": 0.0,
+    "specific": true
+   }
+  },
+  {
+   "graph": "gemma-addition",
+   "node": "24_2998_6",
+   "layer": 24,
+   "feature": 2998,
+   "W": 3.56892728805542,
+   "graph_activation": 79.59412384033203,
+   "activation": 79.59407806396484,
+   "target": "8",
+   "runner_up": "1",
+   "p_target": 0.6901049017906189,
+   "identity_ok": true,
+   "direct_nocap": 4.394778728485107,
+   "direct_cap": 0.9720694422721863,
+   "noop": 0.0,
+   "E": 1.1138420104980469,
+   "E_postcap": 0.19544601440429688,
+   "E_gap": 1.4911575317382812,
+   "ratio": 0.31209434112762197,
+   "C_R_mean": 0.18813776969909668,
+   "C_R_max": 0.6493415832519531,
+   "matched_feature": 4707,
+   "matched_norm_ratio": 1.0900669107423828,
+   "C_M1": 0.492462158203125,
+   "C_M2": 0.4449424743652344,
+   "removed_norm": 79.59407806396484,
+   "verdict": "WEAKER",
+   "variants": [
+    {
+     "prompt": "1 + 7 = ",
+     "p_target": 0.8425896167755127,
+     "valid": true,
+     "coef": 86.56909942626953,
+     "E": 0.4236907958984375,
+     "C_R": -0.0057830810546875
+    },
+    {
+     "prompt": "2 + 6 = ",
+     "p_target": 0.6875365972518921,
+     "valid": true,
+     "coef": 94.71527862548828,
+     "E": 0.3328437805175781,
+     "C_R": 1.1908645629882812
+    },
+    {
+     "prompt": "4 + 4 = ",
+     "p_target": 0.8460146188735962,
+     "valid": true,
+     "coef": 100.62451934814453,
+     "E": -0.4388389587402344,
+     "C_R": -1.1580009460449219
+    },
+    {
+     "prompt": "5 + 3 = ",
+     "p_target": 0.8156786561012268,
+     "valid": true,
+     "coef": 101.98999786376953,
+     "E": 0.8635139465332031,
+     "C_R": 1.4318885803222656
+    },
+    {
+     "prompt": "6 + 2 = ",
+     "p_target": 0.7798230051994324,
+     "valid": true,
+     "coef": 95.48152923583984,
+     "E": 0.5742683410644531,
+     "C_R": 0.8971786499023438
+    },
+    {
+     "prompt": "7 + 1 = ",
+     "p_target": 0.8749870657920837,
+     "valid": true,
+     "coef": 102.6014175415039,
+     "E": 0.9777908325195312,
+     "C_R": 0.3932762145996094
+    },
+    {
+     "prompt": "0 + 8 = ",
+     "p_target": 0.35590454936027527,
+     "valid": true,
+     "coef": 59.333763122558594,
+     "E": 2.6619949340820312,
+     "C_R": -0.2685585021972656
+    },
+    {
+     "prompt": "8 + 0 = ",
+     "p_target": 0.7212846875190735,
+     "valid": true,
+     "coef": 93.87133026123047,
+     "E": 1.229339599609375,
+     "C_R": -0.3865699768066406
+    }
+   ],
+   "gen": {
+    "n_valid": 8,
+    "active_frac": 1.0,
+    "median_E": 0.7188911437988281,
+    "beats_random_frac": 0.625
+   },
+   "specificity": [
+    {
+     "kind": "contrast",
+     "prompt": "3 + 4 = ",
+     "coef": -0.0,
+     "top": "7",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "2 + 5 = ",
+     "coef": -0.0,
+     "top": "7",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "1 + 2 = ",
+     "coef": -0.0,
+     "top": "3",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "4 + 5 = ",
+     "coef": -0.0,
+     "top": "9",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "6 + 1 = ",
+     "coef": -0.0,
+     "top": "7",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "2 + 2 = ",
+     "coef": -0.0,
+     "top": "4",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "5 + 1 = ",
+     "coef": -0.0,
+     "top": "6",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "contrast",
+     "prompt": "1 + 3 = ",
+     "coef": -0.0,
+     "top": "4",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The sky is",
+     "coef": -0.0,
+     "top": " the",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "Once upon a time there was a",
+     "coef": -0.0,
+     "top": " little",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "My favourite colour is",
+     "coef": -0.0,
+     "top": " blue",
+     "gap_change": 0.0
+    },
+    {
+     "kind": "unrelated",
+     "prompt": "The chemical symbol for water is",
+     "coef": -0.0,
+     "top": " H",
+     "gap_change": 0.0
+    }
+   ],
+   "spec": {
+    "active_frac": 0.0,
+    "max_abs_gap_change": 0.0,
+    "specific": true
+   }
+  }
+ ]
+}
