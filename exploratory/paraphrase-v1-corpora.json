@@ -1,0 +1,177 @@
+{
+ "gemma-addition": [
+  "Calculate: 3 + 5 = ",
+  "Math: 3 + 5 = ",
+  "What is 3 + 5? 3 + 5 = ",
+  "Simple sum: 3 + 5 = ",
+  "Q: 3 + 5 = "
+ ],
+ "gemma-fact-dallas-austin": [
+  "Fact: The capital city of the state that contains Dallas is",
+  "The capital of the state where Dallas is located is",
+  "Fact: Dallas is in a state whose capital is",
+  "Fact: the state containing Dallas has its capital in",
+  "Question: What is the capital of the state containing Dallas? Answer:"
+ ],
+ "gemma-fact-oakland-sacramento": [
+  "Fact: The capital city of the state that contains Oakland is",
+  "The capital of the state where Oakland is located is",
+  "Fact: Oakland is in a state whose capital is",
+  "Fact: the state containing Oakland has its capital in",
+  "Question: What is the capital of the state containing Oakland? Answer:"
+ ],
+ "gemma-small-big-en": [
+  "The antonym of \"small\" is \"",
+  "The opposite of the word \"small\" is \"",
+  "An antonym for \"small\" is \"",
+  "Opposite of \"small\": \"",
+  "The reverse of \"small\" is \""
+ ],
+ "gemma-small-big-fr": [
+  "L'opposé de \"petit\" est \"",
+  "L'antonyme de \"petit\" est \"",
+  "Le contraire du mot \"petit\" est \"",
+  "L'inverse de \"petit\" est \"",
+  "Contraire de \"petit\" : \""
+ ],
+ "gemma-G": [
+  "He works for the International Advanced Security Group (IAS",
+  "According to the International Advanced Security Group (IAS",
+  "A report by the International Advanced Security Group (IAS",
+  "Members of the International Advanced Security Group (IAS",
+  "She joined the International Advanced Security Group (IAS"
+ ],
+ "gemma-Mexico-Spanish": [
+  "In the country just south of the United States, the most widely spoken language is",
+  "The main language of the country that lies south of the United States is",
+  "The most common language in the country directly south of the United States is",
+  "Fact: the language most people speak in the country south of the United States is",
+  "Question: What language is most commonly spoken in the country south of the United States? Answer:"
+ ],
+ "gemma-basket": [
+  "Fait : Michael Jordan joue au",
+  "Michael Jordan joue au",
+  "Fait: le célèbre Michael Jordan joue au",
+  "Tout le monde sait que Michael Jordan joue au",
+  "Info: Michael Jordan joue au"
+ ],
+ "gemma-bee-insect": [
+  "Fact: a bee is a type of",
+  "Biologically, a bee is a type of",
+  "In biology, a bee is classified as a type of",
+  "Q: What is a bee? A: A bee is a type of",
+  "Scientists say that a bee is a type of"
+ ],
+ "gemma-cat-hat": [
+  "Rhymes: cat, bat, hat,",
+  "Words that rhyme: cat, bat, hat,",
+  "Here is a list of words: cat, bat, hat,",
+  "Rhyming words - cat, bat, hat,",
+  "List: cat, bat, hat,"
+ ],
+ "gemma-dollar": [
+  "Analogy: Mexico:peso :: US:",
+  "Money\nMexico:peso :: US:",
+  "Currencies\nMexico:peso :: US:",
+  "Country:currency\nMexico:peso :: US:",
+  "National currencies\nMexico:peso :: US:"
+ ],
+ "gemma-english": [
+  "Analogy: Mexico:Spanish :: US:",
+  "Country:language\nMexico:Spanish :: US:",
+  "Languages\nMexico:Spanish :: US:",
+  "National languages\nMexico:Spanish :: US:",
+  "Spoken languages\nMexico:Spanish :: US:"
+ ],
+ "gemma-euro": [
+  "Analogy: Mexico:peso :: Europe:",
+  "Complete the analogy. Mexico:peso :: Europe:",
+  "Currencies\nMexico:peso :: Europe:",
+  "Q: Mexico:peso :: Europe:",
+  "Fill in the blank: Mexico:peso :: Europe:"
+ ],
+ "gemma-fact-shanghai-beijing": [
+  "Fact: The capital city of the country that contains Shanghai is",
+  "The capital of the country where Shanghai is located is",
+  "Fact: Shanghai is in a country whose capital is",
+  "Fact: the country containing Shanghai has its capital in",
+  "Question: What is the capital of the country containing Shanghai? Answer:"
+ ],
+ "gemma-fact-vancouver-victoria": [
+  "Fact: The capital city of the territory that contains Vancouver is",
+  "The capital of the territory where Vancouver is located is",
+  "Fact: Vancouver is in a territory whose capital is",
+  "Fact: the territory containing Vancouver has its capital in",
+  "Question: What is the capital of the territory containing Vancouver? Answer:"
+ ],
+ "gemma-girl-is": [
+  "The girl whom the teacher sees",
+  "The girl who the teacher sees",
+  "The little girl that the teacher sees",
+  "The girl that the teacher sees every day",
+  "The girl that our teacher sees"
+ ],
+ "gemma-girls-are": [
+  "The girls whom the teacher sees",
+  "The girls who the teacher sees",
+  "The little girls that the teacher sees",
+  "The girls that the teacher sees every day",
+  "The girls that our teacher sees"
+ ],
+ "gemma-gp-nps": [
+  "The young guitarist knew the song",
+  "The famous guitarist knew the song",
+  "The guitarist already knew the song",
+  "The guitarist in the band knew the song",
+  "I think the guitarist knew the song"
+ ],
+ "gemma-keys-cabinet": [
+  "The keys on the kitchen cabinet",
+  "The keys on top of the cabinet",
+  "The old keys on the cabinet",
+  "The keys lying on the cabinet",
+  "I think the keys on the cabinet"
+ ],
+ "gemma-michael-jordan-es": [
+  "Hecho: el famoso Michael Jordan juega al",
+  "Michael Jordan juega al",
+  "Dato: Michael Jordan juega al",
+  "Todo el mundo sabe que Michael Jordan juega al",
+  "Hecho : Michael Jordan jugaba al"
+ ],
+ "gemma-michael-jordan": [
+  "Fact: The sport that Michael Jordan plays is",
+  "Michael Jordan plays the sport of",
+  "Fact: Michael Jordan is famous for playing the sport of",
+  "Everyone knows that Michael Jordan plays the sport of",
+  "Q: Which sport does Michael Jordan play? A:"
+ ],
+ "gemma-saison": [
+  "La saison qui vient après le printemps s'appelle l'",
+  "La saison après le printemps s'appelle l'",
+  "Fait : la saison après le printemps est l'",
+  "Après le printemps, la saison suivante est l'",
+  "Le printemps est suivi par l'"
+ ],
+ "gemma-small-big-zh": [
+  "\"小\"这个词的反义词是\"",
+  "\"小\"的相反词是\"",
+  "请问\"小\"的反义词是\"",
+  "词语\"小\"的反义词是\"",
+  "\"小\"的反义是\""
+ ],
+ "gemma-tom-brady": [
+  "Fact: Tom Brady plays the sport of",
+  "The sport that Tom Brady plays is",
+  "Tom Brady is famous for playing the sport of",
+  "Everyone knows that Tom Brady plays the sport of",
+  "Q: Which sport does Tom Brady play? A:"
+ ],
+ "gemma-verano": [
+  "La estación que viene después de la primavera se llama el",
+  "Hecho: la estación después de la primavera se llama el",
+  "Después de la primavera llega el",
+  "La estación siguiente a la primavera es el",
+  "A la primavera le sigue el"
+ ]
+}
