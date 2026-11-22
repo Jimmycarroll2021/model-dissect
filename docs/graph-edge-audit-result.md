@@ -36,6 +36,17 @@ E is the drop in the target's mean-centred, pre-soft-cap logit on the graph's ow
 
 Full per-edge table: `exploratory/results/audit-all-table.md`. Raw: `exploratory/results/pilot-v1-run1.json`, `exploratory/results/scale-v1-run1.json`.
 
+## Follow-up on the nine wrong-sign edges (after the fact, exploratory)
+
+`exploratory/wrongsign_probe.py`, results in `exploratory/results/wrongsign-probe.json`. Not preregistered.
+
+- **They are near-zero effects, not reversals.** The centred-logit change is small in all nine (0.04 to 1.0), it scales smoothly with how much of the feature is removed, and the answer's probability still fell slightly in 8 of the 9 (by 0.002 to 0.033; it rose by 0.021 for bee 19/5460). "Wrong sign" is a property of the mean-centred logit measure here; a fairer label is "no real effect".
+- **Later layers undo most of the push.** Reading the change in the residual stream layer by layer through the frozen final norm: for bee 22/16038 the removal is worth 4.74 logits just after layer 22 (the hand-computed direct path), 2.56 after layer 23, 1.60 after 24 and 1.46 after 25. The other eight show the same decline.
+- **The final normalisation accounts for the rest.** Removing a large contribution shrinks the residual, the final norm rescales everything up, and the mean-centred logit of an already-high answer rises. That turns a small remaining drop (1.46 with the norm frozen) into a small rise (-0.45 measured).
+- **The same decline shows in edges that hold**, only less: Dallas 20/15589 goes from 3.52 after its own layer to 1.41 after layer 25 (measured E 1.37).
+
+So the gap between stated weight and measured effect is mostly downstream layers compensating, plus a rescaling effect in how the final norm treats a removed vector. Both are real properties of the model that a direct-path weight does not include.
+
 ## Reading
 
 For these featured graphs the direction of a top edge is usually right, but its weight is a poor guide to what removing the feature does in the real model: about a quarter of top edges hold at roughly the stated size, about a fifth are real but much weaker, and about half are either indistinguishable from a same-size edit or go the other way. Edges in the last three layers are the most reliable.
