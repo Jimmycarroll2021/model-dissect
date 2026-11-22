@@ -33,11 +33,15 @@ AUS, SAC = single(corpus["target_text"]), single(corpus["comparator_text"])
 assert AUS == corpus["target_token_id_graph"]
 
 state = {"edit": None, "x": None}
-mlp = model.model.layers[L].mlp
+layer = model.model.layers[L]
 
 
+# Convention checked against the published graph (exploratory/graphs): features are read from the
+# pre-MLP RMSNorm output WITHOUT its learned gain, and decoder vectors write to the post-MLP RMSNorm
+# output (what is added to the residual stream). Reading there reproduces graph activations exactly.
 def pre_hook(m, args):
-    state["x"] = args[0][0, -1].detach()
+    r = args[0][0, -1].detach()
+    state["x"] = r * torch.rsqrt(r.pow(2).mean() + 1e-6)
 
 
 def post_hook(m, args, out):
@@ -48,8 +52,8 @@ def post_hook(m, args, out):
     return out
 
 
-mlp.register_forward_pre_hook(pre_hook)
-mlp.register_forward_hook(post_hook)
+layer.pre_feedforward_layernorm.register_forward_pre_hook(pre_hook)
+layer.post_feedforward_layernorm.register_forward_hook(post_hook)
 
 
 def coeffs(x):

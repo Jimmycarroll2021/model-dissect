@@ -24,7 +24,11 @@ A prior-work check on 2026-11-23 (three searches, two papers read; not exhaustiv
 
 ## Starting point
 
-One exploratory data point, `exploratory/ablation.py` and `exploratory/ablation-results.json`: layer-20 transcoder feature 15589, Austin versus Sacramento, 16 Texas/California prompt pairs. Median drop 8.4 logits; random same-size edit about 2; California and non-target prompts 0.0. Not a pass: the feature was inactive on one prompt (H12) and the matched-feature control resolved on 2 of 16. Run in fp32 on GPU, outside the admission process, never independently repeated.
+**Correction, 2026-11-23.** The first exploratory runs (`exploratory/ablation.py`, `ablation-results.json`, `results/v1-gpu.json`, `results/v2-gpu-run*.json`, `results/v2-cpu.json`) used the wrong read and write points and are INVALID: they read features from the gained pre-MLP norm output and added the edit to the raw MLP output, before the post-MLP norm. Their numbers (median drops of 8.4 and 6.0 logits, a "Sunnyvale" specificity failure) are artefacts and must not be cited. They are kept only as a record of the error.
+
+The convention was then checked against a published graph (`exploratory/graphs/gemma-fact-dallas-austin.json`): reading features from the pre-MLP RMSNorm output without its learned gain reproduces all 16 layer-20 graph activations to two decimals, and the transcoder reconstructs the post-MLP norm output (relative error about 0.25, against about 800 for the raw MLP output). `exploratory/ablation_v2.py` now uses that convention.
+
+Corrected result for layer-20 feature 15589, Austin versus Sacramento (`results/v2fix-*`, `results/v1fix-gpu.json`): on the 20 held-out pairs frozen in `exploratory/held-out-v2-spec.md`, median drop 0.56 logits (bar 0.5); it beats the random, nearest-feature and size-matched controls by medians of 0.53, 0.54 and 0.67 (bar 0.25) on 80%, 95% and 95% of pairs (bar 75%); California and unrelated prompts change 0.0; the feature is inactive on 1 of 20 Texas prompts. Verdict PASS, narrowly. Two GPU runs identical; CPU agrees to 0.00002. Caveat: the held-out corpus was first scored with the invalid implementation, then rerun after the fix with corpus and thresholds unchanged. On the original 16 pairs: median drop 0.65, same pattern (supporting only).
 
 ## Steps
 
