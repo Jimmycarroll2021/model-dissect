@@ -1,0 +1,135 @@
+{
+ "status": "HELD_OUT_V2_FROZEN_BEFORE_ANY_FORWARD_PASS",
+ "pairs": [
+  {
+   "id": "V01",
+   "texas": "The capital of the state containing Plano is",
+   "california": "The capital of the state containing Chula Vista is"
+  },
+  {
+   "id": "V02",
+   "texas": "The capital of the state containing Laredo is",
+   "california": "The capital of the state containing Fremont is"
+  },
+  {
+   "id": "V03",
+   "texas": "The capital of the state containing Irving is",
+   "california": "The capital of the state containing Berkeley is"
+  },
+  {
+   "id": "V04",
+   "texas": "The capital of the state containing Garland is",
+   "california": "The capital of the state containing Santa Barbara is"
+  },
+  {
+   "id": "V05",
+   "texas": "The capital of the state containing Brownsville is",
+   "california": "The capital of the state containing Monterey is"
+  },
+  {
+   "id": "V06",
+   "texas": "The capital of the state containing McKinney is",
+   "california": "The capital of the state containing Redding is"
+  },
+  {
+   "id": "V07",
+   "texas": "The capital of the state containing Frisco is",
+   "california": "The capital of the state containing Palm Springs is"
+  },
+  {
+   "id": "V08",
+   "texas": "The capital of the state containing Killeen is",
+   "california": "The capital of the state containing Santa Cruz is"
+  },
+  {
+   "id": "V09",
+   "texas": "The capital of the state containing Denton is",
+   "california": "The capital of the state containing San Bernardino is"
+  },
+  {
+   "id": "V10",
+   "texas": "The capital of the state containing McAllen is",
+   "california": "The capital of the state containing Fontana is"
+  },
+  {
+   "id": "V11",
+   "texas": "The capital of the state containing Round Rock is",
+   "california": "The capital of the state containing Glendale is"
+  },
+  {
+   "id": "V12",
+   "texas": "The capital of the state containing San Angelo is",
+   "california": "The capital of the state containing Huntington Beach is"
+  },
+  {
+   "id": "V13",
+   "texas": "The capital of the state containing Texarkana is",
+   "california": "The capital of the state containing Santa Clarita is"
+  },
+  {
+   "id": "V14",
+   "texas": "The capital of the state containing Lufkin is",
+   "california": "The capital of the state containing Salinas is"
+  },
+  {
+   "id": "V15",
+   "texas": "The capital of the state containing Nacogdoches is",
+   "california": "The capital of the state containing Sunnyvale is"
+  },
+  {
+   "id": "V16",
+   "texas": "The capital of the state containing Victoria is",
+   "california": "The capital of the state containing Escondido is"
+  },
+  {
+   "id": "V17",
+   "texas": "The capital of the state containing Harlingen is",
+   "california": "The capital of the state containing Torrance is"
+  },
+  {
+   "id": "V18",
+   "texas": "The capital of the state containing Sugar Land is",
+   "california": "The capital of the state containing Visalia is"
+  },
+  {
+   "id": "V19",
+   "texas": "The capital of the state containing Mesquite is",
+   "california": "The capital of the state containing Eureka is"
+  },
+  {
+   "id": "V20",
+   "texas": "The capital of the state containing Longview is",
+   "california": "The capital of the state containing Burbank is"
+  }
+ ],
+ "non_target": [
+  {
+   "id": "M01",
+   "prompt": "The capital of Germany is",
+   "answer": " Berlin",
+   "distractor": " Paris"
+  },
+  {
+   "id": "M02",
+   "prompt": "The capital of Italy is",
+   "answer": " Rome",
+   "distractor": " Paris"
+  },
+  {
+   "id": "M03",
+   "prompt": "Three plus three equals",
+   "answer": " six",
+   "distractor": " seven"
+  },
+  {
+   "id": "M04",
+   "prompt": "The opposite of big is",
+   "answer": " small",
+   "distractor": " large"
+  }
+ ],
+ "target_text": " Austin",
+ "comparator_text": " Sacramento",
+ "target_token_id_graph": 22605,
+ "discovery_excluded": "The capital of the state containing Dallas is"
+}
