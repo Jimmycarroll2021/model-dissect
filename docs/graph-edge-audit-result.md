@@ -47,6 +47,17 @@ Full per-edge table: `exploratory/results/audit-all-table.md`. Raw: `exploratory
 
 So the gap between stated weight and measured effect is mostly downstream layers compensating, plus a rescaling effect in how the final norm treats a removed vector. Both are real properties of the model that a direct-path weight does not include.
 
+## Independent re-measurement (2026-11-23)
+
+A separate reviewer wrote its own code from the two spec files and the graph files only, without access to the audit runners or results, and re-measured 15 edges chosen to include the surprising ones (files in `exploratory/independent-check/`).
+
+- **The measured effects reproduce.** E agrees on all 15 edges to within 0.00002, before and after the soft cap. All 15 activations and baseline probabilities match the graphs. The reviewer confirmed by test that the read point, write point, mean-centring and pre-cap unit are the ones that reproduce the graphs' own numbers.
+- **The random control is flawed.** The spec does not say whether the random vector is added or subtracted; the audit added it, the reviewer subtracted it, and the control values differ (for example Dallas 20/15589: mean 0.11 here, 0.37 there). More important, a random vector of that size makes the residual larger, which lowers every logit through the final norm, while removing a real feature makes it smaller. So the random control carries a norm effect the real ablation does not, and it is biased upward for large features. The split between WEAKER/HOLDS and NOT_DISTINCT therefore depends on a control that is not like-for-like; treat the NOT_DISTINCT count as an upper bound.
+- **The strictest rule is noisy.** "Beat the largest of 16 random draws" on one prompt is the binding condition for most edges.
+- **Which number is the headline matters.** The pre-cap E is the right unit for comparing with W, but after the soft cap the drops are 3 to 20 times smaller for confident answers, and no edge among the 15 moved its answer's probability by more than 0.30.
+
+What survives unchanged: the measured E values, their sign, E / W, the correlation with W, and the layer pattern. What is weakened: the exact HOLDS / WEAKER / NOT_DISTINCT split.
+
 ## Reading
 
 For these featured graphs the direction of a top edge is usually right, but its weight is a poor guide to what removing the feature does in the real model: about a quarter of top edges hold at roughly the stated size, about a fifth are real but much weaker, and about half are either indistinguishable from a same-size edit or go the other way. Edges in the last three layers are the most reliable.
