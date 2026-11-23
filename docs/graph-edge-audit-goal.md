@@ -1,6 +1,6 @@
 # Goal: causal replication audit of public attribution graphs
 
-Set 2026-11-23. Status: steps 1 to 3 done; result in `docs/graph-edge-audit-result.md` (25 graphs, 75 edges). Open: independent rerun, write-up, publication decisions.
+Set 2026-11-23. Status: steps 1 to 3 done; result in `docs/graph-edge-audit-result.md` (25 graphs, 75 edges). Independent re-measurement, paraphrase check and like-for-like control done. Open: licence and venue.
 
 ## The question
 

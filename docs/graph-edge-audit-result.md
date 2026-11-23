@@ -52,24 +52,46 @@ So the gap between stated weight and measured effect is mostly downstream layers
 A separate reviewer wrote its own code from the two spec files and the graph files only, without access to the audit runners or results, and re-measured 15 edges chosen to include the surprising ones (files in `exploratory/independent-check/`).
 
 - **The measured effects reproduce.** E agrees on all 15 edges to within 0.00002, before and after the soft cap. All 15 activations and baseline probabilities match the graphs. The reviewer confirmed by test that the read point, write point, mean-centring and pre-cap unit are the ones that reproduce the graphs' own numbers.
-- **The random control is flawed.** The spec does not say whether the random vector is added or subtracted; the audit added it, the reviewer subtracted it, and the control values differ (for example Dallas 20/15589: mean 0.11 here, 0.37 there). More important, a random vector of that size makes the residual larger, which lowers every logit through the final norm, while removing a real feature makes it smaller. So the random control carries a norm effect the real ablation does not, and it is biased upward for large features. The split between WEAKER/HOLDS and NOT_DISTINCT therefore depends on a control that is not like-for-like; treat the NOT_DISTINCT count as an upper bound.
+- **The random control is flawed.** The spec does not say whether the random vector is added or subtracted; the audit added it, the reviewer subtracted it, and the control values differ (for example Dallas 20/15589: mean 0.11 here, 0.37 there). More important, a random vector of that size makes the residual larger, which lowers every logit through the final norm, while removing a real feature makes it smaller. So the random control carries a norm effect the real ablation does not, and it is biased upward for large features. The split between WEAKER/HOLDS and NOT_DISTINCT therefore depends on a control that is not like-for-like; at that point the NOT_DISTINCT count was read as an upper bound; the like-for-like control run afterwards (below) shows that reading was wrong.
 - **The strictest rule is noisy.** "Beat the largest of 16 random draws" on one prompt is the binding condition for most edges.
 - **Which number is the headline matters.** The pre-cap E is the right unit for comparing with W, but after the soft cap the drops are 3 to 20 times smaller for confident answers, and no edge among the 15 moved its answer's probability by more than 0.30.
 
 What survives unchanged: the measured E values, their sign, E / W, the correlation with W, and the layer pattern. What is weakened: the exact HOLDS / WEAKER / NOT_DISTINCT split.
 
+## Paraphrase check (2026-11-23, frozen in `exploratory/paraphrase-v1-spec.md`)
+
+Each edge was retested at the final position of up to 5 reworded prompts with the same expected answer (111 valid paraphrases over 25 graphs; 73 edges, 2 skipped because their feature sits at an earlier token). Two runs identical; the runner first reproduced all 75 own-prompt E values exactly.
+
+- The feature was active on 319 of 324 edge-paraphrase pairs.
+- E > 0 on 268 of 319 active pairs (84%).
+- Per-edge median E over paraphrases tracks the own-prompt E: Spearman 0.94; same sign on 71 of 73 edges. Median of (median E) / W is 0.40, against 0.38 on the own prompts. Spearman of W with median E is 0.35.
+- The distinct / not-distinct call (v1 controls) agrees between own prompt and paraphrase majority on 67 of 73 edges.
+- Individual paraphrases do vary: one addition edge ranges from -6.0 to +2.9 across five framings.
+
+Table: `exploratory/results/paraphrase-v1-table.md`.
+
+## Like-for-like control (2026-11-24, frozen in `exploratory/control-v2-spec.md`)
+
+Made after seeing the v1 results, to answer the reviewer's objection. The control vector has the same length as the removed contribution and the same projection onto the residual stream, with the rest in a random direction, and is subtracted, so the edited residual has exactly the same norm as under the real ablation. 64 draws per edge; an edge is distinct if E beats the control mean by 0.25 and at most 3 of 64 draws reach E. Two runs identical; all 75 E values reproduced.
+
+- Verdicts: HOLDS 17, WEAKER 11, NOT_DISTINCT 38, WRONG_SIGN 9 (v1: 20 + 1 stronger, 15, 30, 9). Twelve edges change, ten of them towards NOT_DISTINCT.
+- The matched control is harder to beat, not easier: its median effect is 0.32 logits against 0.05 for the v1 control. Removing the part of a contribution that lies along the residual stream lowers the leading answer on its own, and the removed contributions have a median 17% of their length along it.
+- So the reviewer's expectation, and the "upper bound" reading above, were wrong in direction. Among the 66 right-sign edges, 53 beat the control mean; 28 pass the full rule.
+
+The split into holds / weaker / not distinct depends on which same-size edit counts as fair: 36 of 75 edges are distinct under v1, 28 under v2. Sign, E / W, the correlation with W and the layer pattern do not depend on the control.
+
 ## Reading
 
-For these featured graphs the direction of a top edge is usually right, but its weight is a poor guide to what removing the feature does in the real model: about a quarter of top edges hold at roughly the stated size, about a fifth are real but much weaker, and about half are either indistinguishable from a same-size edit or go the other way. Edges in the last three layers are the most reliable.
+For these featured graphs the direction of a top edge is usually right, but its weight is a poor guide to what removing the feature does in the real model: the measured effect is typically about 40% of the stated weight, and between 37% and 48% of top edges (depending on the control) are clearly distinguishable from a same-size edit; about one in eight goes the other way. The picture is the same on reworded prompts. Edges in the last three layers are the most reliable.
 
 ## Limits
 
 - W is a direct-path weight; E is a total effect including downstream compensation. A gap is a fact about how the two relate, not an error in the graph. The graphs do not claim W predicts ablation.
-- One prompt per edge for the verdict; 25 hand-picked featured graphs, top three edges only. Not a sample of graphs in general.
+- One prompt per edge for the verdict (paraphrases checked separately, above); 25 hand-picked featured graphs, top three edges only. Not a sample of graphs in general.
 - Removing a feature to zero is one intervention; steering or patching could behave differently.
 - The size-matched feature control pushes that feature past zero, which is a harsh comparison.
 - The pass marks (0.25 logits, factor of two) are choices made before the runs, not derived quantities.
-- One model, one dictionary, fp32 on one GPU. No independent rerun yet.
+- One model, one dictionary, fp32 on one GPU. Independent re-measurement covered 15 of 75 edges.
 
 ## Withdrawn
 

@@ -1,0 +1,7420 @@
+{
+ "baseline": {
+  "gemma-addition": {
+   "target": "8",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Calculate: 3 + 5 = ",
+     "n_tok": 10,
+     "p_target": 0.42237409949302673,
+     "top1": "8",
+     "valid": true
+    },
+    {
+     "prompt": "Math: 3 + 5 = ",
+     "n_tok": 10,
+     "p_target": 0.7275785207748413,
+     "top1": "8",
+     "valid": true
+    },
+    {
+     "prompt": "What is 3 + 5? 3 + 5 = ",
+     "n_tok": 16,
+     "p_target": 0.7880725860595703,
+     "top1": "8",
+     "valid": true
+    },
+    {
+     "prompt": "Simple sum: 3 + 5 = ",
+     "n_tok": 11,
+     "p_target": 0.9361755847930908,
+     "top1": "8",
+     "valid": true
+    },
+    {
+     "prompt": "Q: 3 + 5 = ",
+     "n_tok": 10,
+     "p_target": 0.29511788487434387,
+     "top1": "8",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-fact-dallas-austin": {
+   "target": " Austin",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Dallas is",
+     "n_tok": 13,
+     "p_target": 0.3579113185405731,
+     "top1": " Austin",
+     "valid": true
+    },
+    {
+     "prompt": "The capital of the state where Dallas is located is",
+     "n_tok": 11,
+     "p_target": 0.33747294545173645,
+     "top1": " Austin",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: Dallas is in a state whose capital is",
+     "n_tok": 11,
+     "p_target": 0.33296000957489014,
+     "top1": " Austin",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: the state containing Dallas has its capital in",
+     "n_tok": 11,
+     "p_target": 0.5564978718757629,
+     "top1": " Austin",
+     "valid": true
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Dallas? Answer:",
+     "n_tok": 15,
+     "p_target": 0.06583944708108902,
+     "top1": " Texas",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-fact-oakland-sacramento": {
+   "target": " Sacramento",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Oakland is",
+     "n_tok": 13,
+     "p_target": 0.2640719413757324,
+     "top1": " Sacramento",
+     "valid": true
+    },
+    {
+     "prompt": "The capital of the state where Oakland is located is",
+     "n_tok": 11,
+     "p_target": 0.29987794160842896,
+     "top1": " Sacramento",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: Oakland is in a state whose capital is",
+     "n_tok": 11,
+     "p_target": 0.4654143750667572,
+     "top1": " Sacramento",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: the state containing Oakland has its capital in",
+     "n_tok": 11,
+     "p_target": 0.24274547398090363,
+     "top1": " Sacramento",
+     "valid": true
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Oakland? Answer:",
+     "n_tok": 15,
+     "p_target": 0.039528023451566696,
+     "top1": " California",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-small-big-en": {
+   "target": "large",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "n_tok": 10,
+     "p_target": 0.49814900755882263,
+     "top1": "large",
+     "valid": true
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "n_tok": 11,
+     "p_target": 0.38534238934516907,
+     "top1": "large",
+     "valid": true
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "n_tok": 10,
+     "p_target": 0.3025488257408142,
+     "top1": "large",
+     "valid": true
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "n_tok": 7,
+     "p_target": 0.1372225433588028,
+     "top1": "big",
+     "valid": true
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "n_tok": 9,
+     "p_target": 0.34664618968963623,
+     "top1": "big",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-small-big-fr": {
+   "target": "grand",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "n_tok": 11,
+     "p_target": 0.7727085947990417,
+     "top1": "grand",
+     "valid": true
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "n_tok": 11,
+     "p_target": 0.7642817497253418,
+     "top1": "grand",
+     "valid": true
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "n_tok": 10,
+     "p_target": 0.7294437885284424,
+     "top1": "grand",
+     "valid": true
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "n_tok": 10,
+     "p_target": 0.7896981239318848,
+     "top1": "grand",
+     "valid": true
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "n_tok": 9,
+     "p_target": 0.019461875781416893,
+     "top1": "petit",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-G": {
+   "target": "G",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "He works for the International Advanced Security Group (IAS",
+     "n_tok": 11,
+     "p_target": 0.9332503080368042,
+     "top1": "G",
+     "valid": true
+    },
+    {
+     "prompt": "According to the International Advanced Security Group (IAS",
+     "n_tok": 10,
+     "p_target": 0.9020090103149414,
+     "top1": "G",
+     "valid": true
+    },
+    {
+     "prompt": "A report by the International Advanced Security Group (IAS",
+     "n_tok": 11,
+     "p_target": 0.9348299503326416,
+     "top1": "G",
+     "valid": true
+    },
+    {
+     "prompt": "Members of the International Advanced Security Group (IAS",
+     "n_tok": 10,
+     "p_target": 0.9546276330947876,
+     "top1": "G",
+     "valid": true
+    },
+    {
+     "prompt": "She joined the International Advanced Security Group (IAS",
+     "n_tok": 10,
+     "p_target": 0.9290891289710999,
+     "top1": "G",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-Mexico-Spanish": {
+   "target": " Spanish",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "In the country just south of the United States, the most widely spoken language is",
+     "n_tok": 17,
+     "p_target": 0.6047753691673279,
+     "top1": " Spanish",
+     "valid": true
+    },
+    {
+     "prompt": "The main language of the country that lies south of the United States is",
+     "n_tok": 15,
+     "p_target": 0.3784576654434204,
+     "top1": " Spanish",
+     "valid": true
+    },
+    {
+     "prompt": "The most common language in the country directly south of the United States is",
+     "n_tok": 15,
+     "p_target": 0.6635363698005676,
+     "top1": " Spanish",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: the language most people speak in the country south of the United States is",
+     "n_tok": 17,
+     "p_target": 0.30042317509651184,
+     "top1": " Spanish",
+     "valid": true
+    },
+    {
+     "prompt": "Question: What language is most commonly spoken in the country south of the United States? Answer:",
+     "n_tok": 20,
+     "p_target": 0.7883833050727844,
+     "top1": " Spanish",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-basket": {
+   "target": " basket",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Fait : Michael Jordan joue au",
+     "n_tok": 8,
+     "p_target": 0.5336654782295227,
+     "top1": " basket",
+     "valid": true
+    },
+    {
+     "prompt": "Michael Jordan joue au",
+     "n_tok": 5,
+     "p_target": 0.5689887404441833,
+     "top1": " basket",
+     "valid": true
+    },
+    {
+     "prompt": "Fait: le célèbre Michael Jordan joue au",
+     "n_tok": 10,
+     "p_target": 0.5753225684165955,
+     "top1": " basket",
+     "valid": true
+    },
+    {
+     "prompt": "Tout le monde sait que Michael Jordan joue au",
+     "n_tok": 10,
+     "p_target": 0.7285235524177551,
+     "top1": " basket",
+     "valid": true
+    },
+    {
+     "prompt": "Info: Michael Jordan joue au",
+     "n_tok": 7,
+     "p_target": 0.5225107073783875,
+     "top1": " basket",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-bee-insect": {
+   "target": " insect",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Fact: a bee is a type of",
+     "n_tok": 9,
+     "p_target": 0.6740179061889648,
+     "top1": " insect",
+     "valid": true
+    },
+    {
+     "prompt": "Biologically, a bee is a type of",
+     "n_tok": 10,
+     "p_target": 0.5775641798973083,
+     "top1": " insect",
+     "valid": true
+    },
+    {
+     "prompt": "In biology, a bee is classified as a type of",
+     "n_tok": 12,
+     "p_target": 0.5415782332420349,
+     "top1": " insect",
+     "valid": true
+    },
+    {
+     "prompt": "Q: What is a bee? A: A bee is a type of",
+     "n_tok": 16,
+     "p_target": 0.7222757339477539,
+     "top1": " insect",
+     "valid": true
+    },
+    {
+     "prompt": "Scientists say that a bee is a type of",
+     "n_tok": 10,
+     "p_target": 0.45797833800315857,
+     "top1": " insect",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-cat-hat": {
+   "target": " rat",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Rhymes: cat, bat, hat,",
+     "n_tok": 10,
+     "p_target": 0.21930763125419617,
+     "top1": " rat",
+     "valid": true
+    },
+    {
+     "prompt": "Words that rhyme: cat, bat, hat,",
+     "n_tok": 11,
+     "p_target": 0.1703965961933136,
+     "top1": " rat",
+     "valid": true
+    },
+    {
+     "prompt": "Here is a list of words: cat, bat, hat,",
+     "n_tok": 14,
+     "p_target": 0.16605094075202942,
+     "top1": " rat",
+     "valid": true
+    },
+    {
+     "prompt": "Rhyming words - cat, bat, hat,",
+     "n_tok": 11,
+     "p_target": 0.21174733340740204,
+     "top1": " rat",
+     "valid": true
+    },
+    {
+     "prompt": "List: cat, bat, hat,",
+     "n_tok": 9,
+     "p_target": 0.1861010193824768,
+     "top1": " rat",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-dollar": {
+   "target": "dollar",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: US:",
+     "n_tok": 10,
+     "p_target": 0.1834614872932434,
+     "top1": "dollar",
+     "valid": true
+    },
+    {
+     "prompt": "Money\nMexico:peso :: US:",
+     "n_tok": 9,
+     "p_target": 0.3662809729576111,
+     "top1": "dollar",
+     "valid": true
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: US:",
+     "n_tok": 9,
+     "p_target": 0.6082765460014343,
+     "top1": "dollar",
+     "valid": true
+    },
+    {
+     "prompt": "Country:currency\nMexico:peso :: US:",
+     "n_tok": 11,
+     "p_target": 0.7665497660636902,
+     "top1": "dollar",
+     "valid": true
+    },
+    {
+     "prompt": "National currencies\nMexico:peso :: US:",
+     "n_tok": 10,
+     "p_target": 0.44155654311180115,
+     "top1": "dollar",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-english": {
+   "target": "English",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:Spanish :: US:",
+     "n_tok": 10,
+     "p_target": 0.03531618416309357,
+     "top1": "\n\n",
+     "valid": false
+    },
+    {
+     "prompt": "Country:language\nMexico:Spanish :: US:",
+     "n_tok": 11,
+     "p_target": 0.9020193815231323,
+     "top1": "English",
+     "valid": true
+    },
+    {
+     "prompt": "Languages\nMexico:Spanish :: US:",
+     "n_tok": 9,
+     "p_target": 0.7687463164329529,
+     "top1": "English",
+     "valid": true
+    },
+    {
+     "prompt": "National languages\nMexico:Spanish :: US:",
+     "n_tok": 10,
+     "p_target": 0.5033271908760071,
+     "top1": "English",
+     "valid": true
+    },
+    {
+     "prompt": "Spoken languages\nMexico:Spanish :: US:",
+     "n_tok": 10,
+     "p_target": 0.5893071889877319,
+     "top1": "English",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-euro": {
+   "target": "euro",
+   "n_valid": 3,
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: Europe:",
+     "n_tok": 10,
+     "p_target": 0.15458083152770996,
+     "top1": "euro",
+     "valid": true
+    },
+    {
+     "prompt": "Complete the analogy. Mexico:peso :: Europe:",
+     "n_tok": 11,
+     "p_target": 0.006447098683565855,
+     "top1": "___",
+     "valid": false
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: Europe:",
+     "n_tok": 9,
+     "p_target": 0.48641303181648254,
+     "top1": "euro",
+     "valid": true
+    },
+    {
+     "prompt": "Q: Mexico:peso :: Europe:",
+     "n_tok": 9,
+     "p_target": 0.10826016217470169,
+     "top1": "\n",
+     "valid": true
+    },
+    {
+     "prompt": "Fill in the blank: Mexico:peso :: Europe:",
+     "n_tok": 12,
+     "p_target": 0.01011232566088438,
+     "top1": " ________",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-fact-shanghai-beijing": {
+   "target": " Beijing",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the country that contains Shanghai is",
+     "n_tok": 13,
+     "p_target": 0.49598708748817444,
+     "top1": " Beijing",
+     "valid": true
+    },
+    {
+     "prompt": "The capital of the country where Shanghai is located is",
+     "n_tok": 11,
+     "p_target": 0.2225034534931183,
+     "top1": " Beijing",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: Shanghai is in a country whose capital is",
+     "n_tok": 11,
+     "p_target": 0.23547561466693878,
+     "top1": " Beijing",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: the country containing Shanghai has its capital in",
+     "n_tok": 11,
+     "p_target": 0.6309723258018494,
+     "top1": " Beijing",
+     "valid": true
+    },
+    {
+     "prompt": "Question: What is the capital of the country containing Shanghai? Answer:",
+     "n_tok": 15,
+     "p_target": 0.019202254712581635,
+     "top1": " China",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-fact-vancouver-victoria": {
+   "target": " Victoria",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the territory that contains Vancouver is",
+     "n_tok": 13,
+     "p_target": 0.3792556822299957,
+     "top1": " Victoria",
+     "valid": true
+    },
+    {
+     "prompt": "The capital of the territory where Vancouver is located is",
+     "n_tok": 11,
+     "p_target": 0.24418357014656067,
+     "top1": " Victoria",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: Vancouver is in a territory whose capital is",
+     "n_tok": 11,
+     "p_target": 0.1474708467721939,
+     "top1": " Victoria",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: the territory containing Vancouver has its capital in",
+     "n_tok": 11,
+     "p_target": 0.4022016227245331,
+     "top1": " Victoria",
+     "valid": true
+    },
+    {
+     "prompt": "Question: What is the capital of the territory containing Vancouver? Answer:",
+     "n_tok": 15,
+     "p_target": 0.2762654721736908,
+     "top1": " Victoria",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-girl-is": {
+   "target": " is",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "The girl whom the teacher sees",
+     "n_tok": 7,
+     "p_target": 0.13371126353740692,
+     "top1": " in",
+     "valid": true
+    },
+    {
+     "prompt": "The girl who the teacher sees",
+     "n_tok": 7,
+     "p_target": 0.11884279549121857,
+     "top1": " as",
+     "valid": true
+    },
+    {
+     "prompt": "The little girl that the teacher sees",
+     "n_tok": 8,
+     "p_target": 0.1458941251039505,
+     "top1": " in",
+     "valid": true
+    },
+    {
+     "prompt": "The girl that the teacher sees every day",
+     "n_tok": 9,
+     "p_target": 0.1764041632413864,
+     "top1": " is",
+     "valid": true
+    },
+    {
+     "prompt": "The girl that our teacher sees",
+     "n_tok": 7,
+     "p_target": 0.09111594408750534,
+     "top1": " as",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-girls-are": {
+   "target": " are",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "The girls whom the teacher sees",
+     "n_tok": 7,
+     "p_target": 0.13026350736618042,
+     "top1": " in",
+     "valid": true
+    },
+    {
+     "prompt": "The girls who the teacher sees",
+     "n_tok": 7,
+     "p_target": 0.09754806011915207,
+     "top1": " as",
+     "valid": false
+    },
+    {
+     "prompt": "The little girls that the teacher sees",
+     "n_tok": 8,
+     "p_target": 0.1197315901517868,
+     "top1": " in",
+     "valid": true
+    },
+    {
+     "prompt": "The girls that the teacher sees every day",
+     "n_tok": 9,
+     "p_target": 0.20958663523197174,
+     "top1": " are",
+     "valid": true
+    },
+    {
+     "prompt": "The girls that our teacher sees",
+     "n_tok": 7,
+     "p_target": 0.10228724777698517,
+     "top1": " as",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-gp-nps": {
+   "target": " was",
+   "n_valid": 3,
+   "paraphrases": [
+    {
+     "prompt": "The young guitarist knew the song",
+     "n_tok": 7,
+     "p_target": 0.08696888387203217,
+     "top1": ",",
+     "valid": false
+    },
+    {
+     "prompt": "The famous guitarist knew the song",
+     "n_tok": 7,
+     "p_target": 0.10375448316335678,
+     "top1": " was",
+     "valid": true
+    },
+    {
+     "prompt": "The guitarist already knew the song",
+     "n_tok": 7,
+     "p_target": 0.04653278365731239,
+     "top1": ",",
+     "valid": false
+    },
+    {
+     "prompt": "The guitarist in the band knew the song",
+     "n_tok": 9,
+     "p_target": 0.15792427957057953,
+     "top1": " was",
+     "valid": true
+    },
+    {
+     "prompt": "I think the guitarist knew the song",
+     "n_tok": 8,
+     "p_target": 0.15098825097084045,
+     "top1": " was",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-keys-cabinet": {
+   "target": " are",
+   "n_valid": 4,
+   "paraphrases": [
+    {
+     "prompt": "The keys on the kitchen cabinet",
+     "n_tok": 7,
+     "p_target": 0.186545729637146,
+     "top1": " are",
+     "valid": true
+    },
+    {
+     "prompt": "The keys on top of the cabinet",
+     "n_tok": 8,
+     "p_target": 0.3507423400878906,
+     "top1": " are",
+     "valid": true
+    },
+    {
+     "prompt": "The old keys on the cabinet",
+     "n_tok": 7,
+     "p_target": 0.1641392558813095,
+     "top1": " are",
+     "valid": true
+    },
+    {
+     "prompt": "The keys lying on the cabinet",
+     "n_tok": 7,
+     "p_target": 0.061963580548763275,
+     "top1": ",",
+     "valid": false
+    },
+    {
+     "prompt": "I think the keys on the cabinet",
+     "n_tok": 8,
+     "p_target": 0.41649436950683594,
+     "top1": " are",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-michael-jordan-es": {
+   "target": " baloncesto",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Hecho: el famoso Michael Jordan juega al",
+     "n_tok": 9,
+     "p_target": 0.6420080661773682,
+     "top1": " baloncesto",
+     "valid": true
+    },
+    {
+     "prompt": "Michael Jordan juega al",
+     "n_tok": 5,
+     "p_target": 0.5810649394989014,
+     "top1": " baloncesto",
+     "valid": true
+    },
+    {
+     "prompt": "Dato: Michael Jordan juega al",
+     "n_tok": 7,
+     "p_target": 0.7072967886924744,
+     "top1": " baloncesto",
+     "valid": true
+    },
+    {
+     "prompt": "Todo el mundo sabe que Michael Jordan juega al",
+     "n_tok": 10,
+     "p_target": 0.7362856268882751,
+     "top1": " baloncesto",
+     "valid": true
+    },
+    {
+     "prompt": "Hecho : Michael Jordan jugaba al",
+     "n_tok": 8,
+     "p_target": 0.6601791977882385,
+     "top1": " baloncesto",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-michael-jordan": {
+   "target": " basketball",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "Fact: The sport that Michael Jordan plays is",
+     "n_tok": 10,
+     "p_target": 0.30390673875808716,
+     "top1": " basketball",
+     "valid": true
+    },
+    {
+     "prompt": "Michael Jordan plays the sport of",
+     "n_tok": 7,
+     "p_target": 0.7277445197105408,
+     "top1": " basketball",
+     "valid": true
+    },
+    {
+     "prompt": "Fact: Michael Jordan is famous for playing the sport of",
+     "n_tok": 12,
+     "p_target": 0.9638723731040955,
+     "top1": " basketball",
+     "valid": true
+    },
+    {
+     "prompt": "Everyone knows that Michael Jordan plays the sport of",
+     "n_tok": 10,
+     "p_target": 0.9304925203323364,
+     "top1": " basketball",
+     "valid": true
+    },
+    {
+     "prompt": "Q: Which sport does Michael Jordan play? A:",
+     "n_tok": 12,
+     "p_target": 0.18947018682956696,
+     "top1": " Basketball",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-saison": {
+   "target": "été",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "La saison qui vient après le printemps s'appelle l'",
+     "n_tok": 13,
+     "p_target": 0.7525926828384399,
+     "top1": "été",
+     "valid": true
+    },
+    {
+     "prompt": "La saison après le printemps s'appelle l'",
+     "n_tok": 11,
+     "p_target": 0.6630270481109619,
+     "top1": "été",
+     "valid": true
+    },
+    {
+     "prompt": "Fait : la saison après le printemps est l'",
+     "n_tok": 12,
+     "p_target": 0.11938256025314331,
+     "top1": "une",
+     "valid": true
+    },
+    {
+     "prompt": "Après le printemps, la saison suivante est l'",
+     "n_tok": 11,
+     "p_target": 0.7552337646484375,
+     "top1": "été",
+     "valid": true
+    },
+    {
+     "prompt": "Le printemps est suivi par l'",
+     "n_tok": 8,
+     "p_target": 0.8303368091583252,
+     "top1": "été",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-small-big-zh": {
+   "target": "大",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "\"小\"这个词的反义词是\"",
+     "n_tok": 11,
+     "p_target": 0.9230899810791016,
+     "top1": "大",
+     "valid": true
+    },
+    {
+     "prompt": "\"小\"的相反词是\"",
+     "n_tok": 9,
+     "p_target": 0.8940331935882568,
+     "top1": "大",
+     "valid": true
+    },
+    {
+     "prompt": "请问\"小\"的反义词是\"",
+     "n_tok": 10,
+     "p_target": 0.7990143299102783,
+     "top1": "大",
+     "valid": true
+    },
+    {
+     "prompt": "词语\"小\"的反义词是\"",
+     "n_tok": 11,
+     "p_target": 0.8690921068191528,
+     "top1": "大",
+     "valid": true
+    },
+    {
+     "prompt": "\"小\"的反义是\"",
+     "n_tok": 8,
+     "p_target": 0.9350253343582153,
+     "top1": "大",
+     "valid": true
+    }
+   ]
+  },
+  "gemma-tom-brady": {
+   "target": " football",
+   "n_valid": 3,
+   "paraphrases": [
+    {
+     "prompt": "Fact: Tom Brady plays the sport of",
+     "n_tok": 9,
+     "p_target": 0.7989534139633179,
+     "top1": " football",
+     "valid": true
+    },
+    {
+     "prompt": "The sport that Tom Brady plays is",
+     "n_tok": 8,
+     "p_target": 0.0718136876821518,
+     "top1": " called",
+     "valid": false
+    },
+    {
+     "prompt": "Tom Brady is famous for playing the sport of",
+     "n_tok": 10,
+     "p_target": 0.8179564476013184,
+     "top1": " football",
+     "valid": true
+    },
+    {
+     "prompt": "Everyone knows that Tom Brady plays the sport of",
+     "n_tok": 10,
+     "p_target": 0.8462022542953491,
+     "top1": " football",
+     "valid": true
+    },
+    {
+     "prompt": "Q: Which sport does Tom Brady play? A:",
+     "n_tok": 12,
+     "p_target": 0.08835270255804062,
+     "top1": " Football",
+     "valid": false
+    }
+   ]
+  },
+  "gemma-verano": {
+   "target": " verano",
+   "n_valid": 5,
+   "paraphrases": [
+    {
+     "prompt": "La estación que viene después de la primavera se llama el",
+     "n_tok": 12,
+     "p_target": 0.5626688003540039,
+     "top1": " verano",
+     "valid": true
+    },
+    {
+     "prompt": "Hecho: la estación después de la primavera se llama el",
+     "n_tok": 12,
+     "p_target": 0.1524190455675125,
+     "top1": " verano",
+     "valid": true
+    },
+    {
+     "prompt": "Después de la primavera llega el",
+     "n_tok": 7,
+     "p_target": 0.7675825357437134,
+     "top1": " verano",
+     "valid": true
+    },
+    {
+     "prompt": "La estación siguiente a la primavera es el",
+     "n_tok": 9,
+     "p_target": 0.8409280776977539,
+     "top1": " verano",
+     "valid": true
+    },
+    {
+     "prompt": "A la primavera le sigue el",
+     "n_tok": 7,
+     "p_target": 0.7995181083679199,
+     "top1": " verano",
+     "valid": true
+    }
+   ]
+  }
+ },
+ "reproduction": {
+  "n": 75,
+  "max_abs_diff": 0.0,
+  "ok": true,
+  "rows": [
+   {
+    "graph": "gemma-addition",
+    "node": "24_14176_6",
+    "E": 1.3674087524414062,
+    "stored_E": 1.3674087524414062,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-addition",
+    "node": "25_14682_6",
+    "E": 3.8597564697265625,
+    "stored_E": 3.8597564697265625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-addition",
+    "node": "24_2998_6",
+    "E": 1.1138420104980469,
+    "stored_E": 1.1138420104980469,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-dallas-austin",
+    "node": "20_15589_10",
+    "E": 1.3741950988769531,
+    "stored_E": 1.3741950988769531,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-dallas-austin",
+    "node": "21_5943_10",
+    "E": 3.3005714416503906,
+    "stored_E": 3.3005714416503906,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-dallas-austin",
+    "node": "23_12237_10",
+    "E": 1.8145790100097656,
+    "stored_E": 1.8145790100097656,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-oakland-sacramento",
+    "node": "21_5943_10",
+    "E": 2.644481658935547,
+    "stored_E": 2.644481658935547,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-oakland-sacramento",
+    "node": "19_9209_10",
+    "E": 1.1589241027832031,
+    "stored_E": 1.1589241027832031,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-oakland-sacramento",
+    "node": "24_13277_10",
+    "E": 1.6533737182617188,
+    "stored_E": 1.6533737182617188,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-en",
+    "node": "23_8683_8",
+    "E": 1.0924301147460938,
+    "stored_E": 1.0924301147460938,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-en",
+    "node": "23_14350_8",
+    "E": 0.8493194580078125,
+    "stored_E": 0.8493194580078125,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-en",
+    "node": "21_10062_8",
+    "E": 0.023393630981445312,
+    "stored_E": 0.023393630981445312,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-fr",
+    "node": "23_14350_8",
+    "E": 0.7337303161621094,
+    "stored_E": 0.7337303161621094,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-fr",
+    "node": "24_4707_8",
+    "E": 0.1298980712890625,
+    "stored_E": 0.1298980712890625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-fr",
+    "node": "24_16045_8",
+    "E": 1.3496665954589844,
+    "stored_E": 1.3496665954589844,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-G",
+    "node": "25_5604_7",
+    "E": 2.7066726684570312,
+    "stored_E": 2.7066726684570312,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-G",
+    "node": "22_12304_7",
+    "E": 0.5142555236816406,
+    "stored_E": 0.5142555236816406,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-G",
+    "node": "23_14585_7",
+    "E": -0.037685394287109375,
+    "stored_E": -0.037685394287109375,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-Mexico-Spanish",
+    "node": "22_12284_14",
+    "E": 1.76300048828125,
+    "stored_E": 1.76300048828125,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-Mexico-Spanish",
+    "node": "19_13366_14",
+    "E": 1.1297683715820312,
+    "stored_E": 1.1297683715820312,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-Mexico-Spanish",
+    "node": "24_410_14",
+    "E": 0.7904930114746094,
+    "stored_E": 0.7904930114746094,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-basket",
+    "node": "21_4818_7",
+    "E": 1.572509765625,
+    "stored_E": 1.572509765625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-basket",
+    "node": "21_9324_7",
+    "E": 1.4859180450439453,
+    "stored_E": 1.4859180450439453,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-basket",
+    "node": "23_3604_7",
+    "E": 1.0511245727539062,
+    "stored_E": 1.0511245727539062,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-bee-insect",
+    "node": "22_16038_6",
+    "E": -0.4547386169433594,
+    "stored_E": -0.4547386169433594,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-bee-insect",
+    "node": "14_11504_2",
+    "E": -0.44155120849609375,
+    "stored_E": -0.44155120849609375,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-bee-insect",
+    "node": "19_5460_6",
+    "E": -1.0010185241699219,
+    "stored_E": -1.0010185241699219,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-cat-hat",
+    "node": "25_10571_6",
+    "E": 1.324005126953125,
+    "stored_E": 1.324005126953125,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-cat-hat",
+    "node": "24_1512_6",
+    "E": 1.0392875671386719,
+    "stored_E": 1.0392875671386719,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-cat-hat",
+    "node": "22_10393_6",
+    "E": 0.554168701171875,
+    "stored_E": 0.554168701171875,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-dollar",
+    "node": "18_10102_6",
+    "E": -0.5247783660888672,
+    "stored_E": -0.5247783660888672,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-dollar",
+    "node": "20_5796_6",
+    "E": -0.9184207916259766,
+    "stored_E": -0.9184207916259766,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-dollar",
+    "node": "18_10914_6",
+    "E": 0.33805084228515625,
+    "stored_E": 0.33805084228515625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-english",
+    "node": "25_6667_6",
+    "E": 0.9708633422851562,
+    "stored_E": 0.9708633422851562,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-english",
+    "node": "23_2040_6",
+    "E": 0.3955535888671875,
+    "stored_E": 0.3955535888671875,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-english",
+    "node": "19_13366_6",
+    "E": -0.1309947967529297,
+    "stored_E": -0.1309947967529297,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-euro",
+    "node": "23_7512_6",
+    "E": 0.5593185424804688,
+    "stored_E": 0.5593185424804688,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-euro",
+    "node": "21_467_6",
+    "E": 0.885650634765625,
+    "stored_E": 0.885650634765625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-euro",
+    "node": "23_6406_6",
+    "E": 0.6702880859375,
+    "stored_E": 0.6702880859375,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-shanghai-beijing",
+    "node": "21_5943_10",
+    "E": 2.674102783203125,
+    "stored_E": 2.674102783203125,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-shanghai-beijing",
+    "node": "19_12274_10",
+    "E": 1.1041145324707031,
+    "stored_E": 1.1041145324707031,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-shanghai-beijing",
+    "node": "19_12274_9",
+    "E": 0.6711616516113281,
+    "stored_E": 0.6711616516113281,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-vancouver-victoria",
+    "node": "21_2236_10",
+    "E": 2.159412384033203,
+    "stored_E": 2.159412384033203,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-vancouver-victoria",
+    "node": "19_15123_10",
+    "E": 0.12768936157226562,
+    "stored_E": 0.12768936157226562,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-fact-vancouver-victoria",
+    "node": "24_13277_10",
+    "E": 0.8299140930175781,
+    "stored_E": 0.8299140930175781,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-girl-is",
+    "node": "25_11727_6",
+    "E": 1.1075515747070312,
+    "stored_E": 1.1075515747070312,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-girl-is",
+    "node": "24_13277_6",
+    "E": 0.506622314453125,
+    "stored_E": 0.506622314453125,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-girl-is",
+    "node": "24_13814_6",
+    "E": 0.7155914306640625,
+    "stored_E": 0.7155914306640625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-girls-are",
+    "node": "22_11517_6",
+    "E": 3.51434326171875,
+    "stored_E": 3.51434326171875,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-girls-are",
+    "node": "25_9974_6",
+    "E": 2.015453338623047,
+    "stored_E": 2.015453338623047,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-girls-are",
+    "node": "24_13277_6",
+    "E": 0.66375732421875,
+    "stored_E": 0.66375732421875,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-gp-nps",
+    "node": "22_7306_5",
+    "E": 1.5894699096679688,
+    "stored_E": 1.5894699096679688,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-gp-nps",
+    "node": "21_11913_5",
+    "E": 0.8776588439941406,
+    "stored_E": 0.8776588439941406,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-gp-nps",
+    "node": "18_4181_5",
+    "E": 3.8917884826660156,
+    "stored_E": 3.8917884826660156,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-keys-cabinet",
+    "node": "22_11517_5",
+    "E": 1.6975784301757812,
+    "stored_E": 1.6975784301757812,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-keys-cabinet",
+    "node": "23_4388_5",
+    "E": 3.1462554931640625,
+    "stored_E": 3.1462554931640625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-keys-cabinet",
+    "node": "0_9026_5",
+    "E": 2.8612709045410156,
+    "stored_E": 2.8612709045410156,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-michael-jordan-es",
+    "node": "21_9324_6",
+    "E": 0.5191326141357422,
+    "stored_E": 0.5191326141357422,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-michael-jordan-es",
+    "node": "21_4818_6",
+    "E": 0.9853858947753906,
+    "stored_E": 0.9853858947753906,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-michael-jordan-es",
+    "node": "25_13416_6",
+    "E": 0.42369651794433594,
+    "stored_E": 0.42369651794433594,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-michael-jordan",
+    "node": "21_9324_8",
+    "E": 0.0524444580078125,
+    "stored_E": 0.0524444580078125,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-michael-jordan",
+    "node": "20_9090_8",
+    "E": 0.16263961791992188,
+    "stored_E": 0.16263961791992188,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-michael-jordan",
+    "node": "21_4818_8",
+    "E": 0.28372955322265625,
+    "stored_E": 0.28372955322265625,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-saison",
+    "node": "20_9338_11",
+    "E": 1.2145099639892578,
+    "stored_E": 1.2145099639892578,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-saison",
+    "node": "24_3772_11",
+    "E": 0.025529861450195312,
+    "stored_E": 0.025529861450195312,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-saison",
+    "node": "24_9342_11",
+    "E": 1.1653804779052734,
+    "stored_E": 1.1653804779052734,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-zh",
+    "node": "24_2394_8",
+    "E": 2.5046157836914062,
+    "stored_E": 2.5046157836914062,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-zh",
+    "node": "23_8488_8",
+    "E": -0.5967006683349609,
+    "stored_E": -0.5967006683349609,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-small-big-zh",
+    "node": "23_8683_8",
+    "E": 0.9173412322998047,
+    "stored_E": 0.9173412322998047,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-tom-brady",
+    "node": "23_8855_6",
+    "E": 1.1142616271972656,
+    "stored_E": 1.1142616271972656,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-tom-brady",
+    "node": "24_13277_6",
+    "E": 1.3328285217285156,
+    "stored_E": 1.3328285217285156,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-tom-brady",
+    "node": "19_15763_6",
+    "E": 0.09331512451171875,
+    "stored_E": 0.09331512451171875,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-verano",
+    "node": "20_9338_9",
+    "E": 1.1712512969970703,
+    "stored_E": 1.1712512969970703,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-verano",
+    "node": "24_13490_9",
+    "E": -0.12907028198242188,
+    "stored_E": -0.12907028198242188,
+    "diff": 0.0
+   },
+   {
+    "graph": "gemma-verano",
+    "node": "25_2591_9",
+    "E": 1.3151473999023438,
+    "stored_E": 1.3151473999023438,
+    "diff": 0.0
+   }
+  ]
+ },
+ "edges": [
+  {
+   "graph": "gemma-addition",
+   "node": "24_14176_6",
+   "layer": 24,
+   "feature": 14176,
+   "W": 6.309392929077148,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.3674087524414062,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Calculate: 3 + 5 = ",
+     "coef": 243.7188720703125,
+     "E": 0.005596160888671875,
+     "dp": -0.011612385511398315,
+     "C_R_mean": 2.322531223297119,
+     "C_R_max": 4.610141754150391,
+     "matched_feature": 4707,
+     "C_M2": 1.9006843566894531,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Math: 3 + 5 = ",
+     "coef": 224.82913208007812,
+     "E": 1.668121337890625,
+     "dp": 0.0423816442489624,
+     "C_R_mean": 1.0225772857666016,
+     "C_R_max": 2.4978065490722656,
+     "matched_feature": 2998,
+     "C_M2": 5.609672546386719,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "What is 3 + 5? 3 + 5 = ",
+     "coef": 215.9647216796875,
+     "E": 1.4164466857910156,
+     "dp": 0.006669282913208008,
+     "C_R_mean": 1.290055513381958,
+     "C_R_max": 2.926136016845703,
+     "matched_feature": 2998,
+     "C_M2": 2.783458709716797,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Simple sum: 3 + 5 = ",
+     "coef": 189.48464965820312,
+     "E": 2.8776893615722656,
+     "dp": 0.04551708698272705,
+     "C_R_mean": -0.23238623142242432,
+     "C_R_max": 0.6017055511474609,
+     "matched_feature": 13541,
+     "C_M2": -0.5899391174316406,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Q: 3 + 5 = ",
+     "coef": 234.57632446289062,
+     "E": -5.965984344482422,
+     "dp": -0.05753946304321289,
+     "C_R_mean": 2.8479366302490234,
+     "C_R_max": 5.964923858642578,
+     "matched_feature": 4707,
+     "C_M2": 2.4919204711914062,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.2,
+    "median_E": 1.4164466857910156,
+    "median_dp": 0.006669282913208008,
+    "outcome_counts": {
+     "DISTINCT": 1,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 1,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-addition",
+   "node": "25_14682_6",
+   "layer": 25,
+   "feature": 14682,
+   "W": 4.122248649597168,
+   "own_verdict": "HOLDS",
+   "own_E": 3.8597564697265625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Calculate: 3 + 5 = ",
+     "coef": 27.238155364990234,
+     "E": 2.473491668701172,
+     "dp": 0.1224035918712616,
+     "C_R_mean": 0.08191418647766113,
+     "C_R_max": 0.4182472229003906,
+     "matched_feature": 2212,
+     "C_M2": -0.1881561279296875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Math: 3 + 5 = ",
+     "coef": 54.71323776245117,
+     "E": 4.369518280029297,
+     "dp": 0.2714269757270813,
+     "C_R_mean": 0.17415499687194824,
+     "C_R_max": 0.7784843444824219,
+     "matched_feature": 13723,
+     "C_M2": -4.764545440673828,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "What is 3 + 5? 3 + 5 = ",
+     "coef": 66.62014770507812,
+     "E": 5.208702087402344,
+     "dp": 0.28189200162887573,
+     "C_R_mean": 0.24563050270080566,
+     "C_R_max": 0.9852409362792969,
+     "matched_feature": 13723,
+     "C_M2": -5.616127014160156,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Simple sum: 3 + 5 = ",
+     "coef": 34.63936996459961,
+     "E": 1.6923904418945312,
+     "dp": 0.20809102058410645,
+     "C_R_mean": 0.0307314395904541,
+     "C_R_max": 0.2703285217285156,
+     "matched_feature": 13822,
+     "C_M2": -0.11488723754882812,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Q: 3 + 5 = ",
+     "coef": 36.62875747680664,
+     "E": 3.3772621154785156,
+     "dp": 0.08207094669342041,
+     "C_R_mean": 0.14985203742980957,
+     "C_R_max": 0.5840873718261719,
+     "matched_feature": 5335,
+     "C_M2": -0.2270050048828125,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 3.3772621154785156,
+    "median_dp": 0.20809102058410645,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-addition",
+   "node": "24_2998_6",
+   "layer": 24,
+   "feature": 2998,
+   "W": 3.56892728805542,
+   "own_verdict": "WEAKER",
+   "own_E": 1.1138420104980469,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Calculate: 3 + 5 = ",
+     "coef": 66.1942367553711,
+     "E": 1.523681640625,
+     "dp": 0.10908794403076172,
+     "C_R_mean": 0.2820775508880615,
+     "C_R_max": 0.8624496459960938,
+     "matched_feature": 14792,
+     "C_M2": -1.3495979309082031,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Math: 3 + 5 = ",
+     "coef": 104.92850494384766,
+     "E": 0.2868232727050781,
+     "dp": 0.05780136585235596,
+     "C_R_mean": 0.28264617919921875,
+     "C_R_max": 0.9476890563964844,
+     "matched_feature": 4707,
+     "C_M2": 0.5808753967285156,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "What is 3 + 5? 3 + 5 = ",
+     "coef": 114.52587127685547,
+     "E": -0.40216827392578125,
+     "dp": 0.04948967695236206,
+     "C_R_mean": 0.4314303398132324,
+     "C_R_max": 1.1646995544433594,
+     "matched_feature": 4707,
+     "C_M2": 0.5546989440917969,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Simple sum: 3 + 5 = ",
+     "coef": 93.98920440673828,
+     "E": -0.019542694091796875,
+     "dp": 0.0056427717208862305,
+     "C_R_mean": -0.05644345283508301,
+     "C_R_max": 0.36798095703125,
+     "matched_feature": 4707,
+     "C_M2": 0.12428665161132812,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Q: 3 + 5 = ",
+     "coef": 64.96665954589844,
+     "E": 1.360626220703125,
+     "dp": 0.06432288885116577,
+     "C_R_mean": 0.37894320487976074,
+     "C_R_max": 1.3535652160644531,
+     "matched_feature": 2394,
+     "C_M2": -0.7685585021972656,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.4,
+    "median_E": 0.2868232727050781,
+    "median_dp": 0.05780136585235596,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 1,
+     "WRONG_SIGN": 2,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": false
+   }
+  },
+  {
+   "graph": "gemma-fact-dallas-austin",
+   "node": "20_15589_10",
+   "layer": 20,
+   "feature": 15589,
+   "W": 5.312557697296143,
+   "own_verdict": "WEAKER",
+   "own_E": 1.3741950988769531,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Dallas is",
+     "coef": 45.11888885498047,
+     "E": 1.5671730041503906,
+     "dp": 0.06955048441886902,
+     "C_R_mean": 0.10131621360778809,
+     "C_R_max": 1.1505775451660156,
+     "matched_feature": 5916,
+     "C_M2": 0.000415802001953125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the state where Dallas is located is",
+     "coef": 52.162391662597656,
+     "E": 1.4604415893554688,
+     "dp": 0.06019306182861328,
+     "C_R_mean": 0.0382227897644043,
+     "C_R_max": 1.1035728454589844,
+     "matched_feature": 5916,
+     "C_M2": 0.6688804626464844,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Dallas is in a state whose capital is",
+     "coef": 39.640830993652344,
+     "E": 2.378093719482422,
+     "dp": 0.11906856298446655,
+     "C_R_mean": 0.09293699264526367,
+     "C_R_max": 1.0681381225585938,
+     "matched_feature": 5916,
+     "C_M2": -0.16832351684570312,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the state containing Dallas has its capital in",
+     "coef": 45.976905822753906,
+     "E": 1.7895660400390625,
+     "dp": 0.12148144841194153,
+     "C_R_mean": 0.14769721031188965,
+     "C_R_max": 1.1953544616699219,
+     "matched_feature": 5916,
+     "C_M2": 0.456756591796875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Dallas? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.6783695220947266,
+    "median_dp": 0.09430952370166779,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-dallas-austin",
+   "node": "21_5943_10",
+   "layer": 21,
+   "feature": 5943,
+   "W": 3.1703619956970215,
+   "own_verdict": "HOLDS",
+   "own_E": 3.3005714416503906,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Dallas is",
+     "coef": 56.5748405456543,
+     "E": 3.130279541015625,
+     "dp": 0.13869568705558777,
+     "C_R_mean": 0.13938164710998535,
+     "C_R_max": 1.4067611694335938,
+     "matched_feature": 10336,
+     "C_M2": 0.449951171875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the state where Dallas is located is",
+     "coef": 51.733638763427734,
+     "E": 2.3504638671875,
+     "dp": 0.13745027780532837,
+     "C_R_mean": -0.016355276107788086,
+     "C_R_max": 1.12322998046875,
+     "matched_feature": 11099,
+     "C_M2": 0.04488372802734375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Dallas is in a state whose capital is",
+     "coef": 53.756282806396484,
+     "E": 2.9420013427734375,
+     "dp": 0.1582150161266327,
+     "C_R_mean": 0.14802122116088867,
+     "C_R_max": 1.5286178588867188,
+     "matched_feature": 10336,
+     "C_M2": 0.19718551635742188,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the state containing Dallas has its capital in",
+     "coef": 59.331363677978516,
+     "E": 2.6522293090820312,
+     "dp": 0.1973288357257843,
+     "C_R_mean": 0.11908602714538574,
+     "C_R_max": 1.3645095825195312,
+     "matched_feature": 6316,
+     "C_M2": 0.0224609375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Dallas? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 2.7971153259277344,
+    "median_dp": 0.14845535159111023,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-dallas-austin",
+   "node": "23_12237_10",
+   "layer": 23,
+   "feature": 12237,
+   "W": 2.8115811347961426,
+   "own_verdict": "HOLDS",
+   "own_E": 1.8145790100097656,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Dallas is",
+     "coef": 57.449615478515625,
+     "E": 1.8700218200683594,
+     "dp": 0.07717898488044739,
+     "C_R_mean": 0.1861560344696045,
+     "C_R_max": 1.5398178100585938,
+     "matched_feature": 11444,
+     "C_M2": 0.19678115844726562,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the state where Dallas is located is",
+     "coef": 56.46485137939453,
+     "E": 2.0927734375,
+     "dp": 0.1057262271642685,
+     "C_R_mean": 0.11624431610107422,
+     "C_R_max": 1.2369232177734375,
+     "matched_feature": 13841,
+     "C_M2": 1.8051834106445312,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Dallas is in a state whose capital is",
+     "coef": 47.83782196044922,
+     "E": 1.845977783203125,
+     "dp": 0.08697950839996338,
+     "C_R_mean": 0.15276479721069336,
+     "C_R_max": 1.3859291076660156,
+     "matched_feature": 13193,
+     "C_M2": -0.68902587890625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the state containing Dallas has its capital in",
+     "coef": 60.167884826660156,
+     "E": 1.7983932495117188,
+     "dp": 0.08111587166786194,
+     "C_R_mean": 0.12125825881958008,
+     "C_R_max": 1.3285942077636719,
+     "matched_feature": 13193,
+     "C_M2": -0.7896995544433594,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Dallas? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.8579998016357422,
+    "median_dp": 0.08404769003391266,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-oakland-sacramento",
+   "node": "21_5943_10",
+   "layer": 21,
+   "feature": 5943,
+   "W": 3.3280110359191895,
+   "own_verdict": "HOLDS",
+   "own_E": 2.644481658935547,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Oakland is",
+     "coef": 54.94821548461914,
+     "E": 2.476482391357422,
+     "dp": 0.06237092614173889,
+     "C_R_mean": 0.23014450073242188,
+     "C_R_max": 1.8965797424316406,
+     "matched_feature": 10336,
+     "C_M2": 0.4915428161621094,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the state where Oakland is located is",
+     "coef": 53.23543167114258,
+     "E": 1.9186630249023438,
+     "dp": 0.06789381802082062,
+     "C_R_mean": 0.04359173774719238,
+     "C_R_max": 1.6787834167480469,
+     "matched_feature": 5302,
+     "C_M2": 1.4143905639648438,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Oakland is in a state whose capital is",
+     "coef": 55.91024398803711,
+     "E": 2.4848060607910156,
+     "dp": 0.1452098786830902,
+     "C_R_mean": 0.26230812072753906,
+     "C_R_max": 1.9132270812988281,
+     "matched_feature": 15366,
+     "C_M2": 0.8936271667480469,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the state containing Oakland has its capital in",
+     "coef": 62.21255111694336,
+     "E": 2.2103500366210938,
+     "dp": 0.06664934754371643,
+     "C_R_mean": 0.1570737361907959,
+     "C_R_max": 1.9056510925292969,
+     "matched_feature": 15366,
+     "C_M2": 0.7455902099609375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Oakland? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 2.343416213989258,
+    "median_dp": 0.06727158278226852,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-oakland-sacramento",
+   "node": "19_9209_10",
+   "layer": 19,
+   "feature": 9209,
+   "W": 3.1900570392608643,
+   "own_verdict": "WEAKER",
+   "own_E": 1.1589241027832031,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Oakland is",
+     "coef": 39.522029876708984,
+     "E": 1.3484039306640625,
+     "dp": 0.056166186928749084,
+     "C_R_mean": -0.008905887603759766,
+     "C_R_max": 1.1883506774902344,
+     "matched_feature": 1445,
+     "C_M2": 0.05091094970703125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the state where Oakland is located is",
+     "coef": 46.222537994384766,
+     "E": 2.174854278564453,
+     "dp": 0.10350114107131958,
+     "C_R_mean": -0.0815427303314209,
+     "C_R_max": 1.9139480590820312,
+     "matched_feature": 1445,
+     "C_M2": -0.48561859130859375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Oakland is in a state whose capital is",
+     "coef": 35.835147857666016,
+     "E": 3.312030792236328,
+     "dp": 0.21547169983386993,
+     "C_R_mean": 0.05962491035461426,
+     "C_R_max": 1.3719024658203125,
+     "matched_feature": 2439,
+     "C_M2": -0.06593704223632812,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the state containing Oakland has its capital in",
+     "coef": 20.707672119140625,
+     "E": 1.2423820495605469,
+     "dp": 0.06458672881126404,
+     "C_R_mean": -0.01594853401184082,
+     "C_R_max": 0.7946357727050781,
+     "matched_feature": 2439,
+     "C_M2": 0.05823516845703125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Oakland? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.7616291046142578,
+    "median_dp": 0.08404393494129181,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-oakland-sacramento",
+   "node": "24_13277_10",
+   "layer": 24,
+   "feature": 13277,
+   "W": 1.6448463201522827,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.6533737182617188,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the state that contains Oakland is",
+     "coef": 113.8143081665039,
+     "E": 1.6122512817382812,
+     "dp": 0.04015795886516571,
+     "C_R_mean": 1.1978487968444824,
+     "C_R_max": 3.7836532592773438,
+     "matched_feature": 5668,
+     "C_M2": 0.031768798828125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The capital of the state where Oakland is located is",
+     "coef": 110.65348052978516,
+     "E": 1.8165283203125,
+     "dp": 0.04728424549102783,
+     "C_R_mean": 0.8854730129241943,
+     "C_R_max": 3.239410400390625,
+     "matched_feature": 5999,
+     "C_M2": -0.7127418518066406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Oakland is in a state whose capital is",
+     "coef": 117.09070587158203,
+     "E": 1.9304389953613281,
+     "dp": 0.07649749517440796,
+     "C_R_mean": 1.3366897106170654,
+     "C_R_max": 4.176334381103516,
+     "matched_feature": 5999,
+     "C_M2": 0.21062850952148438,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: the state containing Oakland has its capital in",
+     "coef": 103.47560119628906,
+     "E": 1.8063392639160156,
+     "dp": 0.033477768301963806,
+     "C_R_mean": 0.8206741809844971,
+     "C_R_max": 3.0710220336914062,
+     "matched_feature": 5999,
+     "C_M2": -0.5908241271972656,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the state containing Oakland? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 1.8114337921142578,
+    "median_dp": 0.04372110217809677,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-en",
+   "node": "23_8683_8",
+   "layer": 23,
+   "feature": 8683,
+   "W": 2.285520553588867,
+   "own_verdict": "WEAKER",
+   "own_E": 1.0924301147460938,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "coef": 16.04613494873047,
+     "E": 1.1731491088867188,
+     "dp": 0.029172182083129883,
+     "C_R_mean": -0.08127546310424805,
+     "C_R_max": 0.3087577819824219,
+     "matched_feature": 3563,
+     "C_M2": -0.008113861083984375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "coef": 18.298175811767578,
+     "E": 1.1670417785644531,
+     "dp": 0.016359061002731323,
+     "C_R_mean": -0.09297609329223633,
+     "C_R_max": 0.3190727233886719,
+     "matched_feature": 5188,
+     "C_M2": -0.13142013549804688,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "coef": 14.454657554626465,
+     "E": 1.0525054931640625,
+     "dp": 0.03412222862243652,
+     "C_R_mean": -0.07461071014404297,
+     "C_R_max": 0.3712501525878906,
+     "matched_feature": 5188,
+     "C_M2": -0.23478317260742188,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "coef": 20.388446807861328,
+     "E": 1.0182533264160156,
+     "dp": 0.005706384778022766,
+     "C_R_mean": -0.07278871536254883,
+     "C_R_max": 0.5757102966308594,
+     "matched_feature": 1343,
+     "C_M2": -1.2536697387695312,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "coef": 17.981964111328125,
+     "E": 1.1657485961914062,
+     "dp": 0.02024787664413452,
+     "C_R_mean": -0.09312605857849121,
+     "C_R_max": 0.3148460388183594,
+     "matched_feature": 1343,
+     "C_M2": -0.7097015380859375,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.1657485961914062,
+    "median_dp": 0.02024787664413452,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-en",
+   "node": "23_14350_8",
+   "layer": 23,
+   "feature": 14350,
+   "W": 1.7068662643432617,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.8493194580078125,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "coef": 77.37361145019531,
+     "E": 0.8712081909179688,
+     "dp": 0.023164838552474976,
+     "C_R_mean": -0.20863938331604004,
+     "C_R_max": 1.5487480163574219,
+     "matched_feature": 9338,
+     "C_M2": -0.10504531860351562,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "coef": 76.59880828857422,
+     "E": 0.8002586364746094,
+     "dp": 0.00974932312965393,
+     "C_R_mean": -0.24886023998260498,
+     "C_R_max": 1.3750858306884766,
+     "matched_feature": 9338,
+     "C_M2": 0.028289794921875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "coef": 73.73600769042969,
+     "E": 0.7374649047851562,
+     "dp": 0.0215969979763031,
+     "C_R_mean": -0.11096000671386719,
+     "C_R_max": 2.0208663940429688,
+     "matched_feature": 9338,
+     "C_M2": 0.3790435791015625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "coef": 74.7149887084961,
+     "E": -0.412689208984375,
+     "dp": 0.007544353604316711,
+     "C_R_mean": 0.06369614601135254,
+     "C_R_max": 2.3357162475585938,
+     "matched_feature": 7188,
+     "C_M2": 0.6211166381835938,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "coef": 78.49248504638672,
+     "E": 0.8665046691894531,
+     "dp": 0.0017547905445098877,
+     "C_R_mean": -0.27133166790008545,
+     "C_R_max": 1.3916664123535156,
+     "matched_feature": 9338,
+     "C_M2": -0.07151412963867188,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.8002586364746094,
+    "median_dp": 0.00974932312965393,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 1,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-en",
+   "node": "21_10062_8",
+   "layer": 21,
+   "feature": 10062,
+   "W": 1.4853894710540771,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.023393630981445312,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The antonym of \"small\" is \"",
+     "coef": 15.93700885772705,
+     "E": 0.00716400146484375,
+     "dp": 0.01951470971107483,
+     "C_R_mean": -0.11779332160949707,
+     "C_R_max": 0.2609214782714844,
+     "matched_feature": 15744,
+     "C_M2": 0.4047203063964844,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The opposite of the word \"small\" is \"",
+     "coef": 13.643950462341309,
+     "E": 0.053684234619140625,
+     "dp": 0.021645694971084595,
+     "C_R_mean": -0.09852719306945801,
+     "C_R_max": 0.18667984008789062,
+     "matched_feature": 15744,
+     "C_M2": 0.325286865234375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "An antonym for \"small\" is \"",
+     "coef": 14.362473487854004,
+     "E": 0.24220657348632812,
+     "dp": 0.02284538745880127,
+     "C_R_mean": -0.10219168663024902,
+     "C_R_max": 0.2690391540527344,
+     "matched_feature": 15744,
+     "C_M2": 0.48299407958984375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Opposite of \"small\": \"",
+     "coef": 0.0,
+     "outcome": "INACTIVE"
+    },
+    {
+     "prompt": "The reverse of \"small\" is \"",
+     "coef": 15.985234260559082,
+     "E": -0.11370849609375,
+     "dp": 0.012410640716552734,
+     "C_R_mean": -0.11981534957885742,
+     "C_R_max": 0.17292404174804688,
+     "matched_feature": 10855,
+     "C_M2": 0.10302352905273438,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 0.8,
+    "distinct_frac": 0.0,
+    "median_E": 0.00716400146484375,
+    "median_dp": 0.01951470971107483,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 1,
+     "INACTIVE": 1
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-fr",
+   "node": "23_14350_8",
+   "layer": 23,
+   "feature": 14350,
+   "W": 1.7597098350524902,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.7337303161621094,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "coef": 70.93038940429688,
+     "E": 0.972412109375,
+     "dp": 0.1329095959663391,
+     "C_R_mean": 0.05087387561798096,
+     "C_R_max": 1.162750244140625,
+     "matched_feature": 2592,
+     "C_M2": 0.6343460083007812,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "coef": 67.3890151977539,
+     "E": 0.46566009521484375,
+     "dp": 0.08465403318405151,
+     "C_R_mean": 0.0717918872833252,
+     "C_R_max": 1.088266372680664,
+     "matched_feature": 2592,
+     "C_M2": 0.4024181365966797,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "coef": 70.94113159179688,
+     "E": 0.5802421569824219,
+     "dp": 0.09473907947540283,
+     "C_R_mean": 0.06616353988647461,
+     "C_R_max": 1.1553306579589844,
+     "matched_feature": 2592,
+     "C_M2": 0.3552513122558594,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "coef": 75.646484375,
+     "E": 0.8252906799316406,
+     "dp": 0.07668066024780273,
+     "C_R_mean": 0.039153218269348145,
+     "C_R_max": 1.171895980834961,
+     "matched_feature": 2592,
+     "C_M2": 0.7042865753173828,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.7027664184570312,
+    "median_dp": 0.08969655632972717,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-fr",
+   "node": "24_4707_8",
+   "layer": 24,
+   "feature": 4707,
+   "W": 1.7092070579528809,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.1298980712890625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "coef": 130.00108337402344,
+     "E": 0.2702674865722656,
+     "dp": 0.028129100799560547,
+     "C_R_mean": 0.044078707695007324,
+     "C_R_max": 1.7848587036132812,
+     "matched_feature": 3772,
+     "C_M2": 0.1584625244140625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "coef": 134.40293884277344,
+     "E": 0.018903732299804688,
+     "dp": 0.02654421329498291,
+     "C_R_mean": 0.13193821907043457,
+     "C_R_max": 1.9955997467041016,
+     "matched_feature": 3772,
+     "C_M2": 0.05442619323730469,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "coef": 139.03758239746094,
+     "E": 0.04115104675292969,
+     "dp": 0.019152283668518066,
+     "C_R_mean": 0.1373065710067749,
+     "C_R_max": 2.0896129608154297,
+     "matched_feature": 3772,
+     "C_M2": -0.03993415832519531,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "coef": 157.1133575439453,
+     "E": 0.04044914245605469,
+     "dp": 0.020404160022735596,
+     "C_R_mean": 0.17525160312652588,
+     "C_R_max": 2.2574024200439453,
+     "matched_feature": 3772,
+     "C_M2": -0.04454231262207031,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.04080009460449219,
+    "median_dp": 0.023474186658859253,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-fr",
+   "node": "24_16045_8",
+   "layer": 24,
+   "feature": 16045,
+   "W": 1.4900355339050293,
+   "own_verdict": "HOLDS",
+   "own_E": 1.3496665954589844,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "L'opposé de \"petit\" est \"",
+     "coef": 36.07170867919922,
+     "E": 1.375131607055664,
+     "dp": 0.07229357957839966,
+     "C_R_mean": -0.06523787975311279,
+     "C_R_max": 0.4390411376953125,
+     "matched_feature": 1227,
+     "C_M2": 0.09568977355957031,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "L'antonyme de \"petit\" est \"",
+     "coef": 38.930686950683594,
+     "E": 1.4395809173583984,
+     "dp": 0.08054542541503906,
+     "C_R_mean": -0.06367671489715576,
+     "C_R_max": 0.5031242370605469,
+     "matched_feature": 9506,
+     "C_M2": -0.13083648681640625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Le contraire du mot \"petit\" est \"",
+     "coef": 35.758827209472656,
+     "E": 1.3353500366210938,
+     "dp": 0.07291853427886963,
+     "C_R_mean": -0.06410801410675049,
+     "C_R_max": 0.4628639221191406,
+     "matched_feature": 476,
+     "C_M2": -0.0027561187744140625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "L'inverse de \"petit\" est \"",
+     "coef": 36.606544494628906,
+     "E": 1.2442874908447266,
+     "dp": 0.05184805393218994,
+     "C_R_mean": -0.054541587829589844,
+     "C_R_max": 0.45760536193847656,
+     "matched_feature": 5378,
+     "C_M2": 0.0893402099609375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Contraire de \"petit\" : \"",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.355240821838379,
+    "median_dp": 0.07260605692863464,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-G",
+   "node": "25_5604_7",
+   "layer": 25,
+   "feature": 5604,
+   "W": 2.8663017749786377,
+   "own_verdict": "HOLDS",
+   "own_E": 2.7066726684570312,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "He works for the International Advanced Security Group (IAS",
+     "coef": 58.742767333984375,
+     "E": 2.5642013549804688,
+     "dp": 0.22213071584701538,
+     "C_R_mean": 0.05105447769165039,
+     "C_R_max": 0.9912223815917969,
+     "matched_feature": 4017,
+     "C_M2": -0.1898193359375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "According to the International Advanced Security Group (IAS",
+     "coef": 54.48554992675781,
+     "E": 2.5204429626464844,
+     "dp": 0.22201025485992432,
+     "C_R_mean": 0.05033087730407715,
+     "C_R_max": 0.9580154418945312,
+     "matched_feature": 4017,
+     "C_M2": -0.2490711212158203,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "A report by the International Advanced Security Group (IAS",
+     "coef": 56.45793151855469,
+     "E": 2.5949363708496094,
+     "dp": 0.1869727373123169,
+     "C_R_mean": 0.05299818515777588,
+     "C_R_max": 0.9899482727050781,
+     "matched_feature": 4017,
+     "C_M2": -0.2124347686767578,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Members of the International Advanced Security Group (IAS",
+     "coef": 59.083892822265625,
+     "E": 2.5294265747070312,
+     "dp": 0.1665533185005188,
+     "C_R_mean": 0.04631185531616211,
+     "C_R_max": 0.97216796875,
+     "matched_feature": 4017,
+     "C_M2": -0.17728805541992188,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "She joined the International Advanced Security Group (IAS",
+     "coef": 57.531951904296875,
+     "E": 2.5374813079833984,
+     "dp": 0.2188570499420166,
+     "C_R_mean": 0.04886925220489502,
+     "C_R_max": 0.9792385101318359,
+     "matched_feature": 4017,
+     "C_M2": -0.18269920349121094,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 2.5374813079833984,
+    "median_dp": 0.2188570499420166,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-G",
+   "node": "22_12304_7",
+   "layer": 22,
+   "feature": 12304,
+   "W": 1.494714379310608,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.5142555236816406,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "He works for the International Advanced Security Group (IAS",
+     "coef": 20.248796463012695,
+     "E": 0.6175079345703125,
+     "dp": 0.03282821178436279,
+     "C_R_mean": 0.02565944194793701,
+     "C_R_max": 0.5576534271240234,
+     "matched_feature": 8530,
+     "C_M2": -1.322744369506836,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "According to the International Advanced Security Group (IAS",
+     "coef": 20.170434951782227,
+     "E": 0.6073436737060547,
+     "dp": 0.04277676343917847,
+     "C_R_mean": 0.026806116104125977,
+     "C_R_max": 0.5337486267089844,
+     "matched_feature": 5922,
+     "C_M2": -0.24071693420410156,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "A report by the International Advanced Security Group (IAS",
+     "coef": 21.32423973083496,
+     "E": 0.5559825897216797,
+     "dp": 0.029960930347442627,
+     "C_R_mean": 0.03515899181365967,
+     "C_R_max": 0.6145820617675781,
+     "matched_feature": 4751,
+     "C_M2": -0.23297119140625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Members of the International Advanced Security Group (IAS",
+     "coef": 23.597070693969727,
+     "E": 0.494964599609375,
+     "dp": 0.0216294527053833,
+     "C_R_mean": 0.02673816680908203,
+     "C_R_max": 0.6240882873535156,
+     "matched_feature": 8530,
+     "C_M2": -1.4957695007324219,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "She joined the International Advanced Security Group (IAS",
+     "coef": 22.594209671020508,
+     "E": 0.6128177642822266,
+     "dp": 0.03755533695220947,
+     "C_R_mean": 0.0292208194732666,
+     "C_R_max": 0.6240768432617188,
+     "matched_feature": 8530,
+     "C_M2": -1.413778305053711,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.4,
+    "median_E": 0.6073436737060547,
+    "median_dp": 0.03282821178436279,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-G",
+   "node": "23_14585_7",
+   "layer": 23,
+   "feature": 14585,
+   "W": 0.9670811891555786,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.037685394287109375,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "He works for the International Advanced Security Group (IAS",
+     "coef": 31.532825469970703,
+     "E": 0.04279327392578125,
+     "dp": 0.009666204452514648,
+     "C_R_mean": -0.04558122158050537,
+     "C_R_max": 0.7696762084960938,
+     "matched_feature": 294,
+     "C_M2": 0.7442169189453125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "According to the International Advanced Security Group (IAS",
+     "coef": 31.593677520751953,
+     "E": -0.056560516357421875,
+     "dp": 0.013185203075408936,
+     "C_R_mean": -0.03664577007293701,
+     "C_R_max": 0.821075439453125,
+     "matched_feature": 294,
+     "C_M2": 0.7612361907958984,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "A report by the International Advanced Security Group (IAS",
+     "coef": 29.83115005493164,
+     "E": -0.040348052978515625,
+     "dp": 0.007986724376678467,
+     "C_R_mean": -0.02978193759918213,
+     "C_R_max": 0.7711753845214844,
+     "matched_feature": 294,
+     "C_M2": 0.7236518859863281,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Members of the International Advanced Security Group (IAS",
+     "coef": 29.880599975585938,
+     "E": 0.007396697998046875,
+     "dp": 0.005333364009857178,
+     "C_R_mean": -0.03928542137145996,
+     "C_R_max": 0.6951217651367188,
+     "matched_feature": 294,
+     "C_M2": 0.6926841735839844,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "She joined the International Advanced Security Group (IAS",
+     "coef": 30.10787582397461,
+     "E": 0.009706497192382812,
+     "dp": 0.00926119089126587,
+     "C_R_mean": -0.041960954666137695,
+     "C_R_max": 0.7570476531982422,
+     "matched_feature": 294,
+     "C_M2": 0.7235851287841797,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.007396697998046875,
+    "median_dp": 0.00926119089126587,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 2,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-Mexico-Spanish",
+   "node": "22_12284_14",
+   "layer": 22,
+   "feature": 12284,
+   "W": 7.296535491943359,
+   "own_verdict": "WEAKER",
+   "own_E": 1.76300048828125,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "In the country just south of the United States, the most widely spoken language is",
+     "coef": 55.566436767578125,
+     "E": 2.2308311462402344,
+     "dp": 0.14229387044906616,
+     "C_R_mean": 0.02796173095703125,
+     "C_R_max": 1.7539291381835938,
+     "matched_feature": 5277,
+     "C_M2": -1.0839042663574219,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The main language of the country that lies south of the United States is",
+     "coef": 53.61102294921875,
+     "E": 1.9811439514160156,
+     "dp": 0.08769741654396057,
+     "C_R_mean": 0.0996999740600586,
+     "C_R_max": 1.671112060546875,
+     "matched_feature": 5277,
+     "C_M2": -0.7560272216796875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The most common language in the country directly south of the United States is",
+     "coef": 51.39494323730469,
+     "E": 1.9758644104003906,
+     "dp": 0.11778485774993896,
+     "C_R_mean": 0.04646944999694824,
+     "C_R_max": 1.5264854431152344,
+     "matched_feature": 14724,
+     "C_M2": 0.15188217163085938,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the language most people speak in the country south of the United States is",
+     "coef": 37.32587814331055,
+     "E": 1.4573440551757812,
+     "dp": 0.062053754925727844,
+     "C_R_mean": 0.050917625427246094,
+     "C_R_max": 1.1176528930664062,
+     "matched_feature": 14724,
+     "C_M2": 0.3396339416503906,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What language is most commonly spoken in the country south of the United States? Answer:",
+     "coef": 52.221649169921875,
+     "E": 1.6623497009277344,
+     "dp": 0.11756539344787598,
+     "C_R_mean": -0.02205181121826172,
+     "C_R_max": 1.0206108093261719,
+     "matched_feature": 5277,
+     "C_M2": -0.4249076843261719,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.9758644104003906,
+    "median_dp": 0.11756539344787598,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-Mexico-Spanish",
+   "node": "19_13366_14",
+   "layer": 19,
+   "feature": 13366,
+   "W": 6.8517327308654785,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.1297683715820312,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "In the country just south of the United States, the most widely spoken language is",
+     "coef": 71.12525177001953,
+     "E": 1.3782119750976562,
+     "dp": 0.15526610612869263,
+     "C_R_mean": 0.28083014488220215,
+     "C_R_max": 2.5032577514648438,
+     "matched_feature": 15360,
+     "C_M2": 2.041748046875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The main language of the country that lies south of the United States is",
+     "coef": 58.65123748779297,
+     "E": 1.6933403015136719,
+     "dp": 0.14303253591060638,
+     "C_R_mean": 0.21449708938598633,
+     "C_R_max": 1.9462089538574219,
+     "matched_feature": 2550,
+     "C_M2": 0.904388427734375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The most common language in the country directly south of the United States is",
+     "coef": 66.07331848144531,
+     "E": 2.3652381896972656,
+     "dp": 0.17043882608413696,
+     "C_R_mean": 0.191725492477417,
+     "C_R_max": 1.8520126342773438,
+     "matched_feature": 15360,
+     "C_M2": 1.2641716003417969,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the language most people speak in the country south of the United States is",
+     "coef": 51.149253845214844,
+     "E": 0.8344573974609375,
+     "dp": 0.09875424206256866,
+     "C_R_mean": 0.018761157989501953,
+     "C_R_max": 1.7732200622558594,
+     "matched_feature": 9215,
+     "C_M2": 0.8215103149414062,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Question: What language is most commonly spoken in the country south of the United States? Answer:",
+     "coef": 70.56414794921875,
+     "E": 1.7859344482421875,
+     "dp": 0.2705151438713074,
+     "C_R_mean": -0.0475921630859375,
+     "C_R_max": 2.3633956909179688,
+     "matched_feature": 15360,
+     "C_M2": 0.1458282470703125,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.2,
+    "median_E": 1.6933403015136719,
+    "median_dp": 0.15526610612869263,
+    "outcome_counts": {
+     "DISTINCT": 1,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-Mexico-Spanish",
+   "node": "24_410_14",
+   "layer": 24,
+   "feature": 410,
+   "W": 3.033012866973877,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.7904930114746094,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "In the country just south of the United States, the most widely spoken language is",
+     "coef": 57.06251525878906,
+     "E": 0.6902427673339844,
+     "dp": 0.06591099500656128,
+     "C_R_mean": 0.00750279426574707,
+     "C_R_max": 1.3032417297363281,
+     "matched_feature": 13490,
+     "C_M2": -0.3375358581542969,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The main language of the country that lies south of the United States is",
+     "coef": 44.83282470703125,
+     "E": 0.7994613647460938,
+     "dp": 0.07372322678565979,
+     "C_R_mean": 0.011312007904052734,
+     "C_R_max": 1.0041122436523438,
+     "matched_feature": 5999,
+     "C_M2": 0.038330078125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The most common language in the country directly south of the United States is",
+     "coef": 52.95109558105469,
+     "E": 0.6936569213867188,
+     "dp": 0.04618644714355469,
+     "C_R_mean": 0.015051841735839844,
+     "C_R_max": 1.1307868957519531,
+     "matched_feature": 13490,
+     "C_M2": -0.5283699035644531,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: the language most people speak in the country south of the United States is",
+     "coef": 36.77989959716797,
+     "E": 0.8395118713378906,
+     "dp": 0.05649016797542572,
+     "C_R_mean": -0.006819486618041992,
+     "C_R_max": 0.7756156921386719,
+     "matched_feature": 13490,
+     "C_M2": 0.49118804931640625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What language is most commonly spoken in the country south of the United States? Answer:",
+     "coef": 51.767005920410156,
+     "E": 1.0495033264160156,
+     "dp": 0.08913969993591309,
+     "C_R_mean": -0.07042455673217773,
+     "C_R_max": 0.7412338256835938,
+     "matched_feature": 13490,
+     "C_M2": -0.5718231201171875,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.4,
+    "median_E": 0.7994613647460938,
+    "median_dp": 0.06591099500656128,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-basket",
+   "node": "21_4818_7",
+   "layer": 21,
+   "feature": 4818,
+   "W": 3.550126552581787,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.572509765625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fait : Michael Jordan joue au",
+     "coef": 57.165000915527344,
+     "E": 1.5291366577148438,
+     "dp": 0.24309438467025757,
+     "C_R_mean": 0.13127398490905762,
+     "C_R_max": 1.4672813415527344,
+     "matched_feature": 9324,
+     "C_M2": 1.5567359924316406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan joue au",
+     "coef": 64.88818359375,
+     "E": 1.3494758605957031,
+     "dp": 0.23723095655441284,
+     "C_R_mean": 0.15885615348815918,
+     "C_R_max": 1.4982528686523438,
+     "matched_feature": 9324,
+     "C_M2": 1.8798694610595703,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fait: le célèbre Michael Jordan joue au",
+     "coef": 56.87287902832031,
+     "E": 1.5895404815673828,
+     "dp": 0.25588321685791016,
+     "C_R_mean": 0.1477975845336914,
+     "C_R_max": 1.5621814727783203,
+     "matched_feature": 9324,
+     "C_M2": 1.5536460876464844,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Tout le monde sait que Michael Jordan joue au",
+     "coef": 69.3252944946289,
+     "E": 1.7742481231689453,
+     "dp": 0.2346237301826477,
+     "C_R_mean": 0.3052176237106323,
+     "C_R_max": 2.260345458984375,
+     "matched_feature": 9324,
+     "C_M2": 1.7015323638916016,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Info: Michael Jordan joue au",
+     "coef": 66.45020294189453,
+     "E": 1.292001724243164,
+     "dp": 0.21970471739768982,
+     "C_R_mean": 0.1546539068222046,
+     "C_R_max": 1.551950454711914,
+     "matched_feature": 9324,
+     "C_M2": 1.8478336334228516,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 1.5291366577148438,
+    "median_dp": 0.23723095655441284,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-basket",
+   "node": "21_9324_7",
+   "layer": 21,
+   "feature": 9324,
+   "W": 2.1241202354431152,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.4859180450439453,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fait : Michael Jordan joue au",
+     "coef": 54.77915954589844,
+     "E": 1.4815349578857422,
+     "dp": 0.06639432907104492,
+     "C_R_mean": 0.11726486682891846,
+     "C_R_max": 1.3769207000732422,
+     "matched_feature": 4818,
+     "C_M2": 1.4222393035888672,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan joue au",
+     "coef": 48.38390350341797,
+     "E": 1.3343696594238281,
+     "dp": 0.060658931732177734,
+     "C_R_mean": 0.07469797134399414,
+     "C_R_max": 1.0607967376708984,
+     "matched_feature": 16354,
+     "C_M2": 0.09422874450683594,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fait: le célèbre Michael Jordan joue au",
+     "coef": 56.595420837402344,
+     "E": 1.5448684692382812,
+     "dp": 0.0706486701965332,
+     "C_R_mean": 0.14407265186309814,
+     "C_R_max": 1.5281486511230469,
+     "matched_feature": 4818,
+     "C_M2": 1.5767364501953125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Tout le monde sait que Michael Jordan joue au",
+     "coef": 59.35124206542969,
+     "E": 1.4009895324707031,
+     "dp": 0.03174835443496704,
+     "C_R_mean": 0.22320044040679932,
+     "C_R_max": 1.8999862670898438,
+     "matched_feature": 4818,
+     "C_M2": 1.3100147247314453,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Info: Michael Jordan joue au",
+     "coef": 51.52302551269531,
+     "E": 1.3710174560546875,
+     "dp": 0.04994252324104309,
+     "C_R_mean": 0.0787665843963623,
+     "C_R_max": 1.14849853515625,
+     "matched_feature": 16354,
+     "C_M2": -0.015811920166015625,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.4,
+    "median_E": 1.4009895324707031,
+    "median_dp": 0.060658931732177734,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-basket",
+   "node": "23_3604_7",
+   "layer": 23,
+   "feature": 3604,
+   "W": 1.507415533065796,
+   "own_verdict": "HOLDS",
+   "own_E": 1.0511245727539062,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fait : Michael Jordan joue au",
+     "coef": 64.71092987060547,
+     "E": 1.0472793579101562,
+     "dp": 0.14526325464248657,
+     "C_R_mean": -0.11484885215759277,
+     "C_R_max": 0.41224098205566406,
+     "matched_feature": 2592,
+     "C_M2": -0.09812355041503906,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan joue au",
+     "coef": 52.96600341796875,
+     "E": 0.9543647766113281,
+     "dp": 0.13252580165863037,
+     "C_R_mean": -0.11108660697937012,
+     "C_R_max": 0.278350830078125,
+     "matched_feature": 9123,
+     "C_M2": -0.09104728698730469,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fait: le célèbre Michael Jordan joue au",
+     "coef": 67.58318328857422,
+     "E": 1.0559062957763672,
+     "dp": 0.15879681706428528,
+     "C_R_mean": -0.10908317565917969,
+     "C_R_max": 0.43056297302246094,
+     "matched_feature": 2592,
+     "C_M2": -0.023410797119140625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Tout le monde sait que Michael Jordan joue au",
+     "coef": 53.373329162597656,
+     "E": 0.9058380126953125,
+     "dp": 0.13015925884246826,
+     "C_R_mean": -0.07829976081848145,
+     "C_R_max": 0.36177635192871094,
+     "matched_feature": 9123,
+     "C_M2": -0.2296466827392578,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Info: Michael Jordan joue au",
+     "coef": 51.44984436035156,
+     "E": 0.9762039184570312,
+     "dp": 0.12412935495376587,
+     "C_R_mean": -0.10891556739807129,
+     "C_R_max": 0.26663780212402344,
+     "matched_feature": 14713,
+     "C_M2": -0.4580078125,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 0.9762039184570312,
+    "median_dp": 0.13252580165863037,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-bee-insect",
+   "node": "22_16038_6",
+   "layer": 22,
+   "feature": 16038,
+   "W": 5.897919178009033,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.4547386169433594,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: a bee is a type of",
+     "coef": 77.21265411376953,
+     "E": -0.431182861328125,
+     "dp": 0.027737915515899658,
+     "C_R_mean": -0.11630058288574219,
+     "C_R_max": 1.6702232360839844,
+     "matched_feature": 7759,
+     "C_M2": -1.19183349609375,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Biologically, a bee is a type of",
+     "coef": 70.89080047607422,
+     "E": -0.5410881042480469,
+     "dp": 0.02426159381866455,
+     "C_R_mean": -0.043477535247802734,
+     "C_R_max": 1.6751060485839844,
+     "matched_feature": 7759,
+     "C_M2": -1.1639213562011719,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "In biology, a bee is classified as a type of",
+     "coef": 66.64818572998047,
+     "E": -0.5574226379394531,
+     "dp": 0.02619755268096924,
+     "C_R_mean": -0.04532742500305176,
+     "C_R_max": 1.3739814758300781,
+     "matched_feature": 15604,
+     "C_M2": 0.8645553588867188,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Q: What is a bee? A: A bee is a type of",
+     "coef": 75.22376251220703,
+     "E": -0.40396881103515625,
+     "dp": 0.015750467777252197,
+     "C_R_mean": -0.0549163818359375,
+     "C_R_max": 1.5285415649414062,
+     "matched_feature": 7759,
+     "C_M2": -0.9879722595214844,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Scientists say that a bee is a type of",
+     "coef": 68.89608001708984,
+     "E": -0.6389083862304688,
+     "dp": 0.03745812177658081,
+     "C_R_mean": 0.014758825302124023,
+     "C_R_max": 1.857330322265625,
+     "matched_feature": 7759,
+     "C_M2": -0.9416007995605469,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.5410881042480469,
+    "median_dp": 0.02619755268096924,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 5,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-bee-insect",
+   "node": "14_11504_2",
+   "layer": 14,
+   "feature": 11504,
+   "W": 3.1056952476501465,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.44155120849609375,
+   "status": "POSITION_NOT_TRANSFERABLE"
+  },
+  {
+   "graph": "gemma-bee-insect",
+   "node": "19_5460_6",
+   "layer": 19,
+   "feature": 5460,
+   "W": 2.836320638656616,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -1.0010185241699219,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: a bee is a type of",
+     "coef": 38.99703598022461,
+     "E": -0.7318000793457031,
+     "dp": -0.022556722164154053,
+     "C_R_mean": -0.023920536041259766,
+     "C_R_max": 1.1204872131347656,
+     "matched_feature": 5671,
+     "C_M2": -0.23325347900390625,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Biologically, a bee is a type of",
+     "coef": 43.600791931152344,
+     "E": -1.2564125061035156,
+     "dp": -0.01355212926864624,
+     "C_R_mean": -0.026011943817138672,
+     "C_R_max": 1.309844970703125,
+     "matched_feature": 5671,
+     "C_M2": -0.4186973571777344,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "In biology, a bee is classified as a type of",
+     "coef": 31.50341796875,
+     "E": -0.5209579467773438,
+     "dp": 0.047218918800354004,
+     "C_R_mean": 0.03769803047180176,
+     "C_R_max": 0.942962646484375,
+     "matched_feature": 5671,
+     "C_M2": -0.2400970458984375,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Q: What is a bee? A: A bee is a type of",
+     "coef": 41.96223449707031,
+     "E": -0.7985954284667969,
+     "dp": -0.014491558074951172,
+     "C_R_mean": 0.018769025802612305,
+     "C_R_max": 1.1240615844726562,
+     "matched_feature": 5671,
+     "C_M2": -0.283538818359375,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Scientists say that a bee is a type of",
+     "coef": 35.024757385253906,
+     "E": -1.2651824951171875,
+     "dp": 0.017945796251296997,
+     "C_R_mean": 0.004034996032714844,
+     "C_R_max": 1.177947998046875,
+     "matched_feature": 5671,
+     "C_M2": -0.44184112548828125,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.7985954284667969,
+    "median_dp": -0.01355212926864624,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 5,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-cat-hat",
+   "node": "25_10571_6",
+   "layer": 25,
+   "feature": 10571,
+   "W": 1.8468458652496338,
+   "own_verdict": "HOLDS",
+   "own_E": 1.324005126953125,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Rhymes: cat, bat, hat,",
+     "coef": 78.59683227539062,
+     "E": 1.3212413787841797,
+     "dp": 0.05293944478034973,
+     "C_R_mean": 0.15765953063964844,
+     "C_R_max": 0.8983783721923828,
+     "matched_feature": 11778,
+     "C_M2": -0.4101543426513672,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Words that rhyme: cat, bat, hat,",
+     "coef": 80.62583923339844,
+     "E": 1.4328956604003906,
+     "dp": 0.03997087478637695,
+     "C_R_mean": 0.20212745666503906,
+     "C_R_max": 1.0390644073486328,
+     "matched_feature": 11778,
+     "C_M2": -0.5304660797119141,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Here is a list of words: cat, bat, hat,",
+     "coef": 69.31852722167969,
+     "E": 1.3379325866699219,
+     "dp": 0.02836526930332184,
+     "C_R_mean": 0.24182963371276855,
+     "C_R_max": 1.0628471374511719,
+     "matched_feature": 6738,
+     "C_M2": 0.8319969177246094,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Rhyming words - cat, bat, hat,",
+     "coef": 75.00752258300781,
+     "E": 1.2925949096679688,
+     "dp": 0.05397753417491913,
+     "C_R_mean": 0.1426752805709839,
+     "C_R_max": 0.8448143005371094,
+     "matched_feature": 11778,
+     "C_M2": -0.38704490661621094,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "List: cat, bat, hat,",
+     "coef": 64.09104919433594,
+     "E": 1.2316322326660156,
+     "dp": 0.026709124445915222,
+     "C_R_mean": 0.18858599662780762,
+     "C_R_max": 0.9394187927246094,
+     "matched_feature": 6738,
+     "C_M2": 0.7723960876464844,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.3212413787841797,
+    "median_dp": 0.03997087478637695,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-cat-hat",
+   "node": "24_1512_6",
+   "layer": 24,
+   "feature": 1512,
+   "W": 1.4348633289337158,
+   "own_verdict": "HOLDS",
+   "own_E": 1.0392875671386719,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Rhymes: cat, bat, hat,",
+     "coef": 53.123382568359375,
+     "E": 0.9780426025390625,
+     "dp": 0.03845125436782837,
+     "C_R_mean": 0.05956375598907471,
+     "C_R_max": 0.6203479766845703,
+     "matched_feature": 10662,
+     "C_M2": -0.05055999755859375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Words that rhyme: cat, bat, hat,",
+     "coef": 54.80511474609375,
+     "E": 1.228738784790039,
+     "dp": 0.03898449242115021,
+     "C_R_mean": 0.06746542453765869,
+     "C_R_max": 0.6919116973876953,
+     "matched_feature": 13541,
+     "C_M2": -1.563058853149414,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Here is a list of words: cat, bat, hat,",
+     "coef": 43.34381866455078,
+     "E": 1.0783424377441406,
+     "dp": 0.01845039427280426,
+     "C_R_mean": 0.07221364974975586,
+     "C_R_max": 0.5652122497558594,
+     "matched_feature": 8867,
+     "C_M2": -0.036495208740234375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Rhyming words - cat, bat, hat,",
+     "coef": 55.43003845214844,
+     "E": 1.0280952453613281,
+     "dp": 0.04036076366901398,
+     "C_R_mean": 0.06661033630371094,
+     "C_R_max": 0.6251277923583984,
+     "matched_feature": 10662,
+     "C_M2": -0.05777168273925781,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "List: cat, bat, hat,",
+     "coef": 39.64763641357422,
+     "E": 0.9497222900390625,
+     "dp": 0.02229084074497223,
+     "C_R_mean": 0.04705643653869629,
+     "C_R_max": 0.5259780883789062,
+     "matched_feature": 13541,
+     "C_M2": -1.3017616271972656,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.0280952453613281,
+    "median_dp": 0.03845125436782837,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-cat-hat",
+   "node": "22_10393_6",
+   "layer": 22,
+   "feature": 10393,
+   "W": 0.8692928552627563,
+   "own_verdict": "HOLDS",
+   "own_E": 0.554168701171875,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Rhymes: cat, bat, hat,",
+     "coef": 12.730920791625977,
+     "E": 0.3703594207763672,
+     "dp": 0.03803616762161255,
+     "C_R_mean": -0.0069190263748168945,
+     "C_R_max": 0.30683326721191406,
+     "matched_feature": 9526,
+     "C_M2": 0.4705371856689453,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Words that rhyme: cat, bat, hat,",
+     "coef": 0.0,
+     "outcome": "INACTIVE"
+    },
+    {
+     "prompt": "Here is a list of words: cat, bat, hat,",
+     "coef": 19.708513259887695,
+     "E": 0.7423858642578125,
+     "dp": 0.026188328862190247,
+     "C_R_mean": -0.03917384147644043,
+     "C_R_max": 0.4988746643066406,
+     "matched_feature": 3973,
+     "C_M2": 0.20772171020507812,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Rhyming words - cat, bat, hat,",
+     "coef": 9.010339736938477,
+     "E": 0.2983741760253906,
+     "dp": 0.030289486050605774,
+     "C_R_mean": -0.0012820959091186523,
+     "C_R_max": 0.23172760009765625,
+     "matched_feature": 8336,
+     "C_M2": 0.1888294219970703,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "List: cat, bat, hat,",
+     "coef": 23.441598892211914,
+     "E": 0.6368255615234375,
+     "dp": 0.028555333614349365,
+     "C_R_mean": -0.03532767295837402,
+     "C_R_max": 0.6107368469238281,
+     "matched_feature": 4195,
+     "C_M2": -0.4724617004394531,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 0.8,
+    "distinct_frac": 0.4,
+    "median_E": 0.3703594207763672,
+    "median_dp": 0.028555333614349365,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 2,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 1
+    },
+    "own_category": "distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": false
+   }
+  },
+  {
+   "graph": "gemma-dollar",
+   "node": "18_10102_6",
+   "layer": 18,
+   "feature": 10102,
+   "W": 2.9307281970977783,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.5247783660888672,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: US:",
+     "coef": 62.93605041503906,
+     "E": -0.9354057312011719,
+     "dp": 0.002708539366722107,
+     "C_R_mean": -0.2101457118988037,
+     "C_R_max": 2.2322921752929688,
+     "matched_feature": 10914,
+     "C_M2": 0.6181373596191406,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Money\nMexico:peso :: US:",
+     "coef": 57.903526306152344,
+     "E": -0.49739837646484375,
+     "dp": 0.009250134229660034,
+     "C_R_mean": -0.27406513690948486,
+     "C_R_max": 2.105154037475586,
+     "matched_feature": 10914,
+     "C_M2": 0.39174652099609375,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: US:",
+     "coef": 55.85540008544922,
+     "E": -0.3590869903564453,
+     "dp": -0.0038468241691589355,
+     "C_R_mean": -0.24470555782318115,
+     "C_R_max": 0.7818450927734375,
+     "matched_feature": 10914,
+     "C_M2": -0.3076305389404297,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Country:currency\nMexico:peso :: US:",
+     "coef": 43.08008575439453,
+     "E": -0.12148475646972656,
+     "dp": -0.004458606243133545,
+     "C_R_mean": -0.1481761932373047,
+     "C_R_max": 0.6478481292724609,
+     "matched_feature": 10914,
+     "C_M2": -0.09598731994628906,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "National currencies\nMexico:peso :: US:",
+     "coef": 53.32074737548828,
+     "E": -0.30029296875,
+     "dp": 0.008557736873626709,
+     "C_R_mean": -0.34111881256103516,
+     "C_R_max": 0.9018478393554688,
+     "matched_feature": 10914,
+     "C_M2": -0.2283172607421875,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.3590869903564453,
+    "median_dp": 0.002708539366722107,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 5,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-dollar",
+   "node": "20_5796_6",
+   "layer": 20,
+   "feature": 5796,
+   "W": 2.627725124359131,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.9184207916259766,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: US:",
+     "coef": 55.26693344116211,
+     "E": -0.7085800170898438,
+     "dp": 0.026250600814819336,
+     "C_R_mean": -0.07991385459899902,
+     "C_R_max": 1.0621490478515625,
+     "matched_feature": 3094,
+     "C_M2": -0.9093055725097656,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Money\nMexico:peso :: US:",
+     "coef": 61.11735916137695,
+     "E": -1.0306396484375,
+     "dp": 0.02368795871734619,
+     "C_R_mean": -0.10575973987579346,
+     "C_R_max": 1.219400405883789,
+     "matched_feature": 3094,
+     "C_M2": -0.5984878540039062,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: US:",
+     "coef": 69.16079711914062,
+     "E": -1.056924819946289,
+     "dp": -0.00788503885269165,
+     "C_R_mean": -0.24407553672790527,
+     "C_R_max": 1.1668643951416016,
+     "matched_feature": 2348,
+     "C_M2": 0.7479343414306641,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Country:currency\nMexico:peso :: US:",
+     "coef": 68.61735534667969,
+     "E": -0.9894618988037109,
+     "dp": -0.00015848875045776367,
+     "C_R_mean": -0.30048489570617676,
+     "C_R_max": 1.0613460540771484,
+     "matched_feature": 2348,
+     "C_M2": 0.7176094055175781,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "National currencies\nMexico:peso :: US:",
+     "coef": 72.57614135742188,
+     "E": -1.5797882080078125,
+     "dp": 3.9577484130859375e-05,
+     "C_R_mean": -0.16630101203918457,
+     "C_R_max": 1.6126976013183594,
+     "matched_feature": 14545,
+     "C_M2": -0.061496734619140625,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -1.0306396484375,
+    "median_dp": 3.9577484130859375e-05,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 5,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-dollar",
+   "node": "18_10914_6",
+   "layer": 18,
+   "feature": 10914,
+   "W": 2.4490010738372803,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.33805084228515625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: US:",
+     "coef": 47.36445999145508,
+     "E": 0.3906288146972656,
+     "dp": 0.030051887035369873,
+     "C_R_mean": -0.1824493408203125,
+     "C_R_max": 1.6163063049316406,
+     "matched_feature": 10102,
+     "C_M2": -0.7273902893066406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Money\nMexico:peso :: US:",
+     "coef": 53.56868362426758,
+     "E": 0.3623085021972656,
+     "dp": 0.04277738928794861,
+     "C_R_mean": -0.25908684730529785,
+     "C_R_max": 1.9247703552246094,
+     "matched_feature": 10102,
+     "C_M2": -0.4633369445800781,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: US:",
+     "coef": 47.98306655883789,
+     "E": -0.23566627502441406,
+     "dp": -0.0012021660804748535,
+     "C_R_mean": -0.2046114206314087,
+     "C_R_max": 0.691497802734375,
+     "matched_feature": 10102,
+     "C_M2": -0.2795085906982422,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Country:currency\nMexico:peso :: US:",
+     "coef": 41.927120208740234,
+     "E": -0.0908966064453125,
+     "dp": 0.01886993646621704,
+     "C_R_mean": -0.143296480178833,
+     "C_R_max": 0.630706787109375,
+     "matched_feature": 10102,
+     "C_M2": -0.11647605895996094,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "National currencies\nMexico:peso :: US:",
+     "coef": 52.76942825317383,
+     "E": -0.22269058227539062,
+     "dp": 0.020311206579208374,
+     "C_R_mean": -0.33737874031066895,
+     "C_R_max": 0.8858528137207031,
+     "matched_feature": 10102,
+     "C_M2": -0.2954597473144531,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.0908966064453125,
+    "median_dp": 0.020311206579208374,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 2,
+     "WRONG_SIGN": 3,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-english",
+   "node": "25_6667_6",
+   "layer": 25,
+   "feature": 6667,
+   "W": 2.0478978157043457,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.9708633422851562,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:Spanish :: US:",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Country:language\nMexico:Spanish :: US:",
+     "coef": 117.13777923583984,
+     "E": 0.7440872192382812,
+     "dp": 0.05604267120361328,
+     "C_R_mean": 0.24167561531066895,
+     "C_R_max": 1.4757881164550781,
+     "matched_feature": 15920,
+     "C_M2": -1.2235488891601562,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Languages\nMexico:Spanish :: US:",
+     "coef": 123.18024444580078,
+     "E": 0.6620426177978516,
+     "dp": 0.15892529487609863,
+     "C_R_mean": 0.29594624042510986,
+     "C_R_max": 1.6079978942871094,
+     "matched_feature": 4717,
+     "C_M2": -2.9610157012939453,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "National languages\nMexico:Spanish :: US:",
+     "coef": 99.64970397949219,
+     "E": 0.8655204772949219,
+     "dp": 0.1489403247833252,
+     "C_R_mean": 0.2929093837738037,
+     "C_R_max": 1.5450782775878906,
+     "matched_feature": 4717,
+     "C_M2": -2.991912841796875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Spoken languages\nMexico:Spanish :: US:",
+     "coef": 107.4471435546875,
+     "E": 0.7856330871582031,
+     "dp": 0.14711502194404602,
+     "C_R_mean": 0.2889035940170288,
+     "C_R_max": 1.549448013305664,
+     "matched_feature": 4717,
+     "C_M2": -2.930187225341797,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.7648601531982422,
+    "median_dp": 0.1480276733636856,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-english",
+   "node": "23_2040_6",
+   "layer": 23,
+   "feature": 2040,
+   "W": 1.6751835346221924,
+   "own_verdict": "WEAKER",
+   "own_E": 0.3955535888671875,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:Spanish :: US:",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Country:language\nMexico:Spanish :: US:",
+     "coef": 17.560897827148438,
+     "E": 0.08167648315429688,
+     "dp": -0.002264857292175293,
+     "C_R_mean": -0.04363834857940674,
+     "C_R_max": 0.2072734832763672,
+     "matched_feature": 11645,
+     "C_M2": -0.27742958068847656,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Languages\nMexico:Spanish :: US:",
+     "coef": 18.850421905517578,
+     "E": 0.13693618774414062,
+     "dp": 0.0027695298194885254,
+     "C_R_mean": -0.05052471160888672,
+     "C_R_max": 0.16721343994140625,
+     "matched_feature": 11645,
+     "C_M2": -0.30325889587402344,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "National languages\nMexico:Spanish :: US:",
+     "coef": 11.407790184020996,
+     "E": 0.09100341796875,
+     "dp": 0.0026369690895080566,
+     "C_R_mean": -0.026441335678100586,
+     "C_R_max": 0.10891342163085938,
+     "matched_feature": 3563,
+     "C_M2": -0.09127044677734375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Spoken languages\nMexico:Spanish :: US:",
+     "coef": 17.55386734008789,
+     "E": 0.14491653442382812,
+     "dp": 0.003464937210083008,
+     "C_R_mean": -0.03846263885498047,
+     "C_R_max": 0.1713409423828125,
+     "matched_feature": 11645,
+     "C_M2": -0.3546562194824219,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.11396980285644531,
+    "median_dp": 0.002703249454498291,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": false
+   }
+  },
+  {
+   "graph": "gemma-english",
+   "node": "19_13366_6",
+   "layer": 19,
+   "feature": 13366,
+   "W": 1.6702158451080322,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.1309947967529297,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:Spanish :: US:",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Country:language\nMexico:Spanish :: US:",
+     "coef": 62.926475524902344,
+     "E": -0.4435443878173828,
+     "dp": 0.003600776195526123,
+     "C_R_mean": -0.2598404884338379,
+     "C_R_max": 0.9399433135986328,
+     "matched_feature": 349,
+     "C_M2": -0.4161186218261719,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Languages\nMexico:Spanish :: US:",
+     "coef": 76.17139434814453,
+     "E": -0.38317108154296875,
+     "dp": -0.019458234310150146,
+     "C_R_mean": -0.30490219593048096,
+     "C_R_max": 0.9341583251953125,
+     "matched_feature": 10040,
+     "C_M2": 0.8880043029785156,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "National languages\nMexico:Spanish :: US:",
+     "coef": 60.956764221191406,
+     "E": -0.4582939147949219,
+     "dp": -0.009432077407836914,
+     "C_R_mean": -0.025651931762695312,
+     "C_R_max": 1.0434036254882812,
+     "matched_feature": 349,
+     "C_M2": 0.4176483154296875,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Spoken languages\nMexico:Spanish :: US:",
+     "coef": 69.12816619873047,
+     "E": -0.6473236083984375,
+     "dp": -0.023272335529327393,
+     "C_R_mean": -0.09186029434204102,
+     "C_R_max": 1.3402061462402344,
+     "matched_feature": 349,
+     "C_M2": 0.15520477294921875,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.45091915130615234,
+    "median_dp": -0.01444515585899353,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 4,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-euro",
+   "node": "23_7512_6",
+   "layer": 23,
+   "feature": 7512,
+   "W": 4.718349456787109,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.5593185424804688,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: Europe:",
+     "coef": 70.87535095214844,
+     "E": 0.5332756042480469,
+     "dp": 0.003017142415046692,
+     "C_R_mean": 0.27056121826171875,
+     "C_R_max": 1.1663856506347656,
+     "matched_feature": 11194,
+     "C_M2": -0.34268951416015625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Complete the analogy. Mexico:peso :: Europe:",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: Europe:",
+     "coef": 77.57772827148438,
+     "E": 0.4946441650390625,
+     "dp": -0.05781397223472595,
+     "C_R_mean": 0.14867186546325684,
+     "C_R_max": 1.1313209533691406,
+     "matched_feature": 11194,
+     "C_M2": -0.3092765808105469,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Q: Mexico:peso :: Europe:",
+     "coef": 69.0142822265625,
+     "E": 0.7863636016845703,
+     "dp": 0.02265077829360962,
+     "C_R_mean": 0.21516847610473633,
+     "C_R_max": 1.0306339263916016,
+     "matched_feature": 14350,
+     "C_M2": 1.9178104400634766,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fill in the blank: Mexico:peso :: Europe:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.5332756042480469,
+    "median_dp": 0.003017142415046692,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-euro",
+   "node": "21_467_6",
+   "layer": 21,
+   "feature": 467,
+   "W": 3.384463310241699,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.885650634765625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: Europe:",
+     "coef": 56.88084411621094,
+     "E": 0.981658935546875,
+     "dp": 0.024569988250732422,
+     "C_R_mean": 0.03131866455078125,
+     "C_R_max": 1.428131103515625,
+     "matched_feature": 14004,
+     "C_M2": 0.8371315002441406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Complete the analogy. Mexico:peso :: Europe:",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: Europe:",
+     "coef": 63.141761779785156,
+     "E": 1.3881092071533203,
+     "dp": 0.06427112221717834,
+     "C_R_mean": -0.04651808738708496,
+     "C_R_max": 2.3014297485351562,
+     "matched_feature": 14004,
+     "C_M2": 0.6917724609375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Q: Mexico:peso :: Europe:",
+     "coef": 44.290740966796875,
+     "E": 1.0842533111572266,
+     "dp": 0.03139065206050873,
+     "C_R_mean": -0.03348207473754883,
+     "C_R_max": 0.8833789825439453,
+     "matched_feature": 13210,
+     "C_M2": 0.46463775634765625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fill in the blank: Mexico:peso :: Europe:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 0.3333333333333333,
+    "median_E": 1.0842533111572266,
+    "median_dp": 0.03139065206050873,
+    "outcome_counts": {
+     "DISTINCT": 1,
+     "NOT_DISTINCT": 2,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-euro",
+   "node": "23_6406_6",
+   "layer": 23,
+   "feature": 6406,
+   "W": 2.4465651512145996,
+   "own_verdict": "WEAKER",
+   "own_E": 0.6702880859375,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Analogy: Mexico:peso :: Europe:",
+     "coef": 30.49911880493164,
+     "E": 0.6753463745117188,
+     "dp": 0.018081501126289368,
+     "C_R_mean": 0.05484461784362793,
+     "C_R_max": 0.4536857604980469,
+     "matched_feature": 8967,
+     "C_M2": 0.052371978759765625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Complete the analogy. Mexico:peso :: Europe:",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Currencies\nMexico:peso :: Europe:",
+     "coef": 43.95570373535156,
+     "E": 0.7297439575195312,
+     "dp": 0.03568992018699646,
+     "C_R_mean": 0.029446840286254883,
+     "C_R_max": 0.5965003967285156,
+     "matched_feature": 12393,
+     "C_M2": 0.12402153015136719,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Q: Mexico:peso :: Europe:",
+     "coef": 28.112743377685547,
+     "E": 0.8150634765625,
+     "dp": 0.02367144078016281,
+     "C_R_mean": 0.03650212287902832,
+     "C_R_max": 0.3806324005126953,
+     "matched_feature": 8967,
+     "C_M2": 0.001678466796875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fill in the blank: Mexico:peso :: Europe:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 0.7297439575195312,
+    "median_dp": 0.02367144078016281,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-shanghai-beijing",
+   "node": "21_5943_10",
+   "layer": 21,
+   "feature": 5943,
+   "W": 4.720519542694092,
+   "own_verdict": "HOLDS",
+   "own_E": 2.674102783203125,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the country that contains Shanghai is",
+     "coef": 63.9962272644043,
+     "E": 2.451885223388672,
+     "dp": 0.11267736554145813,
+     "C_R_mean": 0.1300063133239746,
+     "C_R_max": 1.6468429565429688,
+     "matched_feature": 10336,
+     "C_M2": 0.8365669250488281,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the country where Shanghai is located is",
+     "coef": 45.22593688964844,
+     "E": 2.2782745361328125,
+     "dp": 0.08676351606845856,
+     "C_R_mean": -0.025235414505004883,
+     "C_R_max": 1.0894432067871094,
+     "matched_feature": 5053,
+     "C_M2": -0.2555809020996094,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Shanghai is in a country whose capital is",
+     "coef": 58.8720588684082,
+     "E": 2.992961883544922,
+     "dp": 0.10392667353153229,
+     "C_R_mean": 0.3350667953491211,
+     "C_R_max": 1.5113449096679688,
+     "matched_feature": 10336,
+     "C_M2": 0.3060150146484375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the country containing Shanghai has its capital in",
+     "coef": 69.02317810058594,
+     "E": 2.4265098571777344,
+     "dp": 0.1661795973777771,
+     "C_R_mean": 0.02975940704345703,
+     "C_R_max": 1.5952987670898438,
+     "matched_feature": 10336,
+     "C_M2": 0.5194435119628906,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the country containing Shanghai? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 2.439197540283203,
+    "median_dp": 0.10830201953649521,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-shanghai-beijing",
+   "node": "19_12274_10",
+   "layer": 19,
+   "feature": 12274,
+   "W": 3.2561700344085693,
+   "own_verdict": "WEAKER",
+   "own_E": 1.1041145324707031,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the country that contains Shanghai is",
+     "coef": 22.938697814941406,
+     "E": 1.3452072143554688,
+     "dp": 0.08555921912193298,
+     "C_R_mean": -0.05740785598754883,
+     "C_R_max": 0.4179039001464844,
+     "matched_feature": 1445,
+     "C_M2": 0.0087432861328125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The capital of the country where Shanghai is located is",
+     "coef": 33.76946258544922,
+     "E": 1.1144371032714844,
+     "dp": 0.04134748876094818,
+     "C_R_mean": -0.16295409202575684,
+     "C_R_max": 0.5538673400878906,
+     "matched_feature": 14542,
+     "C_M2": -2.446563720703125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: Shanghai is in a country whose capital is",
+     "coef": 30.688011169433594,
+     "E": 1.5441627502441406,
+     "dp": 0.07693955302238464,
+     "C_R_mean": 0.023497343063354492,
+     "C_R_max": 0.8216590881347656,
+     "matched_feature": 2695,
+     "C_M2": 0.6616783142089844,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fact: the country containing Shanghai has its capital in",
+     "coef": 24.81964874267578,
+     "E": 1.1568107604980469,
+     "dp": 0.10438734292984009,
+     "C_R_mean": -0.03193044662475586,
+     "C_R_max": 0.5331192016601562,
+     "matched_feature": 6741,
+     "C_M2": -1.0001220703125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the country containing Shanghai? Answer:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.2510089874267578,
+    "median_dp": 0.08124938607215881,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-shanghai-beijing",
+   "node": "19_12274_9",
+   "layer": 19,
+   "feature": 12274,
+   "W": 2.5080957412719727,
+   "own_verdict": "WEAKER",
+   "own_E": 0.6711616516113281,
+   "status": "POSITION_NOT_TRANSFERABLE"
+  },
+  {
+   "graph": "gemma-fact-vancouver-victoria",
+   "node": "21_2236_10",
+   "layer": 21,
+   "feature": 2236,
+   "W": 2.364914894104004,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 2.159412384033203,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the territory that contains Vancouver is",
+     "coef": 60.250732421875,
+     "E": 2.1458740234375,
+     "dp": 0.12347403168678284,
+     "C_R_mean": 0.41417694091796875,
+     "C_R_max": 1.389801025390625,
+     "matched_feature": 5943,
+     "C_M2": 3.9298171997070312,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The capital of the territory where Vancouver is located is",
+     "coef": 61.27046203613281,
+     "E": 2.605762481689453,
+     "dp": 0.10209162533283234,
+     "C_R_mean": 0.2696554660797119,
+     "C_R_max": 1.2689628601074219,
+     "matched_feature": 5943,
+     "C_M2": 4.3451995849609375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Vancouver is in a territory whose capital is",
+     "coef": 46.06756591796875,
+     "E": 2.8832168579101562,
+     "dp": 0.08636273071169853,
+     "C_R_mean": 0.254638671875,
+     "C_R_max": 1.2307929992675781,
+     "matched_feature": 5943,
+     "C_M2": 2.8946685791015625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: the territory containing Vancouver has its capital in",
+     "coef": 55.0938720703125,
+     "E": 2.3476295471191406,
+     "dp": 0.14765948057174683,
+     "C_R_mean": 0.3107748031616211,
+     "C_R_max": 1.2503128051757812,
+     "matched_feature": 5943,
+     "C_M2": 3.19708251953125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the territory containing Vancouver? Answer:",
+     "coef": 60.62126159667969,
+     "E": 1.727020263671875,
+     "dp": 0.09191133081912994,
+     "C_R_mean": 0.29669857025146484,
+     "C_R_max": 1.5048713684082031,
+     "matched_feature": 5943,
+     "C_M2": 4.1949615478515625,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 2.3476295471191406,
+    "median_dp": 0.10209162533283234,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-vancouver-victoria",
+   "node": "19_15123_10",
+   "layer": 19,
+   "feature": 15123,
+   "W": 1.7407382726669312,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.12768936157226562,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the territory that contains Vancouver is",
+     "coef": 38.5205192565918,
+     "E": 0.3868560791015625,
+     "dp": 0.0359763503074646,
+     "C_R_mean": 0.06815171241760254,
+     "C_R_max": 0.76593017578125,
+     "matched_feature": 1445,
+     "C_M2": 0.5613975524902344,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The capital of the territory where Vancouver is located is",
+     "coef": 42.17258834838867,
+     "E": 0.27541351318359375,
+     "dp": 0.019073009490966797,
+     "C_R_mean": 0.038065195083618164,
+     "C_R_max": 1.0008544921875,
+     "matched_feature": 8765,
+     "C_M2": -1.4097213745117188,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Vancouver is in a territory whose capital is",
+     "coef": 41.001468658447266,
+     "E": 1.8051300048828125,
+     "dp": 0.061731718480587006,
+     "C_R_mean": 0.09057998657226562,
+     "C_R_max": 0.7883224487304688,
+     "matched_feature": 1445,
+     "C_M2": 1.7223281860351562,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: the territory containing Vancouver has its capital in",
+     "coef": 40.788597106933594,
+     "E": 1.0017585754394531,
+     "dp": 0.044486284255981445,
+     "C_R_mean": 0.165360689163208,
+     "C_R_max": 0.9581718444824219,
+     "matched_feature": 1445,
+     "C_M2": 0.9515419006347656,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the territory containing Vancouver? Answer:",
+     "coef": 42.05351638793945,
+     "E": 0.2147979736328125,
+     "dp": 0.01823139190673828,
+     "C_R_mean": 0.026859045028686523,
+     "C_R_max": 1.01617431640625,
+     "matched_feature": 1445,
+     "C_M2": 1.9157485961914062,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.3868560791015625,
+    "median_dp": 0.0359763503074646,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-fact-vancouver-victoria",
+   "node": "24_13277_10",
+   "layer": 24,
+   "feature": 13277,
+   "W": 0.9115314483642578,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.8299140930175781,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The capital city of the territory that contains Vancouver is",
+     "coef": 103.89694213867188,
+     "E": 0.9422569274902344,
+     "dp": 0.025478661060333252,
+     "C_R_mean": 0.9333834648132324,
+     "C_R_max": 2.3218345642089844,
+     "matched_feature": 8554,
+     "C_M2": -0.2970924377441406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The capital of the territory where Vancouver is located is",
+     "coef": 104.73893737792969,
+     "E": 1.2261848449707031,
+     "dp": 0.02322104573249817,
+     "C_R_mean": 0.8075635433197021,
+     "C_R_max": 2.2307281494140625,
+     "matched_feature": 8554,
+     "C_M2": -0.14955902099609375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Vancouver is in a territory whose capital is",
+     "coef": 109.71660614013672,
+     "E": 1.1972084045410156,
+     "dp": 0.015257775783538818,
+     "C_R_mean": 1.0544140338897705,
+     "C_R_max": 2.7247161865234375,
+     "matched_feature": 11034,
+     "C_M2": 1.1207847595214844,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: the territory containing Vancouver has its capital in",
+     "coef": 99.01021575927734,
+     "E": 1.1583366394042969,
+     "dp": 0.02742287516593933,
+     "C_R_mean": 0.6440808773040771,
+     "C_R_max": 2.148448944091797,
+     "matched_feature": 11034,
+     "C_M2": 0.3079643249511719,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Question: What is the capital of the territory containing Vancouver? Answer:",
+     "coef": 68.24609375,
+     "E": 0.9889678955078125,
+     "dp": 0.013172835111618042,
+     "C_R_mean": 0.26908230781555176,
+     "C_R_max": 1.1999282836914062,
+     "matched_feature": 5999,
+     "C_M2": -0.490142822265625,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 1.1583366394042969,
+    "median_dp": 0.02322104573249817,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-girl-is",
+   "node": "25_11727_6",
+   "layer": 25,
+   "feature": 11727,
+   "W": 1.1940498352050781,
+   "own_verdict": "HOLDS",
+   "own_E": 1.1075515747070312,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The girl whom the teacher sees",
+     "coef": 25.744407653808594,
+     "E": 1.2033233642578125,
+     "dp": 0.01796993613243103,
+     "C_R_mean": 0.11293983459472656,
+     "C_R_max": 0.6862869262695312,
+     "matched_feature": 4838,
+     "C_M2": 0.23708343505859375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girl who the teacher sees",
+     "coef": 23.573917388916016,
+     "E": 1.1420936584472656,
+     "dp": 0.01633075624704361,
+     "C_R_mean": 0.10213136672973633,
+     "C_R_max": 0.6443519592285156,
+     "matched_feature": 4838,
+     "C_M2": 0.21364212036132812,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The little girl that the teacher sees",
+     "coef": 22.172138214111328,
+     "E": 1.0285606384277344,
+     "dp": 0.01474715769290924,
+     "C_R_mean": 0.09650897979736328,
+     "C_R_max": 0.6012306213378906,
+     "matched_feature": 4838,
+     "C_M2": 0.19525527954101562,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girl that the teacher sees every day",
+     "coef": 0.0,
+     "outcome": "INACTIVE"
+    },
+    {
+     "prompt": "The girl that our teacher sees",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 0.75,
+    "distinct_frac": 0.75,
+    "median_E": 1.0853271484375,
+    "median_dp": 0.015538956969976425,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 1
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-girl-is",
+   "node": "24_13277_6",
+   "layer": 24,
+   "feature": 13277,
+   "W": 1.1344155073165894,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.506622314453125,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The girl whom the teacher sees",
+     "coef": 69.53680419921875,
+     "E": 0.5723533630371094,
+     "dp": 6.9588422775268555e-06,
+     "C_R_mean": 0.26883912086486816,
+     "C_R_max": 1.5505447387695312,
+     "matched_feature": 5999,
+     "C_M2": -1.183807373046875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The girl who the teacher sees",
+     "coef": 63.73220443725586,
+     "E": 0.6296806335449219,
+     "dp": 0.0003257468342781067,
+     "C_R_mean": 0.19583725929260254,
+     "C_R_max": 1.3150482177734375,
+     "matched_feature": 5999,
+     "C_M2": -0.9954833984375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The little girl that the teacher sees",
+     "coef": 67.84149169921875,
+     "E": 0.6022071838378906,
+     "dp": -0.0001656860113143921,
+     "C_R_mean": 0.2569305896759033,
+     "C_R_max": 1.4220771789550781,
+     "matched_feature": 5999,
+     "C_M2": -1.086151123046875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The girl that the teacher sees every day",
+     "coef": 50.91551208496094,
+     "E": 0.6555366516113281,
+     "dp": 0.001165628433227539,
+     "C_R_mean": 0.12542033195495605,
+     "C_R_max": 0.8884010314941406,
+     "matched_feature": 5999,
+     "C_M2": -1.3061637878417969,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The girl that our teacher sees",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.6159439086914062,
+    "median_dp": 0.00016635283827781677,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-girl-is",
+   "node": "24_13814_6",
+   "layer": 24,
+   "feature": 13814,
+   "W": 0.8776482343673706,
+   "own_verdict": "HOLDS",
+   "own_E": 0.7155914306640625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The girl whom the teacher sees",
+     "coef": 13.855491638183594,
+     "E": 0.7786293029785156,
+     "dp": 0.01066233217716217,
+     "C_R_mean": -0.0033445358276367188,
+     "C_R_max": 0.2582550048828125,
+     "matched_feature": 1530,
+     "C_M2": -0.24483108520507812,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girl who the teacher sees",
+     "coef": 14.42202377319336,
+     "E": 0.8281631469726562,
+     "dp": 0.01115187257528305,
+     "C_R_mean": -0.006715059280395508,
+     "C_R_max": 0.2518501281738281,
+     "matched_feature": 15693,
+     "C_M2": -0.00550079345703125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The little girl that the teacher sees",
+     "coef": 13.353387832641602,
+     "E": 0.7661285400390625,
+     "dp": 0.009429842233657837,
+     "C_R_mean": -0.006584644317626953,
+     "C_R_max": 0.22673797607421875,
+     "matched_feature": 2278,
+     "C_M2": -0.10144805908203125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girl that the teacher sees every day",
+     "coef": -0.0,
+     "outcome": "INACTIVE"
+    },
+    {
+     "prompt": "The girl that our teacher sees",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 0.75,
+    "distinct_frac": 0.75,
+    "median_E": 0.7723789215087891,
+    "median_dp": 0.010046087205410004,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 1
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-girls-are",
+   "node": "22_11517_6",
+   "layer": 22,
+   "feature": 11517,
+   "W": 5.1379899978637695,
+   "own_verdict": "HOLDS",
+   "own_E": 3.51434326171875,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The girls whom the teacher sees",
+     "coef": 22.82158088684082,
+     "E": 2.474090576171875,
+     "dp": 0.03329974412918091,
+     "C_R_mean": 0.058928489685058594,
+     "C_R_max": 0.3315162658691406,
+     "matched_feature": 15174,
+     "C_M2": -0.23759078979492188,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls who the teacher sees",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The little girls that the teacher sees",
+     "coef": 23.726835250854492,
+     "E": 2.417858123779297,
+     "dp": 0.03043346107006073,
+     "C_R_mean": 0.07363200187683105,
+     "C_R_max": 0.38254547119140625,
+     "matched_feature": 14395,
+     "C_M2": -0.3117828369140625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls that the teacher sees every day",
+     "coef": 28.12514305114746,
+     "E": 4.086414337158203,
+     "dp": 0.04740910232067108,
+     "C_R_mean": 0.11542081832885742,
+     "C_R_max": 0.7258529663085938,
+     "matched_feature": 759,
+     "C_M2": 2.17071533203125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls that our teacher sees",
+     "coef": 19.592714309692383,
+     "E": 2.7393798828125,
+     "dp": 0.030353590846061707,
+     "C_R_mean": 0.054892778396606445,
+     "C_R_max": 0.25157928466796875,
+     "matched_feature": 7286,
+     "C_M2": 1.3193817138671875,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 2.6067352294921875,
+    "median_dp": 0.03186660259962082,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-girls-are",
+   "node": "25_9974_6",
+   "layer": 25,
+   "feature": 9974,
+   "W": 2.079113721847534,
+   "own_verdict": "HOLDS",
+   "own_E": 2.015453338623047,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The girls whom the teacher sees",
+     "coef": 9.865804672241211,
+     "E": 1.1250038146972656,
+     "dp": 0.015235573053359985,
+     "C_R_mean": 0.038957834243774414,
+     "C_R_max": 0.2881927490234375,
+     "matched_feature": 13977,
+     "C_M2": -0.0136566162109375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls who the teacher sees",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The little girls that the teacher sees",
+     "coef": 7.37495231628418,
+     "E": 0.8280830383300781,
+     "dp": 0.01051870733499527,
+     "C_R_mean": 0.02776026725769043,
+     "C_R_max": 0.21629714965820312,
+     "matched_feature": 15516,
+     "C_M2": 0.007228851318359375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls that the teacher sees every day",
+     "coef": 42.95599365234375,
+     "E": 4.577144622802734,
+     "dp": 0.04839096963405609,
+     "C_R_mean": 0.33646655082702637,
+     "C_R_max": 1.4084815979003906,
+     "matched_feature": 4839,
+     "C_M2": -0.731353759765625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls that our teacher sees",
+     "coef": 4.544340133666992,
+     "E": 0.5556259155273438,
+     "dp": 0.006336703896522522,
+     "C_R_mean": 0.017621994018554688,
+     "C_R_max": 0.1369476318359375,
+     "matched_feature": 14465,
+     "C_M2": -0.22497177124023438,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 0.9765434265136719,
+    "median_dp": 0.012877140194177628,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-girls-are",
+   "node": "24_13277_6",
+   "layer": 24,
+   "feature": 13277,
+   "W": 1.0269670486450195,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.66375732421875,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The girls whom the teacher sees",
+     "coef": 66.95120239257812,
+     "E": 0.673919677734375,
+     "dp": 0.0016617923974990845,
+     "C_R_mean": 0.4388754367828369,
+     "C_R_max": 1.2488746643066406,
+     "matched_feature": 5999,
+     "C_M2": -1.3022041320800781,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The girls who the teacher sees",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The little girls that the teacher sees",
+     "coef": 66.75809478759766,
+     "E": 0.8086318969726562,
+     "dp": 0.001206718385219574,
+     "C_R_mean": 0.4206223487854004,
+     "C_R_max": 1.1051750183105469,
+     "matched_feature": 5999,
+     "C_M2": -1.2867317199707031,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The girls that the teacher sees every day",
+     "coef": 48.782283782958984,
+     "E": 0.761871337890625,
+     "dp": 0.0011907964944839478,
+     "C_R_mean": 0.2511296272277832,
+     "C_R_max": 0.666473388671875,
+     "matched_feature": 5999,
+     "C_M2": -1.6566085815429688,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The girls that our teacher sees",
+     "coef": 48.656219482421875,
+     "E": 0.73748779296875,
+     "dp": 0.0011078491806983948,
+     "C_R_mean": 0.28244614601135254,
+     "C_R_max": 0.7300148010253906,
+     "matched_feature": 4792,
+     "C_M2": -0.5353126525878906,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.5,
+    "median_E": 0.7496795654296875,
+    "median_dp": 0.0011987574398517609,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 2,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": true,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-gp-nps",
+   "node": "22_7306_5",
+   "layer": 22,
+   "feature": 7306,
+   "W": 2.967928409576416,
+   "own_verdict": "HOLDS",
+   "own_E": 1.5894699096679688,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The young guitarist knew the song",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The famous guitarist knew the song",
+     "coef": -0.0,
+     "outcome": "INACTIVE"
+    },
+    {
+     "prompt": "The guitarist already knew the song",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The guitarist in the band knew the song",
+     "coef": 14.386454582214355,
+     "E": 1.7299957275390625,
+     "dp": 0.024507805705070496,
+     "C_R_mean": 0.01943182945251465,
+     "C_R_max": 0.14947891235351562,
+     "matched_feature": 15943,
+     "C_M2": 0.63836669921875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "I think the guitarist knew the song",
+     "coef": 16.710227966308594,
+     "E": 1.7891807556152344,
+     "dp": 0.026900984346866608,
+     "C_R_mean": -0.006166219711303711,
+     "C_R_max": 0.18084335327148438,
+     "matched_feature": 9684,
+     "C_M2": 0.9340400695800781,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 0.6666666666666666,
+    "distinct_frac": 0.6666666666666666,
+    "median_E": 1.7299957275390625,
+    "median_dp": 0.024507805705070496,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 1
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-gp-nps",
+   "node": "21_11913_5",
+   "layer": 21,
+   "feature": 11913,
+   "W": 1.977838397026062,
+   "own_verdict": "WEAKER",
+   "own_E": 0.8776588439941406,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The young guitarist knew the song",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The famous guitarist knew the song",
+     "coef": 14.460269927978516,
+     "E": 0.7110328674316406,
+     "dp": 0.009076885879039764,
+     "C_R_mean": 0.0069427490234375,
+     "C_R_max": 0.2435150146484375,
+     "matched_feature": 2655,
+     "C_M2": -0.0984649658203125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The guitarist already knew the song",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The guitarist in the band knew the song",
+     "coef": 21.12618637084961,
+     "E": 0.9414215087890625,
+     "dp": 0.01359488070011139,
+     "C_R_mean": 0.03497600555419922,
+     "C_R_max": 0.4736480712890625,
+     "matched_feature": 14867,
+     "C_M2": -0.9322929382324219,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "I think the guitarist knew the song",
+     "coef": 19.366790771484375,
+     "E": 1.0760421752929688,
+     "dp": 0.015287548303604126,
+     "C_R_mean": 0.012869834899902344,
+     "C_R_max": 0.4471321105957031,
+     "matched_feature": 14867,
+     "C_M2": -0.8437080383300781,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 0.9414215087890625,
+    "median_dp": 0.01359488070011139,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-gp-nps",
+   "node": "18_4181_5",
+   "layer": 18,
+   "feature": 4181,
+   "W": 1.9608352184295654,
+   "own_verdict": "HOLDS",
+   "own_E": 3.8917884826660156,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The young guitarist knew the song",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The famous guitarist knew the song",
+     "coef": 20.078577041625977,
+     "E": 3.625946044921875,
+     "dp": 0.04395635053515434,
+     "C_R_mean": 0.00659942626953125,
+     "C_R_max": 0.7200851440429688,
+     "matched_feature": 15934,
+     "C_M2": 1.0243721008300781,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The guitarist already knew the song",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "The guitarist in the band knew the song",
+     "coef": 21.109533309936523,
+     "E": 4.080600738525391,
+     "dp": 0.05873827636241913,
+     "C_R_mean": 0.016408205032348633,
+     "C_R_max": 0.8356285095214844,
+     "matched_feature": 15934,
+     "C_M2": 1.4449729919433594,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "I think the guitarist knew the song",
+     "coef": 18.798921585083008,
+     "E": 3.8684921264648438,
+     "dp": 0.05362729728221893,
+     "C_R_mean": -0.0528106689453125,
+     "C_R_max": 0.9741592407226562,
+     "matched_feature": 83,
+     "C_M2": -0.6020050048828125,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 3.8684921264648438,
+    "median_dp": 0.05362729728221893,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-keys-cabinet",
+   "node": "22_11517_5",
+   "layer": 22,
+   "feature": 11517,
+   "W": 5.595671653747559,
+   "own_verdict": "WEAKER",
+   "own_E": 1.6975784301757812,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The keys on the kitchen cabinet",
+     "coef": 22.719419479370117,
+     "E": 1.0645904541015625,
+     "dp": 0.029177173972129822,
+     "C_R_mean": 0.01046609878540039,
+     "C_R_max": 0.22217941284179688,
+     "matched_feature": 217,
+     "C_M2": -0.3811988830566406,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The keys on top of the cabinet",
+     "coef": 32.407684326171875,
+     "E": 2.3144149780273438,
+     "dp": 0.034575700759887695,
+     "C_R_mean": 0.17243242263793945,
+     "C_R_max": 1.0468063354492188,
+     "matched_feature": 9540,
+     "C_M2": 0.05779266357421875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The old keys on the cabinet",
+     "coef": 27.334043502807617,
+     "E": 1.5425338745117188,
+     "dp": 0.02309238910675049,
+     "C_R_mean": 0.06292343139648438,
+     "C_R_max": 0.4228668212890625,
+     "matched_feature": 4753,
+     "C_M2": -0.009693145751953125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The keys lying on the cabinet",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "I think the keys on the cabinet",
+     "coef": 30.273653030395508,
+     "E": 2.5416946411132812,
+     "dp": 0.0459500253200531,
+     "C_R_mean": 0.20088958740234375,
+     "C_R_max": 0.8492889404296875,
+     "matched_feature": 7457,
+     "C_M2": 0.7979278564453125,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.9284744262695312,
+    "median_dp": 0.03187643736600876,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-keys-cabinet",
+   "node": "23_4388_5",
+   "layer": 23,
+   "feature": 4388,
+   "W": 1.7654969692230225,
+   "own_verdict": "HOLDS",
+   "own_E": 3.1462554931640625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The keys on the kitchen cabinet",
+     "coef": 10.705385208129883,
+     "E": 0.907012939453125,
+     "dp": 0.012387588620185852,
+     "C_R_mean": -0.012393712997436523,
+     "C_R_max": 0.188629150390625,
+     "matched_feature": 5635,
+     "C_M2": -0.23571014404296875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The keys on top of the cabinet",
+     "coef": 37.711402893066406,
+     "E": 6.440372467041016,
+     "dp": 0.030180007219314575,
+     "C_R_mean": 0.19004249572753906,
+     "C_R_max": 1.1505050659179688,
+     "matched_feature": 12387,
+     "C_M2": 1.0273361206054688,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The old keys on the cabinet",
+     "coef": 25.155351638793945,
+     "E": 2.6431846618652344,
+     "dp": 0.01887589693069458,
+     "C_R_mean": 0.03212785720825195,
+     "C_R_max": 0.5677375793457031,
+     "matched_feature": 12387,
+     "C_M2": 0.510894775390625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The keys lying on the cabinet",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "I think the keys on the cabinet",
+     "coef": 30.888208389282227,
+     "E": 5.666481018066406,
+     "dp": 0.030527770519256592,
+     "C_R_mean": 0.1394810676574707,
+     "C_R_max": 0.9696426391601562,
+     "matched_feature": 15819,
+     "C_M2": -0.6189727783203125,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 4.15483283996582,
+    "median_dp": 0.024527952075004578,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-keys-cabinet",
+   "node": "0_9026_5",
+   "layer": 0,
+   "feature": 9026,
+   "W": 1.300038456916809,
+   "own_verdict": "STRONGER",
+   "own_E": 2.8612709045410156,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "The keys on the kitchen cabinet",
+     "coef": 12.40125846862793,
+     "E": -0.2901458740234375,
+     "dp": -0.002530798316001892,
+     "C_R_mean": -0.47455263137817383,
+     "C_R_max": 0.8394317626953125,
+     "matched_feature": 1396,
+     "C_M2": -0.3475837707519531,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "The keys on top of the cabinet",
+     "coef": 15.056764602661133,
+     "E": -0.283905029296875,
+     "dp": -0.004875481128692627,
+     "C_R_mean": -0.07462835311889648,
+     "C_R_max": 0.5959396362304688,
+     "matched_feature": 15107,
+     "C_M2": 0.6021194458007812,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "The old keys on the cabinet",
+     "coef": 15.447998046875,
+     "E": 2.2197914123535156,
+     "dp": 0.012586548924446106,
+     "C_R_mean": 0.43364977836608887,
+     "C_R_max": 1.9581375122070312,
+     "matched_feature": 15107,
+     "C_M2": -1.3455772399902344,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The keys lying on the cabinet",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "I think the keys on the cabinet",
+     "coef": 15.682376861572266,
+     "E": 2.1911544799804688,
+     "dp": 0.009634941816329956,
+     "C_R_mean": 0.27905750274658203,
+     "C_R_max": 1.7896041870117188,
+     "matched_feature": 15107,
+     "C_M2": -1.3466720581054688,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 4,
+    "active_frac": 1.0,
+    "distinct_frac": 0.5,
+    "median_E": 0.9536247253417969,
+    "median_dp": 0.003552071750164032,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 2,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "not distinct",
+    "tie": true,
+    "agrees": false
+   }
+  },
+  {
+   "graph": "gemma-michael-jordan-es",
+   "node": "21_9324_6",
+   "layer": 21,
+   "feature": 9324,
+   "W": 1.610701560974121,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.5191326141357422,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Hecho: el famoso Michael Jordan juega al",
+     "coef": 61.32172393798828,
+     "E": 0.5104351043701172,
+     "dp": -0.036994099617004395,
+     "C_R_mean": 0.25626134872436523,
+     "C_R_max": 1.0172576904296875,
+     "matched_feature": 4818,
+     "C_M2": 1.3107566833496094,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan juega al",
+     "coef": 53.00144958496094,
+     "E": 0.5878467559814453,
+     "dp": -0.007472038269042969,
+     "C_R_mean": 0.17051243782043457,
+     "C_R_max": 0.8785591125488281,
+     "matched_feature": 4818,
+     "C_M2": 0.8471260070800781,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Dato: Michael Jordan juega al",
+     "coef": 63.859779357910156,
+     "E": 0.5575218200683594,
+     "dp": -0.038841307163238525,
+     "C_R_mean": 0.26551151275634766,
+     "C_R_max": 1.0485076904296875,
+     "matched_feature": 4818,
+     "C_M2": 0.9128627777099609,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Todo el mundo sabe que Michael Jordan juega al",
+     "coef": 65.4304428100586,
+     "E": 0.50823974609375,
+     "dp": -0.04742157459259033,
+     "C_R_mean": 0.3042377233505249,
+     "C_R_max": 1.1267719268798828,
+     "matched_feature": 4818,
+     "C_M2": 1.4642181396484375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Hecho : Michael Jordan jugaba al",
+     "coef": 63.723182678222656,
+     "E": 0.4724235534667969,
+     "dp": -0.04198676347732544,
+     "C_R_mean": 0.23560678958892822,
+     "C_R_max": 1.0357933044433594,
+     "matched_feature": 4818,
+     "C_M2": 0.8725490570068359,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.5104351043701172,
+    "median_dp": -0.038841307163238525,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-michael-jordan-es",
+   "node": "21_4818_6",
+   "layer": 21,
+   "feature": 4818,
+   "W": 1.5238330364227295,
+   "own_verdict": "HOLDS",
+   "own_E": 0.9853858947753906,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Hecho: el famoso Michael Jordan juega al",
+     "coef": 54.93138885498047,
+     "E": 1.0924243927001953,
+     "dp": 0.17607885599136353,
+     "C_R_mean": 0.2167743444442749,
+     "C_R_max": 0.9168624877929688,
+     "matched_feature": 9324,
+     "C_M2": 0.4336204528808594,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan juega al",
+     "coef": 56.43562316894531,
+     "E": 0.9479103088378906,
+     "dp": 0.1673721969127655,
+     "C_R_mean": 0.19223082065582275,
+     "C_R_max": 0.9630622863769531,
+     "matched_feature": 9324,
+     "C_M2": 0.6393985748291016,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Dato: Michael Jordan juega al",
+     "coef": 67.70446014404297,
+     "E": 1.0297775268554688,
+     "dp": 0.15464431047439575,
+     "C_R_mean": 0.2948112487792969,
+     "C_R_max": 1.1376590728759766,
+     "matched_feature": 9324,
+     "C_M2": 0.6083278656005859,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Todo el mundo sabe que Michael Jordan juega al",
+     "coef": 63.65288543701172,
+     "E": 1.3943862915039062,
+     "dp": 0.17734676599502563,
+     "C_R_mean": 0.2935720682144165,
+     "C_R_max": 1.1105670928955078,
+     "matched_feature": 9324,
+     "C_M2": 0.486358642578125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Hecho : Michael Jordan jugaba al",
+     "coef": 66.38404846191406,
+     "E": 0.9511127471923828,
+     "dp": 0.1748272180557251,
+     "C_R_mean": 0.25328850746154785,
+     "C_R_max": 1.0883255004882812,
+     "matched_feature": 9324,
+     "C_M2": 0.5019493103027344,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.4,
+    "median_E": 1.0297775268554688,
+    "median_dp": 0.1748272180557251,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": false
+   }
+  },
+  {
+   "graph": "gemma-michael-jordan-es",
+   "node": "25_13416_6",
+   "layer": 25,
+   "feature": 13416,
+   "W": 1.3634676933288574,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.42369651794433594,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Hecho: el famoso Michael Jordan juega al",
+     "coef": 72.30735778808594,
+     "E": 0.39368247985839844,
+     "dp": 0.11254614591598511,
+     "C_R_mean": 0.06533265113830566,
+     "C_R_max": 1.5480327606201172,
+     "matched_feature": 2591,
+     "C_M2": 0.2767505645751953,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan juega al",
+     "coef": 73.84243774414062,
+     "E": 0.4288787841796875,
+     "dp": 0.13591694831848145,
+     "C_R_mean": 0.07008874416351318,
+     "C_R_max": 1.6352005004882812,
+     "matched_feature": 2591,
+     "C_M2": 0.2578754425048828,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Dato: Michael Jordan juega al",
+     "coef": 72.76692199707031,
+     "E": 0.3356342315673828,
+     "dp": 0.10529154539108276,
+     "C_R_mean": 0.07182002067565918,
+     "C_R_max": 1.5792808532714844,
+     "matched_feature": 2591,
+     "C_M2": 0.27977561950683594,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Todo el mundo sabe que Michael Jordan juega al",
+     "coef": 73.41166687011719,
+     "E": 0.3224506378173828,
+     "dp": 0.12788575887680054,
+     "C_R_mean": 0.07703542709350586,
+     "C_R_max": 1.5910797119140625,
+     "matched_feature": 2591,
+     "C_M2": 0.34441375732421875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Hecho : Michael Jordan jugaba al",
+     "coef": 70.4385986328125,
+     "E": 0.43010711669921875,
+     "dp": 0.09548068046569824,
+     "C_R_mean": 0.06304216384887695,
+     "C_R_max": 1.5546131134033203,
+     "matched_feature": 2591,
+     "C_M2": 0.27272605895996094,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.39368247985839844,
+    "median_dp": 0.11254614591598511,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-michael-jordan",
+   "node": "21_9324_8",
+   "layer": 21,
+   "feature": 9324,
+   "W": 2.396064519882202,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.0524444580078125,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The sport that Michael Jordan plays is",
+     "coef": 38.122764587402344,
+     "E": -0.067535400390625,
+     "dp": 0.026038825511932373,
+     "C_R_mean": -0.030244827270507812,
+     "C_R_max": 0.9124832153320312,
+     "matched_feature": 4818,
+     "C_M2": -0.0735321044921875,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Michael Jordan plays the sport of",
+     "coef": 50.75703430175781,
+     "E": 0.0342254638671875,
+     "dp": 0.02308511734008789,
+     "C_R_mean": -5.626678466796875e-05,
+     "C_R_max": 1.5307464599609375,
+     "matched_feature": 4818,
+     "C_M2": 0.4001312255859375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Michael Jordan is famous for playing the sport of",
+     "coef": 56.874351501464844,
+     "E": 0.19995498657226562,
+     "dp": -0.0006810426712036133,
+     "C_R_mean": -0.08278059959411621,
+     "C_R_max": 1.358642578125,
+     "matched_feature": 4818,
+     "C_M2": 0.1593475341796875,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Everyone knows that Michael Jordan plays the sport of",
+     "coef": 55.78997039794922,
+     "E": 0.19387054443359375,
+     "dp": -0.0007882118225097656,
+     "C_R_mean": -0.10155439376831055,
+     "C_R_max": 1.3323516845703125,
+     "matched_feature": 4818,
+     "C_M2": 0.2322540283203125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Q: Which sport does Michael Jordan play? A:",
+     "coef": 52.15557861328125,
+     "E": 0.2627067565917969,
+     "dp": 0.0025205016136169434,
+     "C_R_mean": -0.07489204406738281,
+     "C_R_max": 0.928314208984375,
+     "matched_feature": 4818,
+     "C_M2": 0.8874359130859375,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.19387054443359375,
+    "median_dp": 0.0025205016136169434,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 4,
+     "WRONG_SIGN": 1,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-michael-jordan",
+   "node": "20_9090_8",
+   "layer": 20,
+   "feature": 9090,
+   "W": 1.9958760738372803,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.16263961791992188,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The sport that Michael Jordan plays is",
+     "coef": 40.42790222167969,
+     "E": 0.4141960144042969,
+     "dp": 0.06074114143848419,
+     "C_R_mean": -0.03237199783325195,
+     "C_R_max": 0.8370475769042969,
+     "matched_feature": 4759,
+     "C_M2": 0.5501136779785156,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan plays the sport of",
+     "coef": 44.681640625,
+     "E": 0.10719680786132812,
+     "dp": 0.06335210800170898,
+     "C_R_mean": 0.06264114379882812,
+     "C_R_max": 1.3814506530761719,
+     "matched_feature": 2536,
+     "C_M2": 0.5191650390625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Michael Jordan is famous for playing the sport of",
+     "coef": 51.523719787597656,
+     "E": -0.033618927001953125,
+     "dp": 0.01028144359588623,
+     "C_R_mean": -0.02365398406982422,
+     "C_R_max": 1.2886390686035156,
+     "matched_feature": 2536,
+     "C_M2": 0.012939453125,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Everyone knows that Michael Jordan plays the sport of",
+     "coef": 49.95765686035156,
+     "E": -0.07131576538085938,
+     "dp": 0.01802361011505127,
+     "C_R_mean": -0.03592562675476074,
+     "C_R_max": 1.1889305114746094,
+     "matched_feature": 2536,
+     "C_M2": 0.0953826904296875,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Q: Which sport does Michael Jordan play? A:",
+     "coef": 45.52765655517578,
+     "E": 0.3689537048339844,
+     "dp": 0.022761821746826172,
+     "C_R_mean": -0.025861024856567383,
+     "C_R_max": 1.0713081359863281,
+     "matched_feature": 7232,
+     "C_M2": 0.3544960021972656,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.10719680786132812,
+    "median_dp": 0.022761821746826172,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 2,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-michael-jordan",
+   "node": "21_4818_8",
+   "layer": 21,
+   "feature": 4818,
+   "W": 1.9573771953582764,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.28372955322265625,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: The sport that Michael Jordan plays is",
+     "coef": 47.86286163330078,
+     "E": 0.09937286376953125,
+     "dp": 0.019602864980697632,
+     "C_R_mean": -0.0059125423431396484,
+     "C_R_max": 1.1628456115722656,
+     "matched_feature": 9324,
+     "C_M2": -0.021823883056640625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Michael Jordan plays the sport of",
+     "coef": 49.37908172607422,
+     "E": 0.3778724670410156,
+     "dp": 0.08163279294967651,
+     "C_R_mean": -0.0008096694946289062,
+     "C_R_max": 1.4912757873535156,
+     "matched_feature": 9324,
+     "C_M2": 0.0307159423828125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fact: Michael Jordan is famous for playing the sport of",
+     "coef": 69.64141845703125,
+     "E": 0.2763938903808594,
+     "dp": 0.010689377784729004,
+     "C_R_mean": -0.08646297454833984,
+     "C_R_max": 1.6641120910644531,
+     "matched_feature": 9324,
+     "C_M2": 0.2780799865722656,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Everyone knows that Michael Jordan plays the sport of",
+     "coef": 61.63279724121094,
+     "E": 0.2928504943847656,
+     "dp": 0.02036648988723755,
+     "C_R_mean": -0.10716891288757324,
+     "C_R_max": 1.4690055847167969,
+     "matched_feature": 9324,
+     "C_M2": 0.2279205322265625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Q: Which sport does Michael Jordan play? A:",
+     "coef": 52.471412658691406,
+     "E": 0.8980522155761719,
+     "dp": 0.02834746241569519,
+     "C_R_mean": -0.07366609573364258,
+     "C_R_max": 0.9373855590820312,
+     "matched_feature": 9324,
+     "C_M2": 0.2656402587890625,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.2928504943847656,
+    "median_dp": 0.02036648988723755,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-saison",
+   "node": "20_9338_11",
+   "layer": 20,
+   "feature": 9338,
+   "W": 3.8852570056915283,
+   "own_verdict": "WEAKER",
+   "own_E": 1.2145099639892578,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "La saison qui vient après le printemps s'appelle l'",
+     "coef": 67.87998962402344,
+     "E": 1.4048023223876953,
+     "dp": 0.11194628477096558,
+     "C_R_mean": 0.059087157249450684,
+     "C_R_max": 1.535543441772461,
+     "matched_feature": 352,
+     "C_M2": 0.3191642761230469,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "La saison après le printemps s'appelle l'",
+     "coef": 59.216121673583984,
+     "E": 1.3902645111083984,
+     "dp": 0.1344534158706665,
+     "C_R_mean": -0.0013320446014404297,
+     "C_R_max": 0.9533939361572266,
+     "matched_feature": 352,
+     "C_M2": -0.227691650390625,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Fait : la saison après le printemps est l'",
+     "coef": 17.529529571533203,
+     "E": 1.167205810546875,
+     "dp": 0.05198914557695389,
+     "C_R_mean": -0.03678631782531738,
+     "C_R_max": 0.1295318603515625,
+     "matched_feature": 3960,
+     "C_M2": -0.23332786560058594,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Après le printemps, la saison suivante est l'",
+     "coef": 70.13349914550781,
+     "E": 2.014158248901367,
+     "dp": 0.19751697778701782,
+     "C_R_mean": 0.09745872020721436,
+     "C_R_max": 1.2309989929199219,
+     "matched_feature": 352,
+     "C_M2": 0.16314315795898438,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Le printemps est suivi par l'",
+     "coef": 51.580875396728516,
+     "E": 1.7349910736083984,
+     "dp": 0.13942384719848633,
+     "C_R_mean": 0.0069866180419921875,
+     "C_R_max": 0.9674797058105469,
+     "matched_feature": 1454,
+     "C_M2": 0.01800537109375,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.8,
+    "median_E": 1.4048023223876953,
+    "median_dp": 0.1344534158706665,
+    "outcome_counts": {
+     "DISTINCT": 4,
+     "NOT_DISTINCT": 1,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-saison",
+   "node": "24_3772_11",
+   "layer": 24,
+   "feature": 3772,
+   "W": 1.836372971534729,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.025529861450195312,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "La saison qui vient après le printemps s'appelle l'",
+     "coef": 91.51399230957031,
+     "E": 0.144378662109375,
+     "dp": 0.046074628829956055,
+     "C_R_mean": 0.04400146007537842,
+     "C_R_max": 1.2100162506103516,
+     "matched_feature": 9342,
+     "C_M2": 1.17022705078125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "La saison après le printemps s'appelle l'",
+     "coef": 90.87544250488281,
+     "E": 0.12440681457519531,
+     "dp": 0.04678940773010254,
+     "C_R_mean": 0.04003322124481201,
+     "C_R_max": 1.1644878387451172,
+     "matched_feature": 10347,
+     "C_M2": -0.6156406402587891,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fait : la saison après le printemps est l'",
+     "coef": 92.44964599609375,
+     "E": 0.09790229797363281,
+     "dp": 0.0014404058456420898,
+     "C_R_mean": 0.09602200984954834,
+     "C_R_max": 1.2364120483398438,
+     "matched_feature": 4707,
+     "C_M2": -0.139556884765625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Après le printemps, la saison suivante est l'",
+     "coef": 96.16519165039062,
+     "E": -0.14939117431640625,
+     "dp": 0.04820972681045532,
+     "C_R_mean": 0.12259042263031006,
+     "C_R_max": 1.3205947875976562,
+     "matched_feature": 9342,
+     "C_M2": 1.232473373413086,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Le printemps est suivi par l'",
+     "coef": 90.49546813964844,
+     "E": -0.057453155517578125,
+     "dp": 0.03854501247406006,
+     "C_R_mean": 0.14465820789337158,
+     "C_R_max": 1.3370075225830078,
+     "matched_feature": 10347,
+     "C_M2": -0.6642112731933594,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.09790229797363281,
+    "median_dp": 0.046074628829956055,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 2,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-saison",
+   "node": "24_9342_11",
+   "layer": 24,
+   "feature": 9342,
+   "W": 1.2678920030593872,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.1653804779052734,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "La saison qui vient après le printemps s'appelle l'",
+     "coef": 88.43901062011719,
+     "E": 1.121847152709961,
+     "dp": 0.09529131650924683,
+     "C_R_mean": 0.03874337673187256,
+     "C_R_max": 1.1995658874511719,
+     "matched_feature": 3772,
+     "C_M2": 0.12500953674316406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "La saison après le printemps s'appelle l'",
+     "coef": 94.01104736328125,
+     "E": 1.1770744323730469,
+     "dp": 0.03205704689025879,
+     "C_R_mean": 0.05276811122894287,
+     "C_R_max": 1.252023696899414,
+     "matched_feature": 3772,
+     "C_M2": 0.14385986328125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Fait : la saison après le printemps est l'",
+     "coef": 104.37135314941406,
+     "E": 1.4315814971923828,
+     "dp": 0.045276738703250885,
+     "C_R_mean": 0.14772701263427734,
+     "C_R_max": 1.4762535095214844,
+     "matched_feature": 10347,
+     "C_M2": -0.5657501220703125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Après le printemps, la saison suivante est l'",
+     "coef": 99.13380432128906,
+     "E": 1.2815494537353516,
+     "dp": -0.032032310962677,
+     "C_R_mean": 0.13834106922149658,
+     "C_R_max": 1.4066638946533203,
+     "matched_feature": 3772,
+     "C_M2": -0.1371173858642578,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Le printemps est suivi par l'",
+     "coef": 94.80580139160156,
+     "E": 1.1414833068847656,
+     "dp": 0.01243370771408081,
+     "C_R_mean": 0.16759049892425537,
+     "C_R_max": 1.4331188201904297,
+     "matched_feature": 10347,
+     "C_M2": -0.6709423065185547,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 1.1770744323730469,
+    "median_dp": 0.03205704689025879,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-zh",
+   "node": "24_2394_8",
+   "layer": 24,
+   "feature": 2394,
+   "W": 6.663939476013184,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 2.5046157836914062,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "\"小\"这个词的反义词是\"",
+     "coef": 204.7393798828125,
+     "E": 2.260059356689453,
+     "dp": 0.18299520015716553,
+     "C_R_mean": 0.5177813768386841,
+     "C_R_max": 2.950115203857422,
+     "matched_feature": 15582,
+     "C_M2": -3.1885833740234375,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "\"小\"的相反词是\"",
+     "coef": 212.45138549804688,
+     "E": 1.8546943664550781,
+     "dp": 0.2906399369239807,
+     "C_R_mean": 0.6917898654937744,
+     "C_R_max": 3.2692089080810547,
+     "matched_feature": 15582,
+     "C_M2": -3.4780006408691406,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "请问\"小\"的反义词是\"",
+     "coef": 212.5637664794922,
+     "E": 2.475648880004883,
+     "dp": 0.30599021911621094,
+     "C_R_mean": 0.6337476968765259,
+     "C_R_max": 3.537088394165039,
+     "matched_feature": 15163,
+     "C_M2": -0.5204334259033203,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "词语\"小\"的反义词是\"",
+     "coef": 212.90562438964844,
+     "E": 2.5892372131347656,
+     "dp": 0.28368180990219116,
+     "C_R_mean": 0.5888216495513916,
+     "C_R_max": 3.273141860961914,
+     "matched_feature": 15163,
+     "C_M2": -0.7808246612548828,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "\"小\"的反义是\"",
+     "coef": 202.7793731689453,
+     "E": 2.481191635131836,
+     "dp": 0.2166650891304016,
+     "C_R_mean": 0.6537474393844604,
+     "C_R_max": 3.070833206176758,
+     "matched_feature": 15582,
+     "C_M2": -2.7956809997558594,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 2.475648880004883,
+    "median_dp": 0.28368180990219116,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 5,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-zh",
+   "node": "23_8488_8",
+   "layer": 23,
+   "feature": 8488,
+   "W": 2.5455822944641113,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.5967006683349609,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "\"小\"这个词的反义词是\"",
+     "coef": 49.388671875,
+     "E": -0.5100688934326172,
+     "dp": 0.01881861686706543,
+     "C_R_mean": -0.08411800861358643,
+     "C_R_max": 0.43141937255859375,
+     "matched_feature": 13630,
+     "C_M2": -0.25887298583984375,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "\"小\"的相反词是\"",
+     "coef": 49.67103576660156,
+     "E": -0.5375328063964844,
+     "dp": 0.02461087703704834,
+     "C_R_mean": -0.08834230899810791,
+     "C_R_max": 0.4536628723144531,
+     "matched_feature": 13630,
+     "C_M2": -0.26580047607421875,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "请问\"小\"的反义词是\"",
+     "coef": 43.470916748046875,
+     "E": -0.10826873779296875,
+     "dp": 0.058511435985565186,
+     "C_R_mean": -0.06147003173828125,
+     "C_R_max": 0.5449256896972656,
+     "matched_feature": 13630,
+     "C_M2": -0.3321857452392578,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "词语\"小\"的反义词是\"",
+     "coef": 47.420654296875,
+     "E": -0.3660736083984375,
+     "dp": 0.03438621759414673,
+     "C_R_mean": -0.06161224842071533,
+     "C_R_max": 0.4988136291503906,
+     "matched_feature": 13630,
+     "C_M2": -0.32952308654785156,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "\"小\"的反义是\"",
+     "coef": 53.888160705566406,
+     "E": -0.8286552429199219,
+     "dp": 0.01567697525024414,
+     "C_R_mean": -0.0824124813079834,
+     "C_R_max": 0.4920215606689453,
+     "matched_feature": 13630,
+     "C_M2": -0.28465843200683594,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.5100688934326172,
+    "median_dp": 0.02461087703704834,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 5,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-small-big-zh",
+   "node": "23_8683_8",
+   "layer": 23,
+   "feature": 8683,
+   "W": 2.401641845703125,
+   "own_verdict": "WEAKER",
+   "own_E": 0.9173412322998047,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "\"小\"这个词的反义词是\"",
+     "coef": 26.26282501220703,
+     "E": 0.9078235626220703,
+     "dp": 0.010982275009155273,
+     "C_R_mean": -0.05486702919006348,
+     "C_R_max": 0.189056396484375,
+     "matched_feature": 14753,
+     "C_M2": -0.15047836303710938,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "\"小\"的相反词是\"",
+     "coef": 22.5318603515625,
+     "E": 0.9386920928955078,
+     "dp": 0.014320194721221924,
+     "C_R_mean": -0.0537334680557251,
+     "C_R_max": 0.2031097412109375,
+     "matched_feature": 14753,
+     "C_M2": -0.1070098876953125,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "请问\"小\"的反义词是\"",
+     "coef": 20.545345306396484,
+     "E": 0.845062255859375,
+     "dp": 0.020182907581329346,
+     "C_R_mean": -0.03913676738739014,
+     "C_R_max": 0.21744537353515625,
+     "matched_feature": 11251,
+     "C_M2": -0.22728538513183594,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "词语\"小\"的反义词是\"",
+     "coef": 25.886009216308594,
+     "E": 1.0159587860107422,
+     "dp": 0.013929367065429688,
+     "C_R_mean": -0.04474306106567383,
+     "C_R_max": 0.22713279724121094,
+     "matched_feature": 12600,
+     "C_M2": -0.12878036499023438,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "\"小\"的反义是\"",
+     "coef": 24.86357879638672,
+     "E": 0.9658241271972656,
+     "dp": 0.008421123027801514,
+     "C_R_mean": -0.05612456798553467,
+     "C_R_max": 0.23294448852539062,
+     "matched_feature": 12600,
+     "C_M2": -0.22745513916015625,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 0.9386920928955078,
+    "median_dp": 0.013929367065429688,
+    "outcome_counts": {
+     "DISTINCT": 5,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-tom-brady",
+   "node": "23_8855_6",
+   "layer": 23,
+   "feature": 8855,
+   "W": 2.4239494800567627,
+   "own_verdict": "WEAKER",
+   "own_E": 1.1142616271972656,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: Tom Brady plays the sport of",
+     "coef": 36.30451965332031,
+     "E": 1.0171127319335938,
+     "dp": 0.039991557598114014,
+     "C_R_mean": -0.08262157440185547,
+     "C_R_max": 0.5388374328613281,
+     "matched_feature": 11878,
+     "C_M2": 0.18285369873046875,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "The sport that Tom Brady plays is",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Tom Brady is famous for playing the sport of",
+     "coef": 35.768882751464844,
+     "E": 1.0729026794433594,
+     "dp": 0.03562265634536743,
+     "C_R_mean": -0.09537553787231445,
+     "C_R_max": 0.5454292297363281,
+     "matched_feature": 11878,
+     "C_M2": 0.1419525146484375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Everyone knows that Tom Brady plays the sport of",
+     "coef": 34.638832092285156,
+     "E": 0.9739532470703125,
+     "dp": 0.02822291851043701,
+     "C_R_mean": -0.09557032585144043,
+     "C_R_max": 0.5207672119140625,
+     "matched_feature": 11878,
+     "C_M2": 0.15608978271484375,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Q: Which sport does Tom Brady play? A:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 1.0,
+    "median_E": 1.0171127319335938,
+    "median_dp": 0.03562265634536743,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-tom-brady",
+   "node": "24_13277_6",
+   "layer": 24,
+   "feature": 13277,
+   "W": 1.677106499671936,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 1.3328285217285156,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: Tom Brady plays the sport of",
+     "coef": 130.98681640625,
+     "E": 1.2486648559570312,
+     "dp": 0.055658042430877686,
+     "C_R_mean": 0.13137054443359375,
+     "C_R_max": 2.2654571533203125,
+     "matched_feature": 7753,
+     "C_M2": -0.4695320129394531,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The sport that Tom Brady plays is",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Tom Brady is famous for playing the sport of",
+     "coef": 136.87840270996094,
+     "E": 1.2365150451660156,
+     "dp": 0.05504244565963745,
+     "C_R_mean": 0.1396324634552002,
+     "C_R_max": 2.4254302978515625,
+     "matched_feature": 7753,
+     "C_M2": -0.7006492614746094,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Everyone knows that Tom Brady plays the sport of",
+     "coef": 136.24681091308594,
+     "E": 1.1887664794921875,
+     "dp": 0.04454183578491211,
+     "C_R_mean": 0.09656620025634766,
+     "C_R_max": 2.1920433044433594,
+     "matched_feature": 7753,
+     "C_M2": -0.7634353637695312,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Q: Which sport does Tom Brady play? A:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 1.2365150451660156,
+    "median_dp": 0.05504244565963745,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-tom-brady",
+   "node": "19_15763_6",
+   "layer": 19,
+   "feature": 15763,
+   "W": 1.5314457416534424,
+   "own_verdict": "NOT_DISTINCT",
+   "own_E": 0.09331512451171875,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "Fact: Tom Brady plays the sport of",
+     "coef": 21.420543670654297,
+     "E": 0.14995956420898438,
+     "dp": 0.004885971546173096,
+     "C_R_mean": 0.00760197639465332,
+     "C_R_max": 0.6573982238769531,
+     "matched_feature": 13506,
+     "C_M2": 0.3485908508300781,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "The sport that Tom Brady plays is",
+     "outcome": "INVALID"
+    },
+    {
+     "prompt": "Tom Brady is famous for playing the sport of",
+     "coef": 20.511512756347656,
+     "E": 0.21981048583984375,
+     "dp": 0.00221860408782959,
+     "C_R_mean": -0.012294292449951172,
+     "C_R_max": 0.46964263916015625,
+     "matched_feature": 9053,
+     "C_M2": 0.2649078369140625,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Everyone knows that Tom Brady plays the sport of",
+     "coef": 20.803359985351562,
+     "E": 0.177642822265625,
+     "dp": 0.001978635787963867,
+     "C_R_mean": 0.011270761489868164,
+     "C_R_max": 0.5984840393066406,
+     "matched_feature": 5566,
+     "C_M2": 0.12220001220703125,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Q: Which sport does Tom Brady play? A:",
+     "outcome": "INVALID"
+    }
+   ],
+   "summary": {
+    "n_valid": 3,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": 0.177642822265625,
+    "median_dp": 0.00221860408782959,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-verano",
+   "node": "20_9338_9",
+   "layer": 20,
+   "feature": 9338,
+   "W": 3.858598232269287,
+   "own_verdict": "WEAKER",
+   "own_E": 1.1712512969970703,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "La estación que viene después de la primavera se llama el",
+     "coef": 66.42922973632812,
+     "E": 0.9417400360107422,
+     "dp": 0.09343242645263672,
+     "C_R_mean": 0.20917975902557373,
+     "C_R_max": 1.231546401977539,
+     "matched_feature": 4729,
+     "C_M2": -0.3504009246826172,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Hecho: la estación después de la primavera se llama el",
+     "coef": 13.254314422607422,
+     "E": 0.6555824279785156,
+     "dp": 0.03487522155046463,
+     "C_R_mean": 0.005019187927246094,
+     "C_R_max": 0.2597160339355469,
+     "matched_feature": 3960,
+     "C_M2": 0.09589004516601562,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Después de la primavera llega el",
+     "coef": 53.32175827026367,
+     "E": 1.0172271728515625,
+     "dp": 0.07284373044967651,
+     "C_R_mean": 0.13771164417266846,
+     "C_R_max": 0.9912204742431641,
+     "matched_feature": 4729,
+     "C_M2": -0.37209129333496094,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "La estación siguiente a la primavera es el",
+     "coef": 58.63054275512695,
+     "E": 1.0147228240966797,
+     "dp": 0.05530434846878052,
+     "C_R_mean": 0.16701924800872803,
+     "C_R_max": 1.0328693389892578,
+     "matched_feature": 4729,
+     "C_M2": -0.13747024536132812,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "A la primavera le sigue el",
+     "coef": 46.4741325378418,
+     "E": 0.9010372161865234,
+     "dp": 0.06335657835006714,
+     "C_R_mean": 0.14686739444732666,
+     "C_R_max": 1.0261821746826172,
+     "matched_feature": 4729,
+     "C_M2": -0.5205059051513672,
+     "outcome": "NOT_DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.4,
+    "median_E": 0.9417400360107422,
+    "median_dp": 0.06335657835006714,
+    "outcome_counts": {
+     "DISTINCT": 2,
+     "NOT_DISTINCT": 3,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": false
+   }
+  },
+  {
+   "graph": "gemma-verano",
+   "node": "24_13490_9",
+   "layer": 24,
+   "feature": 13490,
+   "W": 1.6225671768188477,
+   "own_verdict": "WRONG_SIGN",
+   "own_E": -0.12907028198242188,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "La estación que viene después de la primavera se llama el",
+     "coef": 89.23986053466797,
+     "E": -0.07977676391601562,
+     "dp": 0.04324376583099365,
+     "C_R_mean": 0.16542506217956543,
+     "C_R_max": 1.4729843139648438,
+     "matched_feature": 3018,
+     "C_M2": 0.6108798980712891,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Hecho: la estación después de la primavera se llama el",
+     "coef": 95.1116714477539,
+     "E": -0.07052421569824219,
+     "dp": 0.01484401524066925,
+     "C_R_mean": 0.23992037773132324,
+     "C_R_max": 1.8166141510009766,
+     "matched_feature": 15008,
+     "C_M2": 0.31910133361816406,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "Después de la primavera llega el",
+     "coef": 90.43477630615234,
+     "E": -0.10454750061035156,
+     "dp": 0.016775548458099365,
+     "C_R_mean": 0.24765586853027344,
+     "C_R_max": 1.5949287414550781,
+     "matched_feature": 13277,
+     "C_M2": -0.46756553649902344,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "La estación siguiente a la primavera es el",
+     "coef": 87.47063446044922,
+     "E": -0.09209823608398438,
+     "dp": 0.01431959867477417,
+     "C_R_mean": 0.21861469745635986,
+     "C_R_max": 1.4371623992919922,
+     "matched_feature": 13277,
+     "C_M2": -0.5226154327392578,
+     "outcome": "WRONG_SIGN"
+    },
+    {
+     "prompt": "A la primavera le sigue el",
+     "coef": 88.08879852294922,
+     "E": -0.04389190673828125,
+     "dp": 0.018685996532440186,
+     "C_R_mean": 0.295876145362854,
+     "C_R_max": 1.7181243896484375,
+     "matched_feature": 7980,
+     "C_M2": -0.43144989013671875,
+     "outcome": "WRONG_SIGN"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.0,
+    "median_E": -0.07977676391601562,
+    "median_dp": 0.016775548458099365,
+    "outcome_counts": {
+     "DISTINCT": 0,
+     "NOT_DISTINCT": 0,
+     "WRONG_SIGN": 5,
+     "INACTIVE": 0
+    },
+    "own_category": "not distinct",
+    "majority": "not distinct",
+    "tie": false,
+    "agrees": true
+   }
+  },
+  {
+   "graph": "gemma-verano",
+   "node": "25_2591_9",
+   "layer": 25,
+   "feature": 2591,
+   "W": 1.5586384534835815,
+   "own_verdict": "HOLDS",
+   "own_E": 1.3151473999023438,
+   "status": "TESTED",
+   "paraphrases": [
+    {
+     "prompt": "La estación que viene después de la primavera se llama el",
+     "coef": 61.097801208496094,
+     "E": 1.3766403198242188,
+     "dp": 0.10021483898162842,
+     "C_R_mean": 0.12479758262634277,
+     "C_R_max": 1.2953300476074219,
+     "matched_feature": 13416,
+     "C_M2": 0.2894935607910156,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "Hecho: la estación después de la primavera se llama el",
+     "coef": 49.99810791015625,
+     "E": 1.1403980255126953,
+     "dp": 0.04648301750421524,
+     "C_R_mean": 0.07911300659179688,
+     "C_R_max": 1.0665149688720703,
+     "matched_feature": 9334,
+     "C_M2": 0.9766445159912109,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "Después de la primavera llega el",
+     "coef": 71.99153900146484,
+     "E": 1.5249595642089844,
+     "dp": 0.11548811197280884,
+     "C_R_mean": 0.18503940105438232,
+     "C_R_max": 1.5595245361328125,
+     "matched_feature": 11867,
+     "C_M2": 0.5998058319091797,
+     "outcome": "NOT_DISTINCT"
+    },
+    {
+     "prompt": "La estación siguiente a la primavera es el",
+     "coef": 61.852577209472656,
+     "E": 1.2970142364501953,
+     "dp": 0.05387675762176514,
+     "C_R_mean": 0.12875914573669434,
+     "C_R_max": 1.2653484344482422,
+     "matched_feature": 7264,
+     "C_M2": 0.8219585418701172,
+     "outcome": "DISTINCT"
+    },
+    {
+     "prompt": "A la primavera le sigue el",
+     "coef": 67.99111938476562,
+     "E": 1.5573806762695312,
+     "dp": 0.09564816951751709,
+     "C_R_mean": 0.16886985301971436,
+     "C_R_max": 1.5013446807861328,
+     "matched_feature": 9334,
+     "C_M2": 1.2380046844482422,
+     "outcome": "DISTINCT"
+    }
+   ],
+   "summary": {
+    "n_valid": 5,
+    "active_frac": 1.0,
+    "distinct_frac": 0.6,
+    "median_E": 1.3766403198242188,
+    "median_dp": 0.09564816951751709,
+    "outcome_counts": {
+     "DISTINCT": 3,
+     "NOT_DISTINCT": 2,
+     "WRONG_SIGN": 0,
+     "INACTIVE": 0
+    },
+    "own_category": "distinct",
+    "majority": "distinct",
+    "tie": false,
+    "agrees": true
+   }
+  }
+ ],
+ "overall": {
+  "n_edges": 75,
+  "n_edges_tested": 73,
+  "n_position_not_transferable": 2,
+  "n_edges_compared": 73,
+  "agree": 67,
+  "agreement": 0.9178082191780822,
+  "outcome_counts": {
+   "DISTINCT": 136,
+   "NOT_DISTINCT": 132,
+   "WRONG_SIGN": 51,
+   "INACTIVE": 5
+  },
+  "disagreeing": [
+   "gemma-addition 24_2998_6",
+   "gemma-cat-hat 22_10393_6",
+   "gemma-english 23_2040_6",
+   "gemma-keys-cabinet 0_9026_5",
+   "gemma-michael-jordan-es 21_4818_6",
+   "gemma-verano 20_9338_9"
+  ]
+ }
+}

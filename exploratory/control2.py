@@ -97,7 +97,8 @@ def mk(L):
         return out
 
     def resid(m, args, out):
-        st["r"][L] = out[0][0, st["pos"]].detach()
+        h = out[0] if isinstance(out, tuple) else out
+        st["r"][L] = h[0, st["pos"]].detach()
 
     lay = model.model.layers[L]
     lay.pre_feedforward_layernorm.register_forward_pre_hook(pre)
