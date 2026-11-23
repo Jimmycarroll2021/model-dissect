@@ -4,7 +4,7 @@
 
 Source: https://github.com/jingyaogong/minimind/blob/233d00fa068ec2b8c0d4f07b703934d6391a5a73/model/model_minimind.py
 
-Its Apache License 2.0 is reproduced at `oracle/vendor/LICENSE`, retrieved from the same pinned revision. Upstream tree inspection listed no NOTICE file. This license applies to that third-party source; it is not a newly chosen blanket license for project-authored code.
+Its Apache License 2.0 is reproduced at `oracle/vendor/LICENSE`, retrieved from the same pinned revision. Upstream tree inspection listed no NOTICE file. This license applies to that third-party source; project-authored code is under the MIT License in `LICENSE`.
 
 Transformers/PyTorch are external dependencies. Candidate reconstructions are source-assisted and their ancestry/assumptions are disclosed in the protocols. Model weights and tokenizers are obtained separately from the pinned upstream model repositories under their respective terms.
 

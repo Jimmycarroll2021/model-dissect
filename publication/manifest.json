@@ -10,13 +10,13 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 1218,
-      "sha256": "ed63ec379e1b4ee17876fe08fc3e760d1b18594e8229ee592409da579c4fcdf0"
+      "bytes": 1211,
+      "sha256": "32b1b2dec43e3f7ab93455359694ac1f5983fb3a07cf1c2798a8fac424140e54"
     },
     {
       "path": "README.md",
-      "bytes": 5272,
-      "sha256": "91d80290a34f92d21e7c78a4db4fee9797eef584bb47be3b421bc443f3168d10"
+      "bytes": 5567,
+      "sha256": "6c5c0f5e7459b0d5c766792485ce46065dd71c2a6e33ada895cbea0a6eab373a"
     },
     {
       "path": "analysis/candidate-manifest-v2.json",

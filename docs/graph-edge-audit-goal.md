@@ -49,7 +49,7 @@ Corrected result for layer-20 feature 15589, Austin versus Sacramento (`results/
 
 No complete circuits, no "Texas neuron", no claims beyond the tested prompts, model and dictionary.
 
-## Open decisions (Jim)
+## Open decisions
 
-- Licence for the repository and whether to publish.
+- Decided 2026-11-24: MIT licence, repository public.
 - Venue: forum post, arXiv, or the public repository alone.

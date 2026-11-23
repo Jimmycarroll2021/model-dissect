@@ -11,6 +11,8 @@ Source-assisted transformer dissection: editable PyTorch reconstructions, tensor
 | GPT-2 | Full-prefill parity, exhaustive atlas, actual attention trace, matched native/candidate head interventions and independent repeat | Layer 8/head 8 magnitude claim is qualified **REFUTED**; this does not mean the head is useless. CPU FP32 eager, fixed fixtures; no cache/left-padding/general-input claim. [Result](docs/gpt2-transfer-result.md) |
 | Feature attribution | One public Gemma graph, frozen claim/corpus/protocol and independent design review | **PREREGISTERED_DESIGN_EXECUTION_BLOCKED**. No causal validation or circuit-tracer adapter implemented. [Selected claim](specs/004-feature-attribution-validation/selected-claim-v1.md) |
 
+**Latest result:** [causal audit of public Gemma-2-2b attribution graphs](docs/graph-edge-audit-result.md): 75 top edges from 25 featured Neuronpedia graphs tested by ablation in the original model. Exploratory lane; see its limits section.
+
 ## What is included
 
 - `src/minimind_re/`: reconstruction, atlas, diagnostics, guards and scientific metrics; `transfer/` targets Pythia, `transfer3/` targets GPT-2.
@@ -50,4 +52,4 @@ The generic CLI `report` describes the early MiniMind baseline only. Read the re
 
 ## Provenance and licensing
 
-No repository-wide license has been selected for project-authored material. Do not infer a blanket open-source grant from this upload. Third-party MiniMind code remains under its bundled Apache-2.0 license; see [NOTICE](NOTICE.md). Checkpoint licenses are separate, and checkpoints are not redistributed here.
+Project-authored material is under the [MIT License](LICENSE). Third-party MiniMind code remains under its bundled Apache-2.0 license; see [NOTICE](NOTICE.md). Attribution-graph files under `exploratory/graphs*/` were downloaded from Neuronpedia and remain under their source's terms. Checkpoint licenses are separate, and checkpoints are not redistributed here.
