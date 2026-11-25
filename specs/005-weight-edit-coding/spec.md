@@ -25,7 +25,7 @@ The experimenter measures how well each candidate small model writes code today,
 
 **Acceptance Scenarios**:
 
-1. **Given** the candidate list and the practice problems, **When** the baseline runs twice, **Then** both runs give the same pass rates under greedy decoding and the sampled rates agree within their stated interval.
+1. **Given** the candidate list and the practice problems, **When** the baseline runs twice, **Then** both runs give identical results (decoding is greedy only).
 2. **Given** baseline outputs, **When** failures are sorted, **Then** every failed answer has exactly one failure type (no code produced, syntax error, runtime error, wrong answer, timeout, cut at token limit, repetition loop).
 3. **Given** the table, **When** the selection rule is applied, **Then** exactly one model is chosen, or the result is "no candidate qualifies" and the feature stops there with that reported.
 
@@ -93,7 +93,7 @@ Repeat the run at other pass budgets and, if the first model's gain came from fi
 - **FR-002**: Candidates MUST be the models already mapped in this repository (MiniMind, Pythia-14m, GPT-2). A model that is not mapped here may be added only as a fallback, after the baseline shows none of the three qualifies, and only together with the mapping work for it.
 - **FR-002a**: Because these models are small, the baseline MUST measure code ability at two levels: whole problems passed (function passes its tests) and code completion (share of held-out code tokens or lines predicted correctly). The level used for the result is the hardest one on which the chosen model meets the selection rule.
 - **FR-002b**: Each edit MUST cite the map entry (tensor, head, component and the evidence file in this repository) that motivated it.
-- **FR-003**: The selection rule MUST be: the smallest candidate whose practice pass rate is between 5% and 60%; ties broken by the larger share of failures of a single type.
+- **FR-003**: The selection rule MUST be: the candidate with the fewest parameters whose practice score, at the hardest level where any candidate qualifies, is between 5% and 60%.
 - **FR-004**: Practice problems MUST come only from training or validation splits; held-out problems MUST come only from test splits and MUST never be shown to the editor or used to choose anything.
 - **FR-005**: Generated code MUST run only in a sandbox with no network, a time limit and a memory limit.
 - **FR-006**: The editor MUST act only through the harness: a persistent compute session over the weights (no running the model, no gradients, no optimisers, no iterative fitting to a loss), and a forward-pass tool with a fixed budget.
@@ -101,7 +101,7 @@ Repeat the run at other pass budgets and, if the first model's gain came from fi
 - **FR-008**: One forward pass MUST be either a generation over at most 512 practice problems (original, edited or both, paired) or a teacher-forced read of at most 1,024 texts.
 - **FR-009**: Every turn, code run, pass request and refusal MUST be logged, and the editor MUST explain each step in plain English before its code.
 - **FR-010**: The final edit MUST be stored as an exact difference from the public weights, with hashes, and MUST rebuild bit for bit.
-- **FR-011**: Held-out evaluation MUST run once per frozen edit, for edited and unedited weights with identical settings, with several samples per problem, and be repeated once for identical numbers.
+- **FR-011**: Held-out evaluation MUST run once per frozen edit, for edited and unedited weights with identical settings (greedy decoding), and be repeated once for identical numbers.
 - **FR-012**: The evaluation MUST include a size-matched random edit to the same tensors and one non-coding check for side effects.
 - **FR-013**: Every run started MUST be reported, including failed and abandoned ones.
 - **FR-014**: The first run MUST use one budget (25 passes); other budgets belong to Story 4.

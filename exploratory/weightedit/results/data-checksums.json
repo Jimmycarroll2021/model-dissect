@@ -1,0 +1,25 @@
+{
+ "raw": {
+  "mbpp.jsonl": "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f",
+  "HumanEval.jsonl.gz": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+  "gsm8k_train.jsonl": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465"
+ },
+ "splits": {
+  "practice/practice_mbpp.jsonl": {
+   "rows": 464,
+   "sha256": "1e16e40bc931de4fe802f807889b7fb483370405bfb8c2d8b4aa5e6cc64e9bb8"
+  },
+  "practice/noncode_gsm8k.jsonl": {
+   "rows": 300,
+   "sha256": "2989f94ab0b2fb0c7f95891a72886970765be7f1761d91e4b953fa37b3cb4d87"
+  },
+  "heldout/heldout_mbpp.jsonl": {
+   "rows": 500,
+   "sha256": "d1bfd4c7abe32753f20a0fb524240b5c33583ce0f4dbb6274cc305c266bf91a5"
+  },
+  "heldout/heldout_humaneval.jsonl": {
+   "rows": 164,
+   "sha256": "621ff099e7d6a9b630619acd3568aef441dec51a8c84f881a9dd1f2d2ed15914"
+  }
+ }
+}

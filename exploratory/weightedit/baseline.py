@@ -6,6 +6,7 @@ import common as C
 
 out, n = sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else None
 practice, noncode = C.load_practice()[:n], C.load_noncode()[:n]
+C.sandbox_selfcheck()
 res = {}
 for name in C.MODELS:
     m = C.load(name)
@@ -16,7 +17,7 @@ for name in C.MODELS:
         A.append(dict(task_id=p["task_id"], outcome=C.classify(comp, hit, status, err), completion=comp))
         text, k = C.mbpp_code_text(p)
         s = C.score(m, text, k)
-        s.update(task_id=p["task_id"], chars=len(text) - k)
+        s.update(task_id=p["task_id"])
         B.append(s)
     N = [C.score(m, q["text"]) for q in noncode]
     sc = [b for b in B if b["n"]]
