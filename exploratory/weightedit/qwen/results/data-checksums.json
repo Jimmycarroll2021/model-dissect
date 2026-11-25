@@ -1,0 +1,10 @@
+{
+ "practice/maths_gsm8k.jsonl": {
+  "rows": 300,
+  "sha256": "8183c9434a880cf7e3a7b3ec5a6815f24059c66088c72dbee040801db5c93eda"
+ },
+ "heldout/heldout_maths_gsm8k.jsonl": {
+  "rows": 300,
+  "sha256": "3abeb5b90131dc5e32fd8d30740a3a27a3d276414629050353802c02d0ac9e44"
+ }
+}
