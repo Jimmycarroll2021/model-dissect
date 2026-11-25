@@ -2,6 +2,8 @@
 
 Frozen 2026-11-26 with `exploratory/weightedit/qwen/{qharness.py,qharness_checks.py,qevaluate.py}`.
 
+**Amended 2026-11-26, before the first forward pass of the edit run.** The read pass can also save the per-head values that go into each attention output projection (`attn_z`), as the spec 005 harness did. Nothing else changed. Before this amendment the editor had re-judged the baseline's saved replies in the sandbox (no model pass): `runs/qwen-p25/kernel/k01` to `k03`.
+
 **Model and level.** Qwen3.5-0.8B (text model), whole problems, prompts and judging as in `baseline-protocol.md`.
 
 **Editor.** The Claude session driving this repository. It may read the weights, the practice problems (MBPP task_id 511 to 974), the practice maths questions (GSM8K train 1 to 300) and the baseline's replies to them. It may not read anything under the held-out directory.

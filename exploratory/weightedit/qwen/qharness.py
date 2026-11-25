@@ -175,7 +175,7 @@ def score_pass(items, which="both", final_check=False):
 
 def read_pass(texts, keys, which="original", reply_only=True):
     """Teacher-forced run of one set of weights on at most 256 texts, each dict(user=..., reply=...), cut to 1,024 tokens.
-    keys: any of resid_pre{L}, mlp_in{L}, mlp_act{L}, attn_out{L}, mlp_out{L}, resid_final (L = 0..23). Saved as float16
+    keys: any of resid_pre{L}, mlp_in{L}, mlp_act{L}, attn_z{L}, attn_out{L}, mlp_out{L}, resid_final (L = 0..23). Saved as float16
     for reply positions (or all positions) to RUN/reads/fwd_<k>.npz with token, target, pred, logp_target. Costs one pass."""
     s = _spend("read", len(texts), READ_MAX)
     m = use(current_edit() if which == "edited" else None)
@@ -195,6 +195,8 @@ def read_pass(texts, keys, which="original", reply_only=True):
             hooks.append(lay.mlp.down_proj.register_forward_pre_hook(lambda _, a, key=key: cap.__setitem__(key, a[0][0])))
         elif kind == "mlp_out":
             hooks.append(lay.mlp.register_forward_hook(lambda _, a, o, key=key: cap.__setitem__(key, o[0])))
+        elif kind == "attn_z":  # per-head values going into the attention output projection
+            hooks.append((attn.out_proj if hasattr(attn, "out_proj") else attn.o_proj).register_forward_pre_hook(lambda _, a, key=key: cap.__setitem__(key, a[0][0])))
         elif kind == "attn_out":
             hooks.append(attn.register_forward_hook(lambda _, a, o, key=key: cap.__setitem__(key, (o[0] if isinstance(o, tuple) else o)[0])))
         else:

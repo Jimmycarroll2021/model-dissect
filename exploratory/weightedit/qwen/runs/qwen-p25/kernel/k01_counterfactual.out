@@ -1,0 +1,12 @@
+('cut_at_limit', 'fail') 64
+('cut_at_limit', 'pass') 6
+('no_code', 'fail') 3
+('pass', 'pass') 40
+('repetition_loop', 'fail') 16
+('repetition_loop', 'pass') 2
+('runtime_error', 'fail') 73
+('runtime_error', 'pass') 1
+('syntax_error', 'fail') 1
+('wrong_answer', 'fail') 80
+('wrong_answer', 'pass') 4
+pass before 40 after cut 53 of 290
