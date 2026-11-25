@@ -1,0 +1,35 @@
+    def forward(self, x):
+        output = self._norm(x.float())
+        # Llama does x.to(float16) * w whilst Qwen3_5 is (x * w).to(float16)
+        # See https://github.com/huggingface/transformers/pull/29402
+        output = output * (1.0 + self.weight.float())
+        return output.type_as(x)
+
+name positions 747 mispredicted 75 | first-token positions 256 mispredicted 37
+mean logp target: right-name answers -0.07, wrong-name answers -0.89
+top heads by mean push toward (right name token - predicted token) at mispredicted positions
+ L  h  miss:right-pred  hit:right-mean  miss:right-mean  frac>0
+19  1     0.39     0.92     1.03   0.61
+19  5     0.28     1.37     0.78   0.71
+23  5     0.24     0.59     0.41   0.57
+23  1     0.17     0.99     1.05   0.56
+23  7     0.16     0.84     0.71   0.57
+19  7     0.14     0.50     0.43   0.68
+22  8     0.13     0.14     0.13   0.56
+15  7     0.12     0.56     0.36   0.69
+20 10     0.10     0.03     0.14   0.61
+15  0     0.08     0.22     0.21   0.64
+19  3     0.07     1.19     0.96   0.55
+ 0  8     0.05    -0.06    -0.08   0.69
+15  2     0.05     0.23     0.28   0.57
+18 13     0.05     0.01     0.04   0.72
+bottom
+23  3    -0.29    -1.52    -1.21   0.32
+23  2    -0.17     0.72     0.64   0.36
+23  6    -0.15     1.47     1.30   0.32
+19  2    -0.13     0.93     0.82   0.48
+16 13    -0.10     0.20     0.20   0.37
+19  4    -0.10    -0.59    -0.53   0.35
+15  1    -0.08     0.28     0.25   0.35
+18 10    -0.08     0.17     0.19   0.52
+mean logit gap (right - predicted) at mispredicted positions: -1.46

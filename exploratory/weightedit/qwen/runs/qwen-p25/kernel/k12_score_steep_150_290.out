@@ -1,0 +1,6 @@
+edit: ['model.layers.14.mlp.down_proj.weight', 'model.layers.14.mlp.gate_proj.weight', 'model.layers.14.mlp.up_proj.weight', 'model.layers.23.mlp.down_proj.weight', 'model.layers.23.mlp.gate_proj.weight', 'model.layers.23.mlp.up_proj.weight']
+code  baseline: {'runtime_error': 33, 'cut_at_limit': 32, 'pass': 23, 'repetition_loop': 11, 'wrong_answer': 40, 'no_code': 1} wrong names 46
+code  edited:   {'runtime_error': 27, 'pass': 38, 'cut_at_limit': 30, 'wrong_answer': 41, 'no_code': 1, 'repetition_loop': 3} wrong names 17
+gained 15 lost 0 of 140 | hit limit 45 -> 35
+maths baseline 38 edited 36 of 60
+```python

@@ -1,0 +1,11 @@
+with instruction: {'wrong_answer': 88, 'runtime_error': 67, 'pass': 37, 'syntax_error': 2, 'no_code': 1, 'repetition_loop': 2, 'cut_at_limit': 3} | hit limit 3
+baseline same 200: {'cut_at_limit': 49, 'wrong_answer': 59, 'runtime_error': 52, 'pass': 27, 'no_code': 2, 'repetition_loop': 10, 'syntax_error': 1}
+mean reply chars 237.835
+def count_element_freq(tup):
+    count = {}
+    for item in tup:
+        if isinstance(item, tuple):
+            count[item] = count.get(item, 0) + 1
+        else:
+            count[item] = count.get(item, 0) + 1
+    return count

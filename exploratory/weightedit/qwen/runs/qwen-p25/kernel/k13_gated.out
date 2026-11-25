@@ -1,0 +1,5 @@
+zone tokens 1126 of 39350 | detector: zone p10 15.98 median 19.47; elsewhere p99.5 9.04 max 13.45 | act in zone mean 6.09 (>1: 0.98); elsewhere mean -0.003 (>1: 0.0000)
+scale 24.0: name positions mispredicted: 75 -> 731 of 747 (fixed 0, broken 656) | logp right name -0.317 -> -9.823
+zone tokens 1126 of 39350 | detector: zone p10 15.98 median 19.47; elsewhere p99.5 9.04 max 13.45 | act in zone mean 6.09 (>1: 0.98); elsewhere mean -0.003 (>1: 0.0000)
+zone |d| 0.46, scaled 1.84
+scale 4.0: name positions mispredicted: 75 -> 18 of 747 (fixed 58, broken 1) | logp right name -0.317 -> -0.148

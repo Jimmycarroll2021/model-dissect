@@ -1,0 +1,8 @@
+scale 2: name tokens wrong 42 -> 21 of 373 (broken 2) | '(' after the name wrong 128 -> 128 of 128
+   own text, open_paren: wrong 0 -> 7 of 136
+   own text, after_paren: wrong 0 -> 1 of 136
+   own text, other: wrong 114 -> 152 of 18840
+scale 3: name tokens wrong 42 -> 17 of 373 (broken 2) | '(' after the name wrong 128 -> 126 of 128
+   own text, open_paren: wrong 0 -> 8 of 136
+   own text, after_paren: wrong 0 -> 1 of 136
+   own text, other: wrong 114 -> 170 of 18840

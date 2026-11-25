@@ -1,0 +1,24 @@
+edit: ['model.layers.14.mlp.down_proj.weight', 'model.layers.14.mlp.gate_proj.weight', 'model.layers.14.mlp.up_proj.weight']
+code  baseline: {'cut_at_limit': 38, 'wrong_answer': 44, 'runtime_error': 41, 'pass': 17, 'no_code': 2, 'repetition_loop': 7, 'syntax_error': 1} wrong names 47
+code  edited:   {'cut_at_limit': 34, 'syntax_error': 14, 'wrong_answer': 46, 'pass': 24, 'runtime_error': 23, 'no_code': 2, 'repetition_loop': 7} wrong names 13
+gained 12 lost 5 of 150 | hit limit 44 -> 44
+maths baseline 31 edited 30 of 50
+```python
+def count_element_freq:
+    """
+    Count the frequency of each element in a mixed nested tuple.
+    
+    The function iterates through the tuple, collecting elements that are
+    not already in the result dictionary.
+    """
+    result = {}
+    for item in tuple:
+        if item not in result:
+            result[item] = 0
+        result[item] += 1
+    return result
+
+
+def count_element_freq:
+    assert count_element_freq((5, 6, (5, 6), 7, (8, 9), 9)) == {5: 2, 6: 2, 7: 1, 8: 1, 9: 2}
+```

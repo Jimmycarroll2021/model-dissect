@@ -1,0 +1,6 @@
+fit half: test-start n 107 p10 27.30 median 29.65 | elsewhere p99.9 23.68 max 30.13 | fence-close positions median 18.63 max 24.10
+check half: test-start n 120 p10 28.17 median 29.74 | elsewhere p99.9 24.01 max 28.85 | fence-close positions median 18.62 max 22.04
+threshold 25.49: fires on 0.91 of test-starts; on 10 other positions of 80840 (of which fence-close 0)
+other positions it fires on, by target: [('def', 8), ('   ', 1), ('if', 1)]
+at test-starts: starter logit minus closing-fence logit: median 7.1 p90 9.3; lift per unit written 11.50; mean final-residual norm 9.4
+neuron 1998; writes 0.9 units (lift 10.0) when act = 5.23

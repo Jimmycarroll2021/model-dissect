@@ -1,0 +1,6 @@
+def          n    272 act mean   5.14 p10   4.38 p90   6.07
+name         n    582 act mean   6.14 p10   3.06 p90   8.60
+name_last    n    272 act mean   6.95 p10   5.41 p90   8.33
+open_paren   n    272 act mean  -0.08 p10  -0.22 p90  -0.01
+after_paren  n    272 act mean  -0.01 p10  -0.04 p90  -0.00
+other        n  37680 act mean  -0.00 p10  -0.00 p90  -0.00

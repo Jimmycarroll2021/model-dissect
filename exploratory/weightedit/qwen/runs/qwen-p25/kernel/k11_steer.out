@@ -1,0 +1,5 @@
+layer 14 neuron 248 scale 8.0: act mean 3.99 sd 1.02; added norm 0.72
+name positions mispredicted: 75 -> 44 of 747 (fixed 33, broken 2) | logp right name -0.317 -> -0.189
+layer 14 neuron 248 scale 24.0: act mean 3.99 sd 1.02; added norm 2.15
+name positions mispredicted: 75 -> 24 of 747 (fixed 54, broken 3) | logp right name -0.317 -> -0.162
+layer 14 neuron 248 scale 16.0: act mean 3.99 sd 1.02; added norm 1.43

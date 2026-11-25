@@ -1,0 +1,4 @@
+layer 14 neuron 248: fires (>0.5) on 1 of 62614 maths reply tokens in 1 of 200 replies; max act 0.86; mean |act| 0.0042
+   tokens where it fires: [('Fabric', 1)] | targets: [(' Left', 1)]
+layer 23 neuron 1998: fires (>0.5) on 0 of 62614 maths reply tokens in 0 of 200 replies; max act -0.00; mean |act| 0.0000
+   tokens where it fires: [] | targets: []

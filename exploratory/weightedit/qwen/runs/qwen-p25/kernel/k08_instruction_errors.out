@@ -1,0 +1,2 @@
+[('AssertionError', 90), ('NameError', 41), ('pass', 37), ('TypeError', 27), ('SyntaxError', 2), ('IndexError', 2), ('IndentationError', 1)]
+wrong names 35 | pass 37 | pass if renamed 45 of 200

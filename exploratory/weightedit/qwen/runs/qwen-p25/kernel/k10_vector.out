@@ -1,0 +1,4 @@
+reply tokens per condition 19675 | logp of the reply text: plain -0.267 instructed -0.284
+layer 6: |d| 0.03  mean |resid| 2.0  mean |per-token diff| 0.06  mean cos(per-token, d) 0.40 | steady direction: k.x mean 1.00 sd 0.153 min 0.26 | quietest neurons [ 150 2759 2839] [0.00758201 0.01177863 0.01201807]
+layer 10: |d| 0.03  mean |resid| 1.9  mean |per-token diff| 0.09  mean cos(per-token, d) 0.35 | steady direction: k.x mean 1.00 sd 0.133 min 0.37 | quietest neurons [ 419  361 3275] [0.00708187 0.00784664 0.00788336]
+layer 14: |d| 0.09  mean |resid| 3.0  mean |per-token diff| 0.21  mean cos(per-token, d) 0.37 | steady direction: k.x mean 1.00 sd 0.128 min 0.47 | quietest neurons [ 248 1438  653] [0.00967177 0.01224061 0.01312329]

@@ -1,0 +1,4 @@
+layer 14 maths: fires on 2 positions in 1 texts; by position index: [(155, 1), (395, 1)]; tokens [('living', 1), ('Fabric', 1)]; mean |act| off 9.01e-05
+layer 14 code: fires on 701 positions in 100 texts; by position index: [(29, 25), (30, 24), (28, 19), (31, 16), (32, 15)]; tokens [('def', 108), (' find', 30), (' remove', 14), ('_sub', 13), (' check', 10), (' extract', 9)]; mean |act| off 8.29e-04
+layer 23 maths: fires on 0 positions in 0 texts; by position index: []; tokens []; mean |act| off 1.34e-03
+layer 23 code: fires on 84 positions in 81 texts; by position index: [(263, 2), (309, 2), (156, 2), (214, 2), (200, 2)]; tokens [('\n\n\n', 58), ('\n\n', 26)]; mean |act| off 1.38e-03

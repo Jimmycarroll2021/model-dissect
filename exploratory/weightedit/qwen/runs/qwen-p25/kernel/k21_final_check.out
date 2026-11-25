@@ -1,0 +1,6 @@
+layer 14 neuron 418
+layer 23 neuron 2621
+held-back baseline: {'repetition_loop': 17, 'cut_at_limit': 42, 'runtime_error': 36, 'wrong_answer': 45, 'pass': 33, 'timeout': 1}
+held-back edited:   {'wrong_answer': 42, 'cut_at_limit': 39, 'pass': 55, 'runtime_error': 32, 'repetition_loop': 5, 'timeout': 1}
+gained 22 lost 0 of 174 | hit limit 60 -> 45
+maths baseline 14 edited 14 of 26; replies changed 2
