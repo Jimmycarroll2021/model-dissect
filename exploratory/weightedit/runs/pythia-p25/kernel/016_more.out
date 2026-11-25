@@ -1,0 +1,24 @@
+
+i_in_range: n 98 (0.0050)  targets [("' range'", np.float64(0.84)), ("' list'", np.float64(0.05)), ("' num'", np.float64(0.04))]  model right 0.52  model says [("' range'", np.float64(0.6)), ("' j'", np.float64(0.07)), ("' enumerate'", np.float64(0.05))]  gain if rule +0.0016
+   layer 0: catch 90% at  20.15 -> false fires     0 (negatives max 20.15, positives median 20.15)
+   layer 1: catch 90% at  21.87 -> false fires    96 (negatives max 23.29, positives median 22.66)
+   layer 2: catch 90% at  17.67 -> false fires    39 (negatives max 20.42, positives median 20.20)
+   layer 3: catch 90% at  20.57 -> false fires    10 (negatives max 22.06, positives median 22.77)
+   layer 4: catch 90% at  14.28 -> false fires    33 (negatives max 20.79, positives median 20.33)
+   layer 5: catch 90% at   9.89 -> false fires   271 (negatives max 21.88, positives median 21.54)
+
+after_import_line: n 65 (0.0033)  targets [("'def'", np.float64(0.91)), ("'regex'", np.float64(0.05)), ("'pattern'", np.float64(0.02))]  model right 0.00  model says [("'\\n'", np.float64(0.69)), ("'from'", np.float64(0.22)), ("'import'", np.float64(0.09))]  gain if rule +0.0030
+   layer 0: catch 90% at  19.14 -> false fires     0 (negatives max 19.14, positives median 19.14)
+   layer 1: catch 90% at  23.74 -> false fires    34 (negatives max 24.26, positives median 25.55)
+   layer 2: catch 90% at  18.72 -> false fires     0 (negatives max 18.38, positives median 20.55)
+   layer 3: catch 90% at  13.53 -> false fires    20 (negatives max 16.57, positives median 17.45)
+   layer 4: catch 90% at  20.48 -> false fires     0 (negatives max 18.06, positives median 21.71)
+   layer 5: catch 90% at  17.66 -> false fires     1 (negatives max 17.80, positives median 22.24)
+
+indent_start: n 790 (0.0403)  targets [("'return'", np.float64(0.3)), ("'if'", np.float64(0.1)), ("'for'", np.float64(0.1))]  model right 0.12  model says [('\'"""\'', np.float64(0.21)), ("'if'", np.float64(0.12)), ("'return'", np.float64(0.09))]  gain if rule +0.0073
+   layer 0: catch 90% at  13.59 -> false fires     2 (negatives max 17.24, positives median 17.24)
+   layer 1: catch 90% at  20.70 -> false fires   102 (negatives max 23.46, positives median 22.70)
+   layer 2: catch 90% at  16.26 -> false fires    23 (negatives max 17.73, positives median 18.72)
+   layer 3: catch 90% at  18.20 -> false fires   233 (negatives max 21.49, positives median 19.80)
+   layer 4: catch 90% at  17.82 -> false fires   149 (negatives max 20.84, positives median 18.92)
+   layer 5: catch 90% at  15.29 -> false fires   237 (negatives max 19.47, positives median 17.50)

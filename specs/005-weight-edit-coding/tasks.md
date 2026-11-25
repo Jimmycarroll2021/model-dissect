@@ -12,7 +12,7 @@
 - [x] T007 Scripted checks: no-op identical, each forbidden edit refused, budget enforced, edit rebuilds by hash
 
 ## Phase 3: Edit run and result (US3)
-- [ ] T008 Edit run: every edit cites its map entry; log every pass; final choice frozen and committed
+- [x] T008 Edit run: every edit cites its map entry; log every pass; final choice frozen and committed
 - [ ] T009 Held-out evaluation once: unedited, edited, size-matched random edit, non-code check; run twice
 - [ ] T010 Write-up `docs/weight-edit-coding-result.md` with limits; commit
 

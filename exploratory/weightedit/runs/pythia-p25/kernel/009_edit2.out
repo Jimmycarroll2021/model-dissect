@@ -1,0 +1,27 @@
+mean final-norm scale at code start 0.2177381068468094 typical activation 4.950000000000001 column scale 0.08259791880846024 column norm 0.08259791880846024 (typical layer-5 column norm 0.2659866213798523 )
+{
+ "code/original": {
+  "n": 164,
+  "mean_top1": 0.41922736996876714
+ },
+ "code/edited": {
+  "n": 164,
+  "mean_top1": 0.4318670057460158
+ },
+ "code/edited_minus_original": {
+  "mean": 0.012639635777248638,
+  "se": 0.0012464365708141595
+ },
+ "noncode/original": {
+  "n": 300,
+  "mean_top1": 0.2551650162142182
+ },
+ "noncode/edited": {
+  "n": 300,
+  "mean_top1": 0.2552032849953385
+ },
+ "noncode/edited_minus_original": {
+  "mean": 3.82687811202892e-05,
+  "se": 0.0003831162386533209
+ }
+}

@@ -1,0 +1,5 @@
+['gpt_neox.layers.3.mlp.dense_4h_to_h.weight', 'gpt_neox.layers.3.mlp.dense_h_to_4h.bias', 'gpt_neox.layers.3.mlp.dense_h_to_4h.weight', 'gpt_neox.layers.4.mlp.dense_4h_to_h.weight', 'gpt_neox.layers.4.mlp.dense_h_to_4h.bias', 'gpt_neox.layers.4.mlp.dense_h_to_4h.weight', 'gpt_neox.layers.5.mlp.dense_4h_to_h.weight', 'gpt_neox.layers.5.mlp.dense_h_to_4h.bias', 'gpt_neox.layers.5.mlp.dense_h_to_4h.weight']
+  "mean": 0.020876281590820858,
+  "se": 0.0017900957379943171
+  "mean": -0.001387689575561489,
+  "se": 0.0009299237851882569

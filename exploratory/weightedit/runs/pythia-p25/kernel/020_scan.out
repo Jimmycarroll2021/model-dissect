@@ -1,0 +1,10 @@
+     after_import_line: n   65 rule    'def' right 0.91 model 0.00 gain +0.0030 | false fires at 90% catch by layer: L0:0 L1:34 L2:0 L3:20 L4:0 L5:1
+            '('+'test': n   77 rule      '_' right 1.00 model 0.45 gain +0.0021 | false fires at 90% catch by layer: L0:0 L1:4 L2:8 L3:0 L4:5 L5:34
+             'res'+')': n   39 rule      ' ' right 0.90 model 0.08 gain +0.0016 | false fires at 90% catch by layer: L0:0 L1:32 L2:3 L3:0 L4:0 L5:4
+            ' ('+'res': n   38 rule      ')' right 1.00 model 0.26 gain +0.0014 | false fires at 90% catch by layer: L0:0 L1:12 L2:1 L3:0 L4:1 L5:5
+         'return'+' (': n   75 rule    'res' right 0.51 model 0.28 gain +0.0009 | false fires at 90% catch by layer: L0:0 L1:18 L2:0 L3:0 L4:2 L5:57
+         '  '+'return': n   94 rule     ' (' right 0.56 model 0.26 gain +0.0015 | false fires at 90% catch by layer: L0:0 L1:106 L2:90 L3:38 L4:84 L5:67
+         '\n'+'import': n   51 rule    ' re' right 0.51 model 0.00 gain +0.0013 | false fires at 90% catch by layer: L0:0 L1:0 L2:0 L3:0 L4:0 L5:0
+               '_'+'t': n   62 rule     'up' right 0.97 model 0.65 gain +0.0010 | false fires at 90% catch by layer: L0:0 L1:0 L2:0 L3:0 L4:4 L5:542
+              ')'+' :': n   44 rule    ' \n' right 0.70 model 0.34 gain +0.0008 | false fires at 90% catch by layer: L0:0 L1:4 L2:1 L3:0 L4:0 L5:69
+             ' ='+' 0': n   74 rule     '\n' right 0.80 model 0.61 gain +0.0007 | false fires at 90% catch by layer: L0:0 L1:29 L2:1 L3:0 L4:0 L5:1

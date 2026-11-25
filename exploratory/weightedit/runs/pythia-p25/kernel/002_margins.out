@@ -1,0 +1,31 @@
+offline argmax matches saved pred: 1.0
+wrong share 0.5677330493927002 | target is 2nd choice 0.12924128770828247 | in top 5 0.2526659667491913
+misses within 0.5 logits of the top: 0.0552 of all code tokens
+misses within 1 logits of the top: 0.1106 of all code tokens
+misses within 2 logits of the top: 0.2133 of all code tokens
+misses within 3 logits of the top: 0.3026 of all code tokens
+
+-- per target token: errors and how many are near misses (gap<=2) --
+       '_' errors 0.0196 near(<=2) 0.0148 median gap 1.14
+      '):' errors 0.0175 near(<=2) 0.0129 median gap 1.30
+     'def' errors 0.0160 near(<=2) 0.0002 median gap 4.71
+  'return' errors 0.0152 near(<=2) 0.0081 median gap 1.87
+     ' \n' errors 0.0151 near(<=2) 0.0034 median gap 4.22
+      '  ' errors 0.0104 near(<=2) 0.0020 median gap 2.58
+      ' (' errors 0.0097 near(<=2) 0.0043 median gap 2.34
+       '(' errors 0.0095 near(<=2) 0.0062 median gap 1.18
+       ')' errors 0.0091 near(<=2) 0.0074 median gap 1.01
+       '1' errors 0.0085 near(<=2) 0.0039 median gap 2.26
+       ',' errors 0.0084 near(<=2) 0.0062 median gap 1.19
+       ' ' errors 0.0072 near(<=2) 0.0002 median gap 5.79
+      '\n' errors 0.0069 near(<=2) 0.0058 median gap 0.64
+      'if' errors 0.0068 near(<=2) 0.0052 median gap 1.09
+       'n' errors 0.0067 near(<=2) 0.0029 median gap 2.25
+       '[' errors 0.0065 near(<=2) 0.0028 median gap 2.32
+      ' +' errors 0.0065 near(<=2) 0.0029 median gap 2.21
+      ' =' errors 0.0061 near(<=2) 0.0046 median gap 1.14
+
+-- start of code: what the model scores at the first code position --
+n 300 targets [("'def'", 232), ("'import'", 50), ("'from'", 14), ("'class'", 1), ("'MAX'", 1)]
+top predictions [("'#'", 252), ("'\\n'", 48)]
+gap to target: median 4.751216888427734 quartiles [4.39600539 5.26378369]

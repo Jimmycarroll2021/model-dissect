@@ -1,0 +1,5 @@
+layer 3 neuron 40: threshold 13.8, scale 1.5, column norm 0.064 (median column norm 0.221)
+  "mean": 0.02057587718874143,
+  "se": 0.001690499524254821
+  "mean": 0.0008408112478547893,
+  "se": 0.0005910749727917504

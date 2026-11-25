@@ -1,0 +1,7 @@
+layer 3 neuron 147: threshold 20.756617546081543, scale 3.0, column norm 0.035 (median column norm 0.221)
+layer 3 neuron 390: threshold 20.46990203857422, scale 3.0, column norm 0.032 (median column norm 0.221)
+layer 5 neuron 304: threshold 20.80638885498047, scale 3.0, column norm 0.024 (median column norm 0.266)
+  "mean": 0.02539823657976328,
+  "se": 0.002266375318083434
+  "mean": -3.64257408546768e-05,
+  "se": 0.0011923774663863062

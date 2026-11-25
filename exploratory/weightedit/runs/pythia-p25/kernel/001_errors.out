@@ -1,0 +1,95 @@
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPTNeoXTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+code scored tokens 19599 micro acc 0.43226695239553037 | noncode tokens 17016 acc 0.26480959097320167
+
+-- targets costing the most accuracy (share of all code tokens lost) --
+           '_' freq 0.041 acc 0.52 lost 0.0196
+          '):' freq 0.024 acc 0.27 lost 0.0175
+         'def' freq 0.016 acc 0.00 lost 0.0160
+      'return' freq 0.019 acc 0.22 lost 0.0152
+         ' \n' freq 0.019 acc 0.21 lost 0.0151
+          '  ' freq 0.018 acc 0.42 lost 0.0104
+          ' (' freq 0.013 acc 0.25 lost 0.0097
+           '(' freq 0.044 acc 0.78 lost 0.0095
+           ')' freq 0.018 acc 0.50 lost 0.0091
+           '1' freq 0.019 acc 0.56 lost 0.0085
+           ',' freq 0.022 acc 0.61 lost 0.0084
+           ' ' freq 0.009 acc 0.15 lost 0.0072
+          '\n' freq 0.057 acc 0.88 lost 0.0069
+          'if' freq 0.009 acc 0.23 lost 0.0068
+           'n' freq 0.011 acc 0.39 lost 0.0067
+           '[' freq 0.019 acc 0.65 lost 0.0065
+          ' +' freq 0.008 acc 0.20 lost 0.0065
+          ' =' freq 0.028 acc 0.78 lost 0.0061
+         'res' freq 0.007 acc 0.15 lost 0.0057
+           'i' freq 0.012 acc 0.54 lost 0.0056
+         'for' freq 0.007 acc 0.20 lost 0.0055
+          ' 0' freq 0.007 acc 0.34 lost 0.0049
+        '    ' freq 0.027 acc 0.82 lost 0.0047
+         ' in' freq 0.013 acc 0.64 lost 0.0044
+        ' for' freq 0.005 acc 0.09 lost 0.0044
+
+-- most common confusions pred -> target --
+           '(' -> '_'            0.0148
+          '\n' -> ' \n'          0.0123
+           ',' -> '):'           0.0118
+           '#' -> 'def'          0.0096
+        '    ' -> '  '           0.0062
+           ',' -> ')'            0.0051
+          '\n' -> 'def'          0.0049
+          '\n' -> ' '            0.0045
+           '_' -> '('            0.0045
+           ')' -> '):'           0.0038
+          '):' -> ','            0.0033
+    '        ' -> '    '         0.0028
+           'i' -> 'j'            0.0024
+           '#' -> 'import'       0.0023
+        'self' -> 'test'         0.0022
+          ' =' -> ' +='          0.0022
+           ',' -> '_'            0.0021
+           ',' -> '1'            0.0021
+          '\n' -> '  '           0.0021
+          'if' -> 'return'       0.0021
+           ')' -> ','            0.0020
+         '"""' -> 'res'          0.0019
+         'res' -> 'return'       0.0019
+           '_' -> ' ='           0.0019
+    '        ' -> '            ' 0.0018
+           '.' -> '\n'           0.0018
+           '2' -> '1'            0.0018
+        'self' -> 'n'            0.0017
+         'for' -> 'return'       0.0016
+        '    ' -> '\t'           0.0015
+
+-- most over-predicted tokens (pred when wrong) --
+          '\n' wrongly predicted 0.0443  (correctly 0.0496)
+           ',' wrongly predicted 0.0386  (correctly 0.0132)
+           '(' wrongly predicted 0.0250  (correctly 0.0344)
+           ')' wrongly predicted 0.0166  (correctly 0.0093)
+        'self' wrongly predicted 0.0151  (correctly 0.0001)
+         ' __' wrongly predicted 0.0135  (correctly 0.0001)
+           '_' wrongly predicted 0.0135  (correctly 0.0210)
+           '#' wrongly predicted 0.0133  (correctly 0.0000)
+        '    ' wrongly predicted 0.0121  (correctly 0.0221)
+           '.' wrongly predicted 0.0113  (correctly 0.0049)
+          ' 1' wrongly predicted 0.0109  (correctly 0.0068)
+          ' =' wrongly predicted 0.0109  (correctly 0.0221)
+          'if' wrongly predicted 0.0098  (correctly 0.0020)
+           'i' wrongly predicted 0.0094  (correctly 0.0066)
+           '1' wrongly predicted 0.0089  (correctly 0.0108)
+
+-- accuracy by previous token (top by loss) --
+after         '\n' freq 0.072 acc 0.48 lost 0.0376
+after          '(' freq 0.044 acc 0.23 lost 0.0340
+after          '_' freq 0.041 acc 0.39 lost 0.0246
+after       '    ' freq 0.027 acc 0.16 lost 0.0226
+after         ' =' freq 0.028 acc 0.21 lost 0.0223
+after          ',' freq 0.022 acc 0.19 lost 0.0173
+after        'def' freq 0.016 acc 0.01 lost 0.0158
+after     'return' freq 0.019 acc 0.24 lost 0.0148
+after         '  ' freq 0.017 acc 0.20 lost 0.0140
+after         '\t' freq 0.015 acc 0.25 lost 0.0114
+after          '1' freq 0.019 acc 0.46 lost 0.0103
+after          ')' freq 0.017 acc 0.40 lost 0.0101
+after          '[' freq 0.019 acc 0.51 lost 0.0091
+after         ' (' freq 0.013 acc 0.32 lost 0.0088
+after         '):' freq 0.024 acc 0.66 lost 0.0080

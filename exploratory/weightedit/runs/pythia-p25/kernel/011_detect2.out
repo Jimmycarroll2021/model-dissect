@@ -1,0 +1,31 @@
+
+(a) one token after def, next is "_": positives 270
+  positives (other half): 1% 11.48 5% 13.13 25% 15.07 median 16.15
+  negatives (other half): median 1.86 99% 14.74 99.9% 17.05 max 18.70
+    threshold  13.13: catches 0.95 of positives (127), fires on 488 negatives
+    threshold  13.97: catches 0.86 of positives (115), fires on 322 negatives
+    threshold  14.81: catches 0.78 of positives (104), fires on 197 negatives
+    threshold  15.65: catches 0.60 of positives (80), fires on 107 negatives
+    threshold  16.49: catches 0.40 of positives (54), fires on 42 negatives
+  confusable negatives: n 22 99% 17.79 max 17.97
+
+(a2) one token after def (any next): positives 314
+  positives (other half): 1% 10.86 5% 12.12 25% 14.36 median 15.68
+  negatives (other half): median 1.62 99% 14.50 99.9% 16.76 max 18.49
+    threshold  12.12: catches 0.95 of positives (148), fires on 677 negatives
+    threshold  13.11: catches 0.86 of positives (134), fires on 433 negatives
+    threshold  14.09: catches 0.77 of positives (120), fires on 272 negatives
+    threshold  15.08: catches 0.63 of positives (98), fires on 141 negatives
+    threshold  16.06: catches 0.40 of positives (62), fires on 49 negatives
+
+(b) next token is space-newline: positives 374
+  positives (other half): 1% 8.04 5% 9.74 25% 15.31 median 17.84
+  negatives (other half): median 2.46 99% 17.83 99.9% 20.78 max 23.11
+    threshold   9.74: catches 0.95 of positives (152), fires on 1530 negatives
+    threshold  11.97: catches 0.93 of positives (148), fires on 733 negatives
+    threshold  14.20: catches 0.80 of positives (128), fires on 447 negatives
+    threshold  16.43: catches 0.66 of positives (105), fires on 279 negatives
+    threshold  18.66: catches 0.40 of positives (64), fires on 136 negatives
+  confusable negatives: n 546 99% 21.00 max 21.33
+
+problems by line-ending style: all space-newline 13 all plain 194 mixed 93

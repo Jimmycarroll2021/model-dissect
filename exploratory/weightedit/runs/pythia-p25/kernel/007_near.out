@@ -1,0 +1,39 @@
+code near-decision share 0.3165977895259857 of which currently right 0.4862207770347595
+english near-decision share 0.33915138244628906 of which currently right 0.43926528096199036
+
+component  code near english near
+    L0H0      0.007        0.008
+    L0H1      0.005        0.002
+    L0H2      0.003       -0.000
+    L0H3      0.014       -0.002
+   L0mlp      0.105        0.109
+    L1H0     -0.009       -0.010
+    L1H1      0.005        0.003
+    L1H2      0.010       -0.015
+    L1H3     -0.001       -0.027
+   L1mlp     -0.018        0.017
+    L2H0     -0.021        0.013
+    L2H1     -0.006       -0.028
+    L2H2      0.015        0.015
+    L2H3      0.030       -0.067
+   L2mlp      0.023        0.009
+    L3H0      0.017        0.022
+    L3H1     -0.022        0.016
+    L3H2      0.097       -0.047
+    L3H3     -0.062       -0.035
+   L3mlp     -0.233       -0.165
+    L4H0      0.064        0.048
+    L4H1      0.008        0.012
+    L4H2     -0.020        0.010
+    L4H3      0.070        0.028
+   L4mlp      0.154        0.231
+    L5H0      0.034       -0.006
+    L5H1      0.089       -0.016
+    L5H2      0.004        0.094
+    L5H3     -0.007        0.007
+   L5mlp      0.153        0.250
+
+layer-5 neurons, near-decision: split-half correlation 0.8216958901627965
+sum over neurons: code 0.152920663356781 english 0.250304251909256
+the 26 pruned in edit 1, near-decision code effect: -0.08081573992967606 (all-token effect was -0.45)
+neurons negative near the decision in both halves and not helping English: 32 sum code -0.31471699476242065 english -0.08105165511369705

@@ -1,0 +1,3 @@
+correlation of per-neuron code effect between halves: 0.9437836348979657
+prune list (negative in both halves, < -0.01 overall, not helpful to English): 26 [17, 18, 21, 25, 72, 91, 95, 110, 122, 133, 160, 165, 224, 250, 281, 282, 311, 317, 335, 352, 406, 431, 480, 492, 501, 511]
+their summed effect: code -0.44911810755729675 english -0.14573471248149872

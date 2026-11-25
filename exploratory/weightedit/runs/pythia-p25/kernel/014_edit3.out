@@ -1,0 +1,28 @@
+layer-3 projection: positives median 17.169401168823242 5% 14.022755 negatives 99.9% 11.73058 max 15.204360961914062
+layer 3 neuron 40: threshold 13.8, scale 1.5, column norm 0.032 (median column norm 0.221)
+{
+ "code/original": {
+  "n": 164,
+  "mean_top1": 0.41922736996876714
+ },
+ "code/edited": {
+  "n": 164,
+  "mean_top1": 0.43682772192764313
+ },
+ "code/edited_minus_original": {
+  "mean": 0.01760035195887593,
+  "se": 0.0015067231125124206
+ },
+ "noncode/original": {
+  "n": 300,
+  "mean_top1": 0.2551650162142182
+ },
+ "noncode/edited": {
+  "n": 300,
+  "mean_top1": 0.25600582746207307
+ },
+ "noncode/edited_minus_original": {
+  "mean": 0.0008408112478547893,
+  "se": 0.0005910749727917504
+ }
+}

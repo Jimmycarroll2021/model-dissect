@@ -1,0 +1,18 @@
+code: tokens 10001  original right 0.4391  edited right 0.4567  changed predictions 398  fixed 200  broken 24
+english: tokens 8732  original right 0.2687  edited right 0.2668  changed predictions 423  fixed 44  broken 60
+
+layer 5 neuron 108: on (>0.5) at 149 positions (code 149, english 0); there: fixed 92, broken 0, pred changed 144; min act -0.114, positions with act<-0.05: 1 (english 0)
+   edited predicts there: [("'def'", 111), ('\'"""\'', 25), ("'#'", 6), ("'>>>'", 6)]  targets: [("'def'", 123), ("'import'", 21), ("'from'", 3), ("'class'", 1)]
+
+layer 3 neuron 40: on (>0.5) at 147 positions (code 147, english 0); there: fixed 77, broken 5, pred changed 86; min act -0.170, positions with act<-0.05: 13 (english 0)
+   edited predicts there: [("'_'", 124), ("'('", 7), ("'1'", 2), ("'ix'", 1)]  targets: [("'_'", 125), ("'('", 7), ("'th'", 2), ("'ix'", 1)]
+
+layer 3 neuron 110: on (>0.5) at 56 positions (code 56, english 0); there: fixed 5, broken 1, pred changed 8; min act -0.170, positions with act<-0.05: 11 (english 0)
+   edited predicts there: [("' range'", 51), ("' 1'", 3), ("' num'", 1), ("' 0'", 1)]  targets: [("' range'", 48), ("' list'", 3), ("' reversed'", 2), ("' num'", 1)]
+
+layer 4 neuron 377: on (>0.5) at 23 positions (code 23, english 0); there: fixed 0, broken 0, pred changed 4; min act -0.150, positions with act<-0.05: 2 (english 0)
+   edited predicts there: [("'\\n'", 17), ("'import'", 6)]  targets: [("'def'", 21), ("'pattern'", 1), ("'text'", 1)]
+
+english changes: fixed 44 broken 60 neutral 319
+   new predictions: [("' a'", 30), ("' the'", 28), ("'.'", 22), ("' in'", 16), ("','", 13), ("' to'", 12), ("'’'", 11), ("' of'", 10)]
+   after tokens: [("'.'", 18), ("' a'", 18), ("' the'", 16), ("' many'", 14), ("' of'", 10), ("' have'", 9), ("' and'", 7), ("','", 7)]

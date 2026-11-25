@@ -1,0 +1,9 @@
+layer 5 neuron 269: threshold 17.658401489257812, scale 3.0, column norm 0.028 (median column norm 0.266)
+layer 5 neuron 272: threshold 20.477872848510742, scale 3.0, column norm 0.156 (median column norm 0.266)
+layer 5 neuron 15: threshold 20.3857479095459, scale 3.0, column norm 0.043 (median column norm 0.266)
+layer 5 neuron 474: threshold 17.200881004333496, scale 3.0, column norm 0.022 (median column norm 0.266)
+layer 3 neuron 101: threshold 20.22735023498535, scale 3.0, column norm 0.046 (median column norm 0.221)
+  "mean": 0.02677786347685126,
+  "se": 0.002204510536315024
+  "mean": 0.0015137967640111198,
+  "se": 0.0011620977157957193

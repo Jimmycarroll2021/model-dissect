@@ -1,0 +1,37 @@
+layer-5 MLP total: code -0.0877111554145813 english 0.7800886631011963
+neurons negative on code: 259  sum -1.2979536056518555 | of those also <=0 on english: 144 sum code -0.7926411628723145
+neurons with code < -0.01: 30 sum -0.5197569131851196  english sum of same -0.10417996346950531
+
+neuron    code  english on code  on eng  promotes / suppresses
+   480  -0.046    0.001    0.74    0.21  + ['ulose', '’', 'ided', 'ented', 'ential', "'s"]  - ['keeper', 'keepers', 'osterone', 'ambiguation']
+   160  -0.036   -0.019    0.35    0.13  + ['uously', 'pgen', 'pmed', '7554', 'rated', 'pntd']  - [',', '\\', 'izable', ',[']
+   281  -0.025    0.000    0.94    0.05  + ['numbered', 'ties', 'teen', 'ubicin', 'stained', 'powered']  - ['OTO', 'INION', 'orate', '*}']
+   335  -0.024    0.001    0.67    0.07  + ['iNdEx', ' Spacewatch', 'iences', 'ainties', 'googleapis', 'ientes']  - ['ся', ' 978', 'ubicin', ' scratch']
+    95  -0.024   -0.005    0.96    0.30  + [')/((-', '*:', 'ncia', ' *)', '+$', '{}']  - ['enance', 'riber', 'ensation', 'ffer']
+   122  -0.022   -0.001    0.29    0.04  + [' OF', '/~', ' ABOUT', ' BY', ' Activity', ' CONTRIBUT']  - ['per', 'enc', 'ren', 'held']
+   511  -0.022   -0.009    0.96    0.74  + ['itably', 'otry', 'etimes', 'ään', 'iotic', 'yll']  - ['P', 'F', 'C', 'D']
+    74  -0.021    0.014    0.88    0.09  + ['them', 'uckles', 'their', 'gium', '"(', 'the']  - ['USED', 'igos', 'pered', 'UMENT']
+    18  -0.021   -0.002    0.28    0.08  + ['\n\t', 'iquity', '  \n', ' ♪', '}.', ' \n\t']  - ['olves', 'mic', 'olta', 'icked']
+   164  -0.020    0.005    0.95    0.18  + ['{-', '{$', '*{', '{}', '{.', '{},']  - ['uetooth', 'ivirus', 'erculosis', 'otoxin']
+   250  -0.018   -0.006    0.65    0.55  + ['uscitation', ' antidepress', ' condom', ' anemia', ' therapist', 'apine']  - ['facing', 'сь', 'vable', 'fficient']
+   319  -0.018    0.015    0.78    0.07  + [':"){', '%"', '="', '"))', '\\}', '%']  - ['igraphy', 'APTER', 'robe', 'omology']
+   110  -0.016   -0.000    0.76    0.23  + ['elij', 'midt', ' Nielsen', 'enance', 'ieve', 'げ']  - [' ligament', 'ะ', ' fracture', ' fractures']
+   406  -0.015    0.000    0.39    0.19  + ['unto', 'icile', ' BytePtrFromString', 'obacterium', 'pace', ' glomerular']  - ['�', 'za', 'cers', 'doi']
+   165  -0.015   -0.000    0.73    0.77  + ['heid', 'oupe', 'wered', 'amond', 'fashioned', 'aments']  - [' onwards', 'biggr', ' onward', 'seconds']
+    21  -0.015   -0.003    0.89    0.57  + ['"}\\].', 'め', 'amilies', 'tawa', 'ে', '--------------------------------------------------------------------------------------------------------------------------------']  - [' chromatography', 'esium', ' microM', 'chst']
+    17  -0.014   -0.049    0.02    0.04  + ['ulence', ' errnoErr', 'optera', 'hael', 'amphetamine', 'ération']  - ["');", ':', '*', "',"]
+   352  -0.013   -0.004    0.43    0.29  + ['erre', 'icillin', 'iei', 'iella', 'artifactId', 'enen']  - ['"}](#', 'mits', 'thens', 'stic']
+   487  -0.012    0.007    0.57    0.12  + ['================', ' ^[@', '================================', '=================', '.—', 'dle']  - ['вет', 'mentioned', 'лед', 'keit']
+   492  -0.012   -0.017    0.22    0.06  + [' alia', 'vist', 'namese', 'ESULT', ' […]', 'blockList']  - ['\n', '\n\n', '\n\t', '\n\t\n']
+   501  -0.012   -0.007    0.02    0.06  + ['ys', 'hift', 'hpp', 'omitempty', 'ール', 'Bankr']  - ['ificial', 'entric', 'ersion', 'ocity']
+    72  -0.012    0.004    0.76    0.30  + ['уп', 'Introduction', 'yc', 'oxide', 'omitempty', 'ONG']  - ['rers', 'ledge', 'ively', 'rer']
+
+most helpful on code:
+   279   0.042    0.411    0.93    1.00  + ['unnumbered', ' Pradesh', 'ESULT', 'watson', 'TRODUCTION', '\n\xa0\xa0']
+   113   0.041   -0.004    0.76    0.28  + ['adeon', 'scala', 'google', 'cpp', 'shirt', 'gradle']
+    22   0.035    0.027    0.26    0.25  + ['arians', ' Authors', 'sing', 'ially', 'seeing', 'most']
+   306   0.027   -0.023    0.09    0.03  + ['éc', '()"', '"}](#', 'pired', 'oretic', 'icans']
+   292   0.025   -0.001    0.69    0.05  + ['ESULT', 'keit', 'poons', 'iary', 'pection', 'rance']
+   248   0.024    0.016    0.65    0.10  + ['naissance', 'eners', 'exists', 'enen', 'caster', 'disambiguation']
+   201   0.023   -0.004    0.78    0.17  + ['blogger', 'unnumbered', 'ijk', ' BytePtrFromString', ' Judges', 'ř']
+   473   0.022    0.002    0.60    0.37  + ['league', 'RECT', 'rror', 'plates', 'aching', 'CRO']

@@ -1,0 +1,7 @@
+code-start positions 300 input token there [("'\\n'", 300)]
+   code-start (other half): n    150  min   20.91  1%   21.15  median   22.77  99%   23.53  99.9%   23.64  max   23.66
+    code-start (same half): n    150  min   17.46  1%   18.97  median   22.76  99%   23.53  99.9%   23.66  max   23.68
+      other code positions: n  24801  min  -12.11  1%   -8.14  median    3.32  99%   12.75  99.9%   15.01  max   16.37
+         english positions: n  17016  min  -11.72  1%   -6.54  median    1.65  99%   10.24  99.9%   12.24  max   13.74
+other newline positions in code: n 1105 99% 15.363536 max 16.366744995117188
+least-used layer-5 neurons (mean |act| x output norm): [(108, 0.0921, 0.217), (269, 0.0495, 0.406), (272, 0.1121, 0.207), (15, 0.108, 0.25), (474, 0.1498, 0.182), (304, 0.1141, 0.239)]

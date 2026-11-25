@@ -1,0 +1,26 @@
+{
+ "code/original": {
+  "n": 164,
+  "mean_top1": 0.41922736996876714
+ },
+ "code/edited": {
+  "n": 164,
+  "mean_top1": 0.3883402820853314
+ },
+ "code/edited_minus_original": {
+  "mean": -0.030887087883435818,
+  "se": 0.003811909620925835
+ },
+ "noncode/original": {
+  "n": 300,
+  "mean_top1": 0.2551650162142182
+ },
+ "noncode/edited": {
+  "n": 300,
+  "mean_top1": 0.25215700680829617
+ },
+ "noncode/edited_minus_original": {
+  "mean": -0.003008009405922073,
+  "se": 0.0016747491765817545
+ }
+}

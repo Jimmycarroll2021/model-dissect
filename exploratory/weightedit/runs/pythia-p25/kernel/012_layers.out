@@ -1,0 +1,7 @@
+positives 314 of which next is "_": 270
+layer 0: catch 95%: thr  -2.12, false fires 8369 | catch 80%: thr   0.25, false fires 4733 | catch 60%: thr   2.64, false fires 1703 | negatives max 7.20, positives min -5.09
+layer 1: catch 95%: thr  -0.26, false fires 8099 | catch 80%: thr   3.75, false fires 3371 | catch 60%: thr   5.34, false fires 1597 | negatives max 12.12, positives min -3.33
+layer 2: catch 95%: thr   3.64, false fires 6390 | catch 80%: thr   7.13, false fires 2160 | catch 60%: thr   8.58, false fires  905 | negatives max 12.33, positives min 0.41
+layer 3: catch 95%: thr  13.83, false fires    2 | catch 80%: thr  15.14, false fires    1 | catch 60%: thr  16.63, false fires    0 | negatives max 15.20, positives min 11.88
+layer 4: catch 95%: thr  13.27, false fires  263 | catch 80%: thr  14.84, false fires  106 | catch 60%: thr  15.91, false fires   35 | negatives max 17.52, positives min 11.01
+layer 5: catch 95%: thr  12.12, false fires  677 | catch 80%: thr  13.88, false fires  305 | catch 60%: thr  15.25, false fires  122 | negatives max 18.49, positives min 10.27

@@ -1,0 +1,59 @@
+{
+ "model": "pythia-14m",
+ "weights_sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+ "passes_used": 10,
+ "tensors": {
+  "gpt_neox.layers.3.mlp.dense_4h_to_h.weight": {
+   "shape": [
+    128,
+    512
+   ],
+   "changed": 384,
+   "original_sha256": "5169b5206006a8279c0a785e30c1bacab9bda468cadfb9e76d6ea2471074a762",
+   "edited_sha256": "96402391af1f0f7ad15bc0edef03c9e8836bc29c520f9d6e96f9b1baafbbad99"
+  },
+  "gpt_neox.layers.3.mlp.dense_h_to_4h.bias": {
+   "shape": [
+    512
+   ],
+   "changed": 3,
+   "original_sha256": "dd31acedbf083288a8376e11cbd0848746f9e98841e272f7e3cf13062c89f749",
+   "edited_sha256": "12e9d9ba2e52f44c586b38589129dce1f8826c31f2c2d46aa9b26df2cc2071fc"
+  },
+  "gpt_neox.layers.3.mlp.dense_h_to_4h.weight": {
+   "shape": [
+    512,
+    128
+   ],
+   "changed": 384,
+   "original_sha256": "29a3ca5c3985aad255f413bee5f9a38b2f488c4a5f397ea5d743d25a2123ff58",
+   "edited_sha256": "e5b718c37b5f2ce9fc75e73155ddc51dfb839343244d4472663310e269eac0e0"
+  },
+  "gpt_neox.layers.5.mlp.dense_4h_to_h.weight": {
+   "shape": [
+    128,
+    512
+   ],
+   "changed": 640,
+   "original_sha256": "7b4005352900fbb8b82ff3f4056d732a14f7341db4913a813c513f329b21102d",
+   "edited_sha256": "442e597dd7d83593edd481d27d83d0cef4d72f651516c840392b586773ef6c1b"
+  },
+  "gpt_neox.layers.5.mlp.dense_h_to_4h.bias": {
+   "shape": [
+    512
+   ],
+   "changed": 5,
+   "original_sha256": "694ffb0d4ac9446792b42fdde8e09fa40e058326847b18eae71c237bbd2ac483",
+   "edited_sha256": "bac353a54ff53ac381105c211262a6e162fb90fa009c713588725bd4eac5cf7d"
+  },
+  "gpt_neox.layers.5.mlp.dense_h_to_4h.weight": {
+   "shape": [
+    512,
+    128
+   ],
+   "changed": 640,
+   "original_sha256": "0d314c087dab9b0bd3524d072d708dbd310e1d8e78ce3ea3d582c74a507c8c2a",
+   "edited_sha256": "b18feb42bb6330ca02b59cc510eac9996f533e04fba61776f82417473788ab8b"
+  }
+ }
+}

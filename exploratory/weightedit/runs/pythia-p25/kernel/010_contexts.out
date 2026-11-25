@@ -1,0 +1,23 @@
+          0 tokens after def: n   314 (0.016)  top target  ' find' 0.06  model acc 0.01  model says [("' __'", np.float64(0.83)), ("' parse'", np.float64(0.06))]  gain if rule +0.0008
+          1 tokens after def: n   314 (0.016)  top target      '_' 0.86  model acc 0.31  model says [("'('", np.float64(0.66)), ("'_'", np.float64(0.25))]  gain if rule +0.0088
+          2 tokens after def: n   314 (0.016)  top target      '_' 0.07  model acc 0.10  model says [("'list'", np.float64(0.21)), ("'('", np.float64(0.07))]  gain if rule -0.0006
+          3 tokens after def: n   314 (0.016)  top target      '(' 0.38  model acc 0.48  model says [("'('", np.float64(0.57)), ("'_'", np.float64(0.14))]  gain if rule -0.0016
+          4 tokens after def: n   314 (0.016)  top target      '(' 0.19  model acc 0.22  model says [("'self'", np.float64(0.37)), ("'('", np.float64(0.19))]  gain if rule -0.0005
+          5 tokens after def: n   307 (0.016)  top target      '(' 0.21  model acc 0.33  model says [("','", np.float64(0.3)), ("'('", np.float64(0.21))]  gain if rule -0.0018
+          6 tokens after def: n   306 (0.016)  top target     '):' 0.13  model acc 0.34  model says [("','", np.float64(0.25)), ("'self'", np.float64(0.18))]  gain if rule -0.0033
+
+after a given token: gain if always predicting its most common follower
+  after     '    ': n   526  most common next 'return' 0.28  model acc 0.16  gain +0.0032
+  after     'test': n    87  most common next      '_' 1.00  model acc 0.52  gain +0.0021
+  after       'if': n   172  most common next     ' (' 0.40  model acc 0.22  gain +0.0016
+  after      ' in': n   245  most common next ' range' 0.51  model acc 0.39  gain +0.0014
+  after       '  ': n   342  most common next 'return' 0.27  model acc 0.20  gain +0.0013
+  after        't': n    68  most common next     'up' 0.93  model acc 0.62  gain +0.0011
+  after       ' :': n    63  most common next    ' \n' 0.70  model acc 0.43  gain +0.0009
+  after      'def': n   314  most common next  ' find' 0.06  model acc 0.01  gain +0.0008
+  after      'for': n   135  most common next     ' i' 0.54  model acc 0.50  gain +0.0003
+  after     'else': n    58  most common next      ':' 0.90  model acc 0.81  gain +0.0003
+  after     ' for': n    94  most common next     ' i' 0.29  model acc 0.23  gain +0.0003
+  after      ' +=': n    63  most common next     ' 1' 0.65  model acc 0.59  gain +0.0002
+  after   ' range': n   124  most common next      '(' 0.95  model acc 0.94  gain +0.0001
+  after       ' +': n   160  most common next     ' 1' 0.40  model acc 0.39  gain +0.0001
