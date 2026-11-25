@@ -9,7 +9,9 @@ Reference experiment: https://github.com/RikiyaT/lm_understand-logs/blob/main/ex
 
 ## The question
 
-Can a frontier LLM, used as it is, make a small language model measurably better at writing code by reading its internals and editing its weights directly, with no gradient descent and no training?
+This repository already holds weight maps of three small models (MiniMind: 91-tensor inventory, editable reconstruction, input trace; Pythia-14m: weight atlas and intervention evidence; GPT-2: exhaustive atlas, attention trace, head interventions). Using those maps as the starting knowledge, can one of these models be made measurably better at code by editing its weights directly, with no gradient descent and no training?
+
+The point is to put the mapping work to use: an edit is chosen because the map says what a component does, and the result tests whether the map was good enough to act on.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -88,7 +90,9 @@ Repeat the run at other pass budgets and, if the first model's gain came from fi
 ### Functional Requirements
 
 - **FR-001**: The candidate list, practice set, held-out sets, sampling settings and selection rule MUST be committed before any baseline is run.
-- **FR-002**: Candidates MUST include the models already mapped in this repository (MiniMind, Pythia-14m, GPT-2) and at least two small models that can plausibly write code, at most about 2 billion weights.
+- **FR-002**: Candidates MUST be the models already mapped in this repository (MiniMind, Pythia-14m, GPT-2). A model that is not mapped here may be added only as a fallback, after the baseline shows none of the three qualifies, and only together with the mapping work for it.
+- **FR-002a**: Because these models are small, the baseline MUST measure code ability at two levels: whole problems passed (function passes its tests) and code completion (share of held-out code tokens or lines predicted correctly). The level used for the result is the hardest one on which the chosen model meets the selection rule.
+- **FR-002b**: Each edit MUST cite the map entry (tensor, head, component and the evidence file in this repository) that motivated it.
 - **FR-003**: The selection rule MUST be: the smallest candidate whose practice pass rate is between 5% and 60%; ties broken by the larger share of failures of a single type.
 - **FR-004**: Practice problems MUST come only from training or validation splits; held-out problems MUST come only from test splits and MUST never be shown to the editor or used to choose anything.
 - **FR-005**: Generated code MUST run only in a sandbox with no network, a time limit and a memory limit.
@@ -124,7 +128,7 @@ Repeat the run at other pass budgets and, if the first model's gain came from fi
 
 - The editor is Claude, run in its own session through the harness, with no access to this repository's held-out files.
 - Practice set: MBPP train and validation. Held-out: HumanEval and MBPP test. Side-effect check: a small fixed sample of a general question benchmark. Exact versions are pinned in the plan.
-- The mapped tiny models are expected to score near zero on coding; they are included so that this is measured, not assumed. The likely choice is a 0.3 to 2 billion weight model.
+- The mapped models are tiny and may pass no whole problems; that is why code completion is measured as a second level. GPT-2 is the most likely choice (largest of the three, English and some code in its training data).
 - "Better at coding" means a higher share of problems whose generated function passes the benchmark's tests. Nothing is claimed about real software work.
 - The reference experiment's gain came largely from removing a looping failure; a similar unlockable failure may or may not exist for coding. A null result is a valid outcome.
 - The editor has probably seen the public benchmarks in its own training. This is a stated limit, not something this feature removes.
