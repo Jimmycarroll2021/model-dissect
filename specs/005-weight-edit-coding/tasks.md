@@ -13,8 +13,8 @@
 
 ## Phase 3: Edit run and result (US3)
 - [x] T008 Edit run: every edit cites its map entry; log every pass; final choice frozen and committed
-- [ ] T009 Held-out evaluation once: unedited, edited, size-matched random edit, non-code check; run twice
-- [ ] T010 Write-up `docs/weight-edit-coding-result.md` with limits; commit
+- [x] T009 Held-out evaluation once: unedited, edited, size-matched random edit, non-code check; run twice
+- [x] T010 Write-up `docs/weight-edit-coding-result.md` with limits; commit
 
 ## Phase 4 (US4, only after a gain)
-- [ ] T011 Repeat at 10 and 50 passes
+- [ ] T011 Repeat at 10 and 50 passes (not started: Story 3 ended as NO_GAIN by the preset rule)
