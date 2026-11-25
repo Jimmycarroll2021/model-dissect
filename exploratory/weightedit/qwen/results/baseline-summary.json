@@ -1,0 +1,26 @@
+{
+ "weights_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "n_params": 752393024,
+ "code": {
+  "n": 464,
+  "pass_rate": 0.15732758620689655,
+  "outcomes": {
+   "cut_at_limit": 112,
+   "wrong_answer": 129,
+   "runtime_error": 110,
+   "pass": 73,
+   "no_code": 3,
+   "repetition_loop": 35,
+   "syntax_error": 1,
+   "timeout": 1
+  },
+  "hit_limit": 149
+ },
+ "maths": {
+  "n": 300,
+  "solve_rate": 0.5333333333333333,
+  "hit_limit": 38
+ },
+ "go": true,
+ "repeat": "two runs byte-identical"
+}
