@@ -1,0 +1,72 @@
+{
+ "minimind": {
+  "n_params": 63912192,
+  "weights_sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+  "level_A": {
+   "pass_rate": 0.004310344827586207,
+   "outcomes": {
+    "repetition_loop": 270,
+    "runtime_error": 117,
+    "no_code": 13,
+    "syntax_error": 12,
+    "cut_at_limit": 38,
+    "wrong_answer": 12,
+    "pass": 2
+   }
+  },
+  "level_B": {
+   "mean_top1": 0.6100598853820679,
+   "bits_per_char": 1.0762954265481794
+  },
+  "noncode": {
+   "mean_top1": 0.4255422438677836
+  }
+ },
+ "pythia-14m": {
+  "n_params": 14067712,
+  "weights_sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+  "level_A": {
+   "pass_rate": 0.0,
+   "outcomes": {
+    "no_code": 381,
+    "cut_at_limit": 82,
+    "repetition_loop": 1
+   }
+  },
+  "level_B": {
+   "mean_top1": 0.4027479712195731,
+   "bits_per_char": 1.5945222243127164
+  },
+  "noncode": {
+   "mean_top1": 0.2551650162142182
+  }
+ },
+ "gpt2": {
+  "n_params": 124439808,
+  "weights_sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+  "level_A": {
+   "pass_rate": 0.0,
+   "outcomes": {
+    "syntax_error": 439,
+    "repetition_loop": 12,
+    "cut_at_limit": 2,
+    "no_code": 11
+   }
+  },
+  "level_B": {
+   "mean_top1": 0.4749270526036332,
+   "bits_per_char": 2.1737601719642186
+  },
+  "noncode": {
+   "mean_top1": 0.37362780223217273
+  }
+ },
+ "_selection": {
+  "level": "B",
+  "qualifying": [
+   "pythia-14m",
+   "gpt2"
+  ],
+  "chosen": "pythia-14m"
+ }
+}

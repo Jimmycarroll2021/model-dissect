@@ -32,6 +32,7 @@ splits = {
     "practice/practice_mbpp.jsonl": dump("practice/practice_mbpp.jsonl", [p for p in mbpp if 511 <= p["task_id"] <= 974]),
     "practice/noncode_gsm8k.jsonl": dump("practice/noncode_gsm8k.jsonl", [dict(text=json.loads(l)["question"]) for l in open(f"{raw}/gsm8k_train.jsonl")][:300]),
     "heldout/heldout_mbpp.jsonl": dump("heldout/heldout_mbpp.jsonl", [p for p in mbpp if 11 <= p["task_id"] <= 510]),
+    "heldout/heldout_noncode_gsm8k.jsonl": dump("heldout/heldout_noncode_gsm8k.jsonl", [dict(text=json.loads(l)["question"]) for l in open(f"{raw}/gsm8k_train.jsonl")][1000:1300]),
     "heldout/heldout_humaneval.jsonl": dump("heldout/heldout_humaneval.jsonl", [json.loads(l) for l in gzip.open(f"{raw}/HumanEval.jsonl.gz", "rt")]),
 }
 info = dict(raw={n: s for n, (u, s) in SRC.items()}, splits=splits)

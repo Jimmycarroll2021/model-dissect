@@ -17,6 +17,10 @@
    "rows": 500,
    "sha256": "d1bfd4c7abe32753f20a0fb524240b5c33583ce0f4dbb6274cc305c266bf91a5"
   },
+  "heldout/heldout_noncode_gsm8k.jsonl": {
+   "rows": 300,
+   "sha256": "e07cad3673c2f2105e51b8f7217d3641237fbb50147b420c2bfd22e7fc076ef3"
+  },
   "heldout/heldout_humaneval.jsonl": {
    "rows": 164,
    "sha256": "621ff099e7d6a9b630619acd3568aef441dec51a8c84f881a9dd1f2d2ed15914"
