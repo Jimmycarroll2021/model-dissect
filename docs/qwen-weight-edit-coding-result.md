@@ -1,6 +1,6 @@
 # Result: hand-editing Qwen3.5-0.8B to pass more whole coding problems
 
-Spec 006, 2026-11-26. Status: **GAIN on held-out MBPP by the preset rule; no gain on HumanEval; maths unchanged.** Run twice, identical. Not independently rerun.
+Spec 006, 2026-11-26. Status: **GAIN on held-out MBPP by the preset rule; no gain on HumanEval; maths unchanged.** Run twice, identical. Judging, statistics and the edit were independently rechecked from the saved replies (all counts reproduced); generation was not independently rerun.
 
 ## Question
 
@@ -36,11 +36,11 @@ The model has no bias terms, so each neuron's threshold is built from a steady d
 The edit fixes two answer-format faults, not reasoning.
 
 - Unedited, the function name the test calls was missing from 147 of 500 MBPP answers; edited, 58.
-- Unedited, 415 of 500 answers carried the model's own tests or prints after the function, and 171 replies ran into the 512-token limit; edited, 55 and 116.
+- Unedited, about 415 of 500 answers carried the model's own tests or prints after the function (a line starting at column 0 with `assert`, `print(`, `# Test` or `# Example`), and 171 replies ran into the 512-token limit; edited, about 55 and 116.
 
-Of the 63 problems gained: 23 had only the wrong name, 23 had the right name but ran into the token limit, 6 had both, and 11 had neither (the model's own trailing tests or prints made the program fail). So **about half of the gain (29 of 63) is of the shorter-reply kind** the protocol warned about: it would shrink or vanish with a longer reply limit. The naming half would not.
+Of the 63 problems gained: 23 had only the wrong name, 23 had the right name but ran into the token limit, 6 had both, and 11 had neither (the model's own trailing tests or prints made the program fail). So **about half of the gain (29 of 63) is of the shorter-reply kind** the protocol warned about: it would likely shrink with a longer reply limit, and the naming half likely would not. Neither was tested.
 
-HumanEval gives the function signature in the prompt, so the name is already right, and only 9 of 164 replies hit the limit. There was nothing for this edit to fix there.
+HumanEval gives the function signature in the prompt, so the name is already right, and only 9 to 10 of 164 replies hit the limit. There was nothing for this edit to fix there.
 
 ## Tried and dropped
 
@@ -56,11 +56,14 @@ Baseline: 73 of 464 practice problems (15.7%). Final check on 174 practice probl
 ## Limits
 
 - One model, one prompt format, greedy decoding, a 512-token reply limit.
-- The gain is format, not ability: the same effect is available by telling the model in the prompt (27 to 37 of 200 on practice with an instruction) or by cutting and renaming the answer afterwards.
+- The gain is format, not ability. Telling the model in the prompt gives a smaller effect of the same kind (27 to 37 of 200 practice problems). Cutting and renaming the saved answers afterwards would give 40 to 84 of 290 practice problems (re-judged saved replies, `kernel/k01` to `k03`).
+- The sandbox counts exit code 0 as a pass, so an answer that exits early would pass wrongly; none of the passing answers here does.
+- Three held-out MBPP problems (216, 217, 248) have near-duplicate texts in practice (872, 602, 704), with different names or tests.
+- Compared with the reference experiment (Qwen3.5-0.8B, maths): at 25 passes it moved GSM8K from 13.8% to 25.1%, a gain of similar size to this one; its 50-pass run reached 67.1% and carried to other maths benchmarks, which this result does not match.
 - No gain on the different problem type.
 - The editor (a Claude session) has probably seen MBPP and HumanEval in training; held-out isolation was by directory and code path.
 - A pass here is up to 200 generated answers, a different unit from the reference experiment's.
-- Not independently rerun.
+- Generation was not independently rerun.
 
 ## Files
 
